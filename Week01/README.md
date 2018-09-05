@@ -4,9 +4,9 @@
 2. How a computer understands code
 3. [Setting up your computer environment](environment_setup.md)
 4. The Command Line
-- (Windows Cheatsheet)[cli_cheatsheet_windows.md]
-- (MAC Cheatsheet)[cli_cheatsheet_mac.md]
-- (Exercises)[cli_exercises.md]
+- [Windows Cheatsheet](cli_cheatsheet_windows.md)
+- [MAC Cheatsheet](cli_cheatsheet_mac.md)
+- [Exercises](cli_exercises.md)
 ---
 ### Assignment for Week 2
 For Mac users, complete Ian Milligan and James Baker, "Introduction to the Bash Command Line," The Programming Historian 3 (2014), [https://programminghistorian.org/en/lessons/intro-to-bash](https://programminghistorian.org/en/lessons/intro-to-bash)
