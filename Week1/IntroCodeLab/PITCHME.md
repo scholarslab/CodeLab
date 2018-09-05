@@ -1,6 +1,6 @@
 @title[Code Lab]
 # Welcome to Code Lab
-### 
+
 Note:
 ---
 # What is Code Lab
