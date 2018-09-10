@@ -16,7 +16,7 @@ Note: once you have the basics, you can decide what you want to do
 # What can you expect?
 - Weekly meetings where we cover some aspect of coding and computing |
 - Weekly assignments and study groups to help reinforce concepts |
-- Learning how to work on group code projects
+- Learning how to work on group code projects |
 ---
 # What can we expect from you? 
 - Active participation in our meetings and study groups | 
