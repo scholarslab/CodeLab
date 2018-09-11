@@ -18,7 +18,6 @@ xcode-select --install
 ## Shell
 * Install [ZShell (zsh)](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
 * Install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
-* Customize .zshrc
 
 ## Python
 * **Mac**: [Python 3](https://docs.python-guide.org/starting/install3/osx/)
