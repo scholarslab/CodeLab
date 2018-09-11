@@ -8,12 +8,10 @@ Note:
 ---
 # What is Code Lab ?
 
----image?=https://media.giphy.com/media/eCqFYAVjjDksg/giphy.gif
+---?image=https://media.giphy.com/media/eCqFYAVjjDksg/giphy.gif
 
----
-### What is Code Lab ?
-![https://media.giphy.com/media/O2jbWYHzSOuT6/giphy.gif](https://media.giphy.com/media/O2jbWYHzSOuT6/giphy.gif)
-![https://media.giphy.com/media/5SRPnFvRG918k/giphy.gif](https://media.giphy.com/media/5SRPnFvRG918k/giphy.gif)
+---?image=https://media.giphy.com/media/O2jbWYHzSOuT6/giphy.gif
+
 ---
 ### What is Code Lab ?
 - Weekly meeting to learn the foundations of coding for digital humanists
