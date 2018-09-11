@@ -1,5 +1,5 @@
 ### Week 1 
-![https://media.giphy.com/media/Cl15e7OZxbums/giphy.gif](https://media.giphy.com/media/Cl15e7OZxbums/giphy.gif)
+![https://media.giphy.com/media/l0K4k1O7RJSghST3a/giphy.gif](https://media.giphy.com/media/l0K4k1O7RJSghST3a/giphy.gif)
 
 1. Introduction to Code Lab ([follow slides](https://gitpitch.com/scholarslab/CodeLab/master?p=Week01/intro_code_lab))
 2. How a computer understands code
