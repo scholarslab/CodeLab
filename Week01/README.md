@@ -5,8 +5,8 @@
 2. How a computer understands code
 3. [Setting up your computer environment](environment_setup.md)
 4. The Command Line
-- [Windows Cheatsheet](cli_cheatsheet_windows.md)
-- [MAC Cheatsheet](cli_cheatsheet_mac.md)
+- [Mac (Bash) Cheatsheet](cli_cheatsheet_mac.md)
+- [Windows (Powershell) Cheatsheet](cli_cheatsheet_windows.md)
 - [Exercises](cli_exercises.md)
 ---
 #### Homework for Week 2
