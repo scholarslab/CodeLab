@@ -34,7 +34,9 @@ Note: lots of DH does not involve coding.  once you have the basics, you can dec
 ### What can we expect from you? 
 - Active participation in our meetings and study groups |
 - Completion of assignments to your best ability |
-- Open mind and a willingness to go outside of your comfort zone ![https://media.giphy.com/media/SwImQhtiNA7io/giphy.gif](https://media.giphy.com/media/SwImQhtiNA7io/giphy.gif)|
+- Open mind and a willingness to go outside of your comfort zone |
+
+---?image=https://media.giphy.com/media/SwImQhtiNA7io/giphy.gif
 ---
 So who are we?
 ![https://media.giphy.com/media/ae670QCDqLpII/giphy.gif](https://media.giphy.com/media/ae670QCDqLpII/giphy.gif)
