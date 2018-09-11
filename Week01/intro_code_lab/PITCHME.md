@@ -10,7 +10,7 @@ Note:
 
 ---?image=https://media.giphy.com/media/eCqFYAVjjDksg/giphy.gif
 
----?image=https://media.giphy.com/media/O2jbWYHzSOuT6/giphy.gif
+---?image=https://media.giphy.com/media/m0Z1LPu6flQDS/giphy.gif
 
 ---
 ### What is Code Lab ?
