@@ -38,5 +38,5 @@ Note: lots of DH does not involve coding.  once you have the basics, you can dec
 
 ---?image=https://media.giphy.com/media/SwImQhtiNA7io/giphy.gif
 ---
-So who are we?
+### So who are we?
 ![https://media.giphy.com/media/ae670QCDqLpII/giphy.gif](https://media.giphy.com/media/ae670QCDqLpII/giphy.gif)
