@@ -1,24 +1,40 @@
 @title[Code Lab]
 # Welcome to Code Lab
 
+![https://media.giphy.com/media/1d7F9xyq6j7C1ojbC5/giphy.gif](https://media.giphy.com/media/1d7F9xyq6j7C1ojbC5/giphy.gif)
+
+
 Note:
 ---
-# What is Code Lab
+### What is Code Lab ?
+![https://media.giphy.com/media/eCqFYAVjjDksg/giphy.gif](https://media.giphy.com/media/eCqFYAVjjDksg/giphy.gif)
+
+---
+### What is Code Lab ?
+![https://media.giphy.com/media/O2jbWYHzSOuT6/giphy.gif](https://media.giphy.com/media/O2jbWYHzSOuT6/giphy.gif)
+![https://media.giphy.com/media/5SRPnFvRG918k/giphy.gif](https://media.giphy.com/media/5SRPnFvRG918k/giphy.gif)
+---
+### What is Code Lab ?
 - Weekly meeting to learn the foundations of coding for digital humanists
 - Help you learn everything from how computer executes code to writing programs, and from building websites to basic data analysis |
+- ![https://media.giphy.com/media/FOrOxmsZinjwI/giphy.gif](https://media.giphy.com/media/FOrOxmsZinjwI/giphy.gif) |
 ---
-# Why code though?
-- Digital Humanities is NOT coding
-- BUT lots of digital humanities requires some knowledge of code |
+# Why code?
+- Digital Humanities is *NOT* coding
+- BUT coding is an important part of digital humanities projects and scholarship |
 - AND coding can empower you! |
-Note: once you have the basics, you can decide what you want to do
+Note: lots of DH does not involve coding.  once you have the basics, you can decide what you want to do
 ---
 # What can you expect?
-- Weekly meetings where we cover some aspect of coding and computing |
+- Weekly meetings where we cover topics in coding and computing |
 - Weekly assignments and study groups to help reinforce concepts |
-- Learning how to work on group code projects |
+- Collaborating on group projects to learn best practices |
+- HELP from us ![https://media.giphy.com/media/91XPqhrgaJtp6/giphy.gif](https://media.giphy.com/media/91XPqhrgaJtp6/giphy.gif) |
 ---
 # What can we expect from you? 
-- Active participation in our meetings and study groups | 
+- Active participation in our meetings and study groups |
 - Completion of assignments to your best ability |
-- Open mind and a willingness to go outside of your comfort zone|
+- Open mind and a willingness to go outside of your comfort zone ![https://media.giphy.com/media/SwImQhtiNA7io/giphy.gif](https://media.giphy.com/media/SwImQhtiNA7io/giphy.gif)|
+---
+So who are we?
+![https://media.giphy.com/media/ae670QCDqLpII/giphy.gif](https://media.giphy.com/media/ae670QCDqLpII/giphy.gif)
