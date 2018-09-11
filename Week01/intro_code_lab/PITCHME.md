@@ -6,8 +6,9 @@
 
 Note:
 ---
-### What is Code Lab ?
-![https://media.giphy.com/media/eCqFYAVjjDksg/giphy.gif](https://media.giphy.com/media/eCqFYAVjjDksg/giphy.gif)
+# What is Code Lab ?
+
+---image?=https://media.giphy.com/media/eCqFYAVjjDksg/giphy.gif
 
 ---
 ### What is Code Lab ?
