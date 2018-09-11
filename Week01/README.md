@@ -8,7 +8,7 @@
 - [MAC Cheatsheet](cli_cheatsheet_mac.md)
 - [Exercises](cli_exercises.md)
 ---
-### Assignment for Week 2
-For Mac users, complete Ian Milligan and James Baker, "Introduction to the Bash Command Line," The Programming Historian 3 (2014), [https://programminghistorian.org/en/lessons/intro-to-bash](https://programminghistorian.org/en/lessons/intro-to-bash)
+#### Homework for Week 2
+Complete Ian Milligan and James Baker, "Introduction to the Bash Command Line," The Programming Historian 3 (2014), [https://programminghistorian.org/en/lessons/intro-to-bash](https://programminghistorian.org/en/lessons/intro-to-bash)
 
-For Windows users, complete Ted Dawson, "Introduction to the Windows Command Line with PowerShell," The Programming Historian 5 (2016), [https://programminghistorian.org/en/lessons/intro-to-powershell](https://programminghistorian.org/en/lessons/intro-to-powershell)
+Read [section 1](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#the-man-in-the-taupe-blazer) and [section 2](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#lets-begin) from Paul Ford's *What is Code?*, Businessweek June 11 2015
