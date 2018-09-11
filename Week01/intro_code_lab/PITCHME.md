@@ -16,7 +16,7 @@ Note:
 ### What is Code Lab ?
 - Weekly meeting to learn the foundations of coding for digital humanists
 - Help you learn everything from how computer executes code to writing programs, and from building websites to basic data analysis |
-- ![https://media.giphy.com/media/FOrOxmsZinjwI/giphy.gif](https://media.giphy.com/media/FOrOxmsZinjwI/giphy.gif) |
+---?image=https://media.giphy.com/media/FOrOxmsZinjwI/giphy.gif
 ---
 ### Why code?
 - Digital Humanities is *NOT* coding
@@ -28,7 +28,8 @@ Note: lots of DH does not involve coding.  once you have the basics, you can dec
 - Weekly meetings where we cover topics in coding and computing |
 - Weekly assignments and study groups to help reinforce concepts |
 - Collaborating on group projects to learn best practices |
-- HELP from us ![https://media.giphy.com/media/91XPqhrgaJtp6/giphy.gif](https://media.giphy.com/media/91XPqhrgaJtp6/giphy.gif) |
+- HELP from us! |
+---?image=https://media.giphy.com/media/91XPqhrgaJtp6/giphy.gif
 ---
 ### What can we expect from you? 
 - Active participation in our meetings and study groups |
