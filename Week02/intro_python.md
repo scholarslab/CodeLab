@@ -1,16 +1,17 @@
-# Python interpreter as calculator
+# Introduction to Python
+## Python interpreter as calculator
 ```python
 1+1
 2**3
 ```
 
-# Hello World
+## Hello World
 ### Concepts: strings, functions, parameters
 ```python
 print("Hello Cruel World!")
 ```
 
-# Variables
+## Variables
 ### Concepts: variables, operator functions (concatenation)
 ```python
 madlibs="Scholars' Lab"
@@ -38,8 +39,7 @@ Floats are trickier and require a special system to represent. Just as it's impo
 [Float to Binary Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
 [IEEE 754 Standard](https://en.wikipedia.org/wiki/IEEE_754-1985)
 
-
-# Comments and Documentation
+## Comments and Documentation
 ### Inline Commenting
 ```python
 # Life is suffering
@@ -58,15 +58,12 @@ Let's take a look at the specific documentation for strings:
 
 [Python 3 Docs: Built-in Types: Strings](https://docs.python.org/3/library/stdtypes.html#string-methods)
 
-
-# Interlude: The Zen of Python
+## Interlude: The Zen of Python
 ### Why Python? 
 [PEP 20: The Zen of Python](https://www.python.org/dev/peps/pep-0020/)
 [Brief Analysis of 'The Zen of Python'](https://medium.com/@Pythonidaer/a-brief-analysis-of-the-zen-of-python-2bfd3b76edbf)
 
-
-# Sequences
-
+## Sequences
 ### Lists
 
 ```python
@@ -82,6 +79,7 @@ print(dogs[0])
 ![Bad Pun Hazel](assets/badpunhazel.jpeg)
 
 Lists are one type of sequence, which are ordered collections of variables (including sequences, so you can have lists of lists).
+
 [Python 3 Docs: Built-in Types: Sequence Types](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range)
 
 Strings are actually sequence types, just like lists!
@@ -91,7 +89,7 @@ gooddog = "Hazel is a good dog"
 print("Every dog"+gooddog[5:])
 ```
 
-# Modules
+## Modules
 ### Python Standard Library
 ```python
 import random
@@ -104,6 +102,6 @@ Of course, you don't always want to write your own code. Programmers are ~~lazy~
 
 For more specialized tasks, it's also easy to use the work of third party developers. But we'll leave that to another week.
 
-# Bring it all together
-### Work together
+## Let's Hope You Paid Attention!
+### Work together!
 Pair programming is a common practice. We want you to always do pair programming. Let's write some code to assign each of you a partner for this week's homework using what we've just learned!
