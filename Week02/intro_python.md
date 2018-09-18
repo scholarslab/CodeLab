@@ -72,13 +72,15 @@ When you write particularly complicated logic or whenever you write new classes 
 
 ### Documentation
 
-Python, as with virtually all other languages and complex codes, contains extensive documentation that covers all aspects of its use.
+Python, as with virtually all other languages and complex codes, contains extensive documentation that covers all aspects of its use. This documentation is [easy accessible via the Internet](assets/MissionImpossible.m4v).
 
 [Python 3 Documentation](https://docs.python.org/3/)
 
 Let's take a look at the specific documentation for strings:
 
 [Python 3 Docs: Built-in Types: Strings](https://docs.python.org/3/library/stdtypes.html#string-methods)
+
+Learning to read documentation is a critical skill for succeeding as a programmer. Happily, most of you, as graduate students, should already be literate.
 
 ## Interlude: The Zen of Python
 ### What's the deal with Python? 
