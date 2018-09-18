@@ -17,7 +17,7 @@ The Python programming language was first conceived in the late 1980s, but becam
 Many computers come with Python 2 already installed by default. Depending on how yours is set up, running `python` may run the Python 2 or Python 3 interpreter. To determine which one, run the command `python --version`. Pipenv should have this all sorted out, but more on this later.
 
 ## Hello World
-### Concepts: variables, functions, parameters
+### Variables, Functions, amd Parameters
 ```python
 print("Hello Cruel World!")
 ```
@@ -26,7 +26,7 @@ print("Hello Cruel World!")
 If you're looking for help on the internet and ever see `print "foobar"` instead of `print("foobar")` (without the parenthesis), that's Python 2 code instead of Python 3!
 
 ## Variables
-### Concepts: operator functions (concatenation)
+### String functions (concatenation)
 ```python
 madlibs="Scholars' Lab"
 print("I, for one, 'welcome' our new "+madlibs+" overlords!")
@@ -35,8 +35,13 @@ Variables are little bits of information that are given names so that they can b
 
 In the second line, we use the + operator to concatenate three strings together and pass the result to print.
 
+You can also "multiply" strings.
 
-### Concepts: Numbers
+```python
+print("Scholars' L"+"a"*10+"b")
+```
+
+### Numbers
 ```python
 a = 7
 b = 3
@@ -45,7 +50,7 @@ a/b
 ```
 Integers are whole numbers. Floats (floating point numbers) are prepresentations of real numbers. Integers are simple and easy to use. Floats are mostly easy, but sometimes really weird!
 
-### Concepts: binary representation of numbers
+### Weird Numbers
 ```python
 0.1+0.2
 ```
@@ -58,6 +63,16 @@ Floats are trickier and require a special system to represent. Don't worry about
 
 [Float to Binary Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
 [IEEE 754 Standard](https://en.wikipedia.org/wiki/IEEE_754-1985)
+
+### Booleans
+```python
+print(True)
+print(False)
+print(True or False)
+print(True and False)
+print(not True)
+```
+True in Python is interchangible with the number 1 and False with 0.
 
 ## Comments and Documentation
 ### Inline Commenting
