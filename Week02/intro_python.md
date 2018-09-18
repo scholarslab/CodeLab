@@ -1,5 +1,5 @@
 # Introduction to Python
-!["Monty Python"](assets/montypython.jpeg)
+!["Monty Python"](assets/montypython.jpg)
 
 ## Python interpreter as calculator
 ```python
