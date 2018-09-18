@@ -20,4 +20,6 @@ Posner, Miriam (2015),  [Humanities Data, a Necessary Contradiction ](http://mir
 
 [Section 3](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#why-are-programmers-so-intense-about-languages) from Paul Ford's *What is Code?*, Businessweek June 11 2015
 
+#### Bonus reading:
+
 Horgan, John (2017), [Profile of Claude Shannon, Inventor of Information Theory](https://blogs.scientificamerican.com/cross-check/profile-of-claude-shannon-inventor-of-information-theory/)
