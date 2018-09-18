@@ -1,4 +1,4 @@
-# Python Dictionary
+# Python Lists
 
 ## Setup
 Make a directory in your workspace, `cd` into it, and create a file called `slab_list.py`
