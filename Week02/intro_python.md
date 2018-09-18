@@ -72,7 +72,7 @@ print(True or False)
 print(True and False)
 print(not True)
 ```
-True in Python is interchangible with the number 1 and False with 0.
+True in Python is interchangeable with the number 1 and False with 0.
 
 ## Comments and Documentation
 ### Inline Commenting
