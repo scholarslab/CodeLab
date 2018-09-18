@@ -99,10 +99,12 @@ Learning to read documentation is a critical skill for succeeding as a programme
 
 ## Interlude: The Zen of Python
 ### What's the deal with Python? 
-[PEP 20: The Zen of Python](https://www.python.org/dev/peps/pep-0020/)
-[Brief Analysis of 'The Zen of Python'](https://medium.com/@Pythonidaer/a-brief-analysis-of-the-zen-of-python-2bfd3b76edbf)
+Type this into Python:
+```python
+import this
+```
 
-Also a DH answer: lots of DH projects are written in Python because of its simplicity and community and it's especially popular in areas like text analysis and machine learning.
+Also, a DH answer: lots of DH projects are written in Python because of its simplicity and community and it's especially popular in areas like text analysis and machine learning.
 
 ## Saving and running code
 The Python interactive interpreter is very useful for experimentation, but if you want to write something less ephemereal, you'll want to save it as a file so that it can be run over again without going through it line by line. The code is exactly the same, just save it as a text file to your disk with the usual Python file format extension, .py.
