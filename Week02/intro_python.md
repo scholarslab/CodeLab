@@ -17,7 +17,7 @@ The Python programming language was first conceived in the late 1980s, but becam
 Many computers come with Python 2 already installed by default. Depending on how yours is set up, running `python` may run the Python 2 or Python 3 interpreter. To determine which one, run the command `python --version`. Pipenv should have this all sorted out, but more on this later.
 
 ## Hello World
-### Concepts: variables, functions, parameters
+### Variables, Functions, amd Parameters
 ```python
 print("Hello Cruel World!")
 ```
@@ -26,7 +26,7 @@ print("Hello Cruel World!")
 If you're looking for help on the internet and ever see `print "foobar"` instead of `print("foobar")` (without the parenthesis), that's Python 2 code instead of Python 3!
 
 ## Variables
-### Concepts: operator functions (concatenation)
+### String functions (concatenation)
 ```python
 madlibs="Scholars' Lab"
 print("I, for one, 'welcome' our new "+madlibs+" overlords!")
@@ -35,8 +35,13 @@ Variables are little bits of information that are given names so that they can b
 
 In the second line, we use the + operator to concatenate three strings together and pass the result to print.
 
+You can also "multiply" strings.
 
-### Concepts: Numbers
+```python
+print("Scholars' L"+"a"*10+"b")
+```
+
+### Numbers
 ```python
 a = 7
 b = 3
@@ -45,7 +50,7 @@ a/b
 ```
 Integers are whole numbers. Floats (floating point numbers) are prepresentations of real numbers. Integers are simple and easy to use. Floats are mostly easy, but sometimes really weird!
 
-### Concepts: binary representation of numbers
+### Weird Numbers
 ```python
 0.1+0.2
 ```
@@ -58,6 +63,16 @@ Floats are trickier and require a special system to represent. Don't worry about
 
 [Float to Binary Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
 [IEEE 754 Standard](https://en.wikipedia.org/wiki/IEEE_754-1985)
+
+### Booleans
+```python
+print(True)
+print(False)
+print(True or False)
+print(True and False)
+print(not True)
+```
+True in Python is interchangible with the number 1 and False with 0.
 
 ## Comments and Documentation
 ### Inline Commenting
@@ -72,7 +87,7 @@ When you write particularly complicated logic or whenever you write new classes 
 
 ### Documentation
 
-Python, as with virtually all other languages and complex codes, contains extensive documentation that covers all aspects of its use. This documentation is [easy accessible via the Internet](assets/MissionImpossible.m4v).
+Python, as with virtually all other languages and complex codes, contains extensive documentation that covers all aspects of its use. This documentation is [easy accessible via the Internet](assets/MissionImpossible.m4v?raw=true).
 
 [Python 3 Documentation](https://docs.python.org/3/)
 
@@ -84,10 +99,12 @@ Learning to read documentation is a critical skill for succeeding as a programme
 
 ## Interlude: The Zen of Python
 ### What's the deal with Python? 
-[PEP 20: The Zen of Python](https://www.python.org/dev/peps/pep-0020/)
-[Brief Analysis of 'The Zen of Python'](https://medium.com/@Pythonidaer/a-brief-analysis-of-the-zen-of-python-2bfd3b76edbf)
+Type this into Python:
+```python
+import this
+```
 
-Also a DH answer: lots of DH projects are written in Python because of its simplicity and community and it's especially popular in areas like text analysis and machine learning.
+Also, a DH answer: lots of DH projects are written in Python because of its simplicity and community and it's especially popular in areas like text analysis and machine learning.
 
 ## Saving and running code
 The Python interactive interpreter is very useful for experimentation, but if you want to write something less ephemereal, you'll want to save it as a file so that it can be run over again without going through it line by line. The code is exactly the same, just save it as a text file to your disk with the usual Python file format extension, .py.
