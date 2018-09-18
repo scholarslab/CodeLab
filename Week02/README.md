@@ -1,15 +1,23 @@
-### Week 2
+# Week 2
 ![https://media.giphy.com/media/9xaryfkdWqqiK6QHKf/giphy.gif](https://media.giphy.com/media/9xaryfkdWqqiK6QHKf/giphy.gif)
 
+## Lesson
+[Lesson document](intro_python.md)
 1. Introduction to Python 
 2. Python Interpreter 
 3. Data Structures
 4. Documentation
+5. Dogs
 
 ---
-#### Homework for Week 3
-Add assignment
+## Homework for Week 3
 
-Read Posner, Miriam (2015),  [Humanities Data, a Necessary Contradiction ](http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/)
+## Coding Assignment 1: Pig Latin
+Produce a simple program to accept text input and then print out the [pig latin](https://en.wikipedia.org/wiki/Pig_Latin) translation.
 
+### Read:
+Posner, Miriam (2015),  [Humanities Data, a Necessary Contradiction ](http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/)
 
+[Section 3](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#why-are-programmers-so-intense-about-languages) from Paul Ford's *What is Code?*, Businessweek June 11 2015
+
+Horgan, John (2017), [Profile of Claude Shannon, Inventor of Information Theory](https://blogs.scientificamerican.com/cross-check/profile-of-claude-shannon-inventor-of-information-theory/)
