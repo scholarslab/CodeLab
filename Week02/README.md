@@ -13,7 +13,7 @@
 ## Homework for Week 3
 
 ## Coding Assignment 1: Pig Latin
-Produce a simple program to accept text input and then print out the [pig latin](https://en.wikipedia.org/wiki/Pig_Latin) translation.
+Produce a simple program to accept a single word as text input and then print out the [pig latin](https://en.wikipedia.org/wiki/Pig_Latin) translation.
 
 ### Read:
 Posner, Miriam (2015),  [Humanities Data, a Necessary Contradiction ](http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/)
