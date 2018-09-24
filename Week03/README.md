@@ -1,5 +1,5 @@
 # Week 3
-![I'm Invincible](/assets/invincible.gif)
+![I'm Invincible](assets/invincible.gif)
 
 ## Lesson
 Lesson document
