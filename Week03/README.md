@@ -2,12 +2,11 @@
 ![I'm Invincible](assets/invincible.gif)
 
 ## Lesson
-Lesson document
-1. 
-2. 
-3. 
-4. 
-5. 
+Lesson document:
+1. Discuss homework assignments
+2. Review data structures
+3. Conditionals and Loops
+4. Functions
 
 ---
 ## Homework for Week 4
