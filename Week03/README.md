@@ -37,7 +37,10 @@ Example:
 names = ["Catherine","Cho", "Chris", "Eleanore", "Emily","Matilda"]
 pairs = [["Chris","Emily"],['"Eleanore","Cho"],["Cho", "Catherine"],["Catherine","Matilda"]]
 # Your code here
-print("This is a valid pairing: " + is_valid)
+if is_valid:
+   print("This is a valid set of pairings.")
+else:
+   print("Nope!")
 ```
 
 Hint:
