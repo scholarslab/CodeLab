@@ -59,3 +59,4 @@ Hint:
 I sure hope we got to talk about nested loops. A nested loop is two loops nested one inside of another. This is a simple way to deal with multi-dimensional lists.
 
 ### Read:
+The Coder's Apprentice, ch 6-7: [http://www.spronck.net/pythonbook/](http://www.spronck.net/pythonbook/)
