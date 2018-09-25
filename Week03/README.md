@@ -11,34 +11,37 @@ Lesson document:
 ---
 ## Homework for Week 4
 
+Pair program these with a buddy! Pair programming is fun and productive unless you do it wrong. According to formal logic, this does not necessarily mean that doing it wrong cannot also be fun and productive, but it does mean that if it isn't fun and productive, you aren't doing it right.
+
 ### Coding Assignment 1: Pick Pair Programmers
 
-Given a hard-coded set of 6 names, write a program that randomly assigns everyone a partner and returns the data as a list of 3 tuples, each representing a pair of programmers. Must return a different, correct result each time!
+Given a hard-coded set of 6 names, write a program that *randomly* assigns everyone a partner and prints out 3 pairs of programmers. Must return a different, correct result each time!
 
 Example:
 ```python
 names = ["Catherine","Cho", "Chris", "Eleanore", "Emily", "Matilda"]
 # Your code here
-print(schedule)
+print(pairs)
+# E.g. "Catherine and Cho, Chris and Eleanore, Emily and Matilda"
 ```
 
 Hint:
-Remember that we looked at the Python standard library module [Random](https://docs.python.org/3/library/random.html) last week. You can use `len(x)` to find the length of a list/sequence. Alternatively, there is section in the Random module documentation on "Functions for sequences" that may be helpful. 
+Remember that we looked at the Python standard library module [Random](https://docs.python.org/3/library/random.html) last week. You can use `len(x)` to find the length of a list/sequence. Alternatively, there is section in the Random module documentation on "Functions for sequences" that may be helpful.
 
 ### Coding Assignment 2: Double check!
 
-Given a hard-coded set of 6 names and a list of 3 tuples (the same output format of assignment 1), check whether the list represents a valid and correct pairing of programmers given the 6 names. What do you consider correct? What error conditions are you checking for?
+Given a list of 6 names (`names`) and a list of lists (`pairs`), check whether `pairs` represents a valid and correct pairing of programmers. What do you consider correct? What kind of error conditions are you checking for?
 
 Example:
 ```python
 names = ["Catherine","Cho", "Chris", "Eleanore", "Emily","Matilda"]
-schedule = [("Chris","Emily"),("Eleanore","Cho"),("Cho", "Catherine"),("Catherine","Matilda")]
+pairs = [["Chris","Emily"],['"Eleanore","Cho"],["Cho", "Catherine"],["Catherine","Matilda"]]
 # Your code here
 print("This is a valid pairing: " + is_valid)
 ```
 
 Hint:
-[Tuples are kind of like lists.](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences)
+A list of lists is kind of like a table - it's essentially 2 dimensions, although this doesn't ensure that every row has the same number of columns. Just as you would access a list using list[x], you can access a list of lists using list[x][y].
 
 ### Coding Assignment 3: List of Sums
 
@@ -53,6 +56,6 @@ target = 12
 ```
 
 Hint:
-I sure hope we got to talk about nested loops.
+I sure hope we got to talk about nested loops. A nested loop is two loops nested one inside of another. This is a simple way to deal with multi-dimensional lists.
 
 ### Read:
