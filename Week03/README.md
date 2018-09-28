@@ -35,7 +35,7 @@ Given a list of 6 names (`names`) and a list of lists (`pairs`), check whether `
 Example:
 ```python
 names = ["Catherine","Cho", "Chris", "Eleanore", "Emily","Matilda"]
-pairs = [["Chris","Emily"],['"Eleanore","Cho"],["Cho", "Catherine"],["Catherine","Matilda"]]
+pairs = [["Chris","Emily"],["Eleanore","Cho"],["Cho", "Catherine"],["Catherine","Matilda"]]
 # Your code here
 if is_valid:
    print("This is a valid set of pairings.")
