@@ -5,7 +5,7 @@
 1. Discuss homework assignments
 2. Review conditionals and loops
 3. Let's talk about Data: text files and binary files
-4. Full steam ahead: [Version Control and You](https://shane-et-al.github.io/git_slab/)
+4. Full steam ahead: [Git for Humanists](https://shane-et-al.github.io/git_slab/)
 
 ---
 ## Homework for Week 4
