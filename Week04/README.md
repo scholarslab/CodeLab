@@ -14,9 +14,9 @@ Try pair programming with a different buddy this time. Or else try to pair progr
 
 ### Assignment 1: FizzBuzz
 
-We might have skipped over too much basic loop and conditional syntax. Write a program that takes as input a number and then plays the [FizzBuzz game](https://en.wikipedia.org/wiki/Fizz_buzz) until that number. This is a classic programming puzzle and, helpfully, Wikipedia has a list of solutions, including one in Python. But if you use it, be prepared to explain how it works in the next Codelab.
+We might have skipped over too much basic loop and conditional syntax. Write a program that takes as input a number and then plays the [FizzBuzz game](https://en.wikipedia.org/wiki/Fizz_buzz) until that number. This is a classic programming puzzle and, very helpfully, Wikipedia actually has a list of solutions, including one in Python. But if you use it, be prepared to explain how it works in front of the Fellowship in the next Codelab. It's not the simplest answer (and, in fact, it's Python 2 code), but it might be useful to reverse-engineer!
 
-Example:
+Sample code:
 ```python
 # We're not going to worry about invalid input for this...
 i = int(input("Enter a number: "))
@@ -36,7 +36,7 @@ I've created a git repository on the Scholars' Lab account that has a single mar
 
 ### Assignment 3: Put it together
 
-Take your answer to assignment 1 and push it to a new repository on Github under your account. It's probably easier to create a new repo on Github (the webiste), clone it to your computer, and copy in the file you've already produced, but you can also try doing an in-place `git init` if you're feeling adventurous.
+Take your answer to assignment 1 and push it to a new repository on Github under your account. It's probably easier to create a new repo on Github (the website), clone it to your computer, and copy in the file you've already produced, but you can also try doing an in-place `git init` if you're feeling adventurous.
 
 
 ### Read:
