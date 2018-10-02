@@ -36,7 +36,7 @@ I've created a git repository on the Scholars' Lab account that has a single mar
 
 ### Assignment 3: Put it together
 
-Take your answer to assignment 1 and push it to a new repository on Github under your account.
+Take your answer to assignment 1 and push it to a new repository on Github under your account. It's probably easier to create a new repo on Github (the webiste), clone it to your computer, and copy in the file you've already produced, but you can also try doing an in-place `git init` if you're feeling adventurous.
 
 
 ### Read:
