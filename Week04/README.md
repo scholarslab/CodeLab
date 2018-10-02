@@ -1,8 +1,7 @@
 # Week 4
 ![Git merge dot gif](assets/gitmerge.gif)
 
-## Lesson
-Lesson document:
+## Outline
 1. Discuss homework assignments
 2. Review conditionals and loops
 3. Let's talk about Data: text files and binary files
@@ -11,7 +10,7 @@ Lesson document:
 ---
 ## Homework for Week 4
 
-Try pair programming with a different buddy this time. Or try to pair program rather than not doing it.
+Try pair programming with a different buddy this time. Or else try to pair program rather than not doing it.
 
 ### Assignment 1: FizzBuzz
 
