@@ -56,7 +56,7 @@ a.speak()
 
 This is a bad example because there's really no reason  A *class* is a particular type of objects. We can create ("instantiate") an object of a class and store it as a variable. A variable therefore contains (technically, contains a reference to) an *instance* of a class.
 
-Let's look closer at this class. The function `speak` is attached to the class, so it's actually a method, which is pretty much the same as a function. But we can see that, as a method, it has a special parameter, `self`. This parameter doesn't appear in the method call later, but it allows the method to access the internal data stored inside of the class.
+Let's look closer at this Staff class. The function `speak` is attached to the class, so it's actually a method (which is pretty much the same as a function). But we can see that, as a method, it has a special parameter, `self`. This parameter doesn't appear in the method call later, but it allows the method to access the internal data stored inside of the class. The [Python style guide](https://www.python.org/dev/peps/pep-0008/) suggests using CapWords convention while method names should be lower-cased words separated by underscores.
 
 Let's keep that bad class definition for now, but let's play with it a bit.
 
@@ -188,6 +188,7 @@ praxis.add_fellow(Fellow("Brandon Walsh","English",2011), 2012)
 print(praxis.get_cohort(2012))
 print(praxis.get_cohort_rating(2012))
 print(praxis.audit())
+# Add more code to test
 ```
 
 One team, let's call it Team One, will fill in the methods and data in the Fellow class. The other team, Team Alpha, will fill in the methods and data for the Fellowship class. At the end of the day, we should be able to fill it in with real historical from the Praxis Program and figure out which cohort is the most diverse and also which cohort was the best.
