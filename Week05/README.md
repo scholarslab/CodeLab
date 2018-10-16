@@ -191,7 +191,7 @@ print(praxis.audit())
 # Add more code to test
 ```
 
-One team, let's call it Team One, will fill in the methods and data in the Fellow class. The other team, Team Alpha, will fill in the methods and data for the Fellowship class. At the end of the day, we should be able to fill it in with real historical from the Praxis Program and figure out which cohort is the most diverse and also which cohort was the best.
+One team, let's call it Team One, will fill in the methods and data in the Fellow class. The other team, Team Alpha, will fill in the methods and data for the Fellowship class. At the end of the day, we should be able to take these two classes and pump in real historical from the Praxis Program and figure out things like which cohort was the most diverse and also which cohort was the best.
 
 ### Assignment 2: Manual Addition Edition
 
