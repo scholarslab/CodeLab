@@ -54,11 +54,11 @@ a = Staff()
 a.speak()
 ```
 
-This is a bad example because there's really no reason  A *class* is a particular type of objects. We can create ("instantiate") an object of a class and store it as a variable. A variable therefore contains (technically, contains a reference to) an *instance* of a class.
+A *class* is a particular type of objects. We can create ("instantiate") an object of a class and store it as a variable. A variable therefore contains (technically, contains a reference to) an *instance* of a class.
 
 Let's look closer at this Staff class. The function `speak` is attached to the class, so it's actually a method (which is pretty much the same as a function). But we can see that, as a method, it has a special parameter, `self`. This parameter doesn't appear in the method call later, but it allows the method to access the internal data stored inside of the class. The [Python style guide](https://www.python.org/dev/peps/pep-0008/) suggests using CapWords convention while method names should be lower-cased words separated by underscores.
 
-Let's keep that bad class definition for now, but let's play with it a bit.
+Let's keep this bad class definition for now, but let's play with it a bit.
 
 ```python
 a = Staff()
@@ -69,11 +69,11 @@ a.speak()
 b.speak()
 ```
 
-So, we can see that `a` and `b` both have their own sets of internal data, just like if they were any built-in type. But this is still not a very good class. For one thing, Brandon is some kind of prototypical Slab staffe and that's just poor software design. For another thing, we have to know how it works internally to know how to actually change its behavior. This gets really complicated the more complicated the code is.
+So, we can see that `a` and `b` both have their own sets of internal data, just like if they were any built-in type. But let's remember this this is a *bad* class. For one thing, Brandon is some kind of prototypical Slab staffer and that's just poor software design. For another thing, we have to know how it works internally to know how to actually change its behavior. This gets really complicated the more complicated the code is.
 
 Let's consider this: the built-in classes we've used are the same kind of classes as these, built in the same way (here is the internal python code for the familiar [Random class](https://github.com/python/cpython/blob/3.7/Lib/random.py)). We don't want to have people know all about text encoding works or how pseudorandom number generation works for them to use the string and random classes.
 
-Ideally, we should make things easy to understand only using the public methods for a class. One important method is a "constructor". This is called whenever a class is instantiated. Let's revise our class using a constructor:
+Ideally, we should make things easy to understand only using the public methods for a class. One special method is a "constructor". This is called whenever a class is instantiated. Let's revise our class using a constructor:
 
 ```python
 class Staff:
