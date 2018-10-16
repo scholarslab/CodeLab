@@ -5,7 +5,7 @@
 1. Discuss homework assignments
 2. Review conditionals and loops
 3. Let's talk about Data: text files and binary files
-4. Full steam ahead: [Version Control and You](https://shane-et-al.github.io/git_slab/)
+4. Full steam ahead: [Git for Humanists](https://shane-et-al.github.io/git_slab/)
 
 ---
 ## Homework for Week 4
@@ -14,7 +14,7 @@ Try pair programming with a different buddy this time. Or else try to pair progr
 
 ### Assignment 1: FizzBuzz
 
-We might have skipped over too much basic loop and conditional syntax. Write a program that takes as input a number and then plays the [FizzBuzz game](https://en.wikipedia.org/wiki/Fizz_buzz) until that number. This is a classic programming puzzle and, very helpfully, Wikipedia actually has a list of solutions, including one in Python. But if you use it, be prepared to explain how it works in front of the Fellowship in the next Codelab. It's not the simplest answer (and, in fact, it's Python 2 code), but it might be useful to reverse-engineer!
+We might have skipped over too much basic loop and conditional syntax so let's cover some of that ground again. Write a program that takes as input a number and then plays the [FizzBuzz game](https://en.wikipedia.org/wiki/Fizz_buzz) until that number is reached. This is a classic programming puzzle and, very helpfully, Wikipedia actually has a list of solutions, including one in Python. But if you use it, be prepared to explain how it works in front of the Fellowship in the next Codelab. It's not the simplest answer (and, in fact, it's Python 2 code), but it might be useful to reverse-engineer!
 
 Sample code:
 ```python
@@ -42,4 +42,4 @@ Take your answer to assignment 1 and push it to a new repository on Github under
 ### Read:
 Raymond, Eric S. [The Cathedral and the Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/cathedral-bazaar/index.html): Introduction through "How Many Eyeballs Tame Complexity"
 
-Review as needed: [https://shane-et-al.github.io/git_slab/](https://shane-et-al.github.io/git_slab/)
+Review as needed: Lin, Shane. [Git for Humanists](https://shane-et-al.github.io/git_slab/).
