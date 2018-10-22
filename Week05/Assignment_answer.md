@@ -212,6 +212,7 @@ praxis.add_fellow(Fellow("Claire Maiers", "Sociology", 2010), 2012)
 praxis.add_fellow(Fellow("Cecilia Márquez", "History", 2011), 2012)
 praxis.add_fellow(Fellow("Gwen Nally", "Philosophy", 2007), 2012)
 
+# I'm not actually sure when you all started
 praxis.add_fellow(Fellow("Catherine Addington", "Spanish", 2016), 2018)
 praxis.add_fellow(Fellow("Cho Jiang", "Urban and Environmental Planning", 2016), 2018)
 praxis.add_fellow(Fellow("Chris Whitehead", "History", 2016), 2018)
