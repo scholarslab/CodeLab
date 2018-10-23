@@ -41,10 +41,15 @@ As a Canadian, I like to talk a lot about famous Canadians. Here's a website wit
 But I have some favorites that I want to have on hand quickly. Here's my quickie list with their names, birth year, death year, and their professions.
 
 Celine Dion, 1968, performer, goddess
+
 Drake, 1986, performer
+
 Justin Trudeau, 1971, Prime Minister, snowboard instructor
+
 Sandra Oh, 1971, actor, goddess
+
 Nathan Fillion, 1971, actor
+
 John A. Macdonald, 1815, 1891, Prime Minister
 
 
