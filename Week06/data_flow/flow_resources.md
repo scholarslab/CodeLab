@@ -59,22 +59,12 @@ if wizard != witch:
 else:
     print('nice try')
 ```
+There's lots of ways to test equality with what we call **logical operators**.
 
-In this example, we're getting a bit more tricky.
-Let's break it down with a simpler example.
-```python
-test1 = True
-test2 = False
-print(test1 == test2)
-print(test1 != test2)
-three = 3
-four = 4
-print(three < four)
-print(four > three)
-```
+![https://introcs.cs.princeton.edu/python/12types/images/ComparisonOperators.png](https://introcs.cs.princeton.edu/python/12types/images/ComparisonOperators.png)
 
 #### Functions
- Essentially functions are a way to wrap your code into blocks so that way you can call your code when you need it to run.
+ Essentially functions are a way to wrap your code into blocks so that way you can call your code when you need it to run. You can check out the materials from last week on functions [here](../../Week06/)
 
 ```python
 def get_fundamentals():
