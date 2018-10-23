@@ -84,7 +84,7 @@ def get_fundamentals():
 
 get_fundamentals()
 ```
-![https://i0.wp.com/getmoreabout.com/wp-content/uploads/2017/12/1523299_orig-e1514470882262.png?fit=400%2C209&ssl=1](https://i0.wp.com/getmoreabout.com/wp-content/uploads/2017/12/1523299_orig-e1514470882262.png?fit=400%2C209&ssl=1)
+![https://swcarpentry.github.io/swc-releases/2016.06/python-novice-inflammation/fig/python-function.svg](https://swcarpentry.github.io/swc-releases/2016.06/python-novice-inflammation/fig/python-function.svg)
 
 Some more advanced examples:
 ```python
