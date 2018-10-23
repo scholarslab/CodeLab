@@ -61,7 +61,7 @@ class Fellow:
         # There's a CSV module in the Python standard library, but let's just output it manually since it's easy enough.
         # Let's enumerate all the data in a list, cast as strings
         data = [self.name, self.department, self.status, str(self.start_year), str(self.get_year())]
-        # Then let's use the string join method to enumerate the list as a long string delimited by quotes and commas.
+        # Then let's use the string join method to render the list as a long string delimited by quotes and commas.
         return '"'+'","'.join(data)+'"'
 
     # Compare two fellows. If they have all the same data, return true.
