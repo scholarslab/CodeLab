@@ -3,7 +3,7 @@
 You already know one data structure pretty well, so let's review it together.
 
 ### Lists
-If you need a refresher, check out the [resources](structures_resources.md).
+If you need a refresher, check out the [resources](data_structures_resources.md).
 
 1. How do we create a list?
 
@@ -131,7 +131,7 @@ for key, value in scholars_lab.items():
 ```
 This script should print out each of the employee keys and then the dictionaries those keys contain.
 
-If you need a refresher on for loops, conditionals, or functions, check out the [resources in the data flow folder](../data_flow/flow_resources.md)
+If you need a refresher on for loops, conditionals, or functions, check out the [resources in the data flow folder](data_flow_resources.md)
 
 
 ### TIME FOR WHITEBOARD EXERCISE
