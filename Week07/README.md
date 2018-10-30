@@ -51,7 +51,7 @@ This is functionally the same as our last example. The only difference is that t
 File output is very similar. We just use mode 'w', which overwrites the file specified. We can also use 'x' (which only works for new files) or 'a' (which appends data at the end of the file). Read the [`open` docs](https://docs.python.org/3/library/functions.html#open) for all the details.
 
 ```python
-f = open()
+f = open("text.txt","w")
 for i in range(0,100):
     f.write(str(i**2)+"\n")
 ```
