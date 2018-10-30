@@ -176,9 +176,10 @@ hazel.stimulate("thunder")
 hazel.stimulate("thunder")
 hazel.speak()
 hazel.stimulate("treats")
+hazel.stimulate("treats")
 hazel.speak()
 hazel.stimulate("naps")
-hazel.stimulate("racoons")
+hazel.stimulate("raccoons")
 hazel.speak()
 ```
 
