@@ -211,9 +211,16 @@ We can easily bring classes into other code using the `import` keyword, which do
 
 We can also use `import` to import our own classes. It gets complicated if we have to specify the path, so for now it's easier to open the Python interpreter inside the same directory to import.
 
-We can try it out by going into the examples directory, where we have defined the Dog class inside of the file Dog.py. `import Dog` finds the Dog.py file and then we can create a new Dog object as above using `hazel = Dog.Dog("Hazel","Beagle","Shane",["treats","naps","raccoons"],["thunder"])`.
+We can try it out by going into the examples directory, where we have defined the Dog class inside of the file Dog.py.
 
-Alternatively, we can use the `from` convention to import:
+```python
+import Dog
+hazel = Dog.Dog("Hazel","Beagle","Shane",["treats","naps","raccoons"],["thunder"])
+```
+
+`import Dog` finds the Dog.py file and then we can create a new Dog object as above.
+
+Alternatively, we can use the `from` convention to import the class Dog directly from the file Dog:
 
 ```python
 from Dog import Dog
