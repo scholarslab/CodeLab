@@ -202,9 +202,9 @@ print("smells" in hazel_clone.likes)
 
 The `is` operator returns True if the object is literally the same (that is, they have the same memory address) and false if they aren't. If we don't do anything special, printing an object will actually print its type and memory address.
 
-One important thing to understand is that we already use classes even when we're not defining them. The Class is the primary way that Python organizes its standard library and the wider ecosystem of external libraries. So when we do `file_input = open("text.txt","r")`, we get back a File Object that is defined in a class in the Python Standard Library. 
+One important thing to understand is that we already use classes even when we're not defining them. The class is the primary way that Python organizes its standard library and the wider ecosystem of external libraries. So when we do `file_input = open("text.txt","r")`, we get back a File Object that is defined as a class in the Python Standard Library. 
 
-We can see why the porperties of classes are so useful there: each File Object contains distinct data (the filename and the mode and all sorts of things under the hood) and methods that operate on that data.
+We can see why the properties of classes are so useful there: each File Object contains distinct data (the filename and the mode and all sorts of things under the hood) and methods that operate on that data.
 
 ## Imports are Important
 
@@ -229,4 +229,4 @@ hazel = Dog("Hazel","Beagle","Shane",["treats","naps","raccoons"],["thunder"])
 ```
 
 ## Homework
-[Assignments](homework.md)
+[Assignments for this week](homework.md)
