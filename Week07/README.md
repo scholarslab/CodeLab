@@ -32,7 +32,7 @@ One convenient way to read files is to combine the file object with a for loop t
 input_file = open("text.txt","r")
 for line in input_file:
     print(line.upper())
-input_file.close(
+input_file.close()
 ```
 This will loop through the file, line by line, until it's closed.
 
