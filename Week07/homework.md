@@ -22,9 +22,8 @@ centuries = ['long 19th century', 'even longer 18th century', 'Medieval Times', 
 
 2. Use your class to create three historical figures
 
-- use that class three times to create three historical figures
-- print out all three figures information when you run the script
+3. print out all three figures information when you run the script
 
-3. Write the historical figures information to a text file using the python `io` library.
+4. Write the historical figures information to a text file using the python `io` library.
 
 ![https://media.giphy.com/media/b55x0VFpFKm7S/giphy.gif](https://media.giphy.com/media/b55x0VFpFKm7S/giphy.gif)
