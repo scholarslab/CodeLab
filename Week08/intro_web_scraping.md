@@ -51,6 +51,9 @@ How would we get the text of the web page?
 
 How would we get the links of the web page? 
 
+![https://media.giphy.com/media/vmtxnxveVUodG/giphy.gif](https://media.giphy.com/media/vmtxnxveVUodG/giphy.gif)
+
+----
 
 *Reading urls instructions*
 If you don't want to download each web page, we can use a different library to read the urls of our webpages and store the html. This library is called `requests` and you can find [the documentation here](http://docs.python-requests.org/en/master/). 
