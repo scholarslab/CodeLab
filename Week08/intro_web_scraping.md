@@ -73,4 +73,4 @@ Then we can store the result and pass it to BeautifulSoup
 slab_blog = result.content
 soup = BeautifulSoup(slab_blog)
 ```
-![https://media.giphy.com/media/14rI7bze8GSShq/giphy.gif](https://media.giphy.com/media/14rI7bze8GSShq/giphy.gif)
+
