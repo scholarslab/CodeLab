@@ -4,7 +4,7 @@
 Today's Agenda:
 - Review homework. Any questions?
 
-- [Intro to Web scrapping](intro_web_scraping.md)
+- [Intro to Web scraping](intro_web_scraping.md)
 
 - [Intro to HTML](intro_html.md)
 
