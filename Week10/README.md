@@ -35,8 +35,13 @@ Don't worry so much about getting things perfect. Focus on trying to scope somet
 
 ![https://media.giphy.com/media/3tpinSPvGf8MU/giphy.gif](https://media.giphy.com/media/3tpinSPvGf8MU/giphy.gif)
 
-### Some Examples
+### Some Examples of Larger Projects
 - Check out [Cultural Analytics](http://culturalanalytics.org/) for examples of articles doing text analysis
 - Take a look at Benjamin Schmidt's recent analysis of humanities majors [https://www.historians.org/publications-and-directories/perspectives-on-history/december-2018/the-history-ba-since-the-great-recession-the-2018-aha-majors-report](https://www.historians.org/publications-and-directories/perspectives-on-history/december-2018/the-history-ba-since-the-great-recession-the-2018-aha-majors-report) and [https://www.theatlantic.com/ideas/archive/2018/08/the-humanities-face-a-crisisof-confidence/567565/](https://www.theatlantic.com/ideas/archive/2018/08/the-humanities-face-a-crisisof-confidence/567565/)
 - Take a look at Vicki Boykis' remix startup names project [http://hackurname.com/about/](http://hackurname.com/about/)
 - Check out [The Pudding](https://pudding.cool/) for examples of data analysis and visualization projects
+- American Panorama Project at University of Richmond [https://dsl.richmond.edu/panorama/](https://dsl.richmond.edu/panorama/)
+- Quantifying Kissinger by Micki Kaufman [http://blog.quantifyingkissinger.com/](http://blog.quantifyingkissinger.com/)
+- America's Public Bible by Lincoln Mullen [http://americaspublicbible.org/](http://americaspublicbible.org/)
+- Viral Texts of 19th Century Newspapers [https://viraltexts.org/](https://viraltexts.org/)
+- Geography of the Post [http://cameronblevins.org/gotp/](http://cameronblevins.org/gotp/)
