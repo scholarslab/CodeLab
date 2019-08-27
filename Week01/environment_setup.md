@@ -8,14 +8,14 @@
 Now you have sorta-Linux 
 
 **Mac**:
-* Install [Homebrew](https://docs.brew.sh/Installation)
+* Install [Homebrew](https://brew.sh/)
 
 * Install Xcode Command Line Tools, by typing:
 ```sh
 xcode-select --install
 ```
 
-## Shell
+## Shell (optional, but pretty)
 * Install [ZShell (zsh)](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
 * Install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 
