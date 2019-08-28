@@ -7,8 +7,12 @@
 - [Mac (Bash) Cheatsheet](cli_cheatsheet_mac.md)
 - [Windows (Powershell) Cheatsheet](cli_cheatsheet_windows.md)
 - [Exercises](cli_exercises.md)
+
 ---
+
 #### Homework for Week 2
 Complete Ian Milligan and James Baker, "Introduction to the Bash Command Line," The Programming Historian 3 (2014), [https://programminghistorian.org/en/lessons/intro-to-bash](https://programminghistorian.org/en/lessons/intro-to-bash)
 
 Read [section 1](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#the-man-in-the-taupe-blazer) and [section 2](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#lets-begin) from Paul Ford's *What is Code?*, Businessweek June 11 2015
+
+Set up an account at [Github](http://www.github.com) and post your username on the Slack praxis channel.
