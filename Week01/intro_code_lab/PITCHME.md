@@ -10,11 +10,11 @@ Note:
 # What is Code Lab ?
 
 ---?image=https://media.giphy.com/media/eCqFYAVjjDksg/giphy.gif
-
 ---
 ### What is Code Lab ?
-- Basic technical curriculum for digital humanists
-- Help you learn everything from how computer executes code to writing programs, and from building websites to basic data analysis |
+- A basic technical curriculum for digital humanists
+- Learn technical skills common in DH |
+- Learn to fly free |
 ---
 ### Why code?
 - Coding is only a part of what digital humanists do. Most DH practioners don't do any.
@@ -38,9 +38,10 @@ Note:
 ### What can we expect from you? 
 - Active participation in our meetings and study groups |
 - Completion of assignments to your best ability |
+- Pair/group programming |
 - Open mind and a willingness to go outside of your comfort zone |
 
 ---?image=https://media.giphy.com/media/SwImQhtiNA7io/giphy.gif
 ---
-### So who are we?
+### SLab Origin Stories
 ![https://media.giphy.com/media/ae670QCDqLpII/giphy.gif](https://media.giphy.com/media/ae670QCDqLpII/giphy.gif)
