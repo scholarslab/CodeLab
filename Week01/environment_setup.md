@@ -20,7 +20,7 @@ xcode-select --install
 
 ## Python
 * **Mac**: [Python 3](https://docs.python-guide.org/starting/install3/osx/), including Pip
-* **WSL**: Comes with Python3, but need to install pip: `sudo apt-get install -y python3-pip` and Debian development tools, openSSL, and Python extension headers: `sudo apt-get install build-essential libssl-dev libffi-dev python3-dev`
+* **Windows/WSL**: Comes with Python3, but need to install pip: `sudo apt-get install -y python3-pip` and Debian development tools, openSSL, and Python extension headers: `sudo apt-get install build-essential libssl-dev libffi-dev python3-dev`
 
 * Install Pipenv: `pip install --user pipenv`
 
