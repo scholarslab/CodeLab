@@ -30,9 +30,8 @@ Note:
 ---
 ### What can you expect?
 - Weekly meetings where we cover topics in coding and computing |
-- Weekly assignments and study groups to help reinforce concepts |
-- Collaborating on group projects to learn best practices |
-- HELP from us! |
+- Weekly assignments and readings |
+- Support from us |
 ---?image=https://media.giphy.com/media/91XPqhrgaJtp6/giphy.gif
 ---
 ### What can we expect from you? 
