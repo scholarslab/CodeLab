@@ -17,9 +17,15 @@ Note:
 - Help you learn everything from how computer executes code to writing programs, and from building websites to basic data analysis |
 ---
 ### Why code?
-- A lot of Digital Humanities doesn't involve coding
-- BUT coding is an important part of digital humanities projects and scholarship |
-- Coding can empower you! |
+- Coding is only a part of what digital humanists do. Most DH practioners don't do any.
+- BUT coding is a powerful tool for digital humanities projects and scholarship |
+- So coding can empower you! |
+---
+### Why code?
+- "Hack" vs "Yack" or: how is DH work done? |
+- "Collaboration" vs Collaboration
+- What is Yack (in a DH context) without Hack?
+- RZT: If you can't build it, you don't really understand it.
 ---?image=RZT.jpg
 ### What can you expect?
 - Weekly meetings where we cover topics in coding and computing |
