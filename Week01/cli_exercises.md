@@ -12,7 +12,7 @@
     ```sh
     touch ../../code_lab
     ```
-1. Put some simple content in the file using the `echo` command.
+1. Put some simple content in the file using the `echo` command and push (angle bracket).
     ```sh
     echo 'Digital Humanities is ...' > ../../code_lab
     ```
