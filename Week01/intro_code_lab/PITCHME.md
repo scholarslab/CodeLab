@@ -26,7 +26,8 @@ Note:
 - "Collaboration" vs Collaboration |
 - What is Yack (in a DH context) without Hack? |
 - RZT: If you can't build it, you don't really understand it. |
----?image=Week01/intro_code_lab/RZT.jpg
+---
+![Zoe](Week01/intro_code_lab/RZT.jpg)
 ---
 ### What can you expect?
 - Weekly meetings where we cover topics in coding and computing |
