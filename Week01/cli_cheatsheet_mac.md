@@ -21,6 +21,7 @@ Paths that begin with a forward slash (e.g. `/usr/bin`) are absolute paths, whic
 Special path symbols:
 
 | Symbol | Description |
+| ------------- | ------------- |
 | `.` | Current folder |
 | `..` | One directory level up |
 | `~` | home directory |
