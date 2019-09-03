@@ -26,6 +26,9 @@ print("Hello Cruel World!")
 If you're looking for help on the internet and ever see `print "foobar"` instead of `print("foobar")` (without the parenthesis), that's Python 2 code instead of Python 3!
 
 ## Variables
+
+!["Monty Python"](assets/overlords.jpg)
+
 ### String functions (concatenation)
 ```python
 madlibs="Scholars' Lab"
