@@ -54,18 +54,27 @@ a/b
 Integers are whole numbers. Floats (floating point numbers) are prepresentations of real numbers. Integers are simple and easy to use. Floats are mostly easy, but sometimes really weird!
 
 ### Weird Numbers
+
+What does this return?
+
 ```python
 0.1+0.2
 ```
+
+Huh, weird.
+
 !["There are 10 kinds of people in the world..."](assets/10kinds.jpeg)
+
+(No one really understands binary)
 
 All data in a computer is represented as binary (base 2) numbers, comprising only 1s and 0s. The text you're reading now is represented by individual characters that, under the hood, are stored as binary numbers. The method of translating these information between different forms and contexts (such as between binary numbers and text or numbers) is called encoding.
 
 Integers are easy enough to represent in binary: 0 is 0, 1 is 1, 2 is 10, 3 is 11, 4 is 100, and so on.
-Floats are trickier and require a special system to represent. Don't worry about it for now, but consider for a moment that it's impossible to represent exactly 1/3 in finite decimal notation (0.3333...). It's similarly impossible to represent simple decimal numbers in a binary notation. Which is why you get the weird results above.
+
+But floats are trickier and require a special system to represent. Don't worry about it for now, but consider for a moment that it's impossible to represent exactly 1/3 in finite decimal notation (0.3333...). It's similarly impossible to represent some simple decimal numbers in a binary notation. Which is why you get the weird results above.
 
 [Float to Binary Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
-[IEEE 754 Standard](https://en.wikipedia.org/wiki/IEEE_754-1985)
+[IEEE 754 Standard](https://en.wikipedia.org/wiki/IEEE_754-1985) if you really want to know more.
 
 ### Booleans
 ```python
@@ -82,15 +91,15 @@ True in Python is interchangeable with the number 1 and False with 0.
 ```python
 # Life is suffering...
 1+2+3
-# But grad students have it especially bad.
 ```
+
 Comments are especially useful--necessary!--for collaboration. Python is open source and its community of millions of coders often share in its permissive approach to intellectual property. Python as a whole is a giant collaborative project of which you are now members.
 
 When you write particularly complicated logic or whenever you write new classes or functions (more on this later!), you should write a comment to explain yourself.
 
 ### Documentation
 
-Python, as with virtually all other languages and complex codes, contains extensive documentation that covers all aspects of its use. This documentation is [easy accessible via the Internet](assets/MissionImpossible.m4v?raw=true).
+Python, as with virtually all other languages and complex codes, contains extensive documentation that covers all aspects of its use. This documentation is [easily accessible via the Internet](assets/MissionImpossible.m4v?raw=true).
 
 [Python 3 Documentation](https://docs.python.org/3/)
 
@@ -107,7 +116,7 @@ Type this into Python:
 import this
 ```
 
-Also, a DH answer: lots of DH projects are written in Python because of its simplicity and community and it's especially popular in areas like text analysis and machine learning.
+Also, a DH answer: lots of DH projects are written in Python because of its simplicity and robust community and it's especially popular in areas like text analysis and machine learning.
 
 ## Saving and running code
 The Python interactive interpreter is very useful for experimentation, but if you want to write something less ephemereal, you'll want to save it as a file so that it can be run over again without going through it line by line. The code is exactly the same, just save it as a text file to your disk with the usual Python file format extension, .py.
