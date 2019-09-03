@@ -10,8 +10,8 @@ How to test for types in python. Write `type`!
 >>> dictionary = { "color":"blue", "size":9090 }
 >>> type(dictionary)
 <class 'dict'>
->>> atuple = ( "blue", 9090 )
->>> type(atuple)
+>>> tuple = ( "blue", 9090 )
+>>> type(tuple)
 <class 'tuple'>
 >>> reindeer = ["dasher", "dancer", "prancer", "vixen", "olive"]
 >>> type(reindeer)
