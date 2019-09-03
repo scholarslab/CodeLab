@@ -19,7 +19,7 @@ Now you have mostly-Linux
 * **Mac**: [Python 3](https://docs.python-guide.org/starting/install3/osx/), including Pip
 * **Windows/WSL**: Comes with Python3, but need to install pip: `sudo apt-get install -y python3-pip` and Debian development tools, openSSL, and Python extension headers: `sudo apt-get install build-essential libssl-dev libffi-dev python3-dev`
 
-* Install Pipenv: `pip install --user pipenv`
+* Install Pipenv: `pip3 install --user pipenv` (sometimes it's just `pip install --user pipenv`)
 
 ## Text/Code Editor
 * Install [VS Code](https://code.visualstudio.com/)
