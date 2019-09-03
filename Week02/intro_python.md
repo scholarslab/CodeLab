@@ -121,7 +121,7 @@ print("I, for one, welcome our new "+madlibs+" overlords!")
 ## Sequences
 ### Lists
 
-![Bad Pun Hazel](assets/badpunhazel.jpeg)
+![Bad Pun Hazel](assets/sleeping_hazel.jpeg)
 
 ```python
 dogs = ["Toby","Bofur","Hazel","Maple","Henry","Fat Dog","Monty"]
