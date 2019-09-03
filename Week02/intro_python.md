@@ -74,7 +74,8 @@ Integers are easy enough to represent in binary: 0 is 0, 1 is 1, 2 is 10, 3 is 1
 But floats are trickier and require a special system to represent. Don't worry about it for now, but consider for a moment that it's impossible to represent exactly 1/3 in finite decimal notation (0.3333...). It's similarly impossible to represent some simple decimal numbers in a binary notation. Which is why you get the weird results above.
 
 [Float to Binary Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
-[IEEE 754 Standard](https://en.wikipedia.org/wiki/IEEE_754-1985) if you really want to know more.
+
+[IEEE 754 Standard](https://en.wikipedia.org/wiki/IEEE_754-1985) if you really want to learn more.
 
 ### Booleans
 ```python
