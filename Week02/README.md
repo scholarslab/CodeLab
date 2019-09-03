@@ -9,6 +9,12 @@
 4. Documentation
 5. Dogs
 
+## Resources
+[Python data types cheatsheet](types_cheatsheet.md)
+
+## Additional excercises
+[Optional excercises for handling lists and dictionaries](https://github.com/scholarslab/CodeLab/tree/master/Week02/ExtraExercises)
+
 ---
 ## Homework for Week 3
 
