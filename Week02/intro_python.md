@@ -137,7 +137,7 @@ print("I, for one, welcome our new "+madlibs+" overlords!")
 ![Bad Pun Hazel](assets/sleeping_hazel.jpeg)
 
 ```python
-dogs = ["Toby","Bofur","Hazel","Maple","Henry","Fat Dog","Monty"]
+dogs = ["Toby","Bofur","Hazel","Maple","Henry","Fat Dog","Monty", "Keefa"]
 print(dogs[0])
 print(dogs[-1])
 print(dogs[3:])
