@@ -9,10 +9,7 @@ Now you have mostly-Linux
 
 **Mac**:
 * Install [Homebrew](https://brew.sh/)
-* Install Xcode Command Line Tools, by typing:
-```sh
-xcode-select --install
-```
+* Install [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 
 ## Shell (optional, but pretty)
 * Install [ZShell (zsh)](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
