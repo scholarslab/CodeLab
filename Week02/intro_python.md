@@ -164,7 +164,7 @@ For more specialized tasks, it's also easy to use the work of third party develo
 Pair programming is a common practice. We want you to always do pair programming. Let's write some code to assign each of you a partner for this week's homework using what we've just learned!
 
 ```python
-praxis = ["catherine","cho","chris","emily", "eleanore","mathilda"]
+praxis = ["chloe","connor","janet","lauren","natasha"]
 # ???
 ```
 
