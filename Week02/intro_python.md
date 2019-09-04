@@ -117,6 +117,8 @@ Type this into Python:
 import this
 ```
 
+Here's [one interpretation of Z of P](https://inventwithpython.com/blog/2018/08/17/the-zen-of-python-explained/).
+
 Also, a DH answer: lots of DH projects are written in Python because of its simplicity and robust community and it's especially popular in areas like text analysis and machine learning.
 
 ## Saving and running code
