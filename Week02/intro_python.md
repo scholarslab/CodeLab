@@ -126,6 +126,23 @@ The Python interactive interpreter is very useful for experimentation, but if yo
 
 Now, you can run the resulting file using the command `python code.py` (or `python3 code.py`).
 
+There are some important differences in behavior between running code through the interactive interpreter and as a saved .py file. The way that we've been using the interpreter so far has relied on how it returning values that we reference.
+
+If we run these two lines in the interactive interpreter, we see that the second statement prints 2 because Python assumes that we want to know more about it:
+
+```
+>>> a = 1+1
+>>> a
+2
+```
+
+If we ran these lines from a .py file, nothing will print at all because the statement `a` on the second line doesn't actually tell Python to do anything. In a .py file, we have to explicitly tell Python to print using the print() function.
+
+```python
+a = 1+1
+a
+```
+
 ## Input
 Code that always does the same thing is a little boring. Let's spice up the earlier example a bit with user input.
 ```python
