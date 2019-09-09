@@ -1,12 +1,57 @@
 # Week 3
 ![I'm Invincible](assets/invincible.gif)
 
+---
 ## Lesson
-Lesson document:
-1. Discuss homework assignments
-2. Review data structures
-3. Conditionals and Loops
-4. Functions
+
+### Discuss homework assignments
+
+### Data Structures
+We've covered a few different types of Python's data structures. A data structure is a general term for a way for a computer to structure its data. Programming languages have their own specific kinds of built-in data structures and we'll eventually discuss using custom ones in external libraries and even building our own. For now, we've played around with a few of the ones in Python's standard set.
+
+The Python docs have a pretty good entry for [built-in types](https://docs.python.org/3/library/stdtypes.html).
+
+The most basic data structures contain just a straightforward value: the integer and float numerical data types we've already encountered contain just the single number they represent. More complex composite data types can comprise data across multiple values and different basic types and specific relationships between that data. In dictionary, for example, a single key maps to a single value.
+
+We can chain different data structures together, such as creating a list of lists to form something like a matrix.
+
+
+### Functions and methods
+
+We've also already used a few functions and methods. A function is a way to organize code by packaging many lines of code together into a single bundle, like how a math function ties together many different operations. At the most basic level, this makes it easy to reuse code: it's easier to write out and read a single line rather than many lines and easier to change code in one place rather than in many places.
+
+Functions that are provided by Python (built-in functions) or by an external library also help to abstract away their implementation details. We often don't care about how something works, only what it does. For example, the built-in function `pow(x,y)` returns the value of x to the y power.
+
+```
+>>> pow(2,4)
+8
+>>> pow(2,8)
+256
+```
+
+You might not know quite enough Python yet to code this yourself (although you will hopefully by the end of this lesson!), but it's easy enough to just type in `pow(2,8)`.
+
+If you're interested in how Python does it, you can take a look for yourself. Python is open source, which means that underlying code for Python itself is freely accessible. I wouldn't necessarily recommend it though, since the reference implementation for Python is written in a different programming language, C, for reasons that are probably too complicated to get into here.
+
+Python's [built-in function documentation](https://docs.python.org/3/library/functions.html) is also a good thing to have on hand.
+
+### Built-in Functions 
+
+### Methods
+
+### Defining Functions
+Arguments
+Return values
+
+### Putting it all together
+
+## Control flow
+### Conditionals
+#### Boolean logic
+### Loops
+#### for
+#### while
+#### Redirecting flow
 
 ---
 ## Homework for Week 4
