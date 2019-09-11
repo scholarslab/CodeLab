@@ -290,3 +290,7 @@ Nooope.
 #### Nested loops
 
 Wooooahh there.
+
+We'll kick the can down the road and cover these and other exciting topics next week.
+
+![Dead Line](./assets/deadline.gif)
