@@ -213,14 +213,76 @@ So, our `pig_latin()` function receives "Hazel" through the `word` argument and 
 
 
 ## Control flow
-We're not going to get this far. :(
+
+So far, the code that we've written has flowed forward, line by line. Even the function definition: the contents of the `def` block are read in order by the interpreter. This is boring, though. If computation is about choices, this sort of linear flow is boring code.
+
+The order of instructions through which a computer program runs is known as "control flow". We can affect the flow with conditionals and loops which allow us more interesting modes.
 
 ### Conditionals
-There's no way. Next week, I guess.
-#### Boolean logic
+
+A conditional is a way for a computer program to make a choice. The basic syntax of the conditional in many programming languages is the `if` statement. In Python, it looks like this:
+
+```python
+x = 5
+if x>0:
+  print("Positive")
+elif x<0:
+  print("Negative")
+else:
+  print("Zero")
+```
+
+We can see the three conditional keywords: `if`, `elif` (else if), and `else`. They're what they sound like. Each of the conditional blocks (the three `print()` statements) are only run if the associated conditional statement is `True` (in the boolean logic sense). We can have multiple `elif` blocks if we want. We can also omit `elif` and `else` blocks altogether.
+
+Note the colon after each conditional line.
+
+For numbers, we can use `>`, `>=`, `==`, `<`, and `<=` to make numeric comparisons. If we want to modify or chain together boolean statements, we can use `and`, `or`, and `not`:
+
+```python
+if not(x>0 and x<0):
+  print("ZERO")
+```
+
+For strings, we can use use `==` for comparison and some special operators like `in` to see if one string exists inside of another.
+
+```python
+if "I" in "TEAM":
+  s = "at least one"
+else:
+  s = "no"
+print("There is "+s+" I in TEAM")
+```
+
+If a variable is the special `None` object, an empty string (""), or the numeric value zero, it evaluates as boolean `False`. Otherwise, it is `True`.
+
+```python
+dog = ""
+if dog:
+  print("Yay!")
+else:
+  print("Nooo...")
+```
+
 ### Loops
-Gonna have to push the git stuff back.
+
 #### for loops
+
+We've had some experience now with sequences such as lists and strings. We can easily move through theses sequences using the `for` loop. Here's what that looks like:
+
+```python
+dogs = ["Hazel", "Maple", "Bofur", "Fat Dog"]
+for dog in dogs:
+  print(dog + " is a good dog")
+```
+
+A `for` loop moves through a list or string (or any iterable object, but we don't want to talk about that yet) and runs a code block for every part of that list or every character of the string. In this example, we don't have to use the variable name `dog` to match the list name `dogs`; we can use any variable name, but a name like `dog` helps us keep track of what's going on.
+
+The code block within the `for` loop acts basically like a function.
+
 #### while loops
+
+No time!
+
 #### Redirecting flow
 
+No time!
