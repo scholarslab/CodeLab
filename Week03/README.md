@@ -41,7 +41,9 @@ Modify your code in part 2a to detect whether the input contains more than one w
 
 ### Coding assignment 2c
 
-Modify your code from part 2b so that if the input contains multiple words, convert each individual word into Pig Latin and print them out. If you used the string `find()` method in part 2b, you might want to figure out another way to divide the input into words.
+Modify your code from part 2b so that if the input contains multiple words, convert each individual word into Pig Latin and print them out. They don't have to be on the same line.
+
+If you used the string `find()` method in part 2b, you might want to figure out another way to divide the input into words.
 
 
 ### Read:
