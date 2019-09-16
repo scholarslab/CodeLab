@@ -37,7 +37,7 @@ print(pig_latin(input("Enter input: ")))
 
 ### Coding assignment 2b
 
-Modify your code in part 2a to detect whether the input contains more than one word. If the input has one word, print the Pig Latin version. If the input has multiple words, only print the Pig Latin for the first word. The [Python documentation for strings](https://docs.python.org/3/library/string.html) will be very useful here!
+Modify your code in part 2a to detect whether the input contains more than one word. If the input has one word, print the Pig Latin version. If the input has multiple words, only print the Pig Latin for the first word. The [Python documentation for a particualr string method](https://docs.python.org/3/library/stdtypes.html#str.split) will be very useful here!
 
 ### Coding assignment 2c
 
