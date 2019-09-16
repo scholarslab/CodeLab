@@ -193,7 +193,7 @@ def pig_latin(word):
 
 ```python
 def repeat(word, number):
-  return (word+" ")*3
+  return (word+" ")*number
 ```
 
 ### Return values
