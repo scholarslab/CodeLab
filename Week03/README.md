@@ -21,7 +21,7 @@ Write a function, `filter_evens()` that takes in a list of integers as an argume
 ```python
 # Your function definition here
 
-nums = [0,-2,,3,14]
+nums = [0,-2,3,14]
 print(filter_evens(nums))
 ```
 
