@@ -14,7 +14,7 @@ Try pair programming with a different buddy this time. Or else try to pair progr
 
 ### Assignment 1: FizzBuzz
 
-We might have skipped over too much basic loop and conditional syntax so let's cover some of that ground again. Write a program that takes as input a number and then plays the [FizzBuzz game](https://en.wikipedia.org/wiki/Fizz_buzz) until that number is reached. This is a classic programming puzzle and, very helpfully, Wikipedia actually has a list of solutions, including one in Python. But if you use it, be prepared to explain how it works in front of the Fellowship in the next Codelab. It's not the simplest answer (and, in fact, it's Python 2 code), but it might be useful to reverse-engineer!
+This is a classic coding puzzle. Write a program that takes as input a number and then plays the [FizzBuzz game](https://en.wikipedia.org/wiki/Fizz_buzz) until that number is reached. This is a classic programming puzzle and, very helpfully, Wikipedia actually has a list of solutions, including one in Python. But if you use it, be prepared to explain how it works in front of the Fellowship in the next Codelab. It's not the simplest answer (and, in fact, it's Python 2 code), but it might be useful to reverse-engineer!
 
 Sample code:
 ```python
@@ -31,7 +31,7 @@ There's a number of built-in operators in Python that may be helpful for this ex
 
 ### Assignment 2: Git Practice
 
-I've created a git repository on the Scholars' Lab account that has a single markdown text file at [https://github.com/scholarslab/gitpractice](https://github.com/scholarslab/gitpractice). Hopefully, you should have access to this repository by the end of this session. Clone this file to your computer, answer the three original seed questions, then add a new question of your own for your fellows to answer. Check back later in the week for new questions and answer them so that, hopefully, by the time we meet again, we'll have a fully-filled-out and, let's say, quixotically personal questionaire for the entire cohort.
+I've created a git repository on the Scholars' Lab account that has a markdown text file for your Praxis cohort at [https://github.com/scholarslab/gitpractice](https://github.com/scholarslab/gitpractice). Hopefully, you should have access to this repository by now. Clone this file to your computer, answer the two original seed questions, then add a new question of your own for your fellows to answer. Check back later in the week for new questions and answer them so that, hopefully, by the time we meet again, we'll have a fully-filled-out and, let's say, quixotically personal questionaire for the entire cohort.
 
 
 ### Assignment 3: Put it together
