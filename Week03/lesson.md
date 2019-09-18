@@ -92,6 +92,8 @@ Functions that are provided by Python (built-in functions) or by an external lib
 256
 ```
 
+When we tell Python to run a function like this, we call that a "function call.z"
+
 You might not know quite enough Python yet to code this yourself (although you will hopefully by the end of this lesson!), but it's easy enough to just type in `pow(2,8)`.
 
 If you're interested in how Python does it, you can take a look for yourself. Python is open source, which means that underlying code for Python itself is freely accessible. I wouldn't necessarily recommend it though, since the reference implementation for Python is written in a different programming language, C, for reasons that are probably too complicated to get into here.
@@ -193,7 +195,7 @@ def pig_latin(word):
 
 ```python
 def repeat(word, number):
-  return (word+" ")*3
+  return (word+" ")*number
 ```
 
 ### Return values
@@ -209,7 +211,7 @@ print(pig_latin("Hazel"))
 
 In the same way that we pass an argument into a function, return passes data back from the element to the function call.
 
-So, our `pig_latin()` function receives "Hazel" through the `word` argument and returns the result "azelHay". That result is passed back to `print()` in the function call.
+So, our `pig_latin()` function receives "Hazel" through the `word` argument and returns the result "azelhay". That result is passed back to `print()` in the function call.
 
 
 ## Control flow
@@ -262,35 +264,5 @@ if dog:
 else:
   print("Nooo...")
 ```
-
-### Loops
-
-#### for loops
-
-We've had some experience now with sequences such as lists and strings. We can easily move through theses sequences using the `for` loop. Here's what that looks like:
-
-```python
-dogs = ["Hazel", "Maple", "Bofur", "Fat Dog"]
-for dog in dogs:
-  print(dog + " is a good dog")
-```
-
-A `for` loop moves through a list or string (or any iterable object, but we don't want to talk about that yet) and runs a code block for every part of that list or every character of the string. In this example, we don't have to use the variable name `dog` to match the list name `dogs`; we can use any variable name, but a name like `dog` helps us keep track of what's going on.
-
-The code block within the `for` loop acts basically like a function.
-
-#### while loops
-
-No time!
-
-#### Redirecting flow
-
-Nooope.
-
-#### Nested loops
-
-Wooooahh there.
-
-We'll kick the can down the road and cover these and other exciting topics next week.
 
 ![Dead Line](./assets/deadline.gif)
