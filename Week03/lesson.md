@@ -265,34 +265,4 @@ else:
   print("Nooo...")
 ```
 
-### Loops
-
-#### for loops
-
-We've had some experience now with sequences such as lists and strings. We can easily move through theses sequences using the `for` loop. For loops are useful when we want to do some kind of logic for every element in a sequence, like telling every dog in a list of dogs that they're good. Here's what that code looks like:
-
-```python
-dogs = ["Hazel", "Maple", "Bofur", "Fat Dog"]
-for dog in dogs:
-  print(dog + " is a good dog")
-```
-
-A `for` loop moves through a list or string (or any iterable object, but we don't want to talk about that yet) and runs a code block for every part of that list or every character of the string. In this example, we don't have to use the variable name `dog` to match the list name `dogs`; we can use any variable name, but a name like `dog` helps us keep track of what's going on.
-
-The code block within the `for` loop is run every cycle and each cycle the `dog` is different.
-
-#### while loops
-
-No time!
-
-#### Redirecting flow
-
-Nooope.
-
-#### Nested loops
-
-Wooooahh there.
-
-We'll kick the can down the road and cover these and other exciting topics next week.
-
 ![Dead Line](./assets/deadline.gif)
