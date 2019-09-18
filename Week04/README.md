@@ -3,7 +3,7 @@
 
 ## Outline
 1. Discuss homework assignments
-2. [Review conditionals and loops](../Week03/lesson.md#loops)
+2. [Loops](lesson.md)
 3. Full steam ahead: [Git for Humanists](https://shane-et-al.github.io/git_slab/)
 
 ---
