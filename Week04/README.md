@@ -25,6 +25,15 @@ i = int(input("Enter a number: "))
 # (all on one line or on multiple lines are both fine)
 ```
 
+Sample output:
+```
+Enter a number: 4
+1
+2
+Fizz
+4
+```
+
 Hint:
 There's a number of built-in operators in Python that may be helpful for this excercise which are [covered in the documentation](https://docs.python.org/3/reference/expressions.html). You'll probably want to use a loop of some kind, so I would suggest reviewing the Python [Control Flow documentation](https://docs.python.org/3/tutorial/controlflow.html).
 
