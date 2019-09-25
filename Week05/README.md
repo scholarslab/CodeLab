@@ -33,3 +33,7 @@ Write a program to read in this file and count the total lines of dialog and the
 *Bonus points*
 
 Do the same analysis, but for every character that has dialog.
+
+### Reading Assignment
+
+Read about dictionaries in this markdown file on [data structures](https://github.com/scholarslab/CodeLab/blob/master/Week06/data_structures.md).
