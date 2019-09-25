@@ -21,7 +21,7 @@ def sort_numbers(numbers):
     # your code here
     return sorted_list
 
-numbers = [1,2,3,4,5]
+numbers = [6,3,7,8,1,3]
 print(sort_numbers(numbers))
 ```
 ### Assignment 2
@@ -30,7 +30,7 @@ print(sort_numbers(numbers))
 
 Write a program to read in this file and count the total lines of dialog and the length (character count) of those lines for the two main characters: Benedick and Beatrice. Write that data out to a second file.
 
-*Bonus points*
+*100x Codelab Bonus Points*
 
 Do the same analysis, but for every character that has dialog.
 
