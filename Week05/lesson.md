@@ -94,7 +94,7 @@ Let's talk it over and then I can assign it as homework.
 
 Here's a photo of Hazel as a Romantic Hero while we do this.
 
-![Hazel Romantic Hero](./assets/hazel_romantic_hero.JPG)
+![Hazel Romantic Hero](./assets/hazel_romantic_hero.jpg)
 
 Good, good. So, for variety, let's look at another way to sort. To introduce it, let's turn to Presidential candidate Barrack Obama, being interviewed at Google Headquarters in late 2007.
 
