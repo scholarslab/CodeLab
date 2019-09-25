@@ -167,3 +167,5 @@ outfile.close()
 The `\n` at the end of that string indicates a new line.
 
 See? Easy!
+
+![Maple Snooze](./assets/maple_snooze.JPG)
