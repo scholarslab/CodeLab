@@ -8,6 +8,8 @@ You guys are all doing great!
 2. Loops (ctd) + Algorithms
 3. File input/output
 
+[Lesson document](./lesson.md)
+
 ## Homework
 
 ### Assignment 1:
