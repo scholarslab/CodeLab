@@ -93,19 +93,6 @@ If the input word is "Goose", we hit the `break` and Python breaks out of the en
 
 `continue` and `break` can be used in any `for` or `while` loop. But be careful about overusing them, because they can make code hard to read.
 
-#### Nested loops
-
-Okay, let's get serious for a second here.
-
-![nesting](assets/nesting.gif)
-
-If we want to really master loops, we have to learn how to nest them. Nesting means that we can have one loop inside of another. One reason we might want to do this is if we need to compare different elements in a list with each other.
-
-How might we write a function to check whether a list contains duplicate numbers? With a single layer of looping, it's not so easy. But with two, it's simple. Well. Simple once you get the hang of it.
-
-But let's leave that for next week.
-
-
 ### Version Control
 
 [Git for Humanists](https://shane-et-al.github.io/git_slab/)
