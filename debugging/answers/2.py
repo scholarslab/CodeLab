@@ -1,9 +1,19 @@
-# Produce a simple program to accept a single word as text input and then print out the pig latin translation.
+# fizzbuzzattemptsLV
+# Example output: "1 2 fizz 4 buzz fizz 7"
+# fizz for numbers divisible by three
+# buzz for numbers divisible by five
 
-# Request word & store as variable "bacon"
-bacon=input("Gimme a word to translate to pig latin. Please: ")
 
-# For "bacon", remove character at position[0], suffix with that character, suffix with "ay"
-# Could do more lines to remove, assign, suffix, suffix but let's see if we can do this more concisely
-# It's called string slicing!
-print(bacon[1:]+bacon[0]+"ay")
+stored_num = int(input("Enter a number: "))
+counter = 0
+while counter < stored_num:
+    counter += 1
+    if counter == 0:
+        continue
+    if counter % 3 == 0:
+        print("fizz")
+        continue
+    if counter % 5 == 0:
+        print("buzz")
+        continue
+    print(counter)

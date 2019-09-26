@@ -2,24 +2,24 @@
 
 def piglatin(word):
     if " " in word:
-        x = word.split(" ")[0]
-        x2 = word.split(" ")[1:]
-        x = x[1:]+x[0].lower()+"ay"
-        x = x + " " + " ".join(x2)
+        first_word = word.split(" ")[0]
+        other_words = word.split(" ")[1:]
+        first_word = first_word[1:] + first_word[0].lower()+"ay"
+        first_word = first_word + " " + " ".join(other_words)
     elif ", " in word:
-        x=word.split(", ")[0]
-        x2 = word.split(", ")[1:]
-        x = x[1:] + x[0].lower() + "ay"
-        x = x + ", " + " ".join(x2)
+        first_word = word.split(", ")[0]
+        other_words = word.split(", ")[1:]
+        first_word = first_word[1:] + first_word[0].lower() + "ay"
+        first_word = first_word + ", " + " ".join(other_words)
     elif "-" in word:
-        x=word.split("-")[0]
-        x2 = word.split("-")[1:]
-        x = x[1:] + x[0].lower() + "ay"
-        x = x + " " + "-".join(x2)
+        first_word = word.split("-")[0]
+        other_words = word.split("-")[1:]
+        first_word = first_word[1:] + first_word[0].lower() + "ay"
+        first_word = first_word + " " + "-".join(other_words)
     else:     
-        x = word
-        x = x[1:] + x[0].lower() + "ay"
+        first_word = word
+        first_word = first_word[1:] + first_word[0].lower() + "ay"
     
-    return x
+    return first_word
 
 print (piglatin(input("Enter input: Translate ")))
