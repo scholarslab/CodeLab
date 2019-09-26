@@ -37,3 +37,5 @@ Do the same analysis, but for every character that has dialog.
 ### Reading Assignment
 
 Read about dictionaries in this markdown file on [data structures](https://github.com/scholarslab/CodeLab/blob/master/Week06/data_structures.md).
+
+Read the beginning piece [here](https://humanitiesprogramming.github.io/exercises/python-debugging/) on "common code errors and how to find them."
