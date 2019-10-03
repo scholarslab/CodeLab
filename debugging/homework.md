@@ -1,4 +1,4 @@
-#Assignment 1:
+# Assignment 1:
 
 I think Brandon said that he was going to cover dictionaries... right? Dictionaries are really useful, so let's do a bit of practice with them.
 
@@ -6,7 +6,7 @@ If Brandon didn't talk about them, you can read the [Python docs about them](htt
 
 Let's break this up assignment into smaller steps.
 
-## Assignment 1A
+### Assignment 1A
 For the first part, make a dictionary that maps the name of Praxis fellows in a cohort (that's you all) to their departments. So, if it were my cohort, it would be something like:
 
 ```python
@@ -16,7 +16,7 @@ print(praxis2012["Shane"]) # should print "History"
 print(praxis2012["Brandon"]) # "English"
 ```
 
-## Assignment 1B
+### Assignment 1B
 Now that we have that dictionary, let's programatically print out the list of all the fellows and their majors.
 
 Here's a hint. We've been looping through all the items in a `list` like this:
@@ -29,7 +29,7 @@ for dog in dogs:
 
 This just loops through each of the dogs and prints their name. What happens if we try this same looping code with a dictionary instead of a list?
 
-## Assignment 1C
+### Assignment 1C
 
 Good, good. Dictionaries are designed to be used to look up a value given a key. They're not really supposed to be used to go the other way. But sometimes we can't anticipate what we need our data to do. Let's flip it around.
 
@@ -46,7 +46,7 @@ praxis2012 = {"Brandon":"English", "Shane":"History", "Cecilia":"History", "Gwen
 fellows_in_department(praxis2012,"History") #should print "Shane" and then "Cecilia"
 ```
 
-## Assignment 1D
+### Assignment 1D
 
 Okay, last part! Let's put everything together now. Write a function that takes in a dictionary and then reverses it.
 
