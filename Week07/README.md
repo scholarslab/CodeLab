@@ -64,6 +64,8 @@ maple = Dog("Maple","Hound","Amanda",["treats","zooms","ducks"],["thunder"])
 print(dog_compatibility(hazel,maple)) #Should be 2, because they both like treats and dislike thunder
 ```
 
+We can use nested loops to make these comparisons, but we can also just use a single loop and the python keyword `in` (e.g. `if element in list:`).
+
 #### Assignment Part Bonus:
 
 This part is a bonus assignment (yay?), but it isn't anything strictly new. Let's make things *really* interesting. Let's write a function that takes two DogOwners and returns the most and least compatible Dogs.
