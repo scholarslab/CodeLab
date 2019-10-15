@@ -176,25 +176,3 @@ One important thing to understand is that we use classes even when we're not def
 ```
 
 We can see why the properties of classes are so useful there: each File Object contains distinct data (the filename and the mode and all sorts of things under the hood) and methods that operate on that data.
-
-# Imports are Important
-
-We can easily bring classes into other code using the `import` keyword, which does some voodoo to allow us to use classes defined in other files. This is how we can use parts of the Python Standard Library that aren't directly built into the base language ([Random](https://docs.python.org/3/library/random.html) is an example that we've encountered before). It's also how we use modules written by other programmers from the larger Python community. More on that next week!
-
-We can also use `import` to import our own classes. It gets complicated if we have to specify the path, so for now it's easier to open the Python interpreter inside the same directory to import.
-
-We can try it out by going into the examples directory, where we have defined the Dog class inside of the file Dog.py.
-
-```python
-import Dog
-hazel = Dog.Dog("Hazel","Beagle","Shane",["treats","naps","raccoons"],["thunder"])
-```
-
-`import Dog` finds the Dog.py file and then we can create a new Dog object as above.
-
-Alternatively, we can use the `from` convention to import the class Dog directly from the file Dog:
-
-```python
-from Dog import Dog
-hazel = Dog("Hazel","Beagle","Shane",["treats","naps","raccoons"],["thunder"])
-```
