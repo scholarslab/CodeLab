@@ -100,7 +100,7 @@ class Dog:
     def speak(self):
         print("Bork bork! I'm",self.name,"! I like",self.likes[0], "and dislike ",self.dislikes[0],"!")
 
-hazel = Dog("Hazel","Beagle","Shane",["treats","naps","raccoons"],["thunder"])
+hazel = Dog("Hazel","Shane","beagle",["treats","naps","raccoons"],["thunder"])
 hazel.speak()
 
 ```
@@ -136,7 +136,7 @@ class Dog:
         elif stimulus in self.dislikes and self.mood>0:
             self.mood -= 1
 
-hazel = Dog("Hazel","Beagle","Shane",["treats","naps","raccoons"],["thunder"])
+hazel = Dog("Hazel","Shane","beagle",["treats","naps","raccoons"],["thunder"])
 hazel.stimulate("thunder")
 hazel.stimulate("thunder")
 hazel.speak()
@@ -153,7 +153,7 @@ When we call the constructor (`hazel = Dog("Hazel","Beagle","Shane",["treats","n
 For example:
 
 ```python
-hazel = Dog("Hazel","Beagle","Shane",["treats","naps","raccoons"],["thunder"])
+hazel = Dog("Hazel","Shane","beagle",["treats","naps","raccoons"],["thunder"])
 hazel_clone = Dog("Hazel","Beagle","Shane",["treats","naps","raccoons"],["thunder"])
 
 print(hazel is hazel_clone)
