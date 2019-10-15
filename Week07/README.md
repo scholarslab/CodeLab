@@ -49,6 +49,8 @@ print(hazel.owner) #Should be 'Shane'
 
 Now, let's make things interesting. Write a function to rate the compatibility of dogs based on their likes and dislikes. For every shared like and dislike, add one point to the compatibility score. For every like that appears in another dog's dislike list, subtract one point.
 
+We can use nested loops to make these comparisons, but we can also just use a single loop and the python keyword `in` (e.g. `if element in list:`).
+
 ```python
 class Dog:
   #copy from lesson doc
@@ -63,8 +65,6 @@ maple = Dog("Maple","Hound","Amanda",["treats","zooms","ducks"],["thunder"])
 
 print(dog_compatibility(hazel,maple)) #Should be 2, because they both like treats and dislike thunder
 ```
-
-We can use nested loops to make these comparisons, but we can also just use a single loop and the python keyword `in` (e.g. `if element in list:`).
 
 #### Assignment Part Bonus:
 
