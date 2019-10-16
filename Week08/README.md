@@ -3,8 +3,8 @@
 
 ### Agenda
 - Review homework.
-- Imports, modules, 
+- [Imports and modules](lesson.md) 
 - pip, pipenv
 
 ### Assignment
-
+TBD
