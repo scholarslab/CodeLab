@@ -23,7 +23,7 @@ def permutations(fellows):
         for fellow2 in fellows:
             if fellow1==fellow2:
                 continue
-            permutations.append((fellow1,fellow2))
+            perms.append((fellow1,fellow2))
     return perms
 
 fellows = ["Chloe","Connor","Janet","Lauren","Natasha"]
@@ -39,8 +39,8 @@ def permutations(fellows):
         for fellow2 in fellows:
             if fellow1==fellow2:
                 continue
-            p = (fellow1,fellow2)
             for fellow3 in fellows:
+                p = (fellow1,fellow2)
                 if fellow3 not in p:
                     p = p+(fellow3,)
                     perms.append(p)
