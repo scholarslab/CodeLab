@@ -63,7 +63,7 @@ What if we could let some hardworking Python developers do the hard work for us?
 ```python
 from itertools import permutations
 praxis = ["Chloe","Connor","Janet","Lauren","Natasha"]
-print(permutations(praxis,3))
+print(list(permutations(praxis,3)))
 ```
 
 Easy!
