@@ -76,7 +76,7 @@ Let's take a look at another example.
 
 How do we write a function to return a random number? Beats the hell out of me. This is... actually a really hard problem that has important ramifications for, among a lot of tother things, security if not done right. The Python random function is actually probably not good enough for high-level infosec uses, but it's good enough for most things we're liable to do.
 
-![python seucrity warning](assets/security_warning.png)
+![python security warning](assets/security.png)
 
 By nature, randomness is complicated and random number generators are too. There's a lot of stuff in the [Python random module](https://docs.python.org/3/library/random.html), but there's also a few easy functions for us to easily get what we want if we don't care about the nuts and bolts.
 
