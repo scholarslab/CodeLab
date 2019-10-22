@@ -47,5 +47,5 @@ python dog_names.py  0.04s user 0.01s system 74% cpu 0.075 total
 
 Most of this time is spent loading Python and the script and printing the output to the screen. So if I generate 600 names instead of 6, it still only takes a little bit longer (0.104 seconds).
 
-Let's see how fast the good and bad sorts are by using `time` from the command line to run each script. Make sure that your scripts run correctly for a small list (5) before trying it for larger ones. Now, try the scripts with lists of 9, 10, and 11 numbers. The random sort can... take a while to do this. How much longer  will vary depending on sheer luck, because we're depending on random chance, after all. The times for the good sort will vary much less, because the people who wrote Python are pretty smart.
+Let's see how fast the good and bad sorts are by using `time` from the command line to run each script. Make sure that your scripts run correctly for a small list (say, with 3 or 4 numbers) before trying it for larger ones. Now, try the scripts with lists of 9, 10, and 11 numbers. The random sort can... take a while to do this. How much longer  will vary depending on sheer luck, because we're depending on random chance, after all. The times for the good sort will vary much less, because the people who wrote Python are pretty smart.
 
