@@ -37,7 +37,7 @@ def good_sort(nums):
   return sorted_nums
 ```
 
-Now, save both sorts as different .py files and run both sorts through the command line tool `time`. Instead of running something like `python3 random_sort.py`, you can run `time python3 random_sort.py` and it'll tell you how long it took to run. For example, running it took me 0.075 total seconds to start up Python, load the dog name script I wrote, and then perform the dog name generation.
+Now, save both sorts as different .py files and run both sorts through the command line tool `time`. Instead of running something like `python3 random_sort.py`, you can run `time python3 random_sort.py` and it'll tell you how long it took to run. For example, running our dog names script took me 0.075 total seconds to start up Python, load the script, and then perform the dog name generation.
 
 ```
 ~/projects/sandbox > time python dog_names.py
@@ -45,7 +45,7 @@ Now, save both sorts as different .py files and run both sorts through the comma
 python dog_names.py  0.04s user 0.01s system 74% cpu 0.075 total
 ```
 
-Most of this time is spent loading Python and the script and printing the output to the screen. If I generate 600 names instead of 6, it still only takes 0.104 seconds in total.
+Most of this time is spent loading Python and the script and printing the output to the screen. So if I generate 600 names instead of 6, it still only takes a little bit longer (0.104 seconds).
 
-Let's see how fast the good and bad sorts are by using `time` from the command line to run each script. Make sure that your scripts run correctly for a small list (5) before trying it for larger ones. The bad sort can... take a while. Now, try the scripts with lists of 9, 10, and 11 numbers. The times for the bad sort will vary depending on sheer luck, because we're depending on random chance. The times for the good sort will vary much less, because it's just up to the vagaries of your computer and whatever else is running on it.
+Let's see how fast the good and bad sorts are by using `time` from the command line to run each script. Make sure that your scripts run correctly for a small list (5) before trying it for larger ones. Now, try the scripts with lists of 9, 10, and 11 numbers. The random sort can... take a while to do this. How much longer  will vary depending on sheer luck, because we're depending on random chance, after all. The times for the good sort will vary much less, because the people who wrote Python are pretty smart.
 
