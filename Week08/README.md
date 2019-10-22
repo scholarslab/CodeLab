@@ -10,9 +10,9 @@
 
 #### Part 0.A:
 
-Once upon a time, we talked about different ways to sort a list of numbers. There were good ways and bad ways. And some really, really bad ways. One really, really bad way is to just kind of throw all the numbers up in the air, figure out whether or not the resulting scramble was sorted, and then just redo it if it isn't. Now that you guys are all random number masters, let's try to implement that sorting algorithm outselves.
+Once upon a time, we talked about different ways to sort a list of numbers. There were good ways and bad ways. And some really, really bad ways. One really, really bad way is to just kind of throw all the numbers up in the air, figure out whether or not the resulting scramble is sorted, and then just redo it if it isn't. Now that you guys are all random number masters, let's try to implement that sorting algorithm outselves.
 
-Write a function to receive a list of integers and sort them using Python's random module. `import` statements can technically go anywhere, but it's usually a good practice to keep them at the top of the file, so you have access to it anywhere in your code.
+Write a function to receive a list of integers and sort them in this inefficient way using Python's random module. `import` statements can technically go anywhere, but it's usually a good practice to keep them at the top of the file, so you have access to it anywhere in your code.
 
 Remember that since we're mixing up the list *randomly*, it can potentially run an infinite number of times. We should construct our loops accordingly and use statements like `continue` and `break` wisely.
 
