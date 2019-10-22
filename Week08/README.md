@@ -62,4 +62,4 @@ Here's how `n!` diverges from `n log n` for even small values of `n`:
 
 The blue line is the bogosort's `n!` performance, the red is Python's `n log n` performance. They both start out small, but the blue line quickly splits off from the red and just zooms up into the stratosphere. This is why we can easily sort large (length 10000+) lists using Python's built-in sort, but bogosort just completely chokes for those much longer than a dozen or so elements.
 
-Congratulations on still reading this. You basically have a named chair in computer science at this point.
+Congratulations on still reading this. You basically have a named chair in computer science at this point. All of this is to say that while digital humanists don't often have to worry too much about things like efficiency, it is still entirely possible even for beginning programmers to write code that will only complete after the life cycle of the sun. And to suggest that if there's already a module that does a thing, especially if that module is part of Python's standard library, it's usually a good idea to use that one instead of rolling your own.
