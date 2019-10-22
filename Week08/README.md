@@ -20,7 +20,6 @@ Remember that since we're mixing up the list *randomly*, it can potentially run 
 #import statement goes here
 def random_sort(nums):
   #your code here
-  return sorted_nums
 
 random_sort([7,4,2,7,8,1])
 ```
