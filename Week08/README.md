@@ -52,7 +52,7 @@ Let's see how fast the good and bad sorts are by using `time` from the command l
 
 If we want to be real big (and, for DHers, really unnecessarily big) nerds, we can see that every additional number in a list that we try to sort using a bogosort increases the average number of random shuffles by a multiple of that length. So, the average number of shuffles for a list of `n` length is the factorial of `n`: `n!`. As the length of the list increased from 9 to 10, we had to do, on average, 10 times more sorts. This is a curve that goes up *real* quick.
 
-A computer scientist would say that this algorithm has an average *time complexity* of `O(n!)`, a best-case of O(n) (because if might already be sorted and we can verify it by reading through the list once), and a worst-case of the never, because if we're *really* unlucky, we'll just never shuffle into the right order. To compare, the built-in Python sort, which uses the [timsort](https://en.wikipedia.org/wiki/Timsort) algorithm, has an average time complexity of `O(n log n)`, which is about as good as it gets for a generalized sorting algorithm.
+A computer scientist would say that this algorithm has an average *time complexity* of `O(n!)`, a best-case of O(n) (because if might already be sorted and we can verify it by reading through the list once), and a worst-case of never, because if we're *really* unlucky, we'll just never shuffle into the right order. To compare, the built-in Python sort, which uses the [timsort](https://en.wikipedia.org/wiki/Timsort) algorithm, has an average time complexity of `O(n log n)`, which is as good as it gets for a generalized sorting algorithm.
 
 Here's how `n!` diverges from `n log n` for even small values of `n`:
 
