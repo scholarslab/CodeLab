@@ -1,4 +1,4 @@
-# Week 8
+# Week 09
 ![Tacoma Narrows GIF](assets/structure.gif)
 
 ## Agenda
