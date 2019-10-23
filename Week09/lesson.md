@@ -113,7 +113,11 @@ with open('dogs.csv', "w") as outfile:
 
 If you want, you can import that into your preferred spreadsheet application to to see what comes out.
 
-But this still leaves us with the problem of how to handle tricky data. Since CSV is so widely used, there is actually a [built-in Python module](https://docs.python.org/3/library/csv.html) to handle it. Let's try it out.
+But this still leaves us with the problem of how to handle tricky data. Since CSV is so widely used, there is actually a [built-in Python module](https://docs.python.org/3/library/csv.html) to handle it. 
+
+We just create a file object with `open()` like before, but we pass that file object into a special CSV writer.
+
+Let's try it out.
 
 ```python
 import csv
@@ -130,4 +134,120 @@ with open('dogs.csv', 'w', newline='') as csvfile:
         dogwriter.writerow(dog)
 ```
 
+Which produces the output csv file...
+
+```csv
+name,owner,breed
+Hazel,Shane,Beagle
+Maple,Amanda,Hound
+Bofur,Ronda,Corgi
+```
+
 Easy!
+
+Actually, this is still a little too much work. We have to manually define headers and make sure that everything is in the right order. What if we didn't even have to do that?
+
+If start with a dictionary instead of a list, we have a way to associate values with keys rather than just depending on their indices. We can use the `DictWriter` class inside of the csv module to automatically take care of things for us.
+
+```python
+import csv
+
+hazel = {"name":"Hazel","owner":"Shane","breed":"Beagle-ish"}
+maple = {"name": "Maple", "owner":"Amanda", "breed": "Hound"}
+bofur = {"name": "Bofur", "owner":"Ronda", "breed": "Corgi"}
+
+with open('dogs.csv', 'w', newline='') as csvfile:
+    fieldnames = hazel.keys()
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerow(hazel)
+    writer.writerow(maple)
+    writer.writerow(bofur)
+```
+
+This produces the same kind of CSV file.
+
+We can even go one more step and write a function (or a method) to automatically pack and unpack our Dog class into a CSV format. Maybe that will be this week's homework.
+
+To read CSV files, we can use analogous Reader and DictReader objects in the csv module:
+
+```python
+import csv
+
+with open('dogs.csv', newline='') as csvfile:
+    dogreader = csv.DictReader(csvfile)
+    for dog in dogreader:
+        print(dog["name"],"and",dog["owner"])
+```
+
+### JSON
+
+CSV is good for tabular data, but not great to encapsulate data with more complex relationships. Remember that our Dogs had lists of like and dislikes, for example. CSVs don't really support variable-length lists of things inside of rows. We can store our own format to store lists within a single CSV element, but that just puts us back at step one. And, I cannot emphasize this enough, storing different arbitrary text data formats inside of each other is a *real bad idea*. Don't do it. Just don't do it.
+
+One popular way to do this is JSON. Sometimes it's pronounced "Jay Song", but it's really "Jason". Like the Argonaut or the deli. JSON stands for "Javascript Object Notation" and was originally designed to allow websites to pass data back and forth between the browser and the server. But it's become a really popular generic format for all sorts of things and all sorts of languages.
+
+For example, a lot of GIS data is available as GeoJSON, a JSON format with geographic-specific fields.
+
+We don't have to go too much into the particular details of how JSON is structured. It's enough to kind of look at what it looks like. Here's an example:
+
+```json
+[
+  {
+    "name": "Hazel",
+    "owner": "Shane",
+    "breed": "Beagle-ish",
+    "likes": [
+      "snoozing",
+      "racoons",
+      "Shane"
+    ]
+  },
+  {
+    "name": "Maple",
+    "owner": "Amanda",
+    "breed": "Hound",
+    "likes": [
+      "zooms",
+      "looking"
+    ]
+  },
+  {
+    "name": "Bofur",
+    "owner": "Ronda",
+    "breed": "Corgi",
+    "likes": [
+      "ladies"
+    ]
+  }
+]
+```
+
+Happily, there is an easy to use [JSON module for Python](https://docs.python.org/3/library/json.html).
+
+One of the most useful mechanisms it provides is the ability to "dump" and "load" arbitrary built-in Python data structures into and out of JSON. It makes it super easy to throw a complex python object into a file and get it back out again.
+
+There are `dump` and `load` methods, which write and read directly to files, but also `dumps` and `loads` methods which write and read to a string object. I like using the latter because it makes it easier to check them during debugging.
+
+```python
+import json
+
+hazel = {"name": "Hazel", "owner": "Shane", "breed": "Beagle-ish",
+         "likes": ["snoozing", "racoons", "Shane"]}
+maple = {"name": "Maple", "owner":"Amanda", "breed": "Hound","likes":["zooms","looking"]}
+bofur = {"name": "Bofur", "owner":"Ronda", "breed": "Corgi","likes":["ladies"]}
+dogs = [hazel,maple,bofur]
+
+with open('dogs.json', mode="w") as jsonfile:
+    jsonfile.write(json.dumps(dogs))
+
+with open('dogs.json', mode="r") as jsonfile:
+    dogs_load = json.loads(jsonfile.read())
+    for dog in dogs_load:
+        print(dog["name"],"and",dog["owner"])
+```
+
+## Other Data Formats 
+
+There are a ton of other text data formats. The other big one is SGML/XML/HTML, which are structurally similar and related. HTML is, of course, the language that websites are written in. We'll revisit that in the future when we talk about web scraping.
+
+These are all different from binary data formats like the jpg and gif images that are peppered (Peppered? We should have more Pepper media) throughout these docs. That's a whole different kettle of fish.
