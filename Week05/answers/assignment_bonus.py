@@ -17,7 +17,7 @@ for line in text.split("\n\n"):
     # Increment the second element (length) by the length of the dialog minus the length of the name, +1 for the period at the end
     dialog[name] = (dialog[name][0]+1, dialog[name][1]+len(line)-(len(name)+1))
 
-with open("ADAN_lines.txt",mode="w") as outfile:
+with open("MAAN_lines.txt",mode="w") as outfile:
     for role in dialog:
         outfile.write(role+" has "+str(dialog[role][0])+" lines totalling length "+str(
             dialog[role][1])+" characters\n")

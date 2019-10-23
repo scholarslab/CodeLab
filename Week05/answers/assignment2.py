@@ -20,7 +20,7 @@ for line in text.split("\n\n"):
         bea_lines += 1
         bea_len += len(line)-9 #9 is also the length of "BEATRICE."
 
-with open("ADAN_lines.txt",mode="w") as outfile:
+with open("MAAN_lines.txt", mode="w") as outfile:
     outfile.write("Benedick has "+str(ben_lines)+" lines totalling length "+str(ben_len)+" characters\n") #\n is the special new line character
     outfile.write("Beatrice has "+str(bea_lines) +
                   " lines totalling length "+str(bea_len))
