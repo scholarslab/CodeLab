@@ -5,6 +5,5 @@
 - Review homework (for real this time)
 - Pip and Pipenv
 - [Structuring Data](lesson.md) 
-- pip, pipenv
 
 ## Assignment
