@@ -33,7 +33,7 @@ Is that a bad way to sort? How do we prove it? Write the same kind of sort funct
 ```python
 def good_sort(nums):
   #python sort
-  return sorted_nums
+  return nums
 ```
 
 Now, save both sorts as different .py files and run both sorts through the command line tool `time`. Instead of running something like `python3 random_sort.py`, you can run `time python3 random_sort.py` and it'll tell you how long it took to run. For example, running our dog names script took me 0.075 total seconds to start up Python, load the script, and then perform the dog name generation.
