@@ -24,6 +24,7 @@ def sort_numbers(numbers):
 numbers = [6,3,7,8,1,3]
 print(sort_numbers(numbers))
 ```
+
 ### Assignment 2
 
 [Download the plain text of Much Ado About Nothing from Project Gutenberg](http://www.gutenberg.org/ebooks/1519)
