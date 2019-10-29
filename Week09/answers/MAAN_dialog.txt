@@ -3869,7 +3869,7 @@
     },
     {
         "role": "BENEDICK",
-        "dialog": "Peace! I will stop your mouth. [Kisses her.]"
+      f  "dialog": "Peace! I will stop your mouth. [Kisses her.]"
     },
     {
         "role": "DON PEDRO",
