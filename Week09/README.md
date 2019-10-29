@@ -18,13 +18,15 @@ I wonder that you will still be talking, Signior Benedick:
 nobody marks you.
 ```
 
-And then turn it into a Python dictionary like this:
+And then turn that dialog line into a Python dictionary with keys "role" and "dialog" like this:
 
 ```python
 {"role":"BEATRICE","dialog":"I wonder that you will still be talking, Signior Benedick:nobody marks you."}
 ```
 
-Collect every line of dialog in the play into a list of dictionaries and use the Python json module to dump it into a json file.
+This dictionary represents a single line of dialog. Now collect every line of dialog in the play into a list of many dictionaries in this format. You should have a list of just under a thousand elements, each representing a dialog line.
+
+Use the Python json module to dump it into a json formatted text file. [The result should look something like this](answers/MAAN_dialog.txt). This one is formatted to be easy to read, but don't worry about making it this pretty ("pretty" is actually a technical term in this case). Just use the json `dump()` or `dumps()` method.
 
 
 ### Part 0x01
@@ -43,7 +45,9 @@ class Dog:
         print("Bork bork! I'm",self.name)
 ```
 
-Now, let's write two functions, one to dump a list of dogs into a csv file and one to load that file back into a list of dog.
+Now, let's write two functions, one to dump a list of Dog objects into a csv file and one to load that file back into a list of Dog objects. The CSV file should probably [look something like this](answers/dogs.csv).
+
+
 
 ```python
 import csv
@@ -74,5 +78,5 @@ dogs = [hazel,maple,bofur]
 dogs_to_csv(dogs,"dogs.csv")
 dogs2 = csv_to_dogs("dogs.csv")
 for dog in dogs2:
-    print(dog.speak())
+    dog.speak()
 ```
