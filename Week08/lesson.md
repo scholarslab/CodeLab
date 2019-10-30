@@ -143,29 +143,3 @@ hazel.speak()
 ```
 
 In that first line, `dog` is the name of the file (dog.py) and Dog is the class within that file.
-
-
-## Outside help
-
-The Python Standard Library provides a pretty wide set of tools. It comes with every Python install and that's one of its main strengths - you don't have to worry about whether someone has itertools or random installed.
-
-But sometimes, the thing we need is a little bit more obscure or specific. We couldn't include all these things with every Python install, because otherwise that install would be enormous. Instead, there's something like an app store for Python code (except that it's all free, because Python is all free) called the [Python Package Index, or PyPI](https://pypi.org/). Not to be confused with PyPy (groan), which is something else.
-
-It's pretty big. Anyone can submit projects to it and so there are 200,000 individual ones.
-
-We can install any one of these packages through [Pipenv](https://pipenv-fork.readthedocs.io/en/latest/), which all of you should already have since we did the environment setup at the begining of the year.
-
-[Here's a decent tutorial](https://thoughtbot.com/blog/how-to-manage-your-python-projects-with-pipenv)
-
-You can browse through PyPI and see if there's anything interesting. Of course, the first thing I did was find this: [getname](https://pypi.org/project/getname/).
-
-Which allows us to do...
-
-```python
-from getname import random_name
-
-dogs = []
-while len(dogs)<6:
-    dogs.append(random_name('dog'))
-print(dogs)
-```
