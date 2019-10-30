@@ -71,7 +71,7 @@ So, we can see that (hopefully) the two dogs lists are the same. This is easy en
 ```python
 dogs1 = ["Hazel, who is definitely Shane's dog", "Maple, the Stilt-Legged", "Bofur, Boss of the Lab"]
 with open('file.txt', "w") as outfile:
-    outfile.write(",".join(dogs))
+    outfile.write(",".join(dogs1))
 with open('file.txt', "r") as infile:
     text = infile.read()
 dogs2 = text.split(",")
