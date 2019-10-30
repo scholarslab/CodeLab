@@ -59,7 +59,7 @@ A really simple way to do this is to just write them out as a list, separated by
 ```python
 dogs1 = ["Hazel", "Maple", "Bofur"]
 with open('file.txt', "w") as outfile:
-    outfile.write(",".join(dogs))
+    outfile.write(",".join(dogs1))
 with open('file.txt', "r") as infile:
     text = infile.read()
 dogs2 = text.split(",")
