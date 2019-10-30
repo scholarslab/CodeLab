@@ -137,10 +137,10 @@ with open('dogs.csv', 'w', newline='') as csvfile:
 Which produces the output csv file...
 
 ```csv
-name,owner,breed
-Hazel,Shane,Beagle
-Maple,Amanda,Hound
-Bofur,Ronda,Corgi
+Dog,Owner,Breed
+"Hazel, Shane's Dog",Shane,Beagle
+"Maple, the Swift",Amanda,Hound
+"Bofur, the Brave",Ronda,Corgi
 ```
 
 Easy!
