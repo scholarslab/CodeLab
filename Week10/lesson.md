@@ -120,7 +120,7 @@ Now we can work on our actual Python code. Let's read in our json file.
 ```python
 import json
 
-from open("MAAN_dialog.txt","r") as infile:
+with open("MAAN_dialog.txt","r") as infile:
     dialog = json.loads(infile.read())
 ```
 
