@@ -139,9 +139,9 @@ ben = ""
 
 for line in dialog:
     if line["role"] == "BEATRICE":
-        bea.append(" "+line["dialog"])
+        bea+=" "+line["dialog"]
     elif line["role"] == "BENEDICK":
-        ben.append(" "+line["dialog"])
+        ben+=" "+line["dialog"]
 ```
 
 This gives us two variables, `bea` and `ben`, that contain all of those characters' lines.
