@@ -131,7 +131,7 @@ Let's collate their lines now.
 ```python
 import json
 
-from open("MAAN_dialog.txt","r") as infile:
+with open("MAAN_dialog.txt","r") as infile:
     dialog = json.loads(infile.read())
 
 bea = ""
