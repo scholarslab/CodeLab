@@ -1,15 +1,6 @@
-# Week 9
-![assets/netscape.gif](assets/netscape.gif)
+# Week 12: Web Scraping
 
-## Agenda:
-- Review Homework
-- Libraries, Packages, and Modules
-- JSON
-- HTML/CSS Part 2
-- Next week's homework
-
-## Python Libraries
-![assets/dogs.gif](assets/dogs.gif)
+## Python Libraries, revisited
 
 One of the strengths of Python is its large standard library that comes with every installation of Python. However, even the most extensive standard library doesn't cover all the bases and sometimes the way that the standard library does certain things is more complicated than is necessary for most cases. Python provides a robust mechanism to find, download, and use external libraries by the global community of Python developers.
 
@@ -160,65 +151,3 @@ for number in jt["phoneNumbers"]:
 What sorcery! Our JSON data has magically become Python data! The general act of writing and reading a specific data format (broadly defined) is called encoding and decoding. The specific case of writing and reading to and from an object in a programming language is called serialization and deserialization.
 
 The opposite (well, reflection) of json.loads (load string) is dumps (dump string), which produces a JSON string from simple Python objects. You should be able to dump back any object you loaded from a JSON string. This is particularly useful when you want to easily save your data to file and read it back again. 
-
-## Jeremy talks about HTML
-
-![assets/zoidberg.gif](assets/zoidberg.gif)
-
-## Homework
-
-### Assignment 1: Book Report
-
-Individually, find a Python library and give a 3-5 minute presentation about it in class next time we meet. Bring in a code demo if you can. Choose something not too crazy. Coodinate among yourselves to pick different libraries.
-
-You can [manually search in PyPI](https://pypi.org/search/) to find something that aligns with your interests. Alternatively, a not-bad way to find one is to google "best python libraries" or "top python packages".
-
-Don't pick Requests, even though that's one of the most popular ones. We'll go into it in depth next time.
-
-### Assignment 2: Serializing People
-
-Take [your solution to the Week 07 assignment](https://github.com/scholarslab/praxis-code-lab-2018-2019/blob/master/week7/supergrouphmwk.py) and add two methods to that class to do JSON serialization and deserialization. That is, add one method that takes a filename as a parameter and writes a JSON representation of the data to that file and one method that takes a filename as a parameter and reads that file for a JSON string and then sets the instance's data to match the JSON.
-
-For example:
-
-```python
-
-class historical_figures:
-    # existing logic goes here
-    def __init__(self, first_name, last_name):
-        # ...
-    def get_full_name(self):
-        # ...
-    def set_century(self, century):
-        # ...
-    def add_expertises(self, expertises):
-        # ...
-    def get_info(self):
-        # ...
-    
-    # new methods:
-    def serialize(self,filename):
-        # write the JSON representation of the data to the file here
-    
-    def deserialize(self,filename):
-        # read the file and decode the contents as a JSON string, then overwrite the data in the instance with the decoded JSON data.
-
-jane = historical_figures('Jane','Austen')
-jane.set_century('even longer 18th century')
-jane.add_expertises(['writing','gender','sarcasm'])
-jane.serialize("jane_austin.json")
-
-jane = historical_figures('Jane','Austin')
-jane.set_century('long 19th century')
-jane.add_expertises(['Brownist Puritanism','American history','New Englandry'])
-
-jane.get_full_name()
-jane.deserialize("jane_austin.json")
-jane.get_full_name()
-```
-
-### Assignment 3: Github Pages
-
-Create a simple HTML file that contains your CV and push it to your personal Github account and host it using Github Pages. Follow this simple guide: [https://pages.github.com/](https://pages.github.com/)
-
-Just put up an HTML CV for now - don't worry about anything that mentions Jekyll. We'll cover that another day.

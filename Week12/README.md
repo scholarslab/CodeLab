@@ -1,47 +1,72 @@
-## Week10: Coming to the END
+# Week 12: Web Scraping
+![assets/netscape.gif](assets/netscape.gif)
 
-![https://media.giphy.com/media/zPOErRpLtHWbm/giphy.gif](https://media.giphy.com/media/zPOErRpLtHWbm/giphy.gif)
+## Agenda:
+- Review Homework
+- Python Libraries, revisited
+- Introduction to XML: the Extensible, Monstrous Language
+- Beautiful Soup
 
-### AGENDA
+![assets/dogs.gif](assets/dogs.gif)
 
-1. Homework Review
+## Jeremy talks about HTML
 
-2. Python Presentations
+![assets/zoidberg.gif](assets/zoidberg.gif)
 
-3. FINAL ASSIGNMENT 
+## Homework
 
-*Bringing the pieces together*
+### Assignment 1: Book Report
 
-![https://media.giphy.com/media/U5OjEv41v18eQ/giphy.gif](https://media.giphy.com/media/U5OjEv41v18eQ/giphy.gif)
+Individually, find a Python library and give a 3-5 minute presentation about it in class next time we meet. Bring in a code demo if you can. Choose something not too crazy. Coodinate among yourselves to pick different libraries.
 
-In this assignment, you'll have more freedom to experiment but also that requires you to take more initiative. We want you to bring in as much as you've learned with CodeLab, but also to decide what is relevant to this assignment.
+You can [manually search in PyPI](https://pypi.org/search/) to find something that aligns with your interests. Alternatively, a not-bad way to find one is to google "best python libraries" or "top python packages".
 
-For this project, working in pairs, we want you to find a website that has public domain materials (whether project gutenberg, wikipedia, etc... ).
+Don't pick Requests, even though that's one of the most popular ones. We'll go into it in depth next time.
 
-1. Get the public domain materials from that site with web scraping
+### Assignment 2: Serializing People
 
-2. Using python libraries and methods, and DO SOMETHING with the sources.
-    Some ideas:
-    - remix the sources in a way that transforms the public domain sources in a new way (what ways can you remix things to change their context productively?)
-    - analyze the sources to find patterns (think about what patterns you might be interested in?)
-    - explore metadata of the sources (can you group these sources in a different ways through metadata? )
+Take [your solution to the Week 07 assignment](https://github.com/scholarslab/praxis-code-lab-2018-2019/blob/master/week7/supergrouphmwk.py) and add two methods to that class to do JSON serialization and deserialization. That is, add one method that takes a filename as a parameter and writes a JSON representation of the data to that file and one method that takes a filename as a parameter and reads that file for a JSON string and then sets the instance's data to match the JSON.
 
-3. Present what you've created on an html page and push it up to Github.
+For example:
 
-**FULL DISCLOSURE: We want you to do your best but this is a hard assignment!!** 
+```python
 
-Don't worry so much about getting things perfect. Focus on trying to scope something that is doable. You can always improve things later and iterate on your ideas.
+class historical_figures:
+    # existing logic goes here
+    def __init__(self, first_name, last_name):
+        # ...
+    def get_full_name(self):
+        # ...
+    def set_century(self, century):
+        # ...
+    def add_expertises(self, expertises):
+        # ...
+    def get_info(self):
+        # ...
+    
+    # new methods:
+    def serialize(self,filename):
+        # write the JSON representation of the data to the file here
+    
+    def deserialize(self,filename):
+        # read the file and decode the contents as a JSON string, then overwrite the data in the instance with the decoded JSON data.
 
+jane = historical_figures('Jane','Austen')
+jane.set_century('even longer 18th century')
+jane.add_expertises(['writing','gender','sarcasm'])
+jane.serialize("jane_austin.json")
 
-![https://media.giphy.com/media/3tpinSPvGf8MU/giphy.gif](https://media.giphy.com/media/3tpinSPvGf8MU/giphy.gif)
+jane = historical_figures('Jane','Austin')
+jane.set_century('long 19th century')
+jane.add_expertises(['Brownist Puritanism','American history','New Englandry'])
 
-### Some Examples of Larger Projects
-- Check out [Cultural Analytics](http://culturalanalytics.org/) for examples of articles doing text analysis
-- Take a look at Benjamin Schmidt's recent analysis of humanities majors [https://www.historians.org/publications-and-directories/perspectives-on-history/december-2018/the-history-ba-since-the-great-recession-the-2018-aha-majors-report](https://www.historians.org/publications-and-directories/perspectives-on-history/december-2018/the-history-ba-since-the-great-recession-the-2018-aha-majors-report) and [https://www.theatlantic.com/ideas/archive/2018/08/the-humanities-face-a-crisisof-confidence/567565/](https://www.theatlantic.com/ideas/archive/2018/08/the-humanities-face-a-crisisof-confidence/567565/)
-- Take a look at Vicki Boykis' remix startup names project [http://hackurname.com/about/](http://hackurname.com/about/)
-- Check out [The Pudding](https://pudding.cool/) for examples of data analysis and visualization projects
-- American Panorama Project at University of Richmond [https://dsl.richmond.edu/panorama/](https://dsl.richmond.edu/panorama/)
-- Quantifying Kissinger by Micki Kaufman [http://blog.quantifyingkissinger.com/](http://blog.quantifyingkissinger.com/)
-- America's Public Bible by Lincoln Mullen [http://americaspublicbible.org/](http://americaspublicbible.org/)
-- Viral Texts of 19th Century Newspapers [https://viraltexts.org/](https://viraltexts.org/)
-- Geography of the Post [http://cameronblevins.org/gotp/](http://cameronblevins.org/gotp/)
+jane.get_full_name()
+jane.deserialize("jane_austin.json")
+jane.get_full_name()
+```
+
+### Assignment 3: Github Pages
+
+Create a simple HTML file that contains your CV and push it to your personal Github account and host it using Github Pages. Follow this simple guide: [https://pages.github.com/](https://pages.github.com/)
+
+Just put up an HTML CV for now - don't worry about anything that mentions Jekyll. We'll cover that another day.
