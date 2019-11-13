@@ -76,6 +76,7 @@ First, let's properly go over some terminology that we might have brushed past:
 
 ## XML
 ![xml vs jason](assets/jason.gif)
+
 (XML [left] and JSON [right])
 
 We've covered some JSON already. Let's talk about its older, more monstery cousin. They're not exactly the same kind of thing. JSON is intended, as we've seen and used, to encapsulate object states. XML stands for "Extensible Markup Language" and the Markup Language part means that it's a way to "mark up" text in ways that convey information beyond the very narrow boundaries of the text, like an editor might mark up a document.
