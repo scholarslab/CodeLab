@@ -90,8 +90,6 @@ But despite the differences of intention, both XML and JSON (and also CSV and ma
 
 Let's take a quick peek at what XML looks like. Let's shift gears from our usual Much Ado About Nothing examples and move on to the 31st century.
 
-![bender](assets/bender.gif)
-
 ```xml
 <scene id = "30" type = "INT" location = "PlanetExpress" episode="S01E3">
     <dialog role="Leela">
@@ -102,6 +100,8 @@ Let's take a quick peek at what XML looks like. Let's shift gears from our usual
     </dialog>
 </scene>
 ```
+
+![bender](assets/bender.gif)
 
 This is an arbitrarily constructed example. XML is built around tags that represent discrete elements. In the example above, `scene` and `dialog` are tags. Tags can contain attributes, such as the `role` attribute for `dialog` or the `location` attribute in `scene`. Tags can wrap around text and we can understand that the tag contains the text, like the label for a link or the text of a line of dialog.
 
