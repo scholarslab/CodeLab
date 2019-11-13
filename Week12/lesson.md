@@ -81,7 +81,7 @@ First, let's properly go over some terminology that we might have brushed past:
 
 We've covered some JSON already. Let's talk about its older, more monstery cousin. They're not exactly the same kind of thing. JSON is intended, as we've seen and used, to encapsulate object states. XML stands for "Extensible Markup Language" and the Markup Language part means that it's a way to "mark up" text in ways that convey information beyond the very narrow boundaries of the text, like an editor might mark up a document.
 
-That is, markup languages provide ways to express anything that isn't directly expressible as text characters: *emphasis*, /italics/, (links)[https://github.com/scholarslab/CodeLab/blob/master/Week05/assets/hazel_romantic_hero.jpg], spacing and layout, typeface, and so on. Images too.
+That is, markup languages provide ways to express anything that isn't directly expressible as text characters: *emphasis*, _italics_, [links](https://github.com/scholarslab/CodeLab/blob/master/Week05/assets/hazel_romantic_hero.jpg), spacing and layout, typeface, and so on. Images too.
 
 ![hazel snoozing](assets/hazel_snooze.jpeg)
 
