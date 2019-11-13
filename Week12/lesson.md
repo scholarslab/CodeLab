@@ -74,7 +74,7 @@ First, let's properly go over some terminology that we might have brushed past:
  hazel = doglib.Dog("Hazel")
  ```
 
-## JSON
+## XML
 ![xml vs jason](assets/jason.gif)
 (XML [left] and JSON [right])
 
@@ -82,7 +82,7 @@ We've covered some JSON already. Let's talk about its older, more monstery cousi
 
 That is, markup languages provide ways to express anything that isn't directly expressible as text characters: *emphasis*, /italics/, (links)[https://github.com/scholarslab/CodeLab/blob/master/Week05/assets/hazel_romantic_hero.jpg], spacing and layout, typeface, and so on. Images too.
 
-![hazel snoozing](assets/hazel_snooze.jpg)
+![hazel snoozing](assets/hazel_snooze.jpeg)
 
 When you all blog, you're writing in another markup language, the whimsically-named Markdown.
 
