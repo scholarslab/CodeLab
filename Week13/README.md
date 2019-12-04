@@ -2,7 +2,7 @@
 
 ![assets/hazel_sniff.jpg](assets/hazel_sniff.jpg)
 
-Even though I've lost custody of all of you this week and next, I'm still going to assign homework.
+Even though I've lost custody of all of you these two weeks, I'm still going to assign homework.
 
 ## Assignment
 ### Part Alpha
