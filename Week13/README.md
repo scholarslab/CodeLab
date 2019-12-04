@@ -15,7 +15,7 @@ You can assume there aren't people with identical names. You don't have to sort 
 
 ### Part Bravo
 
-If you wanted to work on more HTML/CSS over break, you could take a swing and mocking up a personal website for yourself. I’m (Brandon) happy to answer questions and also to help you get up and running with the thing live if you desire after break (or sooner if you’re keen on it)
+If you wanted to work on more HTML/CSS over break, you could take a swing and mocking up a personal website for yourself. I’m (Brandon) happy to answer questions and also to help you get up and running with the thing live if you desire after break (or sooner if you’re keen on it). I highly recommend drawing what you want first and then trying to implement your drawing with HTML/CSS. And if you want inspiration in the form of my first attempt, here is a link to the [site I made in Praxis back in the day](http://walshbr.com/old-site/).
 
 ### Part Charlie
 
