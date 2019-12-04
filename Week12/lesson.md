@@ -81,7 +81,7 @@ First, let's properly go over some terminology that we might have brushed past:
 
 We've covered some JSON already. Let's talk about its older, more monstery cousin. They're not exactly the same kind of thing. JSON is intended, as we've seen and used, to encapsulate object states. XML stands for "Extensible Markup Language" and the Markup Language part means that it's a way to "mark up" text in ways that convey information beyond the very narrow boundaries of the text, like an editor might mark up a document.
 
-That is, markup languages provide ways to express anything that isn't directly expressible as text characters: *emphasis*, /italics/, (links)[https://github.com/scholarslab/CodeLab/blob/master/Week05/assets/hazel_romantic_hero.jpg], spacing and layout, typeface, and so on. Images too.
+That is, markup languages provide ways to express anything that isn't directly expressible as text characters: *emphasis*, _italics_, [links](https://github.com/scholarslab/CodeLab/blob/master/Week05/assets/hazel_romantic_hero.jpg), spacing and layout, typeface, and so on. Images too.
 
 ![hazel snoozing](assets/hazel_snooze.jpeg)
 
@@ -191,14 +191,14 @@ We can see that the outer div tag has an attribute, `class="blog-meta__author"`,
 
 ```python
 ...
-print(soup.find_all("div",class_="blog-meta__author")])
+print(soup.find_all("div",class_="blog-meta__author"))
 ```
 
 This bit of code results in a Python list containing 4 Tag objects representing the authors of the 4 most recent blog posts. We can drill down into each of these Tags to get at their contents. For example, we can get the name for each author by getting the text of the `a` tags. The `find()` method is like `find_all()`, but just returns the first result (so it's equivalent to `find_all()[0]`).
 
 ```python
 ...
-author_divs = soup.find_all("div",class_="blog-meta__author")]
+author_divs = soup.find_all("div",class_="blog-meta__author")
 for author_div in author_divs:
     print(author_div.find("a").get_text())
 ```
@@ -207,9 +207,9 @@ To get the URL for each author, we can ask soup for the "href" attribute for the
 
 ```python
 ...
-author_divs = soup.find_all("div",class_="blog-meta__author")]
+author_divs = soup.find_all("div",class_="blog-meta__author")
 for author_div in author_divs:
-    print(author_div[0].find("a")["href"])
+    print(author_div.find("a")["href"])
 ```
 
 Knowing how to grab links means that we can follow them by asking Requests to grab the website at that URL. This way, we can write a "spider" to crawl through entire websites. This is a very powerful way to map out online datasets that aren't designed to be very accessible.
