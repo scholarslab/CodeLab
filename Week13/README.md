@@ -7,7 +7,7 @@ Even though I've lost custody of all of you these two weeks, I'm still going to 
 ## Assignment
 ### Part Alpha
 
-Write a script to download the list of Scholars' Lab blog posts (https://scholarslab.lib.virginia.edu/blog/) and then figure out how many blog posts each other has.
+Write a script to download the list of Scholars' Lab blog posts (https://scholarslab.lib.virginia.edu/blog/) and then print out a list of how many blog posts each author has.
 
 The page highlights the most recent four posts. These are optional because they don't conform to the standard structure of the majority of older posts below.
 
