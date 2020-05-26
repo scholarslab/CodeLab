@@ -78,7 +78,7 @@ Special path symbols:
 
 Any command that takes a filename will also allow you to specify a relative or absolute path to that file, e.g. `touch ../file.txt` or `rm /temp/error.log`.
 
-## SHELL COMMANDS
+## Shell Commands
 
 | Command | Description |
 | ------------- | ------------- |
@@ -99,7 +99,7 @@ Any command that takes a filename will also allow you to specify a relative or a
 | `rm -rf [directory name]` | Force remove a directory and all its contents | 
 
 
-## ADVANCED COMMANDS
+## Some Examples of Advanced Commands
 | Command | Description |
 | ------------- | ------------- |
 | `sudo [command]` | Run command with the security privileges of the superuser (Super User DO) |
