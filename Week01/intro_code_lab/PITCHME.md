@@ -25,7 +25,8 @@ Note:
 - "Hack" vs "Yack" or: how is DH work done?
 - "Collaboration" vs Collaboration |
 - What is Yack (in a DH context) without Hack? |
-- RZT: If you can't build it, you don't really understand it. |
+- If you can't build it, you don't really understand it. |
+- An important issue of labor and credit (RZT)|
 ---?image=Week01/intro_code_lab/RZT.jpg&size=contain
 ---
 ### What can you expect?
