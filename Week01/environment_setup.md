@@ -17,11 +17,13 @@ After all the shell and Python setup is done, you'll install Microsoft Visual St
 
 ### Step 1-M: Install Python and Pip
 
-Mac: [Python 3](https://docs.python-guide.org/starting/install3/osx/), including Pip
+Mac: [Python 3](https://docs.python-guide.org/starting/install3/osx/), including Pip.
+
+The instructions say to add `export PATH="/usr/local/opt/python/libexec/bin:$PATH"` to `~/.profile`. However, you will probably want to add it instead to `~/.zshrc`.
 
 ### Step 2-M:  Install Pipenv
 
-In the terminal, run: `pip3 install --user pipenv` (if that doesn't work, try `pip install --user pipenv`)
+In the terminal, run: `brew install pipenv`
 
 ### Step 3-M: Visual Studio Code
 
@@ -30,7 +32,7 @@ Unless you have another preference, VSCode is a pretty good code editor.
 * Install [VS Code](https://code.visualstudio.com/)
 * Install the [Python extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
-### Step X-M: Switch from Bash to Zsh (strictly optional)
+### Step X-M: Install/Customize Zsh (strictly optional)
 
 This isn't really necessary and the process is more convoluted than anything we've done so far, but it results in a much prettier terminal that has some nice conveniences.
 
