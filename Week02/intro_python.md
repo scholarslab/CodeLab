@@ -34,7 +34,9 @@ If you're looking for help on the internet and ever see `print "foobar"` instead
 madlibs="Scholars' Lab"
 print("I, for one, 'welcome' our new "+madlibs+" overlords!")
 ```
-Variables are little bits of information that are given names so that they can be modified or reused later. In the first line, we are assigning a string (a variable type that contains text) to the variable with the name "madlibs".
+Variables are little bits of information that are given names so that they can be modified or reused later. In the first line, we are assigning a string (a variable type that contains text) to a variable with the name "madlibs".
+
+Variable names have to start with a letter or an underscore and can only contain letters, numbers, and the underscore character. No spaces. They're also case-sensitive, so `SLAB` `slab` and `SLab` are different.
 
 In the second line, we use the + operator to concatenate three strings together and pass the result to print.
 
@@ -75,7 +77,7 @@ But floats are trickier and require a special system to represent. Don't worry a
 
 [Float to Binary Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
 
-[IEEE 754 Standard](https://en.wikipedia.org/wiki/IEEE_754-1985) if you really want to learn more.
+[IEEE 754 Standard](https://en.wikipedia.org/wiki/IEEE_754-1985) if you really want to learn more. You probably do not want to read this.
 
 ### Booleans
 ```python
