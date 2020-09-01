@@ -195,11 +195,14 @@ For more specialized tasks, it's also easy to use the work of third party develo
 
 ## Let's Hope You Paid Attention!
 ### Work together!
-Pair programming is a common practice. We want you to always do pair programming. Let's write some code to assign each of you a partner for this week's homework using what we've just learned!
+Pair programming is a common practice. We want you to always do pair programming. Let's write some code together, right now, to assign each of you a partner for this week's homework using what we've just learned!
+
+Let's start with a list of names:
 
 ```python
 praxis = ["Aaron","Crystal","Elise","Emma","Grace","Savanna"]
-# ???
 ```
 
-##### Hint: there's a section in the Random library documentation [just for working with sequences](https://docs.python.org/3/library/random.html#functions-for-sequences)!
+A good way to get started with coding is to think about how we might go about this in our heads or physically, in the "real world." 
+
+Hint: there's a section in the Random library documentation [just for working with sequences](https://docs.python.org/3/library/random.html#functions-for-sequences)
