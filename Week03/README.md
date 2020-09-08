@@ -14,7 +14,7 @@
 
 Pair program these with a buddy! Pair programming is fun and productive unless you do it wrong. According to formal logic, this does not necessarily mean that doing it wrong cannot also be fun and productive, but it does mean that if it isn't fun and productive, you aren't doing it right.
 
-### Coding assignment 1
+### Coding assignment 0
 
 Write a function, `filter_evens()` that takes in a list of integers as an argument and returns a list of integers comprising only the even numbers.
 
@@ -25,7 +25,7 @@ nums = [0,-2,3,14]
 print(filter_evens(nums))
 ```
 
-### Coding assignment 2a
+### Coding assignment 1a
 
 Convert your own Pig Latin code from last week into a function in this form:
 
@@ -35,11 +35,11 @@ Convert your own Pig Latin code from last week into a function in this form:
 print(pig_latin(input("Enter input: ")))
 ```
 
-### Coding assignment 2b
+### Coding assignment 1b
 
 Modify your code in part 2a to detect whether the input contains more than one word. If the input has one word, print the Pig Latin version. If the input has multiple words, only print the Pig Latin for the first word. The [Python documentation for a particualr string method](https://docs.python.org/3/library/stdtypes.html#str.split) will be very useful here!
 
-### Coding assignment 2c
+### Coding assignment 1c
 
 Modify your code from part 2b so that if the input contains multiple words, convert each individual word into Pig Latin and print them out. They don't have to be on the same line.
 
