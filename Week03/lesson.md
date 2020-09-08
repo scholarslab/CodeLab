@@ -79,11 +79,25 @@ Instead, we have to tell Python what we mean by doing an explicit conversion usi
 6
 ```
 
+In Python, we use the single equals sign `=` for *assignment* (assign the right side to the left) and the double equals sign `==` for *equality* (does the right side equal the left?).  Comparitors like `==` yield values of boolean type: `True` or `False`. Under the hood comparitors are defined as functions (more on this later), so sometimes Python can compare different types and sometimes it doesn't. Generally, numbers (integers and floats) can be compared as numbers, but comparing strings and numbers will always return `False`.
+
+```
+>>> a = 3
+>>> b = 3.0
+>>> c = "3"
+>>> a == b
+True
+>>> a == c
+False
+```
+
 ## Functions and methods
 
-We've also already used a few functions and methods. A function is a way to organize code by packaging many lines of code together into a single bundle, like how a math function ties together many different operations. At the most basic level, this makes it easy to reuse code: it's easier to write out and read a single line rather than many lines and easier to change code in one place rather than in many places.
+We've also already used a few functions and methods. A function is a way to organize code by packaging many lines of code together into a single bundle, like how a math function ties together many different operations. 
 
-Functions that are provided by Python (built-in functions) or by an external library also help to abstract away their implementation details. We often don't care about how something works, only what it does. For example, the built-in function `pow(x,y)` returns the value of x to the y power.
+There's a lot of good reasons to organize code into functions. At the most basic level, this makes it easy to reuse code, often easier to read and to organize logic, easier to change code in one place rather than in many places, and easier to *not* understand what you don't need to understand.
+
+Python has a number of "build-in functions", some of which we've already used. As an example, the function `pow(x,y)` returns the value of x to the y power.
 
 ```
 >>> pow(2,4)
@@ -92,11 +106,13 @@ Functions that are provided by Python (built-in functions) or by an external lib
 256
 ```
 
-When we tell Python to run a function like this, we call that a "function call.z"
+When we tell Python to run a function like this, we call that a "function call". Function calls have the name of the function ("pow") followed by a matched pair of parenthesis. Inside the parenthesis are zero or more "arguments", which are bits of data that we "pass in". In this case, `pow()` needs to know what numbers we want to use.
 
 You might not know quite enough Python yet to code this yourself (although you will hopefully by the end of this lesson!), but it's easy enough to just type in `pow(2,8)`.
 
-If you're interested in how Python does it, you can take a look for yourself. Python is open source, which means that underlying code for Python itself is freely accessible. I wouldn't necessarily recommend it though, since the reference implementation for Python is written in a different programming language, C, for reasons that are probably too complicated to get into here.
+That's an important reason to use functions: you don't need to know how it works, just what it does. Programmers call this a "encapsulation" or "information hiding". For a power function, the difference between how something works and what it does is pretty small, but there are actually a lot of things in programming that are easy to understand and hard to do (the worst of these are easy to do but hard to *do right*). The random functions we've used already are a good example.
+
+If you're really interested in how Python does it, you can take a look for yourself! Python is open source, which means that underlying code for Python itself is freely accessible. I wouldn't necessarily recommend it though, since the reference implementation for Python is written in a different programming language, C, for reasons that are probably too complicated to get into here.
 
 Python's [built-in function documentation](https://docs.python.org/3/library/functions.html) is also a good thing to know about.
 
