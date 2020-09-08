@@ -192,6 +192,8 @@ In this case, they indicate to Python that everything that's indented (using spa
 
 Whitespace is used to demarcate other things as well, most importantly conditions and loops (we'll get to them in a second) and class definitions (way in the future).
 
+It's a bit annoying to keep track of whitespace in the Python interactive interpreter and our code is starting to get more complex structurally. If you haven't already, it's probably useful to switch to saving your code into files and running from the terminal. 
+
 ### Arguments
 
 Let's break down the pig_latin function definition above a bit further. Here it is again:
