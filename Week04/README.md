@@ -1,4 +1,4 @@
-2# Week 4
+# Week 4
 ![Git merge dot gif](assets/gitmerge.gif)
 
 ## Outline
