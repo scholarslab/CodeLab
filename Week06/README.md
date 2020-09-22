@@ -67,3 +67,7 @@ John A. Macdonald, 1815, 1891, Prime Minister
 
 **BONUS**
 4. Create a way to input any value and return any person that has a match for that value in their information. If no one matches return `There's probably a Canadian that does this`
+
+#### Reading
+
+Read/work through the piece [here](https://humanitiesprogramming.github.io/exercises/python-debugging/) on "common code errors and how to find them" (skipping the "Classes" one for now).
