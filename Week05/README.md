@@ -35,8 +35,3 @@ Write a program to read in this file and count the total lines of dialog and the
 
 Do the same analysis, but for every character that has dialog.
 
-### Reading Assignment
-
-Read about dictionaries in this markdown file on [data structures](https://github.com/scholarslab/CodeLab/blob/master/Week06/data_structures.md).
-
-Read/work through the piece [here](https://humanitiesprogramming.github.io/exercises/python-debugging/) on "common code errors and how to find them" (skipping the "Classes" one for now).
