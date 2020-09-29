@@ -12,7 +12,7 @@ You guys are all doing great!
 
 ## Homework
 
-### Assignment 1:
+### Assignment 0:
 
 Implement a sorting algorithm for a list of numbers. Don't use any built-in sort. It can be as simple or complicated as you want. Feel free to look at the innumerable other examples on the Internet, but be prepared to explain your code!
 
@@ -25,7 +25,7 @@ numbers = [6,3,7,8,1,3]
 print(sort_numbers(numbers))
 ```
 
-### Assignment 2
+### Assignment 1
 
 [Download the plain text of Much Ado About Nothing from Project Gutenberg](http://www.gutenberg.org/ebooks/1519)
 

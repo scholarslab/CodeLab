@@ -9,32 +9,15 @@ We can solve all those problems with data flow structures.
 
 ![https://www.oreilly.com/library/view/head-first-python/9781449397524/httpatomoreillycomsourceoreillyimages1368346.png.jpg](https://www.oreilly.com/library/view/head-first-python/9781449397524/httpatomoreillycomsourceoreillyimages1368346.png.jpg)
 
-We've already used for loops in lists before, like this:
+For loops can iterate through the items in a list.
 ```python
-slab = ['Zoe', 'Shane', 'Brandon']
+slab = ['Jeremy', 'Ronda', 'Laura']
 
 for person in scholars_lab:
     print(person) # This should print out each person's name individually
 ```
 
-We can also use For Loops on dictionaries. The syntax is slightly different because dictionaries are not one long sequence, but rather a sequence of key/value pairs.
-```python
-scholars_lab = {
-    'employee_1': {
-        'name':'Zoe',
-        'DH_methods': ['gifs', 'data visualization', 'web apps']
-    },
-    'employee_2': {
-        'name':'Shane',
-        'DH_methods': ['programming_genius', 'TEI']
-    },
-}
-for key, value in scholars_lab.items():
-    print('key', key)
-    print('value', value)
-```
-This script should print out each of the employee keys and then the dictionaries those keys contain.
-
+We can also use For Loops on dictionaries, but it's a little bit different. Review the [Data Structures review](data_structures.md) if you need to.
 
 #### Conditionals
 Earlier we learned about *booleans* (`True or False`). In Python, we can test the truth value of code to decide how we want our code to run.
@@ -50,23 +33,22 @@ for person in scholars_lab:
         print(person)
 ```
 
-
 We can also test the equality of two variables in an if statement:
 ```python
-zoe = 'Zoe'
+shane = 'Shane'
 brandon = 'Brandon'
-if zoe != brandon:
+if shane != brandon:
     print('not the same person')
 else:
     print('twins')
-
 ```
+
 There's lots of ways to test equality with what we call **logical operators**.
 
 ![https://introcs.cs.princeton.edu/python/12types/images/ComparisonOperators.png](https://introcs.cs.princeton.edu/python/12types/images/ComparisonOperators.png)
 
 #### Functions
-Essentially functions are a way to wrap your code into blocks so that way you can call your code when you need it to run. You can check out the materials from last week on functions [here](../../Week06/)
+Essentially functions are a way to wrap your code into blocks so that way you can call your code when you need it to run. You can check out the materials from past weeks on functions [here](../../Week03/lesson.md)
 
 ![https://swcarpentry.github.io/swc-releases/2016.06/python-novice-inflammation/fig/python-function.svg](https://swcarpentry.github.io/swc-releases/2016.06/python-novice-inflammation/fig/python-function.svg)
 
@@ -80,6 +62,7 @@ def get_fundamentals():
 
 get_fundamentals()
 ```
+
 This function will work but doesn't really do anything. Let's figure out how to output `fundamentals`.
 
 ```python
@@ -109,7 +92,7 @@ So here we pass an argument, and then add another string to our `fundamentals` v
 
 We can also use for loops in a functions.
 ```python
-slab = ['Zoe', 'Shane', 'Brandon']
+slab = ['Jeremy', 'Chris', 'Arin']
 
 def get_person(people):
     for person in people:
@@ -120,4 +103,4 @@ get_person(slab)
 ```
 Here we're passing in the list of `slab`. Notice we call the argument we're passing `people`. Arguments can be named anything independent of the variables you pass into the function. Then we loop through the list, print out each person, and return the list unchanged.
 
-Here's a great tutorial on functions if you have time[https://www.datacamp.com/community/tutorials/functions-python-tutorial](https://www.datacamp.com/community/tutorials/functions-python-tutorial).
+If you want to do more with functions, here is a good (optional!) tutorial: [https://www.datacamp.com/community/tutorials/functions-python-tutorial](https://www.datacamp.com/community/tutorials/functions-python-tutorial).

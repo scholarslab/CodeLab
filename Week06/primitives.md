@@ -1,6 +1,6 @@
 
 ### Variables
-A variable is simply a way to store data in Python. You assign a value to a variable using the `=` sumbol.
+A variable is simply a way to put a label on a piece of data in Python. You assign a value to a variable using the `=` sumbol.
 
 ```python
 var = 'Hello world'
@@ -26,7 +26,6 @@ one_1 = 'Hello World'
 ### Data Types
 These variables above all hold *strings*. Strings are sequences of characters that are marked by being in single or double quotations.
 
-
 Strings are just one of many data types accepted in Python. 
 
 There's also numbers, called *integers*. We can take our variables that we assigned before and assign them their actual numbers.
@@ -46,6 +45,7 @@ one = 1.0
 What if we decided that we wanted to combine variable one and two? We could use a Python *method* for manipulating variables and data.
 
 1. To join variables together use the `+` symbol, this is called concatenation.
+
 ```python
 one + two
 ```
@@ -80,26 +80,3 @@ var_true == var_false
 ```
 
 In Python `=` is used to assign values to a variable, and `==` is used to check if two variables contain the same value.
-
-###  DATA TYPES & VARIABLES REVIEW EXERCISES
-
-In this script, answer the following prompts:
-
-1. Create a *variable* and assign it any value you want
-
-1. When the script runs have the value of the variable *output* to your terminal
-
----
-1. Create four more variables and *assign* them each a distinct *data type* (**hint: integers are data types**)
-
-1. When the script runs, output the data *type* of each variable (**hint: try searching for a method in python to check data types**)
-
----
-1. Decide which three out the four variables that you created can use *concatenation* and then join them with more data, and output those values (**hint: concatenation is a fancy word for adding things together**)
-
-2. Comparing two pairs of the variables you created, output their *equality*
-
-
-
-
-

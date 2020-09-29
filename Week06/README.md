@@ -1,73 +1,26 @@
-# Python FUNdamentals
+# Week 06: The Ultimate Machine
  
-Agenda:
-- Welcome Back Zoe & Shane does a quick review of last week's homework (don't worry next week will be all about Classes)
-- Review of data structures 
-- Introduce a new data structure
-- Whiteboard exercise
-- Live code our whiteboard
+## Agenda:
+- Review homework
+- Big Data Talk
+- Dictionaries
 
-Reminder:
-- Ask questions
-- Ask for help
-- And write code as much as possible!
+[Lesson document](./lesson.md)
 
-#### HOMEWORK
-![https://media.giphy.com/media/3o7TKGMZHi73yzCumQ/giphy.gif](https://media.giphy.com/media/3o7TKGMZHi73yzCumQ/giphy.gif)
+## HOMEWORK
 
-~Two assignments this week, each with bonus sections. Focus on completing the main part of each assignment before worrying about bonus functionality.~
+#### Review
 
-For homework this week, complete the [whiteboard exercise](whiteboard_exercise.md) that we started in class. Finish writing out the logic and then try coding it. Remember to start out simple and then get more complex.
+We've covered a lot of concepts really quickly and everything *seems* to be going well. However, it'll still probably be useful to read through a quick review of all the basic Python concepts we've covered to this point:
 
-We also have two assignments this week. Assignment 2 is pretty close to whiteboard exercise so don't worry if you don't quick complete it. Each of the assignments also have bonus prompts that you should only try to complete if you complete both assignments and the whiteboard exercise.
+- [Primitives review](primitives.md)
+- [Data structures review](data_structures.md)
+- [Data flow review](data_flow.md)
 
-##### Assignment 1
-This is the first few lines from Project Gutenberg version of Jane Austen, which you can find [here](https://www.gutenberg.org/files/1342/1342-0.txt).
+#### Assignment 0
 
-'The Project Gutenberg EBook of Pride and Prejudice, by Jane Austen This eBook is for the use of anyone anywhere at no cost and with almost no restrictions whatsoever.  You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this eBook or online at www.gutenberg.org Title: Pride and Prejudice Author: Jane Austen Posting Date: August 26, 2008 Release Date: June, 1998 Last Updated: March 10, 2018 Language: English Character set encoding: UTF-8 *** START OF THIS PROJECT GUTENBERG EBOOK PRIDE AND PREJUDICE *** Produced by Anonymous Volunteers PRIDE AND PREJUDICE By Jane Austen Chapter 1 It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.'
+We have in our programming quiver a number of tools now (primitives, lists, dictionaries) and we just had a big talk on data. Think about everything you know about your Praxis cohort (the icebreakers doc is fair game). Think about the kind of questions that might interest you about such a corpus and the best way to structure that information to answer those questions. Write some Python code in the vein of the Scholars Lab example in the data structures review that represents the model you come up with. This one is intentionally a bit amorphous, but any practice in thinking about the shape of data is useful.
 
+#### Assignment 1
 
-We want to use this text, but we need to get rid of some of the metadata at the beginning and we want to replace some of the data. Create a script called `jane_austen_data_munging.py`
-
-1. First save this text into a variable called `jane`
-
-1. Figure out how to get rid of everything before `Produced by Anonymous Volunteers` and save everything after in a variable called `jane_cleaned` (**hint: check out the string method [split()](https://www.w3schools.com/python/ref_string_split.asp), it splits strings on certain characters and returns a list *** )
-
-1. Replace all instances of `man` with `person`, and `wife` with `parther` in `jane_cleaned` (**hint: check out the string method [replace()](https://www.w3schools.com/python/ref_string_replace.asp)**)
-
-BONUS:
-4. Change your script so that you can give an input, and replace any word in the text with any other word. Output the changed text. 
-
-##### Assignment 2
-
-Famous Canadians 🍁
-
-As a Canadian, I like to talk a lot about famous Canadians. Here's a website with lots of Canadians [https://www.biography.com/people/groups/famous-canadians](https://www.biography.com/people/groups/famous-canadians)
-
-But I have some favorites that I want to have on hand quickly. Here's my quickie list with their names, birth year, death year, and their professions (but not everyone has values for those attributes).
-
-Celine Dion, 1968, performer, goddess
-
-Drake, 1986, performer
-
-Justin Trudeau, 1971, Prime Minister, snowboard instructor
-
-Sandra Oh, 1971, actor, goddess
-
-Nathan Fillion, 1971, actor
-
-John A. Macdonald, 1815, 1891, Prime Minister
-
-
-1. Create a script and find the best way to store my famous canadians. You've learned a few ways so far to store information like this so feel free to try a few, but remember go for whatever is easiest and works.
-
-2. Figure out a way to output all the information for a person if you input their profession or name. Remember to use for loops and conditions!
-
-3. Add `nationality` to each person's information and set the value to Canadian, just in case I decide I like people from other countries and want to add them to the dictionary.
-
-**BONUS**
-4. Create a way to input any value and return any person that has a match for that value in their information. If no one matches return `There's probably a Canadian that does this`
-
-#### Reading
-
-Read/work through the piece [here](https://humanitiesprogramming.github.io/exercises/python-debugging/) on "common code errors and how to find them" (skipping the "Classes" one for now).
+In preparation for next week's Brandon Code Lab Special Episode, read/work through the piece [here](https://humanitiesprogramming.github.io/exercises/python-debugging/) on "common code errors and how to find them" (skipping the "Classes" one for now).
