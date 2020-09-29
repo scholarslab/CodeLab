@@ -120,5 +120,6 @@ Here, we see that using for loops through all the keys in a dictionary. We can a
 dogs = {"Shane":"Hazel", "Amanda":"Maple", "Ronda":"Bofur"}
 for owner,dog in dogs.items():
     print(owner+"'s dog is "+dog)
+```
 
 Dictionaries are unordered, so while this example loops through the order in which I constructed the dictionary, that isn't guaranteed.
