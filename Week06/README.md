@@ -1,4 +1,6 @@
 # Week 06: The Ultimate Machine
+
+![Shannon/Minsky Ultimate Machine](assets/ultimate_machine.gif)
  
 ## Agenda:
 - Review homework
