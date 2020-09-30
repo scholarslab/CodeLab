@@ -106,7 +106,7 @@ As we can see, you can mix and match different types of values like for lists. A
 We can also assign starting values when defining a new dictionary by separating keys and values with a colon. This code is equivalent to the above.
 
 ```python
-d = {1:5, 3:"b","a":[5]} # create an empty dictionary
+d = {1:5, 3:"b","a":[5]} # create a not-empty dictionary
 print(d)
 ```
 
