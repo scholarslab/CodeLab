@@ -71,6 +71,10 @@ Byte is another common unit of measurement for data. The term is a play on bit a
 
 ## Data Structures
 
+Okay, this is too much talking. We should do some doing, which means that it's back to Python. Also, here's Hazel again.
+
+![Hazel snoozing](assets/hazel_snooze.jpg)
+
 We've discussed a few different ways to represent different types of data using the underlying binary computer systems. Going one level above this is the concept of a "data structure", which are ways to not only represent information as data (RGB, Unicode, etc.) but to efficiently access and manipulate them. We've already been working with plenty of built-in data structures in Python.
 
 The most fundamental kinds of these are often called "primitives" in computing. In Python, these include integers (whole numbers), floats (floating point numbers, which represent real numbers--"the ones between integers"), strings (text), and booleans (`True` and `False`). You should have a good sense by now of how each of these are represented (except for floats, which are weird).
