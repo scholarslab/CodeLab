@@ -3,7 +3,7 @@
 
 ## Agenda
 - Review homework (if it exists)
-- [Structuring Data](lesson.md) 
+- [Structuring Data 2: Even More Structure](lesson.md) 
 
 ## Assignment
 
