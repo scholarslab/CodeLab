@@ -167,8 +167,6 @@ with open('dogs.csv', 'w', newline='') as csvfile:
 
 This produces the same kind of CSV file.
 
-We can even go one more step and write a function (or a method) to automatically pack and unpack our Dog class into a CSV format. Maybe that will be this week's homework.
-
 To read CSV files, we can use analogous Reader and DictReader objects in the csv module:
 
 ```python
