@@ -17,4 +17,4 @@ Happily, there are a lot of interesting datasets out floating out there, often i
 
 Even though the CSV module makes reading the data into Python pretty easy, this is potentially a really tricky assignment because keeping different related data fields together can be challenging (e.g. sorting a column and also sorting the other fields for each row together). Google is definitely your friend here ("sorting dictionary by key python"). Literally millions of people have had to do the same thing you're trying to do. If you're having some trouble, ping me on Slack any time. It might be useful to read the CSV data into another data structure to make this easier.
 
-Plan for a 5 minute show-and-tell next week!
+Plan for 0-5 minute shows-and-tell next week!
