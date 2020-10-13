@@ -1,178 +1,253 @@
-# Classes
+# Structuring Data
 
-Okay, let's talk classes!
+![Maple and Jeremy](assets/maple_jerm.jpg)
 
-Say we have this function:
+We covered some basic file input and output in Python a few weeks ago. It's pretty easy to work with text data, either all at once or line by line.
 
-```python
-def whos_a_good_dog():
-    return("Hazel")
-print(whos_a_good_dog())
-```
-
-![bad pun hazel](assets/bad_pun_hazel.jpg)
-
-This is very simple. Let's make it a bit more complicated. `return` only takes one object, so if we want to return multiple dogs, we can return a list of strings (a list is one object, which contains multiple elements within):
+To review, we can read some text from a file like so:
 
 ```python
-def whos_a_good_dog():
-    return(["Hazel","Maple","Bofur","Toby"])
-print(whos_a_good_dog())
+infile = open('file.txt', "r"):
+text = infile.read()
+infile.close()
 ```
 
-This is pretty legible because these are all the same type of things. But what if we want to return more than just the dog's name? Does "Hazel" really capture the full goodness of this dog?
+or, equivalently, using the with-open-as idiom:
+```python
+with open('file.txt', "r") as infile:
+    text = infile.read()
+```
 
-What if we want to return other attributes about Hazel? She's some sort of Beagle mix. She's "Shane's" dog. She likes treats, naps, and raccoons; she doesn't like thunder. How would we have this function return all of this information?
+and we can write back to files just as easily:
+```python
+outfile = open('file.txt', "w"):
+outfile.write("Hello Dog!")
+outfile.close()
+```
 
-One way is to return all of this data in a list:
+(If you need a refresher, we learned all of this back in [Week 5](../Week05/lesson.md))
+
+But while we've worked with simple text and numerical data like strings and ints plenty, we've also used lists and dictionaries and more structured data too. How do we read and write those more complicated kinds of data?
+
+Let's revisit the way that we read in numbers. Recall that when we use the `read()` method on a file object like we did above, the data that we get back is a string. So, if we had a file named file.text that just contained the number `12345`, we'll get back the string "12345" rather than the integer 12345.
 
 ```python
-def whos_a_good_dog():
-    return(["Hazel","Beagle","Shane",["treats","naps","raccoons"],["thunder"])
-print(whos_a_good_dog())
+with open('file.txt', "r") as infile:
+    text = infile.read()
+    text += 43210 #this line results in "TypeError: must be str, not int"
 ```
 
-But this has become not very legible. Unlike a list of dogs, this list contains dissimilar elements. It's hard to read because the meanings of its values depend on understanding that the value in the first index is the name, the second index is breed, etc. Indices are easy for a computer to keep track of, but if a human gets mixed up, it can be very difficult to figure out what's going wrong and where it's going wrong.
-
-How do we do better?
-
-One way is to use more structured data, like a dictionary:
+The "12345" in the text file is, after all, text. Underneath it all, it's being represented by a text encoding, which means that if you look under the hood, "12345" isn't actually 12345. These days, this kind of text is usually UTF-8/ASCII encoded numbers, which means "12345" is actually 049 050 051 052 053. To turn the text "12345" into the number 12345 in Python, we have to explicity tell Python to make this conversion.
 
 ```python
-def whos_a_good_dog():
-    return({"name":"Hazel","breed":"Beagle","owner":"Shane","likes":["treats","naps","raccoons"],"dislikes":["thunder"]})
-print(whos_a_good_dog())
+with open('file.txt', "r") as infile:
+    text = infile.read()
+    number = int(text)
+    number += 43210 #this works just fine now
 ```
 
-Dictionaries are great and this is much easier to read and to use.  It's a perfectly fine way to describe complex data within a single object.
+Here, we're calling the integer constructor method that takes in a string argument and builds us a new integer object based on that string.
 
-But a dog isn't just data. I think this is one of the Four Noble Truths.
+I bring this up to suggest that there's difference between the static text representation of an object and the "live" Python objects that live in computer memory and can be manipulated. Python objects are useful because we can easily manipulate them, but they don't persist beyond the lifespan of a program. Static files persist data, but have to be read and interpreted explicitly in the way that we want them to be.
 
-We've described largely static information about Hazel. But a dog has behaviors and feelings. In code-speak, we can say that it has logic and states. 
+## Let's talk about Data Formats
 
-A class is really useful to encapsulate both data and functions in a single cohesive unit. 
+So, strings and even numbers are simple enough. How do we represent, say, a list of things in a file?
 
-A class is a particular type of objects. We can create ("instantiate") an object of a class and store it as a variable. A variable therefore contains (technically, contains a reference to) an *instance* of a class.
-
-We've already used a lot of built-in classes. Strings, lists, dictionaries are all classes. We can have Python tell us what kind of class it is using the built-in function `type()`.
-
-```
->>> a = [1,2,3]
->>> type(a)
-<class 'list'>
->>> b = "123"
->>> type(b)
-<class 'str'>
-```
-
-We can define our classes too. Let's make a simple dog class with a "speak" method.
+A really simple way to do this is to just write them out as a list, separated by some delimiter. Following English convention, let's use commas. An easy way to do this in Python is to use the string method `join()`, which is kind of like a reverse split. It lets you join together a list of strings with a delimiter (you can also just mush together the list of strings if you call it on an empty string).
 
 ```python
-class Dog:
-    name = ""
-    def speak(self):
-        print("Bork bork! I'm",self.name,"!")
-
-maple = Dog()
-maple.name = "Maple"
-maple.speak()
-
-hazel = Dog()
-hazel.name = "Hazel"
-hazel.speak()
-
-print(hazel == maple)
+dogs1 = ["Hazel", "Maple", "Bofur"]
+with open('file.txt', "w") as outfile:
+    outfile.write(",".join(dogs1))
+with open('file.txt', "r") as infile:
+    text = infile.read()
+dogs2 = text.split(",")
+print(dogs1 == dogs2)
 ```
 
-So, here we define a Dog class, then instantiate two Dogs using `Dog()`. We store those to `maple` and `hazel`. Each of the Dogs are distinct Dog instances and have their own independent data. Whenever we call a class method, we actually implicitly pass in the object itself. That's why the method definitions have `self` in the arguments list. In methods, we refer to `self` when we want to access the variables that belong to the class rather than the method. If you're curious about why we use `self`, [the Python documentation on class scope](https://docs.python.org/3/tutorial/classes.html#python-scopes-and-namespaces) is useful, but you can get by for now just using `self` whenever you want to refer to any class data.
-
-We can see that instantiation is done with a function: `Dog()`. Instead of setting the data for each bit by bit, we can create a *constructor* method that takes in parameters and then handles them. We can do this by defining a special method `__init__` (with two underscores on either side).
+So, we can see that (hopefully) the two dogs lists are the same. This is easy enough for simple data, but we can probably see that there are some complications here...
 
 ```python
-class Dog:
-    def __init__(self, name, owner, breed, likes, dislikes):
-        self.name = name
-        self.owner = owner
-        self.breed = breed
-        self.likes = likes
-        self.dislikes = dislikes
-    
-    def speak(self):
-        print("Bork bork! I'm",self.name,"! I like",self.likes[0], "and dislike ",self.dislikes[0],"!")
-
-hazel = Dog("Hazel","Shane","beagle",["treats","naps","raccoons"],["thunder"])
-hazel.speak()
-
+dogs1 = ["Hazel, who is definitely Shane's dog", "Maple, the Stilt-Legged", "Bofur, Boss of the Lab"]
+with open('file.txt', "w") as outfile:
+    outfile.write(",".join(dogs1))
+with open('file.txt', "r") as infile:
+    text = infile.read()
+dogs2 = text.split(",")
+print(dogs1 == dogs2)
 ```
 
-Classes can be as simple or complex as you want.
+So, there's one basic problem with using text to store structured text. Whatever delimiters or special characters we use to indicate the structure of the data can also exist in the data itself. ASCII, the archaic way of encoding text, solved this by setting aside special non-text characters. There were characters for things like "Start of Heading", "End of Transmission", "Acknowledgement", and even "Bell" to get a computer operator's attention. These days, that method is hopelessly outmoded, not just because we want to be have more flexibility in the ways that we define our structures.
 
-Let's try to model a dog class that includes some simple logic to track mood.
+So how do we get by this? We can wrap individual elements in quotes and that works well enough if we don't also use quotes. We can also use escape characters to tell Python when we do and don't mean business. An escape character is just a character that means "interpret the next thing as text, without any special meaning." Although sometimes it means "interpret the next thing as a special thing and not just as regular text." Commonly, many systems use the backslash (`\`) as an escape character. This works when we define a string in Python, for example:
 
 ```python
-class Dog:
-
-    def __init__(self, name, owner, breed, likes, dislikes):
-        self.name = name
-        self.owner = owner
-        self.breed = breed
-        self.likes = likes
-        self.dislikes = dislikes
-        
-        # default mood value, range 0-5
-        self.mood = 2
-
-    def speak(self):
-        if self.mood > 3:
-            print("*happy bork!*")
-        elif self.mood > 1:
-            print("*regular bark*")
-        else:
-            print("*grrrrr!*") 
-    
-    def stimulate(self, stimulus):
-        if stimulus in self.likes and self.mood<5:
-            self.mood += 1
-        elif stimulus in self.dislikes and self.mood>0:
-            self.mood -= 1
-
-hazel = Dog("Hazel","Shane","beagle",["treats","naps","raccoons"],["thunder"])
-hazel.stimulate("thunder")
-hazel.stimulate("thunder")
-hazel.speak()
-hazel.stimulate("treats")
-hazel.stimulate("treats")
-hazel.speak()
-hazel.stimulate("naps")
-hazel.stimulate("raccoons")
-hazel.speak()
+ text = "here are some quotation marks inside of a string: \"\'\'\""
+ print(text)
 ```
 
-When we call the constructor (`hazel = Dog("Hazel","Beagle","Shane",["treats","naps","raccoons"],["thunder"])`), we create a new dog object with the parameters we pass in and have the variable `hazel` point to it. We say that the object we created is an *instance* of the class Dog. The variable `hazel` is a *reference* to that instance. Two different variables can point to the same object. Two different objects that contain identical data are not the same.
+But all these rules are starting to add up. It's getting kind of complicated. We don't want to spend our time writing out the special logic to distinguish between real quotations marks and commas and fake ones. And what if we didn't think of some nonobvious, uncommon edge case? Happily, this whole exercise is a pretty common problem and there are a few standard ways to do it.
 
-For example:
+We can impart supertextual meaning to text data (like the structure of a list) using data formats, which are standard ways to write out and read data, that typically have standard software tools to accomplish those tasks.
+
+## CSV
+
+One of the simplest data formats is CSV, which stands for, simply enough, Comma Separated Values. This is what we've actually just talked through. Strangely enough, it doesn't actually have to be commas that do the separating. Typically, we can choose our own delimiter. CSVs are used for tabular data and is a commonly used to exchange data between different spreadsheet applications or to produce data that is easily ingested by those applications. In a CSV, each column entry is separated by the delimiter and each new line contains a new row.
+
+Let's try out a simple example with some familiar data.
+
+![Hazel again](assets/hazel3.jpg)
 
 ```python
-hazel = Dog("Hazel","Shane","beagle",["treats","naps","raccoons"],["thunder"])
-hazel_clone = Dog("Hazel","Beagle","Shane",["treats","naps","raccoons"],["thunder"])
+hazel = ["Hazel","Shane","Beagle"]
+maple = ["Maple", "Amanda", "Hound"]
+bofur = ["Bofur", "Ronda", "Corgi"]
+dogs = [hazel,maple,bofur]
 
-print(hazel is hazel_clone)
-hazel.likes.append("smells")
-print("smells" in hazel_clone.likes)
-
-hazel_clone = hazel
-print(hazel is hazel_clone)
-print("smells" in hazel_clone.likes)
+with open('dogs.csv', "w") as outfile:
+    outfile.write(",".join(["Dog","Owner","Breed"]))
+    for dog in dogs:
+        outfile.write("\n"+",".join(dog))
 ```
 
-The `is` operator returns True if the object is literally the same (that is, they have the same memory address) and false if they aren't. If we don't do anything special, printing an object will actually print its type and memory address.
+If you want, you can import that into your preferred spreadsheet application to to see what comes out.
 
-One important thing to understand is that we use classes even when we're not defining them. The class is the primary way that Python organizes its standard library and the wider ecosystem of external libraries. So when we do `file_input = open("text.txt","r")`, we get back a File object that is defined as a class in the Python Standard Library.
+But this still leaves us with the problem of how to handle tricky data. Since CSV is so widely used, there is actually a [built-in Python module](https://docs.python.org/3/library/csv.html) to handle it. 
 
+We just create a file object with `open()` like before, but we pass that file object into a special CSV writer.
+
+Let's try it out.
+
+```python
+import csv
+
+hazel = ["Hazel, Shane's Dog","Shane","Beagle"]
+maple = ["Maple, the Swift", "Amanda", "Hound"]
+bofur = ["Bofur, the Brave", "Ronda", "Corgi"]
+dogs = [hazel,maple,bofur]
+
+with open('dogs.csv', 'w', newline='') as csvfile:
+    dogwriter = csv.writer(csvfile, delimiter=',')
+    dogwriter.writerow(["Dog","Owner","Breed"])
+    for dog in dogs:
+        dogwriter.writerow(dog)
 ```
->>> file_input = open("test.txt","r")
->>> type(file_input)
-<class '_io.TextIOWrapper'>
+
+Which produces the output csv file...
+
+```csv
+Dog,Owner,Breed
+"Hazel, Shane's Dog",Shane,Beagle
+"Maple, the Swift",Amanda,Hound
+"Bofur, the Brave",Ronda,Corgi
 ```
 
-We can see why the properties of classes are so useful there: each File Object contains distinct data (the filename and the mode and all sorts of things under the hood) and methods that operate on that data.
+Easy!
+
+Actually, this is still a little too much work. We have to manually define headers and make sure that everything is in the right order. What if we didn't even have to do that?
+
+If start with a dictionary instead of a list, we have a way to associate values with keys rather than just depending on their indices. We can use the `DictWriter` class inside of the csv module to automatically take care of things for us.
+
+```python
+import csv
+
+hazel = {"name":"Hazel","owner":"Shane","breed":"Beagle-ish"}
+maple = {"name": "Maple", "owner":"Amanda", "breed": "Hound"}
+bofur = {"name": "Bofur", "owner":"Ronda", "breed": "Corgi"}
+
+with open('dogs.csv', 'w', newline='') as csvfile:
+    fieldnames = hazel.keys()
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerow(hazel)
+    writer.writerow(maple)
+    writer.writerow(bofur)
+```
+
+This produces the same kind of CSV file.
+
+We can even go one more step and write a function (or a method) to automatically pack and unpack our Dog class into a CSV format. Maybe that will be this week's homework.
+
+To read CSV files, we can use analogous Reader and DictReader objects in the csv module:
+
+```python
+import csv
+
+with open('dogs.csv', newline='') as csvfile:
+    dogreader = csv.DictReader(csvfile)
+    for dog in dogreader:
+        print(dog["name"],"and",dog["owner"])
+```
+
+### JSON
+
+CSV is good for tabular data, but not great to encapsulate data with more complex relationships. Remember that our Dogs had lists of like and dislikes, for example. CSVs don't really support variable-length lists of things inside of rows. We can store our own format to store lists within a single CSV element, but that just puts us back at step one. And, I cannot emphasize this enough, storing different arbitrary text data formats inside of each other is a *real bad idea*. Don't do it. Just don't do it.
+
+One popular way to do this is JSON. Sometimes it's pronounced "Jay Song", but it's really "Jason". Like the Argonaut or the deli. JSON stands for "Javascript Object Notation" and was originally designed to allow websites to pass data back and forth between the browser and the server. But it's become a really popular generic format for all sorts of things and all sorts of languages.
+
+For example, a lot of GIS data is available as GeoJSON, a JSON format with geographic-specific fields.
+
+We don't have to go too much into the particular details of how JSON is structured. It's enough to kind of look at what it looks like. Here's an example:
+
+```json
+[
+  {
+    "name": "Hazel",
+    "owner": "Shane",
+    "breed": "Beagle-ish",
+    "likes": [
+      "snoozing",
+      "racoons",
+      "Shane"
+    ]
+  },
+  {
+    "name": "Maple",
+    "owner": "Amanda",
+    "breed": "Hound",
+    "likes": [
+      "zooms",
+      "looking"
+    ]
+  },
+  {
+    "name": "Bofur",
+    "owner": "Ronda",
+    "breed": "Corgi",
+    "likes": [
+      "ladies"
+    ]
+  }
+]
+```
+
+Happily, there is an easy to use [JSON module for Python](https://docs.python.org/3/library/json.html).
+
+One of the most useful mechanisms it provides is the ability to "dump" and "load" arbitrary built-in Python data structures into and out of JSON. It makes it super easy to throw a complex python object into a file and get it back out again.
+
+There are `dump` and `load` methods, which write and read directly to files, but also `dumps` and `loads` methods which write and read to a string object. I like using the latter because it makes it easier to check them during debugging.
+
+```python
+import json
+
+hazel = {"name": "Hazel", "owner": "Shane", "breed": "Beagle-ish",
+         "likes": ["snoozing", "racoons", "Shane"]}
+maple = {"name": "Maple", "owner":"Amanda", "breed": "Hound","likes":["zooms","looking"]}
+bofur = {"name": "Bofur", "owner":"Ronda", "breed": "Corgi","likes":["ladies"]}
+dogs = [hazel,maple,bofur]
+
+with open('dogs.json', mode="w") as jsonfile:
+    jsonfile.write(json.dumps(dogs))
+
+with open('dogs.json', mode="r") as jsonfile:
+    dogs_load = json.loads(jsonfile.read())
+    for dog in dogs_load:
+        print(dog["name"],"and",dog["owner"])
+```
+
+## Other Data Formats 
+
+There are a ton of other text data formats. The other big one is SGML/XML/HTML, which are structurally similar and related. HTML is, of course, the language that websites are written in. We'll revisit that in the future when we talk about web scraping.
+
+These are all different from binary data formats like the jpg and gif images that are peppered (Peppered? We should have more Pepper media) throughout these docs. That's a whole different kettle of fish.

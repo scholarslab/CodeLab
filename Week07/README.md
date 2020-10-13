@@ -1,95 +1,82 @@
-# Week 7: Class is in Session
-![bart_class dot gif](assets/bart_class.gif)
+# Week 09
+![Tacoma Narrows GIF](assets/structure.gif)
 
-## Agenda:
-- Review Homework
-- [Let's talk about classes!](lesson.md)
-- [Importance of Import](lesson.md)
-- Next week's homework
+## Agenda
+- Review homework (for real this time)
+- [Structuring Data](lesson.md) 
 
-## Homework
+## Assignment
 
-Sorry about the delay; let's leave this week light.
+### Part 0x00
+Okay, so maybe the Week 5 homework was too hard. I added [the answers to the repo just now for parts 2 and Bonus](https://github.com/scholarslab/CodeLab/tree/master/Week05/answers) to help set this assignment up. I think the answer to the bonus assignment will be useful as a foundation to this part. 
 
-Classes are useful ways to encapsulate data. In the lesson document, we created a new class named Dog, created a constructor that defined some data fields about dogs, and a method that borks out some dog talk. For this assignment, let's define an DogOwner class that contains some dogs to try out ways that classes can interact with each other.
+Read in the [same project Gutenberg text file of Much Ado About Nothing we used in Week 05](http://www.gutenberg.org/ebooks/1519) in Python. Separate all the lines of dialog and turn each into a dictionary with "role" and "dialog" as the keys. For example, we want to isolate a line of dialog such as:
 
-#### Assignment Part 0:
-
-Let's create the base class code. Create a DogOwner class that contains a name and a constructor to populate that name.
-
-```python
-class DogOwner:
-  def __init__(self,name):
-    #set the name of the DogOwner
-
-shane = DogOwner("Shane")
+```
+BEATRICE.
+I wonder that you will still be talking, Signior Benedick:
+nobody marks you.
 ```
 
-#### Assignment Part 1:
-
-Add a list to keep track of the owner's dogs to the class. You can copy and paste the Dog class definition from the lesson document. In your constructor code, be sure to set all the owners in the list of Dogs to the name of the DogOwner.
+And then turn that dialog line into a Python dictionary with keys "role" and "dialog" like this:
 
 ```python
-class Dog:
-  #copy from lesson doc
-
-class DogOwner:
-  def __init__(self,name,dogs):
-    self.name = name
-    # set DogOwner's dogs list
-    for dog in dogs:
-      #set each of the dogs' owners to the name of the DogOwner
-
-hazel = Dog("Hazel","Beagle","NotShane",["treats","naps","raccoons"],["thunder"])
-shane = DogOwner("Shane",[hazel])
-print(hazel.owner) #Should be 'Shane'
+{"role":"BEATRICE","dialog":"I wonder that you will still be talking, Signior Benedick:nobody marks you."}
 ```
 
-#### Assignment Part 2:
+This dictionary represents a single line of dialog. Now collect every line of dialog in the play into a list of many dictionaries in this format. You should have a list of just under a thousand elements, each representing a dialog line.
 
-Now, let's make things interesting. Write a function to rate the compatibility of dogs based on their likes and dislikes. For every shared like and dislike, add one point to the compatibility score. For every like that appears in another dog's dislike list, subtract one point.
+Use the Python json module to dump it into a json formatted text file. [The result should look something like this](answers/MAAN_dialog.txt). This one is formatted to be easy to read, but don't worry about making it this pretty ("pretty" is actually a technical term in this case). Just use the json `dump()` or `dumps()` method.
 
-We can use nested loops to make these comparisons, but we can also just use a single loop and the python keyword `in` (e.g. `if element in list:`).
+
+### Part 0x01
+Let's write a bit of code to turn a list of Dog objects into a CSV file and then create a new list of Dog objects by reading the file back.
+
+So, we start with our basic Dog class:
 
 ```python
 class Dog:
-  #copy from lesson doc
-
-def dog_compatibility(dog1,dog2):
-  compatibility = 0
-  # your code here
-  return compatibility
-
-hazel = Dog("Hazel","Beagle","Shane",["treats","naps","raccoons"],["thunder"])
-maple = Dog("Maple","Hound","Amanda",["treats","zooms","ducks"],["thunder"])
-
-print(dog_compatibility(hazel,maple)) #Should be 2, because they both like treats and dislike thunder
+    def __init__(self, name, owner, breed):
+        self.name = name
+        self.owner = owner
+        self.breed = breed
+    
+    def speak(self):
+        print("Bork bork! I'm",self.name)
 ```
 
-#### Assignment Part Bonus:
+Now, let's write two functions, one to dump a list of Dog objects into a csv file and one to load that file back into a list of Dog objects. The CSV file should probably [look something like this](answers/dogs.csv).
 
-This part is a bonus assignment (yay?), but it isn't anything strictly new. Let's make things *really* interesting. Let's write a function that takes two DogOwners and returns the most and least compatible Dogs.
+
 
 ```python
+import csv
 class Dog:
-  #copy from lesson doc
+    def __init__(self, name, owner, breed):
+        self.name = name
+        self.owner = owner
+        self.breed = breed
+    
+    def speak(self):
+        print("Bork bork! I'm",self.name)
 
-class DogOwner:
-  def __init__(self,name,dogs):
-    self.name = name
-    self.dogs = dogs
-    for dog in dogs:
-      dog.owner = self.name
+def dogs_to_csv(dogs,filename):
+    with open(filename,mode="w") as outfile:
+        # your code here
 
-def dog_compatibility(owner1,owner2):
-  #your code here
+def csv_to_dogs(filename):
+    dogs = []
+    with open(filename,mode="r") as infile:
+        #your code here
+        return dogs
+
+hazel = Dog("Hazel","Shane","Beagle")
+maple = Dog("Maple","Amanda","Hound")
+bofur = Dog("Bofur","Ronda","Corgi")
+dogs = [hazel,maple,bofur]
+
+dogs_to_csv(dogs,"dogs.csv")
+dogs2 = csv_to_dogs("dogs.csv")
+for dog in dogs2:
+    dog.speak()
 ```
-
-We can form the basic comparison logic by using two loops to loop through all pairings of dogs for each owner:
-```python
-  for dog1 in owner1.dogs:
-    for dog2 in owner2.dogs:
-      #your code here
-```
-
-To figure out the most and least compatible pairs, we don't need to actually sort them, we can just keep track of score of the two most and least compatible pairs.

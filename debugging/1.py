@@ -2,7 +2,7 @@
 #  out the pig latin translation.
 
 # Request word & store as variable "bacon"
-ham = imput("Gimme a word to tarrrrrrnslate to pig latin. Please: "])
+bacon = input("Gimme a word to tarrrrrrnslate to pig latin. Please: ")
 
 # For "bacon", remove character at position[0], suffix with that character,
 # suffix with "ay"
@@ -10,4 +10,4 @@ ham = imput("Gimme a word to tarrrrrrnslate to pig latin. Please: "])
 # It's called string slicing!
 
 
-print[bacon[1:]+snakin[3] + "ay']
+print(bacon[1:]+bacon[0] + "ay")
