@@ -245,7 +245,7 @@ with open('dogs.json', mode="r") as jsonfile:
         print(dog["name"],"and",dog["owner"])
 ```
 
-## Other Data Formats 
+## Other Data Formats
 
 There are a ton of other text data formats. The other big one is SGML/XML/HTML, which are structurally similar and related. HTML is, of course, the language that websites are written in. We'll revisit that in the future when we talk about Web scraping and about building websites.
 
