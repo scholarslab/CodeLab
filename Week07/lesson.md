@@ -1,4 +1,4 @@
-# Structuring Data
+# Structuring Data 2: Even More Structure
 
 ![Maple and Jeremy](assets/maple_jerm.jpg)
 
