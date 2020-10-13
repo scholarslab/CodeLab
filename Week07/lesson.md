@@ -25,7 +25,7 @@ outfile.write("Hello Dog!")
 outfile.close()
 ```
 
-(If you need a refresher, we learned all of this back in [Week 5](../Week05/lesson.md))
+(If you need a refresher, we learned all of this back in [Week 5](../Week05/lesson.md#files))
 
 But while we've worked with simple text and numerical data like strings and ints plenty, we've also used lists and dictionaries and more structured data too. How do we read and write those more complicated kinds of data?
 
@@ -100,7 +100,7 @@ Let's try out a simple example with some familiar data.
 ![Hazel again](assets/hazel3.jpg)
 
 ```python
-hazel = ["Hazel","Shane","Beagle"]
+hazel = ["Hazel","Shane","Beagle/Heeler"]
 maple = ["Maple", "Amanda", "Hound"]
 bofur = ["Bofur", "Ronda", "Corgi"]
 dogs = [hazel,maple,bofur]
@@ -113,7 +113,7 @@ with open('dogs.csv', "w") as outfile:
 
 If you want, you can import that into your preferred spreadsheet application to to see what comes out.
 
-But this still leaves us with the problem of how to handle tricky data. Since CSV is so widely used, there is actually a [built-in Python module](https://docs.python.org/3/library/csv.html) to handle it. 
+But this still leaves us with the problem of how to handle tricky data. Since CSV is so widely used, there is actually a [built-in Python module](https://docs.python.org/3/library/csv.html) to handle it. If we haven't talked in depth about imports yet because I moved the weeks around, recall that we've used Python's built-in `random` module before to generate random numbers. Modules are just bits of extra code that we can bring in ("import") to use in our own.
 
 We just create a file object with `open()` like before, but we pass that file object into a special CSV writer.
 
@@ -122,7 +122,7 @@ Let's try it out.
 ```python
 import csv
 
-hazel = ["Hazel, Shane's Dog","Shane","Beagle"]
+hazel = ["Hazel, the Sneak","Shane","Beagle/Heeler"]
 maple = ["Maple, the Swift", "Amanda", "Hound"]
 bofur = ["Bofur, the Brave", "Ronda", "Corgi"]
 dogs = [hazel,maple,bofur]
@@ -138,7 +138,7 @@ Which produces the output csv file...
 
 ```csv
 Dog,Owner,Breed
-"Hazel, Shane's Dog",Shane,Beagle
+"Hazel, the Sneak",Shane,Beagle/Heeler
 "Maple, the Swift",Amanda,Hound
 "Bofur, the Brave",Ronda,Corgi
 ```
@@ -152,7 +152,7 @@ If start with a dictionary instead of a list, we have a way to associate values 
 ```python
 import csv
 
-hazel = {"name":"Hazel","owner":"Shane","breed":"Beagle-ish"}
+hazel = {"name":"Hazel","owner":"Shane","breed":"Beagle/Heeler"}
 maple = {"name": "Maple", "owner":"Amanda", "breed": "Hound"}
 bofur = {"name": "Bofur", "owner":"Ronda", "breed": "Corgi"}
 
@@ -165,7 +165,7 @@ with open('dogs.csv', 'w', newline='') as csvfile:
     writer.writerow(bofur)
 ```
 
-This produces the same kind of CSV file.
+This produces the same kind of CSV file. Note that the field names are consistent, so I just used the keys for Hazel. We'd have to do this a bit differently if the data wasn't structured homogenously.
 
 To read CSV files, we can use analogous Reader and DictReader objects in the csv module:
 
@@ -180,13 +180,13 @@ with open('dogs.csv', newline='') as csvfile:
 
 ### JSON
 
-CSV is good for tabular data, but not great to encapsulate data with more complex relationships. Remember that our Dogs had lists of like and dislikes, for example. CSVs don't really support variable-length lists of things inside of rows. We can store our own format to store lists within a single CSV element, but that just puts us back at step one. And, I cannot emphasize this enough, storing different arbitrary text data formats inside of each other is a *real bad idea*. Don't do it. Just don't do it.
+CSV is good for tabular data, but not great to encapsulate data with more complex relationships. Each of our Dogs has lists of things they like and dislike, for example. CSVs don't really support variable-length lists of things inside of rows. We can store our own format to store lists within a single CSV element, but that just puts us back at step one. And, I cannot emphasize this enough, storing different arbitrary text data formats inside of each other is a *real bad idea*. Don't do it. Oh my god, no, just don't do it.
 
-One popular way to do this is JSON. Sometimes it's pronounced "Jay Song", but it's really "Jason". Like the Argonaut or the deli. JSON stands for "Javascript Object Notation" and was originally designed to allow websites to pass data back and forth between the browser and the server. But it's become a really popular generic format for all sorts of things and all sorts of languages.
+One popular, good way to do this is JSON. Sometimes it's pronounced "Jay Song", but it's really "Jason". Like the Argonaut or the deli or [Robards](https://www.imdb.com/name/nm0001673/). JSON stands for "Javascript Object Notation" and was originally designed to allow websites to pass data back and forth between the browser and the server. But it's become a really popular generic format for all sorts of things and all sorts of languages.
 
 For example, a lot of GIS data is available as GeoJSON, a JSON format with geographic-specific fields.
 
-We don't have to go too much into the particular details of how JSON is structured. It's enough to kind of look at what it looks like. Here's an example:
+We don't have to go too much into the particular details of how JSON is structured. It's enough to just glance at what it looks like. Here's an example:
 
 ```json
 [
@@ -206,7 +206,8 @@ We don't have to go too much into the particular details of how JSON is structur
     "breed": "Hound",
     "likes": [
       "zooms",
-      "looking"
+      "looking",
+      "carots"
     ]
   },
   {
@@ -214,13 +215,13 @@ We don't have to go too much into the particular details of how JSON is structur
     "owner": "Ronda",
     "breed": "Corgi",
     "likes": [
-      "ladies"
+      "the ladies"
     ]
   }
 ]
 ```
 
-Happily, there is an easy to use [JSON module for Python](https://docs.python.org/3/library/json.html).
+Happily, there is also an easy to use [JSON module for Python](https://docs.python.org/3/library/json.html).
 
 One of the most useful mechanisms it provides is the ability to "dump" and "load" arbitrary built-in Python data structures into and out of JSON. It makes it super easy to throw a complex python object into a file and get it back out again.
 
@@ -246,6 +247,6 @@ with open('dogs.json', mode="r") as jsonfile:
 
 ## Other Data Formats 
 
-There are a ton of other text data formats. The other big one is SGML/XML/HTML, which are structurally similar and related. HTML is, of course, the language that websites are written in. We'll revisit that in the future when we talk about web scraping.
+There are a ton of other text data formats. The other big one is SGML/XML/HTML, which are structurally similar and related. HTML is, of course, the language that websites are written in. We'll revisit that in the future when we talk about Web scraping and about building websites.
 
 These are all different from binary data formats like the jpg and gif images that are peppered (Peppered? We should have more Pepper media) throughout these docs. That's a whole different kettle of fish.
