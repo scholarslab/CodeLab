@@ -6,75 +6,75 @@
 
 Okay, so we've been coding for a while now. You have the basic tools to take on almost anything!
 
-So, let's flex those muscles a bit. Write me the code to return all the permutations for two items out of a list. This might be useful to pick out all the possible pairings out of a list of fellows. So we want to go from `fellows = ["Chloe","Connor","Janet","Lauren","Natasha"]` to:
+So, let's flex those muscles a bit. Write me the code to return all the permutations for two items out of a list. This might be useful to pick out all the possible pairings out of a list of Scholars' Lab pets. So we want to go from `pets = ["Bofur","Catsby","Hazel","Maple","Pepper"]` to:
 
 ```python
-[('Chloe', 'Connor'), ('Chloe', 'Janet'), ('Chloe', 'Lauren'), ('Chloe', 'Natasha'), ('Connor', 'Chloe'), ('Connor', 'Janet'), ('Connor', 'Lauren'), ('Connor', 'Natasha'), ('Janet', 'Chloe'), ('Janet', 'Connor'), ('Janet', 'Lauren'), ('Janet', 'Natasha'), ('Lauren', 'Chloe'), ('Lauren', 'Connor'), ('Lauren', 'Janet'), ('Lauren', 'Natasha'), ('Natasha', 'Chloe'), ('Natasha', 'Connor'), ('Natasha', 'Janet'), ('Natasha', 'Lauren')]
+[('Bofur', 'Catsby'), ('Bofur', 'Hazel'), ('Bofur', 'Maple'), ('Bofur', 'Pepper'), ('Catsby', 'Bofur'), ('Catsby', 'Hazel'), ('Catsby', 'Maple'), ('Catsby', 'Pepper'), ('Hazel', 'Bofur'), ('Hazel', 'Catsby'), ('Hazel', 'Maple'), ('Hazel', 'Pepper'), ('Maple', 'Bofur'), ('Maple', 'Catsby'), ('Maple', 'Hazel'), ('Maple', 'Pepper'), ('Pepper', 'Bofur'), ('Pepper', 'Catsby'), ('Pepper', 'Hazel'), ('Pepper', 'Maple')]
 ```
 
 So, where would we start?
 
-Let's go with one loop on the outside and one on the inside, but we want to make sure that the fellow in the outside isn't the same as the one on the outside...
+Let's go with one loop on the outside and one on the inside, but we want to make sure that the pet in the outside isn't the same as the one on the outside...
 
 ```python
-def permutations(fellows):
+def permutations(pets):
     perms = []
-    for fellow1 in fellows:
-        for fellow2 in fellows:
-            if fellow1==fellow2:
+    for pet1 in pets:
+        for pet2 in pets:
+            if pet1==pet2:
                 continue
-            perms.append((fellow1,fellow2))
+            perms.append((pet1,pet2))
     return perms
 
-fellows = ["Chloe","Connor","Janet","Lauren","Natasha"]
-print(permutations(fellows))
+pets = ["Bofur","Catsby","Hazel","Maple","Pepper"]
+print(permutations(pets))
 ```
 
 Easy enough... so far. What if we want to do groups of three instead of two?
 
 ```python
-def permutations(fellows):
+def permutations(pets):
     perms = []
-    for fellow1 in fellows:
-        for fellow2 in fellows:
-            if fellow1==fellow2:
+    for pet1 in pets:
+        for pet2 in pets:
+            if pet1==pet2:
                 continue
-            for fellow3 in fellows:
-                p = (fellow1,fellow2)
-                if fellow3 not in p:
-                    p = p+(fellow3,)
+            for pet3 in pets:
+                p = (pet1,pet2)
+                if pet3 not in p:
+                    p = p+(pet3,)
                     perms.append(p)
     return perms
 
-fellows = ["Chloe","Connor","Janet","Lauren","Natasha"]
-print(permutations(fellows))
+pets = ["Bofur","Catsby","Hazel","Maple","Pepper"]
+print(permutations(pets))
 ```
 
 Whew! This is getting a bit rough.
 
-Okay, so what about permutations of 4 fellows? Or a generalizable algorithm that calculates different sizes of permutation sets based on a parameter? Hmmm. I think we're going to have to talk about recursion...
+Okay, so what about permutations of 4 pets? Or a generalizable algorithm that calculates different sizes of permutation sets based on a parameter? Hmmm. I think we're going to have to talk about recursion...
 
 But, wait. Remember when I said (a long time ago) that really novel problems are rare and that it's almost certain that other people have had the same problems as you in the past?
 
-What if we could let some hardworking Python developers do the hard work for us? 
+What if we could let some hardworking Python developers do the hard work for us?
 
 ## Imports
 
 ```python
 from itertools import permutations
-praxis = ["Chloe","Connor","Janet","Lauren","Natasha"]
-print(list(permutations(praxis,3)))
+pets = ["Bofur","Catsby","Hazel","Maple","Pepper"]
+print(list(permutations(pets,3)))
 ```
 
 Easy!
 
-We can see in that first line, `from itertools import permutations`, that we're importing a function, `permutations` from the *module* `itertools`, a set of code that provides tools for iterative computation. [Here's the doc.](https://docs.python.org/3/library/itertools.html)
+We can see in that first line, `from itertools import permutations`, that we're importing a function, `permutations` from the *module* `itertools`, a set of code that provides tools for iterative computation. [Here's the doc.](https://docs.python.org/3/library/itertools.html) 
 
 Itertools is one of many modules that come as part of the Python Standard Library. When Python was released, it was known for this robust library that provided many common and fundamental tools.
 
 Let's take a look at another example.
 
-How do we write a function to return a random number? Beats the hell out of me. This is... actually a really hard problem that has important ramifications for, among a lot of tother things, security if not done right. The Python random function is actually probably not good enough for high-level infosec uses, but it's good enough for most things we're liable to do.
+How do we write a function to return a random number? Beats the hell out of me. This is... actually a really hard problem that has important ramifications for, among a lot of tother things, security if not done right. So we can just use the Python implementation like we did before. (The Python random function is actually also probably not good enough for high-level infosec uses, but it's sufficient for most things we're liable to do.)
 
 ![python security warning](assets/security.png)
 
@@ -84,15 +84,17 @@ We can get a random integer (or a random index for a list):
 
 ```python
 import random
-praxis = ["Chloe","Connor","Janet","Lauren","Natasha"]
+praxis = ["Bofur","Catsby","Hazel","Maple","Pepper"]
 print(praxis[random.randint(0,len(praxis)-1)])
 ```
 
-(I ran this code to test it and I got 4 Chloes out of 5 tries. I don't know what that means.)
+(I ran this code to test it and I got 4 Bofurs out of 5 tries.)
+
+![Bofur!](assets/bofur.jpg)
 
 If we read the doc, we can see that randint is inclusive (so, randint(0,5) would sometimes return 5), so we want to do len(praxis)-1 because the valid indices for Praxis are `[0,1,2,3,4]`.
 
-In this example, we can see how we can also just import an entire module using `import random` and access its member functions and classes through that name. We could have done this before with `itertools` too:
+In this example, we can see that instead of importing a single class or function, we just imported the entire module using `import random`. This allows us to access all of its member functions and classes through that name. We could have done this before with `itertools` too:
 
 ```python
 import itertools
@@ -101,11 +103,11 @@ print(itertools.permutations([1,2,3,4,5],2))
 
 It just depends on whether or not we just need to use a single function or class from a module or if we want to use more.
 
-Back to random: we can also use `random.shuffle()` or `random.sample` to shuffle the list or to pick out a random sampling from that list.
+If we important random, we can use its other functions (e.g. `random.shuffle()` or `random.sample` to shuffle the list or to pick out a random sampling from that list) without re-importing.
 
 ```python
 import random
-praxis = ["Chloe","Connor","Janet","Lauren","Natasha"]
+praxis = ["Bofur","Catsby","Hazel","Maple","Pepper"]
 print(praxis)
 random.shuffle(praxis)
 print(praxis)

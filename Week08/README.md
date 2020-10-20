@@ -63,31 +63,3 @@ maple = Dog("Maple","Hound","Amanda",["treats","zooms","ducks"],["thunder"])
 
 print(dog_compatibility(hazel,maple)) #Should be 2, because they both like treats and dislike thunder
 ```
-
-#### Assignment Part Bonus:
-
-This part is a bonus assignment (yay?), but it isn't anything strictly new. Let's make things *really* interesting. Let's write a function that takes two DogOwners and returns the most and least compatible Dogs.
-
-```python
-class Dog:
-  #copy from lesson doc
-
-class DogOwner:
-  def __init__(self,name,dogs):
-    self.name = name
-    self.dogs = dogs
-    for dog in dogs:
-      dog.owner = self.name
-
-def dog_compatibility(owner1,owner2):
-  #your code here
-```
-
-We can form the basic comparison logic by using two loops to loop through all pairings of dogs for each owner:
-```python
-  for dog1 in owner1.dogs:
-    for dog2 in owner2.dogs:
-      #your code here
-```
-
-To figure out the most and least compatible pairs, we don't need to actually sort them, we can just keep track of score of the two most and least compatible pairs.

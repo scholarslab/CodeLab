@@ -4,7 +4,6 @@
 ## Agenda
 - Review homework.
 - [Imports and modules](lesson.md) 
-- pip, pipenv
 
 ## Assignment
 
