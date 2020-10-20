@@ -37,7 +37,7 @@ class DogOwner:
     for dog in dogs:
       #set each of the dogs' owners to the name of the DogOwner
 
-hazel = Dog("Hazel","Beagle","NotShane",["treats","naps","raccoons"],["thunder"])
+hazel = Dog("Hazel","Beagle/Heeler","NotShane",["treats","naps","raccoons"],["thunder"])
 shane = DogOwner("Shane",[hazel])
 print(hazel.owner) #Should be 'Shane'
 ```
@@ -57,7 +57,7 @@ def dog_compatibility(dog1,dog2):
   # your code here
   return compatibility
 
-hazel = Dog("Hazel","Beagle","Shane",["treats","naps","raccoons"],["thunder"])
+hazel = Dog("Hazel","Beagle/Heeler","Shane",["treats","naps","raccoons"],["thunder"])
 maple = Dog("Maple","Hound","Amanda",["treats","zooms","ducks"],["thunder"])
 
 print(dog_compatibility(hazel,maple)) #Should be 2, because they both like treats and dislike thunder

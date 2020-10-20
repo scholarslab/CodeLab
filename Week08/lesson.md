@@ -22,13 +22,13 @@ print(whos_a_good_dog())
 
 This is pretty legible because these are all the same type of things. But what if we want to return more than just the dog's name? Does "Hazel" really capture the full goodness of this dog? Of course not.
 
-What if we want to return other attributes about Hazel? She's some sort of Beagle mix. She's Shane's dog. She likes treats, naps, and raccoons; she doesn't like thunder. How would we have this function return all of this information?
+What if we want to return other attributes about Hazel? She's a Beagle/Heeler mix. She's Shane's dog. She likes treats, naps, and raccoons; she doesn't like thunder. How would we have this function return all of this information?
 
 We've experimented already with using data structures to describe, er, data in a more *ahem* structured way. We can return all of this data using lists and dictionaries:
 
 ```python
 def whos_a_good_dog():
-    return({"name":"Hazel","breed":"heeler/beagle","owner":"Shane","likes":["treats","naps","raccoons"],"dislikes":["thunder"]})
+    return({"name":"Hazel","breed":"beagle/heeler","owner":"Shane","likes":["treats","naps","raccoons"],"dislikes":["thunder"]})
 print(whos_a_good_dog())
 ```
 
@@ -90,7 +90,7 @@ class Dog:
     def speak(self):
         print("Bork bork! I'm",self.name,"! I like",self.likes[0], "and dislike ",self.dislikes[0],"!")
 
-hazel = Dog("Hazel","Shane","beagle",["treats","naps","raccoons"],["thunder"])
+hazel = Dog("Hazel","Shane","beagle/heeler",["treats","naps","raccoons"],["thunder"])
 hazel.speak()
 
 ```
@@ -123,7 +123,7 @@ class Dog:
     def pet(self):
         self.mood += 1
 
-hazel = Dog("Hazel","Shane","beagle",["treats","naps","raccoons"],["thunder"])
+hazel = Dog("Hazel","Shane","beagle/heeler",["treats","naps","raccoons"],["thunder"])
 hazel.speak()
 hazel.pet()
 hazel.pet()
@@ -135,8 +135,8 @@ When we call the constructor (`hazel = Dog("Hazel","Beagle","Shane",["treats","n
 For example:
 
 ```python
-hazel = Dog("Hazel","Shane","beagle",["treats","naps","raccoons"],["thunder"])
-hazel_clone = Dog("Hazel","Beagle","Shane",["treats","naps","raccoons"],["thunder"])
+hazel = Dog("Hazel","Shane","beagle/heeler",["treats","naps","raccoons"],["thunder"])
+hazel_clone = Dog("Hazel","beagle/heeler","Shane",["treats","naps","raccoons"],["thunder"])
 
 print(hazel is hazel_clone)
 
