@@ -38,9 +38,7 @@ On top of that problem, a dog isn't just data. I think this is one of the Four N
 
 Here, we've described largely static information about Hazel. But a dog has behaviors and feelings. In code-speak, we can say that it has logic and states.
 
-A class is really useful to encapsulate both data and functions in a single cohesive unit.
-
-A class is a particular type of objects. We can create ("instantiate") an object of a class and store it as a variable. A variable therefore contains (technically, contains a reference to) an *instance* of a class.
+A "class" is a really useful mechanism to encapsulate both data and functions in a single cohesive unit. Classes describe a type of object, like "dog" or "praxis fellow". We can create ("instantiate") an "instance" or "object" of a class and reference it using a variable.
 
 We've already used a lot of built-in classes. Strings, lists, dictionaries are all classes. We can have Python tell us what kind of class it is using the built-in function `type()` (terminologically, "type" is often used interchangably with "class", though there are subtle differences depending on the particular language).
 
@@ -53,11 +51,15 @@ We've already used a lot of built-in classes. Strings, lists, dictionaries are a
 <class 'str'>
 ```
 
-We can define our own classes too. Let's make a simple dog class with a "speak" method.
+So, in this example, `a` is a variable that serves as a reference to an object that is an instance of the built-in Python class `list`.
+
+We can define our own classes just like we defined out own functions. Let's make a simple dog class with a "speak" method.
+
+Methods are basically the same as functions, except that instead of being "anonymous", methods are attached to particular objects. Here, we could have defined `speak()` as a function that takes a dog as an argument and achieved the same result, but it's easier to think of speech as being an action that a dog performs than as an unembodied abstraction that you pass a dog to.
 
 ```python
 class Dog:
-    name = ""
+    name = "None"
     def speak(self):
         print("Bork bork! My name is ",self.name,"!")
 
@@ -95,7 +97,7 @@ hazel.speak()
 
 Classes can be as simple or complex as you want.
 
-Let's try to model a dog class that includes some simple logic to track mood.
+Let's try to model a dog class that includes some simple behavioral and state logic.
 
 ```python
 class Dog:
@@ -146,7 +148,6 @@ The `is` operator returns True if the object is literally the same (that is, the
 
 (The reason that we're using `is` instead of `==` is because the equality operator can be *overriden* under the hood if we wanted to have some fancy kind of comparison logic. By default, it is the same as `is`, but it's often overriden. We can compare two distinct, but identical lists using `==` and it will return `True` because `list` overrides the equality operator. But that isn't something we need to get into here.)
 
-Classes underpine an influential way of organizing computer programs: Object Oriented Programming (OOP), where the basic unit of code are class. Python was created originally as a primarily Object Oriented language, because Object Orientation was ascendant in the 1990s when Python was first created. Many important programming languages of that broad era are OO languages: C++, C#, Java, Javascript, and Ruby to name a few of the most famous. However, Object Orientation is not the only "programming paradigm" and Python code can be both procedural and functional (more on those in the future... maybe).
+Classes underpine an influential way of organizing computer programs: Object Oriented Programming (OOP), where the basic unit of code are class. Python was created originally as a primarily Object Oriented language, because Object Orientation was ascendant in the 1990s when Python was first created. Many important programming languages of that broad era are OO languages: C++, C#, Java, Javascript, and Ruby to name a few of the most famous. However, Object Orientation is not the only "programming paradigm" and Python code can organized both procedurally and functionally.
 
 It's not necessary or useful to organize our code into classes, especially if that code is fairly simple. However, it is a useful option and important to understand for another reason: we use classes even when we're not defining them. The class is the primary way that Python organizes its own standard library and the wider ecosystem of external libraries.
-
