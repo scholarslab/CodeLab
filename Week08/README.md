@@ -1,65 +1,93 @@
-# Week 8
-![https://media.giphy.com/media/3otOKBLWSUYaOlxe12/giphy.gif](https://media.giphy.com/media/3otOKBLWSUYaOlxe12/giphy.gif)
+# Week 8: Class is in Session
+![bart_class dot gif](assets/bart_class.gif)
 
-## Agenda
-- Review homework.
-- [Imports and modules](lesson.md) 
-- pip, pipenv
+## Agenda:
+- Review Homework
+- [Let's talk about classes!](lesson.md)
+- [Importance of Import](lesson.md)
+- Next week's homework
 
-## Assignment
+## Homework
 
-### Part 0.A:
+Classes are useful ways to encapsulate data. In the lesson document, we created a new class named Dog, created a constructor that defined some data fields about dogs, and a method that borks out some dog talk. For this assignment, let's define an DogOwner class that contains some dogs to try out ways that classes can interact with each other.
 
-Once upon a time, we talked about different ways to sort a list of numbers. There were good ways and bad ways. And some really, really bad ways. One really, really bad way is to just kind of throw all the numbers up in the air, figure out whether or not the resulting scramble is sorted, and then just redo it if it isn't. Now that you guys are all random number masters, let's try to implement that sorting algorithm outselves.
+#### Assignment Part 0:
 
-Write a function to receive a list of integers and sort them in this inefficient way using Python's random module. `import` statements can technically go anywhere, but it's usually a good practice to keep them at the top of the file, so you have access to it anywhere in your code.
-
-Remember that since we're mixing up the list *randomly*, it can potentially run an infinite number of times. We should construct our loops accordingly and use statements like `continue` and `break` wisely.
+Let's create the base class code. Create a DogOwner class that contains a name and a constructor to populate that name.
 
 ```python
-#import statement goes here
-def random_sort(nums):
+class DogOwner:
+  def __init__(self,name):
+    #set the name of the DogOwner
+
+shane = DogOwner("Shane")
+```
+
+#### Assignment Part 1:
+
+Add a list to keep track of the owner's dogs to the class. You can copy and paste the Dog class definition from the lesson document. In your constructor code, be sure to set all the owners in the list of Dogs to the name of the DogOwner.
+
+```python
+class Dog:
+  #copy from lesson doc
+
+class DogOwner:
+  def __init__(self,name,dogs):
+    self.name = name
+    # set DogOwner's dogs list
+    for dog in dogs:
+      #set each of the dogs' owners to the name of the DogOwner
+
+hazel = Dog("Hazel","Beagle","NotShane",["treats","naps","raccoons"],["thunder"])
+shane = DogOwner("Shane",[hazel])
+print(hazel.owner) #Should be 'Shane'
+```
+
+#### Assignment Part 2:
+
+Now, let's make things interesting. Write a function to rate the compatibility of dogs based on their likes and dislikes. For every shared like and dislike, add one point to the compatibility score. For every like that appears in another dog's dislike list, subtract one point.
+
+We can use nested loops to make these comparisons, but we can also just use a single loop and the python keyword `in` (e.g. `if element in list:`).
+
+```python
+class Dog:
+  #copy from lesson doc
+
+def dog_compatibility(dog1,dog2):
+  compatibility = 0
+  # your code here
+  return compatibility
+
+hazel = Dog("Hazel","Beagle","Shane",["treats","naps","raccoons"],["thunder"])
+maple = Dog("Maple","Hound","Amanda",["treats","zooms","ducks"],["thunder"])
+
+print(dog_compatibility(hazel,maple)) #Should be 2, because they both like treats and dislike thunder
+```
+
+#### Assignment Part Bonus:
+
+This part is a bonus assignment (yay?), but it isn't anything strictly new. Let's make things *really* interesting. Let's write a function that takes two DogOwners and returns the most and least compatible Dogs.
+
+```python
+class Dog:
+  #copy from lesson doc
+
+class DogOwner:
+  def __init__(self,name,dogs):
+    self.name = name
+    self.dogs = dogs
+    for dog in dogs:
+      dog.owner = self.name
+
+def dog_compatibility(owner1,owner2):
   #your code here
-
-random_sort([7,4,2,7,8,1])
 ```
 
-This algorithm is actually one variation of the famous ["bogosort"](https://en.wikipedia.org/wiki/Bogosort) (AKA stupidsort, shotgunsort, monkeysort) sorting algorithm.
-
-### Part 0.B
-
-Is that a bad way to sort? How do we prove it? Write the same kind of sort function using one of [Python's built-in sorting mechanisms](https://docs.python.org/3/howto/sorting.html).
-
+We can form the basic comparison logic by using two loops to loop through all pairings of dogs for each owner:
 ```python
-def good_sort(nums):
-  #python sort
-  return nums
+  for dog1 in owner1.dogs:
+    for dog2 in owner2.dogs:
+      #your code here
 ```
 
-Now, save both sorts as different .py files and run both sorts through the command line tool `time`. Instead of running something like `python3 random_sort.py`, you can run `time python3 random_sort.py` and it'll tell you how long it took to run. For example, running our dog names script took me 0.075 total seconds to start up Python, load the script, and then perform the dog name generation.
-
-```
-~/projects/sandbox > time python dog_names.py
-['Sammy', 'Thor', 'Bear', 'Lulu', 'Rex', 'Sparky']
-python dog_names.py  0.04s user 0.01s system 74% cpu 0.075 total
-```
-
-Most of this time is spent loading Python and the script and printing the output to the screen. So if I generate 600 names instead of 6, it still only takes a little bit longer (0.104 seconds).
-
-Let's see how fast the good and bad sorts are by using `time` from the command line to run each script. Make sure that your scripts run correctly for a small list (say, with 3 or 4 numbers) before trying it for larger ones. Now, try the scripts with lists of 9, 10, and 11 numbers. The random sort can... take a while to do this. How much longer  will vary depending on sheer luck, because we're depending on random chance, after all. The times for the good sort will vary much less, because the people who wrote Python are pretty smart.
-
-#### slight bit of unnecessary math detail ahead ####
-
-If we want to be real big (and, for DHers, really unnecessarily big) nerds, we can see that every additional number in a list that we try to sort using a bogosort increases the average number of random shuffles by a multiple of that length. So, the average number of shuffles for a list of `n` length is the factorial of `n`: `n!`. As the length of the list increased from 9 to 10, we had to do, on average, 10 times more sorts. This is a curve that goes up *real* quick.
-
-A computer scientist would say that this algorithm has an average *time complexity* of `O(n!)`, a best-case of O(n) (because if might already be sorted and we can verify it by reading through the list once), and a worst-case of never, because if we're *really* unlucky, we'll just never shuffle into the right order. To compare, the built-in Python sort, which uses the [timsort](https://en.wikipedia.org/wiki/Timsort) algorithm, has an average time complexity of `O(n log n)`, which is as good as it gets for a generalized sorting algorithm.
-
-Here's how `n!` diverges from `n log n` for even small values of `n`:
-
-![factorial vs n log n](assets/efficiency.png)
-
-(thanks, [Wolfram Alpha](https://www.wolframalpha.com/input/?i=plot+y+%3D+x%21%3B+y+%3D+x+log+x+from+x+%3D+0+to+7))
-
-The blue line is the bogosort's `n!` performance, the red is Python's `n log n` performance. They both start out small, but the blue line quickly splits off from the red and just zooms up into the stratosphere. This is why we can easily sort large (length 10000+) lists using Python's built-in sort, but bogosort just completely chokes for those much longer than a dozen or so elements.
-
-Congratulations on still reading this. You basically have a named chair in computer science at this point. All of this is to say that while digital humanists don't often have to worry too much about things like efficiency, it is still entirely possible even for beginning programmers to write code that will only complete after the life cycle of the sun. And to suggest that if there's already a module that does a thing, especially if that module is part of Python's standard library, it's usually a good idea to use that one instead of rolling your own.
+To figure out the most and least compatible pairs, we don't need to actually sort them, we can just keep track of score of the two most and least compatible pairs.
