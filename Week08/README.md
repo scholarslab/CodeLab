@@ -2,9 +2,8 @@
 ![bart_class dot gif](assets/bart_class.gif)
 
 ## Agenda:
-- Review Homework
+- Present Adventures in Data
 - [Let's talk about classes!](lesson.md)
-- [Importance of Import](lesson.md)
 - Next week's homework
 
 ## Homework

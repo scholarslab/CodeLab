@@ -1,3 +1,4 @@
+
 # A Little Help From Our Friends (at Python)
 
 ![hazel](assets/hazel_pet.jpg)
@@ -70,6 +71,8 @@ Easy!
 
 We can see in that first line, `from itertools import permutations`, that we're importing a function, `permutations` from the *module* `itertools`, a set of code that provides tools for iterative computation. [Here's the doc.](https://docs.python.org/3/library/itertools.html) 
 
+Modules are broad collections of code. It can contain functions directly (as we see here), but it can also contain classes. Using `from ... import`, we can import any of these components inside of the module.
+
 Itertools is one of many modules that come as part of the Python Standard Library. When Python was released, it was known for this robust library that provided many common and fundamental tools.
 
 Let's take a look at another example.
@@ -115,7 +118,6 @@ print(random.sample(praxis,2))
 ```
 
 We can find the full, glorious index to the Python Standard Library [here](https://docs.python.org/3/library/).
-
 
 ## Importing your own classes
 
