@@ -9,7 +9,7 @@ The Python Standard Library provides a pretty wide set of tools. It comes with e
 
 But sometimes, the thing we need is a little bit more obscure or specific. We couldn't include all these things with every Python install, because otherwise that install would be enormous. Instead, there's something like an app store for Python code (except that it's all free, because Python is all free) called the [Python Package Index, or PyPI](https://pypi.org/). Not to be confused with PyPy (groan), which is something else.
 
-It's pretty big. Anyone can submit projects to it and so there are 200,000 individual ones.
+It's pretty big. Anyone can submit projects to it and so there are more than a quarter-million individual ones.
 
 We can install any one of these packages through [Pipenv](https://pipenv-fork.readthedocs.io/en/latest/), which all of you should already have since we did the environment setup at the beginning of the year.
 
