@@ -170,9 +170,9 @@ ben = ""
 
 for line in dialog:
     if line["role"] == "BEATRICE":
-        bea+=" "+''.join(c for c in line["dialog"] if (c.isalnum() or c.isspace()))
+        bea+=" "+line["dialog"]
     elif line["role"] == "BENEDICK":
-        ben+=" "+''.join(c for c in line["dialog"] if (c.isalnum() or c.isspace()))
+        ben+=" "+line["dialog"]
 
 bea_tokens = []
 ben_tokens = []
