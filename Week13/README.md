@@ -8,6 +8,8 @@
 
 ![assets/dogs.gif](assets/dogs.gif)
 
+And that's a wrap! You're all official CodeLab graduates. Come by and pick up your commemorative pin if you haven't and learn the secret Code Lab handshake so you can recognize other grads and reap the benefits of in-group nepotism. Ad astra per insectum!
+
 ## Assignment
 
-No new homework this week. But [do last week's](https://github.com/scholarslab/CodeLab/blob/master/Week11/README.md#assignments-review) if you haven't. Come talk to me if you're having trouble.
+Freedom! Sweet freedom!
