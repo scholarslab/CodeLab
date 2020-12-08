@@ -131,8 +131,6 @@ XML is really verbose and you have to be really careful about closing tags corre
 
 The "Extensible" part of the XML name means that we can use this basic structure to build other languages. Just like my constructed Futurama script example can form a standard format to represent dialog, XML can be extended (really, constrained) to represent the structures of other specific kinds of data. One example is TEI, the Text Encoding Initiative, which uses XML to represent text documents. Another is the modern form of HTML that the web runs on.
 
-You'll cover HTML and its accompanying technologies in much greater depth in the next few weeks. For now, it's enough to know its general shape.
-
 ## Web Scraping
 ![https://media.giphy.com/media/IwTWTsUzmIicM/giphy.gif](https://media.giphy.com/media/IwTWTsUzmIicM/giphy.gif)
 
@@ -147,7 +145,7 @@ We've already installed the library into our pipenv using:
 
 ```python
 pipenv install beautifulsoup4
-``` 
+```
 
 We can make sure this was done correctly by importing the library into a Python file in our virtual environment and printing its version number (remember to activate the appropriate pipenv shell if you haven't yet).
 
@@ -160,9 +158,9 @@ Now let's figure out how to use BeautifulSoup by going to the [documentation for
 
 Okay, let's do this. Let's try scraping the [Scholars' Lab blog page](https://scholarslab.lib.virginia.edu/blog/)
 
-First, we should have pipenv install another library to help us grab websites. There are some good built-in ways to download things from the web, but one of the easiest to use and most popular is the third party library Requests (coincidentally by Kenneth Reitz, the same guy who wrote Pipenv).
+First, we should have pipenv install another library to help us grab websites. There are some good built-in ways to download things from the web, but one of the easiest to use and most popular is the third party library Requests (coincidentally by Kenneth Reitz, the same guy who wrote Pipenv), the same library we used to access APIs.
 
-After we do that, we can download our website using this code:
+We can use it to download our website using this simple code:
 
 ```python
 import requests
@@ -174,25 +172,25 @@ print(html)
 
 Now that we've got the raw HTML of the site, we can then use Beautiful Soup to parse it.
 
-Let's import beautiful soup...
+So, let's first import beautiful soup...
 
 ```python
-from bs4 import BeautifulSoup
+import bs4
 ```
 
 Next, we'll instantiate a Beautiful Soup instance and pass it our html. One easy thing we can do is have BS prettify our html so it's a bit more expansive and readable.
 
 ```python
-from bs4 import BeautifulSoup
+import bs4
 import requests
 
 url = "https://scholarslab.lib.virginia.edu/blog/"
 html  = requests.get(url).text
-soup = BeautifulSoup(html)
+soup = bs4.BeautifulSoup(html, 'html.parser')
 print(soup.prettify())
 ```
 
-We can see here that `soup` is an instance of a [BeautifulSoup class](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#beautifulsoup). This is an object that represents the whole of the document. The other important class we will use is the [Tag class](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#tag), which represents an html tag. These two classes actually share many of the same methods: we can use `get_text()` on either a BeautifulSoup or a Tag to extract just the text that they contain.
+We can see here that `soup` is an instance of a [bs4.BeautifulSoup class](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#beautifulsoup). This is an object that represents the whole of the document. The other important class we will use is the [Tag class](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#tag), which represents an html tag. These two classes actually share many of the same methods: we can use `get_text()` on either a BeautifulSoup or a Tag to extract just the text that they contain.
 
 We can also use the `find_all()` method that they share to search with either the whole document or within the tag. Remember that tags can be nested within each other.
 
@@ -212,7 +210,7 @@ We can see that the outer div tag has an attribute, `class="blog-meta__author"`,
 
 ```python
 ...
-print(soup.find_all("div",class_="blog-meta__author"))
+print(soup.find_all("div",class="blog-meta__author"))
 ```
 
 This bit of code results in a Python list containing 4 Tag objects representing the authors of the 4 most recent blog posts. We can drill down into each of these Tags to get at their contents. For example, we can get the name for each author by getting the text of the `a` tags. The `find()` method is like `find_all()`, but just returns the first result (so it's equivalent to `find_all()[0]`).
@@ -235,4 +233,27 @@ for author_div in author_divs:
 
 Knowing how to grab links means that we can follow them by asking Requests to grab the website at that URL. This way, we can write a "spider" to crawl through entire websites. This is a very powerful way to map out online datasets that aren't designed to be very accessible.
 
-Don't worry if the details of the HTML are a bit arcane. We'll cover these in much greater detail over the course of the next few weeks.
+So, for example, we can craw through and save *every* blog post on the Scholars' Lab blog into one file for the purposes of text analysis.
+
+```python
+import bs4
+import requests
+
+post_text = ""
+url = "https://scholarslab.lib.virginia.edu/blog/"
+html  = requests.get(url).text
+soup = bs4.BeautifulSoup(html, features="html.parser")
+old_posts = soup.find("section",id="previous_posts")
+for i in old_posts.find_all("li"):
+    # the post links are relative links, so we need to append the domain to make it an absolute link
+    post_url = "https://scholarslab.lib.virginia.edu"+i.contents[0]["href"]
+    post  = requests.get(post_url).text
+    soup = bs4.BeautifulSoup(post, features="html.parser")
+    post_text+=soup.find("div", class_="post__content").get_text()
+    # Let's write out all the posts every time so we can interrupt it at any point
+    f = open("posts.txt", "w")
+    f.write(post_text)
+    f.close()
+```
+
+In a real-world example, we might want to introduce a delay to not hammer someone's web server or to trigger some kind of denial-of-service protection.
