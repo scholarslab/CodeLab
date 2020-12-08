@@ -2,9 +2,9 @@
 
 ## Python Libraries, revisited
 
-In the last few weeks, we've been playing around with using Python code that people who are not Python (and who are often not you) wrote. Let's take a closer look at these libraries.
+A few weeks ago, we've played around with using Python code that people who are not Python (and who are often not you) wrote. Let's take a closer look at these libraries.
 
-First, let's properly go over some terminology that we might have brushed past:
+First, let's properly go over some ideas that we might have casually brushed past before:
 
 * Library: There's a lot of different definitions for this term. Unless really unexpected things have happened, we are currently sitting in one right now. But in the CodeLab context, this is a collection of software that's directly used by other software. Most often, this will be a generalizable piece of logic that is useful to bundle separately so that other, unrelated pieces of software can use it. Because it's an informal term in Python and not a specific, technical one, it's more useful to think about libraries in terms of how code is organized. Used in this way, the concept of "software libraries" spans many different programing languages and development contexts: we have Python libraries, C++ libraries, Javascript libraries, operating system libraries, etc.
 
@@ -19,16 +19,16 @@ First, let's properly go over some terminology that we might have brushed past:
  We use Beautiful Soup in our Python code with code that looks like this:
  
  ```python
- from bs4 import BeautifulSoup
- # 'bs4' is the package, 'BeautifulSoup' is a class defined inside the package definition
- soup = BeautifulSoup(html_doc, 'html.parser')
- ```
- 
- Or:
-
- ```python
  import bs4
  soup = bs4.BeautifulSoup(html_doc, 'html.parser')
+ # 'bs4' is the package, 'BeautifulSoup' is a class defined inside the package definition
+ ```
+
+ or
+
+ ```python
+ from bs4 import BeautifulSoup
+ soup = BeautifulSoup(html_doc, 'html.parser')
  # this code is equivalent
  ```
 
@@ -41,12 +41,25 @@ First, let's properly go over some terminology that we might have brushed past:
  ```
 
  In these examples, we can either the `bs4` *package* directly or, using the `from` keyword, import *modules* from with that package.
+
+ Incidentally, it's almost always considered poor practice to use the `from x import *` form. We see in the example immediately above that, for people just reading through our code, there's no obvious connection between the bs4 package and the BeautifulSoup class. It would take some deeper understanding of BeautifulSoup or at least chasing down some its documentation. This confusion is made worse by the fact that we can import multiple packages this way and, actually, do something like this:
+
+ ```python
+ def randint(i,j):
+    return i
+ from random import *
+ print(randint(0,10))
+ ```
+
+ Which randint would this run? The best and clearest way to import a package is using the `import x` format, since the contents of each module must then be explicitly addressed using the `x.y` format. For small and simple associations, `from x import y` is acceptable.
+ 
+ Since directories can be nested, packages can be also. However, it is somewhat unusual to see this done in practice for third-party libraries. Typically, they will be organized more simply or split into different libraries altogether.
  
 * Modules: Since a Package is a directory, we can probably intuit that Modules are individual Python files contained within a directory. In fact, every .py file can be a module if we import them into another bit of Python code. Often, this is most useful for separating variables from code and for breaking classes out into their own file. So, we can do this (we can tell git to ignore config.py and freely commit code.py):
 
  config.py:
  ```python
- PASSWORD = "passw0rd"
+ PASSWORD = "yourefired"
  ```
  
  code.py:
@@ -73,6 +86,14 @@ First, let's properly go over some terminology that we might have brushed past:
  # dog is the module, 
  hazel = doglib.Dog("Hazel")
  ```
+
+ There is a special module in each package that makes them a package that must be named `__init__.py`. This file can be blank, but its presence is what lets Python know that you intend a directory to be a package. Note that `__init__` is also how we define class constructor. Here, the contents of `__init__.py` are run whenever we import a package. This allows us to, effectively, treat the package itself like a module.
+
+ For how this all works practically, we can take a look at the code for the familiar [json package in the Standard Library](https://github.com/python/cpython/tree/3.9/Lib/json) (all the Standard Library packages will have links at the top of the docs to the code itself). We see here that the JSON package actually contains a variety of modules, broadly organized by function (decoder, encoder, etc). However, we haven't really used these in our examples because we've accessed the functions defined inside of its [__init__.py](https://github.com/python/cpython/blob/3.9/Lib/json/__init__.py). There, we can find the definitions for our old favorites like [json.dumps](https://github.com/python/cpython/blob/3.9/Lib/json/__init__.py#L183).
+
+ This json package is organized this way because if for some reason we didn't like the way that Python handled functions like loads and dumps (for example, if we wanted a prettified version of dumps), we can override the default `json.encoder.JSONEncoder` class (where `json` is a package and `encoder` is the module) ourselves.
+
+ One last thing: inside of the `__init__.py` for json, we see that there's [a few lines](https://github.com/python/cpython/blob/3.9/Lib/json/__init__.py#L106) where it imports classes like JSONDecoder and JSONEncoder. This means that whenever we import the json package in our code, we also perform these imports too. This means that when we do `import json`, we can address the same JSONEncoder class as either `json.encoder.JSONEncoder` or `json.JSONEncoder`. This is often done to simplify the internal organization of packages to users.
 
 ## XML
 ![xml vs jason](assets/jason.gif)
