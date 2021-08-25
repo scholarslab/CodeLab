@@ -5,17 +5,16 @@
 ![hazel.jpg](hazel.jpg)
 
 0. Introduction to Code Lab
-1. A Brief History of Computing
-2. [The Command Line Interface](commandline.md) Cheatsheet
+1. Why Code?
+2. "Hack vs Yack"
+3. SLab Origin Stories
+4. A Brief History of Computing
 
 ## Welcome to CodeLab
 
 Hi there. Welcome to CodeLab. This is Shane, writing from various times in the past (and occasionally Zoe, writing generally from even longer ago). I'm a younger, slightly less experienced, probably slightly more handsome version of Shane from right now, so you'll have to excuse me if I'm unclear or rambly or factually wrong. Don't blame it on Shane Prime. I'm sure he knows better by now. The two of us (Shane and Zoe) and the Scholars' Lab staff created Code Lab back in 2018 as a way to ensure that that year's Praxis cohort would have a good technical foundation on which to build their DH projects and later humanities careers and I've been doing it ever since. Hopefully, you'll be getting all this from a presentation that current-timeline-me has given, is giving, or will shortly give.
 
 This first week is mostly going to be a lot of setting up your computer so you can hit the ground coding next week. We'll also be acclimating to the Command Line Interface (CLI).
-
-## New Terms
-* Terminal, shell, console, command line: 
 
 ## CodeLab Resources
 * [Environment Setup Instructions](environment_setup.md)
