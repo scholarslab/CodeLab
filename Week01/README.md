@@ -4,8 +4,8 @@
 
 ![hazel.jpg](hazel.jpg)
 
-0. Introduction to Code Lab ([follow slides](https://gitpitch.com/scholarslab/CodeLab/master?p=Week01/intro_code_lab))
-1. [Setting up your computer environment](environment_setup.md)
+0. Introduction to Code Lab
+1. A Brief History of Computing
 2. [The Command Line Interface](commandline.md) Cheatsheet
 
 ## Welcome to CodeLab
@@ -14,11 +14,20 @@ Hi there. Welcome to CodeLab. This is Shane, writing from various times in the p
 
 This first week is mostly going to be a lot of setting up your computer so you can hit the ground coding next week. We'll also be acclimating to the Command Line Interface (CLI).
 
+## New Terms
+* Terminal, shell, console, command line: 
+
+## CodeLab Resources
+* [Environment Setup Instructions](environment_setup.md)
+* [Command Line Cheatsheet](commandline.md)
+
 ## Homework for Week 1
 
-* Skim through command line cheatsheet because I probably haven't had time to go over it.
-* Complete Ian Milligan and James Baker, "Introduction to the Bash Command Line," The Programming Historian 3 (2014), [https://programminghistorian.org/en/lessons/intro-to-bash](https://programminghistorian.org/en/lessons/intro-to-bash)
+* Complete Ian Milligan and James Baker, "Introduction to the Bash Command Line," The Programming Historian 3 (2014), [https://programminghistorian.org/en/lessons/intro-to-bash](https://programminghistorian.org/en/lessons/intro-to-bash). This is an introduction to the BASH shell, which is 
   * For Windows users, skip the "Windows Only: Installing Git Bash" section - we're going a different direction. Use the VSCode Terminal or Windows Terminal, as recommended in the Code Lab environment setup.
-* Read [section 1](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#the-man-in-the-taupe-blazer) and [section 2](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#lets-begin) from Paul Ford's *What is Code?*, Businessweek June 11 2015
+* [Set up your computer environment](environment_setup.md). Try to follow the instructions, but don't get stuck.
 * Set up an account at [Github](http://www.github.com) and post your username on the Slack praxis channel.
-* [Some brief CLI exercises](cli_exercises.md) to practice with the command line.
+
+### Readings
+
+* [Section 1](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#the-man-in-the-taupe-blazer) and [section 2](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#lets-begin) from Paul Ford's *What is Code?*, Businessweek June 11 2015

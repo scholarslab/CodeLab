@@ -21,9 +21,13 @@ Mac: [Python 3](https://docs.python-guide.org/starting/install3/osx/), including
 
 The instructions say to add `export PATH="/usr/local/opt/python/libexec/bin:$PATH"` to `~/.profile`. However, you will probably want to add it instead to `~/.zshrc`.
 
+At the end of this step, you should be able to input the command `python3 --version` and have it not return an error.
+
 ### Step 2-M:  Install Pipenv
 
 In the terminal, run: `brew install pipenv`
+
+At the end of this step, you should be able to input the command `pipenv --version` and have it not return an error.
 
 ### Step 3-M: Visual Studio Code
 
@@ -37,7 +41,7 @@ Unless you have another preference, VSCode is a pretty good code editor.
 This isn't really necessary and the process is more convoluted than anything we've done so far, but it results in a much prettier terminal that has some nice conveniences.
 
 * Install [ZShell (zsh)](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH) 
-  * If you're using a recent (Catalina or later) version of MacOS, this is already installed and, in fact, the default shell. To find out which shell you're using, enter `echo "$SHELL"`.
+  * If you're using a recent (Catalina or later) version of MacOS, this is already installed and, in fact, the default shell. To find out which shell you're using, enter the command `echo "$SHELL"`.
 * Install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 ## Windows
@@ -53,12 +57,15 @@ The WSL installation processed probably required the use of Powershell. Forget a
 
 ### Step 1-W: Install Python and Pip
 
-* WSL comes with Python3, but need to install pip. In the Ubuntu terminal, run: `sudo apt-get install -y python3-pip`
+* WSL comes with Python3, but you still need to install pip. In the Ubuntu terminal, run: `sudo apt-get install -y python3-pip`
+   * At the end of this step, you should be able to input the command `pip3 --version` and have it not return an error.
 * Install Debian development tools, openSSL, and Python extension headers, run: `sudo apt-get install build-essential libssl-dev libffi-dev python3-dev`
 
 ### Step 2-W:  Install Pipenv
 
 In your terminal, run: `pip3 install --user pipenv` (if that doesn't work, try `pip install --user pipenv`)
+
+At the end of this step, you should be able to input the command `pipenv --version` and have it not return an error.
 
 ### Step 3-W: Visual Studio Code
 

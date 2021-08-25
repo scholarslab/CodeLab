@@ -4,7 +4,13 @@
 
 This will be a quick guide and cheatsheet that you can refer back to for reference. I'll leave the heavy lifting of teaching mostly for the Programming Historian lesson in the homework.
 
-So, okay, this is the command line.
+Let's get some terminology out of the way first. Often you'll see a few terms used in seemingly interchangeable ways: command line interface/CLI, terminal, shell, console. They are subtley different, but it's probably not useful to dwell overlong on their differences, but here's a quick summary: Early computers were big room-sized things. Operators would interact with these machines through a smaller device dedicated to input and output, called a console or terminal. In the very early days, these consoles would use literal printers to print out output from the computer onto paper. In modern computing, "console" and "terminal" are analogies for software programs that replicate these technologies. The application "Terminal" on MacOS is a terminal software.
+
+A "shell" is a program that lives within a terminal that interprets commands from users and parses output from the computer. The name Shell comes out of the influential Unix operating system and is intended to convey the idea that shell programs completely surround and hide away the complex details of different underlying computer systems from users to provide a simplified and common interface. BASH (Bourne Again SHell) and Zsh (Z Shell) are the most popular shell programs. For our purposes, the commands you type into each should be functionally identical.
+
+This general mode of operation, using terminals and shells to interact with a computer through text commands and largely text output, is called the command line interface. It is typically contrasted with the more familiar Graphical User Interface, which visual analogues like cursors and icons to accomplish the same interactions.
+
+So, okay. Here's what we're talking about:
 
 !["WSL Bash"](assets/wsl_bash.png)
 
@@ -35,9 +41,9 @@ In the example above, the "shanelin@ADAGIO-PC" part is my user name and the name
 | Operating system  | The fundamental software that runs other software in a computer. Handles common tasks like input/output and system infrastructure like the management of shared resources. MacOS, Windows, and Ubuntu are kinds of operating systems. |
 | Path              | A way to address a file or directory in a file system. `/home/shanelin/`,`~`, and `.gitignore` are examples of absolute and relative paths. |
 | Prompt            | Also, "Command Prompt". A character that indicates that a CLI is ready to accept input. Commonly includes a `$`,`:`,`#`, or `>` characters, but can be customized. In Unix-like systems, the prompt will often include the username, hostname, and the working directory path. |
-| Shell             | Software the implements the CLI. Bash, Zsh, and Powershell are examples. Often used interchangeably with "terminal", which is technically incorrect, but people understand what you mean. Shells receive commands from the terminal. |
+| Shell             | Software that lives in the terminal and proccesses user commands. |
 | Super User        | In Unix-like systems, an administrative account that has the ultimate, unrestricted permission to change the system. Sometimes named (or merely called) "root" or "admin". |
-| Terminal          | Software that hosts shells. Examples are MacOS's Terminal.app, Windows Terminal, the Powershell terminal that runs the Powershell shell. Often used interchangeably with "shell", which is technically incorrect, but people understand what you mean. Terminals send commands to shells. |
+| Terminal          | Oriignally hardware, now software that hosts shells. Examples are MacOS's Terminal.app, Windows Terminal, the Powershell terminal that runs the Powershell shell. Interchangable with "console". |
 | Unix              | Influential operating system from the 1970s, now largely relevant for establishing the conventions and idioms of Unix-like operating systems like Linux and MacOS. |
 | Wildcard          | A special character that stands in for any other character (and sometimes characters). Often `?` or `*`. |
 | Zsh               | Z shell, a common shell in many Unix-like operating systems, including recent versions of MacOS. |
