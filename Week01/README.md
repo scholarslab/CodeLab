@@ -22,7 +22,7 @@ This first week is mostly going to be a lot of setting up your computer so you c
 
 ## Homework for Week 1
 
-* Complete Ian Milligan and James Baker, "Introduction to the Bash Command Line," The Programming Historian 3 (2014), [https://programminghistorian.org/en/lessons/intro-to-bash](https://programminghistorian.org/en/lessons/intro-to-bash). This is an introduction to the BASH shell, which is 
+* Complete Ian Milligan and James Baker, "Introduction to the Bash Command Line," The Programming Historian 3 (2014), [https://programminghistorian.org/en/lessons/intro-to-bash](https://programminghistorian.org/en/lessons/intro-to-bash). This is an introduction to the Bash shell, which will serve well enough as an introduction to other shells like Zsh as well.
   * For Windows users, skip the "Windows Only: Installing Git Bash" section - we're going a different direction. Use the VSCode Terminal or Windows Terminal, as recommended in the Code Lab environment setup.
 * [Set up your computer environment](environment_setup.md). Try to follow the instructions, but don't get stuck.
 * Set up an account at [Github](http://www.github.com) and post your username on the Slack praxis channel.
