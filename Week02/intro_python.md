@@ -200,7 +200,7 @@ Pair programming is a common practice. We want you to always do pair programming
 Let's start with a list of names:
 
 ```python
-praxis = ["Aaron","Crystal","Elise","Emma","Grace","Savanna"]
+praxis = ["Cherrie", "Jacqui", "Jennifer", "Joseph", "Susan", "Tarushi"]
 ```
 
 A good way to get started with coding is to think about how we might go about this in our heads or physically, in the "real world." 
