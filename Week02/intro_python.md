@@ -152,6 +152,8 @@ madlibs=input("What manner of overlords do you, for one, welcome? ")
 print("I, for one, welcome our new "+madlibs+" overlords!")
 ```
 
+We can see here that `input` is a function, just like `print`. `input` asks the user to type something and then it "returns" that something back to Python. We'll be writing our own functions soon enough. For now, it's important mainly to understand that functions can hand back bits of data and, like mathematical functions, we can treat the function and the result interchangably in our code. So, if we were to run the example above and the user types in "Hazel", the string "Hazel" would be saved into the variable `madlibs` just as if we'd coded `madlibs="Hazel"`.
+
 ## Sequences
 ### Lists
 
