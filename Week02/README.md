@@ -19,7 +19,7 @@
 ## Homework for Week 3
 
 ## Coding Assignment 0: Pig Latin
-Produce a simple program to accept a single word as text input and then print out the [pig latin](https://en.wikipedia.org/wiki/Pig_Latin) translation.
+Produce a simple program to accept a single word as text input and then print out the [pig latin](https://en.wikipedia.org/wiki/Pig_Latin) translation. We can assume the simplest case for the word provided: just shift the first letter to the end and add "ay". Taking into consideration words starting with consonant clusters and vowels requires some conditional logic, which we haven't gone over yet, but feel free to jump ahead if you really want to.
 
 ### Read:
 Posner, Miriam (2015),  [Humanities Data, a Necessary Contradiction ](http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/)
