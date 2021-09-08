@@ -31,10 +31,7 @@ Modify your code in part 2a to detect whether the input contains more than one w
 
 ### Coding assignment 1c
 
-Modify your code from part 2b so that if the input contains multiple words, convert each individual word into Pig Latin and print them out. They don't have to be on the same line.
-
-If you used the string `find()` method in part 2b, you might want to figure out another way to divide the input into words.
-
+Modify your code from part 2b to account for the special case where the first letter of the word is a vowel.
 
 ### Read:
 The Coder's Apprentice, ch 6-7: [http://www.spronck.net/pythonbook/](http://www.spronck.net/pythonbook/)
