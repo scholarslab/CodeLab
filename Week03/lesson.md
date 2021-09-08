@@ -97,7 +97,8 @@ We've also already used a few functions and methods. A function is a way to orga
 
 There's a lot of good reasons to organize code into functions. At the most basic level, this makes it easy to reuse code, often easier to read and to organize logic, easier to change code in one place rather than in many places, and easier to *not* understand what you don't need to understand.
 
-Python has a number of "build-in functions", some of which we've already used. As an example, the function `pow(x,y)` returns the value of x to the y power.
+Python has a number of "built
+-in functions", some of which we've already used. As an example, the function `pow(x,y)` returns the value of x to the y power.
 
 ```
 >>> pow(2,4)
