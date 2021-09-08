@@ -14,16 +14,6 @@
 
 Pair program these with a buddy! Pair programming is fun and productive unless you do it wrong. According to formal logic, this does not necessarily mean that doing it wrong cannot also be fun and productive, but it does mean that if it isn't fun and productive, you aren't doing it right.
 
-### Coding assignment 0
-
-Write a function, `filter_evens()` that takes in a list of integers as an argument and returns a list of integers comprising only the even numbers.
-
-```python
-# Your function definition here
-
-nums = [0,-2,3,14]
-print(filter_evens(nums))
-```
 
 ### Coding assignment 1a
 
