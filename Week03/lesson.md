@@ -79,7 +79,7 @@ Instead, we have to tell Python what we mean by doing an explicit conversion usi
 6
 ```
 
-In Python, we use the single equals sign `=` for *assignment* (assign the right side to the left) and the double equals sign `==` for *equality* (does the right side equal the left?).  Comparitors like `==` yield values of boolean type: `True` or `False`. Under the hood comparitors are defined as functions (more on this later), so sometimes Python can compare different types and sometimes it doesn't. Generally, numbers (integers and floats) can be compared as numbers, but comparing strings and numbers will always return `False`.
+In Python, we use the single equals sign `=` for *assignment* (assign the right side to the left) and the double equals sign `==` for *equality* (does the right side equal the left?).  Comparitors like `==` yield values of boolean type: `True` or `False`. Under the hood, comparitors are defined as functions (more on this later), so sometimes Python can compare different types and sometimes it doesn't. Generally, numbers (integers and floats) can be compared as numbers, but comparing strings and numbers will always return `False` because they're fundamentally not comparable.
 
 ```
 >>> a = 3
