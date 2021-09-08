@@ -11,6 +11,17 @@
 
 Try pair programming with a different buddy this time. Or else try to pair program rather than not doing it.
 
+### Assignment 0: Filter
+
+Write a function, `filter_evens()` that takes in a list of integers as an argument and returns a list of integers comprising only the even numbers.
+
+```python
+# Your function definition here
+
+nums = [0,-2,3,14]
+print(filter_evens(nums))
+```
+
 ### Assignment 1: FizzBuzz
 
 This is a classic coding puzzle. Write a program that takes as input a number and then plays the [FizzBuzz game](https://en.wikipedia.org/wiki/Fizz_buzz) until that number is reached. This is a classic programming puzzle and, very helpfully, Wikipedia actually has a list of solutions, including one in Python. But if you use it, be prepared to explain how it works in front of the Fellowship in the next Codelab. It's not the simplest answer (and, in fact, it's Python 2 code), but it might be useful to reverse-engineer!
