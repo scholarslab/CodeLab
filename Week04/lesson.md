@@ -6,7 +6,7 @@
 
 Functions are neat in part because they let you write a bit of code once and then refer back to that code over and over again in the future. Loops do that too, but let you repeat code dynamically, with the program flow varying depending on inputs. Let's take a look at what sort of problems these structures help with.
 
-Say we want to write a piece of code to sum up all the numbers in a list of integers, like totaling up a column in a spreadhseet. Without Python's loop features, we could add up a set number of elements:
+Say we want to write a piece of code to sum up all the numbers in a list of integers, like totaling up a column in a spreadsheet. Without Python's loop features, we could add up a set number of elements:
 
 ```python
 def sum(number_list):
