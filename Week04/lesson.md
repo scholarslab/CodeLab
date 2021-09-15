@@ -95,4 +95,4 @@ If the input word is "Goose", we hit the `break` and Python breaks out of the en
 
 ### Version Control
 
-[Git for Humanists](https://shane-et-al.github.io/git_slab/)
+Version control is an important concept to understand for collaborative software development and work of all stripes in Digital Humanities. I've written an introduction to using git, a popular version control software, that you should read as part of this week's lesson: [Git for Humanists](https://shane-et-al.github.io/git_slab/)
