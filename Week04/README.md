@@ -4,7 +4,7 @@
 ## Outline
 1. Discuss homework assignments
 2. [Loops](./lesson.md)
-3. Full steam ahead: [Git for Humanists](https://shane-et-al.github.io/git_slab/)
+3. [Git for Humanists](https://shane-et-al.github.io/git_slab/)
 
 ---
 ## Homework for Week 4
@@ -66,4 +66,4 @@ Take your answer to assignment 1 and push it to a new repository on Github under
 ### Read:
 Raymond, Eric S. [The Cathedral and the Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/cathedral-bazaar/index.html): Introduction through "How Many Eyeballs Tame Complexity"
 
-Review as needed: Lin, Shane. [Git for Humanists](https://shane-et-al.github.io/git_slab/).
+(I think Raymond is a bad person with bad views, but his software development work and this particular text were very influential in the Free Software community.)
