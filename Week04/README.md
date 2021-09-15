@@ -38,15 +38,20 @@ i = int(input("Enter a number: "))
 
 Sample output:
 ```
-Enter a number: 4
+Enter a number: 7
 1
 2
 Fizz
 4
+Buzz
+Fizz
+7
 ```
 
 Hint:
 There's a number of built-in operators in Python that may be helpful for this excercise which are [covered in the documentation](https://docs.python.org/3/reference/expressions.html). You'll probably want to use a loop of some kind, so I would suggest reviewing the Python [Control Flow documentation](https://docs.python.org/3/tutorial/controlflow.html).
+
+Remember to test your code. Try to see if your output matches the sample output above. Does it have the right number of prints? Try it out with other inputs too. What is the correct output if the user enters the value 15?
 
 ### Assignment 2: Git Practice
 
