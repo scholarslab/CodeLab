@@ -55,7 +55,7 @@ Remember to test your code. Try to see if your output matches the sample output 
 
 ### Assignment 2: Git Practice
 
-I've created a git repository on the Scholars' Lab account that has a markdown text file for your Praxis cohort at [https://github.com/scholarslab/gitpractice/blob/master/Praxis2021.md](https://github.com/scholarslab/gitpractice/blob/master/Praxis2020.md). Hopefully, you should have access to this repository by now. Clone this file to your computer, answer the two original seed questions, then add a new question of your own for your fellows to answer. Check back later in the week for new questions and answer them so that, hopefully, by the time we meet again, we'll have a fully-filled-out and, let's say, quixotically personal questionaire for the entire cohort.
+I've created a git repository on the Scholars' Lab account that has a markdown text file for your Praxis cohort at [https://github.com/scholarslab/gitpractice/blob/master/Praxis2021.md](https://github.com/scholarslab/gitpractice/blob/master/Praxis2021.md). Hopefully, you should have access to this repository by now. Clone this file to your computer, answer the two original seed questions, then add a new question of your own for your fellows to answer. Check back later in the week for new questions and answer them so that, hopefully, by the time we meet again, we'll have a fully-filled-out and, let's say, quixotically personal questionaire for the entire cohort.
 
 
 ### Assignment 3: Put it together
