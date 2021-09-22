@@ -35,3 +35,15 @@ Write a program to read in this file and count the total lines of dialog and the
 
 Do the same analysis, but for every character that has dialog.
 
+### Assignment 2
+
+* In preparation for next week's Brandon Code Lab Special Episode, read through the piece [here](https://humanitiesprogramming.github.io/exercises/python-debugging/) on "common code errors and how to find them" (don't worry about working through the exercises).
+* Send Brandon (by slack, email, or github) a working program that answers some homework exercise from CodeLab so far. 
+* Send a partner two copies of the same code - one that works, and one that has a bunch of errors you introduced to it. They should be small! An example might be:
+
+my_sentence = "hello'
+print my sentence
+
+And a debugger would look at this and say "Ok. I need to make sure the double quotation marks match when assigning the variable. I need parentheses around the print statement. And I also need an underscore between my and sentence.
+
+* Solve the broken code your partner gave you! You'll use the working code they shared if you get stuck.
