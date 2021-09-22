@@ -1,5 +1,8 @@
 # Code Lab Week 1: Environment Setup
 
+## SHANE TODO 2022
+Github started requiring personal access tokens in August 2021. For the next Praxis session, it's probably a good idea to see if there's one good way to set that up. VS Code's github module seems to package a turnkey git credential manager, but for WSL users, they may need to [set something up like this](https://github.com/microsoft/Git-Credential-Manager-Core) (Note to future Shane: this is moderately annoying to do).
+
 If you're using a Mac, you're most of the way there already. You almost certainly have the shell that we'll be using already (more on what that means later). Python, the programming language we'll be using is already built into your computer. But we'll want to set it up so it works just like we want it to.
 
 If you're using a Windows machine, there's a few more steps. Hopefully you're using Windows 10 (or later, if you're reading this far, far into the future), otherwise things might be a bit troublesome. If you are, we'll be installing the puzzlingly named Windows Subsystem for Linux (WSL), which is a Subsystem _in_ Windows that provides Linux functionality, not the other way around. It's basically a little Linux computer that runs inside of Windows. It's very cool. We'll be using WSL to run our code and do all our coding work. This isn't necessarily better than developing directly in Windows, but it lets us (Windows, Mac, and Linux users) all be on the same page.
