@@ -39,7 +39,7 @@ Write a program to read in this file and count the total lines of dialog and the
 * Send Brandon (by slack, email, or github) a working program that answers some homework exercise from CodeLab so far. 
 * Send a partner two copies of the same code - one that works, and one that has a bunch of errors you introduced to it. They should be small! An example might be:
 
-my_sentence = "hello'
+my_sentence = "hello' <br>
 print my sentence
 
 And a debugger would look at this and say "Ok. I need to make sure the double quotation marks match when assigning the variable. I need parentheses around the print statement. And I also need an underscore between my and sentence.
