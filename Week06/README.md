@@ -25,5 +25,7 @@ We have in our programming quiver a number of tools now (primitives, lists, dict
 
 #### Assignment 1
 
-* In preparation for next week's Brandon Code Lab Special Episode, read/work through the piece [here](https://humanitiesprogramming.github.io/exercises/python-debugging/) on "common code errors and how to find them" (skipping the "Classes" one for now). You will at least want to read through the top piece. If you have time, you can work through later exercises (but keep in mind they will be quite frustrating).
+* In preparation for next week's Brandon Code Lab Special Episode, read through the piece [here](https://humanitiesprogramming.github.io/exercises/python-debugging/) on "common code errors and how to find them" (don't worry about working through the exercises).
 * Send Brandon (by slack, email, or github) a working solution to some homework exercise from CodeLab so far. 
+* Send a partner two copies of the same code - one that works, and one that has a bunch of errors introduced to it.
+* Solve the broken code your partner gave you!
