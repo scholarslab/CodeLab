@@ -14,7 +14,9 @@ You guys are all doing great!
 
 ### Assignment 0:
 
-Implement a sorting algorithm for a list of numbers. Don't use any built-in sort. It can be as simple or complicated as you want. Feel free to look at the innumerable other examples on the Internet, but be prepared to explain your code!
+Implement a sorting algorithm for sorting a list of numbers. Don't use any built-in sort. It can be as simple or complicated as you want. Feel free to look at the innumerable other examples on the Internet, but be prepared to explain your code!
+
+Think back to what we talked about, to mapping human processes to code. Try your best, but don't bang your head against a wall if you get stuck. I'm happy to chat about any of this material, of course.
 
 ```python
 def sort_numbers(numbers):
@@ -30,10 +32,6 @@ print(sort_numbers(numbers))
 [Download the plain text of Much Ado About Nothing from Project Gutenberg](http://www.gutenberg.org/ebooks/1519)
 
 Write a program to read in this file and count the total lines of dialog and the length (character count) of those lines for the two main characters: Benedick and Beatrice. Write that data out to a second file.
-
-*100x Codelab Bonus Points*
-
-Do the same analysis, but for every character that has dialog.
 
 ### Assignment 2
 
