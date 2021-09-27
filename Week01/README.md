@@ -20,6 +20,15 @@ This first week is mostly going to be a lot of setting up your computer so you c
 * [Environment Setup Instructions](environment_setup.md)
 * [Command Line Cheatsheet](commandline.md)
 
+## New Terms
+(Also see: [Command Line Glossary](https://github.com/scholarslab/CodeLab/blob/master/Week01/commandline.md#glossary)
+##### Algorithm
+An unambiguous and well-defined set of instructions. A computer program is an algorithm, but so is a cookbook recipe.
+##### Programming Language
+A particular kind of computer code in which programs are written. There are other kinds of computer languages (such as markup languages like HTML that are used to describe a document); programming languages instruct a computer to ingest input, produce output, manipulate data, calculate equations, and the such. Many thousands of programming languages exist, often tailored for specialized applications or types of computers.
+##### Python
+One popular programming language originally released in 1991. Python is extremely common in digital humanities and adjacent fields like data science because it is easy for non-programmers to learn and has a large library (both built-in and third-party) to perform common tasks. Python 3 is the current major version, which is not completely backward-compatible with the long-running previous version, Python 2.
+
 ## Homework for Week 1
 
 * Complete Ian Milligan and James Baker, "Introduction to the Bash Command Line," The Programming Historian 3 (2014), [https://programminghistorian.org/en/lessons/intro-to-bash](https://programminghistorian.org/en/lessons/intro-to-bash). This is an introduction to the Bash shell, which will serve well enough as an introduction to other shells like Zsh as well.
