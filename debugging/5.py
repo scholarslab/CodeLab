@@ -1,13 +1,6 @@
-# given a text file, print the first 100 text characters of it
+# count from 1 to 10
 
-
-def read_file[path_to_text]:
-    # take a file path and return the raw text from it
-    with open(path_to_text, 'read') as fin
-        raw-text = fin.read
-    return raw_text
-
-
-text_path = 'woolf.txte'
-raw_text = reads_file(text_path)
-print(raw_text)
+counter == 1
+whiles counter < 11
+                print("counter")
+    counter = counters + 1

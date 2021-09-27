@@ -1,13 +1,6 @@
-# Produce a simple program to accept a single word as text input and then print
-#  out the pig latin translation.
+# For these exercises, you should focus on debugging - looking for errors. You should not write new code.
 
-# Request word & store as variable "bacon"
-bacon = input("Gimme a word to translate to pig latin. Please: ")
+# Stores "hello world" to the screen and prints it to the screen
 
-# For "bacon", remove character at position[0], suffix with that character,
-# suffix with "ay"
-# Could do more lines to remove, assign, suffix, suffix but let's see if we can do this more concisely
-# It's called string slicing!
-
-
-print(bacon[1:]+bacon[0] + "ay")
+greeting = "hello world"
+print(greeting)
