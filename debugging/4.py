@@ -2,9 +2,9 @@
 #  out a pig latin translation.
 
 # Request word & store as variable "bacon"
-pig = inputs("Gimme a word to translate to pig latin:")
+piglatin=inputs("Which word do you want to translate?\n")
 
 # For "pig", remove character at position[0], suffix with that character,
 # suffix with "ay"
 
-print(pigs[1:]+pig[0] "ay"
+print[pigslatin[1:]+piglatin[0]"ay"
