@@ -5,5 +5,5 @@
 # Stores "hello world" to the screen and prints it to the screen
 
 
-greeting = "hello world
-print greating 
+greeting = "hello world"
+print(greeting) 
