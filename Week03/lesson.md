@@ -194,7 +194,7 @@ Whitespace is used to demarcate other things as well, most importantly condition
 
 It's a bit annoying to keep track of whitespace in the Python interactive interpreter and our code is starting to get more complex structurally. If you haven't already, it's probably useful to switch to saving your code into files and running from the terminal. 
 
-### Arguments
+### Arguments/Parameters
 
 Let's break down the pig_latin function definition above a bit further. Here it is again:
 
@@ -207,7 +207,7 @@ def pig_latin(word):
 
 `pig_latin` is the name of the function we're defining.
 
-`(word)` indicates the arguments that we're expecting to be passed in. Here, it's a single one named "word".
+`(word)` indicates the arguments that we're expecting to be passed in. Here, it's a single one named "word". Arguments and parameters mean essentially the same thing, with slightly different connotations.
 
 `word` can then be used within the function definition like a normal variable. We can tell Python that we're expecting multiple arguments by separating them with comas:
 
@@ -215,6 +215,8 @@ def pig_latin(word):
 def repeat(word, number):
   return (word+" ")*number
 ```
+
+One really important idea to understand about arguments is that the name of the variable you're passing in doesn't have to match the name of the parameter in the function definition and that we don't even have to use variables at all - we can use the raw form of the data (i.e. `"Brandon"` or `3`). So, we can call the above `repeat` function using `repeat(name, 3)`. In that case, the variable `name` in the function call is automatically mapped to the parameter name `word` inside of the function block and the raw integer `3` is mapped to the variable `number`. This separates the logic of the code that calls the function from the code of the function itself.
 
 ### Return values
 
