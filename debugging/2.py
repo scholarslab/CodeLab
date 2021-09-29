@@ -1,8 +1,10 @@
-# Greet two different people
+# Produce a simple program to accept a single word as text input and then print
+#  out a pig latin translation.
 
-name_one = "Brandon"
-name_two == "Shane"
-greeting = 'hello '
+# Request word & store as variable "bacon"
+piglatin=inputs("Which word do you want to translate?\n")
 
-print(greeting + name_1)
-print[greeting + name two]
+# For "pig", remove character at position[0], suffix with that character,
+# suffix with "ay"
+
+print[pigslatin[1:]+piglatin[0]"ay"
