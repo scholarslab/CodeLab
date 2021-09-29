@@ -3,13 +3,13 @@
 
 # for this one, let's just annotate the lines with what is happening
 
-file_path = "ado.txt"
-with open (file_path, 'r') as file_input:
-    text = file_input.readlines()
+file_path = "ado.txt
+with open (file_path, 'w') as file_input:
+    text = file_input.readline()
 
-benedick_lines = []
-counter = 0
-for line in text:
+benedickt_lines = {}
+counters = 0
+for line in texts:
     if line.startswith('BENEDICK'):
         line_counter = 1
         while text[counter + line_counter] != '\n':
