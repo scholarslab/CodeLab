@@ -1,10 +1,10 @@
-# Create a function that will take a name and generate a greeting for you.
+# Create a function that will filter evens from a list of numbers
 
-define say_hello(given_name)
-    print('Hello, ' + given_name + '. how are you?')
-
-names = "Brandon"
-say_hello[name]
-
-name = "Shane"
-say hello(name)
+define filter_evens list: 
+    even_numbers=()
+    for number in list: 
+        if num / 2 == 0: 
+            even_numbers.add(num)
+    return even_numbers
+nums = [0,-2,3,14]
+print(filter_evens nums )
