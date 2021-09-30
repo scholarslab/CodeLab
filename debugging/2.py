@@ -1,3 +1,5 @@
+### THIS EXERCISE CODE HAS BEEN CORRECTED ALREADY ###
+
 # Produce a simple program to accept a single word as text input and then print
 #  out a pig latin translation.
 
