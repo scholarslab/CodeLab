@@ -207,7 +207,7 @@ We don't have to go too much into the particular details of how JSON is structur
     "likes": [
       "zooms",
       "looking",
-      "carots"
+      "carrots"
     ]
   },
   {
