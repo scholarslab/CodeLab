@@ -147,7 +147,7 @@ We've already installed the library into our pipenv using:
 pipenv install beautifulsoup4
 ```
 
-We can make sure this was done correctly by importing the library into a Python file in our virtual environment and printing its version number (remember to activate the appropriate pipenv shell if you haven't yet).
+We can make sure this was done correctly by importing the library into a Python file in our virtual environment and printing its version number (remember to activate the appropriate pipenv shell with `pipenv shell` if you haven't yet).
 
 ```python
 import bs4
