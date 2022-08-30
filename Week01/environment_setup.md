@@ -43,22 +43,19 @@ Unless you have another preference, VSCode is a pretty good code editor.
 * Install [VS Code](https://code.visualstudio.com/)
 * Install the [Python extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
-### Step X-M: Install/Customize Zsh (strictly optional)
+### Step X-M: Customize Zsh (strictly optional)
 
-This isn't really necessary and the process is more convoluted than anything we've done so far, but it results in a much prettier terminal that has some nice conveniences.
+MacOS has defaulted to Zsh for a while, which is good because I like some of its conveniences. To make it prettier, you can install Oh My Zsh and pick a theme (I rather like the agnoster theme highlighted in the installation instructions, though it will require installing a powerline font).
 
-* Install [ZShell (zsh)](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH) 
-  * If you're using a recent (Catalina or later) version of MacOS, this is already installed and, in fact, the default shell. To find out which shell you're using, enter the command `echo "$SHELL"`.
-* Install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
+* [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 ## Windows
 
 ### Step 0-W: Install WSL
 
-* Activate [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL)
-* Install [Ubuntu 18.04](https://aka.ms/wsl-ubuntu-1804)
+* Install the confusingly name [Windows Subsystem for Linux 2](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL2), which is actually a Linux Subsystem *for* Windows.
 
-When you choose a Linux user and password, don't forget what you put in. Now you have mostly-Linux.
+These instructions walk you through the default installation of the Ubuntu Linux distribution, which is a good choice for us. When you choose a Linux user and password, don't forget what you put in. Now you have mostly-Linux.
 
 The WSL installation processed probably required the use of Powershell. Forget about Powershell for now - whenever we use the command line, we should use a WSL Ubuntu shell, either through the Ubuntu terminal or the built-in VSCode terminal.
 
