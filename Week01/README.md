@@ -38,6 +38,6 @@ If you haven't read through the pre-readings, now's a good time to do that:
 * [Section 1](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#the-man-in-the-taupe-blazer) and [section 2](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#lets-begin) from Paul Ford's *What is Code?*, Businessweek June 11 2015
 * Ben Schmidt's ["Do Digital Humanists Need to Understand Algorithms?"](https://dhdebates.gc.cuny.edu/read/untitled/section/557c453b-4abb-48ce-8c38-a77e24d3f0bd#ch48)
 
-Hopefully I'll have passed out copies of Julia Evans's lovely [So You Want to be a Wizard](https://wizardzines.com/zines/wizard/) zine. That's something that's written for someone who is already a programmer, but it's useful for you to skim through now to gleen some meta-strategies for navigating tech which will hopefully be useful for down the road, when you have a few `for loops` under your belt.
+Hopefully I'll have passed out copies of Julia Evans's lovely [So You Want to be a Wizard](https://wizardzines.com/zines/wizard/) zine. That's something written for someone who is already a programmer, but it'll be useful for you to skim through now to gleen some meta-strategies for navigating tech. Review it again once you have a few `for loops` under your belt.
 
 For a bit of counter-programming, Miriam Posner's ["Some things to think about before you exhort everyone to code"](https://miriamposner.com/blog/some-things-to-think-about-before-you-exhort-everyone-to-code/) is good to think about (and perhaps even to critique).
