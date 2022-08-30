@@ -18,10 +18,9 @@ After all the shell and Python setup is done, you'll install Microsoft Visual St
 
 ## MacOS
 
-### Step 0-M: Install Homebrew and Xcode
+### Step 0-M: Install Homebrew and Xcode Command Line Tools
 
-* Install [Homebrew](https://brew.sh/)
-* Install [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+* Install [Homebrew](https://brew.sh/) (should also install Xcode command line tools)
 
 ### Step 1-M: Install Python and Pip
 
