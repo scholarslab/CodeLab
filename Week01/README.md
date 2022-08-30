@@ -5,10 +5,9 @@
 ![hazel.jpg](hazel.jpg)
 
 0. Introduction to Code Lab
-1. Why Code?
-2. "Hack vs Yack"
+1. What is Code?
+2. Why is Code?
 3. SLab Origin Stories
-4. A Brief History of Computing
 
 ## Welcome to CodeLab
 
