@@ -2,7 +2,7 @@
 ![Git merge dot gif](assets/gitmerge.gif)
 
 ## Outline
-1. Discuss working with the command line
+1. Discuss working with the command line (recent [twitter thread](https://twitter.com/sam___tsao/status/1563828152714924032))
 2. [Git for Humanists](https://shane-et-al.github.io/git_slab/)
 3. Introduction to programming (offline edition)
 
@@ -27,6 +27,8 @@ Digital humanities work is messy, both because of the scale at which it typicall
 
 These sorts of activities are foundational to all types of digital humanities work. While you might be able to find a specialized tool for some of them, knowing your way around the command line to help with them can help you design purpose-built things for your own needs. You'll be better to fit your research to the materials and tasks that actually interest you rather than only use the formats and datasets that others provide. 
 
+---
+
 !["Hazel!"](assets/hazel_porch.jpg)
 
 ## Homework for Week 2
@@ -37,15 +39,13 @@ These sorts of activities are foundational to all types of digital humanities wo
 
 I've created a git repository on the Scholars' Lab account that has a markdown text file for your Praxis cohort at [https://github.com/scholarslab/gitpractice/blob/master/Praxis2022.md](https://github.com/scholarslab/gitpractice/blob/master/Praxis2022.md). Hopefully, you should have access to this repository by now. Clone this file to your computer, answer the two original seed questions, then add a new question of your own for your fellows to answer. Check back later in the week for new questions and answer them so that, hopefully, by the time we meet again, we'll have a fully-filled-out and, let's say, quixotically personal questionaire for the entire cohort.
 
-
 ### Assignment 2: Create your own homework repo
 
 Create a repository on Github to hold your own homework assignments. This should be under your account (rather than the Scholars' Lab's account). Click the Github cat on the top left, and then the green "New" button under the "Recent Repositories" menu on the left. It's probably easier to create a new repo on Github (the website), clone it to your computer, and copy in the file you've already produced, but you can also try doing an in-place `git init` if you're feeling adventurous.
 
 ### Assignment 3: 
 
-Describe, in the most exacting detail possible, the procedure to sort a pack of playing cards. Write this down in a new markdown file with the file extension .md (don't worry about formatting) in the Week 2 directory in your homework repo.
-
+Describe, in the most exacting detail possible, the procedure to sort a pack of playing cards. Write this down in a new markdown file with the file extension .md (don't worry about formatting) in the Week 2 directory in your homework repo and commit/push it.
 
 ### Read:
 Raymond, Eric S. [The Cathedral and the Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/cathedral-bazaar/index.html): Introduction through "How Many Eyeballs Tame Complexity"
