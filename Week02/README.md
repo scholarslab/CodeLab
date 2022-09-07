@@ -41,7 +41,7 @@ I've created a git repository on the Scholars' Lab account that has a markdown t
 
 ### Assignment 2: Create your own homework repo
 
-Create a repository on Github to hold your own homework assignments. This should be under your account (rather than the Scholars' Lab's account). Click the Github cat on the top left, and then the green "New" button under the "Recent Repositories" menu on the left. It's probably easier to create a new repo on Github (the website), clone it to your computer, and copy in the file you've already produced, but you can also try doing an in-place `git init` if you're feeling adventurous.
+Create a new repository on Github to hold your own homework assignments. Let's call it "codelab-assignments" for consistency. This should be under your account (rather than the Scholars' Lab's account). Click the Github cat on the top left, and then the green "New" button under the "Recent Repositories" menu on the left. It's easier to create a new repo on Github (the website), and then clone it to your computer, but you can also try doing an in-place `git init` if you're feeling adventurous.
 
 ### Assignment 3: 
 
