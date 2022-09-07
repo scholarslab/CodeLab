@@ -20,10 +20,8 @@ This first week is mostly setting up your computer with the software that we'll 
 * [Command Line Cheatsheet](commandline.md)
 
 ## New Terms
-(Also see: [Command Line Glossary](https://github.com/scholarslab/CodeLab/blob/master/Week01/commandline.md#glossary)
-* **Algorithm**: An unambiguous and well-defined set of instructions. A computer program is an algorithm, but so is a cookbook recipe. There's really nothing special about algorithms, nothing inherently mysterious or sinister. The algorithm is a simple idea, but computers have allowed them to grow to incomprehensible levels of complexity.
-* **Programming Language**: A particular kind of computer code in which programs are written. There are other kinds of computer languages (such as markup languages like HTML that are used to describe a document); programming languages instruct a computer to ingest input, produce output, manipulate data, calculate equations, and the such. Many thousands of programming languages exist, often tailored for specialized applications or types of computers.
-* **Python**: One popular programming language originally released in 1991. Python is extremely common in digital humanities and adjacent fields like data science because it is easy for non-programmers to learn and has a large library (both built-in and third-party) to perform common tasks. Python 3 is the current major version, which is not completely backward-compatible with the long-running previous version, Python 2.
+(see: [Command Line Glossary](https://github.com/scholarslab/CodeLab/blob/master/Week01/commandline.md#glossary)
+
 
 ## Homework for Week 1
 

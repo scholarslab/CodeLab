@@ -1,47 +1,53 @@
 # Week 2
-![https://media.giphy.com/media/9xaryfkdWqqiK6QHKf/giphy.gif](https://media.giphy.com/media/9xaryfkdWqqiK6QHKf/giphy.gif)
+![Git merge dot gif](assets/gitmerge.gif)
 
-## Lesson
-[Lesson document](intro_python.md)
-1. Introduction to Python 
-2. Python Interpreter 
-3. Data Structures
-4. Documentation
-5. Dogs
-
-## Resources
-[Python data types cheatsheet](types_cheatsheet.md)
+## Outline
+1. Discuss working with the command line
+2. [Git for Humanists](https://shane-et-al.github.io/git_slab/)
+3. Introduction to programming (offline edition)
 
 ## New Terms
-* **Binary**: Base-2 numeral system, consisting only of 0 and 1. Counting up from 0, the binary numbers are: 0, 1, 10, 11, 100, 101, 110, 111, 1000...
-* **Boolean**: A data type that has two possible values: True and False. These are often used with and associated with the binary values 1 and 0. Boolean values in Python are often used in conditionals and loops (which we'll talk about in the future)
-* **Comment**: Parts of the code that are ignored by the computer and are intended as explanatory text for humans.
-* **Documentation**: Writing about code. Often, these are formal desciptions of all of the different functions, modules, classes, and methods in a piece of code, such as the [documentation for Python itself](https://docs.python.org/3/). Sometimes, it's less formal instructions and tutorials.
-* **Floating Point Number (Float)**: A number with a decimal point (e.g. `3.0` rather than `3`). Because computers use binary numbers internally, we often run into very small and unexpected rounding errors when using floats.
-* **Function**: A piece of code that does a specific task. Larger functions can be broken down into smaller ones. Familiar built-in Python functions include `print` and `len`. Functions are defined using the `def` keyword and then can be "called" (executed) by other code at will later on using the `function_name(parameter)` format.
-* **Index**: The position of a value inside of a list or other sequence, typically referenced using square brackets. Python is "zero-indexed", which means that the first index of a list is 0. `numbers[0]` references the *first* value of the list `numbers` whereas `numbers[3]` is the *4th* value. So if `numbers = [1,2,3,4,5]`, then `numbers[0]` is `1` and `numbers[3]` is 4.
-* **Integer**: A whole number (e.g. `3` rather than `3.0`).
-* **Library/Module/Package**: External code can be brought into your code using the `import` keyword. These are all terms to refer to different levels of code (a Python package is a collection of related modules, a library is less formally defined).
-* **List**: A useful built-in Python data structure that represents a linear and ordered collection of data (i.e. data arranged in a row, in a certain order). We define lists using square brackets (e.g. `numbers = [1,2,3]` or `numbers=[]` to create an empty list). We can access an individual item inside of a list using square brackets and its list index (e.g. `numbers[2]`) or a range of indices (e.g. `numbers[2:5]` or `numbers[3:]`).
-* **Method**: A function that belongs to a class. Don't worry about that part for now; if you see it mentioned, just treat it as meaning the same as a function.
-* **Parameter/Argument**: We can use these terms interchangeably. Parameters are data that's passed into a function or a method (i.e. the `text` part of `print(text)`). We define what parameters a function should expect in the function definition and then we have to pass in the right number and kind of data in the function call.
-* **String**: Text data. We can think of it as a list of this as a list of characters. For example, `"Hazel"[2]` is `'z'`.
-* **Variable**: A container for data. Variables let us squirrel away a piece of data using a variable name and the assignment operator (`a = 5`) and then refer back to it later (`a + 10`). Any piece of data that we want to keep track of, we have to store away as a variable.
+* **Algorithm**: An unambiguous and well-defined set of instructions. A computer program is an algorithm, but so is a cookbook recipe. There's really nothing special about algorithms, nothing inherently mysterious or sinister. The algorithm is a simple idea, but computers have allowed them to grow to incomprehensible levels of complexity.
+* **Clone/Fork**: A version control operation to create a duplicate repository. In Git, "clone" is the command to duplicate a repository to your local computer; in Github, fork is the mechanism to duplicate a repository to your own Github account. These are functionally the same. Forking has a more permanent implication in traditional version control systems, but it can be much more transient in Git.
+* **Git**: The most popular version control system in use today and the software command (`git`) used to interact with it.
+* **GitHub**: A website and web service that hosts and manages git repositories online. Often used as the canonical, remote repository to coordinate the work of individuals local repositories. Purchased by Microsoft in 2018, to much hand-wringing.
+* **Merge**: An important version control function, which multiple, concurrent changes to the same file to be rectified. A file that cannot be automatically rectified is said to be in a "merge conflict."
+* **Programming Language**: A particular kind of computer code in which programs are written. There are other kinds of computer languages (such as markup languages like HTML that are used to describe a document); programming languages instruct a computer to ingest input, produce output, manipulate data, calculate equations, and the such. Many thousands of programming languages exist, often tailored for specialized applications or types of computers.
+* **Python**: One popular programming language originally released in 1991. Python is extremely common in digital humanities and adjacent fields like data science because it is easy for non-programmers to learn and has a large library (both built-in and third-party) to perform common tasks. Python 3 is the current major version, which is not completely backward-compatible with the long-running previous version, Python 2.
+* **Repository**: The basic data store that contains all the files for a particular project.
+* **Version Control**: A software system that allows programmers (and other people who work with digital files) to track their work and collaborate with others by providing Concurrency (maintaining consistancy despite multiple editors), Reservibility (keeping track of changes and allowing work to be undone), and Annotation (describing changes through labels, timestamps, and author information).
 
-## Additional excercises
-[Optional excercises for handling lists and dictionaries](https://github.com/scholarslab/CodeLab/tree/master/Week02/ExtraExercises)
 
----
-## Homework for Week 3
+## Brandon's Corner
+Digital humanities work is messy, both because of the scale at which it typically takes place and because of the state in which we find many of our materials. The foundational concepts covered in these early weeks regarding the command line will begin to make a range of materials available to you that would not otherwise be possible. And an array of tasks that might not otherwise be feasible to carry out by hand will become doable for your research. In particular, the command line lets you automate on a broad scale a variety of tasks that might otherwise require a special tool. James Baker and Thomas Padilla collected a variety of them useful for working with digital primary sources in a tool called the sourcecaster for use by humanists and archivists. Things like…
 
-## Coding Assignment 0: Pig Latin
-Produce a simple program to accept a single word as text input and then print out the [pig latin](https://en.wikipedia.org/wiki/Pig_Latin) translation. We can assume the simplest case for the word provided: just shift the first letter to the end and add "ay". Taking into consideration words starting with consonant clusters and vowels requires some conditional logic, which we haven't gone over yet, but feel free to jump ahead if you really want to.
+* extract all text from a series of images
+* remove all punctuation from a document
+* download a series of web-based documents from a list
+
+These sorts of activities are foundational to all types of digital humanities work. While you might be able to find a specialized tool for some of them, knowing your way around the command line to help with them can help you design purpose-built things for your own needs. You'll be better to fit your research to the materials and tasks that actually interest you rather than only use the formats and datasets that others provide. 
+
+!["Hazel!"](assets/hazel_porch.jpg)
+
+## Homework for Week 2
+
+### Assignment 1: Git Practice
+
+##### Note to Current Shane from Past Shane: remember to give the new Praxis cohort GitHub team edit permissions for this repo.
+
+I've created a git repository on the Scholars' Lab account that has a markdown text file for your Praxis cohort at [https://github.com/scholarslab/gitpractice/blob/master/Praxis2022.md](https://github.com/scholarslab/gitpractice/blob/master/Praxis2022.md). Hopefully, you should have access to this repository by now. Clone this file to your computer, answer the two original seed questions, then add a new question of your own for your fellows to answer. Check back later in the week for new questions and answer them so that, hopefully, by the time we meet again, we'll have a fully-filled-out and, let's say, quixotically personal questionaire for the entire cohort.
+
+
+### Assignment 2: Create your own homework repo
+
+Create a repository on Github to hold your own homework assignments. This should be under your account (rather than the Scholars' Lab's account). Click the Github cat on the top left, and then the green "New" button under the "Recent Repositories" menu on the left. It's probably easier to create a new repo on Github (the website), clone it to your computer, and copy in the file you've already produced, but you can also try doing an in-place `git init` if you're feeling adventurous.
+
+### Assignment 3: 
+
+Describe, in the most exacting detail possible, the procedure to sort a pack of playing cards. Write this down in a new markdown file with the file extension .md (don't worry about formatting) in the Week 2 directory in your homework repo.
+
 
 ### Read:
-Posner, Miriam (2015),  [Humanities Data, a Necessary Contradiction ](http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/)
+Raymond, Eric S. [The Cathedral and the Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/cathedral-bazaar/index.html): Introduction through "How Many Eyeballs Tame Complexity"
 
-[Section 3](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#why-are-programmers-so-intense-about-languages) from Paul Ford's *What is Code?*, Businessweek June 11 2015
-
-#### Bonus reading:
-
-Horgan, John (2017), [Profile of Claude Shannon, Inventor of Information Theory](https://blogs.scientificamerican.com/cross-check/profile-of-claude-shannon-inventor-of-information-theory/)
+(I think Raymond is a bad person with bad views, but his software development work and this particular text were very influential in the Free Software community and useful to understand it in historical context.)

@@ -1,37 +1,47 @@
-# Week 3
-![I'm Invincible](assets/invincible.gif)
+# Week 2
+![https://media.giphy.com/media/9xaryfkdWqqiK6QHKf/giphy.gif](https://media.giphy.com/media/9xaryfkdWqqiK6QHKf/giphy.gif)
 
----
 ## Lesson
-[Lesson document](lesson.md)
-1. Discuss homework assignments
-2. Types
-3. Functions and methods
-4. Control flow
+[Lesson document](intro_python.md)
+1. Introduction to Python 
+2. Python Interpreter 
+3. Data Structures
+4. Documentation
+5. Dogs
+
+## Resources
+[Python data types cheatsheet](types_cheatsheet.md)
+
+## New Terms
+* **Binary**: Base-2 numeral system, consisting only of 0 and 1. Counting up from 0, the binary numbers are: 0, 1, 10, 11, 100, 101, 110, 111, 1000...
+* **Boolean**: A data type that has two possible values: True and False. These are often used with and associated with the binary values 1 and 0. Boolean values in Python are often used in conditionals and loops (which we'll talk about in the future)
+* **Comment**: Parts of the code that are ignored by the computer and are intended as explanatory text for humans.
+* **Documentation**: Writing about code. Often, these are formal desciptions of all of the different functions, modules, classes, and methods in a piece of code, such as the [documentation for Python itself](https://docs.python.org/3/). Sometimes, it's less formal instructions and tutorials.
+* **Floating Point Number (Float)**: A number with a decimal point (e.g. `3.0` rather than `3`). Because computers use binary numbers internally, we often run into very small and unexpected rounding errors when using floats.
+* **Function**: A piece of code that does a specific task. Larger functions can be broken down into smaller ones. Familiar built-in Python functions include `print` and `len`. Functions are defined using the `def` keyword and then can be "called" (executed) by other code at will later on using the `function_name(parameter)` format.
+* **Index**: The position of a value inside of a list or other sequence, typically referenced using square brackets. Python is "zero-indexed", which means that the first index of a list is 0. `numbers[0]` references the *first* value of the list `numbers` whereas `numbers[3]` is the *4th* value. So if `numbers = [1,2,3,4,5]`, then `numbers[0]` is `1` and `numbers[3]` is 4.
+* **Integer**: A whole number (e.g. `3` rather than `3.0`).
+* **Library/Module/Package**: External code can be brought into your code using the `import` keyword. These are all terms to refer to different levels of code (a Python package is a collection of related modules, a library is less formally defined).
+* **List**: A useful built-in Python data structure that represents a linear and ordered collection of data (i.e. data arranged in a row, in a certain order). We define lists using square brackets (e.g. `numbers = [1,2,3]` or `numbers=[]` to create an empty list). We can access an individual item inside of a list using square brackets and its list index (e.g. `numbers[2]`) or a range of indices (e.g. `numbers[2:5]` or `numbers[3:]`).
+* **Method**: A function that belongs to a class. Don't worry about that part for now; if you see it mentioned, just treat it as meaning the same as a function.
+* **Parameter/Argument**: We can use these terms interchangeably. Parameters are data that's passed into a function or a method (i.e. the `text` part of `print(text)`). We define what parameters a function should expect in the function definition and then we have to pass in the right number and kind of data in the function call.
+* **String**: Text data. We can think of it as a list of this as a list of characters. For example, `"Hazel"[2]` is `'z'`.
+* **Variable**: A container for data. Variables let us squirrel away a piece of data using a variable name and the assignment operator (`a = 5`) and then refer back to it later (`a + 10`). Any piece of data that we want to keep track of, we have to store away as a variable.
+
+## Additional excercises
+[Optional excercises for handling lists and dictionaries](https://github.com/scholarslab/CodeLab/tree/master/Week02/ExtraExercises)
 
 ---
-## Homework for Week 4
+## Homework for Week 3
 
-Pair program these with a buddy! Pair programming is fun and productive unless you do it wrong. According to formal logic, this does not necessarily mean that doing it wrong cannot also be fun and productive, but it does mean that if it isn't fun and productive, you aren't doing it right.
-
-
-### Coding assignment 1a
-
-Convert your own Pig Latin code from last week into a function in this form:
-
-```python
-# Your function definition here
-
-print(pig_latin(input("Enter input: ")))
-```
-
-### Coding assignment 1b
-
-Modify your code in part 2a to detect whether the input contains more than one word. If the input has one word, print the Pig Latin version. If the input has multiple words, only print the Pig Latin for the first word. The [Python documentation for a particualr string method](https://docs.python.org/3/library/stdtypes.html#str.split) will be very useful here!
-
-### Coding assignment 1c
-
-Modify your code from part 2b to account for the special case where the first letter of the word is a vowel.
+## Coding Assignment 0: Pig Latin
+Produce a simple program to accept a single word as text input and then print out the [pig latin](https://en.wikipedia.org/wiki/Pig_Latin) translation. We can assume the simplest case for the word provided: just shift the first letter to the end and add "ay". Taking into consideration words starting with consonant clusters and vowels requires some conditional logic, which we haven't gone over yet, but feel free to jump ahead if you really want to.
 
 ### Read:
-The Coder's Apprentice, ch 6-7: [http://www.spronck.net/pythonbook/](http://www.spronck.net/pythonbook/)
+Posner, Miriam (2015),  [Humanities Data, a Necessary Contradiction ](http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/)
+
+[Section 3](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#why-are-programmers-so-intense-about-languages) from Paul Ford's *What is Code?*, Businessweek June 11 2015
+
+#### Bonus reading:
+
+Horgan, John (2017), [Profile of Claude Shannon, Inventor of Information Theory](https://blogs.scientificamerican.com/cross-check/profile-of-claude-shannon-inventor-of-information-theory/)
