@@ -45,7 +45,7 @@ Create a new repository on Github to hold your own homework assignments. Let's c
 
 ### Assignment 3: 
 
-Describe, in the most exacting detail possible, the procedure to sort a pack of playing cards. Write this down in a new markdown file with the file extension .md (don't worry about formatting) in the Week 2 directory in your homework repo and commit/push it.
+Describe, in exacting detail, the algorithm to give exact change. You should only assume basic arithmetic functions like addition and subtraction, but be sure to describe how to figure out what notes and coins to give back. Write this down in a new markdown file with the file extension .md (don't worry about formatting) in a Week 2 directory in your homework repo and commit/push it.
 
 ### Read:
 Raymond, Eric S. [The Cathedral and the Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/cathedral-bazaar/index.html): Introduction through "How Many Eyeballs Tame Complexity"
