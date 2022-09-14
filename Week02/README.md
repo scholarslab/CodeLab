@@ -41,11 +41,11 @@ I've created a git repository on the Scholars' Lab account that has a markdown t
 
 ### Assignment 2: Create your own homework repo
 
-Create a repository on Github to hold your own homework assignments. This should be under your account (rather than the Scholars' Lab's account). Click the Github cat on the top left, and then the green "New" button under the "Recent Repositories" menu on the left. It's probably easier to create a new repo on Github (the website), clone it to your computer, and copy in the file you've already produced, but you can also try doing an in-place `git init` if you're feeling adventurous.
+Create a new repository on Github to hold your own homework assignments. Let's call it "codelab-assignments" for consistency. This should be under your account (rather than the Scholars' Lab's account). Click the Github cat on the top left, and then the green "New" button under the "Recent Repositories" menu on the left. It's easier to create a new repo on Github (the website), and then clone it to your computer, but you can also try doing an in-place `git init` if you're feeling adventurous.
 
 ### Assignment 3: 
 
-Describe, in the most exacting detail possible, the procedure to sort a pack of playing cards. Write this down in a new markdown file with the file extension .md (don't worry about formatting) in the Week 2 directory in your homework repo and commit/push it.
+Describe, in exacting detail, the algorithm to give exact change. You should only assume basic arithmetic functions like addition and subtraction, but be sure to describe how to figure out what notes and coins to give back. Write this down in a new markdown file with the file extension .md (don't worry about formatting) in a Week 2 directory in your homework repo and commit/push it.
 
 ### Read:
 Raymond, Eric S. [The Cathedral and the Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/cathedral-bazaar/index.html): Introduction through "How Many Eyeballs Tame Complexity"
