@@ -1,10 +1,10 @@
-# Week 2
+# Week 3
 ![https://media.giphy.com/media/9xaryfkdWqqiK6QHKf/giphy.gif](https://media.giphy.com/media/9xaryfkdWqqiK6QHKf/giphy.gif)
 
 ## Lesson
 [Lesson document](intro_python.md)
-1. Introduction to Python 
-2. Python Interpreter 
+1. Introduction to Python
+2. Python Interpreter
 3. Data Structures
 4. Documentation
 5. Dogs
@@ -35,13 +35,13 @@
 ## Homework for Week 3
 
 ## Coding Assignment 0: Pig Latin
-Produce a simple program to accept a single word as text input and then print out the [pig latin](https://en.wikipedia.org/wiki/Pig_Latin) translation. We can assume the simplest case for the word provided: just shift the first letter to the end and add "ay". Taking into consideration words starting with consonant clusters and vowels requires some conditional logic, which we haven't gone over yet, but feel free to jump ahead if you really want to.
+Produce a simple program to accept a single word as text input and then print out the [pig latin](https://en.wikipedia.org/wiki/Pig_Latin) translation.
+
+When I first assigned this homework, I didn't actually know that Pig Latin is a more complicated and potentially more ambiguous algorithm than I thought! Because of this, we can implement the simplest case for the word provided: just shift the first letter to the end and add "ay" to it.
+
+Taking into consideration words starting with consonant clusters or vowels requires some conditional logic, which we haven't gone over yet, but feel free to jump ahead if you really want to show off.
 
 ### Read:
 Posner, Miriam (2015),  [Humanities Data, a Necessary Contradiction ](http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/)
-
-[Section 3](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#why-are-programmers-so-intense-about-languages) from Paul Ford's *What is Code?*, Businessweek June 11 2015
-
-#### Bonus reading:
 
 Horgan, John (2017), [Profile of Claude Shannon, Inventor of Information Theory](https://blogs.scientificamerican.com/cross-check/profile-of-claude-shannon-inventor-of-information-theory/)

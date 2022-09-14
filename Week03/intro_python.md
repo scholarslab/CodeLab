@@ -1,29 +1,59 @@
 # Introduction to Python
 !["Monty Python"](assets/montypython.jpg)
 
+## Before we get started...
+Computer programs are algorithms. These two things are so connected in the lay imagination that they are sometimes used as synonyms for each other. The media talks about "The Algorithm" when it describes Google's search and ad services, Netflix's recommendations, or TikTok's infinite video scroll, but an algorithm isn't some sort of magic tech thing. It's just a sequence of unambiguous procedures, like a particularly rigorous recipe. A computer program is an algorithm that's formatted in a language that a computer can understand.
+
+But knowing the language is only part of writing code. We have to know *what* to tell a computer as well as *how*.
+
+One of the best ways to figure out the *what* is to think about how we might solve the same problem as humans. It's useful to break up things we intuitively conglomerate in our heads into discrete steps. We don't usually examine what we're actually doing when we make exact change or sort of deck of playing cards, so it's useful to make the effort to describe each step, algorithmically. After that, it's just a matter of translating our algorithm into computer language.
+
+This kind of process often helps us define the problem more concretely (what do we mean when we say "sort" a deck of cards?), identify ambiguity in our procedure, and discover unexpected "edge cases" that fall outside of our normal use.
+
 ## Python interpreter as calculator
+Let's get started with Python.
+
+Python comes with an interactive interpreter that executes your instructions as you enter them line by line. For beginners, it's an excellent way to sandbox your ideas or check your syntax. Start the interactive interpret using the `python` (or `python3`) command.
+
+One of the simplest things we can do is basic arithmetic:
+
 ```python
 1+1
 2**3
 ```
 
-Python comes with an interactive interpreter that executes your instructions as you enter them line by line. For beginners, it's an excellent way to sandbox your ideas or check your syntax. Start the interactive interpret using the `python` (or `python3`) command.
+You can exit using `exit()`. The interactive interpreter is useful to test out an idea or to double check syntax or whether the output of a function matches expectation. But what we type into the interactive interpreter isn't saved and we have to feed it line by line, so it's not a good way to actually write a computer program. For that, we can use VS Code.
 
-You can exit using `exit()`.
+## Saving and running Python files
 
-## Python 2 vs Python 3?
-The Python programming language was first conceived in the late 1980s, but became popular after the release of Python 2.0 in 2000 (not to be confused with [Pythons 2](https://www.imdb.com/title/tt0330795/?ref_=nv_sr_3)) when the language switched to a more public code repository (more on repositories later!) and a more open, community-driven development model. Python 3 was released in 2008 as a major reformation of the language that made it more consistent and unified redundant mechanisms. Python 3 is not backwards compatible with Python 2; it is, in effect, a new language. You should definitely use Python 3 because Python 2 is finally going to go away after more than a decade of parallel adoption.
+To write and save a Python program, the typical convention is to use the `.py` extension. When we save a file as a .py file in VS Code, it also tells VS Code that it contains Python code and will automatically activate code highlighting and syntax checking.
 
-Many computers come with Python 2 already installed by default. Depending on how yours is set up, running `python` may run the Python 2 or Python 3 interpreter. To determine which one, run the command `python --version`. Pipenv should have this all sorted out, but more on this later.
+To run a Python program that you've saved, we can use the `python` command through the terminal with the name of the file that contains your program (if running `python --version` in the terminal shows a 2.x version or "command not found", you will need to use `python3` instead):
+
+```
+python code.py
+```
+
+## A quick note about Python 2 and Python 3
+The Python programming language was first conceived in the late 1980s, but became popular after the release of Python 2.0 in 2000 (not to be confused with [Pythons 2](https://www.imdb.com/title/tt0330795/?ref_=nv_sr_3)) when the language switched to a more public code repository and a more open, community-driven development model.
+
+Python 3 is the current major version. It was released in 2008 as a major reformation of the language that made it more consistent and unified redundant mechanisms. Python 3 is not backwards compatible with Python 2; it is, in effect, a new language. You should definitely use Python 3 because Python 2 finally went away (as coders say, became "deprecated") after more than a decade of parallel adoption.
+
+Many computers come with Python already installed by default. Depending on how yours is set up, running `python` may run the Python 2 or Python 3 interpreter. To determine which one, run the command `python --version`. Pipenv should have this all sorted out, but more on this later.
 
 ## Hello World
 ### Variables, Functions, amd Parameters
+Let's take a look at the traditional program used as an introduction to countless programming students before you, Hello World:
+
 ```python
-print("Hello Cruel World!")
+print("Hello World!")
 ```
+
+Try saving this code as a program and running it.
+
 "Print" is a function, which is like a command. Functions are called by writing the function name followed by parenthesis. Inside the parenthesis are zero or more parameters, which are extra bits of information that you attach to the function. The "print" function simply writes out the data that's passed to it.
 
-If you're looking for help on the internet and ever see `print "foobar"` instead of `print("foobar")` (without the parenthesis), that's Python 2 code instead of Python 3!
+If you're looking for help on the internet and ever see something like `print "foobar"` instead of `print("foobar")` (without the parenthesis), that's a sign that it's Python 2 code instead of Python 3!
 
 ## Variables
 
@@ -92,7 +122,7 @@ True in Python is interchangeable with the number 1 and False with 0.
 ## Comments and Documentation
 ### Inline Commenting
 ```python
-# Life is suffering...
+# Help I'm stuck in a Python interpreter
 1+2+3
 ```
 
@@ -121,7 +151,7 @@ import this
 
 Here's [one interpretation of Z of P](https://inventwithpython.com/blog/2018/08/17/the-zen-of-python-explained/).
 
-Also, a DH answer: lots of DH projects are written in Python because of its simplicity and robust community and it's especially popular in areas like text analysis and machine learning.
+Also, a DH answer: lots of DH projects are written in Python because of its simplicity and robust community and its popularity in areas like text analysis and machine learning.
 
 ## Saving and running code
 The Python interactive interpreter is very useful for experimentation, but if you want to write something less ephemereal, you'll want to save it as a file so that it can be run over again without going through it line by line. The code is exactly the same, just save it as a text file to your disk with the usual Python file format extension, .py.
@@ -202,9 +232,7 @@ Pair programming is a common practice. We want you to always do pair programming
 Let's start with a list of names:
 
 ```python
-praxis = ["Cherrie", "Jacqui", "Jennifer", "Joseph", "Susan", "Tarushi"]
+praxis = ["Caroline", "Malcolm", "Samantha", "Winnie"]
 ```
-
-A good way to get started with coding is to think about how we might go about this in our heads or physically, in the "real world." 
 
 Hint: there's a section in the Random library documentation [just for working with sequences](https://docs.python.org/3/library/random.html#functions-for-sequences)
