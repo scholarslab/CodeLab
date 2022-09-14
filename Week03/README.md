@@ -28,8 +28,8 @@
 * **String**: Text data. We can think of it as a list of this as a list of characters. For example, `"Hazel"[2]` is `'z'`.
 * **Variable**: A container for data. Variables let us squirrel away a piece of data using a variable name and the assignment operator (`a = 5`) and then refer back to it later (`a + 10`). Any piece of data that we want to keep track of, we have to store away as a variable.
 
-## Additional excercises
-[Optional excercises for handling lists and dictionaries](https://github.com/scholarslab/CodeLab/tree/master/Week02/ExtraExercises)
+## Optional excercises
+If you're feeling really ambitious and have some experience with Python already, here are some [additional, optional excercises for handling lists and dictionaries](https://github.com/scholarslab/CodeLab/tree/master/Week03/ExtraExercises)
 
 ---
 ## Homework for Week 3
