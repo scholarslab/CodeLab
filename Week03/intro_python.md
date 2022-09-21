@@ -190,7 +190,7 @@ We can see here that `input` is a function, just like `print`. `input` asks the 
 ![Bad Pun Hazel](assets/sleeping_hazel.jpeg)
 
 ```python
-dogs = ["Toby","Bofur","Hazel","Maple","Henry","Fat Dog","Monty", "Keefa"]
+dogs = ["Toby","Bofur","Hazel","Maple","Henry","Fat Dog","Monty", "Keefa", "Triscuit"]
 print(dogs[0])
 print(dogs[-1])
 print(dogs[3:])
