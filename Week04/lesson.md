@@ -1,4 +1,4 @@
-# Lesson Plan: Week 03
+# Lesson Plan: Week 04
 ![Hazel in bed](./assets/hazel_bed.jpg)
 
 ## Discuss homework assignments
