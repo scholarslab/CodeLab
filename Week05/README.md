@@ -5,45 +5,56 @@ You guys are all doing great!
 
 ## Outline
 1. Discuss homework assignments
-2. Loops (ctd) + Algorithms
-3. File input/output
+2. [Conditions and Loops](./lesson.md)
 
-[Lesson document](./lesson.md)
+---
+## Homework for Week 5
 
-## Homework
+Try pair programming with a buddy!
 
-Pair program these with a buddy! Pair programming is fun and productive unless you do it wrong. According to formal logic, this does not necessarily mean that doing it wrong cannot also be fun and productive, but it does mean that if it isn't fun and productive, you aren't doing it right.
+### Assignment 0: Improved pig latin
 
-### Assignment 0:
+Let's go back to our pig latin code again. This time, add a conditional to handle the case where the first letter is a vowel (Wikipedia says: "For words that begin with vowel sounds, generally only a syllable 'yay' is appended to the end, with no modifications to the beginning onset.").
 
-Implement a sorting algorithm for sorting a list of numbers. Don't use any built-in sort. It can be as simple or complicated as you want. Feel free to look at the innumerable other examples on the Internet, but be prepared to explain your code!
+### Assignment 1: Filter evens
 
-Think back to what we talked about, to mapping human processes to code. Try your best, but don't bang your head against a wall if you get stuck. I'm happy to chat about any of this material, of course.
+Write a function, `filter_evens()` that takes in a list of integers as an argument and returns a list of integers comprising only the even numbers.
 
 ```python
-def sort_numbers(numbers):
-    # your code here
-    return sorted_list
+def filter_evens(numbers):
+   # Your function definition here
 
-numbers = [6,3,7,8,1,3]
-print(sort_numbers(numbers))
+nums = [0,-2,3,14]
+print(filter_evens(nums))
 ```
 
-### Assignment 1
+### Assignment 2: FizzBuzz
 
-[Download the plain text of Much Ado About Nothing from Project Gutenberg](http://www.gutenberg.org/ebooks/1519)
+This is a classic coding puzzle, another rite of passage. Write a program that takes as input a number and then plays the [FizzBuzz game](https://en.wikipedia.org/wiki/Fizz_buzz) until that number is reached. This is a classic programming puzzle and, very helpfully, Wikipedia actually has a list of solutions, including one in Python. But if you use it, be prepared to explain how it works in front of the Fellowship in the next Codelab. It's not the simplest answer (and, in fact, it's Python 2 code), but it might be useful to reverse-engineer!
 
-Write a program to read in this file and count the total lines of dialog and the length (character count) of those lines for the two main characters: Benedick and Beatrice. Write that data out to a second file.
+Sample code:
+```python
+# We're not going to worry about invalid input for this...
+i = int(input("Enter a number: "))
 
-### Assignment 2
+# Your code here
+# Example output: "1 2 fizz 4 buzz fizz 7"
+# (all on one line or on multiple lines are both fine)
+```
 
-* In preparation for next week's Brandon Code Lab Special Episode, read through the piece [here](https://humanitiesprogramming.github.io/exercises/python-debugging/) on "common code errors and how to find them" (don't worry about working through the exercises).
-* Send Brandon (by slack, email, or github) a working program that answers some homework exercise from CodeLab so far. 
-* Send a partner two copies of the same code - one that works, and one that has a bunch of errors you introduced to it. They should be small! An example might be:
+Sample output:
+```
+Enter a number: 7
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+```
 
-my_sentence = "hello' <br>
-print my sentence
+Hint:
+There's a number of built-in operators in Python that may be helpful for this excercise which are [covered in the documentation](https://docs.python.org/3/reference/expressions.html). Take a look at the "modulo" operator in particular. You'll probably want to use a loop of some kind, so I would suggest peeking at the Python [Control Flow documentation](https://docs.python.org/3/tutorial/controlflow.html).
 
-And a debugger would look at this and say "Ok. I need to make sure the double quotation marks match when assigning the variable. I need parentheses around the print statement. And I also need an underscore between my and sentence.
-
-* Solve the broken code your partner gave you! You'll use the working code they shared if you get stuck.
+Remember to test your code. Try to see if your output matches the sample output above. Does it have the right number of prints? Try it out with other inputs too. What is the correct output if the user enters the value 15?

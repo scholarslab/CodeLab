@@ -1,11 +1,10 @@
-## Candidate Obama Speaks at Google (a review of Sorts)
+## Week 5: Control Flow
 
+![hazel_sleeping](assets/hazel_sleeping.jpg)
 
-## Control flow
+The order of instructions which a computer program executes is known as "control flow" and we can think it as like a river with a strangely winding, branching, looping course. Functions are our first step in working with code that doesn't simply run linearly, one line after the next. After we define them, we can call back on functions again and again, from anywhere. With functions, just because a line of code appears before a later one doesn't mean that it isn't executed earlier. 
 
-So far, the code that we've written has flowed forward, line by line. Even the function definition: the contents of the `def` block are read in order by the interpreter. This is boring, though. If computation is about choices, this sort of linear flow is boring code.
-
-The order of instructions through which a computer program runs is known as "control flow". We can affect the flow with conditionals and loops which allow us more interesting modes.
+But functions are still... functionally linear: we're basically copying out a block of code and pasting it back in somewhere else. If we want to more substantively affect the direction of control flow, in real time, we must use conditionals and loops.
 
 ### Conditionals
 
@@ -21,9 +20,20 @@ else:
   print("Zero")
 ```
 
-We can see the three conditional keywords: `if`, `elif` (else if), and `else`. They're what they sound like. Each of the conditional blocks (the three `print()` statements) are only run if the associated conditional statement is `True` (in the boolean logic sense). We can have multiple `elif` blocks if we want. We can also omit `elif` and `else` blocks altogether.
+Let's take a look at the actual *conditions*: `x>0` and `x<0`. These are valid Python statements. If you define `x` and then execute `x>0` in the Python interactive interpreter, we can see that they return Boolean values, `True` or `False`:
 
-Note the colon after each conditional line.
+```python
+>>> x = 5
+>>> x > 0
+True
+>>> x = -5
+>>> x > 0
+False
+```
+
+Around the conditions are the conditional keywords: `if`, `elif` (else if), and `else`. They're what they sound like. Each of the conditional blocks (the three `print()` statements) are only run if the associated conditional statement is `True` (in the boolean logic sense). We can have multiple `elif` blocks if we want. We can also omit `elif` and `else` blocks altogether.
+
+Note the colon after each conditional line. Here, as with function definitions, a colon is a signal that we're going to start a new code block (indicated by the white space indentation). The different code blocks (the "Positive", "Negative", and "Zero" print statements here) delineate the conditional flow.
 
 For numbers, we can use `>`, `>=`, `==`, `<`, and `<=` to make numeric comparisons. If we want to modify or chain together boolean statements, we can use `and`, `or`, and `not`:
 
@@ -52,173 +62,101 @@ else:
   print("Nooo...")
 ```
 
+### Constructing Conditionals
 
-### Nested Loops: Loops, But More.
-
-![nesting](assets/nesting.gif)
-
-If we want to really master loops, we have to learn how to nest them. Nesting means that we can have one loop inside of another. One reason we might want to do this is if we need to compare different elements in a list with each other.
-
-How might we write a function to check whether a list contains duplicate numbers? With a single layer of looping, it's not so easy. But with two, it's simple. Well. Simple once you get the hang of it.
-
-One good strategy for solving problems like this is to ask: how would we do this as a person? What discrete steps can we break this into? 
-
-So, as a person, how would we check this list for duplicates? `[3,5,7,9,5]`
-
-To start, we need to look at each number in the list individually, to have something to compare all the other numbers to. Let's start with the first number there: 3.
-
-What next? We're at that first number. We should see if there are any other 3s in the list. There aren't.
-
-So we move on to the next number, 5, and repeat. There is another 5, so we can say: "yes, there is a duplicate."
-
-Good, now how do we abstract this in code? Our basic strategy involves two levels of looping: in the first level, we want to take a look at each number; in the other, we want to compare that number against all the other numbers. In Python, this is easier to construct using a `while` loop (`for` loops abstract away some of the index data we want to use).
-
-This is a simple case where we're doing basically the same thing on both levels: just iterating through some numbers. This kind of loop should look familiar:
+Let's take another look at our example:
 
 ```python
-i = 0 # we're going to use i as a counter to keep track of the index
-while i < len(numbers):
-    #do some stuff
-    i+=1 #increment the index counter
+x = 5
+if x>0:
+  print("Positive")
+elif x<0:
+  print("Negative")
+else:
+  print("Zero")
 ```
 
-So, if we stack one inside of the other, we get something like this:
+Why is this structured the way that it is? Is it functionally the same as this version?
 
 ```python
-def got_dupes(numbers):
-    i = 0 # i is the first counter, for the outer loop
-    while i < len(numbers)-1: #we don't need to loop at the very last number on the outside loop because there's nothing to compare it to
-        j = 0 # j is the second counter, for the inner loop
-        while j < len(numbers):
-            if numbers[i] == numbers[j]:
-                return True #duplicate found! Returning True.
-            j+=1
-        i+=1
-    return False #if we complete all the looping without returning, there must not have been any duplicates
+x = 5
+if x>0:
+  print("Positive")
+if x<0:
+  print("Negative")
+if x==0:
+  print("Zero")
 ```
 
-What's wrong with this code?
+Because numbers in Python cannot simultaneously be positive, negative, or zero (and ignoring concurrency for now), these two bits of code are actually equivalent. Only one of `x>0`, `x<0`, and `x==0` can be true at one time.
 
-We want to loop through all the numbers on the outer loop, but do we want to loop through them all on the inner one too?
+But this is a simple scenario where we are not only covering all our bases and can be confident that we have thought of all scenarios, but also one in which there are no complicated overlaps between the conditions. Additionally, using `elif` explicitly excludes conflicting code blocks and `else` is often a way to catch unexpected conditions. These are strategies that are useful for writing more robust code.
 
-Here's the correct code:
+### Looping
+
+Functions are neat in part because they let you write a bit of code once and then refer back to that code over and over again in the future. Loops do that too, but let you repeat code dynamically, with the program flow varying depending on inputs. Let's take a look at what sort of problems these structures help with.
+
+Say we want to write a piece of code to sum up all the numbers in a list of integers, like totaling up a column in a spreadsheet. Without Python's loop features, we could add up a set number of elements:
 
 ```python
-def got_dupes(numbers):
-    i = 0
-    while i < len(numbers)-1: 
-        j = i+1 # j starts at the next number after i on every loop
-        while j < len(numbers):
-            if numbers[i] == numbers[j]:
-                return True
-            j+=1
-        i+=1
-    return False
+def sum(number_list):
+    return number_list[0]+number_list[1]+number_list[2]
 ```
 
-### Algorithms
+That's no good. It works, but only for inputs with exactly 3 numbers. It'd fail if we passed in a list with 5 numbers or with 2. We want a way to let Python decide when to repeat and when to stop repeating, based on conditions that we give it.
 
-By combining the comparison and loop logic in this way, we've created an algorithm. Algorithms are ways to solve problems using an unambiguous set of instructions. So, "Knight to Queen's Bishop 3" rather than a more vague instruction like "attack the center". 
+![looper](assets/looper.gif)
 
-There are some rather formal definitions for this term, but we can informally and facilely say that all computer programs, including all the ones that you've written, are algorithms.
+We need a way to loop through code, round and round.
 
-More usefully, we use the term to describe more generalized ways to solve problems: we can think of the function that we just wrote as an implementation of, let's call it the nested-loop duplication detection algorithm. 
+#### while loops
 
-There are [a lot of algorithms](https://en.wikipedia.org/wiki/List_of_algorithms).
-
-### Sorting
-
-Different algorithms can solve the same problem. A very common class of problems is sorting. In Python, we have a few built-in ways to sort things. For example:
-
-```
->>> a = [1,3,2,5]
->>> a.sort()
->>> a
-[1, 2, 3, 5]
-```
-
-But here, Python is doing the hard work under the table, hiding it through a method so you don't have to know how it works. But behind that method is an algorithm. The sorting algorithm [TimSort](https://en.wikipedia.org/wiki/Timsort) to be exact. It's more complicated than I'd like to get into, so let's take a look at a different one.
-
-How would we sort a list of numbers?
-
-Let's talk it over and then I can assign it as homework.
-
-*Insert insightful class discussion*
-
-Here's a photo of Hazel as a Romantic Hero while we do this.
-
-![Hazel Romantic Hero](./assets/hazel_romantic_hero.jpg)
-
-Good, good. So, for variety, let's look at another way to sort. To introduce it, let's turn to Presidential candidate Barrack Obama, being interviewed at Google Headquarters in late 2007.
-
-[![Obama at Google](https://img.youtube.com/vi/k4RRi_ntQc8/0.jpg)](https://www.youtube.com/watch?v=k4RRi_ntQc8)
-
-I'd say that he's got pretty competent campaign staff.
-
-Bubble sort is, in fact, usually a less efficient way to sort. But it's easy to implement and it's often used for teaching.
-
-[Bubble sort animation](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
-
-Or, let's consider a much worse sorting algorithm: we can just use Python's built-in random shuffle method to scramble the list and then check whether it's sorted. If not, repeat the shuffle.
-
-Obviously, this is much less efficient (time-wise at least) than the other sorts we've looked at. In the same way, there are more efficient ways to sort than Bubble Sort or Insertion Sort. In fact, there's a fairly long [Wikipedia article](https://en.wikipedia.org/wiki/Sorting_algorithm) that just lists different sorting algorithms.
-
-This is all to suggest that there can be different ways to solve the same problem, and that those different ways can have quite different performance properties. "Naive" algorithms that mimic human thinking are a good way to start thinking about problems, but they might not get you very far if you want to optimize performance.
-
-Having given you a taste for all that, I want to say that there's often no... real good reason for us as digital humanists to dive too deeply into algorithms or efficiency. Whether it takes 30 seconds to run our text analysis or 3 seconds isn't as consequential as whether Google returns search results in 30 seconds or 3 seconds. And so much of this, like Python's hidden sort, is just already done for us by things like the Python built-in library and third-party modules (which we'll talk about later).
-
-It's useful to look at the broad contours of these things even if we don't understand them in any depth.
-
-## Files
-
-Let's do one useful new thing this week. User input from the command line is useful sometimes, but sometimes we want to do some heavier lifting.
-
-Let's read in a text file.
-
-In Python, there's a number of ways to do this. One of the easiest is to use the `open` function, which returns a "file object" that represents that file. 
-
-[(Here are the Python docs for this)](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
-
-The code for `open` is very simple. To read a file, we can do:
+Conveniently, Python's `while` loops let you repeat a code block so long as a condition you specify holds true. Let's take a look at how we could implement the summation code from before with `while`:
 
 ```python
-infile = open('file.txt', "r"):
-text = infile.read()
-infile.close()
+def sum(number_list):
+    x = 0
+    sum = 0
+    while x<len(number_list):
+        sum = sum + number_list[x]
+        x = x+1
+    return sum
+
+nums = [0,1,2,3,4,5,6000]
+print(sum(nums))
 ```
 
-Text will then be a string that holds the text of the input file.
+Here, the line `while x<len(number_list):` tells Python to loop through the following block so long as the condition `x<len(number_list)` holds true (recall that `len` is a built-in function that tells you the length of a sequence).
 
-The call at the end to `close` isn't even strictly necessary. It's good practice to do it for optimal resource management, but Python will do it for you if you forget.
+The variable `x` acts as a counter. Every loop, we add 1 to x (`x = x +1`). So, the first cycle x is 0, the next cycle x is 1, and so on until x gets to the length of number_list. 
 
-A common idiom to use for Python file handling that you'll often see in examples is to use a with-as block. The last example is:
+The other line in the while block, `sum = sum + number_list[x]` adds the number at the `x` index of number_list to a running total, `sum`. Because we run one cycle for every value of `x` from 0 to the length of `number_list`, we run this addition for every value in `number_list`.
+
+Once `x` gets higher than the length of `number_list`, the while loop ends. We're left with a `sum` value for the entire list.
+
+The loop condition (the logic that goes after `while`) is a boolean value (`True` or `False`), so we can chain together many different parts using `and` and `or` and `not`. 
+
+### for loops
+
+We've had some experience now with sequences such as lists and strings. We can easily move through theses sequences using the `for` loop. In the last example, we had to keep track of our own counter `x`. But if we just want to do something for each value in a sequence, we really need to do that ourselves.
+
+Let's say we want to write a function to tell every dog in a list of dogs that they're good dogs. Here's what that code might look like:
 
 ```python
-with open('file.txt', "r") as infile:
-    text = infile.read()
+def good_dog(dog_list):
+    for dog in dog_list:
+        print(dog + " is a good dog!")
+
+dogs = ["Hazel", "Maple", "Bofur", "Fat Dog"]
+good_dog(dogs)
 ```
 
-All this does is structure the code so that you don't forget to close the file.
+A `for` loop moves through a list or string (or any iterable object, but we don't want to talk about that yet) and runs a code block for every part of that list or every character of the string.
 
-The file object is also magically iterable, so we can treat it as a list that we can loop through. Another common idiom is to use a for loop to go through it line by line.
+In this example, we don't have to use the variable name `dog` to match the list name `dog_list`; we can use any variable name, but using variable names like `dog_list` and `dog` helps us keep track of what's going on.
 
-```python
-infile = open('file.txt', "r"):
-for line in infile:
-    print(line.upper())
-infile.close()
-```
+The code block within the `for` loop is run every cycle and each cycle the `dog` is different. In the first cycle, `dog` is "Hazel" because "Hazel" is the first value in the input list. In the second cycle, `dog` is "Maple".
 
-The "r" argument that you pass in to `open` tells Python that you want to read the file. To write, we can use "w" mode. This will overwrite the file if it already exists. We can use "a" for append to keep the existing content and just add to the end instead.
+Here's Maple in the middle of a loop.
 
-```python
-outfile = open('file.txt', "w"):
-outfile.write("Hazel is a good dog.\n")
-outfile.close()
-```
-
-The `\n` at the end of that string indicates a new line.
-
-See? Easy!
-
-![Maple Snooze](./assets/maple_snooze.JPG)
+![maple_loop](assets/maple_loop.jpg)
