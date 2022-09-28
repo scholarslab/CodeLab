@@ -7,6 +7,11 @@ You guys are all doing great!
 1. Discuss homework assignments
 2. [Conditions and Loops](./lesson.md)
 
+## What's What With Walsh
+
+> One thing programming offers digital humanists is the ability to work at scale. Many of the activities we do as humanists work on a fairly small scale - we read closely, we analyze, we write. But how would you read ten million texts? Programming can help us address great quantities of data, and looping, the application of a particular set of programming texts to many different elements, is fundamental to large scale work. They can be useful for, say, bulk assigning different metadata labels to particular chunks of work. For example, we used loops when working on Michelle Morgenstern's tumblr data to preprocess a variety of social media posts to make them ready for analysis. Digital text analysis commonly lowers the case of all words in a text to make quantifying them easier and more accurate, so we could have used a loop to say "go over every word in this post and lowercase it." But, as a linguistic anthropologist, Michelle actually cared about capitalization in some cases as it could be a rhetorically interesting. Whether or not we wanted all words to be lower cased depended on the context. So we actually implemented a version of "when looking at raw word counts, lower the case of all words except in a set of predefined instances." Combining conditional statements with loops like this meant that we could flexibility build up a project that reflected her needs as a scholar.
+> - Brandon
+
 ---
 ## Homework for Week 5
 
