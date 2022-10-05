@@ -1,129 +1,197 @@
-# Let's talk about Data
+## Candidate Obama Speaks at Google (a review of Sorts)
 
-![Data and Lore](assets/data.jpg)
 
-Last week, we started reading from and writing to a text file. This means that it's time to have a little chat about data.
+#### Redirecting flow
 
-What is data? There's a lot of definitions, but we'll be sticking with the version that's most common in computing: data is a representation of information through encoding. This definition, which so relies on the word "information", takes us down a real historical rabbit hole. I apologize for setting you all up like this. I'll try to keep it brief.
-
-## Claude Shannon and the Quality of Being Surprised
-
-Information, that which is related to the act of informing, from the latin *information*: *outline, concept, or idea*. The history of knowledge and epistemology and all that thinking about thinking goes back a very long time and I am completely unqualified to teach anyone about any of it. I think David Hume invented it in 1740 or something. For my sake, we'll start in 1948 with Claude Shannon.
-
-![Claude Shannon on a unicycle](assets/shannon.jpg)
-
-Shannon was an American electrical engineer and mathematician known for his foundational work on information theory and digital circuits, and for his enthusiasm for mathematical puzzles, juggling, unicycles, and computer chess. He created a machine (with his student, the AI pioneer Marvin Minsky) whose only function was to turn itself off.
-
-In 1937, at the age of 22, he wrote a master’s thesis that established the fundamental principles of digital circuit design from which all modern computers were created. At 32, he published the landmark paper, *A Mathematical Theory of Communication* which founded the field of information theory. It's this paper that we're interested in.
-
-I think it's actually kind of funny, teaching Shannon and information theory in an introduction digital humanities tech course. There's a good deal of text analysis in DH, but Shannon worked out the fundamental ideas about information from the opposite direction.
-
-After he got his doctorate, Shannon went to work at Bell Labs, where he worked on secure communications during World War II (when Alan Turing, working on breaking codes instead of making them, visited Bell in 1942, the two met for tea daily). One major problem with scrambling messages so that they can't be read is that messages written in human languages tended to be really predictable. At a basic level, there is an enormously uneven distribution of letters in English (as one example). At a higher level, some sequences of letters appear frequently while others never appear in any word and there are many more possible combinations of five letters than there are five-letter words. Predictability opened up weaknesses that codebreakers could exploit. In fact, Turing's work breaking the German Enigma cipher often relied on the frequency of common messages like "nothing to report".
-
-In *A Mathematical Theory of Communication*, Shannon considered the meaning of this sort of uneven distribution. Let's say that we're playing a few rounds of the word game Hangman, but I take pity on how poorly you're doing and tell you one the first letter of a word right off the bat. Do I give away more or less information if I tell you that the word starts with "S" or with "Q"?
-
-Shannon recognized that what the amount of information conveyed could be understood as entropy, essentially the degree to which you are surprised at learning something. If I tell you that the word starts with S, that fact tells you less than if I told you that the word starts with Q because many more words start with S than start with Q. In the same sense, telling you a losing lottery number conveys less information than telling you a winning lottery number. In communication, we often intuitively reduce the length of text by swapping out common letter combinations, phonemes, and phrases with shorter replacements: LMAO, Ph.D., SLab, et al. Mechanically, we can reduce the size of lower entropy files like English text by compressing them. A ZIP file of the Much Ado About Nothing text from last week is about 60% smaller.
-
-Shannon suggested that we could exactly quantify this degree of entropy to measure the information content. Consider a coin that has an equal chance of flipping heads or tails. Flipping that coin selects between two equally possible outcomes, producing an entropy of one "bit", a portmanteau of "Binary Digit".
-
-Hang on to that for a second.
-
-A year after Shannon published *A Mathematical Theory of Communication*, he published an expanded version of the paper. In recognition that the ideas it contained were more universal and more fundamental than he had realized, Shannon titled this new version, *The Mathematical Theory of Communication*.
-
-## Analog and Digital
-
-Up to this point, the examples that we've used have mostly been digital rather than analog. Digital meaning: like the digits on your hand. Data that is discontinuous or "discrete", represented by distinct symbols like letters and numbers. This is opposed to analog, in which data flows in continuous, infinitesimal curves. A digital clock shows the time as distinct instants: a single state for each second or minute. An analog clock shows time as infinitely reducible moments that flow one to the next (well, not really - escapements and quartz oscillations and stepper motor steps complicate this *analogy*). Natural language is digital in the abstract, comprising distinct characters and dictions. Printed on a page or voiced as speech, it takes on analog qualities. DNA is an example of naturally occurring digital data.
-
-It's easier to think of basic Information theory concepts using digital examples, but the field applies to analog data as well and Shannon actually has a lot of say about analog phenomenon like noise. There's also a cosmology called digital physics that describes the entire universe as fundamentally describable by (and, in fact, comprising) discrete information such that analog only exists as imperfect knowledge of reality. Reality is just PDFs all the way down. But ontology is outside of the scope of Code Lab. We're going to focus on digital because, duh, it's not "Analog Humanities."
-
-Around the time that Shannon was thinking up his ideas about information, the earliest digital computers used electrical relays as its basic mechanism. These were actual mechanical switches that opened and closed to complete circuits. Relays were slow and unreliable. Grace Hopper, co-creator of the 1940s-era Harvard Mark II, jokingly coined the word "bug" after finding a moth that had flown into one of the relays and shorted it. 
-
-![Harvard Mk II "computer bug"](assets/bug.jpg)
-
-These relays were replaced in the next generation of computers by faster and more reliable vacuum tubes, which were in turn replaced by faster and more reliable transistors. Virtually all electronics today use microscopically tiny transistors. These different classes of fundamental computer components are, in their most basic form, switches that have two states: on and off. This meshed neatly with Shannon's work on digital circuit design and early computer memory and storage technologies like core memory that stored a single bit to a core. Through these technological contingencies, modern computers almost universally use binary codes at their most basic level, the bit is the most fundamental unit of computer data, and "binary" itself has become slang for compiled computer software.
-
-Computers don't really understand human languages ("natural language" is the term of art). When they filter out the background noise from the recording of a person's speech, it does it by frequency and repetition, not by understanding. In this way, a bit of information entropy is conceptually different from a bit of computer data. When we talk about computer data, we don't think about the informational meaning of the data conveyed, just the space taken up. In some cases like plain text, the difference can be significant (text file versus zip file), but in other cases, the format of the data itself strives to reduce redundancy (such as JPEG or MP3 encoding's designs accounting for the limits of human perception).
-
-## Binary and Friends
-
-### Number systems
-
-In a binary system, data is represented by 1s and 0s, often understood as analogous to on and off, true and false. A single binary value represents a bit, but multiple digits can be strung together like in decimal systems to represent larger values. Counting in binary goes 0, 1, 10, 11, 100, 101, etc. Binary numbering has a possibly long history that goes back maybe thousands of years. Its modern form was developed by 17th century philosophers including our old, weird friend Gottfried Leibniz.
-
-Just as decimal is a base-10 system, binary is base-2. Each decimal numeral adds 10 times as many possible numbers: 1 digit has 10^1 possibilities (0-9), 2 digits has 10^2 (0-99), etc. Each binary numeral adds twice as many possible numbers: 1 digits has 2^1 (0-1), 2 has 2^2=4 (00, 01, 10, and 11), 3 has 2^3, and so on. Binary can be converted back and forth from decimal easily enough: take each digit and add 2^x to it if it is a 1, where x is the position of that digit (starting from zero). 1101 in binary is 2^3+2^2+2^0 = 13 in decimal. If you keep an eye out, you'll see powers of two crop up a lot of places in computing.
-
-There are other number systems. Hexadecimal/hex and octal (base 16 and base 8) are common ways to compress binary into more compact forms. These use decimal numerals. Hexadecimal uses 0 to 9 and then A to F. Since 16 and 8 are themselves powers of two, it's simple to convert between them and decimal. Each octal digit maps directly to a set of 3 (2^3=8) binary digits and each hex digit maps directly to a set of 4 (2^4 = 16) binary digits. So, 32 in octal is 011010 (011 is 3, 010 is 2). A8 in hexadecimal is 10101000 (1010 in binary is A in hexadecimal and 10 in decimal, 1000 is 8).
-
-### Text
-
-These number systems are effectively just different representations of the same numerical ideas. Other forms of data can be encoded using numbers. We've already worked plenty with text. Under the hood, each character is represented on a character encoding table that map numbers to letters. An important and influential encoding scheme is ASCII: the American Standard Code for Information Interchange, formalized in 1968. ASCII maps Latin letters and Arabic numerals, as well as common punctuation symbols, to a set of 128 numbers. 128 is 2^7, so these numbers can be represented by a total of 7 bits. 
-
-![ASCII table](assets/ascii.png)
-
-Since the 1960s, software developers have created a plethora of character encodings, often to represent characters from other languages. Although you might occasionally run into these in older datasets, the singular modern text standard is called Unicode (well, sort of singular, since it's a family of encodings), which strives express the complete canon of human language. The current specification, Unicode 13, encompasses 143000 characters, including emoji and archaic scripts. The first 128 characters of Unicode are identical to ASCII, which helps maintain backwards compatibility with older Latin text data.
-
-### Colors
-
-Colors are often expressed in computers by a series of numbers representing the mixture of additive or subtractive colors. For digital displays, the RGB system is the most common. This comprises a set of three numbers representing the amount of red, green, and blue light ("channels"). Early color computer displays used a single bit (on/off) to represent each color, but the most common standard is 8 bits per channel (0-255) for a total of 24 bits (or 16 million total color combinations). These are often shown as hexadecimal numbers. Since each hex digit is equivalent to 4 binary digits, each 8-bit color channel can be represented by 2 hex digits. If we look at the [Scholars' Lab website](https://scholarslab.org/) and dig through the stylesheet, we will see that the background color is defined as `000000`, a set of three hexadecimal numbers indicating that each color should be 00 out of FF in hex, which is also 0 out of 255 in decimal. This is the blackest black. Links are underlined with the color `75e3f0`, which is a little red and a lot of green and blue resulting in a cyan color.
-
-### Also: Bytes!
-Byte is another common unit of measurement for data. The term is a play on bit and was coined in the 1950s for Project SAGE, a prototype computer system to coordinate American air defenses in the Cold War. There is some historical ambiguity, but a modern byte is 8 bits, representing the smallest power-of-2 size for useful data (such as a single character or a small integer). Bytes and bits are often modified with metric scale prefixes: kilobyte, megabit, etc. This is a total mess because it mixes binary units with decimal prefixes. I don't even want to get into it.
-
-## Data Structures
-
-Okay, this is too much talking. We should do some doing, which means that it's back to Python. Also, here's Hazel again.
-
-![Hazel snoozing](assets/hazel_snooze.jpg)
-
-We've discussed a few different ways to represent different types of data using the underlying binary computer systems. Going one level above this is the concept of a "data structure", which are ways to not only represent information as data (RGB, Unicode, etc.) but to efficiently access and manipulate them. We've already been working with plenty of built-in data structures in Python.
-
-The most fundamental kinds of these are often called "primitives" in computing. In Python, these include integers (whole numbers), floats (floating point numbers, which represent real numbers--"the ones between integers"), strings (text), and booleans (`True` and `False`). You should have a good sense by now of how each of these are represented (except for floats, which are weird).
-
-More complex (creatively, "non-primitive") structures such as lists (which we've worked with) and dictionaries (which is new this week!). As we have seen, Python lists contain other objects which are instances of data structures. Lists organize data into an ordered and linear collection. Dictionaries are similar in that it contains a collection of other objects, but in this case organizes them into an unordered mapping.
-
-Incidentally, because lists can contain any object, you can do funny things in Python like append a list to itself.
-
-### Dictionaries
-
-A Python Dictionary associates pieces of data to other pieces, much like a physical dictionary or a phone book that maps keys (e.g. a word in a dictionary or a name in a phone book) to values (e.g. the definition in a dictionary or the phone number in a phone book). Technically, it is a collection of one-to-one key-value pairs, in that one key maps to exactly one value, however the values can themselves be any object, including collections of objects like lists or dictionaries.
-
-Yes, you can have a dictionary assign itself as a value.
-
-Meanwhile, keys must be hashable objects, which I'm not going to get into right now. For the most part, it means that keys should be primitive objects.
-
-Dictionaries are defined using curly brackets, but they're addressed like lists. You can even use integers as keys, just like the index to a list. However, there is no provision for index continuity (i.e. list indices don't skip numbers, but dictionary keys can be whatever you want).
+Sometimes, it can be hard to construct a `while` loop conditional ahead of time. Sometimes, the flow isn't dependent on sequences. Let's say we want to play the children's game Duck Duck Goose. Every cycle, we ask the user to type in "Duck" or "Goose". If the input is "Duck", we continue the loop from the top. If it's "Goose", we break out of it.
 
 ```python
-d = {} # create an empty dictionary
-d[1] = 5 # assign the value 5 to the key 1
-d[3] = "b" # assign the value "b" to the key 3
-d["a"] = [5] # assign the value [5] to the key "a"
-print(d)
+while 1:
+    word = input("What do you say? ")
+    if word == "Duck":
+        continue
+    elif word == "Goose":
+        break
+    print("Maybe I should explain the rules again...")
 ```
 
-As we can see, you can mix and match different types of values like for lists. And we can also mix and match different types of keys.
+At the top, `while 1` tells Python to loop forever because 1 evaluates as `True` and so it's just equivalent to `while True`. We can do this a lot of other ways because many things evaluate to `True`: `while "Hazel"`, etc. But `while 1` or `while True` are common and traditional.
 
-We can also assign starting values when defining a new dictionary by separating keys and values with a colon. This code is equivalent to the above.
+If the input word is "Duck", the `continue` tells Python to continue looping, back from the top, *without* going through the rest of the code. If we `continue`, we never reach the `print()` on line 7.
+
+If the input word is "Goose", we hit the `break` and Python breaks out of the entire loop. If we have an infinite loop like `while 1`, we probably want to hit a `break` at some point.
+
+`continue` and `break` can be used in any `for` or `while` loop. But be careful about overusing them, because they can make code hard to read.
+
+
+### Nested Loops: Loops, But More.
+
+![nesting](assets/nesting.gif)
+
+If we want to really master loops, we have to learn how to nest them. Nesting means that we can have one loop inside of another. One reason we might want to do this is if we need to compare different elements in a list with each other.
+
+How might we write a function to check whether a list contains duplicate numbers? With a single layer of looping, it's not so easy. But with two, it's simple. Well. Simple once you get the hang of it.
+
+One good strategy for solving problems like this is to ask: how would we do this as a person? What discrete steps can we break this into? 
+
+So, as a person, how would we check this list for duplicates? `[3,5,7,9,5]`
+
+To start, we need to look at each number in the list individually, to have something to compare all the other numbers to. Let's start with the first number there: 3.
+
+What next? We're at that first number. We should see if there are any other 3s in the list. There aren't.
+
+So we move on to the next number, 5, and repeat. There is another 5, so we can say: "yes, there is a duplicate."
+
+Good, now how do we abstract this in code? Our basic strategy involves two levels of looping: in the first level, we want to take a look at each number; in the other, we want to compare that number against all the other numbers. In Python, this is easier to construct using a `while` loop (`for` loops abstract away some of the index data we want to use).
+
+This is a simple case where we're doing basically the same thing on both levels: just iterating through some numbers. This kind of loop should look familiar:
 
 ```python
-d = {1:5, 3:"b","a":[5]} # create a not-empty dictionary
-print(d)
+i = 0 # we're going to use i as a counter to keep track of the index
+while i < len(numbers):
+    #do some stuff
+    i+=1 #increment the index counter
 ```
 
-As with lists, we can traverse dictionaries using for loops:
+So, if we stack one inside of the other, we get something like this:
 
 ```python
-dogs = {"Shane":"Hazel", "Amanda":"Maple", "Ronda":"Bofur"}
-for owner in dogs:
-    print(owner+"'s dog is "+dogs[owner])
+def got_dupes(numbers):
+    i = 0 # i is the first counter, for the outer loop
+    while i < len(numbers)-1: #we don't need to loop at the very last number on the outside loop because there's nothing to compare it to
+        j = 0 # j is the second counter, for the inner loop
+        while j < len(numbers):
+            if numbers[i] == numbers[j]:
+                return True #duplicate found! Returning True.
+            j+=1
+        i+=1
+    return False #if we complete all the looping without returning, there must not have been any duplicates
 ```
 
-Here, we see that using for loops through all the keys in a dictionary. We can actually get a hold of the list of keys for this dictionary with `dogs.keys()` and a list of the values for this dictionary with `dogs.values()`. Some people prefer this convention that grabs key and value in a for loop:
+What's wrong with this code?
+
+We want to loop through all the numbers on the outer loop, but do we want to loop through them all on the inner one too?
+
+Here's the correct code:
 
 ```python
-dogs = {"Shane":"Hazel", "Amanda":"Maple", "Ronda":"Bofur"}
-for owner,dog in dogs.items():
-    print(owner+"'s dog is "+dog)
+def got_dupes(numbers):
+    i = 0
+    while i < len(numbers)-1: 
+        j = i+1 # j starts at the next number after i on every loop
+        while j < len(numbers):
+            if numbers[i] == numbers[j]:
+                return True
+            j+=1
+        i+=1
+    return False
 ```
 
-Dictionaries are unordered, so while this example loops through the order in which I constructed the dictionary, that isn't guaranteed.
+## Files
+
+Let's do one useful new thing this week. User input from the command line is useful sometimes, but sometimes we want to do some heavier lifting.
+
+Let's read in a text file.
+
+In Python, there's a number of ways to do this. One of the easiest is to use the `open` function, which returns a "file object" that represents that file. 
+
+[(Here are the Python docs for this)](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
+
+The code for `open` is very simple. To read a file, we can do:
+
+```python
+infile = open('file.txt', "r"):
+text = infile.read()
+infile.close()
+```
+
+Text will then be a string that holds the text of the input file.
+
+The call at the end to `close` isn't even strictly necessary. It's good practice to do it for optimal resource management, but Python will do it for you if you forget.
+
+A common idiom to use for Python file handling that you'll often see in examples is to use a with-as block. The last example is:
+
+```python
+with open('file.txt', "r") as infile:
+    text = infile.read()
+```
+
+All this does is structure the code so that you don't forget to close the file.
+
+The file object is also magically iterable, so we can treat it as a list that we can loop through. Another common idiom is to use a for loop to go through it line by line.
+
+```python
+infile = open('file.txt', "r"):
+for line in infile:
+    print(line.upper())
+infile.close()
+```
+
+The "r" argument that you pass in to `open` tells Python that you want to read the file. To write, we can use "w" mode. This will overwrite the file if it already exists. We can use "a" for append to keep the existing content and just add to the end instead.
+
+```python
+outfile = open('file.txt', "w"):
+outfile.write("Hazel is a good dog.\n")
+outfile.close()
+```
+
+The `\n` at the end of that string indicates a new line.
+
+See? Easy!
+
+![Maple Snooze](./assets/maple_snooze.JPG)
+
+
+
+### Algorithms
+
+By combining the comparison and loop logic in this way, we've created an algorithm. Algorithms are ways to solve problems using an unambiguous set of instructions. So, "Knight to Queen's Bishop 3" rather than a more vague instruction like "attack the center". 
+
+There are some rather formal definitions for this term, but we can informally and facilely say that all computer programs, including all the ones that you've written, are algorithms.
+
+More usefully, we use the term to describe more generalized ways to solve problems: we can think of the function that we just wrote as an implementation of, let's call it the nested-loop duplication detection algorithm. 
+
+There are [a lot of algorithms](https://en.wikipedia.org/wiki/List_of_algorithms).
+
+### Sorting
+
+Different algorithms can solve the same problem. A very common class of problems is sorting. In Python, we have a few built-in ways to sort things. For example:
+
+```
+>>> a = [1,3,2,5]
+>>> a.sort()
+>>> a
+[1, 2, 3, 5]
+```
+
+But here, Python is doing the hard work under the table, hiding it through a method so you don't have to know how it works. But behind that method is an algorithm. The sorting algorithm [TimSort](https://en.wikipedia.org/wiki/Timsort) to be exact. It's more complicated than I'd like to get into, so let's take a look at a different one.
+
+How would we sort a list of numbers?
+
+Let's talk it over and then I can assign it as homework.
+
+*Insert insightful class discussion*
+
+Here's a photo of Hazel as a Romantic Hero while we do this.
+
+![Hazel Romantic Hero](./assets/hazel_romantic_hero.jpg)
+
+Good, good. So, for variety, let's look at another way to sort. To introduce it, let's turn to Presidential candidate Barrack Obama, being interviewed at Google Headquarters in late 2007.
+
+[![Obama at Google](https://img.youtube.com/vi/k4RRi_ntQc8/0.jpg)](https://www.youtube.com/watch?v=k4RRi_ntQc8)
+
+I'd say that he's got pretty competent campaign staff.
+
+Bubble sort is, in fact, usually a less efficient way to sort. But it's easy to implement and it's often used for teaching.
+
+[Bubble sort animation](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
+
+Or, let's consider a much worse sorting algorithm: we can just use Python's built-in random shuffle method to scramble the list and then check whether it's sorted. If not, repeat the shuffle.
+
+Obviously, this is much less efficient (time-wise at least) than the other sorts we've looked at. In the same way, there are more efficient ways to sort than Bubble Sort or Insertion Sort. In fact, there's a fairly long [Wikipedia article](https://en.wikipedia.org/wiki/Sorting_algorithm) that just lists different sorting algorithms.
+
+This is all to suggest that there can be different ways to solve the same problem, and that those different ways can have quite different performance properties. "Naive" algorithms that mimic human thinking are a good way to start thinking about problems, but they might not get you very far if you want to optimize performance.
+
+Having given you a taste for all that, I want to say that there's often no... real good reason for us as digital humanists to dive too deeply into algorithms or efficiency. Whether it takes 30 seconds to run our text analysis or 3 seconds isn't as consequential as whether Google returns search results in 30 seconds or 3 seconds. And so much of this, like Python's hidden sort, is just already done for us by things like the Python built-in library and third-party modules (which we'll talk about later).
+
+It's useful to look at the broad contours of these things even if we don't understand them in any depth.

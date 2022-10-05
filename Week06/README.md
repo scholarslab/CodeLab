@@ -1,24 +1,18 @@
-# Week 06: The Ultimate Machine
+# Week 6
 
-![Shannon/Minsky Ultimate Machine](assets/ultimate_machine.gif)
- 
-## Agenda:
-- Review homework
-- Big Data Talk
-- Dictionaries
+![Hazel at rest](./assets/20170126.jpg)
+
+## Outline
+1. Discuss homework assignments
+2. Loops (ctd) + Algorithms
+3. File input/output
 
 [Lesson document](./lesson.md)
 
-## HOMEWORK
+## Homework
 
-#### Review
+### Assignment 1
 
-We've covered a lot of concepts really quickly and everything *seems* to be going well. However, it'll still probably be useful to read through a quick review of all the basic Python concepts we've covered to this point:
+[Download the plain text of Much Ado About Nothing from Project Gutenberg](http://www.gutenberg.org/ebooks/1519)
 
-- [Primitives review](primitives.md)
-- [Data structures review](data_structures.md)
-- [Data flow review](data_flow.md)
-
-#### Assignment 0
-
-We have in our programming quiver a number of tools now (primitives, lists, dictionaries) and we just had a big talk on data. Think about everything you know about your Praxis cohort (the icebreakers doc is fair game). Think about the kind of questions that might interest you about such a corpus and the best way to structure that information to answer those questions. Write some Python code in the vein of the Scholars Lab example in the data structures review that represents the model you come up with. This one is intentionally a bit amorphous, but any practice in thinking about the shape of data is useful.
+Write a program to read in this file and count the total lines of dialog and the length (character count) of those lines for the two main characters: Benedick and Beatrice. Write that data out to a second file.
