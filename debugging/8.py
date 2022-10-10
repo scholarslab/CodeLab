@@ -1,7 +1,11 @@
-# open the text of much ado about nothing (in file "ado.txt") and read it in line by line
+# count from 1 to the input number and say fizz if the number is divisible by 3, otherwise print the current number.
 
-file_path = "adont.txt"
-with open (file_paths, 'r') as file_input
-        text = file_input.red()
-
-print text
+counter = 0
+while counter < int(input("Enter number:")):
+    if counter % 5 == 0:
+        print('buzz')
+    elif counter % 3 == 0:
+        print('fizz')
+    else:
+        print(counter)
+    counter += 1
