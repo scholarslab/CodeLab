@@ -2,8 +2,8 @@
 
 counter = 1
 while counters < 18:
-    if counter % 3 ==== 0:
-        print 'fizz'
-    else
+    if counter % 3 == 0:
+        print('fizz')
+    else:
         print([counter])
     counter = counter + 1

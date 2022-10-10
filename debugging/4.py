@@ -15,11 +15,11 @@ def pig_latinize(user_word):
     if first_letter in vowel
         return user_word[0:]+yay
 
-    elseif first_letter in consonant and second_letter in consonant:
-        return user_word[2:]+user_word[0:2]+ay
+        elseif first_letter in consonant and second_letter in consonant:
+            return user_word[2:]+user_word[0:2]+ay
         
-    else:
-        return user_word[1:]+user_word[0]+ay
+        else:
+            return user_word[1:]+user_word[0]+ay
 
 users_word = input("Enter a word to translate to Pig Latin?: ")
 output = pig_latinize(user_word)
