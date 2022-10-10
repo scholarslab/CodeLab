@@ -1,5 +1,3 @@
-### THIS EXERCISE CODE HAS BEEN CORRECTED ALREADY ###
-
 # Create a function that will filter evens from a list of numbers
 
 def filter_evens(list):
@@ -7,7 +5,8 @@ def filter_evens(list):
     even_numbers=[]
     for num in list: 
         if num / 2 == 0: 
-            even_numbers.append(num)
+            even_numbers + num
     return even_numbers
+
 nums = [0,-2,3,14]
 print(filter_evens(nums))

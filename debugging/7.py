@@ -3,9 +3,9 @@
 counter = 1
 while counter < 16:
     if counter % 5 == 0:
-        print{'buzz'}
-    elif counter % 3 = 0:
+        print('buzz')
+    elif counter % 3 == 0:
         print('fizz')
-    else
-        print:counter
-    counter 
+    else:
+        print(counter)
+        counter += 1

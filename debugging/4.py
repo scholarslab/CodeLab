@@ -15,7 +15,7 @@ def pig_latinize(user_word):
     if first_letter in vowel
         return user_word[0:]+yay
 
-    elseif first_letter in consonant and second_letter in consonant:
+    else if first_letter in consonant and second_letter in consonant:
         return user_word[2:]+user_word[0:2]+ay
         
     else:
