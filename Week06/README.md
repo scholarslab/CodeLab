@@ -29,9 +29,3 @@ print(change(2.55,5))
 print(change(5,5))
 print(change(0,5))
 ```
-
-### Assignment 1
-
-[Download the plain text of Much Ado About Nothing from Project Gutenberg](http://www.gutenberg.org/ebooks/1519)
-
-Write a program to read in this file and count the total lines of dialog and the length (character count) of those lines for the two main characters: Benedick and Beatrice. Write that data out to a second file.
