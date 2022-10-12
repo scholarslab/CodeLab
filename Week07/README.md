@@ -17,6 +17,8 @@
 
 Write a program to read in this file and count the total lines of dialog and the length (character count) of those lines for the two main characters: Benedick and Beatrice. Write that data out to a second file.
 
+Feel free to modify the text file before loading it into Python if it'd be easier, for example, you want to strip out the starting and ending Project Gutenberg text, the scenes list, the dramatis personae, etc.
+
 
 ### Assignment BONUS:
 
