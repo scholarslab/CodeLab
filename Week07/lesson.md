@@ -1,10 +1,65 @@
-# Structuring Data 2: Even More Structure
+## Candidate Obama Speaks at Google (a lesson of Sorts)
 
-![Maple and Jeremy](assets/maple_jerm.jpg)
+### Algorithms
 
-We covered some basic file input and output in Python a few weeks ago. It's pretty easy to work with text data, either all at once or line by line.
+By combining these basic components of comparison and loop logic, we've created an algorithm. Algorithms are ways to solve problems using an unambiguous set of instructions. So, "Knight to Queen's Bishop 3" rather than a more vague instruction like "attack the center". 
 
-To review, we can read some text from a file like so:
+There are some rather formal definitions for this term, but we can informally and facilely say that all computer programs, including all the ones that you've written, are algorithms. More usefully, we use the term to describe more generalized ways to solve problems: we can think of the function that we wrote last week as an implementation of, let's call it the nested-loop duplication detection algorithm. 
+
+There are [a lot of algorithms](https://en.wikipedia.org/wiki/List_of_algorithms).
+
+### Sorting
+
+Different algorithms can solve the same problem. A very common class of algorithms that do functionally the same thing is sorting. In Python, we have a few built-in ways to sort things. For example:
+
+```
+>>> a = [1,3,2,5]
+>>> a.sort()
+>>> a
+[1, 2, 3, 5]
+```
+
+But here, Python is doing the hard work under the table, hiding it through a method so you don't have to know how it works. But behind that method is an algorithm. The sorting algorithm [TimSort](https://en.wikipedia.org/wiki/Timsort) to be exact. People have been sorting things for tens or maybe hundreds of thousands of years of human history and we're still figuring out new ways to do it. TimSort was invented in 2002 and it's a good one. But it's also a lot more complicated than I'd like to get into, so let's take a look at a different one.
+
+How would we sort a list of numbers?
+
+*Insert insightful class discussion*
+
+Here's a photo of Hazel as a Romantic Hero while we do this.
+
+![Hazel Romantic Hero](./assets/hazel_romantic_hero.jpg)
+
+Good, good. So, for variety, let's look at another way to sort. To introduce it, let's turn to Presidential candidate Barrack Obama, being interviewed at Google Headquarters in late 2007.
+
+[![Obama at Google](https://img.youtube.com/vi/k4RRi_ntQc8/0.jpg)](https://www.youtube.com/watch?v=k4RRi_ntQc8)
+
+I'd say that he's got pretty competent campaign staff.
+
+Bubble sort is, in fact, usually a less efficient way to sort. But it's easy to implement and it's often used for teaching.
+
+[Bubble sort animation](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
+
+Or, let's consider a much worse sorting algorithm: we can just use Python's built-in random shuffle method to scramble the list and then check whether it's sorted. If not, repeat the shuffle.
+
+Obviously, this is much less efficient (time-wise at least) than the other sorts we've looked at. In the same way, there are more efficient ways to sort than Bubble Sort or Insertion Sort. In fact, there's a fairly long [Wikipedia article](https://en.wikipedia.org/wiki/Sorting_algorithm) that just lists different sorting algorithms.
+
+This is all to suggest that there can be different ways to solve the same problem, and that those different ways can have quite different performance properties. "Naive" algorithms that mimic human thinking are a good way to start thinking about problems, but they may or may not get you very far if you want to optimize performance.
+
+Having given you a taste for all that, I want to say that there's often no... real good reason for us as digital humanists to dive too deeply into algorithms or efficiency. Whether it takes 30 seconds to run our text analysis or 3 seconds isn't as consequential as whether Google returns search results in 30 seconds or 3 seconds. And so much of this, like Python's hidden sort, is just already done for us by things like the Python built-in library and third-party modules (which we'll talk about later).
+
+It's useful to look at the broad contours of these things even if we don't understand them in any depth.
+
+## Files
+
+Let's do one useful new thing this week. User input from the command line is useful sometimes, but sometimes we want to do some heavier lifting.
+
+Let's read in a text file.
+
+In Python, there's a number of ways to do this. One of the easiest is to use the `open` function, which returns a "file object" that represents that file. 
+
+[(Here are the Python docs for this)](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
+
+The code for `open` is very simple. To read a file, we can do:
 
 ```python
 infile = open('file.txt', "r"):
@@ -12,241 +67,38 @@ text = infile.read()
 infile.close()
 ```
 
-or, equivalently, using the with-open-as idiom:
+Text will then be a string that holds the text of the input file.
+
+The call at the end to `close` isn't even strictly necessary. It's good practice to do it for optimal resource management, but Python will do it for you if you forget.
+
+A common idiom to use for Python file handling that you'll often see in examples is to use a with-as block. The last example is:
+
 ```python
 with open('file.txt', "r") as infile:
     text = infile.read()
 ```
 
-and we can write back to files just as easily:
+All this does is structure the code so that you don't forget to close the file.
+
+The file object is also magically iterable, so we can treat it as a list that we can loop through. Another common idiom is to use a for loop to go through it line by line.
+
+```python
+infile = open('file.txt', "r"):
+for line in infile:
+    print(line.upper())
+infile.close()
+```
+
+The "r" argument that you pass in to `open` tells Python that you want to read the file. To write, we can use "w" mode. This will overwrite the file if it already exists. We can use "a" for append to keep the existing content and just add to the end instead.
+
 ```python
 outfile = open('file.txt', "w"):
-outfile.write("Hello Dog!")
+outfile.write("Hazel is a good dog.\n")
 outfile.close()
 ```
 
-(If you need a refresher, we learned all of this back in [Week 5](../Week05/lesson.md#files))
+The `\n` at the end of that string indicates a new line.
 
-But while we've worked with simple text and numerical data like strings and ints plenty, we've also used lists and dictionaries and more structured data too. How do we read and write those more complicated kinds of data?
+See? Easy!
 
-Let's revisit the way that we read in numbers. Recall that when we use the `read()` method on a file object like we did above, the data that we get back is a string. So, if we had a file named file.text that just contained the number `12345`, we'll get back the string "12345" rather than the integer 12345.
-
-```python
-with open('file.txt', "r") as infile:
-    text = infile.read()
-    text += 43210 #this line results in "TypeError: must be str, not int"
-```
-
-The "12345" in the text file is, after all, text. Underneath it all, it's being represented by a text encoding, which means that if you look under the hood, "12345" isn't actually 12345. These days, this kind of text is usually UTF-8/ASCII encoded numbers, which means "12345" is actually 049 050 051 052 053. To turn the text "12345" into the number 12345 in Python, we have to explicity tell Python to make this conversion.
-
-```python
-with open('file.txt', "r") as infile:
-    text = infile.read()
-    number = int(text)
-    number += 43210 #this works just fine now
-```
-
-Here, we're calling the integer constructor method that takes in a string argument and builds us a new integer object based on that string.
-
-I bring this up to suggest that there's difference between the static text representation of an object and the "live" Python objects that live in computer memory and can be manipulated. Python objects are useful because we can easily manipulate them, but they don't persist beyond the lifespan of a program. Static files persist data, but have to be read and interpreted explicitly in the way that we want them to be.
-
-## Let's talk about Data Formats
-
-So, strings and even numbers are simple enough. How do we represent, say, a list of things in a file?
-
-A really simple way to do this is to just write them out as a list, separated by some delimiter. Following English convention, let's use commas. An easy way to do this in Python is to use the string method `join()`, which is kind of like a reverse split. It lets you join together a list of strings with a delimiter (you can also just mush together the list of strings if you call it on an empty string).
-
-```python
-dogs1 = ["Hazel", "Maple", "Bofur"]
-with open('file.txt', "w") as outfile:
-    outfile.write(",".join(dogs1))
-with open('file.txt', "r") as infile:
-    text = infile.read()
-dogs2 = text.split(",")
-print(dogs1 == dogs2)
-```
-
-So, we can see that (hopefully) the two dogs lists are the same. This is easy enough for simple data, but we can probably see that there are some complications here...
-
-```python
-dogs1 = ["Hazel, who is definitely Shane's dog", "Maple, the Stilt-Legged", "Bofur, Boss of the Lab"]
-with open('file.txt', "w") as outfile:
-    outfile.write(",".join(dogs1))
-with open('file.txt', "r") as infile:
-    text = infile.read()
-dogs2 = text.split(",")
-print(dogs1 == dogs2)
-```
-
-So, there's one basic problem with using text to store structured text. Whatever delimiters or special characters we use to indicate the structure of the data can also exist in the data itself. ASCII, the archaic way of encoding text, solved this by setting aside special non-text characters. There were characters for things like "Start of Heading", "End of Transmission", "Acknowledgement", and even "Bell" to get a computer operator's attention. These days, that method is hopelessly outmoded, not just because we want to be have more flexibility in the ways that we define our structures.
-
-So how do we get by this? We can wrap individual elements in quotes and that works well enough if we don't also use quotes. We can also use escape characters to tell Python when we do and don't mean business. An escape character is just a character that means "interpret the next thing as text, without any special meaning." Although sometimes it means "interpret the next thing as a special thing and not just as regular text." Commonly, many systems use the backslash (`\`) as an escape character. This works when we define a string in Python, for example:
-
-```python
- text = "here are some quotation marks inside of a string: \"\'\'\""
- print(text)
-```
-
-But all these rules are starting to add up. It's getting kind of complicated. We don't want to spend our time writing out the special logic to distinguish between real quotations marks and commas and fake ones. And what if we didn't think of some nonobvious, uncommon edge case? Happily, this whole exercise is a pretty common problem and there are a few standard ways to do it.
-
-We can impart supertextual meaning to text data (like the structure of a list) using data formats, which are standard ways to write out and read data, that typically have standard software tools to accomplish those tasks.
-
-## CSV
-
-One of the simplest data formats is CSV, which stands for, simply enough, Comma Separated Values. This is what we've actually just talked through. Strangely enough, it doesn't actually have to be commas that do the separating. Typically, we can choose our own delimiter. CSVs are used for tabular data and is a commonly used to exchange data between different spreadsheet applications or to produce data that is easily ingested by those applications. In a CSV, each column entry is separated by the delimiter and each new line contains a new row.
-
-Let's try out a simple example with some familiar data.
-
-![Hazel again](assets/hazel3.jpg)
-
-```python
-hazel = ["Hazel","Shane","Beagle/Heeler"]
-maple = ["Maple", "Amanda", "Hound"]
-bofur = ["Bofur", "Ronda", "Corgi"]
-dogs = [hazel,maple,bofur]
-
-with open('dogs.csv', "w") as outfile:
-    outfile.write(",".join(["Dog","Owner","Breed"]))
-    for dog in dogs:
-        outfile.write("\n"+",".join(dog))
-```
-
-If you want, you can import that into your preferred spreadsheet application to to see what comes out.
-
-But this still leaves us with the problem of how to handle tricky data. Since CSV is so widely used, there is actually a [built-in Python module](https://docs.python.org/3/library/csv.html) to handle it. If we haven't talked in depth about imports yet because I moved the weeks around, recall that we've used Python's built-in `random` module before to generate random numbers. Modules are just bits of extra code that we can bring in ("import") to use in our own.
-
-We just create a file object with `open()` like before, but we pass that file object into a special CSV writer.
-
-Let's try it out.
-
-```python
-import csv
-
-hazel = ["Hazel, the Sneak","Shane","Beagle/Heeler"]
-maple = ["Maple, the Swift", "Amanda", "Hound"]
-bofur = ["Bofur, the Brave", "Ronda", "Corgi"]
-dogs = [hazel,maple,bofur]
-
-with open('dogs.csv', 'w', newline='') as csvfile:
-    dogwriter = csv.writer(csvfile, delimiter=',')
-    dogwriter.writerow(["Dog","Owner","Breed"])
-    for dog in dogs:
-        dogwriter.writerow(dog)
-```
-
-Which produces the output csv file...
-
-```csv
-Dog,Owner,Breed
-"Hazel, the Sneak",Shane,Beagle/Heeler
-"Maple, the Swift",Amanda,Hound
-"Bofur, the Brave",Ronda,Corgi
-```
-
-Easy!
-
-Actually, this is still a little too much work. We have to manually define headers and make sure that everything is in the right order. What if we didn't even have to do that?
-
-If start with a dictionary instead of a list, we have a way to associate values with keys rather than just depending on their indices. We can use the `DictWriter` class inside of the csv module to automatically take care of things for us.
-
-```python
-import csv
-
-hazel = {"name":"Hazel","owner":"Shane","breed":"Beagle/Heeler"}
-maple = {"name": "Maple", "owner":"Amanda", "breed": "Hound"}
-bofur = {"name": "Bofur", "owner":"Ronda", "breed": "Corgi"}
-
-with open('dogs.csv', 'w', newline='') as csvfile:
-    fieldnames = hazel.keys()
-    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-    writer.writeheader()
-    writer.writerow(hazel)
-    writer.writerow(maple)
-    writer.writerow(bofur)
-```
-
-This produces the same kind of CSV file. Note that the field names are consistent, so I just used the keys for Hazel. We'd have to do this a bit differently if the data wasn't structured homogenously.
-
-To read CSV files, we can use analogous Reader and DictReader objects in the csv module:
-
-```python
-import csv
-
-with open('dogs.csv', newline='') as csvfile:
-    dogreader = csv.DictReader(csvfile)
-    for dog in dogreader:
-        print(dog["name"],"and",dog["owner"])
-```
-
-### JSON
-
-CSV is good for tabular data, but not great to encapsulate data with more complex relationships. Each of our Dogs has lists of things they like and dislike, for example. CSVs don't really support variable-length lists of things inside of rows. We can store our own format to store lists within a single CSV element, but that just puts us back at step one. And, I cannot emphasize this enough, storing different arbitrary text data formats inside of each other is a *real bad idea*. Don't do it. Oh my god, no, just don't do it.
-
-One popular, good way to do this is JSON. Sometimes it's pronounced "Jay Song", but it's really "Jason". Like the Argonaut or the deli or [Robards](https://www.imdb.com/name/nm0001673/). JSON stands for "Javascript Object Notation" and was originally designed to allow websites to pass data back and forth between the browser and the server. But it's become a really popular generic format for all sorts of things and all sorts of languages.
-
-For example, a lot of GIS data is available as GeoJSON, a JSON format with geographic-specific fields.
-
-We don't have to go too much into the particular details of how JSON is structured. It's enough to just glance at what it looks like. Here's an example:
-
-```json
-[
-  {
-    "name": "Hazel",
-    "owner": "Shane",
-    "breed": "Beagle-ish",
-    "likes": [
-      "snoozing",
-      "racoons",
-      "Shane"
-    ]
-  },
-  {
-    "name": "Maple",
-    "owner": "Amanda",
-    "breed": "Hound",
-    "likes": [
-      "zooms",
-      "looking",
-      "carrots"
-    ]
-  },
-  {
-    "name": "Bofur",
-    "owner": "Ronda",
-    "breed": "Corgi",
-    "likes": [
-      "the ladies"
-    ]
-  }
-]
-```
-
-Happily, there is also an easy to use [JSON module for Python](https://docs.python.org/3/library/json.html).
-
-One of the most useful mechanisms it provides is the ability to "dump" and "load" arbitrary built-in Python data structures into and out of JSON. It makes it super easy to throw a complex python object into a file and get it back out again.
-
-There are `dump` and `load` methods, which write and read directly to files, but also `dumps` and `loads` methods which write and read to a string object. I like using the latter because it makes it easier to check them during debugging.
-
-```python
-import json
-
-hazel = {"name": "Hazel", "owner": "Shane", "breed": "Beagle-ish",
-         "likes": ["snoozing", "racoons", "Shane"]}
-maple = {"name": "Maple", "owner":"Amanda", "breed": "Hound","likes":["zooms","looking"]}
-bofur = {"name": "Bofur", "owner":"Ronda", "breed": "Corgi","likes":["ladies"]}
-dogs = [hazel,maple,bofur]
-
-with open('dogs.json', mode="w") as jsonfile:
-    jsonfile.write(json.dumps(dogs))
-
-with open('dogs.json', mode="r") as jsonfile:
-    dogs_load = json.loads(jsonfile.read())
-    for dog in dogs_load:
-        print(dog["name"],"and",dog["owner"])
-```
-
-## Other Data Formats
-
-There are a ton of other text data formats. The other big one is SGML/XML/HTML, which are structurally similar and related. HTML is, of course, the language that websites are written in. We'll revisit that in the future when we talk about Web scraping and about building websites.
-
-These are all different from binary data formats like the jpg and gif images that are peppered (Peppered? We should have more Pepper media) throughout these docs. That's a whole different kettle of fish.
+![Maple Snooze](./assets/maple_snooze.JPG)
