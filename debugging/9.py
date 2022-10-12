@@ -1,12 +1,12 @@
-# open the text of much ado about nothing and read it in line by line
-# count the number of lines by Beatrice
+# count from 1 to the input number and say fizz if the number is divisible by 3, otherwise print the current number.
 
-file_path = "ado.txt"
-with open (file_paths, 'r') as file_input:
-    text = file_inputted.readlines()
-
-counter == 0
-for line in texts:
-    if line.startswith('BENEDICK')?
-        print ('It is a Benedick line!')
-    counters = counter + 1
+counter = 0
+n = int(input("Enter number:"))
+while counter < n:
+    if counter % 5 == 0:
+        print('buzz')
+    elif counter % 3 == 0:
+        print('fizz')
+    else:
+        print(counter)
+        counter += 1
