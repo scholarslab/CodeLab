@@ -1,301 +1,129 @@
-# Classes
+# Let's talk about Data
 
-Okay, let's talk classes!
+![Data and Lore](assets/data.jpg)
 
-Say we have this function:
+Last week, we started reading from and writing to a text file. This means that it's time to have a little chat about data.
 
-```python
-def whos_a_good_dog():
-    return("Hazel")
-print(whos_a_good_dog())
-```
+What is data? There's a lot of definitions, but we'll be sticking with the version that's most common in computing: data is a representation of information through encoding. This definition, which so relies on the word "information", takes us down a real historical rabbit hole. I apologize for setting you all up like this. I'll try to keep it brief.
 
-![bad pun hazel](assets/bad_pun_hazel.jpg)
+## Claude Shannon and the Quality of Being Surprised
 
-This is very simple. Let's make it a bit more complicated. `return` only takes one object, so if we want to return multiple dogs, we can return a list of strings (a list is one object, which contains multiple elements within):
+Information, that which is related to the act of informing, from the latin *information*: *outline, concept, or idea*. The history of knowledge and epistemology and all that thinking about thinking goes back a very long time and I am completely unqualified to teach anyone about any of it. I think David Hume invented it in 1740 or something. For my sake, we'll start in 1948 with Claude Shannon.
 
-```python
-def whos_a_good_dog():
-    return(["Hazel","Maple","Bofur","Toby"])
-print(whos_a_good_dog())
-```
+![Claude Shannon on a unicycle](assets/shannon.jpg)
 
-This is pretty legible because these are all the same type of things. But what if we want to return more than just the dog's name? Does "Hazel" really capture the full goodness of this dog? Of course not.
+Shannon was an American electrical engineer and mathematician known for his foundational work on information theory and digital circuits, and for his enthusiasm for mathematical puzzles, juggling, unicycles, and computer chess. He created a machine (with his student, the AI pioneer Marvin Minsky) whose only function was to turn itself off.
 
-What if we want to return other attributes about Hazel? She's a Beagle/Heeler mix. She's Shane's dog. She likes treats, naps, and raccoons; she doesn't like thunder. How would we have this function return all of this information?
+In 1937, at the age of 22, he wrote a master’s thesis that established the fundamental principles of digital circuit design from which all modern computers were created. At 32, he published the landmark paper, *A Mathematical Theory of Communication* which founded the field of information theory. It's this paper that we're interested in.
 
-We've experimented already with using data structures to describe, er, data in a more *ahem* structured way. We can return all of this data using lists and dictionaries:
+I think it's actually kind of funny, teaching Shannon and information theory in an introduction digital humanities tech course. There's a good deal of text analysis in DH, but Shannon worked out the fundamental ideas about information from the opposite direction.
 
-```python
-def whos_a_good_dog():
-    return({"name":"Hazel","breed":"beagle/heeler","owner":"Shane","likes":["treats","naps","raccoons"],"dislikes":["thunder"]})
-print(whos_a_good_dog())
-```
+After he got his doctorate, Shannon went to work at Bell Labs, where he worked on secure communications during World War II (when Alan Turing, working on breaking codes instead of making them, visited Bell in 1942, the two met for tea daily). One major problem with scrambling messages so that they can't be read is that messages written in human languages tended to be really predictable. At a basic level, there is an enormously uneven distribution of letters in English (as one example). At a higher level, some sequences of letters appear frequently while others never appear in any word and there are many more possible combinations of five letters than there are five-letter words. Predictability opened up weaknesses that codebreakers could exploit. In fact, Turing's work breaking the German Enigma cipher often relied on the frequency of common messages like "nothing to report".
 
-This isn't too bad, but we can do better. It's a perfectly fine way to describe complex data within a single object, but if we add more dogs, we'd want to add logic to ensure that they have the same keys and maybe to compare likes and dislikes. Where would that logic go?
+In *A Mathematical Theory of Communication*, Shannon considered the meaning of this sort of uneven distribution. Let's say that we're playing a few rounds of the word game Hangman, but I take pity on how poorly you're doing and tell you one the first letter of a word right off the bat. Do I give away more or less information if I tell you that the word starts with "S" or with "Q"?
 
-On top of that problem, a dog isn't just data. I think this is one of the Four Noble Truths.
+Shannon recognized that what the amount of information conveyed could be understood as entropy, essentially the degree to which you are surprised at learning something. If I tell you that the word starts with S, that fact tells you less than if I told you that the word starts with Q because many more words start with S than start with Q. In the same sense, telling you a losing lottery number conveys less information than telling you a winning lottery number. In communication, we often intuitively reduce the length of text by swapping out common letter combinations, phonemes, and phrases with shorter replacements: LMAO, Ph.D., SLab, et al. Mechanically, we can reduce the size of lower entropy files like English text by compressing them. A ZIP file of the Much Ado About Nothing text from last week is about 60% smaller.
 
-Here, we've described largely static information about Hazel. But a dog has behaviors and feelings. In code-speak, we can say that it has logic and states.
+Shannon suggested that we could exactly quantify this degree of entropy to measure the information content. Consider a coin that has an equal chance of flipping heads or tails. Flipping that coin selects between two equally possible outcomes, producing an entropy of one "bit", a portmanteau of "Binary Digit".
 
-A "class" is a really useful mechanism to encapsulate both data and functions in a single cohesive unit. Classes describe a type of object, like "dog" or "praxis fellow". We can create ("instantiate") an "instance" or "object" of a class and reference it using a variable.
+Hang on to that for a second.
 
-We've already used a lot of built-in classes. Strings, lists, dictionaries are all classes. We can have Python tell us what kind of class it is using the built-in function `type()` (terminologically, "type" is often used interchangably with "class", though there are subtle differences depending on the particular language).
+A year after Shannon published *A Mathematical Theory of Communication*, he published an expanded version of the paper. In recognition that the ideas it contained were more universal and more fundamental than he had realized, Shannon titled this new version, *The Mathematical Theory of Communication*.
 
-```
->>> a = [1,2,3]
->>> type(a)
-<class 'list'>
->>> b = "123"
->>> type(b)
-<class 'str'>
-```
+## Analog and Digital
 
-So, in this example, `a` is a variable that serves as a reference to an object that is an instance of the built-in Python class `list`.
+Up to this point, the examples that we've used have mostly been digital rather than analog. Digital meaning: like the digits on your hand. Data that is discontinuous or "discrete", represented by distinct symbols like letters and numbers. This is opposed to analog, in which data flows in continuous, infinitesimal curves. A digital clock shows the time as distinct instants: a single state for each second or minute. An analog clock shows time as infinitely reducible moments that flow one to the next (well, not really - escapements and quartz oscillations and stepper motor steps complicate this *analogy*). Natural language is digital in the abstract, comprising distinct characters and dictions. Printed on a page or voiced as speech, it takes on analog qualities. DNA is an example of naturally occurring digital data.
 
-We can define our own classes just like we defined out own functions. Let's make a simple dog class with a "speak" method.
+It's easier to think of basic Information theory concepts using digital examples, but the field applies to analog data as well and Shannon actually has a lot of say about analog phenomenon like noise. There's also a cosmology called digital physics that describes the entire universe as fundamentally describable by (and, in fact, comprising) discrete information such that analog only exists as imperfect knowledge of reality. Reality is just PDFs all the way down. But ontology is outside of the scope of Code Lab. We're going to focus on digital because, duh, it's not "Analog Humanities."
 
-Methods are basically the same as functions, except that instead of being "anonymous", methods are attached to particular objects. Here, we could have defined `speak()` as a function that takes a dog as an argument and achieved the same result, but it's easier to think of speech as being an action that a dog performs than as an unembodied abstraction that you pass a dog to.
+Around the time that Shannon was thinking up his ideas about information, the earliest digital computers used electrical relays as its basic mechanism. These were actual mechanical switches that opened and closed to complete circuits. Relays were slow and unreliable. Grace Hopper, co-creator of the 1940s-era Harvard Mark II, jokingly coined the word "bug" after finding a moth that had flown into one of the relays and shorted it. 
 
-```python
-class Dog:
-    name = "None"
-    def speak(self):
-        print("Bork bork! My name is ",self.name,"!")
+![Harvard Mk II "computer bug"](assets/bug.jpg)
 
-maple = Dog()
-maple.name = "Maple"
-maple.speak()
+These relays were replaced in the next generation of computers by faster and more reliable vacuum tubes, which were in turn replaced by faster and more reliable transistors. Virtually all electronics today use microscopically tiny transistors. These different classes of fundamental computer components are, in their most basic form, switches that have two states: on and off. This meshed neatly with Shannon's work on digital circuit design and early computer memory and storage technologies like core memory that stored a single bit to a core. Through these technological contingencies, modern computers almost universally use binary codes at their most basic level, the bit is the most fundamental unit of computer data, and "binary" itself has become slang for compiled computer software.
 
-hazel = Dog()
-hazel.name = "Hazel"
-hazel.speak()
+Computers don't really understand human languages ("natural language" is the term of art). When they filter out the background noise from the recording of a person's speech, it does it by frequency and repetition, not by understanding. In this way, a bit of information entropy is conceptually different from a bit of computer data. When we talk about computer data, we don't think about the informational meaning of the data conveyed, just the space taken up. In some cases like plain text, the difference can be significant (text file versus zip file), but in other cases, the format of the data itself strives to reduce redundancy (such as JPEG or MP3 encoding's designs accounting for the limits of human perception).
 
-print(hazel == maple)
-```
+## Binary and Friends
 
-So, here we define a Dog class, then instantiate two Dogs using `Dog()`. We store those to `maple` and `hazel`. Each of the Dogs are distinct Dog instances and have their own independent data. Whenever we call a class method, we actually implicitly pass in the object itself. That's why the method definitions have `self` in the arguments list. In methods, we refer to `self` when we want to access the variables that belong to the class rather than the method. If you're curious about why we use `self`, [the Python documentation on class scope](https://docs.python.org/3/tutorial/classes.html#python-scopes-and-namespaces) is useful, but you can get by for now just using `self` whenever you want to refer to any class data.
+### Number systems
 
-We can see that instantiation is done with a function: `Dog()`. Instead of setting the data for each bit by bit, we can create a *constructor* method that takes in parameters and then handles them. We can do this by defining a special method `__init__` (with two underscores on either side).
+In a binary system, data is represented by 1s and 0s, often understood as analogous to on and off, true and false. A single binary value represents a bit, but multiple digits can be strung together like in decimal systems to represent larger values. Counting in binary goes 0, 1, 10, 11, 100, 101, etc. Binary numbering has a possibly long history that goes back maybe thousands of years. Its modern form was developed by 17th century philosophers including our old, weird friend Gottfried Leibniz.
 
-```python
-class Dog:
-    def __init__(self, name, owner, breed, likes, dislikes):
-        self.name = name
-        self.owner = owner
-        self.breed = breed
-        self.likes = likes
-        self.dislikes = dislikes
-    
-    def speak(self):
-        print("Bork bork! I'm",self.name,"! I like",self.likes[0], "and dislike ",self.dislikes[0],"!")
+Just as decimal is a base-10 system, binary is base-2. Each decimal numeral adds 10 times as many possible numbers: 1 digit has 10^1 possibilities (0-9), 2 digits has 10^2 (0-99), etc. Each binary numeral adds twice as many possible numbers: 1 digits has 2^1 (0-1), 2 has 2^2=4 (00, 01, 10, and 11), 3 has 2^3, and so on. Binary can be converted back and forth from decimal easily enough: take each digit and add 2^x to it if it is a 1, where x is the position of that digit (starting from zero). 1101 in binary is 2^3+2^2+2^0 = 13 in decimal. If you keep an eye out, you'll see powers of two crop up a lot of places in computing.
 
-hazel = Dog("Hazel","Shane","beagle/heeler",["treats","naps","raccoons"],["thunder"])
-hazel.speak()
+There are other number systems. Hexadecimal/hex and octal (base 16 and base 8) are common ways to compress binary into more compact forms. These use decimal numerals. Hexadecimal uses 0 to 9 and then A to F. Since 16 and 8 are themselves powers of two, it's simple to convert between them and decimal. Each octal digit maps directly to a set of 3 (2^3=8) binary digits and each hex digit maps directly to a set of 4 (2^4 = 16) binary digits. So, 32 in octal is 011010 (011 is 3, 010 is 2). A8 in hexadecimal is 10101000 (1010 in binary is A in hexadecimal and 10 in decimal, 1000 is 8).
 
-```
+### Text
 
-Classes can be as simple or complex as you want.
+These number systems are effectively just different representations of the same numerical ideas. Other forms of data can be encoded using numbers. We've already worked plenty with text. Under the hood, each character is represented on a character encoding table that map numbers to letters. An important and influential encoding scheme is ASCII: the American Standard Code for Information Interchange, formalized in 1968. ASCII maps Latin letters and Arabic numerals, as well as common punctuation symbols, to a set of 128 numbers. 128 is 2^7, so these numbers can be represented by a total of 7 bits. 
 
-Let's try to model a dog class that includes some simple behavioral and state logic.
+![ASCII table](assets/ascii.png)
+
+Since the 1960s, software developers have created a plethora of character encodings, often to represent characters from other languages. Although you might occasionally run into these in older datasets, the singular modern text standard is called Unicode (well, sort of singular, since it's a family of encodings), which strives express the complete canon of human language. The current specification, Unicode 13, encompasses 143000 characters, including emoji and archaic scripts. The first 128 characters of Unicode are identical to ASCII, which helps maintain backwards compatibility with older Latin text data.
+
+### Colors
+
+Colors are often expressed in computers by a series of numbers representing the mixture of additive or subtractive colors. For digital displays, the RGB system is the most common. This comprises a set of three numbers representing the amount of red, green, and blue light ("channels"). Early color computer displays used a single bit (on/off) to represent each color, but the most common standard is 8 bits per channel (0-255) for a total of 24 bits (or 16 million total color combinations). These are often shown as hexadecimal numbers. Since each hex digit is equivalent to 4 binary digits, each 8-bit color channel can be represented by 2 hex digits. If we look at the [Scholars' Lab website](https://scholarslab.org/) and dig through the stylesheet, we will see that the background color is defined as `000000`, a set of three hexadecimal numbers indicating that each color should be 00 out of FF in hex, which is also 0 out of 255 in decimal. This is the blackest black. Links are underlined with the color `75e3f0`, which is a little red and a lot of green and blue resulting in a cyan color.
+
+### Also: Bytes!
+Byte is another common unit of measurement for data. The term is a play on bit and was coined in the 1950s for Project SAGE, a prototype computer system to coordinate American air defenses in the Cold War. There is some historical ambiguity, but a modern byte is 8 bits, representing the smallest power-of-2 size for useful data (such as a single character or a small integer). Bytes and bits are often modified with metric scale prefixes: kilobyte, megabit, etc. This is a total mess because it mixes binary units with decimal prefixes. I don't even want to get into it.
+
+## Data Structures
+
+Okay, this is too much talking. We should do some doing, which means that it's back to Python. Also, here's Hazel again.
+
+![Hazel snoozing](assets/hazel_snooze.jpg)
+
+We've discussed a few different ways to represent different types of data using the underlying binary computer systems. Going one level above this is the concept of a "data structure", which are ways to not only represent information as data (RGB, Unicode, etc.) but to efficiently access and manipulate them. We've already been working with plenty of built-in data structures in Python.
+
+The most fundamental kinds of these are often called "primitives" in computing. In Python, these include integers (whole numbers), floats (floating point numbers, which represent real numbers--"the ones between integers"), strings (text), and booleans (`True` and `False`). You should have a good sense by now of how each of these are represented (except for floats, which are weird).
+
+More complex (creatively, "non-primitive") structures such as lists (which we've worked with) and dictionaries (which is new this week!). As we have seen, Python lists contain other objects which are instances of data structures. Lists organize data into an ordered and linear collection. Dictionaries are similar in that it contains a collection of other objects, but in this case organizes them into an unordered mapping.
+
+Incidentally, because lists can contain any object, you can do funny things in Python like append a list to itself.
+
+### Dictionaries
+
+A Python Dictionary associates pieces of data to other pieces, much like a physical dictionary or a phone book that maps keys (e.g. a word in a dictionary or a name in a phone book) to values (e.g. the definition in a dictionary or the phone number in a phone book). Technically, it is a collection of one-to-one key-value pairs, in that one key maps to exactly one value, however the values can themselves be any object, including collections of objects like lists or dictionaries.
+
+Yes, you can have a dictionary assign itself as a value.
+
+Meanwhile, keys must be hashable objects, which I'm not going to get into right now. For the most part, it means that keys should be primitive objects.
+
+Dictionaries are defined using curly brackets, but they're addressed like lists. You can even use integers as keys, just like the index to a list. However, there is no provision for index continuity (i.e. list indices don't skip numbers, but dictionary keys can be whatever you want).
 
 ```python
-class Dog:
-
-    def __init__(self, name, owner, breed, likes, dislikes):
-        self.name = name
-        self.owner = owner
-        self.breed = breed
-        self.likes = likes
-        self.dislikes = dislikes
-        
-        # default mood value, range 0-5
-        self.mood = 2
-
-    def speak(self):
-        if self.mood > 3:
-            print("*bork bork!*")
-        elif self.mood > 1:
-            print("*bark*")
-        else:
-            print("*grrrrr!*") 
-    
-    def pet(self):
-        self.mood += 1
-
-hazel = Dog("Hazel","Shane","beagle/heeler",["treats","naps","raccoons"],["thunder"])
-hazel.speak()
-hazel.pet()
-hazel.pet()
-hazel.speak()
+d = {} # create an empty dictionary
+d[1] = 5 # assign the value 5 to the key 1
+d[3] = "b" # assign the value "b" to the key 3
+d["a"] = [5] # assign the value [5] to the key "a"
+print(d)
 ```
 
-When we call the constructor (`hazel = Dog("Hazel","beagle/heeler","Shane",["treats","naps","raccoons"],["thunder"])`), we create a new dog object with the parameters we pass in and have the variable `hazel` point to it. We say that the object we created is an *instance* of the class Dog. The variable `hazel` is a *reference* to that instance. Two different variables can point to the same object. Two different objects that contain identical data are not the same.
+As we can see, you can mix and match different types of values like for lists. And we can also mix and match different types of keys.
 
-For example:
+We can also assign starting values when defining a new dictionary by separating keys and values with a colon. This code is equivalent to the above.
 
 ```python
-hazel = Dog("Hazel","Shane","beagle/heeler",["treats","naps","raccoons"],["thunder"])
-hazel_clone = Dog("Hazel","beagle/heeler","Shane",["treats","naps","raccoons"],["thunder"])
-
-print(hazel is hazel_clone)
-
-hazel_clone = hazel
-print(hazel is hazel_clone)
+d = {1:5, 3:"b","a":[5]} # create a not-empty dictionary
+print(d)
 ```
 
-The `is` operator returns True if the object is literally the same (that is, they have the same memory address) and false if they aren't. If we don't do anything special, printing an object will actually print its type and memory address. In this example, we see that even though `hazel` and `hazel_clone` are dogs comprising the same data, they aren't the same *object*. If we use assignment (`=`) to assign the object referenced by `hazel` to `hazel_clone`, we're explicitly telling `hazel_clone` to point to the same object as `hazel` (in some other languages, references are called "pointers") and so they become the same.
-
-(The reason that we're using `is` instead of `==` is because the equality operator can be *overriden* under the hood if we wanted to have some fancy kind of comparison logic. By default, it is the same as `is`, but it's often overriden. We can compare two distinct, but identical lists using `==` and it will return `True` because `list` overrides the equality operator. But that isn't something we need to get into here.)
-
-Classes underpine an influential way of organizing computer programs: Object Oriented Programming (OOP), where the basic unit of code are class. Python was created originally as a primarily Object Oriented language, because Object Orientation was ascendant in the 1990s when Python was first created. Many important programming languages of that broad era are OO languages: C++, C#, Java, Javascript, and Ruby to name a few of the most famous. However, Object Orientation is not the only "programming paradigm" and Python code can organized both procedurally and functionally.
-
-It's not necessary or useful to organize our code into classes, especially if that code is fairly simple. However, it is a useful option and important to understand for another reason: we use classes even when we're not defining them. The class is the primary way that Python organizes its own standard library and the wider ecosystem of external libraries.
-
-# A Little Help From Our Friends (at Python)
-
-![hazel](assets/hazel_pet.jpg)
-
-## Coding is hard
-
-Okay, so we've been coding for a while now. You have the basic tools to take on almost anything!
-
-So, let's flex those muscles a bit. Write me the code to return all the permutations for two items out of a list. This might be useful to pick out all the possible pairings out of a list of Scholars' Lab pets. So we want to go from `pets = ["Bofur","Catsby","Hazel","Maple","Pepper"]` to:
+As with lists, we can traverse dictionaries using for loops:
 
 ```python
-[('Bofur', 'Catsby'), ('Bofur', 'Hazel'), ('Bofur', 'Maple'), ('Bofur', 'Pepper'), ('Catsby', 'Bofur'), ('Catsby', 'Hazel'), ('Catsby', 'Maple'), ('Catsby', 'Pepper'), ('Hazel', 'Bofur'), ('Hazel', 'Catsby'), ('Hazel', 'Maple'), ('Hazel', 'Pepper'), ('Maple', 'Bofur'), ('Maple', 'Catsby'), ('Maple', 'Hazel'), ('Maple', 'Pepper'), ('Pepper', 'Bofur'), ('Pepper', 'Catsby'), ('Pepper', 'Hazel'), ('Pepper', 'Maple')]
+dogs = {"Shane":"Hazel", "Amanda":"Maple", "Ronda":"Bofur"}
+for owner in dogs:
+    print(owner+"'s dog is "+dogs[owner])
 ```
 
-So, where would we start?
-
-Let's go with one loop on the outside and one on the inside, but we want to make sure that the pet in the outside isn't the same as the one on the outside...
+Here, we see that using for loops through all the keys in a dictionary. We can actually get a hold of the list of keys for this dictionary with `dogs.keys()` and a list of the values for this dictionary with `dogs.values()`. Some people prefer this convention that grabs key and value in a for loop:
 
 ```python
-def permutations(pets):
-    perms = []
-    for pet1 in pets:
-        for pet2 in pets:
-            if pet1==pet2:
-                continue
-            perms.append((pet1,pet2))
-    return perms
-
-pets = ["Bofur","Catsby","Hazel","Maple","Pepper"]
-print(permutations(pets))
+dogs = {"Shane":"Hazel", "Amanda":"Maple", "Ronda":"Bofur"}
+for owner,dog in dogs.items():
+    print(owner+"'s dog is "+dog)
 ```
 
-Easy enough... so far. What if we want to do groups of three instead of two?
-
-```python
-def permutations(pets):
-    perms = []
-    for pet1 in pets:
-        for pet2 in pets:
-            if pet1==pet2:
-                continue
-            for pet3 in pets:
-                p = (pet1,pet2)
-                if pet3 not in p:
-                    p = p+(pet3,)
-                    perms.append(p)
-    return perms
-
-pets = ["Bofur","Catsby","Hazel","Maple","Pepper"]
-print(permutations(pets))
-```
-
-Whew! This is getting a bit rough.
-
-Okay, so what about permutations of 4 pets? Or a generalizable algorithm that calculates different sizes of permutation sets based on a parameter? Hmmm. I think we're going to have to talk about recursion...
-
-But, wait. Remember when I said (a long time ago) that really novel problems are rare and that it's almost certain that other people have had the same problems as you in the past?
-
-What if we could let some hardworking Python developers do the hard work for us?
-
-## Imports
-
-```python
-from itertools import permutations
-pets = ["Bofur","Catsby","Hazel","Maple","Pepper"]
-print(list(permutations(pets,3)))
-```
-
-Easy!
-
-We can see in that first line, `from itertools import permutations`, that we're importing a function, `permutations` from the *module* `itertools`, a set of code that provides tools for iterative computation. [Here's the doc.](https://docs.python.org/3/library/itertools.html) 
-
-Itertools is one of many modules that come as part of the Python Standard Library. When Python was released, it was known for this robust library that provided many common and fundamental tools.
-
-Let's take a look at another example.
-
-How do we write a function to return a random number? Beats the hell out of me. This is... actually a really hard problem that has important ramifications for, among a lot of tother things, security if not done right. So we can just use the Python implementation like we did before. (The Python random function is actually also probably not good enough for high-level infosec uses, but it's sufficient for most things we're liable to do.)
-
-![python security warning](assets/security.png)
-
-By nature, randomness is complicated and random number generators are too. There's a lot of stuff in the [Python random module](https://docs.python.org/3/library/random.html), but there's also a few easy functions for us to easily get what we want if we don't care about the nuts and bolts.
-
-We can get a random integer (or a random index for a list):
-
-```python
-import random
-praxis = ["Bofur","Catsby","Hazel","Maple","Pepper"]
-print(praxis[random.randint(0,len(praxis)-1)])
-```
-
-(I ran this code to test it and I got 4 Bofurs out of 5 tries.)
-
-![Bofur!](assets/bofur.jpg)
-
-If we read the doc, we can see that randint is inclusive (so, randint(0,5) would sometimes return 5), so we want to do len(praxis)-1 because the valid indices for Praxis are `[0,1,2,3,4]`.
-
-In this example, we can see that instead of importing a single class or function, we just imported the entire module using `import random`. This allows us to access all of its member functions and classes through that name. We could have done this before with `itertools` too:
-
-```python
-import itertools
-print(itertools.permutations([1,2,3,4,5],2))
-```
-
-It just depends on whether or not we just need to use a single function or class from a module or if we want to use more.
-
-If we important random, we can use its other functions (e.g. `random.shuffle()` or `random.sample` to shuffle the list or to pick out a random sampling from that list) without re-importing.
-
-```python
-import random
-praxis = ["Bofur","Catsby","Hazel","Maple","Pepper"]
-print(praxis)
-random.shuffle(praxis)
-print(praxis)
-print(random.sample(praxis,2))
-```
-
-We can find the full, glorious index to the Python Standard Library [here](https://docs.python.org/3/library/).
-
-
-## Importing your own classes
-
-Modules in the Standard Library and from other sources (more on this in a moment) are packaged in a particular way, but we can use imports to bring in our own code too. Let's take the Dog class we worked with last week.
-
-```python
-class Dog:
-    def __init__(self, name, owner, breed, likes, dislikes):
-        self.name = name
-        self.owner = owner
-        self.breed = breed
-        self.likes = likes
-        self.dislikes = dislikes
-    
-    def speak(self):
-        print("Bork bork! I'm",self.name)
-```
-
-Let's say that we have a few different files that need to refer to Dogs. We don't want to just duplicate this code in all of those, not just because it's messy and a bit of work, but because if we change some part of that Dog code, we want those changes to be the same everywhere so all our code will interoperate with each other. If we added a new data field to our Dog class and constructor, age for example, that new Dog class wouldn't necessarily play well with code that used the old version.
-
-Imports are the solution to this problem. If we save this class to its own file, let's say `dog.py`, we can import this in any other python file in the same directory:
-
-```python
-from dog import Dog
-hazel = Dog("Hazel","Shane","Beagle",["treats","naps","raccoons"],["thunder"])
-hazel.speak()
-```
-
-In that first line, `dog` is the name of the file (dog.py) and Dog is the class within that file.
+Dictionaries are unordered, so while this example loops through the order in which I constructed the dictionary, that isn't guaranteed.

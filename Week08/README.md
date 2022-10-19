@@ -1,64 +1,24 @@
-# Week 8: Class is in Session
-![bart_class dot gif](assets/bart_class.gif)
+# Week 06: The Ultimate Machine
 
+![Shannon/Minsky Ultimate Machine](assets/ultimate_machine.gif)
+ 
 ## Agenda:
-- Present Adventures in Data
-- [Let's talk about classes!](lesson.md)
-- Next week's homework
+- Review homework
+- Big Data Talk
+- Dictionaries
 
-## Homework
+[Lesson document](./lesson.md)
 
-Classes are useful ways to encapsulate data. In the lesson document, we created a new class named Dog, created a constructor that defined some data fields about dogs, and a method that borks out some dog talk. For this assignment, let's define an DogOwner class that contains some dogs to try out ways that classes can interact with each other.
+## HOMEWORK
 
-#### Assignment Part 0:
+#### Review
 
-Let's create the base class code. Create a DogOwner class that contains a name and a constructor to populate that name.
+We've covered a lot of concepts really quickly and everything *seems* to be going well. However, it'll still probably be useful to read through a quick review of all the basic Python concepts we've covered to this point:
 
-```python
-class DogOwner:
-  def __init__(self,name):
-    #set the name of the DogOwner
+- [Primitives review](primitives.md)
+- [Data structures review](data_structures.md)
+- [Data flow review](data_flow.md)
 
-shane = DogOwner("Shane")
-```
+#### Assignment 0
 
-#### Assignment Part 1:
-
-Add a list to keep track of the owner's dogs to the class. You can copy and paste the Dog class definition from the lesson document. In your constructor code, be sure to set all the owners in the list of Dogs to the name of the DogOwner.
-
-```python
-class Dog:
-  #copy from lesson doc
-
-class DogOwner:
-  def __init__(self,name,dogs):
-    self.name = name
-    # set DogOwner's dogs list
-    for dog in dogs:
-      #set each of the dogs' owners to the name of the DogOwner
-
-hazel = Dog("Hazel","Beagle/Heeler","NotShane",["treats","naps","raccoons"],["thunder"])
-shane = DogOwner("Shane",[hazel])
-print(hazel.owner) #Should be 'Shane'
-```
-
-#### Assignment Part 2:
-
-Now, let's make things interesting. Write a function to rate the compatibility of dogs based on their likes and dislikes. For every shared like and dislike, add one point to the compatibility score. For every like that appears in another dog's dislike list, subtract one point.
-
-We can use nested loops to make these comparisons, but we can also just use a single loop and the python keyword `in` (e.g. `if element in list:`).
-
-```python
-class Dog:
-  #copy from lesson doc
-
-def dog_compatibility(dog1,dog2):
-  compatibility = 0
-  # your code here
-  return compatibility
-
-hazel = Dog("Hazel","Beagle/Heeler","Shane",["treats","naps","raccoons"],["thunder"])
-maple = Dog("Maple","Hound","Amanda",["treats","zooms","ducks"],["thunder"])
-
-print(dog_compatibility(hazel,maple)) #Should be 2, because they both like treats and dislike thunder
-```
+We have in our programming quiver a number of tools now (primitives, lists, dictionaries) and we just had a big talk on data. Think about everything you know about your Praxis cohort (the icebreakers doc is fair game). Think about the kind of questions that might interest you about such a corpus and the best way to structure that information to answer those questions. Write some Python code in the vein of the Scholars Lab example in the data structures review that represents the model you come up with. This one is intentionally a bit amorphous, but any practice in thinking about the shape of data is useful.
