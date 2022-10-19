@@ -77,9 +77,9 @@ Okay, this is too much talking. We should do some doing, which means that it's b
 
 We've discussed a few different ways to represent different types of data using the underlying binary computer systems. Going one level above this is the concept of a "data structure", which are ways to not only represent information as data (RGB, Unicode, etc.) but to efficiently access and manipulate them. We've already been working with plenty of built-in data structures in Python.
 
-The most fundamental kinds of these are often called "primitives" in computing. In Python, these include integers (whole numbers), floats (floating point numbers, which represent real numbers--"the ones between integers"), strings (text), and booleans (`True` and `False`). You should have a good sense by now of how each of these are represented (except for floats, which are weird).
+The most fundamental kinds of these are often called "basic" or sometimes "primitive" types in computing. In Python, these include integers (whole numbers), floats (floating point numbers, which represent real numbers--"the ones between integers"), strings (text), and booleans (`True` and `False`). You should have a good sense by now of how each of these are represented (except for floats, which are weird).
 
-More complex (creatively, "non-primitive") structures such as lists (which we've worked with) and dictionaries (which is new this week!). As we have seen, Python lists contain other objects which are instances of data structures. Lists organize data into an ordered and linear collection. Dictionaries are similar in that it contains a collection of other objects, but in this case organizes them into an unordered mapping.
+More complex ("composite") structures such as lists (which we've worked with) and dictionaries (which is new this week!). As we have seen, Python lists contain other objects which are instances of data structures. Lists organize data into an ordered and linear collection. Dictionaries are similar in that it contains a collection of other objects, but in this case organizes them into an unordered mapping.
 
 Incidentally, because lists can contain any object, you can do funny things in Python like append a list to itself.
 
@@ -89,7 +89,7 @@ A Python Dictionary associates pieces of data to other pieces, much like a physi
 
 Yes, you can have a dictionary assign itself as a value.
 
-Meanwhile, keys must be hashable objects, which I'm not going to get into right now. For the most part, it means that keys should be primitive objects.
+Meanwhile, keys must be hashable objects, which I'm not going to get into right now. For the most part, it means that keys should be basic objects.
 
 Dictionaries are defined using curly brackets, but they're addressed like lists. You can even use integers as keys, just like the index to a list. However, there is no provision for index continuity (i.e. list indices don't skip numbers, but dictionary keys can be whatever you want).
 
