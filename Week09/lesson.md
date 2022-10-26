@@ -1,276 +1,252 @@
-# External Depedencies
+# Structuring Data 2: Even More Structure
 
-![fatdog](assets/fatdog.jpg)
+![Maple and Jeremy](assets/maple_jerm.jpg)
 
+We covered some basic file input and output in Python a few weeks ago. It's pretty easy to work with text data, either all at once or line by line.
 
-## Outside help
-
-The Python Standard Library provides a pretty wide set of tools. It comes with every Python install and that's one of its main strengths - you don't have to worry about whether someone has `itertools` or `random` installed.
-
-But sometimes, the thing we need is a little bit more obscure or specific. We couldn't include all these things with every Python install, because otherwise that install would be enormous. Instead, there's something like an app store for Python code (except that it's all free, because Python is all free) called the [Python Package Index, or PyPI](https://pypi.org/). Not to be confused with PyPy (groan), which is something else.
-
-It's pretty big. Anyone can submit projects to it and so there are more than a quarter-million individual ones.
-
-We can install any one of these packages through [Pipenv](https://pipenv-fork.readthedocs.io/en/latest/), which all of you should already have since we did the environment setup at the beginning of the year.
-
-Pipenv coordinates the function of two important tools, Pip and Virtualenv. Pip is Python's package manager, which means that it downloads and installs Python packages. But it downloads them either to the whole system or to a single user's space. This means that when we grab a package, we could override packages that are being used by other projects. This is potentially really bad, because we're not the only ones on our computers that use Python. We could break applications or even our operating system.
-
-To solve this, Virtualenv walls off "virtual" environments for particular programs. These virtualenvs are like independent Python installations that don't affect other things that use Python.
-
-Pipenv combines these functions together into one tool. It works at the directory level. We can create a new pipenv environment inside of a directory so long as it doesn't live in another another directory with a pipenv environment. You can choose to have, for example, all your Codelab assignments live inside a single directory like `~/projects/Codelab` or you can choose to have each week have its own environment like `~/projects/Codelab/Week10`. It doesn't matter too much since you probably won't have dependency conflicts between different weeks. But you can't have both an environment in both because one is inside of the other.
-
-To create a pipenv environment, we can just run `pipenv install X` to install a package from PyPI and it will automatically create a virtualenv for that directory and install package "X" in that virtualenv. After we do that, we can then use `pipenv shell` to spawn a subshell to use Python in that directory. To quit out of the subshell, we can just use the `exit` command.
-
-It's a bit clunky, but it works really well for most DH work.
-
-You can browse through PyPI and see if there's anything interesting. Of course, the first thing I did was find this: [getname](https://pypi.org/project/getname/).
-
-So, let's take that for a spin.
-
-## Using Pipenv
-
-First, let's go into whatever directory where we're going to set up our pipenv environment. For me, that's going to be...
-
-```
-cd ~/projects/sandbox
-```
-
-Now, let's set up our pipenv environment and install that package.
-
-```
-pipenv install getname
-```
-
-That'll take a little bit to run. After it finishes, we have our environment set up. We can see that there are two new files inside our directory: Pipfile and Pipfile.lock.
-
-Looking inside Pipfile, we can see something like:
-
-```
-[[source]]
-name = "pypi"
-url = "https://pypi.org/simple"
-verify_ssl = true
-
-[dev-packages]
-
-[packages]
-getname = "*"
-
-[requires]
-python_version = "3.7"
-```
-
-We can see that there's some basic information about the package we specified. In this case, the line `getname = "*"` indicates that we want to grab some version of the `getname` package (* is often used as a wildcard character, standing in for "any").
-
-The Pipfile.lock file has similar information, but with the specific version of the packages that we grabbed.
-
-Don't worry about the particular formats for these files. It's only really important to understand that by distributing them (for example, by committing them to git), we can tell other people that grab our code what external dependencies they need (and potentially what versions of those dependencies).
-
-Everything is set up now.
-
-We can run the `which python` command to show us what the default system Python is. We'll get back something like `/usr/local/bin/python`.
-
-Now, we can activate the shell using:
-
-```
-pipenv shell
-```
-
-If we try the `which python` command again, it'll be something different. Something like: `/Users/shane/.local/share/virtualenvs/sandbox-2UjlHtLl/bin/python`
-
-That tells us that we're actually using a totally different Python from before. A Python that has access to the package that we just told pipenv to grab.
-
-Which allows us to do...
+To review, we can read some text from a file like so:
 
 ```python
-from getname import random_name
-
-dogs = []
-while len(dogs)<6:
-    dogs.append(random_name('dog'))
-print(dogs)
+infile = open('file.txt', "r"):
+text = infile.read()
+infile.close()
 ```
 
-Without all the pipenv steps, we wouldn't have access to our new package and that first import line would fail.
-
-## Example: NLTK
-
-Still with us? Great!
-
-![Hazel says hello!](assets/hazel_hi.jpg)
-
-Okay, so let's do another, real example using the very useful and powerful NLTK package.
-
-I've included the dialog frm Much Ado About Nothing in [a nicely formatted JSON file](MAAN_dialog.json). Let's make use of that now.
-
-We can start by using pipenv to install nltk and activating the pipenv shell.
-
-```
-pipenv install nltk
-pipenv shell
+or, equivalently, using the with-open-as idiom:
+```python
+with open('file.txt', "r") as infile:
+    text = infile.read()
 ```
 
-Just for NLTK, we need to prime the module by downloading a few key bits of data. So we should jump into the Python interactive interpreter and just run these lines:
+and we can write back to files just as easily:
+```python
+outfile = open('file.txt', "w"):
+outfile.write("Hello Dog!")
+outfile.close()
+```
+
+(If you need a refresher, we learned all of this back in [Week 5](../Week05/lesson.md#files))
+
+But while we've worked with simple text and numerical data like strings and ints plenty, we've also used lists and dictionaries and more structured data too. How do we read and write those more complicated kinds of data?
+
+Let's revisit the way that we read in numbers. Recall that when we use the `read()` method on a file object like we did above, the data that we get back is a string. So, if we had a file named file.text that just contained the number `12345`, we'll get back the string "12345" rather than the integer 12345.
 
 ```python
-import nltk
-nltk.download('stopwords')
+with open('file.txt', "r") as infile:
+    text = infile.read()
+    text += 43210 #this line results in "TypeError: must be str, not int"
 ```
 
-This is specific to nltk and actually kind of an unusual way of working in Python. We only need to do this once for our environment.
+The "12345" in the text file is, after all, text. Underneath it all, it's being represented by a text encoding, which means that if you look under the hood, "12345" isn't actually 12345. These days, this kind of text is usually UTF-8/ASCII encoded numbers, which means "12345" is actually 049 050 051 052 053. To turn the text "12345" into the number 12345 in Python, we have to explicity tell Python to make this conversion.
 
-Now we can work on our actual Python code. Let's read in our json file.
+```python
+with open('file.txt', "r") as infile:
+    text = infile.read()
+    number = int(text)
+    number += 43210 #this works just fine now
+```
+
+Here, we're calling the integer constructor method that takes in a string argument and builds us a new integer object based on that string.
+
+I bring this up to suggest that there's difference between the static text representation of an object and the "live" Python objects that live in computer memory and can be manipulated. Python objects are useful because we can easily manipulate them, but they don't persist beyond the lifespan of a program. Static files persist data, but have to be read and interpreted explicitly in the way that we want them to be.
+
+## Let's talk about Data Formats
+
+So, strings and even numbers are simple enough. How do we represent, say, a list of things in a file?
+
+A really simple way to do this is to just write them out as a list, separated by some delimiter. Following English convention, let's use commas. An easy way to do this in Python is to use the string method `join()`, which is kind of like a reverse split. It lets you join together a list of strings with a delimiter (you can also just mush together the list of strings if you call it on an empty string).
+
+```python
+dogs1 = ["Hazel", "Maple", "Bofur"]
+with open('file.txt', "w") as outfile:
+    outfile.write(",".join(dogs1))
+with open('file.txt', "r") as infile:
+    text = infile.read()
+dogs2 = text.split(",")
+print(dogs1 == dogs2)
+```
+
+So, we can see that (hopefully) the two dogs lists are the same. This is easy enough for simple data, but we can probably see that there are some complications here...
+
+```python
+dogs1 = ["Hazel, who is definitely Shane's dog", "Maple, the Stilt-Legged", "Bofur, Boss of the Lab"]
+with open('file.txt', "w") as outfile:
+    outfile.write(",".join(dogs1))
+with open('file.txt', "r") as infile:
+    text = infile.read()
+dogs2 = text.split(",")
+print(dogs1 == dogs2)
+```
+
+So, there's one basic problem with using text to store structured text. Whatever delimiters or special characters we use to indicate the structure of the data can also exist in the data itself. ASCII, the archaic way of encoding text, solved this by setting aside special non-text characters. There were characters for things like "Start of Heading", "End of Transmission", "Acknowledgement", and even "Bell" to get a computer operator's attention. These days, that method is hopelessly outmoded, not just because we want to be have more flexibility in the ways that we define our structures.
+
+So how do we get by this? We can wrap individual elements in quotes and that works well enough if we don't also use quotes. We can also use escape characters to tell Python when we do and don't mean business. An escape character is just a character that means "interpret the next thing as text, without any special meaning." Although sometimes it means "interpret the next thing as a special thing and not just as regular text." Commonly, many systems use the backslash (`\`) as an escape character. This works when we define a string in Python, for example:
+
+```python
+ text = "here are some quotation marks inside of a string: \"\'\'\""
+ print(text)
+```
+
+But all these rules are starting to add up. It's getting kind of complicated. We don't want to spend our time writing out the special logic to distinguish between real quotations marks and commas and fake ones. And what if we didn't think of some nonobvious, uncommon edge case? Happily, this whole exercise is a pretty common problem and there are a few standard ways to do it.
+
+We can impart supertextual meaning to text data (like the structure of a list) using data formats, which are standard ways to write out and read data, that typically have standard software tools to accomplish those tasks.
+
+## CSV
+
+One of the simplest data formats is CSV, which stands for, simply enough, Comma Separated Values. This is what we've actually just talked through. Strangely enough, it doesn't actually have to be commas that do the separating. Typically, we can choose our own delimiter. CSVs are used for tabular data and is a commonly used to exchange data between different spreadsheet applications or to produce data that is easily ingested by those applications. In a CSV, each column entry is separated by the delimiter and each new line contains a new row.
+
+Let's try out a simple example with some familiar data.
+
+![Hazel again](assets/hazel3.jpg)
+
+```python
+hazel = ["Hazel","Shane","Beagle/Heeler"]
+maple = ["Maple", "Amanda", "Hound"]
+bofur = ["Bofur", "Ronda", "Corgi"]
+dogs = [hazel,maple,bofur]
+
+with open('dogs.csv', "w") as outfile:
+    outfile.write(",".join(["Dog","Owner","Breed"]))
+    for dog in dogs:
+        outfile.write("\n"+",".join(dog))
+```
+
+If you want, you can import that into your preferred spreadsheet application to to see what comes out.
+
+But this still leaves us with the problem of how to handle tricky data. Since CSV is so widely used, there is actually a [built-in Python module](https://docs.python.org/3/library/csv.html) to handle it. If we haven't talked in depth about imports yet because I moved the weeks around, recall that we've used Python's built-in `random` module before to generate random numbers. Modules are just bits of extra code that we can bring in ("import") to use in our own.
+
+We just create a file object with `open()` like before, but we pass that file object into a special CSV writer.
+
+Let's try it out.
+
+```python
+import csv
+
+hazel = ["Hazel, the Sneak","Shane","Beagle/Heeler"]
+maple = ["Maple, the Swift", "Amanda", "Hound"]
+bofur = ["Bofur, the Brave", "Ronda", "Corgi"]
+dogs = [hazel,maple,bofur]
+
+with open('dogs.csv', 'w', newline='') as csvfile:
+    dogwriter = csv.writer(csvfile, delimiter=',')
+    dogwriter.writerow(["Dog","Owner","Breed"])
+    for dog in dogs:
+        dogwriter.writerow(dog)
+```
+
+Which produces the output csv file...
+
+```csv
+Dog,Owner,Breed
+"Hazel, the Sneak",Shane,Beagle/Heeler
+"Maple, the Swift",Amanda,Hound
+"Bofur, the Brave",Ronda,Corgi
+```
+
+Easy!
+
+Actually, this is still a little too much work. We have to manually define headers and make sure that everything is in the right order. What if we didn't even have to do that?
+
+If start with a dictionary instead of a list, we have a way to associate values with keys rather than just depending on their indices. We can use the `DictWriter` class inside of the csv module to automatically take care of things for us.
+
+```python
+import csv
+
+hazel = {"name":"Hazel","owner":"Shane","breed":"Beagle/Heeler"}
+maple = {"name": "Maple", "owner":"Amanda", "breed": "Hound"}
+bofur = {"name": "Bofur", "owner":"Ronda", "breed": "Corgi"}
+
+with open('dogs.csv', 'w', newline='') as csvfile:
+    fieldnames = hazel.keys()
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerow(hazel)
+    writer.writerow(maple)
+    writer.writerow(bofur)
+```
+
+This produces the same kind of CSV file. Note that the field names are consistent, so I just used the keys for Hazel. We'd have to do this a bit differently if the data wasn't structured homogenously.
+
+To read CSV files, we can use analogous Reader and DictReader objects in the csv module:
+
+```python
+import csv
+
+with open('dogs.csv', newline='') as csvfile:
+    dogreader = csv.DictReader(csvfile)
+    for dog in dogreader:
+        print(dog["name"],"and",dog["owner"])
+```
+
+### JSON
+
+CSV is good for tabular data, but not great to encapsulate data with more complex relationships. Each of our Dogs has lists of things they like and dislike, for example. CSVs don't really support variable-length lists of things inside of rows. We can store our own format to store lists within a single CSV element, but that just puts us back at step one. And, I cannot emphasize this enough, storing different arbitrary text data formats inside of each other is a *real bad idea*. Don't do it. Oh my god, no, just don't do it.
+
+One popular, good way to do this is JSON. Sometimes it's pronounced "Jay Song", but it's really "Jason". Like the Argonaut or the deli or [Robards](https://www.imdb.com/name/nm0001673/). JSON stands for "Javascript Object Notation" and was originally designed to allow websites to pass data back and forth between the browser and the server. But it's become a really popular generic format for all sorts of things and all sorts of languages.
+
+For example, a lot of GIS data is available as GeoJSON, a JSON format with geographic-specific fields.
+
+We don't have to go too much into the particular details of how JSON is structured. It's enough to just glance at what it looks like. Here's an example:
+
+```json
+[
+  {
+    "name": "Hazel",
+    "owner": "Shane",
+    "breed": "Beagle-ish",
+    "likes": [
+      "snoozing",
+      "racoons",
+      "Shane"
+    ]
+  },
+  {
+    "name": "Maple",
+    "owner": "Amanda",
+    "breed": "Hound",
+    "likes": [
+      "zooms",
+      "looking",
+      "carrots"
+    ]
+  },
+  {
+    "name": "Bofur",
+    "owner": "Ronda",
+    "breed": "Corgi",
+    "likes": [
+      "the ladies"
+    ]
+  }
+]
+```
+
+Happily, there is also an easy to use [JSON module for Python](https://docs.python.org/3/library/json.html).
+
+One of the most useful mechanisms it provides is the ability to "dump" and "load" arbitrary built-in Python data structures into and out of JSON. It makes it super easy to throw a complex python object into a file and get it back out again.
+
+There are `dump` and `load` methods, which write and read directly to files, but also `dumps` and `loads` methods which write and read to a string object. I like using the latter because it makes it easier to check them during debugging.
 
 ```python
 import json
 
-with open("MAAN_dialog.json","r") as infile:
-    dialog = json.loads(infile.read())
+hazel = {"name": "Hazel", "owner": "Shane", "breed": "Beagle-ish",
+         "likes": ["snoozing", "racoons", "Shane"]}
+maple = {"name": "Maple", "owner":"Amanda", "breed": "Hound","likes":["zooms","looking"]}
+bofur = {"name": "Bofur", "owner":"Ronda", "breed": "Corgi","likes":["ladies"]}
+dogs = [hazel,maple,bofur]
+
+with open('dogs.json', mode="w") as jsonfile:
+    jsonfile.write(json.dumps(dogs))
+
+with open('dogs.json', mode="r") as jsonfile:
+    dogs_load = json.loads(jsonfile.read())
+    for dog in dogs_load:
+        print(dog["name"],"and",dog["owner"])
 ```
 
-This imports and json-loads our text file as a list of dictionaries. Because we've put the work into formatting our data, we can easily manipulate it to our purposes. Let's say we have a scholarly interest in, specifically, how the dialog of Beatrice and Benedick differ.
+## Other Data Formats
 
-Let's collate their lines now.
+There are a ton of other text data formats. The other big one is SGML/XML/HTML, which are structurally similar and related. HTML is, of course, the language that websites are written in. We'll revisit that in the future when we talk about Web scraping and about building websites.
 
-```python
-import json
-
-with open("MAAN_dialog.json","r") as infile:
-    dialog = json.loads(infile.read())
-
-bea = ""
-ben = ""
-
-for line in dialog:
-    if line["role"] == "BEATRICE":
-        bea+=" "+line["dialog"]
-    elif line["role"] == "BENEDICK":
-        ben+=" "+line["dialog"]
-```
-
-This gives us two variables, `bea` and `ben`, that contain all of those characters' lines.
-
-How might nltk give us insight into these lines? Let's do something simple and see out how the words that Shakespeare put into their mouths differ by looking at frequency distribution.
-
-First, we need to tokenize the dialog (i.e. break up the dialog into words). We can use one of nltk's built-in tokenizers for this. And then let's remove *stopwords*, which are common English words like articles that don't provide much insight in this sort of analysis.
-
-Stopwords are one of the wordlists provided by nltk. You can see all the English stopwords and read up on the other wordlists in the [NLTK book](https://www.nltk.org/book/ch02.html#wordlist-corpora). The little bit of code we ran in the interactive interpreter downloaded the stopword wordlist.
-
-Here's what the code to tokenize the dialog and strip out the stopwords looks like:
-
-```python
-import nltk
-import json
-
-with open("MAAN_dialog.json","r") as infile:
-    dialog = json.loads(infile.read())
-
-bea = ""
-ben = ""
-
-for line in dialog:
-    if line["role"] == "BEATRICE":
-        bea+=" "+line["dialog"]
-    elif line["role"] == "BENEDICK":
-        ben+=" "+line["dialog"]
-
-bea_tokens = []
-ben_tokens = []
-
-tokenizer = nltk.tokenize.RegexpTokenizer(r'\w+')
-for token in tokenizer.tokenize(bea):
-    if token.lower() not in nltk.corpus.stopwords.words('english'):
-        bea_tokens.append(token.lower())
-for token in tokenizer.tokenize(ben):
-    if token.lower() not in nltk.corpus.stopwords.words('english'):
-        ben_tokens.append(token.lower())
-
-print(bea_tokens)
-print(ben_tokens)
-```
-
-`bea_tokens` and `ben_tokens` are now lists of words with stopwords stripped out. 
-
-We can pass these lists back to NLTK's frequency distribution function to see how often distinct words appear.
-
-```python
-import nltk
-import json
-
-with open("MAAN_dialog.json","r") as infile:
-    dialog = json.loads(infile.read())
-
-bea = ""
-ben = ""
-
-for line in dialog:
-    if line["role"] == "BEATRICE":
-        bea+=" "+line["dialog"]
-    elif line["role"] == "BENEDICK":
-        ben+=" "+line["dialog"]
-
-bea_tokens = []
-ben_tokens = []
-
-tokenizer = nltk.tokenize.RegexpTokenizer(r'\w+')
-for token in tokenizer.tokenize(bea):
-    if token.lower() not in nltk.corpus.stopwords.words('english'):
-        bea_tokens.append(token.lower())
-for token in tokenizer.tokenize(ben):
-    if token.lower() not in nltk.corpus.stopwords.words('english'):
-        ben_tokens.append(token.lower())
-
-bea_freq = nltk.FreqDist(bea_tokens)
-print("Beatrice word frequencies:")
-for key, val in bea_freq.most_common(10):
-    print(str(key) + ':' + str(val))
-
-ben_freq = nltk.FreqDist(ben_tokens)
-print("\n\n Benedick word frequencies:")
-for key, val in ben_freq.most_common(10):
-    print(str(key) + ':' + str(val))
-```
-
-And since a big list of words is maybe less useful, let's install a plotting library that nltk uses through pipenv:
-
-```
-pipenv install matplotlib
-```
-
-Which will allow us to get some pretty graphs:
-
-```python
-import nltk
-import json
-
-with open("MAAN_dialog.json","r") as infile:
-    dialog = json.loads(infile.read())
-
-bea = ""
-ben = ""
-
-for line in dialog:
-    if line["role"] == "BEATRICE":
-        bea+=" "+line["dialog"]
-    elif line["role"] == "BENEDICK":
-        ben+=" "+line["dialog"]
-
-bea_tokens = []
-ben_tokens = []
-
-tokenizer = nltk.tokenize.RegexpTokenizer(r'\w+')
-for token in tokenizer.tokenize(bea):
-    if token.lower() not in nltk.corpus.stopwords.words('english'):
-        bea_tokens.append(token.lower())
-for token in tokenizer.tokenize(ben):
-    if token.lower() not in nltk.corpus.stopwords.words('english'):
-        ben_tokens.append(token.lower())
-
-bea_freq = nltk.FreqDist(bea_tokens)
-ben_freq = nltk.FreqDist(ben_tokens)
-
-bea_freq.plot(20, cumulative=False)
-ben_freq.plot(20, cumulative=False)
-```
-
-NLTK is a big and complicated piece of software designed to do (kind of) complicated analysis. This is still a unit on external dependencies and not on natural language processing or text analysis. Don't fret too much about how NLTK works or how to use it - the important part is that you now have the knowledge and the means and the wherewithall to exploit a vast universe of external python tools.
+These are all different from binary data formats like the jpg and gif images that are peppered (Peppered? We should have more Pepper media) throughout these docs. That's a whole different kettle of fish.

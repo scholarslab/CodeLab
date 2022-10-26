@@ -1,11 +1,20 @@
-# Week 09
-
-![billmurray](assets/depends.gif)
+# Week 07
+![Tacoma Narrows GIF](assets/structure.gif)
 
 ## Agenda
-- Review homework
-- [External Dependencies](lesson.md) 
+- Review homework (if it exists)
+- [Structuring Data 2: Even More Structure](lesson.md) 
 
 ## Assignment
 
-Show and Tell! I'm turning things over to all of you next week. Find an interesting Python package/library, either on [PyPI](https://pypi.org/) or just through searching on the Internet. It can be something that you think could be useful to your research interests or really anything that you think is neat. Write some code to demonstrate what it does and tell us how you think it could be useful or why it appeals to you.
+### Part 0x00
+Take the representation of your Praxis cohort you did in [Week08 Assignment 1](../Week08/README.md#assignment-1) and use the Python json module to dump it into a json formatted text file.
+
+### Part 0x01
+Okay! The meat of this week's homework. It's another kinda amorphous, experimental one. Working alone or in groups (or a single super-group), find an interesting dataset, read it into Python, and use Python to extract some interesting facts from it.
+
+Happily, there are a lot of interesting datasets out floating out there, often in CSV-like formats. FiveThirtyEight, for example, has a ton of csv-formatted data on their [Github](https://github.com/fivethirtyeight/data). Buzzfeed has a similar [Github repo](https://github.com/BuzzFeedNews). IMDB has big, big datasets in tab-separated-values format (CSV, but with tabs) [on their site](https://www.imdb.com/interfaces/). The Government has an enormous clearinghouse of public data on the appropriately-named [data.gov](https://catalog.data.gov/dataset) website, in a variety of formats. The sky's the limit!
+
+Even though the CSV module makes reading the data into Python pretty easy, this is potentially a really tricky assignment because keeping different related data fields together can be challenging (e.g. sorting a column and also sorting the other fields for each row together). Google is definitely your friend here ("sorting dictionary by key python"). Literally millions of people have had to do the same thing you're trying to do. If you're having some trouble, ping me on Slack any time. It might be useful to read the CSV data into another data structure to make this easier.
+
+Plan for 0-5 minute shows-and-tell next week!
