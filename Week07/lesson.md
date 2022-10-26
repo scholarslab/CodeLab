@@ -62,7 +62,7 @@ In Python, there's a number of ways to do this. One of the easiest is to use the
 The code for `open` is very simple. To read a file, we can do:
 
 ```python
-infile = open('file.txt', "r"):
+infile = open('file.txt', "r")
 text = infile.read()
 infile.close()
 ```
@@ -83,7 +83,7 @@ All this does is structure the code so that you don't forget to close the file.
 The file object is also magically iterable, so we can treat it as a list that we can loop through. Another common idiom is to use a for loop to go through it line by line.
 
 ```python
-infile = open('file.txt', "r"):
+infile = open('file.txt', "r")
 for line in infile:
     print(line.upper())
 infile.close()
@@ -92,7 +92,7 @@ infile.close()
 The "r" argument that you pass in to `open` tells Python that you want to read the file. To write, we can use "w" mode. This will overwrite the file if it already exists. We can use "a" for append to keep the existing content and just add to the end instead.
 
 ```python
-outfile = open('file.txt', "w"):
+outfile = open('file.txt', "w")
 outfile.write("Hazel is a good dog.\n")
 outfile.close()
 ```
