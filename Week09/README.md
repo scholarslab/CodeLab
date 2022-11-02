@@ -1,4 +1,4 @@
-# Week 07
+# Week 09
 ![Tacoma Narrows GIF](assets/structure.gif)
 
 ## Agenda

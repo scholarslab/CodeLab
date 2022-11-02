@@ -7,7 +7,7 @@ We covered some basic file input and output in Python a few weeks ago. It's pret
 To review, we can read some text from a file like so:
 
 ```python
-infile = open('file.txt', "r"):
+infile = open('file.txt', "r")
 text = infile.read()
 infile.close()
 ```
@@ -20,7 +20,7 @@ with open('file.txt', "r") as infile:
 
 and we can write back to files just as easily:
 ```python
-outfile = open('file.txt', "w"):
+outfile = open('file.txt', "w")
 outfile.write("Hello Dog!")
 outfile.close()
 ```
