@@ -6,7 +6,7 @@ Produce a short bit of code in the modern programing language of your choice tha
 
 Don't assume that the input values will be based on US currency or, in fact, any reasonable real-world currency. I will only guarantee that all values are valid real numbers.
 
-Order does not matter for the output as "1 penny and 1 nickel" is equivalent to "1 nickel and 1 penny". 
+Order does not matter for the output as "1 penny and 1 nickel" (`[0.01, 0.05]`) is equivalent to "1 nickel and 1 penny" (`[0.05, 0.01]`). 
 
 If the value cannot be reached with the input denominations, indicate an error. Please document input/output mode (interactive console, file, web form), dependencies, etc.
 
@@ -31,6 +31,12 @@ Here are some example inputs:
 "value": 2.50
 }
 ```
+```javascript
+{
+"denominations": [1, 0.75, .01],
+"value": 1.50
+}
+```
 
 ```javascript
 {
@@ -45,8 +51,12 @@ Here are some example inputs:
 "value": 10000.0000001
 }
 ```
+```javascript
+{
+"denominations": [1, 0.75, .01, -0.05],
+"value": 1.45
+}
+```
 
-## Scoring
-Correctness: 70 points
-Edge case handling: 25 points
-Speed: 5 points
+## "Scoring"
+There's no actual scoring of course, but consider the ways that we might evaluate answers: general correctness, edge case handling, speed.
