@@ -2,12 +2,12 @@
 
 ## Outline
 
-![hazel.jpg](hazel.jpg)
+![Rocky!](assets/rocky.jpg)
 
-0. Introduction to Code Lab
-1. What is Code?
-2. Why is Code?
-3. SLab Origin Stories
+1. Introduction to Code Lab
+2. What is Code?
+3. Why is Code?
+4. SLab Origin Stories
 
 ## Welcome to CodeLab
 
