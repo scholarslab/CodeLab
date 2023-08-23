@@ -1,11 +1,3 @@
-## SHANE TODO 2022
-Github started requiring personal access tokens in August 2021. For the next Praxis session, it's probably a good idea to see if there's one good way to set that up. VS Code's github module seems to package a turnkey git credential manager, but for WSL users, they may need to [set something up like this](https://github.com/microsoft/Git-Credential-Manager-Core) (Note to future Shane: this is moderately annoying to do).
-
-Pipenv venv in projects with `export PIPENV_VENV_IN_PROJECT=1`
-
-Linter in MacOS?
-
-
 # Code Lab Week 1: Environment Setup
 
 If you're using a Mac, you're most of the way there already. You almost certainly have the shell that we'll be using already (more on what that means later). Python, the programming language we'll be using is already built into your computer. But we'll want to set it up so it works just like we want it to.
@@ -26,7 +18,7 @@ After all the shell and Python setup is done, you'll install Microsoft Visual St
 
 Mac: [Python 3](https://docs.python-guide.org/starting/install3/osx/), including Pip.
 
-The instructions say to add `export PATH="/usr/local/opt/python/libexec/bin:$PATH"` to `~/.profile`. However, you will probably want to add it instead to `~/.zshrc`.
+The instructions say to add `export PATH="/usr/local/opt/python/libexec/bin:$PATH"` to `~/.profile`. However, you will probably want to add it instead to `~/.zshrc`. While you're at it, add `export PIPENV_VENV_IN_PROJECT=1` to your .zshrc as well, which will simplify some VS Code integration.
 
 At the end of this step, you should be able to input the command `python3 --version` and have it not return an error.
 
