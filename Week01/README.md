@@ -4,16 +4,21 @@
 
 ![Rocky!](assets/rocky.jpg)
 
-1. Introduction to Code Lab
+1. Introduction to CodeLab
 2. What is Code?
-3. Why is Code?
-4. SLab Origin Stories
+3. Exercises in Code thinking
+4. Why is Code?
+   1. Code as utility
+   2. Code as scholarship
+   3. Code as labor
 
 ## Welcome to CodeLab
 
 Hi there. Welcome to CodeLab. This is Shane, writing from various times in the past (and occasionally Zoe, writing generally from even longer ago). I'm a younger, slightly less experienced, probably slightly more handsome version of Shane from right now, so you'll have to excuse me if I'm unclear or rambly or factually wrong. Don't blame it on Shane Prime. I'm sure he knows better by now. The two of us (Shane and Zoe) and the Scholars' Lab staff created Code Lab back in 2018 as a way to ensure that that year's Praxis cohort would have a good technical foundation on which to build their DH projects and later humanities careers and I've been doing it ever since. Hopefully, you'll be getting all this from a presentation that current-timeline-me has given, is giving, or will shortly give.
 
-This first week is mostly setting up your computer with the software that we'll use for the rest of the semester and getting started with using your computer through the command line.
+We're going to start off our Code Lab journey without actually writing any code. This first week we'll be talking a little bit about what code is and a lot about a very long debate within the Digital Humanities community about the relationship between coding knowledge and practice and DH scholarship. It's a debate that people are generally sick of having, but I'm going to keep at it because 1) I have very strong feels about it and 2) I am, in a lot of ways, on the losing side of the debate.
+
+As part of this discussion, I'm going to encourage all of you to think about what computation is and how to "think" like a computer: in discreet and unambiguous steps.As we progress through the year, keep these ideas in mind; imagine how a computer does the kinds of things it does "under the hood" and try to get a feel for what kinds of problems might be easy or hard for a computer to do.
 
 ## CodeLab Resources
 * [Environment Setup Instructions](environment_setup.md)
