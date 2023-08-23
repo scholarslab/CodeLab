@@ -19,8 +19,8 @@ First, let's properly go over some ideas that we might have casually brushed pas
  We use Beautiful Soup in our Python code with code that looks like this:
  
  ```python
- import bs4
- soup = bs4.BeautifulSoup(html_doc, 'html.parser')
+ from bs4 import BeautifulSoup 
+ soup = BeautifulSoup(html_doc, 'html.parser')
  # 'bs4' is the package, 'BeautifulSoup' is a class defined inside the package definition
  ```
 
@@ -175,22 +175,22 @@ Now that we've got the raw HTML of the site, we can then use Beautiful Soup to p
 So, let's first import beautiful soup...
 
 ```python
-import bs4
+from bs4 import BeautifulSoup
 ```
 
-Next, we'll instantiate a Beautiful Soup instance and pass it our html. One easy thing we can do is have BS prettify our html so it's a bit more expansive and readable.
+Next, we'll instantiate a BeautifulSoup instance and pass it our html. One easy thing we can do is have BS prettify our html so it's a bit more expansive and readable.
 
 ```python
-import bs4
+from bs4 import BeautifulSoup
 import requests
 
 url = "https://scholarslab.lib.virginia.edu/blog/"
 html  = requests.get(url).text
-soup = bs4.BeautifulSoup(html, 'html.parser')
+soup = BeautifulSoup(html, 'html.parser')
 print(soup.prettify())
 ```
 
-We can see here that `soup` is an instance of a [bs4.BeautifulSoup class](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#beautifulsoup). This is an object that represents the whole of the document. The other important class we will use is the [Tag class](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#tag), which represents an html tag. These two classes actually share many of the same methods: we can use `get_text()` on either a BeautifulSoup or a Tag to extract just the text that they contain.
+We can see here that `soup` is an instance of a [BeautifulSoup class](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#beautifulsoup). This is an object that represents the whole of the document. The other important class we will use is the [Tag class](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#tag), which represents an html tag. These two classes actually share many of the same methods: we can use `get_text()` on either a BeautifulSoup or a Tag to extract just the text that they contain.
 
 We can also use the `find_all()` method that they share to search with either the whole document or within the tag. Remember that tags can be nested within each other.
 
@@ -238,19 +238,19 @@ Knowing how to grab links means that we can follow them by asking Requests to gr
 So, for example, we can craw through and save *every* blog post on the Scholars' Lab blog into one file for the purposes of text analysis.
 
 ```python
-import bs4
+from bs4 import BeautifulSoup
 import requests
 
 post_text = ""
 url = "https://scholarslab.lib.virginia.edu/blog/"
 html  = requests.get(url).text
-soup = bs4.BeautifulSoup(html, features="html.parser")
+soup = BeautifulSoup(html, features="html.parser")
 old_posts = soup.find("section",id="previous_posts")
 for i in old_posts.find_all("li"):
     # the post links are relative links, so we need to append the domain to make it an absolute link
     post_url = "https://scholarslab.lib.virginia.edu"+i.contents[0]["href"]
     post  = requests.get(post_url).text
-    soup = bs4.BeautifulSoup(post, features="html.parser")
+    soup = BeautifulSoup(post, features="html.parser")
     post_text+=soup.find("div", class_="post__content").get_text()
     # Let's write out all the posts every time so we can interrupt it at any point
     f = open("posts.txt", "w")

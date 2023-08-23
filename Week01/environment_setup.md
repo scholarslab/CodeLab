@@ -1,10 +1,12 @@
 # Code Lab Week 1: Environment Setup
 
-If you're using a Mac, you're most of the way there already. You almost certainly have the shell that we'll be using already (more on what that means later). Python, the programming language we'll be using is already built into your computer. But we'll want to set it up so it works just like we want it to.
+If you're using a Mac, you're most of the way there already. You almost certainly have the shell that we'll be using already (more on what that means later). Python, the programming language we'll be using is already built into your computer. But we'll want to set it up so it works just like we want it to. Follow the **MacOS** track below.
 
-If you're using a Windows machine, there's a few more steps. Hopefully you're using Windows 10 (or later, if you're reading this far, far into the future), otherwise things might be a bit troublesome. If you are, we'll be installing the puzzlingly named Windows Subsystem for Linux (WSL), which is a Subsystem _in_ Windows that provides Linux functionality, not the other way around. It's basically a little Linux computer that runs inside of Windows. It's very cool. We'll be using WSL to run our code and do all our coding work. This isn't necessarily better than developing directly in Windows, but it lets us (Windows, Mac, and Linux users) all be on the same page.
+If you're using a Windows machine, there's a few more steps. Hopefully you're using Windows 10 (or later, if you're reading this far, far into the future), otherwise things might be a bit troublesome. If you are, we'll be installing the puzzlingly named Windows Subsystem for Linux (WSL), which is a Subsystem _in_ Windows that provides Linux functionality, not the other way around. It's basically a little Linux computer that runs inside of Windows. It's very cool. We'll be using WSL to run our code and do all our coding work. This isn't necessarily better than developing directly in Windows, but it lets us (Windows, Mac, and Linux users) all be on the same page. Follow the **Windows** track below.
 
-If you're using Linux, I assume that you know what you're doing. Come and tell me if this is a faulty assumption. Install Python 3, pip, and pipenv.
+If you're using Linux, I'm going to assume that you know what you're doing. Please let me know if this is a faulty assumption. Install Python 3, pip, and pipenv.
+
+If you're using FreeBSD, MS-DOS, OS/2, Solaris, Sony Playstation 2, Amiga Research OS, Windows CE/Pocket PC, or other unusual or outmoded operating systems, there exist [legacy Python interpreters](https://legacy.python.org/download/other/) across a wide (typically dismal) range of contemporaneity. This paragraph is a funny joke that's just for computer historians; Scholars' Lab support for these platforms is limited.
 
 After all the shell and Python setup is done, you'll install Microsoft Visual Studio Code, which is a free editor that we'll be using to write our code. It's pretty good, but it isn't mandatory.
 
