@@ -20,7 +20,7 @@ After all the shell and Python setup is done, you'll install Microsoft Visual St
 
 Mac: [Python 3](https://docs.python-guide.org/starting/install3/osx/), including Pip.
 
-The instructions say to add `export PATH="/usr/local/opt/python/libexec/bin:$PATH"` to `~/.profile`. However, you will probably want to add it instead to `~/.zshrc`. While you're at it, add `export PIPENV_VENV_IN_PROJECT=1` to your .zshrc as well, which will simplify some VS Code integration.
+The instructions say to add `export PATH="/usr/local/opt/python/libexec/bin:$PATH"` to `~/.profile`. However, you will probably want to add it instead to `~/.zshrc`. While you're at it, add `export PIPENV_VENV_IN_PROJECT=1` to your .zshrc as well, which will simplify some VS Code integration. These tasks involve using a text editor to add lines to a configuration file that governs your computer, so we can do this together if you feel like you need help.
 
 At the end of this step, you should be able to input the command `python3 --version` and have it not return an error.
 
@@ -28,14 +28,15 @@ At the end of this step, you should be able to input the command `python3 --vers
 
 In the terminal, run: `brew install pipenv`
 
-At the end of this step, you should be able to input the command `pipenv --version` and have it not return an error.
+At the end of this step, you should be able to enter the command `pipenv --version` and have it not return an error.
 
 ### Step 3-M: Visual Studio Code
 
-Unless you have another preference, VSCode is a pretty good code editor.
+You can choose the text or code editor/IDE of your choice, but VSCode is a pretty good option.
 
 * Install [VS Code](https://code.visualstudio.com/)
 * Install the [Python extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+* Install the [Live Server extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ### Step X-M: Customize Zsh (strictly optional)
 
