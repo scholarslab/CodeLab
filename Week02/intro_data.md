@@ -1,268 +1,136 @@
 # Introduction to Data
 
-What is data?
+Q: Print it out and delete it? Let's set it aside and revisit it at the end.
 
-Q: Print it out and delete it?
+## How to data?
 
-How to represent data at the most basic level
-    Boolean values
-        Power symbol
-    Binary numbers
-    Binary arithmetic
-    Storing data in hardware
+Let's start off, like before, not by talking about computers (a subject that I'm relatively well-qualified to talk about) and instead by talking about linguistics (a subject that I'm not at all qualified to talk about).
 
-Representing other kinds of data using numbers
-    ASCII
-    Floating point numbers
+![Rocky!](assets/rocky_bed.png)
 
-Variables
+**What is this?**
 
-Sequences
-    Index
-    
+`It's a photo of Rocky, a dog, specifically an Australian Cattledog/red heeler, lounging on a blue fuzzy bed that he likes, a model recommended by Amanda. He's a very silly boy.`
 
-Exercise:
-    Write out in plain English an algorithm to sort a deck of cards
-    Write out in plain English an algorithm to find exact change
+This is a description which relies on a mapping of abstract concepts to symbols. The words "Australia" and "recommended" and "silly" convey meaning through our knowledge and our experience of the world. We're constantly "translating" symbols of different languages. There's a theory in the philosophy of the mind that there's a Language of Thought, that when we think in our brains we're using a cognitive language that we translate imperfectly into natural language when we speak. When we write down that speech, we translate the phonemes of our spoken language into written ones. Oftentimes, the translation isn't so consistent or unambiguous: the understanding of concepts like "recommend" or "silly" or even "Australia" differ dramatically from person to person, day to day, context to context.
 
+When we translate or convert symbols from one language or representation to another and there's a precise and consistent and unambiguous mapping of all the symbols, we call that _encoding_ and the system of rules to enact that translation a _code_.
 
+Morse Code is a well-known example of a code that encodes the latin alphabet, arabic numerals, and a few punctuation marks into a system of dots and dashes, signals that differ in duration. Well, this is not entirely true. If it was just dots and dashes, it would be a binary code, but it's not.
 
+![https://en.wikipedia.org/wiki/File:International_Morse_Code.svg](assets/morse.png)
 
-## What is data?
+**What can we make out about Morse code?**
 
+In Morse code we have an unambiguous and consistent mapping of letters into dots and dashes (and pauses). The particular format of using dots and dashes form, effectively, two different "letters" that have to be combined to form each of the symbols the encoding supports. 
 
+There is no casing in Morse code. Upper and lower case letters are the same. There are various international adaptations of Morse code that add accented letters and non-Latin alphabets, but the standard Morse code is not capable of conveying Cyrillic or Greek alphabets or non-alphabetical scripts without Romanization or an intermediate mapping layer.
 
-Computer programs are algorithms. These two things are so connected in the lay imagination that they are sometimes used as synonyms for each other. The media talks about "The Algorithm" when it describes Google's search and ad services, Netflix's recommendations, or TikTok's infinite video scroll, but an algorithm isn't some sort of magic tech thing. It's just a sequence of unambiguous procedures, like a particularly rigorous recipe. A computer program is an algorithm that's formatted in a language that a computer can understand.
+For efficiency, the most often-used letters are shorter. This reduces the overall length of the message and improved the speed that operators could send them. A bit of trivia: operators vocalizing the Morse code spoke dot and dash as "dit" and "dah", and this was then sometimes facetiously corrupted as "iddy" and "umpty". Perhaps related to the verbosity of numerals, this eventually led to the word "umpteen".
 
-But knowing the language is only part of writing code. We have to know *what* to tell a computer as well as *how*.
+Morse code could also be used in ways that didn't translate directly to English but still used English characters. Althought this table doesn't show it, we also had the historical practice of telegraph operators inventing shorthand code "words" to convey specific, more complex messages, the precursors of LMAO and ICYMI: BYOXO was "Are you trying to weasel out of our deal?"; BMULD was "You're a skunk!". On top of Morse code, a variety of other codes designed to facilitate specific domain languages flourished in the late 19th-early 20th century.
 
-One of the best ways to figure out the *what* is to think about how we might solve the same problem as humans. It's useful to break up things we intuitively conglomerate in our heads into discrete steps. We don't usually examine what we're actually doing when we make exact change or sort of deck of playing cards, so it's useful to make the effort to describe each step, algorithmically. After that, it's just a matter of translating our algorithm into computer language.
 
-This kind of process often helps us define the problem more concretely (what do we mean when we say "sort" a deck of cards?), identify ambiguity in our procedure, and discover unexpected "edge cases" that fall outside of our normal use.
+Let's get closer to talking about actual digital stuff. This is a good time to about Claude Shannon.
 
-## Python interpreter as calculator
-Let's get started with Python.
+## Claude Shannon
 
-Python comes with an interactive interpreter that executes your instructions as you enter them line by line. For beginners, it's an excellent way to sandbox your ideas or check your syntax. Start the interactive interpret using the `python` (or `python3`) command.
+![Claude Shannon on a unicycle](assets/shannon.jpg)
 
-One of the simplest things we can do is basic arithmetic:
+Shannon was an American electrical engineer and mathematician known for his foundational work on information theory and digital circuits, and for his enthusiasm for mathematical puzzles, juggling, unicycles, and computer chess. He created a machine (with his student, the AI pioneer Marvin Minsky) whose only function was to turn itself off.
 
-```python
-1+1
-2**3
-```
+In 1937, at the age of 22, he wrote a master’s thesis that established the fundamental principles of digital circuit design from which all modern computers were created. At 32, he published the landmark paper, *A Mathematical Theory of Communication* which founded the field of information theory. It's this paper that we're mostly interested in.
 
-You can exit using `exit()`. The interactive interpreter is useful to test out an idea or to double check syntax or whether the output of a function matches expectation. But what we type into the interactive interpreter isn't saved and we have to feed it line by line, so it's not a good way to actually write a computer program. For that, we can use VS Code.
+I think it's actually kind of funny, teaching Shannon and information theory in an introduction digital humanities tech course. There's a good deal of text analysis in DH, but Shannon worked out the fundamental ideas about information from the opposite direction.
 
-## Saving and running Python files
+After he got his doctorate, Shannon went to work at Bell Labs, where he worked on secure communications during World War II (when Alan Turing, working on breaking codes instead of making them, visited Bell in 1942, the two met for tea daily). One major problem with scrambling messages so that they can't be read is that messages written in human languages tended to be really predictable. At a basic level, there is an enormously uneven distribution of letters in English (as one example). At a higher level, some sequences of letters appear frequently while others never appear in any word and there are many more possible combinations of five letters than there are five-letter words. Predictability opened up weaknesses that codebreakers could exploit. In fact, Turing's work breaking the German Enigma cipher often relied on the frequency of common messages like "nothing to report".
 
-To write and save a Python program, the typical convention is to use the `.py` extension. When we save a file as a .py file in VS Code, it also tells VS Code that it contains Python code and will automatically activate code highlighting and syntax checking.
+In *A Mathematical Theory of Communication*, Shannon considered the meaning of this sort of uneven distribution. Let's say that we're playing a few rounds of the word game Hangman, but I take pity on how poorly you're doing and tell you one the first letter of a word right off the bat. **Do I give away more or less information if I tell you that the word starts with "S" or with "Q"?**
 
-To run a Python program that you've saved, we can use the `python` command through the terminal with the name of the file that contains your program (if running `python --version` in the terminal shows a 2.x version or "command not found", you will need to use `python3` instead):
+Shannon recognized that what the amount of information conveyed could be understood as entropy, essentially the degree to which you are surprised at learning something. If I tell you that the word starts with S, that fact tells you less than if I told you that the word starts with Q because many more words start with S than start with Q. In the same sense, telling you a losing lottery number conveys less information than telling you a winning lottery number. As we've seen, in communication, we often intuitively reduce the length of text by swapping out common letter combinations, phonemes, and phrases with shorter replacements: BMULD, LMAO, Ph.D., SLab, et al. Mechanically, we can reduce the size of lower entropy files like English text by compressing them.
 
-```
-python code.py
-```
+Shannon suggested that we could exactly quantify this degree of entropy to measure the information content. Consider a coin that has an equal chance of flipping heads or tails. Flipping that coin selects between two equally possible outcomes, producing an entropy of one "bit", a portmanteau of "Binary Digit".
 
-## A quick note about Python 2 and Python 3
-The Python programming language was first conceived in the late 1980s, but became popular after the release of Python 2.0 in 2000 (not to be confused with [Pythons 2](https://www.imdb.com/title/tt0330795/?ref_=nv_sr_3)) when the language switched to a more public code repository and a more open, community-driven development model.
+Hang on to that for a second.
 
-Python 3 is the current major version. It was released in 2008 as a major reformation of the language that made it more consistent and unified redundant mechanisms. Python 3 is not backwards compatible with Python 2; it is, in effect, a new language. You should definitely use Python 3 because Python 2 finally went away (as coders say, became "deprecated") after more than a decade of parallel adoption.
+A year after Shannon published *A Mathematical Theory of Communication*, he published an expanded version of the paper. In recognition that the ideas it contained were more universal and more fundamental than he had realized, Shannon titled this new version, *The Mathematical Theory of Communication*.
 
-Many computers come with Python already installed by default. Depending on how yours is set up, running `python` may run the Python 2 or Python 3 interpreter. To determine which one, run the command `python --version`. Pipenv should have this all sorted out, but more on this later.
 
-## Hello World
-### Variables, Functions, amd Parameters
-Let's take a look at the traditional program used as an introduction to countless programming students before you, Hello World:
+All of this is useful to keep in your short term memory as we transition to actually talking about data in a more digital context.
 
-```python
-print("Hello World!")
-```
+## Digital
 
-Try saving this code as a program and running it.
+So we've been dancing around this term, Digital Humanities. **But what exactly is "digital"? What is "analog"?**
 
-"Print" is a function, which is like a command. Functions are called by writing the function name followed by parenthesis. Inside the parenthesis are zero or more parameters, which are extra bits of information that you attach to the function. The "print" function simply writes out the data that's passed to it.
+Digital is, as the name suggests, something that has to do with numbers can count. Analog is "analogous" to reality. So what does this mean?
 
-If you're looking for help on the internet and ever see something like `print "foobar"` instead of `print("foobar")` (without the parenthesis), that's a sign that it's Python 2 code instead of Python 3!
+**A short exercise**: how do we, as people, count?
 
-## Variables
+When we count: one, two, three, etc, we are listing a set of discrete symbols. That's "discrete", meaning "distinct and separate" rather than "discreet", meaning "circumspect". So, these counting numbers are whole numbers, positive and negative, and zero; these are called integers.
 
-!["Monty Python"](assets/overlords.jpg)
+What's excluded from this set? For one, non-whole numbers, what mathematicians call "real numbers" that can have infinitesimally small differences between them. Think of it this way: there's no integer that sits between two and three, but there is an infinite number of real numbers between two and three.
 
-### String functions (concatenation)
-```python
-madlibs="Scholars' Lab"
-print("I, for one, 'welcome' our new "+madlibs+" overlords!")
-```
-Variables are little bits of information that are given names so that they can be modified or reused later. In the first line, we are assigning a string (a variable type that contains text) to a variable with the name "madlibs".
+![https://www.nga.gov/collection/art-object-page.56350.html](assets/rothko.png)
 
-Variable names have to start with a letter or an underscore and can only contain letters, numbers, and the underscore character. No spaces. They're also case-sensitive, so `SLAB` `slab` and `SLab` are different.
+We go to the East Building of the National Gallery of Art and look at this painting by Mark Rothko, _Orange and Tan_. What do we see? We stand closer and closer. We make the docent nervous. We lean forward, almost touching the paint with our foreheads. The docent starts to signal frantically to a guard. What do we see?
 
-In the second line, we use the + operator to concatenate three strings together and pass the result to print.
+From far away, we see the paint. From close in, we see the paint, bigger, and the paint between the paint. It's all paint. It's hues that shift continuously from one to the next, as colors mix into each other. When we zoom into this digital photograph of Rothko's _Orange and Tan_, what do we see?
 
-You can also "multiply" strings.
+When we visualize music performed by an physical instrument, it's as a continuous waveform. It's smooth and if we look closer and closer, we don't see any gaps. When we visualize a digital Spotify stream, it's a series of jagged stairs that aproximate the waveform. It's full of discontinuities. In the registers at the very edges of human hearing, the stream is designed to be more jagged.
 
-```python
-print("Scholars' L"+"a"*10+"b")
-```
+![https://www.youtube.com/watch?app=desktop&v=64FSgQdWHrE](assets/analog_digital.jpg)
 
-### Numbers
-```python
-a = 7
-b = 3
-a+b
-a/b
-```
-Integers are whole numbers. Floats (floating point numbers) are prepresentations of real numbers. Integers are simple and easy to use. Floats are mostly easy, but sometimes really weird!
+It turns out, computers don't really do "infinite". Remember the Babbage's Difference Engine: there's only so many gears with so many teeth. You can add more, but you can't add infinitely more. Digital computers are also machines that exist in reality and while we build them at a very small scale, we can't build infinitely small. So we get "digital" as a kind of compromise: these nice round numbers that don't exist in nature that we can use to aproximate the complexity of reality.
 
-### Weird Numbers
+There is what is probably best termed a _speculation_ in physics called "digital physics", which imagines that the universe is, at some level, a discrete, _countably_ measurable thing, that we get to a certain point and things stop getting smaller and become perfectly knowable. One implication of this idea is that the universe is functionally a digital computer itself. Digital physics is not a serious part of our current Physics, but the kind of understanding of the universe it implies is so abstractly distant that that might not actually be such a hurdle.
 
-What does this return?
+## What is a (digital) computer?
 
-```python
-0.1+0.2
-```
+Let's talk about what a computer is again, but this time let's not be cute about baboon bones. A computer is a box full of electricity that plays TikTok (Note: update cultural reference every 5 Praxis cohorts). It's a very complicated box, but when we zoom all the way in, the really important stuff is made up of transistors. A transistor is basically an electrical valve: if you switch it on, it allows electricity to flow through; switch it off and it doesn't. The trick is that the valve is controlled electrically also, so you arrange all the transistors in this complicated way where they're controlling each other and voila: TikTok.
 
-Huh, weird.
+As a rule of thumb, the more transistors (and the higher density of transistors), the more powerful the computer. We've gotten really good at making transistors really small. In the late 1960s, the Apollo Guidance Computer that navigated spaceships to the moon, a marvel of miniaturization, and back had around 10,000 transistors in it.
 
-!["There are 10 kinds of people in the world..."](assets/10kinds.jpeg)
+![https://en.wikipedia.org/wiki/Apollo_Guidance_Computer#/media/File:Agc_view.jpg](assets/Agc.jpg)
 
-(No one really understands binary)
+A decade later, this was roughly how much the first popular personal computers (the Apple II, the Radio Shack TRS-80) had. The main Apple M1 chip in my laptop, a model from a few years ago, has 16 billion transistors and a whole lot more when you consider the rest of the machine: the chips to control all the subsidiary functions of the laptop, and the chips to contain the memory and storage.
 
-All data in a computer is represented as binary (base 2) numbers, comprising only 1s and 0s. The text you're reading now is represented by individual characters that, under the hood, are stored as binary numbers. The method of translating these information between different forms and contexts (such as between binary numbers and text or numbers) is called encoding.
+Remember that a transistor is a valve with two settings: on and off, which we can also represent as True and False and as ones and zeros. So it has two states, kinda-sorta like Morse code. As a consequence of transistors being the most fundamental building block of computing, the fundamental "cognitive" abstraction of our computers, how they process and store information, is binary. Trivia: the On/Off power switch symbol is an ISO standard symbol comprising a one and a zero.
 
-Integers are easy enough to represent in binary: 0 is 0, 1 is 1, 2 is 10, 3 is 11, 4 is 100, and so on.
+# Binary data
 
-But floats are trickier and require a special system to represent. Don't worry about it for now, but consider for a moment that it's impossible to represent exactly 1/3 in finite decimal notation (0.3333...). It's similarly impossible to represent some simple decimal numbers in a binary notation. Which is why you get the weird results above.
+Morse code encoded decimal numerals, it translated the dots and dashes into decimal numerical symbols. With binary actually being represented as ones and zeros, we can directly understand binary data *as* numbers.
 
-[Float to Binary Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
+*A short exercise*: Seriously, how do we count?
 
-[IEEE 754 Standard](https://en.wikipedia.org/wiki/IEEE_754-1985) if you really want to learn more. You probably do not want to read this.
+As modern humans we typically use decimal numbers. _Deci_, meaning ten. I assume. We call it this because it uses _base ten_ position notation. There are ten numerals, zero to nine. When we count, we start at zero and advance through all of the numbers until we get to nine. After nine, we're out of numbers, so we reset back to zero and advance the next highest position by one. So, nine (or we can think of it as `09`) advances to ten (`10`).
 
-### Booleans
-```python
-print(True)
-print(False)
-print(True or False)
-print(True and False)
-print(not True)
-```
-True in Python is interchangeable with the number 1 and False with 0.
+Thinking about how we use decimal numbers is useful to understanding how we use binary ones. Using these rules, **how do we count in binary?**
 
-## Comments and Documentation
-### Inline Commenting
-```python
-# Help I'm stuck in a Python interpreter
-1+2+3
-```
+Because of binary, a lot of "computer numbers" tend to be powers of two. When you buy a new iphone, they come in 128gb (2<sup>7</sup>), 256gb (2<sup>8</sup>), and 512gb (2<sup>9</sup>) models. As you work with computers, these powers of two will show up everywhere. You'll become very familiar with 2, 4, 8, 16, 32, 64, 128, and 256.
 
-Comments are especially useful--necessary!--for collaboration. Python is open source and its community of millions of coders often share in its permissive approach to intellectual property. Python as a whole is a giant collaborative project of which you are now members.
+Let's take a closer look at the decimal system. Every position is a power of ten: 10 = 10<sup>1</sup>, 100 = 10<sup>2</sup>, 1000 = 10<sup>3</sup>, etc. Each additional decimal position adds 10 times as many possible values: 1 digit has 10<sup>1</sup> possibilities (0-9), 2 digits has 10<sup>2</sup> (0-99), etc. In binary, each position adds twice as many possible values.
 
-When you write particularly complicated logic or whenever you write new classes or functions (more on this later!), you should write a comment to explain yourself.
+Remember Shannon and his bits? One bit is one binary position. 1 binary digits has 2<sup>1</sup> = 2 different possible values (0-1), 2 has 2<sup>2</sup> = 4 (00, 01, 10, and 11), 3 has 2<sup>3</sup> (000, 001, 010, 011, 100, 101, 110, 111), and so on.
 
-### Documentation
+## Boolean
 
-Python, as with virtually all other languages and complex codes, contains extensive documentation that covers all aspects of its use. This documentation is [easily accessible via the Internet](assets/MissionImpossible.m4v?raw=true).
+There's an even simpler kind of data to represent using binary numbers than whole numbers: booleans. Named for mathematician George Boole, who did some early work on this, Boolean data is just True and False. We represent True as one and False as zero. Booleans are useful for computer scientists and electrical engineers to know because they directly mirror the states of transistors and, even as digital humanists, we can use boolean logic to do a lot of useful programmy stuff. But that's really for another week (or another semester).
 
-[Python 3 Documentation](https://docs.python.org/3/)
+## Text
 
-Let's take a look at the specific documentation for strings:
+These number systems are just different representations of the same numerical ideas. Other forms of data can be encoded using numbers. Under the hood, each character in text data is represented on a character encoding table that map numbers to letters. An important and influential encoding scheme is ASCII: the American Standard Code for Information Interchange, formalized in 1968. ASCII maps Latin letters and Arabic numerals, as well as common punctuation symbols, to a set of 128 numbers. 128 is 2^7, so these numbers can be represented by a total of 7 bits. 
 
-[Python 3 Docs: Built-in Types: Strings](https://docs.python.org/3/library/stdtypes.html#string-methods)
+![ASCII table](assets/ascii.png)
 
-Learning to read documentation is a critical skill for succeeding as a programmer. Happily, most of you, as graduate students, should already be literate.
+Since the 1960s, software developers have created a plethora of character encodings, often to represent characters from other languages. Although you might occasionally run into these in older datasets, the singular modern text standard is called Unicode (well, sort of singular, since it's a family of encodings), which strives express the complete canon of human language. The current specification, Unicode 13, encompasses 143000 characters, including emoji and archaic scripts. The first 128 characters of Unicode are identical to ASCII, which helps maintain backwards compatibility with older Latin text data.
 
-## Interlude: The Zen of Python
-### What's the deal with Python? 
-Type this into Python:
-```python
-import this
-```
+Under Unicode (UTF-8, specifically), a Latin alphabet character takes 8 bits to store.
 
-Here's [one interpretation of Z of P](https://inventwithpython.com/blog/2018/08/17/the-zen-of-python-explained/).
+## Colors
 
-Also, a DH answer: lots of DH projects are written in Python because of its simplicity and robust community and its popularity in areas like text analysis and machine learning.
+Computers express color using a series of numbers representing the mixture of additive or subtractive colors. For digital displays, the RGB system is the most common. This comprises a set of three numbers representing the amount of red, green, and blue light ("channels"). Early color computer displays used a single bit (on/off) to represent each color, but the most common standard is 8 bits per channel (0-255) for a total of 24 bits (or 16 million total color combinations). 
 
-## Saving and running code
-The Python interactive interpreter is very useful for experimentation, but if you want to write something less ephemereal, you'll want to save it as a file so that it can be run over again without going through it line by line. The code is exactly the same, just save it as a text file to your disk with the usual Python file format extension, .py.
+Colors are most often shown as hexadecimal numbers (base 16). Hexadecimal uses 0 to 9 and then A to F. Since each hex digit is equivalent to 4 binary digits, each 8-bit color channel can be represented by 2 hex digits. If we look at the [Scholars' Lab website](https://scholarslab.org/) and dig through the stylesheet, we will see that the background color is defined as `000000`, a set of three hexadecimal numbers indicating that each color should be 00 out of FF in hex, which is also 0 out of 255 in decimal. This is the blackest black. Links are underlined with the color `75e3f0`, which is a little red and a lot of green and blue resulting in a cyan color.
 
-Now, you can run the resulting file using the command `python code.py` (or `python3 code.py`).
-
-There are some important differences in behavior between running code through the interactive interpreter and as a saved .py file. The way that we've been using the interpreter so far has relied on how it returning values that we reference.
-
-If we run these two lines in the interactive interpreter, we see that the second statement prints 2 because Python assumes that we want to know more about it:
-
-```
->>> a = 1+1
->>> a
-2
-```
-
-If we ran these lines from a .py file, nothing will print at all because the statement `a` on the second line doesn't actually tell Python to do anything. In a .py file, we have to explicitly tell Python to print using the print() function.
-
-```python
-a = 1+1
-a
-```
-
-## Input
-Code that always does the same thing is a little boring. Let's spice up the earlier example a bit with user input.
-```python
-madlibs=input("What manner of overlords do you, for one, welcome? ")
-print("I, for one, welcome our new "+madlibs+" overlords!")
-```
-
-We can see here that `input` is a function, just like `print`. `input` asks the user to type something and then it "returns" that something back to Python. We'll be writing our own functions soon enough. For now, it's important mainly to understand that functions can hand back bits of data and, like mathematical functions, we can treat the function and the result interchangably in our code. So, if we were to run the example above and the user types in "Hazel", the string "Hazel" would be saved into the variable `madlibs` just as if we'd coded `madlibs="Hazel"`.
-
-## Sequences
-### Lists
-
-![Bad Pun Hazel](assets/sleeping_hazel.jpeg)
-
-```python
-dogs = ["Toby","Bofur","Hazel","Maple","Henry","Fat Dog","Monty", "Keefa", "Triscuit"]
-print(dogs[0])
-print(dogs[-1])
-print(dogs[3:])
-print(len(dogs))
-dogs.sort()
-print(dogs)
-dogs.sort(reverse=True)
-print(dogs)
-```
-
-Lists are one type of sequence, which are ordered collections of variables (including sequences, so you can have lists of lists).
-
-[Python 3 Docs: Built-in Types: Sequence Types](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range)
-
-Strings are actually sequence types, just like lists! They're sequences of characters and we can address particular characters just like with lists.
-
-```python
-gooddog = "Hazel is a good dog"
-print("Every dog"+gooddog[5:])
-```
-
-## Modules
-### Python Standard Library
-```python
-import random
-print(random.randint(0,10))
-```
-
-[Python 3 Docs: Standard Library: Numeric and Mathematical: Random](https://docs.python.org/3/library/random.html#module-random)
-
-Of course, you don't always want to write your own code. Programmers are ~~lazy~~ efficient. Python has a famously robust built-in Standard Library so you can reuse the work of thousands of programmers who have contributed to it. This Standard Library is part of the language itself and is included in every Python installation.
-
-For more specialized tasks, it's also easy to use the work of third party developers. But we'll leave that to another week.
-
-## Let's Hope You Paid Attention!
-### Work together!
-Pair programming is a common practice. We want you to always do pair programming. Let's write some code together, right now, to assign each of you a partner for this week's homework using what we've just learned!
-
-Let's start with a list of names:
-
-```python
-praxis = ["Caroline", "Malcolm", "Samantha", "Winnie"]
-```
-
-Hint: there's a section in the Random library documentation [just for working with sequences](https://docs.python.org/3/library/random.html#functions-for-sequences)
+## Also: Bytes!
+Byte is another common unit of measurement for data. The term is a play on bit and was coined in the 1950s for Project SAGE, a prototype computer system to coordinate American air defenses in the Cold War. There is some historical ambiguity, but a modern byte is 8 bits, representing the smallest power-of-2 size for useful data (such as a single character or a small integer). Bytes and bits are often modified with metric scale prefixes: kilobyte, megabit, gigabyte etc. This is a bit of a mess because it mixes binary units with decimal prefixes, but that's how we get our current popular units for data size.
