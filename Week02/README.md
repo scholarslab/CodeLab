@@ -8,9 +8,6 @@
 2. How to data
 3. Basic data representations
 
-## Resources
-[Python data types cheatsheet](types_cheatsheet.md)
-
 ## New Terms
 * **Analog**: Relating to continuous numerical values of infitesimal granularity
 * **Binary**: Base-2 numeral system, consisting only of 0 and 1. Counting up from 0, the binary numbers are: 0, 1, 10, 11, 100, 101, 110, 111, 1000...
@@ -25,7 +22,7 @@
 
 ## Do:
 
-1. This is an exercise in some of the more fundamental work skills of the Digital Humanities: let's do some searching and some back of the envelope estimation. From a purely energy perspective, is it actually a good idea to print out and delete all our digital documents rather than letting them stay digital? We don't have to be exact. Feel free to make assumptions that you can argue for.
+1. <strike>This is an exercise in some of the more fundamental work skills of the Digital Humanities: let's do some searching and some back of the envelope estimation. From a purely energy perspective, is it actually a good idea to print out and delete all our digital documents rather than letting them stay digital? We don't have to be exact. Feel free to make assumptions that you can argue for.</strike> We'll get to this next week.
 
 2. Let's flex our algorithmic thinking muscles some more. Write out in plain English an algorithm to sort a deck of cards.
 

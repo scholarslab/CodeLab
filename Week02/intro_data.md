@@ -4,7 +4,7 @@ Q: Print it out and delete it? Let's set it aside and revisit it at the end.
 
 ## How to data?
 
-Let's start off, like before, not by talking about computers (a subject that I'm relatively well-qualified to talk about) and instead by talking about linguistics (a subject that I'm not at all qualified to talk about).
+Let's start off, like before, not by talking about computers (a subject that I'm relatively well-qualified to talk about) and instead by talking about a subject that I'm not at all qualified to talk about (linguistics).
 
 ![Rocky!](assets/rocky_bed.png)
 
@@ -54,7 +54,6 @@ Shannon suggested that we could exactly quantify this degree of entropy to measu
 Hang on to that for a second.
 
 A year after Shannon published *A Mathematical Theory of Communication*, he published an expanded version of the paper. In recognition that the ideas it contained were more universal and more fundamental than he had realized, Shannon titled this new version, *The Mathematical Theory of Communication*.
-
 
 All of this is useful to keep in your short term memory as we transition to actually talking about data in a more digital context.
 
