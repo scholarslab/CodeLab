@@ -100,7 +100,7 @@ Remember that a transistor is a valve with two settings: on and off, which we ca
 
 Morse code encoded decimal numerals, it translated the dots and dashes into decimal numerical symbols. With binary actually being represented as ones and zeros, we can directly understand binary data *as* numbers.
 
-*A short exercise*: Seriously, how do we count?
+**A short exercise**: Seriously, how do we count?
 
 As modern humans we typically use decimal numbers. _Deci_, meaning ten. I assume. We call it this because it uses _base ten_ position notation. There are ten numerals, zero to nine. When we count, we start at zero and advance through all of the numbers until we get to nine. After nine, we're out of numbers, so we reset back to zero and advance the next highest position by one. So, nine (or we can think of it as `09`) advances to ten (`10`).
 
