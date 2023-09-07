@@ -4,7 +4,7 @@
 
 When we use virtually any natural language, we don't just use words. We also use a rich array of punctuation marks, spacing, pauses, intonations, and all the accompanying accoutrement of language. Think about the stereotypical telegram message in a movie: there's a lot of use of the word "stop", meaning a period, as in "full stop." Which is interesting, since Morse code actually encodes punctuation, including the period symbol. But instead of using it, the general convention was to spell out the word "stop" in order to have more redundancy because punctuation was so important to the understanding of messages.
 
-![Morse code in The Addams Family (1991)](TheAddamsFamily_morse.webm)
+![Morse code in The Addams Family (1991)](assets/TheAddamsFamily_morse.webm)
 
 Punctuation and spacing are pretty important for most natural languages. The standard joke about comma usage is the difference between "Let's eat, Grandpa!" and "Let's eat Grandpa!" When we use them, it's often a way to add _structure_ to the linear flow of words, in the most basic sense to help break up clauses so that semantically proximate words are also physically or temporally proximate. Without this structure, we have a stream that must mostly be understood ambiguously through interpretation.
 
