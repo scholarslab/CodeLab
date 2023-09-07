@@ -1,6 +1,6 @@
 # Week 3: Structured Data
 
-[Rocky!](assets/rocky_eyes.jpg)
+![Rocky!](assets/rocky_eyes.jpg)
 
 ## Lesson
 [Lesson document](structured_data.md)
