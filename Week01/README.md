@@ -18,7 +18,7 @@ Hi there. Welcome to CodeLab. This is Shane, writing from various times in the p
 
 We're going to start off our Code Lab journey without actually writing any code. This first week we'll be talking a little bit about what code is and a lot about a very long debate within the Digital Humanities community about the relationship between coding knowledge and practice and DH scholarship. It's a debate that people are generally sick of having, but I'm going to keep at it because 1) I have very strong feels about it and 2) I am, in a lot of ways, on the losing side of the debate.
 
-As part of this discussion, I'm going to encourage all of you to think about what computation is and how to "think" like a computer: in discreet and unambiguous steps.As we progress through the year, keep these ideas in mind; imagine how a computer does the kinds of things it does "under the hood" and try to get a feel for what kinds of problems might be easy or hard for a computer to do.
+As part of this discussion, I'm going to encourage all of you to think about what computation is and how to "think" like a computer: in discreet and unambiguous steps. As we progress through the year, keep these ideas in mind; imagine how a computer does the kinds of things it does "under the hood" and try to get a feel for what kinds of problems might be easy or hard for a computer to do.
 
 ## CodeLab Resources
 * [Environment Setup Instructions](environment_setup.md)

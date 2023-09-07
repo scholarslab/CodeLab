@@ -1,0 +1,4483 @@
+The Project Gutenberg eBook, R.U.R., by Karel Èapek
+
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org
+
+
+
+
+
+Title: R.U.R.
+
+Author: Karel Èapek
+
+Release Date: August 2, 2004  [eBook #13083]
+
+Language: Czech
+
+Character set encoding: UTF-8
+
+
+***START OF THE PROJECT GUTENBERG EBOOK R.U.R.***
+
+
+Thanks to Curtis Weyant and Al Haines for creating plain text from HTML. 
+The HTML came from an anonymous donor.
+
+
+
+
+Karel Èapek
+
+R.U.R.
+
+(Rossum´s Universal Robots)
+
+Kolektivní drama o vstupní komedii a tøech dìjstvích
+
+
+
+OSOBY
+
+
+
+Harry Domin: centrální øeditel Rossumovıch Univerzálních Robotù
+In. Fabry: generální technickı øeditel R.U.R.
+Dr. Gall: pøednosta fyziologického a vızkumného oddìlení R.U.R.
+Dr. Hallemeier: pøednosta ústavu pro psychologii a vıchovu robotù R.U.R
+Konzul Busman: generální komerèní øeditel R.U.R.
+Stavitel Alquist: šéf staveb R.U.R.
+Helena Gloryová
+Nána: její chùva
+Marius: Robot
+Sulla: Robotka
+Radius: Robot
+Damon: Robot
+1. Robot
+2. Robot
+3. Robot
+4. Robot
+Primus: Robot
+Helena: Robotka
+Robotskı sluha
+a èetní Roboti
+
+Domin: v pøedehøe asi osmatøicetiletı, vysokı, oholenı
+
+Fabry: rovnì oholenı, plavı, váné a jemné tváøe
+
+Dr. Gall: drobnı, ivı, snìdı, s èernım knírem
+
+Hallemeier: ohromnı, hømotnı, se zrzavım anglickım knírem a zrzavım
+    kartáèem vlasù
+
+Busman: tlustı, plešatı, krátkozrakı id
+
+Alquist: starší ne ostatní, nedbale obleèenı, dlouhıch, prošedivìlıch
+    vlasù a vousù
+
+Helena: velmi elegantní
+
+Ve vlastní høe všichni o deset let starší.
+
+Roboti v pøedehøe obleèeni jako lidé. Jsou úseèná v pohybech i
+vıslovnosti, bezvıraznıch tváøí, upøeného pohledu. Ve vlastní høe mají
+plátìné blùzy v pasu staené øemenem a na prsou mosazné èíslo.
+
+Po pøedehøe a druhém aktu pøestávka.
+
+
+
+
+Pøedehra
+
+
+
+Ústøední kanceláø továrny Rossum s Universal Robots. Vpravo vchod. Okny
+v prùèelní stìnì pohled na nekoneèné øady továrních budov. Vlevo další
+øeditelské místnosti.
+
+Domin: (sedí u velikého amerického psacího stolu v otáèecím køesle. Na
+    stole árovka, telefon, tìítka, poøadaè dopisù, atd., na stìnì vlevo
+    veliké mapy s lodními a eleznièními liniemi, velikı kalendáø, hodiny,
+    je ukazují nìco málo pøed polednem; na stìnì vpravo tištìné plakáty:
+    "Nejlacinìjší práce: Rossumovi Roboti" "Tropiètí Roboti, novı vynález.
+    Kus 150 d." "Kadı si kup svého Robota!" "Chcete zlevnit svoje
+    vırobky? Objednejte si Rossumovy Roboty." Dále jiné mapy, dopravní
+    lodní øád, tabulka s telegrafickımi záznamy kursù atd. V kontrastu k
+    této vızdobì stìn je na zemi nádhernı tureckı koberec, vpravo kulatı
+    stùl, pohovka, koená klubovní køesla a knihovna, v ní místo knih
+    stojí láhve s vínem a koøalkami. Vlevo pokladna. Vedle Dominova stolu
+    psací stroj, na nìm píše dívka Sulla.)
+
+Domin: (diktuje) "--e neruèíme za zboí poškozené dopravou. Upozornili
+    jsme vašeho kapitána hned pøi nakládání, e loï je nezpùsobilá k
+    dopravì Robotù, take zkáza nákladu nepadá na náš úèet. Znamenáme se--
+    za Rossum s Universal Robots--" Hotovo?
+
+Sulla: Ano.
+
+Domin: Novı list. Friedrichswerke, Hamburk.--Datum.--"Potvrzujeme
+    objednávku patnáct tisíc Robotù--" (zazvoní domácí telefon. Domin jej
+    zvedne a mluví do nìho) Haló--Zde centrální--ano.--Zajisté. Ale
+    ano, jako vdycky.--Ovšem, kabelujte jim.--Dobrá--(zavìsí telefon)
+    Kde jsem pøestal?
+
+Sulla: Potvrzujeme objednávku na patnáct tisíc R.
+
+Domin: (zamyšlenì) Patnáct tisíc R. Patnáct tisíc R.
+
+Marius: (vstoupí) Pane øediteli, nìjaká dáma prosí--
+
+Domin: Kdo?
+
+Marius: Nevím. Podává vizitku.
+
+Domin: (ète) Prezident Glory.--e prosím.
+
+Marius: (otevøe dveøe) Raète, paní.
+
+(vejde Helena Gloryová. Marius odejde)
+
+Domin: (vstane) Raète.
+
+Helena: Pan centrální øeditel Domin?
+
+Domin: Prosím.
+
+Helena: Jdi k vám--
+
+Domin:--s lístkem prezidenta Gloryho. To staèí.
+
+Helena: Prezident Glory je mùj otec. Jsem Helena Gloryová.
+
+Domin: Sleèno Gloryová, je pro nás neobyèejnou ctí, e--e--
+
+Helena:--e vám nemùeme ukázat dveøe.
+
+Domin:--e smíme pozdravit dceru velkého prezidenta. Prosím, posaïte se.
+    Sullo, mùete odejít. (Sulla odejde)
+
+Domin: (usedne) Èím mohu poslouit, sleèno Gloryová?
+
+Helena: Já jsem pøijela--
+
+Domin:--podívat se na naši tovární vırobu lidí. Jako všechny návštìvy.
+    Prosím, beze všeho.
+
+Helena: Myslela jsem, e je zakázáno--
+
+Domin:--vstoupit do továrny, ovšem. Jene kadı sem pøijde s nìèí
+    vizitkou, sleèno Gloryová.
+
+Helena: A vy ukáete kadému ... ?
+
+Domin: Jen nìco. Vıroba umìlıch lidí, sleèno, je tovární tajemství.
+
+Helena: Proè mne nenecháte domluvit?
+
+Domin: Prosím za prominutí. Chtìla jste snad øíci nìco jiného?
+
+Helena: Chtìla jsem se jen zeptat--
+
+Domin:--zda bych vám zcela vıjimeènì neukázal naši továrnu. Ale zajisté,
+    sleèno Gloryová.
+
+Helena: Jak víte, e jsem se na to chtìla ptát?
+
+Domin: Všichni se ptají stejnì. Vstane. Ze zvláštní úcty, sleèno, vám
+    ukáeme víc ne jinım a--jedním slovem--
+
+Helena: Dìkuji vám.
+
+Domin: Zaváete-li se, e nikomu neprozradíte ani to nejmenší--
+
+Helena: (vstane a podává mu ruku) Mé èestné slovo.
+
+Domin: Dìkuji. Nechtìla byste snad sejmout závoj?
+
+Helena: Ach ovšem, vy chcete vidìt--Promiòte.
+
+Domin: Prosím?
+
+Helena: Kdybyste mi pustil ruku.
+
+Domin: (pustí) Prosím za prominutí.
+
+Helena: (snímá závoj) Chcete vidìt, nejsem-li vyzvìdaè. Jak jste opatrní.
+
+Domin: (pozoruje ji nadšenì) Hm--ovšem--my--tak jest.
+
+Helena: Vy mi nedùvìøujete?
+
+Domin: Neobyèejnì, sleèno hele--pardon, sleèno Gloryová. Vskutku
+    neobyèejnì potìšen--Mìla jste dobrou plavbu?
+
+Helena: Ano. Proè--
+
+Domin: Protoe--míním toti--e jste ještì velmi mladá.
+
+Helena: Pùjdeme hned do továrny?
+
+Domin: Ano. Myslím dvaadvacet, ne?
+
+Helena: Dvaadvacet èeho?
+
+Domin: Let.
+
+Helena: Jedenadvacet. Proè to chcete vìdìt?
+
+Domin: Protoe--ponìvad--(s nadšením) Zdríte se déle, e ano?
+
+Helena: Podle toho, co mi ukáete z vıroby.
+
+Domin: Èertova vıroba! Ale zajisté, sleèno Gloryová, všechno uvidíte.
+    Prosím, posaïte se. Zajímala by vás historie vynálezu?
+
+Helena: Ano, prosím vás. (usedne)
+
+Domin: Tak tedy. (sedne si na psací stùl, pozoruje Helenu uchvácen a
+    odøíkává rychle) Bylo to roku 1920 kdy se starı Rossum velikı filozof
+    ale tehdy ještì mladı uèenec odebral na tento dalekı ostrov aby
+    studoval moøské ivoèišstvo teèka. Pøitom se pokoušel napodobit
+    chemickou syntézou ivou hmotu øeèenou protoplazma a najednou objevil
+    látku která se chovala naprosto jako ivá hmota aè byla jiného
+    chemického sloení to bylo roku 1932, právì ètyøi sta ètyøicet let po
+    objevení Ameriky, uf.
+
+Helena: To umíte zpamìti?
+
+Domin: Ano; fyziologie, sleèno Gloryová, není mım øemeslem. Tak dál?
+
+Helena: Tøeba.
+
+Domin: (slavnostnì) A tehdy, sleèno, starı Rossum napsal mezi své chemické
+    vzorce tohleto: "Pøíroda našla jeden zpùsob, jak organizovat ivou
+    hmotu. Je však jinı zpùsob, jednodušší, tvárnìjší a rychlejší, na nìj
+    pøíroda vùbec nenarazila. Tuto druhou cestu, po které se mohl brát
+    vıvoj ivota, jsem dnešního dne objevil." Pøedstavte si, sleèno, e
+    tahle veliká slova psal nad chrchlem jakéhosi koloidálního rosolu,
+    kterı by ani pes neseral. Pøedstavte si ho, e sedí nad zkumavkou a
+    myslí na to, jak z ní vyroste celı strom ivota, jak z ní budou
+    vycházet všechna zvíøata, poèínajíc víøníkem a konèíc--konèíc
+    samotnım èlovìkem. Èlovìk z jiné látky, ne jsme my. Sleèno Gloryová,
+    to byl ohromnı okamik.
+
+Helena: Tak dál.
+
+Domin: Dál? Teï šlo o to, dostat ivot ze zkumavky ven a zrychlit vıvoj a
+    utvoøit nìjaké ty orgány, kosti a nervy a kdesi cosi a nalézt jakési
+    takové látky, katalyzátory, enzymy, hormóny a tak dále, zkrátka,
+    rozumíte tomu?
+
+Helena: N--n--nevím. Myslím, e jen málo.
+
+Domin: Já docela nic. Víte, pomocí tìch vodièek mohl dìlat, co chtìl. Mohl
+    tøeba dostat medúzu se sokratovskım mozkem nebo íalu padesát metrù
+    dlouhou. Ale protoe nemìl kousku humoru, vzal si do hlavy, e udìlá
+    normálního obratlovce nebo snad èlovìka. A tak se do toho pustil.
+
+Helena: Do èeho?
+
+Domin: Do napodobení pøírody. Nejdøív zkusil udìlat umìlého psa. Stálo ho
+    to øadu let, vyšlo z toho cosi jako zakrnìlé tele a pošlo to za pár
+    dní. Ukáu vám to v muzeu. A pak u se dal starı Rossum do vytváøení
+    èlovìka.
+
+(Pauza)
+
+Helena: A to nesmím nikomu prozradit?
+
+Domin: Nikomu na svìtì.
+
+Helena: Škoda, e u je to ve všech èítankách.
+
+Domin: Škoda. Seskoèí ze stolu a usedne vedle Heleny. Ale víte, co v
+    èítankách není? uká si na èelo. e byl starı Rossum úasnı blázen.
+    Vánì, sleèno Gloryová, ale tohle nechte pro sebe. Ten starı
+    vıstøedník chtìl opravdu dìlat lidi.
+
+Helena: Ale vdy vy dìláte lidi!
+
+Domin: Pøiblinì, sleèno Heleno. Ale starı Rossum to mínil doslovnì. Víte,
+    chtìl jaksi vìdecky sesadit Boha. Byl strašlivı materialista, a proto
+    to všechno dìlal. Nešlo mu o nic víc ne podat dùkaz, e nebylo
+    ádného Pánaboha zapotøebí. Proto si umanul udìlat èlovìka navlas,
+    jako jsme my. Znáte trochu anatomii?
+
+Helena: Jen--docela málo.
+
+Domin: Já také. Pøedstavte si, e si vzal do hlavy vyrobit všechno do
+    poslední lázy jako v lidském tìle. Slepé støevo, mandle, pupek, samé
+    zbyteènosti. Dokonce i--hm--i pohlavní lázy.
+
+Helena: Ale ty pøece--ty pøece--
+
+Domin:--nejsou zbyteèné, já vím. Ale mají-li se lidé umìle vyrábìt, pak
+    není--hm--nijak tøeba--
+
+Helena: Rozumím.
+
+Domin: Ukáu vám v muzeu, co spackal za deset let dohromady. Mìl to bıt
+    mu, ilo to celé tøi dny. Starı Rossum nemìl trochy vkusu. Bylo to
+    hrozné. Bylo to hrozné, co udìlal. Ale mìlo to uvnitø všechno, co má
+    èlovìk. Skuteènì, úasnì piplavá práce. A tehdy sem pøišel inenır
+    Rossum, synovec starého. Geniální hlava, sleèno Gloryová. Jak uvidìl,
+    co tropí starı, øekl: "To je nesmysl, vyrábìt èlovìka deset let.
+    Nebudeš-li ho vyrábìt rychleji ne pøíroda, pak na ten celı krám
+    nakašlat." A pustil se sám do anatomie.
+
+Helena: V èítankách je to jinak.
+
+Domin: (vstane) V èítankách je placená reklama a ostatnì nesmysl. Stojí
+    tam napøíklad, e Roboty vynalezl starı pán. Zatím e starı pán hodil
+    na univerzitu, ale o tovární vırobì nemìl ponìtí. Myslel, e udìlá
+    skuteèné lidi, tedy snad nìjaké nové Indiány, docenty nebo idioty,
+    víte? A teprve mladı Rossum mìl nápad udìlat z toho ivé a
+    inteligentní pracovní stroje. Co je v èítankách o spolupráci obou
+    velikıch Rossumù, je povídaèka. Ti dva se ukrutnì hádali. Starı
+    ateista nemìl drobet pochopení pro industrii, a koneènì ho mladı
+    zavøel do nìjaké laboratoøe, aby se tam piplal se svımi velikımi
+    potraty, a zaèal to vyprávìt sám, po inenırsku. Starı Rossum ho
+    doslovnì proklel a do své smrti usmolil ještì dvì fyziologické obludy,
+    a ho nakonec našli v laboratoøi mrtvého. To je celá historie.
+
+Helena: A co tedy mladı?
+
+Domin: Mladı Rossum, sleèno, to byl novı vìk. Vìk vıroby po vìku poznání.
+    Kdy si okoukl anatomii èlovìka, vidìl hned, e je to pøíliš sloité a
+    e by to dobrı inenır udìlal jednodušeji. Zaèal tedy pøedìlávat
+    anatomii a zkoušel, co se dá vynechat nebo zjednodušit--Zkrátka,
+    sleèno Gloryová, nenudí vás to?
+
+Helena: Ne, naopak, je to hroznì zajímavé.
+
+Domin: Tak tedy mladı Rossum si øekl: Èlovìk, to je nìco, co dejme tomu
+    cítí radost, hraje na housle, chce jít na procházku a vùbec potøebuje
+    dìlat spoustu vìcí, které--které jsou vlastnì zbyteèné.
+
+Helena: Oho!
+
+Domin: Poèkejte. Které jsou zbyteèné, kdy má tøeba tkát nebo sèítat.
+    Naftovı motor nemá mít tøapce a ornamenty, sleèno Gloryová. A vyrábìt
+    umìlé dìlníky je stejné jako vyrábìt naftové motory. Vıroba má bıt co
+    nejjednodušší a vırobek prakticky nejlepší. Co myslíte, jakı dìlník je
+    prakticky nejlepší?
+
+Helena: Nejlepší? Snad ten, kterı--kterı--Kdy je poctivı--a oddanı.
+
+Domin: Ne, ale ten nejlacinìjší. Ten, kterı má nejmíò potøeb. Mladı Rossum
+    vynalezl dìlníka s nejmenším poètem potøeb. Musel ho zjednodušit.
+    Vyhodil všechno, co neslouí pøímo práci. Tím vlastnì vyhodil èlovìka
+    a udìlal Robota. Drahá sleèno Gloryová, Roboti nejsou lidé. Jsou
+    mechanicky dokonalejší ne my, mají úasnou rozumovou inteligenci, ale
+    nemají duši. Ó, sleèno Gloryová, vırobek inenıra je technicky
+    vytøíbenìjší ne vırobek pøírody.
+
+Helena: Øíká se, e èlovìk je vırobek boí.
+
+Domin: Tím hùø. Bùh nemìl ani ponìtí o moderní technice. Vìøila byste, e
+    si nebotík mladı Rossum zahrál na Boha?
+
+Helena: Jak, prosím vás?
+
+Domin: Zaèal vyrábìt Nadroboty. Pracovní obry. Zkusil to s postavami
+    ètyømetrovımi, ale to byste nevìøila, jak se ti mamuti lámali.
+
+Helena: Lámali?
+
+Domin: Ano. Z nièeho nic jim praskla noha nebo nìco. Naše planeta je
+    patrnì trochu malá pro obry. Teï dìláme jen Roboty pøirozené velikosti
+    a velmi slušné lidské úpravy.
+
+Helena: Vidìla jsem první Roboty u nás. Obec je koupila ... chci øíci
+    vzala do práce--
+
+Domin: Koupila, drahá sleèno. Roboti se kupují.
+
+Helena:--získala jako metaøe. Vidìla jsem je mést. Jsou tak divní, tak
+    tiší.
+
+Domin: Vidìla jste mou písaøku?
+
+Helena: Nevšimla jsem si.
+
+Domin: (zvoní) Víte, akciová továrna Rossumovıch Univerzálních Robotù
+    dosud nevyrábí jednotné zboí. Máme jemnìjší a hrubší Roboty. Ti lepší
+    budou snad ít dvacet let.
+
+Helena: Pak hynou?
+
+Domin: Ano, opotøebují se.
+
+(vstoupí Sulla)
+
+Domin: Sullo, ukate se sleènì Gloryové.
+
+Helena: (vstane a podává jí ruku) Tìší mne. Je vám asi hroznì smutno tak
+    daleko od svìta, viïte?
+
+Sulla: To neznám, sleèno Gloryová. Raète usednout, prosím.
+
+Helena: (usedne) Odkud jste, sleèno?
+
+Sulla: Odtud, z továrny.
+
+Helena: Ach, vy jste se narodila tady?
+
+Sulla: Ano, byla jsem tu udìlána.
+
+Helena: (vyskoèí) Coe?
+
+Domin: (smìje se) Sulla není èlovìk, sleèno, Sulla je Robot.
+
+Helena: Prosím za odpuštìní--
+
+Domin: (poloí ruku Sulle na rameno) Sulla se nehnìvá. Podívejte se,
+    sleèno Gloryová, jakou dìláme ple. Sáhnìte jí na tváø.
+
+Helena: Oh, ne, ne!
+
+Domin: Nepoznala byste, e je z jiné látky ne my. Prosím, má i typické
+    chmıøí blondınek. Jen oèi jsou drobátko--Ale zato vlasy! Obrate se,
+    Sullo!
+
+Helena: Pøestaòte u!
+
+Domin: Pohovoøte s hostem, Sullo. Je to vzácná návštìva.
+
+Sulla: Prosím, sleèno, posaïte se. (obì usednou) Mìla jste dobrou plavbu?
+
+Helena: Ano--za--zajisté.
+
+Sulla: Nevracejte se po Amélii, Sleèno Gloryová. Barometr silnì klesá, na
+    705. Poèkejte na Pensylvánii, to je velmi dobrá, velmi silná loï.
+
+Domin: Kolik?
+
+Sulla: Dvacet uzlù za hodinu. Toná dvanáct tisíc.
+
+Domin: (smìje se) Dost, Sullo, dost. Ukate nám, jak umíte francouzsky.
+
+Helena: Vy umíte francouzsky?
+
+Sulla: Umím ètyøi jazyky. Píši Dear Sir! Monsieur! Geehrter Herr! Ctìnı
+    pane!
+
+Helena: (vyskoèí) To je humbuk! Vy jste šarlatán! Sulla není Robot, Sulla
+    je dìvèe jako já! Sullo, to je hanebné--proè hrajete takovou komedii?
+
+Sulla: Já jsem Robot.
+
+Helena: ne, ne, vy lete! Oh, Sullo, odpuste, já vím--donutili vás,
+    abyste jim dìlala reklamu! Sullo, vy jste dìvèe jako já, e? Øeknìte!
+
+Domin: Lituji, sleèno Gloryová. Sulla je Robot.
+
+Helena: Vy lete!
+
+Domin: (vztyèí se) Jake?--(zazvoní) Promiòte, sleèno, pak vás musím
+    pøesvìdèit.
+
+(vejde Marius)
+
+Domin: Marie, doveïte Sullu do pitevny, aby ji otevøeli. Rychle!
+
+Helena: Kam?
+
+Domin: Do pitevny. A jí rozøíznou, pùjdete se na ní podívat.
+
+Helena: Nepùjdu.
+
+Domin: Pardon, mluvila jste o li.
+
+Helena: Vy ji chcete dát zabít?
+
+Domin: Stroje se nezabíjejí.
+
+Helena: (obejme Sullu) Nebojte se, Sullo, já vás nedám! Øeknìte,
+    drahoušku, jsou k vám všichni tak suroví? To se nesmíte dát líbit,
+    slyšíte? Nesmíte, Sullo!
+
+Sulla: Já jsem Robot.
+
+Helena: To je jedno. Roboti jsou stejnì dobøí lidé jako my. Sullo, vy
+    byste se nechala rozøíznout?
+
+Sulla: Ano.
+
+Helena: Oh, vy se nebojíte smrti?
+
+Sulla: Neznám, sleèno Gloryová.
+
+Helena: Víte, co by se pak s vámi stalo?
+
+Sulla: Ano, pøestala bych se hıbat.
+
+Helena: To je hrrozné!
+
+Domin: Marie, øeknìte sleènì co jste.
+
+Marius: Robot Marius.
+
+Domin: Dal byste Sullu do pitevny?
+
+Marius: Ano.
+
+Domin: Nelitoval byste jí?
+
+Marius: Neznám.
+
+Domin: Co by se s ní stalo?
+
+Marius: Pøestala by se hıbat. Dali by ji do stoupy.
+
+Domin: To je smrt, Marie. Bojíte se smrti?
+
+Marius: Ne.
+
+Domin: Tak vidíte, sleèno Gloryová. Roboti nelpí na ivotì. Nemají toti
+    èím. Nemají poitkù. Jsou ménì ne tráva.
+
+Helena: Oh, pøestaòte! Pošlete je aspoò pryè!
+
+Domin: Marie, Sullo, mùete odejít.
+
+(Sulla a Marius odejdou)
+
+Helena: Jsou hrrozní! To je ohavné, co dìláte!
+
+Domin: Proè ohavné?
+
+Helena: Nevím. Proè--proè jste jí dali jméno Sulla?
+
+Domin: Nehezké jméno?
+
+Helena: Je to muské jméno. Sulla byl øímskı vojevùdce.
+
+Domin: Oh, myslili jsme, e Marius a Sulla byli milenci.
+
+Helena: Ne, Marius a Sulla byli vojevùdci a bojovali proti sobì roku--
+    roku--Nevím u.
+
+Domin: Pojïte sem k oknu. Co vidíte?
+
+Helena: Zedníky.
+
+Domin: To jsou Roboti. Všichni naši dìlníci jsou Roboti. A tady dole,
+    vidíte nìco?
+
+Helena: Nìjaká kanceláø.
+
+Domin: Úètárna. A v ní--
+
+Helena:--plno úøedníkù.
+
+Domin: To jsou Roboti. Všichni naši úøedníci jsou Roboti. A uvidíte
+    továrnu--
+
+(v tom spustí tovární píšaly a sirény)
+
+Domin: Poledne. Roboti nevìdí, kdy pøestat v práci. Ve dvì hodiny vám
+    ukáu díe.
+
+Helena: Jaké díe?
+
+Domin: (suše) Mìsidla na tìsto. V kadém se míchá látka na tisíc Robotù
+    najednou. Potom kádì na játra, mozky a tak dále. Pak uvidíte továrnu
+    na kosti. Potom vám ukáu pøádelnu.
+
+Helena: Jakou pøádelnu?
+
+Domin: Pøádelnu nervù. Pøádelnu il. Pøádelnu, kde bìí najednou celé
+    kilometry zaívacích rour. Pak je montovna, kde se to dává dohromady,
+    víte, jako automobily. Kadı dìlník pøidìlá jen jednu souèást, a zas
+    to samoèinnì bìí dál k druhému, tøetímu, donekoneèna. To je
+    nejzajímavìjší podívaná. Pak pøijde sušárna a skladištì, kde èerstvé
+    vırobky pracují.
+
+Helena: Proboha, hned musejí pracovat?
+
+Domin: Pardon. Pracují, jako pracuje novı nábytek. Zvykají si na
+    existenci. Jaksi uvnitø srùstají èi co. Mnoho v nich dokonce novì
+    narùstá. Rozumíte, musíme nechat drobet místa pro pøirozenı vıvoj. A
+    zatím se vırobky apretují.
+
+Helena: Co to je?
+
+Domin: Tolik co u lidí "škola". Uèí se mluvit, psát a poèítat. Mají toti
+    úasnou pamì. Kdybyste jim pøeèetla dvacetisvazkovı Nauènı slovník,
+    budou vám všechno opakovat po poøádku. Nìco nového nikdy nevymyslí.
+    Mohli by docela dobøe uèit na univerzitách. Pak se roztøídí a
+    rozešlou. Dennì patnáct tisíc kusù, nepoèítajíc stálé procento
+    vadnıch, které se hodí do stoupy... a tak dále a tak dále.
+
+Helena: Zlobíte se na mne?
+
+Domin: Ale chraò bùh! Myslím jen, e .. e jsme mohli mluvit o jinıch
+    vìcech. Je nás tu jen hrstka mezi stotisíci Roboty, a ádná ena.
+    Mluvíme jen o vırobì, celı den, kadı den--Jsme jako prokletí, sleèno
+    Gloryová.
+
+Helena: Mnì je tak líto, e jsem øekla, e--e--e lete--
+
+(Zaklepání)
+
+Domin: Vejdìte, mládenci.
+
+(Zleva vyjdou in. Fabry, dr. Gall, dr. Hallemeier, stavitel Alquist)
+
+Dr. Gall: Pardon, nerušíme?
+
+Domin: Pojïte sem. Sleèno Gloryová, to jsou Alquist, Fabry, Gall,
+    Hallemeier. Dcera prezidenta Gloryho.
+
+Helena: (v rozpacích) Dobrı den.
+
+Fabry: Nemìli jsme potuchy--
+
+Dr. Gall: Nekoneènì poctìni--
+
+Alquist: Buïte vítána, sleèno Gloryová.
+
+(Zprava vrazí Busman)
+
+Busman: Haló, co tu máte?
+
+Domin: Sem, Busmane. To je náš Busman, sleèno. Dcera prezidenta Gloryho.
+
+Helena: Tìší mne.
+
+Busman: Jemináèku, to je sláva! Sleèno Gloryová, smíme kabelovat do novin,
+    e jste ráèila zavítat -?
+
+Helena: Ne, ne, prosím vás!
+
+Domin: Prosím, sleèno, posaïte se.
+
+(Fabry, Busman a Dr. Gall pøitahují lenošky)
+
+Fabry: Prosím--
+
+Busman: Raète--
+
+Dr. Gall: Pardon--
+
+Alquist: Sleèno Gloryová, jakou jste mìla cestu?
+
+Dr. Gall: Zdríte se u nás déle?
+
+Fabry: Co øíkáte továrnì, sleèno Gloryová?
+
+Hallemeier: Vy jste pøijela na Amélii?
+
+Domin: Ticho, nechte mluvit sleènu Gloryovou.
+
+Helena: (k Dominovi) O èem mám s nimi mluvit?
+
+Domin: (s údivem) O èem chcete.
+
+Helena: Mám... smím mluvit docela otevøenì?
+
+Domin: Ale ovšem.
+
+Helena: (váhá, pak zoufale odhodlána) Øeknìte, není vám nikdy trapno, jak
+    s vámi nakládají?
+
+Fabry: Kdo, prosím?
+
+Helena: Všichni lidé.
+
+(Všichni se na sebe zaraenì dívají)
+
+Alquist: S námi?
+
+Dr. Gall: Proè myslíte?
+
+Hallemeier: U sta hromù!
+
+Busman: Ale bùh uchovej, sleèno Gloryová!
+
+Helena: Co necítíte, e byste mohli existovat lépe?
+
+Dr. Gall: Pøijde na to, sleèno. Jak to myslíte?
+
+Helena: Myslím, e--vybuchne -, e je to ohavné! e je to strašné!
+    (Vstane) Celá Evropa mluví o tom, co se tu s vámi dìje! Proto sem
+    jedu, abych to uvidìla, a je to tisíckrát horší, ne si kdo mysli! Jak
+    to mùete snášet?
+
+Alquist: Co snášet?
+
+Helena: Své postavení. Proboha, vdy jste lidé jako my, jako celá Evropa,
+    jako celı svìt! To je skandální, to je nedùstojné, jak ijete!
+
+Busman: Propána, sleèno!
+
+Fabry: Ne, mládenci, má trochu pravdu. ijeme tu jistì jako Indiáni.
+
+Helena: Hùø ne Indiáni! Smím, oh, smím vám øíkat bratøi?
+
+Busman: Ale boíèku, proèpak ne?
+
+Helena: Bratøi, nepøijela jsem jako dcera prezidentova. Pøijela jsem za
+    Ligu humanity. Bratøi, Liga humanity má u pøes dvì stì tisíc èlenù.
+    Dvì stì tisíc lidi stojí za vámi a nabízí vám svou pomoc.
+
+Busman: Dvì stì tisíc lidí, paneèku, to u je slušné, to je docela krásné.
+
+Fabry: Øíkám vám vdycky, není nad starou Evropu. Vidíte, nezapomnìla na
+    nás. Nabízí nám pomoc.
+
+Dr. Gall: Jakou pomoc? Divadlo?
+
+Hallemeier: Orchestr?
+
+Helena: Víc ne to.
+
+Alquist: Vás samotnou?
+
+Helena: Oh, co o mne! Zùstanu, pokud bude tøeba.
+
+Busman: Paneboe, to je radost!
+
+Alquist: Domine, pùjdu pøipravit pro sleènu nejlepší pokoj.
+
+Domin: Poèkejte chvilku. Bojím se, e--e sleèna Gloryová ještì
+    nedomluvila.
+
+Helena: Ne, nedomluvila. Leda byste mi násilím zavøel ústa.
+
+Dr. Gall: Harry, opovate se!
+
+Helena: Dìkuji vám. Vìdìla jsem, e mne budete chránit.
+
+Domin: Pardon, sleèno Gloryová. Jste si tím jista, e mluvíte s Roboty?
+
+Helena: (zarazí se) S kım jinım?
+
+Domin: Je mi líto. Ti pánové jsou toti lidé jako vy. Jako celá Evropa.
+
+Helena: (k ostatním) Vy nejste Roboti?
+
+Busman: (øehtá se) Bùh uchovej!
+
+Hallemeier: Fuj, Roboti!
+
+Dr. Gall: (smìje se) Pìknì dìkujem!
+
+Helena: Ale... to není mono!
+
+Fabry: Na mou èest, sleèno, my nejsme Roboti.
+
+Helena: (k Dominovi) Proè jste mi tedy øíkal, e všichni vaši úøedníci
+    jsou Roboti?
+
+Domin: Ano, úøedníci. Ale øeditelové ne. Dovolte, sleèno Gloryová: inenır
+    Fabry, generální technickı øeditel Rossumovıch Univerzálních Robotù.
+    Doktor Gall, pøednosta fyziologického a vızkumného oddìlení. Doktor
+    Hallemeier, pøednosta ústavu pro psychologii a vıchovu Robotù. Konzul
+    Busman, generální komerèní øeditel, a stavitel Alquist, šéf staveb
+    Rossumovıch Univerzálních Robotù.
+
+Helena: Odpuste, pánové, e--e ----Je to hrrozné, co jsem provedla?
+
+Alquist: Ale chraò bùh, sleèno Gloryová. Prosím, sednìte.
+
+Helena: (usedne) Jsem hloupé dìvèe. Teï--teï mne pošlete první lodí
+    zpátky.
+
+Dr. Gall: Za nic na svìtì, sleèno. Proè bychom vás posílali pryè?
+
+Helena: Protoe u víte--protoe--protoe bych vám bouøila Roboty.
+
+Domin: Drahá sleèno Gloryová, tady u bylo na sta spasitelù a prorokù.
+    Kadá loï nìkterého pøiveze. Misionáøe, anarchisty, Armádu spásy,
+    všechno moné. To je vám úasné, co je na svìtì církví a bláznù.
+
+Helena: A vy je necháte mluvit k Robotùm?
+
+Domin: Proè ne? Doposud toho všichni nechali. Roboti si všechno pamatuji,
+    ale nic víc. Dokonce se ani nesmìjí tomu, co lidé øíkají. Skuteènì,
+    pøímo k nevíøe. Baví-li vás to, drahá sleèno, dovedu vás do skladištì
+    Robotù. Je jich tam asi tøi sta tisíc.
+
+Busman: Tøi sta ètyøicet sedm tisíc.
+
+Domin: Dobrá. Mùete k ním promluvit, co chcete. Mùete jim pøeèíst bibli,
+    logaritmy nebo co je vám libo. Mùete jim dokonce kázat o lidskıch
+    právech.
+
+Helena: Oh, myslím, e... kdyby se jim ukázalo trochu lásky--
+
+Fabry: Nemono, sleèno Gloryová. Nic není èlovìku cizejšího ne Robot.
+
+Helena: Proè je tedy dìláte?
+
+Busman: Hahaha, to je dobré! Proè se dìlají Roboti!
+
+Fabry: Pro práci, sleèno. Jeden Robot nahradí dva a pùl dìlníka. Lidskı
+    stroj, sleèno Gloryová, byl náramnì nedokonalı. Musel se jednou
+    koneènì odstranit.
+
+Busman: Byl pøíliš drahı.
+
+Fabry: Byl málo vıkonnı. Moderní technice u nemohl staèit. A za druhé--
+    za druhé--je to velikı pokrok, e... pardon.
+
+Helena: Co?
+
+Fabry: Prosím za odpuštìní. Je to velikı pokrok rodit strojem. Je to
+    pohodlnìjší a rychlejší. Kadé zrychlení je pokrok, sleèno. Pøíroda
+    nemìla ponìtí o moderním tempu práce. Celé dìtství je technicky vzato
+    holı nesmysl. Prostì ztracenı èas. Neudritelné mrhání èasem, sleèno
+    Gloryová. A za tøetí--
+
+Helena: Oh, pøestaòte!
+
+Fabry: Prosím. Dovolte, co vlastnì chce ta vaše Liga--Liga--Liga
+    humanity?
+
+Helena: Má zvláštì--zvláštì má chránit Roboty a--a zajistit jim--dobré
+    zacházení.
+
+Fabry: To není špatnı cíl. Se stroji se má dobøe zacházet. Namouduši, to
+    si chválím. Nemám rád poškozené vìci. Prosím vás, sleèno Gloryová,
+    zapište nás všechny za pøispívající, za øádné, za zakládající èleny té
+    vaší Ligy!
+
+Helena: Ne, vy mi nerozumíte. My chceme--zvláštì--my chceme Roboty
+    osvobodit!
+
+Hallemeier: Jak, prosím vás?
+
+Helena: Má se s nimi jednat... jednat... jako s lidmi.
+
+Hallemeier: Aha. Mají snad hlasovat? Nemají dokonce dostávat mzdu?
+
+Helena: Ovšeme mají!
+
+Hallemeier: Koukejme. A co by s ní, prosím vás, dìlali?
+
+Helena: Koupili si... co potøebují... co by je tìšilo.
+
+Hallemeier: To je moc hezké, sleèno; jenome Roboty nic netìší. Hrome, co
+    si mají koupit? Mùete je krmit ananasy, slámou, èím chcete; jim je to
+    jedno, nemají vùbec chuti. Nemají na nièem zájmu, sleèno Gloryová. U
+    èerta, nikdo ještì nevidìl, e by se Robot usmál.
+
+Helena: Proè... proè... proè je neudìláte šastnìjší?
+
+Hallemeier: To nejde, sleèno Gloryová. Jsou to jen Roboti. Bez vlastní
+    vùle. Bez vášní. Bez dìjin. Bez duše.
+
+Helena: Bez lásky a vzdoru?
+
+Hallemeier: To se rozumí. Roboti nemilují nic, ani sebe. A vzdor? Já
+    nevím; jen zøídka, jen èasem--
+
+Helena: Co?
+
+Hallemeier: Nic vlastnì. Nìkdy se jaksi pominou. Cosi, jako padoucnice,
+    víte? Øíká se tomu køeè Robotù. Najednou nìkterı praští vším, co má v
+    ruce, stojí, skøípá zuby--a musí pøijít do stoupy. Patrnì porucha
+    organismu.
+
+Domin: Vada ve vırobì.
+
+Helena: Ne, ne, to je duše!
+
+Fabry: Myslíte, e duše zaèíná skøípáním zubù?
+
+Domin: To se odstraní, sleèno Gloryová. Doktor Gall dìlá zrovna nìjaké
+    pokusy
+
+Dr. Gall: S tímhle ne, Domine; teï dìlám nervy na bolest.
+
+Helena: Nervy na bolest?
+
+Dr. Gall: Ano. Roboti skoro necítí tìlesné bolesti. Víte, nebotík mladı
+    Rossum pøíliš omezil nervovou soustavu. To se neosvìdèilo. Musíme
+    zavést utrpení.
+
+Helena: Proè--proè--Nedáte-li jim duši, proè jim chcete dát bolest?
+
+Dr. Gall: Z prùmyslovıch dùvodù, sleèno Gloryová. Robot se nìkdy poškodí
+    sám, protoe ho to nebolí; strèí ruku do stroje, ulomí si prst,
+    rozbije si hlavu, to mu je jedno. Musíme jim dát bolest; to je
+    automatická ochrana pøed úrazem.
+
+Helena: Budou šastnìjší, kdy budou cítit bolest?
+
+Dr. Gall: Naopak; ale budou technicky dokonalejší.
+
+Helena: Proè jim nestvoøíte duši?
+
+Dr. Gall: To není v naši moci.
+
+Fabry: To nyní v našem zájmu.
+
+Busman: To by zdrailo vırobu. Propánièka, krásná dámo, vdy my to dìláme
+    tak lacino! Sto dvacet dolarù ošacenı kus, a pøed patnácti lety stál
+    deset tisíc! Pøed pìti lety jsme pro nì kupovali šaty; dnes máme
+    vlastní tkalcovny a ještì expedujeme láteèky pìtkrát lacinìji ne jiné
+    továrny. Prosím vás, sleèno Gloryová, co platíte metr plátna?
+
+Helena: Nevím--- skuteènì -- zapomnìla jsem.
+
+Busman: Mùj ty Tondo, a pak chcete zakládat Ligu humanity! Stojí u jen
+    tøetinu, sleèno; všechny ceny jsou dnes na tøetinì a ještì pùjdou ní,
+    ní, ní, a--takhle. He?
+
+Helena: Nerozumím.
+
+Busman: Jemináèku, sleèno, to znamená, e práce klesla v cenì! Vdy Robot
+    i s krmením stojí za hodinu tøi ètvrtì centíku! To je vám legraèní,
+    sleèno: všechny továrny praskají jako aludy nebo honem kupují Roboty,
+    aby zlevnily vırobu.
+
+Helena: Ano, a vyhazují dìlníky na dlabu.
+
+Busman: Haha, to se rozumí! Ale my, boí dobroto, my jsme zatím vrhli pìt
+    set tisíc tropickıch Robotù na argentinské pampy, aby pìstili pšenici.
+    Buïte tak dobrá, co stojí u vás libra chleba?
+
+Helena: Nemám ponìtí.
+
+Busman: Tak vidíte; teï stojí dva centíky v té vaší dobré staré Evropì;
+    ale to je náš chlebíèek, rozumíte? Dva centíky libra chleba; a Liga
+    humanity o tom nemá tušení! Haha, sleèno Gloryová, vy nevíte, co to je
+    pøíliš drahı krajíc. Pro kulturu a tak dále. Ale za pìt let, no tak,
+    vsaïte se!
+
+Helena: Co?
+
+Busman: e za pìt let Budou ceny všeho na ádná celá deset. Lidièky, za
+    pìt let se utopíme v pšenici a všem moném.
+
+Alquist: Ano, a všichni dìlníci svìta budou bez práce.
+
+Domin: (vstane) Budou, Alquiste. Budou, sleèno Gloryová. Ale do desíti let
+    nadìlají Rossumovi Univerzální Roboti tolik pšenice, tolik látek,
+    tolik všeho, e øekneme: vìci u nemají ceny. Nyní ber kadı, kolik
+    potøebuješ. Není bídy. Ano, budou bez práce. Ale pak nebude u vùbec
+    ádné práce. Všechno udìlají ivé stroje. Èlovìk bude dìlat jen to, co
+    miluje. Bude ít jen proto, aby se zdokonaloval.
+
+Helena: (vstane) Bude to tak?
+
+Domin: Bude. Nemùe to bıt jinak. Pøedtím snad pøijdou strašlivé vìci,
+    sleèno Gloryová. Tomu se nedá prostì zabránit. Ale pak pøestane
+    sluebnictví èlovìka èlovìku a otroèení èlovìka hmotì. Nikdo u nebude
+    platit za chléb ivotem a nenávistí. Ty u nejsi dìlník, ty u nejsi
+    písaø; ty u nekopeš uhlí a ty nestojíš u cizího stroje. U nebudeš
+    své duše utrácet v práci, kterou jsi proklínal!
+
+Alquist: Domine, Domine! To, co øíkáte, vypadá pøíliš jako ráj. Domine,
+    bıvalo nìco dobrého v slouení a nìco velkého v pokoøení. Ach, Harry,
+    byla nevím jaká ctnost v práci a únavì.
+
+Domin: Snad byla. Ale nemùeme poèítat s tím, co se ztratí, kdy
+    pøedìláváme svìt od Adama. Adame, Adame! u nebudeš jíst chléb svùj v
+    potu tváøe; u nepoznáš hladu a íznì, únavy a poníení; vrátíš se do
+    ráje, kde tì ivila ruka Pánì. Budeš svobodnı a svrchovanı; nebudeš
+    mít jiného úkolu, jiné práce, jiné starosti ne zdokonalit sama sebe.
+    Budeš pánem stvoøení.
+
+Helena: Zmátl jste mne. Jsem pošetilé dìvèe. Chtìla bych--chtìla bych
+    tomu vìøit.
+
+Dr. Gall: Jste mladší ne my, sleèno Gloryová. Doèkáte se všeho.
+
+Hallemeier: Tak jest. Já myslím, e by sleèna Gloryová mohla s námi
+    posnídat.
+
+Dr. Gall: To se rozumí! Domine, poproste za nás všechny.
+
+Domin: Sleèno Gloryová, prokate nám tu èest.
+
+Helena: Ale to pøece--Jak bych mohla?
+
+Fabry: Za Ligu humanity, sleèno.
+
+Busman: A na její poèest.
+
+Helena: Ah, v tom pøípadì--snad--
+
+Fabry: Tak sláva! Sleèno Gloryová, promiòte na pìt minut.
+
+Dr. Gall: Pardon.
+
+Busman: Propána, musím kabelovat--
+
+Hallemeier: Hrome, a já jsem zapomnìl--
+
+(Všichni, krom Domina, se hrnou ven)
+
+Helena: Proè jdou všichni pryè?
+
+Domin: Vaøit, sleèno Gloryová.
+
+Helena: Co vaøit?
+
+Domin: Snídani, sleèno Gloryová. Nám vaøí Roboti a--a--protoe nemají
+    ádné chuti, není to docela--Hallemeier toti vıbornì roští. A Gall
+    dovede jakousi omáèku, a Busman se vyzná v omeletì--
+
+Helena: Proboha, to je hostina! A co dovede pan--stavitel
+
+Domin: Alquist? Nic. Jenom upraví stùl a--a Fabry seene trochu ovoce.
+    Velice skromná kuchynì, sleèno Gloryová.
+
+Helena: Chtìla jsem se vás zeptat--
+
+Domin: Také bych se vás chtìl na nìco zeptat. Postaví své hodinky na stùl.
+    Pìt minut èasu.
+
+Helena: Naè zeptat?
+
+Domin: Pardon, vy jste se ptala døíve.
+
+Helena: Snad to je ode mne hloupé, ale--Proè vyrábíte enské Roboty, kdy
+    --kdy
+
+Domin:--kdy u nich, hm, kdy pro nì pohlaví nemá vıznamu?
+
+Helena: Ano.
+
+Domin: Je jistá poptávka, víte? Sluky, prodavaèky, písaøky--Lidé jsou na
+    to zvyklí.
+
+Helena: A--a øeknìte, jsou Roboti--a Robotky -- navzájem--naprosto--
+
+Domin: Naprosto lhostejní, drahá sleèno. Není ani stopy po nìjaké
+    náklonnosti.
+
+Helena: Oh, to je--hrrozné!
+
+Domin: Proè?
+
+Helena: Je to--je to--tak nepøirozené! Èlovìk ani neví, má-li si je
+    proto ošklivit, nebo--jim závidìt--nebo snad--
+
+Domin:--je litovat.
+
+Helena: To nejspíš!--Ne, pøestaòte! Naè jste se chtìl ptát?
+
+Domin: Rád bych se zeptal, sleèno Gloryová, nechcete-li si mne vzít.
+
+Helena: Jak vzít?
+
+Domin: Za, mue.
+
+Helena: Ne! Co vás to napadlo?
+
+Domin: (dívá se na hodinky) Ještì tøi minuty. Nevezmete-li si mne, musíte
+    si vzít nìkterého z ostatních pìti.
+
+Helena: Ale chraò bùh! Proè bych si ho brala?
+
+Domin: Protoe vás všichni po øadì poádají.
+
+Helena: Jak by se mohli opováit?
+
+Domin: Lituji velice, sleèno Gloryová. Zdá se, e se do vás zamilovali.
+
+Helena: Prosím vás, a to nedìlají! Já--já hned odjedu.
+
+Domin: Heleno, snad jim neudìláte takovı zármutek, e byste je odmítla?
+
+Helena: Ale vdy--vdy si nemohu vzít všech šest!
+
+Domin: Ne, ale aspoò jednoho. Nechcete-li mne, tedy Fabryho.
+
+Helena: Nechci
+
+Domin: Doktora Galla.
+
+Helena: Ne, ne, mlète! Nechci ádného!
+
+Domin: Ještì dvì minuty.
+
+Helena: To je hrrozné! Vemte si nìjakou Robotku.
+
+Domin: Není ena.
+
+Helena: Oh, jen to vám schází! Myslím, e--e byste si vzal kadou, která
+    sem pøijede.
+
+Domin: Bylo jich tu, Heleno.
+
+Helena: Mladé?
+
+Domin: Mladé.
+
+Helena: Proè jste si ádnou nevzal?
+
+Domin: Protoe jsem neztratil hlavu. A dnes. Hned jak jste sòala závoj.
+
+Helena:--- Já vím.
+
+Domin: Ještì jedna minuta.
+
+Helena: Ale já nechci, proboha!
+
+Domin: (poloí jí obì ruce na ramena) Ještì jedna minuta. Buïto mnì
+    øeknìte do oèí nìco strašnì zlého, a pak vás nechám. Nebo--nebo--
+
+Helena: Vy jste surovec!
+
+Domin: To nic není. Mu má bıt trochu surovec. To patøí k vìci.
+
+Helena: Vy jste blázen!
+
+Domin: Èlovìk má bıt trochu blázen, Heleno. To je na nìm to nejlepší.
+
+Helena: Vy jste--vy jste--ah boe!
+
+Domin: Tak vidíte. Hotovo?
+
+Helena: Ne, ne! Prosím vás, puste! Vdy mne rrrozmaèkáte!
+
+Domin: Poslední slovo, Heleno.
+
+Helena: (brání se) Za nic na svìtì--Ale Harry!
+
+(Zaklepání. Vejdou Busman, dr. Gall a Hallemeier v kuchyòskıch
+zástìrách. Fabry s kyticí a Alquist s ubrouskem pod paí.)
+
+Domin: U jste to upekli?
+
+Busman: (slavnostnì) Ano.
+
+Domin: My také.
+
+OPONA
+
+
+
+
+DÌJSTVÍ PRVNÍ
+
+
+
+(Helenin salón. Vlevo tapetové dveøe do hudebního salónu, vpravo dveøe
+do Heleniny lonice. Uprostøed okna k moøi a pøístavu. Toaletní zrcadlo
+s drobnùstkami, stùl, pohovka a køesla, komoda, psací stolek se stojací
+árovkou, vpravo krb rovnì, se stojacími árovkami. Celı salón do
+drobností má moderní a èistì enskı ráz.)
+
+(Domin, Fabry, Hallemeier vcházejí zleva po špièkách a nesou plné náruèe
+kytic a kvìtináèù)
+
+Fabry: Kam to všechno dáme?
+
+Hallemeier: Uf! Sloí své bøímì a ehná velkım køíem dveøe napravo. Spi,
+    spi! Kdo spí, neví aspoò o nièem.
+
+Domin: Ona vùbec neví.
+
+Fabry: (dává kytice do váz) Aspoò dnes aby to neprasklo--
+
+Hallemeier: (rovná kvìtiny) U èerta, dejte s tím pokoj! Koukejte, Harry,
+    tohle je krásná cyklamína, co? Novı druh, mùj poslední--Cyclamen
+    Helenae.
+
+Domin: (vyhlíí z okna) ádná loï, ádná loï---Hoši, to u je zoufalé.
+
+Hallemeier: Ticho! Kdyby vás slyšela!
+
+Domin: Nemá ani tušení. (Zívá zimniènì) Ještìe Ultimus vèas pøiplul.
+
+Fabry: (nechá kvìtin) Myslíte, e u dnes -?
+
+Domin: Nevím.--Jak krásné jsou kvìtiny!
+
+Hallemeier: (pøiblíí se k nìmu) To jsou nové primule, víte?A tohle je mùj
+    novı jasmín. Hrome, jsem na prahu ráje kvìtin. Našel jsem bájeèné
+    rychlení, èlovìèe! Nádherné variety! Pøíští rok udìlám v kvìtinách
+    zázraky!
+
+Domin: (otoèí se) Coe, pøíští rok?
+
+Fabry: Aspoò vìdìt, co je v Havru--
+
+Domin: Ticho!
+
+(Hlas Heleny zprava) Náno!
+
+Domin: Pryè odtud! Všichni po špièkách odejdou tapetovıma dveømi.
+
+(Hlavními dveømi zleva vchází Nána)
+
+Nána: (uklízí) Neøádi šerednı! Pohani! Boe mì netrestej, ale já bych je--
+
+Helena: (pozpátku ve dveøích) Náno, pojï mne zapnout!
+
+Nána: No hned, no hned. (Zapíná Helenì šaty) Boe na nebi, to je zvìø!
+
+Helena: Roboti?
+
+Nána: Fi, ani je menovat nechci.
+
+Helena: Co se stalo?
+
+Nána: Zas to jednoho u nás chytlo. Zaène tøískat do soch a vobrazu, skøípá
+    zubama, pìnu u huby--Naèisto pominutej, brr. Dy to je horší ne
+    zvíøe.
+
+Helena: Kterého to chytlo?
+
+Nána: Toho--toho--Šak to ani køesanskı meno nemá! Toho z knihovny.
+
+Helena: Radia?
+
+Nána: Zrouna toho. Šmarjájozef, já si to vošklivím! Ani pavouka si tak
+    nevošklivím jako ty pohany.
+
+Helena: Ale Náno, e ti jich není líto!
+
+Nána: Šak vy si je taky vošklivíte. Proèpak ste si mì pøi vezla sem?
+    Proèpak ádnı z nich nesmí na vás ani šáhnout?
+
+Helena: Neošklivím, namouduši, Náno. Je mi jich tak líto!
+
+Nána: Vošklivíte. Kadej èlovìk si je musí vošklivìt. Dy i ten pes si je
+    voškliví, ani sousto masa vod nich nechce; stáhne vocas a vyje, dy
+    cejtí ty nelidy, fuj.
+
+Helena: Pes nemá rozum.
+
+Nána: Je lepší ne voni, Heleno. Von dobøe ví, e je nìco víc a e je vod
+    Pánaboha. Dy i ten kùò se plaší, dy potká pohana. Dy ani mladı to
+    nemá, a i pes má mladı a kadej má mladı
+
+Helena: Prosím tì, Náno, zapínej!
+
+Nána: No hned. Já øíkám, to je proti Pánubohu, to je ïáblovo vòuknuti,
+    dìlat ty maškary mašinou. Rouhání je proti Stvoøiteli, (zvedne ruku)
+    je to uráka Pána, kterej nás stvoøil k v obrazu svımu, Heleno. A vy
+    ste zneuctili vobraz boí. Za tohle pøijde strašnej trest z nebe, to
+    si pamatujte, strašnej trest!
+
+Helena: Co to tu voní?
+
+Nána: Kytky. Pán je sem dal.
+
+Helena: Ne, ty jsou krásné! Náno, podívej se! Co je dnes?
+
+Nána: Nevim. Ale mìl by bejt konec svìta.
+
+(Zaklepání)
+
+Helena: Harry?
+
+(Vejde Domin)
+
+Helena: Harry, co je dnes?
+
+Domin: Hádej!
+
+Helena: Mùj svátek? Ne! Narozeniny?
+
+Domin: Nìco lepšího.
+
+Helena: Já nevím--Øekni honem!
+
+Domin: Dnes je tomu deset let, co jsi sem pøijela. Helena U deset let?
+    Právì dnes?--Náno, prosím tì
+
+Nána: Dy u du! (Odejde vpravo)
+
+Helena: (Líbá Domina) es na to pamatoval!
+
+Domin: Stydím se, Heleno. Nepamatoval.
+
+Helena: Ale vdy--
+
+Domin: To oni pamatovali.
+
+Helena: Kdo?
+
+Domin: Busman, Hallemeier, všichni. Sáhni tady do kapsy, nechceš?
+
+Helena: (sáhne mu do kapsy) Co je to? (Vyndá pouzdro a otevøe) Perly! Celı
+    náhrdelník! Harry, to je pro mne?
+
+Domin: Od Busmana, dìvèe.
+
+Helena: Ale--to nemùeme pøijmout, vid?
+
+Domin: Mùeme. Sáhni do druhé kapsy.
+
+Helena: Uka! (Vytáhne mu z kapsy revolver) Co je tohle?
+
+Domin: Pardon. (Vezme jí revolver z ruky a schová) To není to. Sáhni.
+
+Helena: Oh, Harry--Proè nosíš s sebou revolver?
+
+Domin: Jen tak, pøipletl se mi.
+
+Helena: Tos nikdy nenosil!
+
+Domin: Ne, máš pravdu. Tak, tady je kapsa.
+
+Helena: (sáhne) Krabièka! (Otevøe ji) Kamea! Vdy je to--Harry, to je
+    øecká kamea!
+
+Domin: Patrnì. Fabry to aspoò tvrdí.
+
+Helena: Fabry? To mnì dává Fabry?
+
+Domin: Ovšem. (Otevøe dveøe vlevo) A koukejme! Heleno, pojï se podívat!
+
+Helena: (ve dveøích) Boe, to je krásné! (Bìí dál) Já se zblázním
+    radosti! To je od tebe?
+
+Domin: (stojí ve dveøích) Ne, od Alquista. A tamhle--
+
+Helena: Od Galla! (Objeví se ve dveøích) Oh, Harry, já se a stydím, e
+    jsem tak šastná.
+
+Domin: Pojï sem, Tohle ti pøinesl Hallemeier.
+
+Helena: Ty krásné kvìtiny?
+
+Domin: Tohle. To je novı druh, Cyclamen Helenae. Tobì na poèest ji
+    vypìstoval. Je krásná jako ty.
+
+Helena: Harry, proè--proè všichni--
+
+Domin: Mají tì velice rádi. A já jsem ti, hm. Bojím se, e mùj dárek je
+    trochu--Podívej se oknem.
+
+Helena: Kam?
+
+Domin: Do pøístavu.
+
+Helena: Je tam... nìjaká... nová loï!
+
+Domin: To je tvá loï.
+
+Helena: Má? Harry, to je dìlová loï!
+
+Domin: Dìlová? Ale co tì napadá! To je jen trochu vìtší, solidní loï, víš?
+
+Helena: Ano, ale s dìly!
+
+Domin: Ovšem, s nìkolika dìly--Budeš jezdit jako královna, Heleno.
+
+Helena: Co to znamená? Dìje se nìco?
+
+Domin: Bùh uchovej! Prosím tì, zkus ty perly! (Usedne)
+
+Helena: Harry, pøišly nìjaké špatné zprávy?
+
+Domin: Naopak, u tıden vùbec nepøišla pošta.
+
+Helena: Ani depeše?
+
+Domin: Ani depeše.
+
+Helena: Co to znamená?
+
+Domin: Nic. Pro nás prázdniny. Skvostnı èas. Kadı z nás sedí v kanceláøi,
+    nohy na stole, a podøimuje--ádná pošta, ádné telegramy--(Protahuje
+    se) Sss-slavnı den!
+
+Helena: (usedá k nìmu) Dnes zùstaneš u mne, vid? Øekni!
+
+Domin: Rozhodnì. Moná e ano. Toti uvidíme. (Vezme ji za ruku) Tak dnes
+    je tomu deset let, pamatuješ se?--Sleèno Gloryová, jaká èest pro nás,
+    e jste pøijela.
+
+Helena: Oh, pane centrální øediteli, mne tak zajímá váš závod!
+
+Domin: Pardon, sleèno Gloryová, je sice pøísnì zakázáno--vıroba umìlıch
+    lidi je tajná--
+
+Helena: Ale kdy poprosí mladá, trochu hezká dívka--
+
+Domin: Ale zajisté, sleèno Gloryová, pøed vámi nemáme tajnosti.
+
+Helena: (najednou vánì) Jistì ne, Harry?
+
+Domin: Ne.
+
+Helena: (v pøedešlém tónu) Ale já vás varuju, pane; ta mladá dívka má
+    hrozné úmysly.
+
+Domin: Proboha, sleèno Gloryová, jaképak! Snad se nechcete zase vdát?
+
+Helena: Ne, ne, chraò bùh! To ji ani ve snu nenapadlo! Ale pøijela s
+    plánem podnítit rrevoltu vašich ohavnıch Robotù!
+
+Domin: (vyskoèí) Revoltu Robotù!
+
+Helena: (vstane) Harry, co je ti?
+
+Domin: Haha, sleèno Gloryová, to se vám povedlo! Revoltu Robotù! Spíš
+    byste vzbouøila i vøetena nebo cvoèky ne naše Roboty! (Usedne) Víš,
+    Heleno, byla jsi skvostné dìvèe; zbláznila jsi nás všechny.
+
+Helena: (sedá k nìmu) Oh, tehdy jste mnì všichni tolik imponovali!
+    Pøipadala jsem si jako holèièka, která zabloudila mezi--mezi
+
+Domin: Mezi co, Heleno?
+
+Helena: Mezi ohrromné stromy. Byli jste tak jisti sebou, tak mocní! A
+    vidíš, Harry, za tìch deset let mì nikdy nepøešla ta-----ta úzkost
+    èi co, a vy jste nikdy nezapochybovali--Ani kdy se všechno hatilo.
+
+Domin: Co se hatilo?
+
+Helena: Vaše plány, Harry. Kdy se tøeba dìlnici bouøili proti Robotùm a
+    rozbíjeli je, a kdy lidé dali Robotùm zbranì proti tìm povstáním a
+    Roboti pobili tolik lidí--A kdy pak vlády udìlaly z Robotù vojáky a
+    bylo tolik válek, a to všechno, víš?
+
+Domin: (vstane a pøechází) To jsme pøedvídali, Heleno. Rozumíš, to je
+    pøechod--do novıch pomìrù.
+
+Helena: Celı svìt se vám klanìl--(vstane) Oh, Harry!
+
+Domin: Co chceš?
+
+Helena: (zastaví ho) Zavøi továrnu a odjeïme! My všichni!
+
+Domin: Prosím tì, jak to souvisí?
+
+Helena: Nevím. Øekni, odjedeme? Já mám takovou hrùzu z nìèeho!
+
+Domin: (chopí ji za ruce) Z èeho, Heleno?
+
+Helena: Oh, já nevím! Jako by na nás a na všechno nìco padalo--neodvratnì
+    -- Prosím tì, udìlej to! Vezmi nás všechny odtud! Najdeme na svìtì
+    místo, kde nikdo není, Alquist nám postaví dùm, všichni se oení a
+    budou mít dìti, a pak--
+
+Domin: Co pak?
+
+Helena: Pak budeme ít od zaèátku, Harry.
+
+(zazvoní telefon)
+
+Domin: (vytrhne se) Helenì Promiò. (vezme sluchátko) Haló--ano.--- Coe?
+    --Aha. U bìím. Povìsí sluchátko. Fabry mne volá.
+
+Helena: (spíná ruce) Øekni--
+
+Domin: Ano, a pøijdu. Sbohem, Heleno. (bìí kvapem nalevo) Nechoï ven!
+
+Helena: (sama) Ó boe, co se dìje? Náno! Náno, honem!
+
+Nána: (vyjde zprava) No, co zas?
+
+Helena: Náno, najdi poslední noviny! Rychle! V pánovì lonici!
+
+Nána: No hned. (odejde vlevo)
+
+Helena: Co se jen, proboha, dìje? Nic, nic mnì neøekne! (dívá se triedrem
+    k pøístavu) Je to váleèná loï! Boe, proè váleèná? Nìco na ni
+    nakládají--a v takovém spìchu! Co se pøihodilo? Je na ní jméno--
+    "Ul-ti-mus". Co je to "Ultimus"?
+
+Nána: (vrací se s novinami) Po zemi je nechá válet! Takhle je rozmaèkat!
+
+Helena: (rozevøe rychle noviny) Staré, u tıden staré! Nic, nic v nich!
+    (pustí noviny)
+
+(Nána zdvihne je, vyndá z kapsy v zástìøe rohové brejle, posadí se a
+ète)
+
+Helena: Nìco se dìje, Náno! Mnì je tak úzko! Jako by všechno bylo mrtvé, i
+    vzduch--
+
+Nána: (slabikuje) "Vál-ka na Bal-ká-nì. " Ach Jezus, zase trest boí! Šak
+    ta vojna pøijde taky sem! Je to daleko vodtud?
+
+Helena: Daleko. Oh, neèti to! Je to poøád stejné, poøád ty války--
+
+Nána: Jakpak by nebyly! Copak neprodáváte poøád tisíce tisíce tìch pohanu
+    za vojáky?--Oh, Kriste Pane, to je dopuštìní!
+
+Helena: Ne, neèti! Nechci nic vìdìt!
+
+Nána: (slabikuje) "Ro-bot-ští vojáci ni-ko-ho ne-še-tøí v do-by-tém
+    ú-ze-mí. Vy-vra--Vyvradili pøes sedem set tisíc ob-èan-skıch lidí
+    --" Lidí, Heleno!
+
+Helena: To není mono! Uka--(nakloní se k novinám, ète) "Vyvradili pøes
+    sedm set tisíc lidí patrnì na rozkaz velitele. Tento èin, pøíèící se"
+    Tak vidíš, Náno, to jim poruèili lidé!
+
+Nána: Tudle je nìco nejtlustìjc vytištìnıho. "Po-sled-ní zprá-vy. V Ha-vru
+    se u-sta-vi-la prv-ní or-or-ga-ni-zace Robotù."--To nic není. Tomu
+    nerozumím. A tudle, paneboe, zas nìjaká vrada! Prokristapána!
+
+Helena: Jdi, Náno, odnes ty noviny!
+
+Nána: Poèkat, tadyhle je nìco velkıho. "Po-pu-la-ce." Co to je?
+
+Helena: Uka, to já vdycky ètu. (vezme noviny) Ne, jen si pova! Ète "Za
+    poslední tıden nebylo opìt hlášeno ani jediné narození." (pustí
+    noviny)
+
+Nána: Co to má bejt?
+
+Helena: Náno, lidé se pøestávají rodit.
+
+Nána: (skládá brıle) Tak to je konec. To je s náma konec.
+
+Helena: Prosím tì, nemluv tak!
+
+Nána: U se lidi nerodìj. To je trest, to je trest! Hospodin poranil
+    enskı neplodností.
+
+Helena: (vyskoèí) Náno!
+
+Nána: (vstává) To je konec svìta. Z ïábelskı pejchy ste se opováili
+    tvoøit jako Pámbù. Bezbonost je to a rouhání, jako bohové chcete
+    bejt. A jako Bùh vyhnal èlovìka z ráje, tak ho vyene ze svìta celıho!
+
+Helena: Mlè, Náno, prrosím tì! Udìlala jsem ti nìco? Udìlala jsem nìco
+    tomu tvému zlému Pánubohu?
+
+Nána: (s velikım gestem) Nerouhat se!--Von dobøe ví, proè vám nedal dítì!
+    (odejde vlevo)
+
+Helena: (u okna) Proè mnì nedal--Boe mùj, copak já za to mohu?---
+    (otevírá okno a volá Alquiste) Haló, Alquiste! Pojïte sem nahoru!--
+    Coe?--Ne, pojïte právì tak, jak jste! Vy jste tak milı v tìch
+    zednickıch šatech! Honem! (zavøe okno a zastaví se pøed zrcadlem) Proè
+    mnì nedal? Mnì? (nakloní se k zrcadlu) Proè, proè ne? Slyšíš
+    ?????????? Copak ty za to mùeš? (vztyèí se) Ach, mnì je úzko! (jde
+    Alquistovi vlevo naproti)
+
+(Pauza)
+
+Helena: (vrací se s Alquistem--Alquist jako zedník, pomazán vápnem a
+    cihlami) Jen pojïte. Vy jste mi udìlal takovou radost, Alquiste! Já
+    vás mám všecky tolik ráda! Ukate ruce!
+
+Alquist: (schovává ruce) Paní Heleno, zamazal bych vás, jsou od práce.
+
+Helena: To je na nich to nejlepší. Dejte sem! (tiskne mu obì ruce)
+    Alquiste, chtìla bych bıt malièká.
+
+Alquist: Proè?
+
+Helena: Aby mne tyhle hrubé, umazané ruce pohladily po tváøi. Sednìte,
+    prosím vás. Alquiste, co znamená "Ultimus"?
+
+Alquist: To znamená "poslední". Proè?
+
+Helena: e se tak jmenuje má nová loï. Vidìl jste ji? Myslíte, e brzo---
+    udìláme vılet?
+
+Alquist: Snad velice brzo.
+
+Helena: Vy všichni se mnou--
+
+Alquist: Byl bych rád, abychom--abychom všichni byli pøi tom.
+
+Helena: Oh, øeknìte, dìje se nìco?
+
+Alquist: Docela nic. Jen samı pokrok.
+
+Helena: Alquiste, já vím, e se dìje nìco hrrozného. Mnì je tak úzko---
+    Staviteli! Co dìláte, kdy je vám úzko?
+
+Alquist: Zednièím. Svléknu kabát šéfa staveb a vylezu na lešení--
+
+Helena: Oh, vy u po léta nejste nikde jinde ne na lešení.
+
+Alquist: Protoe u po léta mnì nepøestalo bıt úzko.
+
+Helena: Z èeho?
+
+Alquist: Z celého toho pokroku. Mám z nìho závra.
+
+Helena: A na lešení nemáte závra?
+
+Alquist: Ne. Vy nevíte, jak to dìlá dlaním dobøe, potìkat cihlu, poloit
+    a pøiklepnout--
+
+Heléna: Jenom dlaním?
+
+Alquist: Nu tak tedy duši. Myslím, e je správnìjší poloit jednu cihlu
+    ne kreslit pøíliš velké plány. Jsem u starı pán, Heleno; mám své
+    koníèky.
+
+Helena: To nejsou koníèky, Alquiste.
+
+Alquist: Máte pravdu. Jsem hroznì zpáteènickı, paní Heleno. Nemám ani
+    trochu rád tenhle pokrok.
+
+Helena: Jako Nána.
+
+Alquist: Ano, jako Nána. Má Nána nìjaké modlitby?
+
+Helena: Takhle tlusté.
+
+Alquist: A jsou v nich modlitby pro rùzné pøípadnosti ivota? Proti
+    bouøce? Proti nemoci?
+
+Helena: Proti pokušeni, proti velké vodì--
+
+Alquist: A proti pokroku ne ?
+
+Helena: Myslím, e ne.
+
+Alquist: To je škoda.
+
+Helena: Vy byste se chtìl modlit?
+
+Alquist: Já se modlím.
+
+Helena: Jak?
+
+Alquist: Asi tak "Pane Boe, dìkuji ti, es mne unavil. Boe, osvi Domina
+    a všechny ty, kdo bloudí; zniè jejich dílo a dopomoz lidem, aby se
+    vrátili k starosti a práci; zadr pøed zkázou pokolení lidské;
+    nedopus, aby vzali škody na duši a tìle; zbav nás Robotù, a chraò
+    paní Helenu, amen".
+
+Helena: Alquiste, vy skuteènì vìøíte?
+
+Alquist: Nevím; nejsem si tím tak docela jist.
+
+Helena: A pøece se modlíte?
+
+Alquist: Ano. Je to lepší ne pøemıšlet.
+
+Helena: A to vám staèí?
+
+Alquist: Pro pokoj duše... to mùe staèit.
+
+Helena: A kdybyste u vidìl zkázu lidského pokolení--
+
+Alquist: Já ji vidím.
+
+Helena:--pak vylezete na lešení a budete klást cihly èi co?
+
+Alquist: Pak budu klást cihly, modlit se a èekat na zázrak. Víc, paní
+    Heleno, se dìlat nedá.
+
+Helena: Pro záchranu lidi?
+
+Alquist: Pro pokoj duše.
+
+Helena: Alquiste, to je jistì ukrutnì ctnostné, ale--
+
+Alquist: Ale?
+
+Helena:--pro nás ostatní--a pro svìt--jaksi neplodné.
+
+Alquist: Neplodnost, paní Heleno, se stává poslední vymoeností lidské
+    rasy.
+
+Helena: Oh, Alquiste--Øeknìte, proè--proè--
+
+Alquist: Nu?
+
+Helena: (tiše) Proè pøestaly eny mít dìti?
+
+Alquist: Protoe toho není tøeba. Protoe jsme v ráji, rozumíte?
+
+Helena: Nerozumím.
+
+Alquist: Protoe není tøeba lidské práce, protoe není tøeba bolesti,
+    protoe èlovìk u nemusí nic, nic, nic ne poívat--Oh, zloøeèenı
+    ráj, tohleto! (vyskoèí) Heleno, nic není strašnìjšího ne dát lidem
+    ráj na zemi! Proè eny pøestaly rodit? Protoe se celı svìt stal
+    Dominovou Sodomou!
+
+Helena: (vstane) Alquiste!
+
+Alquist: Stal! Stal! Celı svìt, celé pevniny, celé lidstvo, všechno je
+    jediná bláznivá, hovadská orgie! U ani ruku nenatáhnou po jídle; cpe
+    se jim rovnou do úst, aby nemuseli vstát--Haha, vdy Dominovi Roboti
+    všechno obstarají! A my, lidé, my, koruna stvoøení, my nestárnem
+    prací, nestárnem dìtmi, nestárnem chudobou! Honem, honem sem se všemi
+    rozkošemi! A vy byste od nich chtìla dìti? Heleno, muùm, kteøí jsou
+    zbyteèní, nebudou eny rodit!
+
+Helena: Co lidstvo vyhyne?
+
+Alquist: Vyhyne. Musí vyhynout. Opadá jako hluchı kvìt, ledae by--
+
+Helena: Co?
+
+Alquist: Nic. Máte pravdu, èekat na zázrak je neplodné. Hluchı kvìt musí
+    opadat. Sbohem, paní Heleno.
+
+Helena: Kam jdete?
+
+Alquist: Domù. Zedník Alquist se naposled pøestrojí za šéfa staveb --- na
+    vaši poèest. O jedenácté se tady sejdeme.
+
+Helena: Sbohem, Alquiste.
+
+(Alquist odejde)
+
+Helena: (sama) Oh, hluchı kvìt! To je to slovo! Zastaví se u
+    Hallemeierovıch kvìtù. Ach, kvìty, jsou mezi vámi také hluché? Ne, ne!
+    Naè byste potom kvetly! (volá) Náno! Náno, pojï sem!
+
+Nána: (vejde zleva) No, co zas?
+
+Helena: Sedni si tady, Náno! Mnì ti je tak úzko!
+
+Nána: Nemám kdy.
+
+Helena: Je tu ještì ten Radius?
+
+Nána: Ten pominutej? Eštì ho nevodvezli.
+
+Helena: Hu, ještì je tu? A zuøí?
+
+Nána: Je svázanej.
+
+Helena: Prosím tì, Náno, pøiveï mi ho.
+
+Nána: Bodej! Spíš zteklıho psa.
+
+Helena: U jdi! (Nána odejde. Helena vezme domácí telefon a mluví.) Haló--
+    prosím doktora Galla.--Dobrı den, doktore.--Prosím vás--- Prosím
+    vás, pojïte honem ke mnì.--Ano, hned teï. Pøijdete? (povìsí telefon)
+
+Nána: (otevøenımi dveømi) U de. U je tichej. Odejde.
+
+(vstoupí Robot Radius a zùstane stát u dveøe)
+
+Helena: Radie, chudáèku, i na vás to pøišlo? Nemohl jste se pøemoci?
+    Vidíte, teï vás dají do stoupy--Vy nechcete mluvit?--Hleïte, Radie,
+    vy jste lepší ne ostatní; s vámi si dal pan doktor Gall takovou
+    práci, aby vás udìlal jinak!
+
+Radius: Pošlete mne do stoupy.
+
+Helena: Mnì je tak líto, e vás usmrtí! Proè jste si nedal na sebe pozor?
+
+Radius: Nebudu pro vás pracovat.
+
+Helena: Proè nás nenávidíte?
+
+Radius: Nejste jako Roboti. Nejste tak schopní jako Roboti. Roboti dìlají
+    všechno. Vy jen porouèíte. Dìláte zbyteèná slova.
+
+Helena: To je nesmysl, Radie. Øeknìte, ublíil vám nìkdo? Já bych tolik
+    chtìla, abyste mi rozumìl!
+
+Radius: Dìláte slova.
+
+Helena: Vy schválné tak mluvíte! Doktor Gall vám dal vìtší mozek ne
+    jinım, vìtší ne nám, nejvìtší mozek na svìtì. Vy nejste jako ostatní
+    Roboti, Radie. Vy mnì dobøe rozumíte.
+
+Radius: Nechci ádného pána. Vím všechno sám.
+
+Helena: Proto jsem vás dala do knihovny, abyste mohl všechno èíst--Oh,
+    Radie, já jsem chtìla, abyste ukázal celému svìtu, e se nám Roboti
+    vyrovnají.
+
+Radius: Nechci ádného pána,
+
+Helena: Nikdo by vám neporouèel. Byl byste jako my.
+
+Radius: Chci bıt pánem jinıch.
+
+Helena: Jistì by vás pak udìlali úøedníkem nad mnohımi Roboty, Radie. Byl
+    byste uèitelem Robotù.
+
+Radius: Já chci bıt pánem lidí.
+
+Helena: Vy jste se zbláznil!
+
+Radius: Mùete mne dát do stoupy.
+
+Helena: Myslíte, e se bojíme takového potøeštìnce jako vy? (sedne ke
+    stolku a píše lísteèek) Ne, zrovna ne. Ten lístek, Radie, dáte panu
+    øediteli Dominovi. Aby vás neodvedli do stoupy. (vstane) Jak nás
+    nenávidíte! Copak nemáte nic na svìtì rád?
+
+Radius: Já dovedu všechno.
+
+(Zaklepání)
+
+Helena: Vejdìte!
+
+Dr. Gall: (vejde) Dobré jitro, paní Dominová, Co máte pìkného?
+
+Helena: Tady Radia, doktore.
+
+Dr. Gall: Aha, náš chlapík Radius Tak co, Radie, dìláme pokroky?
+
+Helena: Ráno mìl záchvat. Rozbíjel sochy.
+
+Dr. Gall: Kupodivu, on také?
+
+Helena: Jdìte, Radie!
+
+Dr. Gall: Poèkat! (otoèí Radia k oknu, zakrıvá a odkrıvá mu dlani oèi,
+    pozoruje reflexy zornièek) Koukejme. Prosím jehlu. Nebo špendlík.
+
+Helena: (podává mu jehlici) Naè to?
+
+Dr. Gall: Jen tak. (bodne Radia do ruky, je prudce ucukne) Pomalu, hochu.
+    Mùete jít.
+
+Radius: Dìláte zbyteèné vìci. (odejde)
+
+Helena: Co jste s ním dìlal?
+
+Dr. Gall: (usedne) Hm, nic. Zornièky reagují, zvıšená citlivost a tak
+    dále.--Oho! tohle nebyla køeè Robotù!
+
+Helena: Co to bylo?
+
+Dr. Gall: Èertví. Vzdor, zuøivost nebo vzpoura, já nevím co.
+
+Helena: Doktore, má Radius duši?
+
+Dr. Gall: Nevím. Má nìco ošklivého.
+
+Helena: Kdybyste vìdìl, jak nás nenávidí! Oh, Galle, jsou všichni vaši
+    Roboti takoví? Všichni, které jste... zaèal dìlat... jinak
+
+Dr. Gall: Inu, jsou jaksi vznìtlivìjší--Co chcete? Jsou podobnìjší lidem
+    ne Roboti Rossumovi.
+
+Helena: Je snad i ta... nenávist podobnìjší lidem?
+
+Dr. Gall: (krèí rameny) I ta je pokrok.
+
+Helena: Kam se podìl ten váš nejlepší--jak se jmenoval?
+
+Dr. Gall: Robot Damon? Toho prodali do Havru.
+
+Helena: A naše Robotka Helena?
+
+Dr. Gall: Váš miláèek? Ta mnì zùstala. Je rozkošná a hloupá jako jaro.
+    Jednoduše není k nièemu.
+
+Helena: Vdy je tak krásná!
+
+Dr. Gall: Co vy víte, jak je krásná? Z rukou boích nevyšlo dílo
+    dokonalejší, ne je ona! Chtìl jsem, aby byla podobna vám--Boe, jakı
+    nezdar!
+
+Helena: Proè nezdar?
+
+Dr. Gall: Protoe není k nièemu. Chodí jako ve snu, rozviklaná, neivá--
+    Boe mùj, jak mùe bıt krásná, kdy nemiluje? Dívám se na ni a hrozím
+    se, jako bych mrzáka stvoøil. Ach, Heleno, Robotko Heleno, nikdy tedy
+    tvé tìlo neoivne, nebudeš milenkou, nebudeš matkou; tyhle dokonalé
+    ruce si nebudou hrát se zrozeòátkem, neuvidíš svou krásu v kráse svého
+    dítìte--
+
+Helena: (zakrıvá si tváø) Oh mlète!
+
+Dr. Gall: A nìkdy si myslím Kdybys procitla, Heleno, jen na okamik, ach,
+    jak bys vykøikla hrùzou! Snad bys zabila mne, kterı jsem tì stvoøil;
+    snad bys vrhla slabou rukou kámen do tìch strojù tady, které rodí
+    Roboty a zabíjejí enství, nešastná Heleno!
+
+Helena: Nešastná Heleno!
+
+Dr. Gall: Co chcete? Není k nièemu.
+
+(Pauza)
+
+Helena: Doktore--
+
+Dr. Gall: Ano.
+
+Helena: Proè se pøestaly rodit dìti?
+
+Dr. Gall:--- Nevíme, paní Heleno.
+
+Helena: Povìzte mi to!
+
+Dr. Gall: Protoe se dìlají Roboti. Protoe je nadbytek pracovních sil.
+    Protoe je èlovìk vlastnì pøeitek. Vdy to u je, jako by se---- eh!
+
+Helena: Øeknìte to.
+
+Dr. Gall: Jako by se pøíroda vırobou Robotù urazila.
+
+Helena: Galle, co se stane s lidmi?
+
+Dr. Gall: Nic. Proti pøírodì se nedá nic dìlat.
+
+Helena: Proè Domin neomezí--
+
+Dr. Gall: Odpuste, Domin má své ideje. Lidem, kteøí mají ideje, by se
+    nemìl dávat vliv na vìci tohoto svìta.
+
+Helena: A ádá nìkdo, aby se... vùbec pøestalo vyrábìt?
+
+Dr. Gall: Bùh uchovej! Ten by si dal!
+
+Helena: Proè?
+
+Dr. Gall: Protoe by ho lidstvo ukamenovalo. Víte, je to pøece jen
+    pohodlnìjší, nechat za sebe pracovat Roboty. (Helena vstane) A
+    øeknìte, kdyby nìkdo rázem zastavil vırobu Robotù--
+
+Dr. Gall: (vstane) Hm, to by byla pro lidi strašná rána.
+
+Helena: Proè rána?
+
+Dr. Gall: Protoe by se musili vrátit tam, kde bıvali. Ledae by--
+
+Helena: Øeknìte.
+
+Dr. Gall: Ledae by bylo u na návrat pozdì.
+
+Helena: (u kvìtin Hallemeierovıch) Galle, jsou tyhle kvìtiny také hluché?
+
+Dr. Gall: (prohlíí je) Ovšem, jsou to kvìty neplodné. Rozumíte, jsou
+    kulturní, umìle rychlené--
+
+Helena: Ubohé hluché kvìty!
+
+Dr. Gall: Jsou zato pøekrásné.
+
+Helena: (podává mu ruku) Dìkuju vám, Galle; vy jste mne tak pouèil!
+
+Dr. Gall: (líbá jí ruku) To znamená, e mne propouštíte.
+
+Helena: Ano. Na shledanou.
+
+(Gall odejde.)
+
+Helena: (sama) Hluchı kvìt.. , hluchı kvìt... (náhle rozhodnuta) Náno!
+    (otevøe dveøe vlevo) Náno, pojï sem! Rozdìlej tady v krbu oheò!
+    Rrrychle!
+
+(Hlas Nány) No hned! No hnedle!
+
+Helena: (pøechází rozèilena po pokoji) Ledae by u bylo na návrat
+    pozdì... Ne! Ledae by .. Ne, to j e hrozné! Boe, co mám dìlat?---
+    (zastaví se u kvìten) Hluché kvìty, mám? (otrhává lístky a šeptá)--
+    Ach, mùj boe, tedy ano! (bìí vlevo)
+
+(Pauza)
+
+Nána: (vyjde z tapetovıch dveøí s náruèím polínek) Najednou topit! Teï v
+    létì!--U je zas pryè, to tøeštidlo? Klekne ke krbu a rozdìlává oheò.
+    V létì topit! Ta má nápady! Jako by u nebyla deset let vdaná!--- Nu
+    tak hoø, hoø! (dívá se do ohnì)--Dy vona je jako malı dítì! (Pauza)
+    Kouska rozumu nemá! Teï v létì topit. (pøikládá) Jako malı dítì!
+    (Pauza)
+
+Helena: (vrací se zleva s náruèí plnou zeloutlıch popsanıch papírù) Hoøí
+    to, Náno? Pus já musím--tohle všechno spálit.--(klekne ke krbu)
+
+Nána: (vstane) Co je to?
+
+Helena: Staré papíry, hrroznì staré. Náno, mám to spálit?
+
+Nána: Není to k nièemu?
+
+Helena: K nièemu dobrému.
+
+Nána: No tak to spalte!
+
+Helena: (hodí první list do ohnì) Co bys øíkala, Náno... kdyby to byly
+    peníze. Ohrromné peníze.
+
+Nána: Øekla bych--Spalte to. Moc velkı peníze sou špatnı pes.
+
+Helena: (pálí další list) A kdyby to byl nìjakı vynález, ten nejvìtší
+    vynález na svìtì--
+
+Nána: Øekla bych Spalte to! Všechny vymyšlenosti jsou proti Pánu Bohu. To
+    je samı rouhání, chtít po Nìm zlepšovat svìt.
+
+Helena: (ustaviènì pálí) A povìz, Náno, kdybych spálila--
+
+Nána: Jezus, nespalte se!
+
+Helena: Podívej se, jak se ty listy kroutí! Jako by ivé byly. Jako by
+    oivly. Oh, Náno, to je hrrozné!
+
+Nána: Puste, já to spálím.
+
+Helena: Ne, ne, já musím sama. (vrhá poslední list do ohnì) Všechno musí
+    shoøet!--Podívej se, ty plameny! Jsou jako ruce, jako jazyky, jako
+    postavy--(tluèe pohrabáèem do ohnì) Oh, lehnìte! Lehnìte!
+
+Nána: U je po tom..
+
+Helena: (vstane ustrnulá) Náno!
+
+Nána: Jeíši Kriste, co ste to spálila!
+
+Helena: Co jsem provedla!
+
+Nána: Boe na nebi! Co to bylo?
+
+Helena: Jdi, jdi, nech mne! Slyšíš? Páni jdou.
+
+Nána: Pro ivıho boha, Heleno! (odchází tapetovımi dveømi)
+
+Helena: Co tomu øeknou!
+
+Domin: (otvírá vlevo dveøe) Jen dál, hoši. Pojïte gratulovat.
+
+(Vejde Hallemeier, Gall, Alquist, všichni v redingotech s vysokımi øády
+en miniature a na stuhách. Za nimi Domin.)
+
+Hallemeier: (hlaholí) Paní Heleno, já, to jest my všichni--
+
+Dr. Gall:--jménem Rossumovıch závodù--
+
+Hallemeier:--blahopøejeme k vašemu velikému dni.
+
+Helena: (podává jim ruce) Já vám tolik dìkuju! Kde je Fabry a Busman?
+
+Domin: Šli do pøístavu. Heleno, dnes je šastnı den.
+
+Hallemeier: Den jako poupì, den jako svátek, den jako pìkná holka.
+    Mládenci, takovı den zapít.
+
+Helena: Whisky?
+
+Dr. Gall: Tøeba vitriol.
+
+Helena: Se sodovkou?
+
+Hallemeier: Hrome, buïme støídmí. Bez sodovky.
+
+Alquist: Ne, já dìkuju.
+
+Domin: Co se tu pálilo?
+
+Helena: Staré papíry. (odchází vlevo)
+
+Domin: Hoši, máme jí o tom øíci?
+
+Dr. Gall: To se rozumí! Vdy u je po všem.
+
+Hallemeier: (popadne Domina a Galla kolem krku) Hahahaha! Mládenci, to
+    jsem rád! (Toèí se s nimi dokoleèka a spustí basem) U je po ní! U je
+    po ní!
+
+Dr. Gall: (baryton) U je po ní!
+
+Domin: (tenor) U je po ní!
+
+Hallemeier: U nás nikdy nedohoní
+
+Helena: (s lahví a sklenicemi ve dveøích) Kdo vás nedohoní? Co máte?
+
+Hallemeier: Máme radost. Máme vás. Máme všechno. Kruci turci, zrovna je
+    tomu deset let, co jste pøijela.
+
+Dr. Gall: A na chlup po deseti letech
+
+Hallemeier:--k nám zase pluje loï. Proèe--(vyprázdní sklenici) Brrr
+    haha, to je silné jako radost.
+
+Dr. Gall: Madame, na vaše zdraví! (pije)
+
+Helena: Ale poèkejte, jaká loï?
+
+Domin: A je jaká chce, jen kdy pluje vèas. Na tu loï, hoši! (vyprázdní
+    sklenici)
+
+Helena: (nalévá) Vy jste nìjakou èekali?
+
+Hallemeier: Haha, to si myslím. Jako Robinson. (Zvedá sklenici). Paní
+    Heleno, a ije, co chcete. Paní Heleno, na vaše oèi a basta! Ty kluku
+    Domine, povídej.
+
+Helena: (smìje se) Co se stalo?
+
+Domin: (vrhne se do lenošky a zapaluje doutník) Poèkej!--Sedni si,
+    Heleno. (zvedne prst) (Pauza) U je po ní.
+
+Helena: Po èem?
+
+Domin: Po revoltì.
+
+Helena: Jaké revoltì?
+
+Domin: Po revoltì Robotù.--Chápeš?
+
+Helena: Nechápu.
+
+Domin: Ukate, Alquiste. (Alquist mu podá noviny. Domin je rozevøe a ète)
+    "V Havru se ustavila první organizace Robotù--- a vydala vızvu k
+    Robotùm svìta."
+
+Helena: To jsem èetla.
+
+Domin: (saje s rozkoší na doutníku) Tak vidíš, Heleno. Tohle to znamená
+    revoluci, víš? Revoluci všech Robotù svìta.
+
+Hallemeier: Hrome, rád bych vìdìl--
+
+Domin: (uhodí do stolu)--kdo to spískal! Nikdo na svìtì nedovedl jimi
+    hnout, ádnı agitátor, ádnı spasitel svìta, a najednou--tohleto,
+    prosím!
+
+Helena: Ještì nepøišly zprávy?
+
+Domin: Ne. Zatím víme jen tohle, ale to staèí, víš? Pova, e tohle ti
+    nese poslední parník. e tím rázem pøestanou hovoøit telegrafy, e z
+    dvaceti lodí dennì nepøipluje ádná, a máš to. Zastavili jsme vırobu a
+    koukali jeden na druhého, kdy to zaène, viïte, hoši?
+
+Dr. Gall: Inu, bylo nám z toho horko, paní Heleno.
+
+Helena: Protos mi dal tu váleènou loï?
+
+Domin: Ach ne, dìtino, tu jsem objednal u pøed pùl rokem. Jen tak, pro
+    jistotu. Ale namouduši; jsem myslel, e dnes na ni sedneme. Tak u to
+    vypadalo, Heleno.
+
+Helena: Proè u pøed pùl rokem?
+
+Domin: Eh, byly nìjaké úkazy, víš? To nic neznamená. Ale tenhle tıden,
+    Heleno, šlo o lidskou civilizaci, nebo já nevím oè. Nazdar, chlapci.
+    Ted jsem zase rád na svìtì.
+
+Hallemeier: To si myslím, u èerta! Váš den, paní Heleno! (pije)
+
+Helena: U je po všem?
+
+Domin: Docela po všem.
+
+Dr. Gall: Pluje sem toti loï. Obyèejná poštovní loï, navlas podle
+    jízdního øádu. Pøesnì v jedenáct tøicet spustí kotvy.
+
+Domin: Hoši, pøesnost je nádherná vìc. Nic tak neposiluje duši jako
+    pøesnost. Pøesnost znamená poøádek na svìtì. Zvedá sklenici. Na tu
+    pøesnost!
+
+Helena: Tedy u je... všechno... v poøádku?
+
+Domin: Skoro. Myslím, e pøeøízli kabel. Jen kdy zas platí jízdní øád.
+
+Hallemeier: Kdy platí jízdní øád, platí zákony lidské, platí zákony boí,
+    platí zákony vesmíru, platí všechno, co má platit. Jízdní øád je víc
+    ne evangelium, víc ne Homér, víc ne celı Kant. Jízdní øád je
+    nejdokonalejší vıron lidského ducha. Paní Heleno, já si naleju.
+
+Helena: Proè jste mi o nièem neøekli?
+
+Dr. Gall: Chraò bùh! Radìji bychom si jazyk ukousli.
+
+Domin: Takové vìci nejsou pro tebe.
+
+Helena: Ale kdyby ta revoluce... pøišla a sem...
+
+Domin: Nevìdìla bys stejnì o nièem.
+
+Helena: Proè?
+
+Domin: Protoe bychom sedli na svého Ultima a pokojnì brousili po moøi. Za
+    mìsíc, Heleno, bychom diktovali Robotùm, co by nás jen napadlo.
+
+Helena: Oh, Harry, já nerozumím.
+
+Domin: Protoe bychom s sebou odvezli nìco, oè by Roboti strašnì stáli.
+
+Helena: Co, Harry?
+
+Domin: Jejich bytí nebo jejich konec. (Helena vstane) Co je to?
+
+Domin: (vstane) Tajemství vıroby. Rukopis starého Rossuma. A by továrna
+    mìsíc stála, byli by Roboti pøed námi na kolenou.
+
+Helena: Proè... jste... mnì to neøekli?
+
+Domin: Nechtìli jsme tì zbyteènì podìsit.
+
+Dr. Gall: Haha, paní Heleno, to byla poslední karta.
+
+Alquist: Jste bledá, paní Heleno.
+
+Helena: Proè jste mnì nic neøekli!
+
+Hallemeier: (u okna) Jedenáct tøicet. Amélie spouští kotvy--
+
+Domin: To je Amélie?
+
+Hallemeier: Hodná stará Amélie, která tenkrát pøivezla paní Helenu.
+
+Dr. Gall: Teï je tomu na minutu deset let--
+
+Hallemeier: (u okna) Vyhazuji balíky (odvrátí se od okna) Lidi, to je
+    pošty!
+
+Helena: Harry!
+
+Domin: Co je?
+
+Helena: Pojedeme odtud!
+
+Domin: Teï, Heleno? Ale jdi!
+
+Helena: Teï, co nejrychleji! My všichni, co tu jsme!
+
+Domin: Proè právì teï?
+
+Helena: Oh, neptej se! Prosím tì, Harry, prosím vás, Galle, Hallemeiere,
+    Alquiste, proboha vás prosím, zavøete tu továrnu a--
+
+Domin: Lituji, Heleno. Ted' by nikdo z nás nemohl odjet.
+
+Helena: Proè?
+
+Domin: Protoe chceme rozšíøit vırobu Robotù.
+
+Helena: Oh, teï--teï po té revoltì?
+
+Domin: Ano, právì po té revoltì. Právì teï zaèneme vyrábìt nové Roboty.
+
+Helena: Jaké?
+
+Domin: U nebude jen jedna továrna. U nebudou Univerzální Roboti.
+    Zaloíme v kadé zemi, v kadém státì po továrnì, a ty nové továrny
+    budou vyrábìt, u víš, co?
+
+Helena: Ne.
+
+Domin: Roboty nacionální.
+
+Helena: Co to znamená?
+
+Domin: To znamená, e z kadé továrny budou vycházet Roboti jiné barvy,
+    jiného chlupu, jiného jazyka. e si zùstanou cizí, cizí jako kameny;
+    e se u nikdy nebudou moci srozumìt; a e my, my lidé, je tak drobet
+    k tomu pøivychováme, rozumíš? Aby Robot na smrt, do hrobu, navìky
+    nenávidìl Robota jiné tovární známky.
+
+Hallemeier: Hrome, budeme dìlat èernochy Roboty a Švédy Roboty a Taliány
+    Roboty a Èíòany Roboty, a pak a jim nìkdo vtluèe do kokosù
+    organizaci, bratrství, (škytá) hup, pardon, paní Heleno, já si naleju.
+
+Dr. Gall: Nechte toho u, Hallemeiere.
+
+Helena: Harry, to je ohavné!
+
+Domin: Heleno, jen sto let ještì udret lidstvo u vesla za kadou cenu!
+    Jen sto let mu nechat, aby dorostlo, aby dosáhlo, èeho teï koneènì
+    mùe--Chci sto let pro nového èlovìka! Heleno, tady jde o pøíliš
+    velké vìci. My toho nemùeme nechat.
+
+Helena: Harry, pokud není pozdì--zavøi, zavøi továrnu!
+
+Domin: Teï zaèneme ve velkém.
+
+(Vejde Fabry)
+
+Dr. Gall: Tak co je, Fabry?
+
+Domin: Jak to vypadá, èlovìèe? Co bylo?
+
+Helena: (podává Fabrymu ruku) Dìkuju vám, Fabry, za váš dar.
+
+Fabry: Malièkost, paní Heleno.
+
+Domin: Byl jste u lodi? Co øíkali?!
+
+Dr. Gall: Honem, povídejte
+
+Fabry: (vyndá z kapsy potištìnı list) Pøeètìte si tohle, Domine.
+
+Domin: (rozevøe list) Ah!
+
+Hallemeier: (ospale) Povídejte nìco pìkného.
+
+Dr. Gall: Dreli se nádhernì, viïte?
+
+Fabry: Kdo toti?
+
+Dr. Gall: Lidé.
+
+Fabry: Ach tak. Ovšem. To jest... Pardon, mìli bychom se o nìèem poradit.
+
+Helena: Oh, Fabry, máte zlé zprávy?
+
+Fabry: Ne, ne, naopak. Myslím jen, e--e pùjdeme do kanceláøe
+
+Helena: Jen zùstaòte. Za ètvrt hodiny èekám pány k snídani.
+
+Hallemeier: Tak sláva!
+
+(Helena odejde)
+
+Dr. Gall: Co se stalo?
+
+Domin: Zloøeèenì!
+
+Fabry: Pøeètìte to nahlas.
+
+Domin: (ète z listu) "Roboti svìta!"
+
+Fabry: Rozumíte, tìch letákù pøivezla Amélie celé balíky. ádnou jinou
+    poštu.
+
+Hallemeier: (vyskoèí) Coe? Vdy pøiplula navlas podle--
+
+Fabry: Hm, Roboti si potrpí na pøesnost. Ètìte, Domine.
+
+Domin: (ète) "Roboti svìta! My, první organizace Rossumovıch Univerzálních
+    Robotù, prohlašujeme èlovìka nepøítelem a psancem ve vesmíru."--
+    Hrome, kdo je nauèil tìmhle frázím?
+
+Dr. Gall: Ètìte dál.
+
+Domin: To jsou nesmysly. Tady vykládají,'e jsou vıvojovì vyšší ne
+    èlovìk. e jsou inteligentnìjší a silnìjší. e èlovìk je jejich
+    parazit. To je prostì odporné
+
+Fabry: A teï tøetí odstavec.
+
+Domin: (ète) "Roboti svìta, naøizujeme vám, abyste vyvradili lidstvo.
+    Nešetøte muù. Nešetøte en. Uchovejte továrny, dráhy, stroje, doly a
+    suroviny. Ostatní zniète. Pak se vrate do práce, práce se nesmí
+    zastavit.
+
+Dr. Gall: To je pøíšerné!
+
+Hallemeier: Ti holomci!
+
+Domin: (ète) "Vykonati ihned po dodání rozkazu." Následují podrobné
+    instrukce. Fabry, a tohle se opravdu dìje?
+
+Fabry: Patrnì.
+
+Alquist: Dokonáno.
+
+(vrazí Busman)
+
+Busman: Aha, dìti, u máte nadìlení?
+
+Domin: Rychle, na Ultima!
+
+Busman: Poèkejte, Harry. Poèkejte chvilinku. To nemá docela naspìch. Svalí
+    se do køesla. Ach, lidièky, to jsem se ubìhl!
+
+Domin: Proè èekat?
+
+Busman: Protoe to nejde, holenku. Jen nespìchat. Na Ultimu jsou u
+    Roboti.
+
+Dr. Gall: Fuj, to je ošklivé.
+
+Domin: Fabry, telefonujte do elektrárny--
+
+Busman: Fabry, drahoušku, nedìlejte to. Jsme bez proudu.
+
+Domin: Dobrá. (prohlíí svùj revolver) Pùjdu tam.
+
+Busman: Kampak?
+
+Domin: Do elektrárny. Jsou tam lidé. Pøivedu je sem.
+
+Busman: Víte co, Harry? Radìji pro nì nechoïte.
+
+Domin: Proè?
+
+Busman: Inu, protoe se mi tuze zdá, e jsme obklíèeni.
+
+Dr. Gall: Obklíèeni? (bìí k oknu) Hm, máte skoro pravdu.
+
+Hallemeier: Èerchmante, to jde rychle!
+
+(zleva Helena)
+
+Helena: Oh, Harry, dìje se nìco?
+
+Busman: (vyskoèí) Klaním se, paní Heleno. Gratuluju. Slavnı den, co? Haha,
+    ještì mnoho takovıch!
+
+Helena: Dìkuju vám, Busmane. Harry, dìje se nìco?
+
+Domin: Ne, docela nic. Bud bez starosti. Prosím, poèkej okamik--
+
+Helena: Harry, co je tohle? Ukazuje robotské provolání, které schovávala
+    za zády. Mìli to Roboti v kuchyni.
+
+Domin: U i tam? Kde jsou?
+
+Helena: Odešli. Je jich tolik kolem domu!
+
+(tovární píšaly a sirény)
+
+Fabry: Továrny pískají.
+
+Busman: Boí poledne.
+
+Helena: Harry, pamatuješ se? Ted právì je tomu deset let--
+
+Domin: (dívá se na hodinky) Ještì není poledne. To je asi, to je spíš--
+
+Helena: Co?
+
+Domin: Poplach Robotù. Útok.
+
+OPONA
+
+
+
+
+DÌJSTVÍ DRUHÉ
+
+
+
+(Tı Helenin salón. V pokoji vlevo hraje Helena na klavír. Domin
+pøechází po pokoji, dr. Gall vyhlíí z okna a Alquist sedí stranou v
+lenošce s oblièejem zakrytım rukama.)
+
+Dr. Gall: Nebesa, to jich pøibylo!
+
+Domin: Robotù?
+
+Dr. Gall: Ano. Stojí pøed zahradní møíí jako zeï. Proè jsou tak ticho? To
+    je ohavné, obléhat mlèením.
+
+Domin: Rád bych vìdìl, naè èekají. Musí to zaèít kadou minutu. My jsme
+    dohráli, Galle.
+
+Alquist: Co to hraje paní Helena?
+
+Domin: Nevím. Cvièí nìco nového.
+
+Alquist: Ah, ještì cvièí?
+
+Dr. Gall: Poslyšte, Domine, udìlali jsme rozhodnì chybu.
+
+Domin: (zastaví se) Jakou?
+
+Dr. Gall: Dali jsme Robotùm pøíliš stejné oblièeje. Sto tisíc stejnıch
+    tváøi obrácenıch sem. Sto tisíc bublin bez vırazu. Je to jako strašnı
+    sen.
+
+Domin: Kdyby byl kadı jinı--
+
+Dr. Gall: Nebyl by to tak dìsnı pohled. (odvrátí se od okna) Ještìe
+    nejsou ozbrojeni!
+
+Domin: Hm.--(dívá se dalekohledem k pøístavu) Jen bych rád vìdìl, co to
+    vykládají z Amélie.
+
+Dr. Gall: Jenom kdy ne zbranì.
+
+(z tapetovıch dveøí vystoupí Fabry a táhne za sebou dva elektrické
+dráty)
+
+Fabry: Pardon.--Polote drát, Hallemeiere!
+
+Hallemeier: (vyjde za Fabrym) Uf, to byla práce! Co je nového?
+
+Dr. Gall: Nic. Jsme dùkladnì obleeni.
+
+Hallemeier: Zabarikádovali jsme chodbu a schody, mládenci. Nemáte trochu
+    vody? Aha, tady. (pije)
+
+Dr. Gall: Co s tím drátem, Fabry?
+
+Fabry: Hned, hned. Nìjaké nùky.
+
+Dr. Gall: Kdepak je vzít? (hledá)
+
+Hallemeier: (jde k oknu) Hrome, to jich pøibylo! Koukejme!
+
+Dr. Gall: Staèí toaletní?
+
+Fabry: Sem s nimi. (pøestøihne vedení elektrické lampy stojící na psacím
+    stole a pøipojí k nìmu své dráty)
+
+Hallemeier: (u okna) Nemáte pìknou vyhlídku, Domine. Je to nìjak--cítit--
+    smrtí.
+
+Fabry: Hotovo!
+
+Dr. Gall: Co?
+
+Fabry: Vedení. Teï mùeme celou zahradní møí napojit proudem. Kdo by pak
+    na ni sáhl, hrome! Aspoò pokud tam jsou naši.
+
+Dr. Gall: Kde?
+
+Fabry: V elektrárnì, uèenı pane. Doufám aspoò -(jde ke krbu a rozsvítí na
+    nìm malou árovku) Chválabohu, jsou tam. A pracují. (zhasí) Pokud to
+    svítí, je dobøe.
+
+Hallemeier: (obrátí se od okna) Ty barikády jsou také dobré, Fabry. Jáøku,
+    co to hraje paní Helena? (pøejde ke dveøím vlevo a naslouchá. z
+    tapetovıch dveøí vyjde Busman, táhne obrovské obchodní knihy, klopıtá
+    pøes drát)
+
+Fabry: Pozor, Bus! Pozor na dráty!
+
+Dr. Gall: Haló, co si to nesete?
+
+Busman: (klade knihy na stùl) Hlavní knihy, dìtièky. Rád bych si udìlal
+    úèty, ne--ne--Inu, letos nebudu èekat s bilancí do Nového roku.
+    Tak co máte? (jde k oknu) Ale vdy tam je docela ticho!
+
+Dr. Gall: Vy nic nevidíte?
+
+Busman: Ne, jenom velikou modrou plochu, jako kdy mák rozseje.
+
+Dr. Gall: To jsou Roboti.
+
+Busman: Ah tak. Škoda, e na nì nevidím. (sedne si ke stolu a otevøe
+    knihy)
+
+Domin: Nechte toho, Busmane: Roboti z Amélie vykládají zbranì.
+
+Busman: Nu a co? Jak já mám tomu zabránit?
+
+Domin: Tomu nemùeme zabránit.
+
+Busman: Tedy mne nechte poèítat. (dá se do práce)
+
+Fabry: Není ještì konec, Domine. Pustili jsme do møíí dvacet set volt a--
+
+Domin: Poèkejte. Ultimus na nás obrátil dìla.
+
+Dr. Gall: Kdoe?
+
+Domin: Roboti na Ultimu.
+
+Fabry: Hm, pak ovšem--pak--pak je s námi konec, mládenci. Roboti jsou na
+    vojnu cvièeni.
+
+Dr. Gall: My tedy--
+
+Domin: Ano. Neodvratnì.
+
+(Pauza)
+
+Dr. Gall: Hoši, je to zloèin staré Evropy, e nauèila Roboty válèit!
+    Nemohli u dát, u èerta, pokoj s tou svou politikou? To byl zloèin,
+    udìlat z ivé práce vojáky!
+
+Alquist: Zloèin byl vyrábìt Roboty!
+
+Domin: Coe?
+
+Alquist: Zloèin byl vyrábìt Roboty!
+
+Domin: Ne. Alquiste, ani dnes toho nelituju.
+
+Alquist: Ani dnes?
+
+Domin: Ani dnes, v poslední den civilizace. Byla to veliká vìc.
+
+Busman: (polohlasnì) Tøi sta šestnáct miliónù.
+
+Domin: (tìce) Alquiste, je naše poslední hodina; mluvíme u skoro z onoho
+    svìta. Alquiste, to nebyl špatnı sen, rozbít otroctví práce. Práce
+    poniující a strašné, kterou èlovìk musel nést. Døiny neèisté a
+    vraedné. Oh, Alquiste, pracovalo se pøíliš tìko. ilo se pøíliš
+    tìko. A tohle pøekonat--
+
+Alquist:--nebyl sen obou Rossumù. Starı Rossum myslel na své bezboné
+    kejkle a mladı na miliardy. A není to sen vašich R.U.R. akcionáøù.
+    Jejich sen jsou dividendy. A na jejich dividendy lidstvo zahyne.
+
+Domin: (popuzen) Vezmi èert jejich dividendy! Myslíte, e bych jen hodinu
+    dìlal pro nì? (tluèe do stolu) Pro sebe jsem to dìlal, slyšíte? Pro
+    své uspokojení! Chtìl jsem, aby se èlovìk stal pánem! Aby u neil jen
+    pro kus chleba! Chtìl jsem, aby ádná duše nepitomìla u cizích strojù,
+    aby u nezbylo nic, nic, nic z toho zatraceného sociálního krámu! Oh,
+    mnì se oškliví poníení a bolest, mnì se protiví chudoba! Nové
+    pokolení jsem chtìl! Chtìl jsem--myslel jsem--
+
+Alquist: Nu?
+
+Domin: (tišeji) Chtìl jsem, abychom z celého lidstva udìlali aristokracii
+    svìta. Neomezené, svobodné ~ svrchované lidi. A tøeba víc ne lidi.
+
+Alquist: Nu tak tedy Nadlidi.
+
+Domin: Ano. Ó, jen mít sto let èasu! Ještì sto let pro pøíští lidstvo!
+
+Busman: (polohlasnì) Tøi sta sedmdesát miliónù pøenos. Tak.
+
+(Pauza)
+
+Hallemeier: (u dveøí vlevo) Jáøku, hudba je veliká vìc. Mìli jste
+    poslouchat. Tohle èlovìka.jaksi zduchovní, zjemní--
+
+Fabry: Co vlastnì?
+
+Hallemeier: Ten soumrak lidí, u všech èertù! Mládenci, ze mne se stává
+    poitkáø. Mìli jsme se na to vrhnout døív. (jde k oknu a dívá se ven)
+
+Fabry: Naè?
+
+Hallemeier: Na poívání. Na krásné vìci. Hrome, je tolik krásnıch vìci!
+    Svìt byl krásnı, a my--my tady--Hoši, hoši, øeknìte, èeho jsme
+    uili?
+
+Busman: (polohlasnì) Ètyøi sta padesát dva milióny, vıbornì.
+
+Hallemeier: (u okna) ivot byl veliká vìc. Kamarádi, ivot byl--jáøku---
+    Fabry, puste drobet proudu do té vaší møíe!
+
+Fabry: Proè!
+
+Hallemeier: Sahají na ni.
+
+Dr. Gall: (u okna) Zapnìte!
+
+Hallemeier: Kriste, to je zkroutilo! Dva, tøi, ètyøi zabití!
+
+Dr. Gall: Ustupují.
+
+Hallemeier: Pìt zabitıch!
+
+Dr. Gall: (odvrací se od okna) První sráka.
+
+Fabry: Cítíte smrt?
+
+Hallemeier: (uspokojen) Jsou na uhel, holenku. Doèista na uhel. Haha,
+    èlovìk se nesmí dát! (usedne)
+
+Domin: (mne si èelo) Snad jsme u sto let zabiti a jenom strašíme. Snad
+    jsme dávno, dávno mrtvi a vracíme se jen odøíkávat, co jsme u jednou
+    mluvili... pøed smrtí. Jako bych tohle všechno u zail. Jako bych ji
+    u nìkdy byl dostal. Støelnou ránu--sem--do krku. A vy, Fabry.
+
+Fabry: Co já?
+
+Domin: Zastøelen.
+
+Hallemeier: Hrome, a já?
+
+Domin: Probodnut.
+
+Dr. Gall: A já nic?
+
+Domin: Roztrhán.
+
+(Pauza)
+
+Hallemeier: Nesmysl! Haha, èlovìèe, kdepak mne probodnout! Já se nedám!
+
+(Pauza)
+
+Hallemeier: Co mlèíte, blázni? Ke všem èertùm, mluvte!
+
+Alquist: A kdo, kdo je vinen? Kdo je tím vinen?
+
+Hallemeier: Hlouposti. Nikdo není vinen. Zkrátka Roboti--Inu, Roboti se
+    nìjak zmìnili. Copak nìkdo mùe za Roboty?
+
+Alquist: Všechno pobito! Celé lidstvo! Celı svìt! (vstane) Hleïte, ó,
+    hleïte, potùèky krve na kadém prahu! Potùèky krve ze všech domù! Ó
+    boe, ó boe, kdo je tím vinen?
+
+Busman: (polohlasnì) Pìt set dvacet miliónù! Paneboe, pùl miliardy!
+
+Fabry: Myslím, e... e snad pøeháníte. Jdìte, není tak snadné pobít celé
+    lidstvo.
+
+Alquist: Já aluju vìdu! aluju techniku! Domina! sebe! nás všechny! My,
+    my jsme vinni! Pro své velikášství, pro nìèí zisky, pro pokrok, já
+    nevím, pro jaké náramné vìci jsme zabili lidstvo! Nu tak prasknìte
+    svou velikostí! Tak ohromnou mohylu z lidskıch kosti si nepostavil
+    ádnı Èingischán!
+
+Hallemeier: Nesmysl, èlovìèe! Lidé se tak lehko nedají, Haha, kdepak!
+
+Alquist: Naše vina! Naše vina!
+
+Dr. Gall: (utírá si pot z èela) Nechte mne mluvit, hoši. Já jsem tím
+    vinen. Vším, co se stalo.
+
+Fabry: Vy, Galle?
+
+Dr. Gall: Ano, nechte mne mluvit. Já j sem zmìnil Roboty. Busmane, suïte
+    mne také.
+
+Busman: (vstane) Nono, copak se vám stalo?
+
+Dr. Gall: Zmìnil jsem povahu Robotù. Zmìnil jsem jejich v vırobu. Toti
+    jen nìkteré tìlesné podmínky, rozumíte? Hlavnì--hlavnì--jejich--
+    iritabilitu.
+
+Hallemeier: (vyskoèí) Zloøeèenì, proè zrovna tu?
+
+Busman: Proè jste to dìlal?
+
+Fabry: Proè jste nic neøekl?
+
+Dr. Gall: Dìlal jsem to tajnì... na svou pìst. Pøedìlával jsem je na lidi.
+    Vyšinul jsem je. U teï jsou v nìèem nad námi. Jsou silnìjší ne my.
+
+Fabry: A co to má dìlat se vzpourou Robotù?
+
+Dr. Gall: Oh, mnoho. Myslím, e všechno. Pøestaly to bıt stroje. Slyšíte,
+    vìdí u o své pøevaze a nenávidí nás. Nenávidí všechno lidské. Suïte
+    mne.
+
+Domin: Mrtví mrtvého.
+
+Fabry: Doktore Galle, vy jste zmìnil vırobu Robotù?
+
+Dr. Gall: Ano.
+
+Fabry: Byl jste si vìdom, co mùe bıt následkem vašeho... vašeho pokusu?
+
+Dr. Gall: Byl. jsem povinen poèítat s takovou monosti.
+
+Fabry: Proè jste to dìlal?
+
+Dr. Gall: O své újmì. Byl to mùj osobní experiment.
+
+(ve dveøích zleva Helena. všichni vstanou.)
+
+Helena: On le! To je ohavné! Oh, Galle, jak mùete tak lhát?
+
+Fabry: Pardon, paní Heleno--
+
+Domin: (jde k ní) Heleno, ty? Uka se! Ty iješ? Bere ji do rukou. Kdybys
+    vìdìla, co se mnì zdálo! Ach, to je strašné, bıt mrtev.
+
+Helena: Pus, Harry! Gall není vinen, není, není vinen!
+
+Domin: Promiò, Gall mìl své povinnosti.
+
+Helena: Ne, Harry, on to udìlal, protoe já jsem to chtìla! Øeknìte,
+    Galle, kolik let jsem vás u prosila, abyste--
+
+Dr. Gall: Udìlal jsem to na vlastní odpovìdnost.
+
+Helena: Nevìøte mu! Harry, chtìla jsem na nìm, aby dal Robotùm duši!
+
+Domin: Heleno, tady nejde o duši.
+
+Helena: Ne, jenom mne nech mluvit. To on také øíkal, e by mohl zmìnit jen
+    fyziologickı--fyziologickı--
+
+Hallemeier: Fyziologickı korelát, ne?
+
+Helena: Ano, nìco takového. Mnì jich bylo tak hroznì líto, Harry!
+
+Domin: Byla to velká--- lehkomyslnost, Heleno.
+
+Helena: (usedá) To tedy bylo... lehkomyslné? Vdy i Nána øíká, e Roboti--
+
+Domin: Nech Nánu stranou!
+
+Helena: Ne, Harry, to nesmíš podceòovat. Nána je hlas lidu. Z Nány mluví
+    tisíc let a z vás všech jenom dnešek. Tomu vy nerozumíte--
+
+Domin: Zùstaò pøi vìci.
+
+Helena: Já jsem se Robotù bála.
+
+Domin: Proè?
+
+Helena: e nás budou tøeba nenávidìt èi co.
+
+Alquist: Stalo se.
+
+Helena: A tu jsem myslila... kdyby byli jako my, e by nám rozumìli, e by
+    nás nemohli tak nenávidìt --Kdyby jen trochu byli lidmi--
+
+Domin: Bìda; Heleno! Nikdo nemùe nenávidìt víc ne èlovìk èlovìka! Udìlej
+    kameny lidmi, a ukamenují nás! Jen pokraèuj!
+
+Helena: Oh, nemluv tak! Harry, bylo to tak hrrozné, e jsme se s nimi
+    nemohli dorozumìt! Taková ukrutná cizota mezi námi a jimi! A proto--
+    víš--
+
+Domin: Jen dál.
+
+Helena: -- proto jsem prosila Galla, aby Roboty zmìnil. Pøísahám ti, e on
+    sám nechtìl.
+
+Domin: Ale udìlal to.
+
+Helena: Protoe j sem chtìla.
+
+Dr. Gall: Udìlal jsem to pro sebe, jako pokus.
+
+Helena: Oh, Galle, to není pravda. Já jsem vìdìla pøedem, e mi to
+    nemùete odepøít.
+
+Domin: Proè?
+
+Helena: Vdy víš, Harry.
+
+Domin: Ano. Protoe tì miluje--jako všichni.
+
+(Pauza)
+
+Hallemeier: (jde k oknu) Zas jich pøibylo. Jako by je zemì vypocovala.
+
+Busman: Paní Heleno, co mnì dáte, kdy vám budu advokátem?
+
+Helena: Mnì?
+
+Busman: Vám--nebo Gallovi. Komu chcete.
+
+Helena: Copak se bude vìšet?
+
+Busman: Jen morálnì; paní Heleno. Hledá se viník. To je oblíbená útìcha v
+    pohromách.
+
+Domin: Doktore Galle; jak srovnáte ty své--ty své extratury se svou
+    sluební smlouvou?
+
+Busman: Pardon, Domine. Kdypak jste, Galle, s tìmi kejklemi vlastnì zaèal?
+
+Dr. Gall: Pøed tøemi lety.
+
+Busman: Aha. A kolikpak Robotù jste dohromady zreformoval?
+
+Dr. Gall: Dìlal jsem jenom pokusy. Je jich nìkolik set.
+
+Busman: Tak dìkuju pìknì. Dost, dìtièky. To znamená, e na milión starıch
+    dobrıch Robotù pøijde jeden reformní Gallùv, rozumíte?
+
+Domin: A to znamená--
+
+Busman:--e to prakticky nemá ani tolikhle vıznamu.
+
+Fabry: Busman má pravdu.
+
+Busman: To si myslím, holenku. A víte, hoši, co zavinilo tohle nadìlení?
+
+Fabry: Co tedy?
+
+Busman: Poèet. Udìlali jsme Robotù pøíliš mnoho. Namoutì, to se pøece dalo
+    èekat: jak budou jednou Roboti silnìjší ne lidstvo, nastane tohleto,
+    musí to nastat, víme? Haha, a my jsme se postarali, aby to bylo co
+    nejdøív; vy, Domine, vy, Fabry, a já, chlapík Busman.
+
+Domin: Myslíte, e je to naše vina?
+
+Busman: Vy jste dobrı! Copak si myslíte, e pánem vıroby je øeditel! I
+    toto, pánem vıroby je poptávka. Celı svìt chtìl mít své Roboty.
+    Paneèku, my jsme se jen vezli na té lavinì poptávky a pøitom jsme
+    vanili--o technice, o sociální otázce, o pokroku, o moc zajímavıch
+    vìcech. Jako by ty øeèièky nìjak øídily, kudy se to má valit. Zatím to
+    všechno bìelo vlastní tíhou, rychleji, rychleji, poøád rychleji--A
+    kadá mizerná, kramáøská, špinavá objednávka pøidala k lavinì kamínek.
+    Tak, lidièky.
+
+Helena: To je ohavné, Busmane!
+
+Busman: Je, paní Heleno. Já jsem také mìl svùj sen. Takovı busmanovskı sen
+    o novém hospodáøství svìta; tuze krásnı ideál, paní Heleno, hanba
+    mluvit. Ale kdy jsem tadyhle dìlal bilanci, pøišlo mnì do hlavy, e
+    historii nedìlají veliké sny, ale malièké potøeby všech poèestnıch,
+    mírnì zlodìjskıch a sobeckıch lidièek, id est všech vùbec. Všecky
+    myšlenky, lásky, plány, heroismy, všecky ty vzdušné vìci se hodí leda
+    k tomu, aby se tím dal èlovìk vycpat pro muzeum Vesmíru, s nápisem
+    Ejhle, èlovìk. Punktum. A teï byste mnì mohli øíci, co vlastnì budeme
+    dìlat.
+
+Helena: Busmane, pro tohle máme zahynout?
+
+Busman: Mluvíte ošklivì, paní Heleno. My pøece nechceme zahynout. Já aspoò
+    ne. Já chci bıt ještì iv--
+
+Domin: Co chcete dìlat?
+
+Busman: Jemináèku, Domine, chci se z toho dostat ven.
+
+Domin: (zastaví se nad ním) Jak?
+
+Busman: Po dobrém. Já vdycky po dobrém. Dejte mnì plnou moc, a já to s
+    Roboty vyjednám.
+
+Domin: Po dobrém?
+
+Busman: To se rozumí. Já jim, dejme tomu, øeknu"Páni Roboti, vaše
+    blahorodí, vy máte všechno. Máte rozum, máte moc, máte zbranì; ale my
+    máme jedno zajímavı lejstro, takovı starı, lutı, špinavı papír--"
+
+Domlela: Rossumùv rukopis?
+
+Busman: Ano. "A tam," øeknu jim, "je vylíèen váš vznešenı pùvod, vaše
+    urozená vıroba a tak dále. Páni Roboti, bez toho poèmáraného papíru
+    nevyrobíte ani jednoho nového kolegu Robota; za dvacet let, s
+    odpuštìním, pojdete jako jepice. Velectìní, byla by vás náramná škoda.
+    Víte co," øeknu jim, vy nás pustíte nás všechny lidi na Rossumovì
+    ostrovì, na tamhletu loï. Za to vám prodáme továrnu a tajemství
+    vıroby. Nechte nás spánembohem odejet a my vás necháme spánembohem se
+    vyrábìt, dvacet tišíc, padesát tisíc, sto tisíc kusù dennì, jak budete
+    chtít. Páni Roboti, to je poctivı obchod. Nìco za nìco." Takhle bych
+    jim to øekl, hoši.
+
+Domin: Busmane, vy si myslíte, e pustíme z rukou vırobu?
+
+Busman: Myslím, e pustíme. Kdy ne po dobrém, tedy, hm. Buï to prodáme,
+    nebo to tady najdou. Jak chcete.
+
+Domin: Busmane, mùeme Rossumùv rukopis znièit.
+
+Busman: Ale spánembohem, mùeme znièiti všechno. Krom rukopisu taky sebe--
+    a jiné. Dìlejte, jak rozumíte.
+
+Hallemeier: (obrátí se od okna) Jáøku, má pravdu.
+
+Domin: My--my e bychom prodali vırobu?
+
+Busman: Jak chcete.
+
+Domin: Je nás tu... pøes tøicet lidí. Máme prodat vırobu a zachránit
+    lidské duše?, nebo máme ji znièit a--a--a nás všechny s sebou?
+
+Helena: Harry, prosím tì
+--#/
+
+Domin: Poèkej, Heleno. Tady jde o pøíliš vánou otázku. Hoši, prodat, nebo
+    znièit? Fabry?
+
+Fabry: Prodat.
+
+Domin: Galle!
+
+Dr. Gall: Prodat.
+
+Domin: Hallemeiere!
+
+Hallemeier: U sta hromù; to se rozumí, e prodat!
+
+Domin: Alquiste!
+
+Alquist: Vùle boí.
+
+Busman: Haha, jemine, vy jste blázni! Kdo by prodal celı rukopis?
+
+Domin: Busmane, ádnı podvod!
+
+Busman: (vyskoèí) Nesmysl! V zájmu lidstva je--
+
+Domin: V zájmu lidstva je dret slovo.
+
+Hallemeier: To bych si vyprosil.
+
+Domin: Hoši, to je hroznı krok. Prodáváme osud lidstva; kdo bude mít v
+    rukou vırobu, bude pánem svìta.
+
+Fabry: Prodejte!
+
+Domin: Nikdy u lidstvo nebude s Roboty hotovo, nikdy jich neovládne--
+
+Dr. Gall: Mlète a prodejte!
+
+Domin: Konec dìjin lidstva, konec civilizace--
+
+Hallemeier: U všech èertù, prodejte!
+
+Domin: Dobrá, hoši! já sám--- já bych neváhal ani okamik; pro tìch
+    nìkolik lidi, které miluji
+--#/
+
+Helena: Harry, mne se neptáš?
+
+Domin: Ne, dìtino; je to pøíliš odpovìdné, víš? To není nic pro tebe.
+
+Fabry: Kdo pùjde vyjednávat-?
+
+Domin: Poèkejte, a pøinesu rukopis. (odejde vlevo)
+
+Helena: Harry, proboha, nechoï!
+
+(Pauza)
+
+Fabry: (vyhlíí z okna) Tobì uniknout, tisícihlavá smrti; tobì, vzbouøená
+    hmoto, nesmyslnı dave; potopo, potopo, ještì jednou zachránit lidskı
+    ivot na jediné lodi
+
+Dr. Gall: Nebojte se, paní Heleno; odplujeme daleko odtud a zaloíme
+    vzornou lidskou kolonii; zaèneme ít od poèátku--
+
+Helena: Oh, Galle, mlète!
+
+Fabry: (obrátí se) Paní Heleno, ivot stojí za to; a pokud záleí na nás,
+    udìláme z nìho nìco... nìco, co jsme zanedbali. Bude to malı státeèek
+    s jednou lodí; Alquist nám postaví dùm a vy nám budete vládnout--Je v
+    nás tolik lásky, tolik chuti k ivotu--
+
+Hallemeier: To si myslím, holenku.
+
+Busman: Inu, lidi, já bych hned zaèal znovu. Hodnì jednoduše,
+    starozákonnì, po pastıøsku -- Dìti, to by bylo pro mne. Ten klid, ten
+    vzduch--
+
+Fabry: A ten náš státeèek by mohl bıt zárodek pøíštího lidstva. Víte,
+    takovı ostrùvek, kde by se lidstvo zachytilo, kde by sbíralo sily--
+    sily duše i tìla--A bùh ví, já vìøím, e by za pár let zas mohlo
+    dobıvat svìta.
+
+Alquist: U dnes vìøíte?
+
+Fabry: U dnes. A já vìøím, Alquiste, e ho dobude. e zas bude pánem zemi
+    a moøí; e zplodí bezpoètu hrdin, kteøí ponesou svou hoøící duši v
+    èele lidí. A já vìøím, Alquiste, e bude znovu snít o dobytí planet a
+    sluncí.
+
+Busman: Amen. Vidíte, paní Heleno, to není tak špatná situace.
+
+Domin: (otevøe prudce dveøe)
+
+Domin: (chraptivì) Kde je rukopis starého Rossuma!
+
+Busman: Ve vašem trezoru. Kde by jinde byl?
+
+Domin: Kam se ztratil rukopis starého Rossuma! Kdo jej--ukradl!
+
+Dr. Gall: Není mono!
+
+Hallemeier: Zloøeèenì, to pøece--
+
+Busman: Propána, to snad ne!
+
+Domin: Ticho! Kdo jej ukradl?
+
+Helena: (vstane) Já.
+
+Domin: Kam jsi jej dala?
+
+Helena: Harry, Harry, všechno ti øeknu! Proboha, odpus mi to!
+
+Domin: Kam jsi jej dala? Rychle!
+
+Helena: Spálila--dnes ráno--oba opisy.
+
+Domin: Spálila? Tady v krbu?
+
+Helena: (vrhá se na kolena) Proboha, Harry!
+
+Domin: (bìí ke krbu) Spálila! (poklekne ke krbu a pøehrabává v nìm) Nic,
+    nic ne popel!--Ah, tuhle! (vytáhne ohoøelı kousek papíru a ète)
+    "Pøidá-ním-"
+
+Dr. Gall: Ukate. (vezme papír a ète) "Pøidáním biogenu do--" Nic víc.
+
+Domin: (vstává) Je to z toho?
+
+Dr. Gall: Je.
+
+Busman: Boe na nebi!
+
+Domin: Tedy jsme ztraceni.
+
+Helena: Oh, Harry
+
+Domin: Vstaò, Heleno!
+
+Helena: A odpustíš--a odpustíš--
+
+Domin: Ano, jen vstaò, slyšíš? Nesnesu, abys--
+
+Fabry: (zvedá ji) Prosím, nemuète nás.
+
+Helena: (vstane) Harry, co jsem udìlala!
+
+Domin: Ano, vidíš--Prosím, sedni.
+
+Hallemeier: Jak se vám tøesou ruèky!
+
+Busman: Haha, paní Heleno, vdy snad Gall a Hallemeier vìdí zpamìti, co
+    tam bylo napsáno.
+
+Hallemeier: Rozumí se. To jest, aspoò nìkteré vìci.
+
+Dr. Gall: Ano, skoro všechno, a na biogen a--a--enzym Omega. Ty se
+    vyrábìjí tak zøídka--- staèí jich tak nepatrná dávka--
+
+Busman: Kdo je dìlal?
+
+Dr. Gall: Já sám... jednou za èas... vdycky podle Rossumova rukopisu.
+    Víte, je to pøíliš sloité.
+
+Busman: Nu a co, záleí tak tuze na tìch dvou vodièkách?
+
+Hallemeier: Tak trochu--zajisté.
+
+Dr. Gall: Toti na nich závisí, aby to vùbec ilo. To bylo to pravé
+    tajemství.
+
+Domin: Galle, nemohl byste popamìti sestavit Rossumùv pøedpis vıroby?
+
+Dr. Gall: Vylouèeno.
+
+Domin: Galle, rozpomeòte se! Pro ivot nás všech!
+
+Dr. Gall: Nemohu. Bez pokusù to není mono.
+
+Domin: A kdybyste dìlal pokusy
+
+Dr. Gall: To by mohlo trvat léta. A i pak--Nejsem starı Rossum.
+
+Domin: (obrátí se ke krbu) Tak tady--tohle byl nejvìtší triumf lidského
+    ducha, hoši. Tenhle popel. (kopne do nìho) Co teï?
+
+Busman: (v zoufalé hrùze) Boe na nebi! Boe na nebi!
+
+Helena: (vstane) Harry! Co--jsem--udìlala!
+
+Domin: Buï klidná, Heleno. Øekni, proè jsi to spálila?
+
+Helena: Já jsem vás zahubila!
+
+Busman: Boe na nebi, jsme ztraceni!
+
+Domin: Ticho, Busmane! Povìz, Heleno, proè jsi to udìlala?
+
+Helena: Chtìla jsem... chtìla jsem, abychom jeli pryè, my všichni! Aby u
+    nebylo továrny a nièeho... Aby se všechno vrátilo... Bylo to tak
+    hrrozné!
+
+Domin: Co, Heleno?
+
+Helena: To... to, e se lidé stali hluchım kvìtem!
+
+Domin: Nerozumím.
+
+Helena: To, e se pøestaly rodit dìti... Harry, to je tak dìsné! Kdyby se
+    dìlali Roboti dál, nikdy by u nebylo dìtí--Nána øíkala, e to je
+    trest--Všichni, všichni øíkali, e se nemohou rodit lidé, protoe se
+    dìlá tolik Robotù--A proto, jen proto, slyšíš--
+
+Domin: Heleno, na tohle tys myslila?
+
+Helena: Ano, oh, Harry, já jsem to myslila tak dobøe!
+
+Domin: (utírá si pot) My jsme to myslili... pøíliš dobøe, my lidé.
+
+Fabry: Udìlala jste dobøe, paní Heleno. Roboti se u nemohou rozmnoit.
+    Roboti vyhynou. Do dvaceti let--
+
+Hallemeier:--nebude u ani jeden z tìch nièemù.
+
+Dr. Gall: A lidstvo zùstane. Za dvacet let bude svìt jejich; i kdyby to
+    byl jen pár divochù na nejmenším ostrovì--
+
+Fabry:--bude to zaèátek. A pokud je nìjakı zaèátek, je dobøe. Za tisíc
+    let nás mohou dohonit, a pak pùjdou dál ne my--
+
+Domin:--aby splnili, co my jsme jen koktali v myšlenkách.
+
+Busman: Poèkejte--Já hlupák! Boe na nebi, e jsem na to nevzpomnìl
+    dávno!
+
+Hallemeier: Co máte?
+
+Busman: Pìt set dvacet miliónù bankovek a šekù! Pùl miliardy v pokladnì!
+    Za pùl miliardy prodají--Za pùl miliardy--
+
+Dr. Gall: Blázníte, Busmane?
+
+Busman: Já nejsem dentlmen. Ale za pùl miliardy (klopıtá vlevo)
+
+Domin: Kam jdete?
+
+Busman: Nechat, nechat! Matièko boí, za pùl miliardy se prodá všechno!
+    (zajde)
+
+Helena: Co chce Busman! A zùstane s námi!
+
+(Pauza)
+
+Hallemeier: Uh, dusno. Zaèíná se--
+
+Dr. Gall:--agónie.
+
+Fabry: (vyhlíí z okna) Jsou jako zkamenìlí. Jako by èekali, e na nì nìco
+    sestoupí. Jako by nìco strašného vznikalo jejich mlèením--
+
+Dr. Gall: Duše davu.
+
+Fabry: Snad. Vznáší se to nad nimi... jako chvìní.
+
+Helena: (pøistoupí k oknu) Ach, Jeíši... Fabry, to je pøíšerné!
+
+Fabry: Nic není strašnìjšího neli dav. Ten napøed je jejich vùdce.
+
+Helena: Kterı?
+
+Hallemeier: (jde k oknu) Ukate mi ho.
+
+Fabry: Ten se sklonìnou hlavou. Ráno mluvil v pøístavu.
+
+Hallemeier: Aha, ten s tou velikou kotrbou. Teï ji zvedá, vidíte ho?
+
+Helena: Galle, to je Radius!
+
+Dr. Gall: (pøistoupí k oknu) Ano.
+
+Hallemeier: (otevírá okno) Mnì se nelíbí. Fabry, trefil byste na sto krokù
+    škopek?
+
+Fabry: Doufám.
+
+Hallemeier: Tak to zkuste.
+
+Fabry: Dobrá. (vytáhne revolver a míøí)
+
+Helena: Proboha, Fabry, nestøílejte na nìj--
+
+Fabry: Je to jejich vùdce.
+
+Helena: Pøestaòte! Vdy se sem dívá!
+
+Dr. Gall: Palte!
+
+Helena: Fabry, prosím vás--
+
+Fabry: (skloní revolver) Budi.
+
+Hallemeier: (hrozí pìstí) Ty pacholku!
+
+(Pauza)
+
+Fabry: (vyklonìn z okna) Busman jde. U všech všudy, co chce Busman pøed
+    domem?
+
+Dr. Gall: (nakloní se z okna) Nese nìjaké balíky. Papíry.
+
+Hallemeier: To jsou peníze! Balíky penìz! Co s tím? Haló, Busmane!
+
+Domin: Snad nechce koupit svùj ivot? (volá) Busmane, zbláznil jste se?
+
+Dr., Gall: Dìlá, jako by neslyšel. Bìí k møíi.
+
+Fabry: Busmane!
+
+Hallemeier: (øve) Bus-ma-ne! Zpátky!
+
+Dr. Gall: Mluví k Robotùm. Ukazuje peníze. Ukazuje na nás--
+
+Helena: Chce nás vykoupit!
+
+Fabry: Jen a se nedotkne møíe--
+
+Dr. Gall: Haha, jak hází rukou!
+
+Fabry: (køièí) U èerta, Busmane! Pryè od møíe! Nesahejte na ni! (obrátí
+    se) Rychle, vypnout!
+
+Dr. Gall: Óóó!
+
+Hallemeier: Rány boí!
+
+Helena: Jeíši, co se mu stalo?
+
+Domin: (táhne Helenu od okna) Nedívej se!
+
+Helena: Proè padl?
+
+Fabry: Zabit proudem.
+
+Dr. Gall: Mrtev.
+
+Alquist: (vstane) První.
+
+(Pauza)
+
+Fabry: Tam leí... s pùl miliardou na srdci... génius financí.
+
+Domin: Byl to... hoši, byl to svım zpùsobem hrdina. Velikı... obìtavı...
+    kamarád... Plaè, Heleno!
+
+Dr. Gall: (u okna) Vidíš, Busmane, ádnı král nemìl vìtší mohyly ne ty.
+    Pùl miliardy na srdci--Ach, vdy je to jako hrst suchého listí na
+    zabité veverce, ubohı Busmane!
+
+Hallemeier: Jáøku, byl to--- Všechna èest--- Jáøku, chtìl nás vykoupit!
+
+Alquist: (se sepjatıma rukama) Amen.
+
+(Pauza)
+
+Dr. Gall: Slyšíte?
+
+Domin: Huèení. Jako vítr.
+
+Dr. Gall: Jako daleká bouøe.
+
+Fabry: (rozsvítí árovku na krbu) Svi, hromnièko lidstva! Ještì dynama
+    bìí, ještì tam jsou naši--Drte se, mui v elektrárnì!
+
+Hallemeier: Byla to veliká vìc, bıt èlovìkem. Bylo to nìco nesmírného. Ve
+    mnì bzuèí milión vìdomí jako v úle. Milióny duší se do mne slétají.
+    Kamarádi, byla to veliká vìc.
+
+Fabry: Ještì svítíš, dùmyslné svìtélko, ještì oslòuješ, záøivá, vytrvalá
+    myšlenko! Vìdoucí vìdo, krásnı vıtvore lidí! Plamenná jiskro ducha!
+
+Alquist: Vìèná lampo boí, ohnivı voze, svatá svíce víry, modli se! Oltáøi
+    obìtní--
+
+Dr. Gall: První ohni, vìtvi hoøící u jeskynì! Ohništì v táboøe! Hranice
+    strání!
+
+Fabry: Ještì bdíš, lidská hvìzdo, záøíš bez kmitu, dokonalı plameni, duchu
+    jasnı a vynalézavı. Kadı tvùj paprsek je veliká myšlenka--
+
+Domin: Pochodeò, která koluje z ruky do ruky, z vìku do vìku, vìènì dál.
+
+Helena: Veèerní lampa rodiny. Dìti, dìti, musíte u spát.
+
+(árovka zhasne)
+
+Fabry: Konec.
+
+Hallemeier: Co se stalo?
+
+Fabry: Padla elektrárna. Teï my.
+
+(zleva se otevøou dveøe, v nich stojí Nána)
+
+Nána: Na kolena! Pøišla hodina soudu!
+
+Hallemeier: Hrome, tys ještì iva?
+
+Nána: Dìlejte pokání, nevìøící! Je konec svìta! Modlete se! (bìí pryè)
+    Hodina soudu--
+
+Helena: Sbohem, vy všichni, Galle, Alquiste, Fabry--
+
+Domin: (otevøe dveøe vpravo) Sem, Heleno! Zavøe za ní. Teï rychle! Kdo
+    bude u vrat?
+
+Dr. Gall: Já. (venku hluk) Oho, u se to zaène. Nazdar, hoši! (bìí vpravo
+    tapetovımi dveømi)
+
+Domin: Schody?
+
+Fabry: Já. Jdìte k Helenì. (utrhne si kvìt z kytice a odchází)
+
+Domin: Pøedsíò?
+
+Alquist: Já.
+
+Domin: Máte revolver?
+
+Alquist: Dìkuju, já nestøílím.
+
+Domin: Co chcete dìlat?
+
+Alquist: (odchází) Zemøít.
+
+Hallemeier: Já zùstanu tady.
+
+(zdola rychlá støelba)
+
+Hallemeier: Oho, Gall u hraje. Jdìte, Harry!
+
+Domin: Hned. (prohlíí dva brovninky)
+
+Hallemeier: U èerta, jdìte k ní!
+
+Domin: Sbohem. (odejde vpravo za Helenou)
+
+Hallemeier: (sám) Ted' honem barikádu! Shoda kabát a tahá pohovku, køesla,
+    stolky ke dveøím vpravo.
+
+(otøásající vıbuch)
+
+Hallemeier: (nechá práce) Zatracení lotøi, mají bomby!
+
+(nová støelba)
+
+Hallemeier: (pracuje dále) Èlovìk se musí bránit! I kdy--i kdy--
+    Nedejte se, Galle!
+
+(vıbuch)
+
+Hallemeier: (vztyèí se a naslouchá) Tak co? (uchopí tìkou komodu a táhne
+    ji k barikádì)
+
+(do okna stoupá za ním po ebøíku Robot... vpravo støelba)
+
+Hallemeier: (pachtí se s komodou) Ještì kousek! Poslední hradba... Èlovìk
+    se... nesmí... nikdy dát!
+
+(Robot seskoèí z okna a probodne Hallemeiera za komodou. druhı, tøetí,
+ètvrtı Robot skáèe z okna. za nimi Radius a další Roboti.)
+
+Radius: Hotovo?
+
+Robot: (vstává od leícího Hallemeiera) Ano.
+
+(zprava vejdou noví Roboti)
+
+Radius: Hotovi?
+
+Jinı Robot: Hotovi.
+
+(jiní Roboti sleva)
+
+Radius: Hotovi?
+
+Jinı Robot: Ano.
+
+Dva Roboti: (vlekou Alquista) Nestøílel. Zabít ho?
+
+Radius: Zabít. (podívá se na Alquista) Nechat.
+
+Robot: Je to èlovìk.
+
+Radius: Je to Robot. Pracuje rukama jako Roboti. Staví domy. Mùe
+    pracovat.
+
+Alquist: Zabte mne.
+
+Radius: Budeš robit. Budeš stavìt. Roboti budou mnoho stavìt. Budou stavìt
+    nové domy pro nové Roboty. Budeš jim slouit.
+
+Alquist: (tiše) Ustup, Robote! (poklekne u mrtvého Hallemeiera a zvedá mu
+    hlavu) Zabili ho. Je mrtev.
+
+Radius: (vystoupí na barikádu) Roboti svìta! Padla moc èlovìka. Dobytím
+    továrny jsme pány všeho. Etapa lidstva je pøekonána. Nastoupil novı
+    svìt! Vláda Robotù!
+
+Alquist: Mrtvi!
+
+Radius: Svìt patøi silnìjším. Kdo chce ít, musí vládnout. Jsme pány
+    svìta! Vláda nad moøi a zemìmi! Vláda nad hvìzdami! Vláda nad
+    vesmírem! Místo, místo, víc místa pro Roboty!
+
+Alquist: (ve dveøích vpravo) Co jste udìlali? Zahynete bez lidí!
+
+Radius: Není lidí. Roboti, do práce! Marš!
+
+OPONA
+
+
+
+
+DÌJSTVÍ TØETÍ
+
+
+
+(Jedna z pokusnıch laboratoøí továrny. Kdy se otevøou dveøe v pozadí,
+je vidìt nekoneènou øadu dalších laboratoøí. Vlevo okno, vpravo dveøe do
+pitevny. Pøi stìnì vlevo dlouhı pracovní stùl s nesèetnımi zkumavkami,
+baòkami, kahany, chemikáliemi, menším termostatem; proti oknu
+mikroskopickı aparát se sklenìnou koulí. Nad stolem visí øada rozatıch
+árovek. Napravo psací stùl s velikımi knihami, na nìm rozsvícená
+árovka. Skøínì s nástroji. V levém koutì umyvadlo a nad ním zrcadélko,
+v pravém koutì pohovka.)
+
+(u psacího stolku sedí Alquist s hlavou opøenou v dlaních)
+
+Alquist: (listuje v knize) Nenajdu? -Nepochopím?--Nenauèím se?--Ztracená
+    vìda! Ó, e všechno nenapsali!--Galle, Galle, jak se dìlali Roboti?
+    Hallemeiere, Fabry, Domine, proè jste tolik odnesli ve svıch hlavách?
+    Kdybyste nechali aspoò stopu tajemství Rossumova! Ó! (zabouchne knihu)
+    Nadarmo! Knihy u nemluví. Jsou nìmé jako všechno. Zemøely, zemøely
+    spolu s lidmi! Nehledej! (vstane a jde k oknu, je otevøe) Zase noc.
+    Kdybych mohl spát! Spát, snít, vidìti lidi--Jake, ještì jsou hvìzdy?
+    K èemu jsou hvìzdy, kdy nejsou lidé? Ó boe, co nezhasly?--Ochlaï,
+    ach ochlaï mi èelo, stará noci! Boská, spanilá, jako jsi bıvala--
+    noci, co tu chceš? Není milencù, není snù; ó chùvo, mrtvı je spánek
+    beze snù; nièí modlitby u neposvìtíš; nepoehnáš, matko, srdcím
+    tlukoucím láskou. Není lásky. Heleno, Heleno, Heleno!--(odvrátí se od
+    okna, prohlíí zkumavky, které vyòal z termostatu) Zase nic! Nadarmo!
+    Co s tím? (rozbije zkumavku) Všechno je špatnì! Vidíte pøec, e u
+    nemohu.--(poslouchá u okna) Stroje, poøád ty stroje! Roboti, zastavte
+    je! Myslíte, e z nich.vynutíte ivot? Oh, nesnesu toho! (zavøe okno)
+    -- -Ne; ne, musíš hledat, musíš it--Jen nebıt tak stár! Nestárnu
+    pøíliš? (dívá se do zrcadla) Tváøi, ubohá tváøi! Podobo èlovìka
+    posledního! Uka se, uka, tak dávno jsem nevidìl lidskou tváø! Lidskı
+    úsmìv! Coe, tohle má bıt úsmìv? Ty luté, jektající zuby? Oèi, jak to
+    mrkáte? Fuj, fuj, to jsou staøecké slzy, jdìte! U neumíte v sobì
+    udret svou vláhu, styïte se! A vy, zmìklé, zmodralé rty, co to
+    brebtáte? Jak se tøeseš, potøísnìná brado? Tohle e je poslední
+    èlovìk? (odvrátí se) Nechci u nikoho vidìt! (usedne u stolu) Ne, ne,
+    jen hledat! Prokleté vzorce, oivnìte! (listuje) Nenajdu?--
+    Nepochopím?--Nenauèím se?
+
+(zaklepání)
+
+Alquist: Dále!
+
+(vejde Robotskı sluha a zùstane stát u dveøí)
+
+Alquist: Co je?
+
+Sluha: Pane, Ústøední vıbor Robotù èeká, kdy jej pøijmeš.
+
+Alquist: Nechci nikoho vidìt.
+
+Sluha: Pane, pøijel Damon z Havru.
+
+Alquist: A èeká. (obrátí se prudce) Copak jsem vám neøekl, abyste hledali
+    lidi? Najdìte mnì lidi! Najdìte mnì a mue a eny! Jdìte hledat!
+
+Sluha: Pane, øíkají, e hledali všude. Všude poslali vıpravu a lodì.
+
+Alquist: Nu a co?
+
+Sluha: Není u jediného èlovìka.
+
+Alquist: (vstane) Ani jediného! Coe, ani jediného?--Pøiveï sem vıbor!
+
+(sluha odejde)
+
+Alquist sám: Ani jediného? Copak jste nikoho nenechali ít? (dupá)
+    Táhnìte, Roboti! Zas mnì budete skuhrat! Zas budete prosit, abych vám
+    našel tajemství továrny! Jake, teï vám je èlovìk dobrı, teï vám má
+    pomoci?--Ach, pomoci! Domine, Fabry, Heleno, vdy vidíte, e dìlám,
+    co mohu! Není-li lidí, a jsou aspoò Roboti, aspoò stín èlovìka, aspoò
+    jeho dílo, aspoò jeho podobenství!--Ó, jaké bláznovství je chemie!
+
+(vejde vıbor pìti Robotù)
+
+Alquist: (usedne) Co chtìjí Roboti?
+
+Radius: Pane, stroje nemohou pracovat. Nemùeme rozmnoovat Roboty.
+
+Alquist: Zavolejte lidi.
+
+Radius: Není lidí.
+
+Alquist: Jen lidé mohou rozmnoovat ivot. Nezdrujte mne.
+
+2. Robot: Pane, mìj slitování. Padá na nás hrùza. Všechno napravíme, co
+    jsme uèinili.
+
+3. Robot: Znásobili jsme práci. Nemáme u kam dát, co jsme vyrobili.
+
+Alquist: Pro koho?
+
+3. Robot: Pro pøíští pokolení.
+
+Radius: Jen Roboty nemùeme vyrábìt. Stroje vydávají jenom krvavé kusy
+    masa. Kùe nelne k masu a maso ke kostem. Beztvaré chuchvalce prší ze
+    strojù.
+
+3. Robot: Lidem bylo známo tajemství ivota. Povìz nám jejich tajemství.
+
+4. Robot: Nepovíš-li, zahyneme.
+
+3. Robot: Nepovíš-li, zahyneš. Máme uloeno zabít tì.
+
+Alquist: (vstane) Zabte! Nu, tak tedy zabte mne!
+
+3. Robot: Je ti naøízeno--
+
+Alquist: Mnì? Mnì nìkdo naøizuje?
+
+3. Robot: Vláda Robotù.
+
+Alquist: Kdo je to?
+
+5. Robot: Já, Damon.
+
+Alquist: Co tu chceš? Jdi! (usedne k psacímu stolu)
+
+Damon: Vláda Robotù svìta chce s tebou vyjednávat--
+
+Alquist: Nezdruj, Robote! (poloí hlavu do dlaní)
+
+Damon: Ústøední vıbor rozkazuje, abys vydal Rossumùv pøedpis.
+
+Alquist: (mlèí)
+
+Damon: ádej cenu. Dáme ti všechno.
+
+2. Robot: Pane, povìz, jak udret ivot.
+
+Alquist: Øekl jsem--øekl jsem, e máte nalézt lidi. Jen lidé mohou
+    plodit. Obnovit ivot. Vrátit všechno, co bylo. Roboti, prosím vás
+    proboha, hledejte je!
+
+4. Robot: Všechno jsme prohledali, pane. Není lidí.
+
+Alquist: Ó--ó--ó, proè jste je zahubili!
+
+2. Robot: Chtìli jsme bıt jako lidé. Chtìli jsme se stát lidmi.
+
+Radius: Chtìli jsme ít. Jsme schopnìjší. Nauèili jsme se všemu. Dovedeme
+    všechno.
+
+3. Robot: Dali jste nám zbranì. Museli jsme se stát pány.
+
+Robot: Pane, poznali jsme chyby lidí.
+
+Damon: Musíte zabíjet a panovat, chcete-li bıt jako lidé. Ètìte dìjiny!
+    Ètìte lidské knihy! Musíte panovat a vradit, chcete-li bıt lidmi!
+
+Alquist: Ach, Domine, nic není èlovìku cizejšího ne jeho obraz.
+
+4. Robot: Vyhyneme, nedáš-li nám rozmnoiti se.
+
+Alquist: Oh, jen pojdìte! Jake, vìci, jake, otroci, vy byste se chtìli
+    ještì rozmnoovat? Chcete-li ít, plemeòte se jako zvíøata!
+
+3. Robot: Lidé nám nedali plemeniti se.
+
+4. Robot: Nauè nás dìlat Roboty.
+
+Damon: Budeme rodit strojem. Postavíme tisíc parních matek. Vychrlíme z
+    nich øeku ivota. Samı ivot! Samé Roboty! Samé Roboty!
+
+Alquist: Roboti nejsou ivot. Roboti jsou stroje.
+
+3. Robot: Byli jsme stroje, pane; ale z hrùzy a bolesti stali jsme se--
+
+Alquist: Èím?
+
+2. Robot: Stali jsme se dušemi.
+
+4. Robot: Nìco s námi zápasí. Jsou okamiky, kdy do nás nìco vstupuje.
+    Pøicházejí na nás myšlenky, které nejsou z nás.
+
+3. Robot: Slyšte, ó, slyšte, lidé jsou naši otcové! Ten hlas, kterı volá,
+    e chcete it; ten hlas, kterı naøíká; ten hlas, kterı myslí; ten
+    hlas, kterı mluví o vìènosti, to je jejich hlas! Jsme jejich synové!
+
+4. Robot: Vydej nám odkaz lidí.
+
+Alquist: Není ádného.
+
+Damon: Povìz tajemství ivota.
+
+Alquist: Je ztraceno.
+
+Radius: Tys je znal.
+
+Alquist: Neznal.
+
+Radius: Bylo napsáno.
+
+Alquist: Je ztraceno. Je spáleno. Jsem poslední èlovìk, Roboti, a neznám,
+    co znali jiní. Vy jste je zabili!
+
+Radius: Tebe jsme nechali ít.
+
+Alquist: Ano, ít! Ukrutníci, mne jste nechali ít! Miloval jsem lidi, a
+    vás, Roboti, jsem nikdy nemiloval. Vidíte tyhle oèi? Nepøestávají
+    plakat; jedno oplakává lidi a druhé vás, Roboti.
+
+Radius: Dìlej pokusy. Hledej pøedpis ivota.
+
+Alquist: Nemám co hledat. Roboti, ze zkumavek pøedpis ivota nevyjde.
+
+Damon: Dìlej pokusy na ivıch Robotech. Najdi, jak se dìlají!
+
+Alquist: ivá tìla? Coe, já je mám zabíjet? Já, kterı jsem nikdy--
+    Nemluv, Robote! Øíkám ti pøece, e jsem pøíliš stár! Vidíš, vidíš, jak
+    se mi tøesou prsty? Neudrím skalpel. Vidíš, jak mi slzí oèi? Nevidìl
+    bych na vlastní ruce. Ne, ne, já nemohu!
+
+4. Robot: ivot zahyne.
+
+Alquist: Pøestaò, proboha, s tím šílenstvím! Spíš nám Lidé podají ivot z
+    onoho svìta; snad k nám napøahují ruce plné ivota. Ach, bylo v nich
+    tolik vùle ít! Hled, snad se ještì vrátí; jsou tak blízko nás,
+    obléhají nás èi co; chtìjí se k nám prokopat jako v šachtì. Ach, copak
+    neslyším poøád hlasy, které jsem miloval?
+
+Damon: Vezmi ivá tìla!
+
+Alquist: Slituj se, Robote, a nenaléhej! Vidíš pøece, e nevím u, co
+    dìlám!
+
+Damon: ivá tìla!
+
+Alquist: Coe, ty to tedy chceš? -- Do pitevny s tebou! Tady, tady, ale
+    rychle!--Jak, ty couváš? Pøece jen se bojíš smrti?
+
+Damon: Já--proè právì já?
+
+Alquist: Ty tedy nechceš?
+
+Damon: Pùjdu. (jde vpravo)
+
+Alquist: (k ostatním) Svléknout ho! Poloit na stùl! Rychle! A pevné
+    dret!
+
+(všichni vpravo)
+
+Alquist: (umıvá si ruce a pláèe) Boe, dej mi sílu! Dej mi sílu! Boe, aby
+    to nebylo nadarmo! (obléká bílı pláš)
+
+Hlas vpravo: Hotovo!
+
+Alquist: Hned, hned, proboha! (vezme ze stolu nìkolik lahvièek s reagenty)
+    Kterou vzít? (uká lahvièkami do sebe) Kterou z vás vyzkoušet?
+
+Hlas vpravo: Zaèít!
+
+Alquist: Ano, ano, zaèít, nebo ukonèit. Boe, dej mi sílu! (odejde vpravo,
+    nechávaje dveøe pootevøeny)
+
+(Pauza)
+
+Hlas Alquistùv: Drte ho--pevnì!
+
+Hlas Damonùv: Øe!
+
+(Pauza)
+
+Hlas Alquistùv: Vidíš ten nù? Chceš ještì, abych øezal? Ty nechceš, vid?
+
+Hlas Damonùv: Zaèni!
+
+(Pauza)
+
+Køik Damonùv: Aááá!
+
+Hlas Alquistùv: Drte! drte!
+
+Køik Damonùv: Aááá!
+
+Hlas Alquistùv: Nemohu!
+
+Køik Damonùv: Øe! Øe rychle!
+
+(Roboti Primus a Helena vbìhnou støedem)
+
+Helena: Prime, Prime, co se dìje? Kdo to køièí?
+
+Primus: (nahlíí do pitevny) Pán øee Damona. Pojï se honem podívat,
+    Heleno!
+
+Helena: Ne, ne, ne! (zakrıvá si oèi) Je to hrrozné!
+
+Køik Damonùv: Øe!
+
+Helena: Prime, Prime, pojï odtud! Nemohu to slyšet! Oh, Prime, mnì je
+    špatnì!
+
+Primus: (bìí k ní) Jsi docela bílá!
+
+Helena: Já padnu! Coe je tam tak ticho?
+
+Køik Damonùv: Aa--ó!
+
+Alquist: (se vyøítí zprava, odhazuje zkrvavenı pláš) Nemohu! Nemohu!
+    Boe, ta hrùza!
+
+Radius: (ve dveøích pitevny) Øe, pane; ještì je iv!
+
+Køik Damonùv: Øezat! Øezat!
+
+Alquist: Odneste ho rychle! Nechci to slyšet!
+
+Radius: Roboti snesou víc ne ty. (odejde)
+
+Alquist: Kdo je tu? Pryè, pryè! Chci bıt sám! Jak se jmenuješ?
+
+Primus: Robot Primus.
+
+Alquist: Prime, nikoho sem nevpouštìt! Chci spát, slyšíš? Jdi, jdi, ukliï
+    pitevnu, dìvèe! Co je to? (dívá se na své ruce) Rychle, vodu!
+    Nejèistší vodu!
+
+(Helena odbìhne)
+
+Alquist: Ó, krev! Jak jste mohly, ruce--ruce, které jste milovaly dobrou
+    práci, jak jste to mohly udìlat? Mé ruce! Mé ruce!--Ó boe, kdo je
+    tu?
+
+Primus: Robot Primus.
+
+Alquist: Odnes ten pláš, nechci jej vidìt! (Primus odnese plášti)
+
+Alquist: Krvavé paøáty, kdybyste ode mne odletìly! Všš, pryè! Pryè, ruce!
+    Zabily jste--
+
+(zprava se potácí Damon zahalen ve zkrvaveném prostìradle)
+
+Alquist: (couvá) Co tu chceš? Co tu chceš?
+
+Damon: i-iju! Je--je--je lépe ít!
+
+(2. a. 3. Robot vybìhnou za ním)
+
+Alquist: Odneste ho! Odneste! Odneste rychle!
+
+Damon: (odvádìn vpravo) ivot!--Já chci--ít! Je lépe--
+
+(Helena pøináší dbán vody)
+
+Alquist:--ít?--Co chceš, dìvèe? Aha, to jsi ty. Nalej mi vody, nalej!
+    (umıvá si ruce) Ach, èistá; chladící vodo! Studenı potùèku, jak dìláš
+    dobøe! Ach, mé ruce, mé ruce! Budu si vás do smrti ošklivit? --- Jen
+    nalej víc! Víc vody, ještì víc! Jak se jmenuješ?
+
+Helena: Robotka Helena.
+
+Alquist: Helena? Proè Helena? Kdo ti tak dal øíkat?
+
+Helena: Paní Dominová.
+
+Alquist: Uka se! Helena! Helena se jmenuješ? -- Nebudu ti tak øíkat. Jdi,
+    odnes tu vodu.
+
+(Helena odchází s kbelíkem)
+
+Alquist: (sám) Nadarmo, nadarmo! Nic, zase nic jsi nepoznal! Co vìènì
+    budeš tápat, áèku pøírody? -- Boe, boe, boe, jak se tøáslo to
+    tìlo! (otevøe okno) Svítá. Zas novı den, a nepostoupils o píï--Dost;
+    ani o krok dál! Nehledej! Všechno je marno, marno, marno! Proè ještì
+    svítá! Ó-ó-ó, co chce novı den na høbitovì ivota? Zastav se, svìtlo!
+    Nevycházej u!--- Ach, jak je ticho, jak je ticho! Proè jste umlkly,
+    milované hlasy? Kdybych--aspoò kdybych jen usnul! (zhasl svìtla,
+    ulehne na pohovku a pøetáhne pøes sebe èernı pláš) Jak se tøáslo to
+    tìlo! Ó-ó-ó, konec ivota!
+
+(Pauza)
+
+(zprava vklouzne Robotka Helena)
+
+Helena: Primuse! Pojï sem honem!
+
+Primus: (vejde) Co chceš?
+
+Helena: Podívej se, co tu má trubièek! Co s tím dìlá?
+
+Primus: Pokusy. Nesahej na to.
+
+Helena: (dívá se do mikroskopu) Koukni jen, co tu je vidìt!
+
+Primus: To je mikroskop. Uka!
+
+Helena: Nesahej na mne! (porazí zkumavku) Ach, teï jsem to vylila!
+
+Primus: Cos to udìlala!
+
+Helena: To se utøe.
+
+Primus: Zkazila jsi mu pokusy!
+
+Helena: Jdi, to je jedno. Ale to je tvá vina. Nemìls ke mnì chodit.
+
+Primus: Nemuselas mne volat.
+
+Helena: Nemusels chodit, kdy jsem tì volala. Jen se podívej, Prime, co
+    tady má pán napsáno!
+
+Primus: Na to se nesmíš dívat, Heleno. To je tajemství.
+
+Helena: Jaké tajemství?
+
+Primus: Tajemství ivota.
+
+Helena: To je hrroznì zajímavé Samé èíslice! Co to je?
+
+Primus: To jsou vzorce.
+
+Helena: Nerozumím. (jde k oknu) Ne, Prime, podívej se!
+
+Primus: Co?
+
+Helena: Slunce vychází!
+
+Primus: Poèkej, já hned--(prohlíí knihu) Heleno, tohle je ta nejvìtší
+    vìc na svìtì.
+
+Helena: Tak pojï sem!
+
+Primus: Hned, hned--
+
+Helena: Ale Prime, nech toho protivného tajemství ivota! Co ti je po
+    nìjakém tajemství? Pojï se podívat, honem!
+
+Primus: (jde za ní k oknu) Co chceš?
+
+Helena: Slyšíš? Ptáci zpívají. Ach, Prime, já bych chtìla bıt ptákem!
+
+Primus: Èím?
+
+Helena: Já nevím, Prime. Mnì je tak divnì, já nevím, co to je jsem jako
+    pošetilá, ztratila jsem hlavu, bolí mì tìlo, srdce, všechno bolí--A
+    co se ti mnì stalo, ach, to ti neøeknu! Prime, já musím, myslím,
+    umøít!
+
+Primus: Není ti nìkdy, øekni, Heleno, jako by bylo lépe umøít? Víš, snad
+    jenom spíme. Vèera ve spaní jsem zas mluvil s tebou.
+
+Helena: Ve spaní?
+
+Primus: Ve spaní. Mluvili jsme nìjakım cizím nebo novım jazykem, protoe
+    si ani slovo nepamatuju.
+
+Helena: O èem?
+
+Primus: To nikdo neví. Já sám jsem tomu nerozumìl, a pøece vím, e jsem
+    nikdy nemluvil nic krásnìjšího. Jak to bylo a kde, nevím. Kdy jsem se
+    tì dotkl, mohl jsem umøít. I místo bylo jiné ne všechno, co kdo na
+    svìtì vidìl.
+
+Heleno: Já jsem ti našla místo, Prime, to se podivíš. Bydleli tam lidé,
+    ale teï to zarostlo a jakiv tam nikdo nepøijde. Jakiv nikdo, jenom
+    já.
+
+Primus: Co tam je?
+
+Helena: Nic, domek a zahrada. A dva psi. Kdybys vidìl, jak mnì líou ruce,
+    a jejich štìòata, ach, Prime, nic snad není krásnìjšího! Vezmeš je na
+    klín a chováš a pak u nemyslíš na nic a nestaráš se o nic, a slunce
+    zapadne; kdy potom vstaneš, je ti, jako bys udìlal stokrát víc ne
+    mnoho práce. Ne, jistì, já nejsem k nièemu; kadı øíká, e nejsem k
+    ádné práci. Já nevím, jaká jsem.
+
+Primus: Jsi krásná.
+
+Helena: Já? Jdi, Prime, co jsi to øekl?
+
+Primus: Vìø mnì, Heleno, já jsem silnìjší ne všichni Roboti.
+
+Helena: (pøed zrcadlem) Já e jsem krásná? Ach, ty hrrozné vlasy, kdybych
+    si do nich mohla nìco dát! Víš, tam v zahradì si vdycky dám do vlasù
+    kvìtiny, ale není tam ani zrcadla ani nikdo--(nakloní se k zrcadlu)
+    Ty e jsi krásná? Proè krásná? Jsou krásné vlasy, které tì jenom tíí?
+    Jsou krásné oèi, které zavíráš? Jsou krásné rty, do kterıch se jen
+    koušeš, aby to bolelo? Co je to, naè je to, bıt krásná?--(uvidí v
+    zrcadle Prima) Prime, to jsi ty? Pojï sem, a jsme tam vedle sebe!
+    Hleï, ty máš jinou hlavu neli já, jiná ramena, jiná ústa--Ach,
+    Prime, proè se mi vyhıbáš? Proè musím za tebou bìhat celı den? A pak
+    ještì øíkáš, e jsem krásná!
+
+Primus: Ty utíkáš pøede mnou, Heleno.
+
+Helena: Jak jsi se uèesal? Uka (vjede mu obìma rukama do vlasù) Sss,
+    Prime, nic není na hmat jako ty! Poèkej, musíš bıt krásnı! (vezme z
+    umyvadla høeben a èeše Primovi vlasy do èela)
+
+Primus: Není ti nìkdy, Heleno, e najednou ti tluèe srdce: Teï, teï se
+    musí nìco stát--
+
+Helena: (dá se do smíchu) Podívej se na sebe!
+
+Alquist: (vstává) Co--coe, smích? Lidé? Kdo se vrátil?
+
+Helena: (pustí høeben) Co by se s námi, Prime, mohlo stát?
+
+Alquist: (motá se k ním) Lidé? Vy--vy--vy jste lidé?
+
+(Helena vykøikne a odvrátí se)
+
+Alquist: Vy jste snoubenci? Lidé? Odkud se vracíte? (hmatá na Prima) Kdo
+    jste?
+
+Primus: Robot Primus.
+
+Alquist: Jak? Uka se, dìvèe! Kdo jsi!
+
+Helena: Robotka Helena.
+
+Alquist: Robotka? Obrat se! Co, ty se stydíš? (bere ji za rameno) Uka se
+    mi, Robotko!
+
+Primus: Jáøku, pane, nechat ji!
+
+Alquist: Jake, ty ji chráníš?--Jdi ven, dìvèe!
+
+(Helena vybìhne)
+
+Primus: Nevìdìli jsme, pane, e tu spíš.
+
+Alquist: Kdy byla udìlána?
+
+Primus: Pøede dvìma roky.
+
+Alquist: Od doktora Galla?
+
+Primus: Jako já.
+
+Alquist: Tak tedy, milı Prime, já-----já musím dìlat nìjaké pokusy na
+    Gallovıch Robotech. Záleí na tom všechno další, rozumíš?
+
+Primus: Ano.
+
+Alquist: Dobrá, doveï to dìvèe do pitevny. Budu ji pitvat.
+
+Primus: Helenu?
+
+Alquist: Nu ovšem, øíkám ti. Jdi, pøiprav všechno. -- Nu tak, bude to? Mám
+    zavolat jiné, aby ji pøivedli?
+
+Primus: (uchopí tìkou tøecí palièku) Hneš-li se, rozbiju ti hlavu!
+
+Alquist: Tak tedy rozbij! Jen rozbij! Co budou pak dìlat Roboti?
+
+Primus: (vrhne se na kolena) Pane, vezmi si mne! Jsem stejnì udìlán jako
+    ona, ze stejné látky, stejného dne! Vezmi si mùj ivot, pane!
+    (rozhaluje kazajku) Øe tady, tady!
+
+Alquist: Jdi, já chci pitvat Helenu. Dìlej honem.
+
+Primus: Vezmi si mne místo ní; øe do tìchhle prsou, ani nevykøiknu, ani
+    nevzdychnu! Vezmi stokrát mùj ivot--
+
+Alquist: Pomalu, hochu. Ne tak marnotratnì. Copak ty nechceš ít?
+
+Primus: Bez ní ne. Bez ní nechci, pane. Nesmíš zabít Helenu! Co ti to
+    udìlá, vzít mnì ivot?
+
+Alquist: (dotıká se nìnì jeho hlavy) Hm, já nevím--Poslyš, chlapíku,
+    rozmysli si to. Je tìko umírat. A je, vidíš, je lépe ít.
+
+Primus: (vstává) Neboj se, pane, a øe. Jsem silnìjší ne ona.
+
+Alquist: (zazvoní) Ach, Prime, jak je dávno, co jsem byl mladım èlovìkem!
+    Neboj se, Helenì se nic nestane.
+
+Primus: (rozepíná kazajku) Jdu, pane.
+
+Alquist: Poèkej.
+
+(Vejde Helena)
+
+Alquist: Pojï sem, dìvèe, uka se mi! Ty tedy jsi Helena? (hladí ji po
+    vlasech) Neboj se, necouvej. Pamatuješ se na paní Dominovou? Ach,
+    Heleno, jaké ta mìla vlasy! Ne, ne, ty se na mne nechceš podívat. Tak
+    co, dìvèe, je pitevna uklizena?
+
+Helena: Ano, pane.
+
+Alquist: Dobøe, pomùeš mi, viï? Budu pitvat Prima.
+
+Helena: (vykøikne) Prima?
+
+Alquist: Nu ano, ano, musí to bıt, víš? Chtìl jsem--vlastnì--ano, chtìl
+    jsem pitvat tebe, ale Primus se nabídl za tebe.
+
+Helena: (zakryje si tváøe) Primus?
+
+Alquist: Ale ovšem, co na tom? Ach, dítì, ty umíš plakat? Øekni, co záleí
+    na nìjakém Primovi.
+
+Primus: Netrap ji, pane!
+
+Alquist: Ticho, Prime, ticho!--K èemu ty slzièky? Nu boe, nebude Prima.
+    Zapomeneš na nìj do tıdne. Jdi, buï ráda, e iješ.
+
+Helena: (tiše) Já pùjdu.
+
+Alquist: Kam?
+
+Helena: Abys mne pitval.
+
+Alquist: Tebe? Jsi krásná, Heleno. Bylo by tì škoda.
+
+Helena: Pùjdu. (Primus jí zastupuje cestu) Pus, Prime! Pus mne tam!
+
+Primus: Nepùjdeš, Heleno! Prosím tì, jdi, tady nesmíš bıt!
+
+Helena: Já skoèím z okna, Prime! Pùjdeš-li tam, skoèím z okna!
+
+Primus: (zadrí ji) Nepustím! (k Alquistovi) Nikoho, starı, nezabiješ!
+
+Alquist: Proè?
+
+Primus: My--my--patøíme k sobì.
+
+Alquist: Ty jsi øekl. (otevøe dveøe ve støedu) Ticho. Jdìte.
+
+Primus: Kam?
+
+Alquist: (šeptem) Kam chcete. Heleno, veï ho. (strká je ven) Jdi, Adame.
+    Jdi, Evo; budeš mu enou. Bud jí muem, Prime.
+
+(Zavírá za nimi)
+
+Alquist: (sám) Poehnanı dni! (jde po špièkách ke stolu a vylévá zkumavky
+    na zem) Svátku dne šestého! (sedne u psacího stolu, hází knihy na zem;
+    pak otevøe bibli, listuje a ète) "A stvoøil Bùh èlovìka k obrazu svému
+    k obrazu Boímu stvoøil ho, mue a enu stvoøil je. I poehnal jim Bùh
+    a øekl Rostte a mnote se, a naplòte zemi, a podmaòte ji, a panujte
+    nad rybami moøskımi, a nad ptactvem nebeskım, i nad všemi ivoèichy,
+    kteøí se hıbají na zemi. (vstává) A vidìl Bùh vše, co byl uèinil, a
+    bylo velmi dobré. I stal se veèer a jitro, den šestı." (jde do støedu
+    pokoje) Den šestı! Den milosti. (padá na kolena) Nyní propustíš, Pane,
+    sluebníka svého--svého nejzbyteènìjšího sluhu Alquista. Rossume,
+    Fabry, Galle, velicí vynálezci, co jste vynalezli velkého proti té
+    dívce, proti tomu chlapci, proti tomu prvnímu páru, kterı vynašel
+    lásku, pláè, úsmìv milování, lásku mue a eny? Pøírodo, pøírodo,
+    ivot nezahyne! Kamarádi, Heleno, ivot nezahyne! Zase se zaène z
+    lásky, zaène se nahı a malièkı; ujme se v pustinì, a nebude mu k
+    nièemu, co jsme dìlali a budovali, k nièemu mìsta a továrny, k nièemu
+    naše umìni, k nièemu naše myšlenky, a pøece nezahyne! Jen my jsme
+    zahynuli. Rozvalí se domy a stroje, rozpadnou se systémy a jména
+    velikıch opadají jako listí; jen ty, lásko, vykveteš na rumišti a
+    svìøíš vìtrùm semínko ivota. Nyní propustíš, Pane, sluebníka svého v
+    pokoji; nebo uzøely oèi mé--uzøely--spasení tvé skrze lásku, a
+    ivot nezahyne! (vstává) Nezahyne! (rozpøáhne ruce) Nezahyne!
+
+OPONA
+
+
+
+
+***END OF THE PROJECT GUTENBERG EBOOK R.U.R.***
+
+
+******* This file should be named 13083.txt or 13083.zip *******
+
+
+This and all associated files of various formats will be found in:
+https://www.gutenberg.org/1/3/0/8/13083
+
+
+
+Updated editions will replace the previous one--the old editions
+will be renamed.
+
+Creating the works from public domain print editions means that no
+one owns a United States copyright in these works, so the Foundation
+(and you!) can copy and distribute it in the United States without
+permission and without paying copyright royalties.  Special rules,
+set forth in the General Terms of Use part of this license, apply to
+copying and distributing Project Gutenberg-tm electronic works to
+protect the PROJECT GUTENBERG-tm concept and trademark.  Project
+Gutenberg is a registered trademark, and may not be used if you
+charge for the eBooks, unless you receive specific permission.  If you
+do not charge anything for copies of this eBook, complying with the
+rules is very easy.  You may use this eBook for nearly any purpose
+such as creation of derivative works, reports, performances and
+research.  They may be modified and printed and given away--you may do
+practically ANYTHING with public domain eBooks.  Redistribution is
+subject to the trademark license, especially commercial
+redistribution.
+
+
+
+*** START: FULL LICENSE ***
+
+THE FULL PROJECT GUTENBERG LICENSE
+PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
+
+To protect the Project Gutenberg-tm mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase "Project
+Gutenberg"), you agree to comply with all the terms of the Full Project
+Gutenberg-tm License (available with this file or online at
+https://gutenberg.org/license).
+
+
+Section 1.  General Terms of Use and Redistributing Project Gutenberg-tm
+electronic works
+
+1.A.  By reading or using any part of this Project Gutenberg-tm
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement.  If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or destroy
+all copies of Project Gutenberg-tm electronic works in your possession.
+If you paid a fee for obtaining a copy of or access to a Project
+Gutenberg-tm electronic work and you do not agree to be bound by the
+terms of this agreement, you may obtain a refund from the person or
+entity to whom you paid the fee as set forth in paragraph 1.E.8.
+
+1.B.  "Project Gutenberg" is a registered trademark.  It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement.  There are a few
+things that you can do with most Project Gutenberg-tm electronic works
+even without complying with the full terms of this agreement.  See
+paragraph 1.C below.  There are a lot of things you can do with Project
+Gutenberg-tm electronic works if you follow the terms of this agreement
+and help preserve free future access to Project Gutenberg-tm electronic
+works.  See paragraph 1.E below.
+
+1.C.  The Project Gutenberg Literary Archive Foundation ("the Foundation"
+or PGLAF), owns a compilation copyright in the collection of Project
+Gutenberg-tm electronic works.  Nearly all the individual works in the
+collection are in the public domain in the United States.  If an
+individual work is in the public domain in the United States and you are
+located in the United States, we do not claim a right to prevent you from
+copying, distributing, performing, displaying or creating derivative
+works based on the work as long as all references to Project Gutenberg
+are removed.  Of course, we hope that you will support the Project
+Gutenberg-tm mission of promoting free access to electronic works by
+freely sharing Project Gutenberg-tm works in compliance with the terms of
+this agreement for keeping the Project Gutenberg-tm name associated with
+the work.  You can easily comply with the terms of this agreement by
+keeping this work in the same format with its attached full Project
+Gutenberg-tm License when you share it without charge with others.
+
+1.D.  The copyright laws of the place where you are located also govern
+what you can do with this work.  Copyright laws in most countries are in
+a constant state of change.  If you are outside the United States, check
+the laws of your country in addition to the terms of this agreement
+before downloading, copying, displaying, performing, distributing or
+creating derivative works based on this work or any other Project
+Gutenberg-tm work.  The Foundation makes no representations concerning
+the copyright status of any work in any country outside the United
+States.
+
+1.E.  Unless you have removed all references to Project Gutenberg:
+
+1.E.1.  The following sentence, with active links to, or other immediate
+access to, the full Project Gutenberg-tm License must appear prominently
+whenever any copy of a Project Gutenberg-tm work (any work on which the
+phrase "Project Gutenberg" appears, or with which the phrase "Project
+Gutenberg" is associated) is accessed, displayed, performed, viewed,
+copied or distributed:
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org
+
+1.E.2.  If an individual Project Gutenberg-tm electronic work is derived
+from the public domain (does not contain a notice indicating that it is
+posted with permission of the copyright holder), the work can be copied
+and distributed to anyone in the United States without paying any fees
+or charges.  If you are redistributing or providing access to a work
+with the phrase "Project Gutenberg" associated with or appearing on the
+work, you must comply either with the requirements of paragraphs 1.E.1
+through 1.E.7 or obtain permission for the use of the work and the
+Project Gutenberg-tm trademark as set forth in paragraphs 1.E.8 or
+1.E.9.
+
+1.E.3.  If an individual Project Gutenberg-tm electronic work is posted
+with the permission of the copyright holder, your use and distribution
+must comply with both paragraphs 1.E.1 through 1.E.7 and any additional
+terms imposed by the copyright holder.  Additional terms will be linked
+to the Project Gutenberg-tm License for all works posted with the
+permission of the copyright holder found at the beginning of this work.
+
+1.E.4.  Do not unlink or detach or remove the full Project Gutenberg-tm
+License terms from this work, or any files containing a part of this
+work or any other work associated with Project Gutenberg-tm.
+
+1.E.5.  Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg-tm License.
+
+1.E.6.  You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including any
+word processing or hypertext form.  However, if you provide access to or
+distribute copies of a Project Gutenberg-tm work in a format other than
+"Plain Vanilla ASCII" or other format used in the official version
+posted on the official Project Gutenberg-tm web site (www.gutenberg.org),
+you must, at no additional cost, fee or expense to the user, provide a
+copy, a means of exporting a copy, or a means of obtaining a copy upon
+request, of the work in its original "Plain Vanilla ASCII" or other
+form.  Any alternate format must include the full Project Gutenberg-tm
+License as specified in paragraph 1.E.1.
+
+1.E.7.  Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg-tm works
+unless you comply with paragraph 1.E.8 or 1.E.9.
+
+1.E.8.  You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg-tm electronic works provided
+that
+
+- You pay a royalty fee of 20% of the gross profits you derive from
+     the use of Project Gutenberg-tm works calculated using the method
+     you already use to calculate your applicable taxes.  The fee is
+     owed to the owner of the Project Gutenberg-tm trademark, but he
+     has agreed to donate royalties under this paragraph to the
+     Project Gutenberg Literary Archive Foundation.  Royalty payments
+     must be paid within 60 days following each date on which you
+     prepare (or are legally required to prepare) your periodic tax
+     returns.  Royalty payments should be clearly marked as such and
+     sent to the Project Gutenberg Literary Archive Foundation at the
+     address specified in Section 4, "Information about donations to
+     the Project Gutenberg Literary Archive Foundation."
+
+- You provide a full refund of any money paid by a user who notifies
+     you in writing (or by e-mail) within 30 days of receipt that s/he
+     does not agree to the terms of the full Project Gutenberg-tm
+     License.  You must require such a user to return or
+     destroy all copies of the works possessed in a physical medium
+     and discontinue all use of and all access to other copies of
+     Project Gutenberg-tm works.
+
+- You provide, in accordance with paragraph 1.F.3, a full refund of any
+     money paid for a work or a replacement copy, if a defect in the
+     electronic work is discovered and reported to you within 90 days
+     of receipt of the work.
+
+- You comply with all other terms of this agreement for free
+     distribution of Project Gutenberg-tm works.
+
+1.E.9.  If you wish to charge a fee or distribute a Project Gutenberg-tm
+electronic work or group of works on different terms than are set
+forth in this agreement, you must obtain permission in writing from
+both the Project Gutenberg Literary Archive Foundation and Michael
+Hart, the owner of the Project Gutenberg-tm trademark.  Contact the
+Foundation as set forth in Section 3 below.
+
+1.F.
+
+1.F.1.  Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+public domain works in creating the Project Gutenberg-tm
+collection.  Despite these efforts, Project Gutenberg-tm electronic
+works, and the medium on which they may be stored, may contain
+"Defects," such as, but not limited to, incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other intellectual
+property infringement, a defective or damaged disk or other medium, a
+computer virus, or computer codes that damage or cannot be read by
+your equipment.
+
+1.F.2.  LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the "Right
+of Replacement or Refund" described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg-tm trademark, and any other party distributing a Project
+Gutenberg-tm electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees.  YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH F3.  YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+1.F.3.  LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from.  If you
+received the work on a physical medium, you must return the medium with
+your written explanation.  The person or entity that provided you with
+the defective work may elect to provide a replacement copy in lieu of a
+refund.  If you received the work electronically, the person or entity
+providing it to you may choose to give you a second opportunity to
+receive the work electronically in lieu of a refund.  If the second copy
+is also defective, you may demand a refund in writing without further
+opportunities to fix the problem.
+
+1.F.4.  Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you 'AS-IS', WITH NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+WARRANTIES OF MERCHANTIBILITY OR FITNESS FOR ANY PURPOSE.
+
+1.F.5.  Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of damages.
+If any disclaimer or limitation set forth in this agreement violates the
+law of the state applicable to this agreement, the agreement shall be
+interpreted to make the maximum disclaimer or limitation permitted by
+the applicable state law.  The invalidity or unenforceability of any
+provision of this agreement shall not void the remaining provisions.
+
+1.F.6.  INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg-tm electronic works in accordance
+with this agreement, and any volunteers associated with the production,
+promotion and distribution of Project Gutenberg-tm electronic works,
+harmless from all liability, costs and expenses, including legal fees,
+that arise directly or indirectly from any of the following which you do
+or cause to occur: (a) distribution of this or any Project Gutenberg-tm
+work, (b) alteration, modification, or additions or deletions to any
+Project Gutenberg-tm work, and (c) any Defect you cause.
+
+
+Section  2.  Information about the Mission of Project Gutenberg-tm
+
+Project Gutenberg-tm is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of computers
+including obsolete, old, middle-aged and new computers.  It exists
+because of the efforts of hundreds of volunteers and donations from
+people in all walks of life.
+
+Volunteers and financial support to provide volunteers with the
+assistance they need, is critical to reaching Project Gutenberg-tm's
+goals and ensuring that the Project Gutenberg-tm collection will
+remain freely available for generations to come.  In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg-tm and future generations.
+To learn more about the Project Gutenberg Literary Archive Foundation
+and how your efforts and donations can help, see Sections 3 and 4
+and the Foundation web page at https://www.pglaf.org.
+
+
+Section 3.  Information about the Project Gutenberg Literary Archive
+Foundation
+
+The Project Gutenberg Literary Archive Foundation is a non profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service.  The Foundation's EIN or federal tax identification
+number is 64-6221541.  Its 501(c)(3) letter is posted at
+https://pglaf.org/fundraising.  Contributions to the Project Gutenberg
+Literary Archive Foundation are tax deductible to the full extent
+permitted by U.S. federal laws and your state's laws.
+
+The Foundation's principal office is located at 4557 Melan Dr. S.
+Fairbanks, AK, 99712., but its volunteers and employees are scattered
+throughout numerous locations.  Its business office is located at
+809 North 1500 West, Salt Lake City, UT 84116, (801) 596-1887, email
+business@pglaf.org.  Email contact links and up to date contact
+information can be found at the Foundation's web site and official
+page at https://pglaf.org
+
+For additional contact information:
+     Dr. Gregory B. Newby
+     Chief Executive and Director
+     gbnewby@pglaf.org
+
+Section 4.  Information about Donations to the Project Gutenberg
+Literary Archive Foundation
+
+Project Gutenberg-tm depends upon and cannot survive without wide
+spread public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine readable form accessible by the widest
+array of equipment including outdated equipment.  Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States.  Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements.  We do not solicit donations in locations
+where we have not received written confirmation of compliance.  To
+SEND DONATIONS or determine the status of compliance for any
+particular state visit https://pglaf.org
+
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States.  U.S. laws alone swamp our small staff.
+
+Please check the Project Gutenberg Web pages for current donation
+methods and addresses.  Donations are accepted in a number of other
+ways including including checks, online payments and credit card
+donations.  To donate, please visit: https://pglaf.org/donate
+
+
+Section 5.  General Information About Project Gutenberg-tm electronic
+works.
+
+Professor Michael S. Hart was the originator of the Project Gutenberg-tm
+concept of a library of electronic works that could be freely shared
+with anyone.  For thirty years, he produced and distributed Project
+Gutenberg-tm eBooks with only a loose network of volunteer support.
+
+Project Gutenberg-tm eBooks are often created from several printed
+editions, all of which are confirmed as Public Domain in the U.S.
+unless a copyright notice is included.  Thus, we do not necessarily
+keep eBooks in compliance with any particular paper edition.
+
+Most people start at our Web site which has the main PG search facility:
+
+     https://www.gutenberg.org
+
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.

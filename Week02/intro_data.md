@@ -111,6 +111,8 @@ Let's take a closer look at the decimal system. Every position is a power of ten
 
 Remember Shannon and his bits? One bit is one binary position. 1 binary digits has 2<sup>1</sup> = 2 different possible values (0-1), 2 has 2<sup>2</sup> = 4 (00, 01, 10, and 11), 3 has 2<sup>3</sup> (000, 001, 010, 011, 100, 101, 110, 111), and so on.
 
+There are other number systems besides binary (as many as there are numbers, in fact). Hexadecimal/hex and octal (base 16 and base 8) are common ways to compress binary into more compact forms. These use decimal numerals. Hexadecimal uses 0 to 9 and then A to F. Since 16 and 8 are themselves powers of two, it's simple to convert between them and decimal. Each octal digit maps directly to a set of 3 (2^3=8) binary digits and each hex digit maps directly to a set of 4 (2^4 = 16) binary digits. So, 32 in octal is 011010 (011 is 3, 010 is 2). A8 in hexadecimal is 10101000 (1010 in binary is A in hexadecimal and 10 in decimal, 1000 is 8).
+
 ## Boolean
 
 There's an even simpler kind of data to represent using binary numbers than whole numbers: booleans. Named for mathematician George Boole, who did some early work on this, Boolean data is just True and False. We represent True as one and False as zero. Booleans are useful for computer scientists and electrical engineers to know because they directly mirror the states of transistors and, even as digital humanists, we can use boolean logic to do a lot of useful programmy stuff. But that's really for another week (or another semester).
@@ -121,9 +123,13 @@ These number systems are just different representations of the same numerical id
 
 ![ASCII table](assets/ascii.png)
 
-Since the 1960s, software developers have created a plethora of character encodings, often to represent characters from other languages. Although you might occasionally run into these in older datasets, the singular modern text standard is called Unicode (well, sort of singular, since it's a family of encodings), which strives express the complete canon of human language. The current specification, Unicode 13, encompasses 143000 characters, including emoji and archaic scripts. The first 128 characters of Unicode are identical to ASCII, which helps maintain backwards compatibility with older Latin text data.
+Note that we have to encode "whitespace" (non-visible, but meaningful elements like spaces and line breaks) as characters as well.
 
-Under Unicode (UTF-8, specifically), a Latin alphabet character takes 8 bits to store.
+Since the 1960s, software developers have created a plethora of character encodings, often to represent characters from other languages. Although you might occasionally run into these in older datasets, the singular modern text standard is called Unicode (well, sort of singular, since it's a family of encodings), which strives express the complete canon of human language. The current specification, Unicode 13, encompasses 143000 characters, including emoji and archaic scripts. Unicode functionally encodes the entirety of known human written language, includng dead and undecyphered languages. Here's the code chart for the second millenium BC undecyphered Minoan script [Linear A](assets/unicode_linear-a.pdf).
+
+The first 128 characters of Unicode are identical to ASCII, which helps maintain backwards compatibility with older Latin text data. Under Unicode (UTF-8, specifically), a single Latin alphabet character takes 8 bits to store.
+
+Having basically all text files encoded in Unicode is especially helpful because, just like picking up a book whose language you don't know, character encodings often have to be guessed and it's easy to guess almost correctly but not entirely correctly. There's an example of a text file containing the 1920 Karel Čapek novel RUR (from which we get the word "robot") in Czech [encoded in UTF-8](assets/rur.txt) and [encoded in the archaic Windows-1250 encoding](assets/rur-1250.txt).
 
 ## Colors
 
@@ -133,3 +139,6 @@ Colors are most often shown as hexadecimal numbers (base 16). Hexadecimal uses 0
 
 ## Also: Bytes!
 Byte is another common unit of measurement for data. The term is a play on bit and was coined in the 1950s for Project SAGE, a prototype computer system to coordinate American air defenses in the Cold War. There is some historical ambiguity, but a modern byte is 8 bits, representing the smallest power-of-2 size for useful data (such as a single character or a small integer). Bytes and bits are often modified with metric scale prefixes: kilobyte, megabit, gigabyte etc. This is a bit of a mess because it mixes binary units with decimal prefixes, but that's how we get our current popular units for data size.
+
+
+## Revisit: Print it out and delete it?
