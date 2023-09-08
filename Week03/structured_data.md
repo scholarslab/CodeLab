@@ -47,8 +47,81 @@ These are most often used to move spreadsheet data around outside of the more pr
 
 **What are the limitations of CSVs and tabular data in general?**
 
+Let's consider a CSV or spreadsheet representing data for job candidates. One candidate to a row, with columns representing common data such as name, contact information, etc. What happens if we add a section for education or work experience? How many columns should we add to represent degrees or previous positions? We can add new columns whenever we have to add a candidate with more degrees or positions than any prior one, but this makes the data more difficult to parse, either as a human or by computer. Each degree or position also has a number of subsidiary fields: the years and place for an educational program or job are properties of those programs and jobs, but every column is functionally a top level field of the candidate.
+
+For more complex data, we need a more robust, and somewhat more verbose form of structured data.
+
 ## XML
 
-Tabular data is useful when we have fixed columns and more rigidly consistent data. There are properties that most dogs or bags of coffee or countries share that we can build columns around. But how do we express more data more flexibly? How could we better express arbitrary length lists or "contains"/"child" relationships?
+Tabular data is useful when we have fixed columns and more rigidly consistent data. There are properties that most dogs or bags of coffee or countries share that we can build columns around. But how do we express more data more flexibly? How could we better express arbitrary length lists or "contains"/"child" relationships? XML, eXtensible Markup Language, was created as a means of **serialization**, allowing it to serve as an intermediary between different applications like a *lingua franca*. This has made it a popular basis for many different softwares that need to represent complex data.
 
-XML is useful for **serialization**, allowing it to serve as an intermediary between arbitrary formats, like a *lingua franca*.
+XML comprises a set of nested **elements** that comprise opening and closing **tags** that contain a mix zero or more of: **attributes**, text, and child elements.
+
+Let's look at some example XML. I made up the structure and content of this snippet, but the syntax that it follows can be used to describe many different kinds of other structures. The line breaks and spacing/tabs are optional, but they make it easier for humans to read.
+
+```
+<person id="ssl2ab">
+    <name>
+        <last>Lin</last>
+        <first>Shane</first>
+    </name>
+    <title>Senior Developer</title>
+    <pets>
+        <dog name="Rocket">
+            <alias>Rocky</alias>
+            <alias>Rock Ness Monster</alias>
+            <alias>Dimitri Rockmaninoff</alias>
+            <alias>Rockminster Fuller</alias>
+            <breed>Australian Cattle Dog</breed>
+            <breed>Australian Shepherd</breed>
+        </dog>
+        <dog name="Hazel">
+            <alias>Hazelnut</alias>
+            <breed>Australian Cattledog</breed>
+            <breed>Beagle</breed>
+        </dog>
+    </pets>
+</person>
+```
+
+In this XML, "person", "name", "first", "last", etc are all elements. They start with an opening tag (e.g. '<person>') and end with a closing tag (e.g. '</person>'). Here, we can see that the Person element encompasses all the other elements.
+
+"id" is an attribute of the person element. Attributes are defined inside of the opening tag and describe some metadata about the element.
+
+Between the opening and closing tags, we have the element content. Here, we see that "name" is a _child_ element of the person element. Child elements are used to provide subsidiary information about its parent element and are useful for describing more complex structures. Element content can also have simple text, useful for when there isn't a need to further structure its data using children. The "last" and "first" elements inside of "name" contain just text content.
+
+Sometimes, we don't actually need to have any content at all, only attributes or even just the tag itself. In those cases, we can use the convention of the self-closing tag: `<dog name="Rocket"/>`.
+
+We can use multiple elements of the same type inside of an element (e.g. "dog", "alias") but not multiple attributes of the same name in the same tag.
+
+After you've parsed this example XML, you might think to yourself: "this isn't the only way to describe this information!" And you'd be right!
+
+Let's take a look at four different XML structures:
+
+```
+<person>
+    <name>
+        <last>Lin</last>
+        <first>Shane</first>
+    </name>
+</person>
+```
+
+```
+<person>
+    <lastname>Lin</lastname>    
+    <firstname>Shane</firstname>
+</person>
+```
+
+```
+<person>
+    <name lastname="Lin" firstname="Shane"/>
+</person>
+```
+
+```
+<person lastname="Lin" firstname="Shane"/>
+```
+
+These four elements all describe the same basic data. Whether you use attributes or child elements or text is often a matter of personal preference. It's not a good idea to cram data into attributes or text where we might benefit from the additional structure provided by child elements. It's also not a good idea to use attributes where the number of attributes may be uncertain or which contains too much data; the "dog" elements in the original example XML is better suited to be elemental children.

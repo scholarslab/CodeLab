@@ -10,8 +10,6 @@
 4. CSV
 5. XML
 
-## New Terms
-* **Tabular**: Relating to tables; in the context of data, arranged in rows and columns.
 
 ---
 ## Homework for Week 3
