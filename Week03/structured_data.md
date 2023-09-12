@@ -125,3 +125,11 @@ Let's take a look at four different XML structures:
 ```
 
 These four elements all describe the same basic data. Whether you use attributes or child elements or text is often a matter of personal preference. It's not a good idea to cram data into attributes or text where we might benefit from the additional structure provided by child elements. It's also not a good idea to use attributes where the number of attributes may be uncertain or which contains too much data; the "dog" elements in the original example XML is better suited to be elemental children.
+
+## Validation / Parsing
+
+The point of having these well-defined and consistent formats is that computers can both produce and read them back in. We will usually define the structures of these documents manually (e.g. the columns of a CSV or the order and definitions of the elements in XML), but more frequently the actual documents that conform to those structures are produced by computer programs.
+
+The process of reading a text file of a particular format into a way that is legible to a computer (which we might anthropomorphize as "understanding" the file) is called parsing and the software that does this is a parser. We can write our own parsers for some of these formats easily enough, but there are enough edge cases and this is a common enough of a problem that we should use one of the many parsers available to us. In Python, there are CSV and XML parsers built into the language (and also for some other formats).
+
+When we write formatted text by hand, it's easy to make mistakes. When we have to keep track of nested tags or complex arrangements of escape characters, it helps to have mechanical assistance. Validators and linters are related software tools to help check the syntax and, in some cases, the style of formats. When we use these tools, they help us ensure that our documents are *well-formed*, meaning that they conform to the basic rules of the format (e.g. every XML element is closed). But well-formedness only ensures that a computer can unambiguously read the document, not that it'll make sense to a human.
