@@ -3,7 +3,9 @@
 ![Rocky!](assets/rocky_popcorn.jpg)
 
 ## Lesson
+
 [Git for Humanists](https://shane-et-al.github.io/git_slab/)
+
 0. Review Codelab to this point
 1. How to collaborate digitally?
 2. Version Control Systems
