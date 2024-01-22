@@ -60,13 +60,23 @@ If you're looking for help on the internet and ever see something like `print "f
 !["Monty Python"](assets/overlords.jpg)
 
 ### String functions (concatenation)
+
+
+One of the most fundamental parts of coding is to remember things, which is say: to name them so we can keep track of them. When we describe, in our algorithm exercises, writing the results of a math function down, tallying a count, or even pointing with our finger to a particular item in a list, this is what we're doing. In programming, the label that that put on a piece of data is called a **variable**. When we assign a variable to a piece of information, that's variable assignment and we do it like this:
+
+```python
+noun = "Scholars' Lab"
+```
+
+Note the direction here. In this example, the variable name "noun" is assigned the string (a type of object that  contains text data) "Scholars' Lab".
+
+Variable names have to start with a letter or an underscore and can only contain letters, numbers, and the underscore character. No spaces. They're also case-sensitive, so `SLAB` `slab` and `SLab` are different.
+
+
 ```python
 madlibs="Scholars' Lab"
 print("I, for one, 'welcome' our new "+madlibs+" overlords!")
 ```
-Variables are little bits of information that are given names so that they can be modified or reused later. In the first line, we are assigning a string (a variable type that contains text) to a variable with the name "madlibs".
-
-Variable names have to start with a letter or an underscore and can only contain letters, numbers, and the underscore character. No spaces. They're also case-sensitive, so `SLAB` `slab` and `SLab` are different.
 
 In the second line, we use the + operator to concatenate three strings together and pass the result to print.
 
@@ -128,7 +138,7 @@ True in Python is interchangeable with the number 1 and False with 0.
 
 Comments are especially useful--necessary!--for collaboration. Python is open source and its community of millions of coders often share in its permissive approach to intellectual property. Python as a whole is a giant collaborative project of which you are now members.
 
-When you write particularly complicated logic or whenever you write new classes or functions (more on this later!), you should write a comment to explain yourself.
+When you write particularly complicated logic or whenever you write new classes or functions (more on this later!), you should write a comment to explain yourself. I will be using comments extensively in the lesson documents to explain what's going on in code.
 
 ### Documentation
 
@@ -189,26 +199,45 @@ We can see here that `input` is a function, just like `print`. `input` asks the 
 
 ![Bad Pun Hazel](assets/sleeping_hazel.jpeg)
 
+Lists are one of the most common and useful types in Python. It is a kind of ordered collection, neaning that it contains other objects and those objects are arranged in a sequence. Lists in Python are defined using square brakets, like so:
+
 ```python
-dogs = ["Toby","Bofur","Hazel","Maple","Henry","Fat Dog","Monty", "Keefa", "Triscuit"]
+l = ["Brandon","Ronda","Jeremy","Shane"]`
+```
+
+We can refer to an object in a list (an "element") using its position within the list, called its "index". Python list indices, like many other things in computing, are zero-indexed, meaning that we start counting at zero. To retrieve the first element (the element at index 0) in the list we just defined, we can use this code:
+
+```python
+print(l[0])
+```
+
+Lists can contain any other type of object, including other lists (so you can have lists of lists, which are very useful for things like coordinates). You can play with these examples in the Python interpreter to try out different list actions:
+
+```python
+# Defining a list that we assign to the variable `dogs`
+dogs = ["Toby","Bofur","Hazel","Rocky","Maple","Henry","Fat Dog","Monty","Keefa","Triscuit"]
+# print the first element in `dogs` (remember: zero-indexing)
 print(dogs[0])
+# print the last element in `dogs`
 print(dogs[-1])
+# print the sub-list consisting of the fourth element in `dogs` to the end
 print(dogs[3:])
+# print the length of the `dogs` list
 print(len(dogs))
+# sort the dogs list, then print it
 dogs.sort()
 print(dogs)
+# sort the dogs list in reverse, then print it
 dogs.sort(reverse=True)
 print(dogs)
 ```
-
-Lists are one type of sequence, which are ordered collections of variables (including sequences, so you can have lists of lists).
 
 [Python 3 Docs: Built-in Types: Sequence Types](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range)
 
 Strings are actually sequence types, just like lists! They're sequences of characters and we can address particular characters just like with lists.
 
 ```python
-gooddog = "Hazel is a good dog"
+gooddog = "Rocky is a good dog"
 print("Every dog"+gooddog[5:])
 ```
 
@@ -225,14 +254,3 @@ Of course, you don't always want to write your own code. Programmers are ~~lazy~
 
 For more specialized tasks, it's also easy to use the work of third party developers. But we'll leave that to another week.
 
-## Let's Hope You Paid Attention!
-### Work together!
-Pair programming is a common practice. We want you to always do pair programming. Let's write some code together, right now, to assign each of you a partner for this week's homework using what we've just learned!
-
-Let's start with a list of names:
-
-```python
-praxis = ["Caroline", "Malcolm", "Samantha", "Winnie"]
-```
-
-Hint: there's a section in the Random library documentation [just for working with sequences](https://docs.python.org/3/library/random.html#functions-for-sequences)
