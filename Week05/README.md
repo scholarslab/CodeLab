@@ -37,6 +37,14 @@ When I first assigned this homework, I didn't actually know that Pig Latin is a 
 
 Taking into consideration words starting with consonant clusters or vowels requires some conditional logic, which we haven't gone over yet, but feel free to jump ahead if you really want to show off.
 
+Your code should be structured something like this:
+
+```python
+word = input("Enter word: ")
+# Pig latin code goes here
+print(pig_latin)
+```
+
 ### Natural Language Coding
 Once again, let's write, in plain English, precise and detailed step-by-step instructions for a task: given a list of students, pair off each student with a partner, making sure to not double-book anyone and to not assign anyone to be their own partner. What kinds of "edge cases" (unexpected conditions) do we have to watch out for? What's missing from these instructions?
 

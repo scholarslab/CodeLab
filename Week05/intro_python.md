@@ -42,7 +42,7 @@ Python 3 is the current major version. It was released in 2008 as a major reform
 Many computers come with Python already installed by default. Depending on how yours is set up, running `python` may run the Python 2 or Python 3 interpreter. To determine which one, run the command `python --version`. Pipenv should have this all sorted out, but more on this later.
 
 ## Hello World
-### Variables, Functions, amd Parameters
+
 Let's take a look at the traditional program used as an introduction to countless programming students before you, Hello World:
 
 ```python
@@ -53,51 +53,68 @@ Try saving this code as a program and running it.
 
 "Print" is a function, which is like a command. Functions are called by writing the function name followed by parenthesis. Inside the parenthesis are zero or more parameters, which are extra bits of information that you attach to the function. The "print" function simply writes out the data that's passed to it.
 
-If you're looking for help on the internet and ever see something like `print "foobar"` instead of `print("foobar")` (without the parenthesis), that's a sign that it's Python 2 code instead of Python 3!
-
 ## Variables
 
 !["Monty Python"](assets/overlords.jpg)
 
-### String functions (concatenation)
+One of the most fundamental parts of coding is to remember things, which is say: to name them so we can keep track of them. When we describe, in our algorithm exercises, writing the results of a math function down, tallying a count, or even pointing with our finger to a particular item in a list, this is what we're doing. In programming, the label that that put on a piece of data is called a **variable**.
 
-
-One of the most fundamental parts of coding is to remember things, which is say: to name them so we can keep track of them. When we describe, in our algorithm exercises, writing the results of a math function down, tallying a count, or even pointing with our finger to a particular item in a list, this is what we're doing. In programming, the label that that put on a piece of data is called a **variable**. When we assign a variable to a piece of information, that's variable assignment and we do it like this:
-
-```python
-noun = "Scholars' Lab"
-```
-
-Note the direction here. In this example, the variable name "noun" is assigned the string (a type of object that  contains text data) "Scholars' Lab".
-
-Variable names have to start with a letter or an underscore and can only contain letters, numbers, and the underscore character. No spaces. They're also case-sensitive, so `SLAB` `slab` and `SLab` are different.
-
+When we name a variable and associate it with a piece of information, that's called variable assignment and we do it like this:
 
 ```python
-madlibs="Scholars' Lab"
-print("I, for one, 'welcome' our new "+madlibs+" overlords!")
+a = 3
+b = 4
+print(a+b)
 ```
 
-In the second line, we use the + operator to concatenate three strings together and pass the result to print.
+Note the direction of assignment here. In this example, the variable names "a" and "b" are assigned integers 3 and 4 (an integer is a whole number and also a type of data which represent whole numbers).
 
-You can also "multiply" strings.
+Variable names have to start with a letter or an underscore and can only contain letters, numbers, and the underscore character. No spaces. They're also case-sensitive, so `SLAB` `slab` and `SLab` are different. Certain words are reserved by the language and cannot be used as variables. There are some more conventions about what kinds of names should be used for variables, but they'll only be useful once we understand a bit more about how they work.
+
+
+## Classes, Objects, and Instances
+
+ Objects,If variables are labels, then what is it that they reference? Let's use, in Scholars' Lab custom, a dog metaphor. When we see the word "dog", we understand that word on a variety of levels.
+
+1. In a very high level sense, there's the abstract notion of "dog", which describes the behaviors and qualities shared by all dogs (e.g. "bark", "endothermic metabolism"). "There is a whole chapter about dogs in this biology textbook."
+2. Then there's the actual, physical population of all dogs or some anonymous subset of that population. "Dogs are the most popular pet in the world" or "let's go adopt some dogs from the shelter."
+3. Finally, there's the specific, singular individual dog that we can point to. "Rocky is a surpassingly fine dog."
+
+In a programming language, these catagories are useful to illustrate the relationship of classes, objects, and instances
+
+1. The abstract idea of a thing can be described as a "class" or "type" (we can use these more or less interchangeably).
+2. The anonymous, but concrete idea of a thing is described as an "object".
+3. The exact individual dog is an "instance" of a dog. 
+
+This will be clearer once we start to put these terms into practice. Let's take a look back at the last bit of code.
 
 ```python
-print("Scholars' L"+"a"*10+"b")
+a = 3
+b = 4
+print(a+b)
 ```
+
+Knowing that 3 and 4 are Integers, we can now say that what are doing on the first two lines is assigning instances of the Integer class to two variables, A and B. Print is a function that expects an object as a parameter (`print()` is pretty voracious, so many different classes are acceptable) and the integer that results from `a+b` is an object.
+
+Another thing to note here is that although we print `a+b`, we haven't bothered to assign it to a variable. It's an instance that's just floating out there, without a label. This means that we can't refer back to it later to use it for something else. We'll have to perform the addition function again rather than just being able to remember what it was.
 
 ### Numbers
+
+So far, using variables in code looks very much like using them in a math equation. Here, we assign names to represent particular pieces of data which may change, often inputs and outputs, and then we use them just like we would in a formula like `a^2 + b^2 = c^2` to find the hypotenuse of a right triangle. In Python, we need to do a little bit of housekeeping to solve for square roots (we'll talk about the `import` line and the bit about `math.sqrt` later). For now, we can see how the variables `a`, `b`, and `c` work. Also note that, in Python, `a**2` means to raise `a` to the second power.
+
 ```python
-a = 7
-b = 3
-a+b
-a/b
+import math
+a = 3
+b = 4
+c = math.sqrt(a**2 + b**2)
+print(c)
 ```
-Integers are whole numbers. Floats (floating point numbers) are prepresentations of real numbers. Integers are simple and easy to use. Floats are mostly easy, but sometimes really weird!
 
-### Weird Numbers
+`3` and `4` are integers. But this code prints out `5.0` instead of just `5`. This is because the square root function results in a "floating point number" (sometimes just "float") instead of an integer. This is a kind of data that's used to represent real numbers like 1.4142 or 3.14159. In Python, they have limited precision and have some additional quirks due to their underlying binary representation. For our purposes, this is more of an occasional curiosity rather than a serious problem. If you're coding, say, [post office accounting software](https://en.wikipedia.org/wiki/British_Post_Office_scandal), you should probably read up on them more closely.
 
-What does this return?
+### Aside: sometimes floats are weird
+
+What does this code result in?
 
 ```python
 0.1+0.2
@@ -107,9 +124,9 @@ Huh, weird.
 
 !["There are 10 kinds of people in the world..."](assets/10kinds.jpeg)
 
-(No one really understands binary)
+(No one really understands binary because no one thinks in binary)
 
-All data in a computer is represented as binary (base 2) numbers, comprising only 1s and 0s. The text you're reading now is represented by individual characters that, under the hood, are stored as binary numbers. The method of translating these information between different forms and contexts (such as between binary numbers and text or numbers) is called encoding.
+Let's remember that all data in a computer is represented as binary (base 2) numbers, comprising only 1s and 0s. The text you're reading now is represented by individual characters that, under the hood, are stored as binary numbers. The method of translating these information between different forms and contexts (such as between binary numbers and text or numbers) is called encoding.
 
 Integers are easy enough to represent in binary: 0 is 0, 1 is 1, 2 is 10, 3 is 11, 4 is 100, and so on.
 
@@ -118,6 +135,23 @@ But floats are trickier and require a special system to represent. Don't worry a
 [Float to Binary Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
 
 [IEEE 754 Standard](https://en.wikipedia.org/wiki/IEEE_754-1985) if you really want to learn more. You probably do not want to read this.
+
+### Strings
+
+Variables can represent different types of data. So far, we've used them for different kinds of numbers, but of course there's also text. In code, we call a sequence of characters "strings," which is a nod to typesetting lingo.
+
+```python
+noun="Scholars' Lab"
+print("I, for one, 'welcome' our new "+noun+" overlords!")
+```
+
+In the second line here, we use the + operator to concatenate (add together) three strings together and pass the result to print.
+
+You can also "multiply" strings.
+
+```python
+print("Scholars' L"+"a"*10+"b")
+```
 
 ### Booleans
 ```python
