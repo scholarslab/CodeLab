@@ -55,7 +55,7 @@ Try saving this code as a program and running it.
 
 ## Variables
 
-!["Monty Python"](assets/overlords.jpg)
+!["dymo label maker"](assets/dymo.jpeg)
 
 One of the most fundamental parts of coding is to remember things, which is say: to name them so we can keep track of them. When we describe, in our algorithm exercises, writing the results of a math function down, tallying a count, or even pointing with our finger to a particular item in a list, this is what we're doing. In programming, the label that that put on a piece of data is called a **variable**.
 
@@ -137,6 +137,8 @@ But floats are trickier and require a special system to represent. Don't worry a
 [IEEE 754 Standard](https://en.wikipedia.org/wiki/IEEE_754-1985) if you really want to learn more. You probably do not want to read this.
 
 ### Strings
+
+!["I, for one, welcome our new [string] overlords"](assets/overlords.jpg)
 
 Variables can represent different types of data. So far, we've used them for different kinds of numbers, but of course there's also text. In code, we call a sequence of characters "strings," which is a nod to typesetting lingo.
 
