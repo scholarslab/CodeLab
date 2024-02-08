@@ -10,30 +10,30 @@ Codelab is divided into two broad sections: *Codelab Fundamentals*, which introd
 ## Schedule
 
 ### Codelab Fundamentals
-* [Week 01](Week01/README.md): Introduction to CodeLab
+* [Week 01: Introduction to CodeLab](Week01/README.md)
   * Environment setup
   * What is Code?
   * Algorithmic thinking
   * Why is Code?
-* [Week 02](Week02/README.md): Introduction to Data
+* [Week 02: Introduction to Data](Week02/README.md)
   * What is data?
   * How do we represent data?
   * Digital vs analog
   * Text encoding
   * Colors and images
-* [Week 03](Week03/README.md): Structured Data
+* [Week 03: Structured Data](Week03/README.md)
   * Limitations of simple data
   * Lists (simple and complicated)
   * Tabular data and CSV
   * XML
   * JSON
-* [Week 04](Week04/README.md): Version Control
+* [Week 04: Version Control](Week04/README.md)
   * How do we collaborate on digital project?
   * Version control systems
   * Git and Github
 
 ### Codelab Code Lab
-* [Week 05](Week04/README.md): Introduction to Python
+* [Week 05: Introduction to Python](Week05/README.md)
   * Python interactive interpreter
   * Saving and running Python files
   * Hello World
@@ -43,7 +43,7 @@ Codelab is divided into two broad sections: *Codelab Fundamentals*, which introd
   * Documentation
   * `input()`
   * Lists
-* [Week 06](Week04/README.md): Functions and Methods
+* [Week 06: Functions and Methods](Week06/README.md)
   * Types and `type()`
   * Type conversion
   * Function calls, arguments, return values.
