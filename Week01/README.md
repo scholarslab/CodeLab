@@ -1,13 +1,14 @@
-# Week 1
+# Week 1: Introduction to CodeLab
 
 ## Outline
 
 ![Rocky!](assets/rocky.jpg)
 
-1. Introduction to CodeLab
-2. What is Code?
-3. Exercises in Code thinking
-4. Why is Code?
+1. Introduction
+2. A note about local environment setup
+3. What is Code?
+4. Exercises in Code thinking
+5. Why is Code?
    1. Code as utility
    2. Code as scholarship
    3. Code as labor

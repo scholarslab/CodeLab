@@ -1,4 +1,4 @@
-# Structured Data
+# Week 03 Lesson: Structured Data
 
 ## The Limitations of Unstructured Text
 

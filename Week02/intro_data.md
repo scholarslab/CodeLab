@@ -1,4 +1,4 @@
-# Introduction to Data
+# Week 02 Lesson: Introduction to Data
 
 Q: Print it out and delete it? Let's set it aside and revisit it at the end.
 

@@ -1,4 +1,4 @@
-# Week 6
+# Week 6: Functions and Methods
 ![I'm Invincible](assets/invincible.gif)
 
 ---
@@ -9,7 +9,7 @@
 3. Functions and methods
 
 ---
-## Homework for Week 4
+## Homework for Week 6
 
 ### Coding assignment 1a
 
