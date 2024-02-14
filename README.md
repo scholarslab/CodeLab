@@ -3,9 +3,9 @@
 
 ![https://media.giphy.com/media/SwImQhtiNA7io/giphy.gif](https://media.giphy.com/media/SwImQhtiNA7io/giphy.gif)
 
-Welcome to a course on the foundations of coding and digital humanities technics, designed by the Scholars' Lab at the University of Virginia Library for the Praxis Fellowship.
+Welcome to Codelab, a course on the foundations of coding and digital humanities technics designed by the Scholars' Lab at the University of Virginia Library for the Praxis Fellowship.
 
-Codelab is divided into two broad sections: *Codelab Fundamentals*, which introduces basic computing, data, and algorithmic concepts without direct coding, and *Codelab Code Lab*, which uses Python to teach practical programming skills.
+Codelab is broadly divided into two sections: _Codelab Fundamentals_, which introduces basic computing, data, and algorithmic concepts without coding directly, and _Codelab Code Lab_, which uses Python to teach practical programming skills.
 
 ## Schedule
 
