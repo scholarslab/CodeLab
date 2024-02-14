@@ -1,11 +1,12 @@
-# Week 7
+# Week 6
 
-![Hazel header](./assets/eva.jpg)
+![Hazel header](./assets/20170126.jpg)
 
 ## Outline
 1. Discuss homework assignments
-2. Sorting
+2. Loops (ctd)
 3. File input/output
+3. Return to Algorithms
 
 [Lesson document](./lesson.md)
 
@@ -13,24 +14,18 @@
 
 ### Assignment 0
 
-[Download the plain text of Much Ado About Nothing from Project Gutenberg](http://www.gutenberg.org/ebooks/1519)
-
-Write a program to read in this file and count the total lines of dialog and the length (character count) of those lines for the two main characters: Benedick and Beatrice. Write that data out to a second file.
-
-Feel free to modify the text file before loading it into Python if it'd be easier, for example, you want to strip out the starting and ending Project Gutenberg text, the scenes list, the dramatis personae, etc.
-
-
-### Assignment BONUS:
-
-Implement a sorting algorithm for sorting a list of numbers. Don't use any built-in sort. It can be as simple or complicated as you want. Feel free to look at the innumerable other examples on the Internet, but be prepared to explain your code!
-
-Think back to what we talked about, to mapping human processes to code. Try your best, but don't bang your head against a wall if you get stuck. I'm happy to chat about any of this material, of course.
+Write a Python program to implement our instructions for returning exact change from Week 2. Something that looks like this...
 
 ```python
-def sort_numbers(numbers):
-    # your code here
-    return sorted_list
+DENOMINATIONS = [100,20,10,5,1,0.25,0.1,0.5,0.01]
 
-numbers = [6,3,7,8,1,3]
-print(sort_numbers(numbers))
+def change(cost, payment):
+    # your code here
+    return list_of_change
+
+# Test cases
+print(change(5,2.55))
+print(change(2.55,5))
+print(change(5,5))
+print(change(0,5))
 ```
