@@ -1,32 +1,36 @@
-# Week 08: The Ultimate Machine
+# Week 7
 
-![Shannon/Minsky Ultimate Machine](assets/ultimate_machine.gif)
- 
-## Agenda:
-- Review homework
-- Big Data Talk
-- Dictionaries
+![Hazel header](./assets/eva.jpg)
+
+## Outline
+1. Discuss homework assignments
+2. Sorting
+3. File input/output
 
 [Lesson document](./lesson.md)
 
-## HOMEWORK
+## Homework
 
-#### Review
+### Assignment 0
 
-We've covered a lot of concepts really quickly and everything *seems* to be going well. However, it'll still probably be useful to read through a quick review of all the basic Python concepts we've covered to this point:
+[Download the plain text of Much Ado About Nothing from Project Gutenberg](http://www.gutenberg.org/ebooks/1519)
 
-- [Basic data types review](basic_data_types.md)
-- [Data structures review](data_structures.md)
-- [Data flow review](data_flow.md)
+Write a program to read in this file and count the total lines of dialog and the length (character count) of those lines for the two main characters: Benedick and Beatrice. Write that data out to a second file.
 
-#### Assignment 0
-Take the code you wrote last week to analyze the Much Ado About Nothing text and change it to build a dictionary that stores every character's lines keyed to that character's name. Something that looks like this...
+Feel free to modify the text file before loading it into Python if it'd be easier, for example, you want to strip out the starting and ending Project Gutenberg text, the scenes list, the dramatis personae, etc.
+
+
+### Assignment BONUS:
+
+Implement a sorting algorithm for sorting a list of numbers. Don't use any built-in sort. It can be as simple or complicated as you want. Feel free to look at the innumerable other examples on the Internet, but be prepared to explain your code!
+
+Think back to what we talked about, to mapping human processes to code. Try your best, but don't bang your head against a wall if you get stuck. I'm happy to chat about any of this material, of course.
 
 ```python
-{"BENEDICK":["Were you in doubt, sir, that you asked her?","..."],"BEATRICE":["I pray you, is Signior Mountanto returned from the wars or no?","..."]}
+def sort_numbers(numbers):
+    # your code here
+    return sorted_list
+
+numbers = [6,3,7,8,1,3]
+print(sort_numbers(numbers))
 ```
-
-#### Assignment 1
-
-We have in our programming quiver a number of tools now (basic types, lists, dictionaries) and we just had a big talk on data. Think about everything you know about your Praxis cohort (the icebreakers doc is fair game). Think about the kind of questions that might interest you about such a corpus and the best way to structure that information to answer those questions. Write some Python code in the vein of the Scholars Lab example in the data structures review that represents the model you come up with. This one is intentionally a bit amorphous, but any practice in thinking about the shape of data is useful.
-
