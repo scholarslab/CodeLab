@@ -1,14 +1,18 @@
-## Week 5: Control Flow
+## Week 07: Control Flow
 
 ![hazel_sleeping](assets/hazel_sleeping.jpg)
 
-The order of instructions which a computer program executes is known as "control flow" and we can think it as like a river with a strangely winding, branching, looping course. Functions are our first step in working with code that doesn't simply run linearly, one line after the next. After we define them, we can call back on functions again and again, from anywhere. With functions, just because a line of code appears before a later one doesn't mean that it isn't executed earlier. 
+The order of instructions which a computer program executes is known as "control flow" and we can think it as like a river with a strangely winding, branching, looping course. Functions are our first step in working with code that doesn't simply run linearly, one line after the next. After we define them, we can call back on functions again and again, from anywhere. With functions, just because a line of code appears before a later one doesn't mean that it isn't executed later. 
 
-But functions are still... functionally linear: we're basically copying out a block of code and pasting it back in somewhere else. If we want to more substantively affect the direction of control flow, in real time, we must use conditionals and loops.
+But functions are still... functionally linear: we're basically copying out a block of code and pasting it back in elsewhere and so we know every time that a particular function will be called. The river always winds one way, the same way, every time.
+
+But sometimes we want to change things up, to make decisions based on what input we provide or what time of day we run our code or even just randomly. Sometimes we want the river to fork. Sometimes we want to take a different path this time than the next and the last. To accomplish this, we must use conditionals and loops.
+
+This is where we start to get to the fun stuff!
 
 ### Conditionals
 
-A conditional is a way for a computer program to make a choice. The basic syntax of the conditional in many programming languages is the `if` statement. In Python, it looks like this:
+A conditional is a simple way for a computer program to make a choice about flow. The basic syntax of the conditional in many programming languages is the `if` statement. In Python, it looks like this:
 
 ```python
 x = 5
@@ -20,7 +24,7 @@ else:
   print("Zero")
 ```
 
-Let's take a look at the actual *conditions*: `x>0` and `x<0`. These are valid Python statements. If you define `x` and then execute `x>0` in the Python interactive interpreter, we can see that they return Boolean values, `True` or `False`:
+Let's take a look at the actual *conditions*: `x>0` and `x<0`. These are valid Python statements. If you define a variable `x` and then execute `x>0` in the Python interactive interpreter, we can see that they return Boolean values, `True` or `False`:
 
 ```python
 >>> x = 5
@@ -33,9 +37,15 @@ False
 
 Around the conditions are the conditional keywords: `if`, `elif` (else if), and `else`. They're what they sound like. Each of the conditional blocks (the three `print()` statements) are only run if the associated conditional statement is `True` (in the boolean logic sense). We can have multiple `elif` blocks if we want. We can also omit `elif` and `else` blocks altogether.
 
-Note the colon after each conditional line. Here, as with function definitions, a colon is a signal that we're going to start a new code block (indicated by the white space indentation). The different code blocks (the "Positive", "Negative", and "Zero" print statements here) delineate the conditional flow.
+In each of these examples, note the colon at the end of each conditional line. Here, as with function definitions, a colon is a signal that we're going to start a new code block (indicated by the indentation). The different code blocks (the "Positive", "Negative", and "Zero" print statements here) delineate the conditional flow.
 
-For numbers, we can use `>`, `>=`, `==`, `<`, and `<=` to make numeric comparisons. If we want to modify or chain together boolean statements, we can use `and`, `or`, and `not`:
+For numbers, we can use `>`, `>=`, `==`, `<`, and `<=` to make numeric comparisons. 
+
+In our first example, because we assign `x=5`, the first condition (`if x>0:`) is met and we print out "positive." Because the other statements are `elif` and `else` and we have already met a condition, we do not even evaluate those statements.
+
+### More complex conditions
+
+If we want to modify or chain together boolean statements, we can use `and`, `or`, and `not`:
 
 ```python
 if not(x>0 and x<0):
@@ -90,7 +100,7 @@ if x==0:
 
 Because numbers in Python cannot simultaneously be positive, negative, or zero (and ignoring concurrency for now), these two bits of code are actually equivalent. Only one of `x>0`, `x<0`, and `x==0` can be true at one time.
 
-But this is a simple scenario where we are not only covering all our bases and can be confident that we have thought of all scenarios, but also one in which there are no complicated overlaps between the conditions. Additionally, using `elif` explicitly excludes conflicting code blocks and `else` is often a way to catch unexpected conditions. These are strategies that are useful for writing more robust code.
+But this is a simple scenario where we are not only covering all our bases and can be confident that we have thought of all scenarios, but also one in which there are no complicated overlaps between the conditions. Additionally, using `elif` explicitly excludes conflicting code blocks and `else` is often a way to catch unexpected conditions. These are strategies that are useful for writing more legible and robust code.
 
 ### Looping
 

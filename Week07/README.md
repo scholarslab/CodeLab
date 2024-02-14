@@ -1,4 +1,4 @@
-# Week 6: Program Flow
+# Week 07: Control Flow
 You guys are all doing great!
 
 ![racoon_highfive dot gif](assets/racoon_highfive.gif)
@@ -17,15 +17,50 @@ You guys are all doing great!
 > - Brandon
 
 ---
-## Homework for Week 5
+## Homework for Week 07
 
 Try pair programming with a buddy!
 
-### Assignment 0: Improved pig latin
+## Assignment 0:
 
-Let's go back to our pig latin code again. This time, add a conditional to handle the case where the first letter is a vowel (Wikipedia says: "For words that begin with vowel sounds, generally only a syllable 'yay' is appended to the end, with no modifications to the beginning onset.").
+What is the output of this code?
 
-### Assignment 1: Filter evens
+```python
+x = 0
+if x == 0:
+  x = 1
+if x == 1:
+  x = 2
+if x == 2:
+  x = 3
+print(x)
+```
+
+And this?
+
+```python
+x = 0
+if x == 0:
+  x = 1
+elif x == 1:
+  x = 2
+else:
+  x = 3
+print(x)
+```
+
+### Assignment 1: Improved pig latin
+
+Let's go back to our very basic pig latin code again. It probably looks something like this:
+
+```python
+word = input("Enter word: ")
+print(word[1:]+word[0]+"ay")
+```
+
+This time, add a conditional to handle the case where the first letter is a vowel (Wikipedia says: "For words that begin with vowel sounds, generally only a syllable 'yay' is appended to the end, with no modifications to the beginning onset.").
+
+### Assignment 2: Filter evens
 
 Write a function, `filter_evens()` that takes in a list of integers as an argument and returns a list of integers comprising only the even numbers.
 
@@ -37,7 +72,7 @@ nums = [0,-2,3,14]
 print(filter_evens(nums))
 ```
 
-### Assignment 2: FizzBuzz
+### Assignment 3: FizzBuzz
 
 This is a classic coding puzzle, another rite of passage. Write a program that takes as input a number and then plays the [FizzBuzz game](https://en.wikipedia.org/wiki/Fizz_buzz) until that number is reached. This is a classic programming puzzle and, very helpfully, Wikipedia actually has a list of solutions, including one in Python. But if you use it, be prepared to explain how it works in front of the Fellowship in the next Codelab. It's not the simplest answer (and, in fact, it's Python 2 code), but it might be useful to reverse-engineer!
 

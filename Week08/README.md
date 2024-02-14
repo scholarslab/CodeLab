@@ -1,4 +1,4 @@
-# Week 6
+# Week 07: Program Flow
 
 ![Hazel header](./assets/20170126.jpg)
 

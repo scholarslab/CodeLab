@@ -50,7 +50,13 @@ Codelab is broadly divided into two sections: _Codelab Fundamentals_, which intr
   * Built-in functions
   * Methods
   * Defining Functions
-* Week 07: Control Flow
+* [Week 07: Control Flow](Week07/README.md)
+  * Conditionals
+  * `if`, `elif`, and `else`
+  * Booleans in conditions
+  * Loops
+  * `while` vs `for`
+  * Exit conditions 
 * Week 08: Import, the Python Standard Library 
 * Week 09: Data formats, CSV, JSON
 * Week 10: External packages
