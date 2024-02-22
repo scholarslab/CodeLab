@@ -1,4 +1,4 @@
-# Week 08: Program Flow (loop around)
+# Week 08: Control Flow (loop around)
 
 ![Hazel header](./assets/20170126.jpg)
 
