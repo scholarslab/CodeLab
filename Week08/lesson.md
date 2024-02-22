@@ -1,8 +1,10 @@
-## More program flow
+## Week 08: Program flow (loop around)
 
 #### Redirecting flow
 
-Sometimes, it can be hard to construct a `while` loop conditional ahead of time. Sometimes, the flow isn't dependent on sequences. Let's say we want to play the children's game Duck Duck Goose. Every cycle, we ask the user to type in "Duck" or "Goose". If the input is "Duck", we continue the loop from the top. If it's "Goose", we break out of it.
+Sometimes, it can be hard to construct a `while` loop conditional ahead of time. Sometimes, the flow isn't dependent on sequences. We might have complex logic that needs to break out of a loop in the middle of our loop code block. Or we might want to write out each distinct condition for reasons of legibility. Other times, we need to skip past the rest of the code block, to continue on with the loop rather than break out of it entirely.
+
+To illustrate how we might want to accomplish these things, let's play the children's game Duck Duck Goose. Every cycle, we ask the user to type in "Duck" or "Goose". If the input is "Duck", we continue the loop from the top. If it's "Goose", we break out of it. We could write this in a simpler way, but this will help illustrate our new keywords.
 
 ```python
 while 1:
@@ -14,7 +16,7 @@ while 1:
     print("Maybe I should explain the rules again...")
 ```
 
-At the top, `while 1` tells Python to loop forever because 1 evaluates as `True` and so it's just equivalent to `while True`. We can do this a lot of other ways because many things evaluate to `True`: `while "Hazel"`, etc. But `while 1` or `while True` are common and traditional.
+At the top, `while 1` tells Python to loop forever because 1 (and every other non-zero integer) evaluates as `True` and so it's just equivalent to `while True`. We can do this a lot of other ways because many things evaluate to `True`: `while "Hazel"`, etc. But `while 1` or `while True` are the most common in Python and the most intelligible across different programming languages.
 
 If the input word is "Duck", the `continue` tells Python to continue looping, back from the top, *without* going through the rest of the code. If we `continue`, we never reach the `print()` on line 7.
 

@@ -57,8 +57,10 @@ Codelab is broadly divided into two sections: _Codelab Fundamentals_, which intr
   * Loops
   * `while` vs `for`
   * Exit conditions 
-* Week 08: Import, the Python Standard Library 
-* Week 09: Data formats, CSV, JSON
+* Week 08: Program Flow (ctd)
+  * `continue` and `break`
+  * Nested loops
+* Week 09: Import, the Python Standard Library 
 * Week 10: External packages
 * Week 11: Show and Tell!
 * Week 12: Web scraping?!
