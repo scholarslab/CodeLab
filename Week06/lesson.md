@@ -1,4 +1,4 @@
-# Week 06 Lesson: Functions and Methods
+# Week 09 Lesson: Functions and Methods
 ![Hazel in bed](./assets/hazel_bed.jpg)
 
 ## Discuss homework assignments
