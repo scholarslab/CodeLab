@@ -1,8 +1,76 @@
-# Structuring Data 2: Even More Structure
+# Working with Structured Data
+
+## Data Structures
+
+![Hazel snoozing](assets/hazel_snooze.jpg)
+
+We've been using the various fundamental data types in Python for a few weeks now. These are called "basic" or sometimes "primitive" types in computing. In Python, these include integers (whole numbers), floats (floating point numbers, which represent real numbers--"the ones between integers"), strings (text), and booleans (`True` and `False`). You should have a good sense by now of how each of these work (even though floats are weird).
+
+We've also seen how we can use these basic data types to encode information in some more specific contexts, such as using a string to represent color in RGB hex format: "#FFFFFF" for white, "#000000" for black, "#588eb8" for roughly the shade of my bathroom ("Lovebirds" from Lowes). Going one level above this is the concept of a *data structure*. The word structure here is a useful analogy for this relationship: we can think of basic types as being the bricks (fundamental, atomic components) that can be arranged in a particular pattern to make up a larger structure. Sometimes we refer to these as *complex* or *composite* to distinguish them from the basic types.
+
+Abstractly, structure helps us organize information as data in order to help us efficiently access and manipulate that information. In Python, we've already been using composite structures in the form of lists, which provides structure in the form of linear order (there's a contiguous line of objects, each with a unique place in that line). We'll learn about dictionaries today, which provides a different structure. Both dictionaries and lists can contain any object, including any composite types. We've worked with lists of lists already, but we can also put, as an example, lists into dictionaries. There are a few other composite types which are built into Python, but we can also create our own.
+
+Incidentally, because lists can contain any object, you can do funny things in Python like *append a list to itself*.
+
+```python
+a = [1,2,3]
+a.append(a)
+print(a)
+print(a[3])
+print(a[3][3])
+```
+
+### Dictionaries
+
+A Python Dictionary associates specific pieces of data to other pieces, much like a physical dictionary associates a word to a definition or a phone book associates a name to a phone number (ed. note: phone books are historical artifacts that provided listings of telephone numbers as an intermediate technology between human operators and the popularization of the internet). In programming, we say that a dictionary *maps* a *key* to a *value* and that it contains *key-value pairs*. 
+
+In Python, a dictionary is a collection of one-to-one key-value pairs, so that one key maps to exactly one value. However, multiple keys can map to the same value. Think of a phone book where a phone number can belong to only one person, but one person can have multiple phone numbers. "But," you object, "what about an actual dictionary, where a word can have multiple definitions?" And the answer is: a list with multiple definitions is still a single value. We just have to be explicit about it.
+
+And yes, you can have a dictionary assign itself as a value. But dictionaries as a type are not allowed to be keys. Actually, keys must be hashable objects, which I'm not going to get into right now. For the most part, it means that keys should be basic objects.
+
+Dictionaries are defined using curly braces, but they're addressed like lists. You can even use integers as keys, just like the index to a list. However, there is no provision for index continuity (i.e. list indices don't skip numbers, but dictionary keys can be whatever you want).
+
+```python
+d = {} # create an empty dictionary
+d[1] = 5 # assign the value 5 to the key 1
+d[3] = "b" # assign the value "b" to the key 3
+d["a"] = [1,2,3] # assign the value [5] to the key "a"
+print(d)
+```
+
+As we can see, you can mix and match different types of values like for lists. And we can also mix and match different types of keys.
+
+We can also define a dictionary using curly braces and then listing key-value pairs, separating the two with a colon. This code is equivalent to the above.
+
+```python
+d = {1:5, 3:"b","a":[1,2,3]} # create a not-empty dictionary
+print(d)
+```
+
+As with lists, we can traverse dictionaries using for loops:
+
+```python
+dogs = {"Shane":"Rocky", "Amanda":"Maple", "Laura":"Triscuit"}
+for owner in dogs:
+    print(owner+"'s dog is "+dogs[owner])
+```
+
+Here, we see that using for loops through all the keys in a dictionary. We can actually get a hold of the list of keys for this dictionary with `dogs.keys()` and a list of the values for this dictionary with `dogs.values()`. Some people prefer this convention that grabs key and value in a for loop:
+
+```python
+dogs = {"Shane":"Rocky", "Amanda":"Maple", "Laura":"Triscuit"}
+for owner,dog in dogs.items():
+    print(owner+"'s dog is "+dog)
+```
+
+Dictionaries are unordered, so while this example (probably) loops through the order in which I constructed the dictionary, that isn't guaranteed.
+
+
+### More file access
 
 ![Maple and Jeremy](assets/maple_jerm.jpg)
 
-We covered some basic file input and output in Python a few weeks ago. It's pretty easy to work with text data, either all at once or line by line.
+We covered some basic file input and output in Python last week. It's pretty easy to work with text data, either all at once or line by line.
 
 To review, we can read some text from a file like so:
 
@@ -18,18 +86,16 @@ with open('file.txt', "r") as infile:
     text = infile.read()
 ```
 
-and we can write back to files just as easily:
+We can write back to files just as easily, opening a file in `"w"` (write) mode and using the `write()` method:
 ```python
 outfile = open('file.txt', "w")
 outfile.write("Hello Dog!")
 outfile.close()
 ```
 
-(If you need a refresher, we learned all of this back in [Week 5](../Week05/lesson.md#files))
+This is fine enough for simple data, but how do we read and write composite data to a file?
 
-But while we've worked with simple text and numerical data like strings and ints plenty, we've also used lists and dictionaries and more structured data too. How do we read and write those more complicated kinds of data?
-
-Let's revisit the way that we read in numbers. Recall that when we use the `read()` method on a file object like we did above, the data that we get back is a string. So, if we had a file named file.text that just contained the number `12345`, we'll get back the string "12345" rather than the integer 12345.
+Let's step back and take a closer look at reading and writing basic data. Recall that when we use the `read()` method on a file object like we did above, the data that we get back is a string. So, if we had a file named file.text that just contained the number `12345`, we'll get back the string "12345" rather than the integer 12345.
 
 ```python
 with open('file.txt', "r") as infile:
@@ -48,16 +114,16 @@ with open('file.txt', "r") as infile:
 
 Here, we're calling the integer constructor method that takes in a string argument and builds us a new integer object based on that string.
 
-I bring this up to suggest that there's difference between the static text representation of an object and the "live" Python objects that live in computer memory and can be manipulated. Python objects are useful because we can easily manipulate them, but they don't persist beyond the lifespan of a program. Static files persist data, but have to be read and interpreted explicitly in the way that we want them to be.
+I bring this up to suggest that there's difference between the static text representation of an object and the "live" Python objects that live in computer memory and can be manipulated. Python objects are useful because we can easily manipulate them, but they don't persist beyond the lifespan of a program. Static files persist data, but have to be read and interpreted explicitly in the way that we want them to be. 
 
-## Let's talk about Data Formats
+## Let's review data formats
 
 So, strings and even numbers are simple enough. How do we represent, say, a list of things in a file?
 
-A really simple way to do this is to just write them out as a list, separated by some delimiter. Following English convention, let's use commas. An easy way to do this in Python is to use the string method `join()`, which is kind of like a reverse split. It lets you join together a list of strings with a delimiter (you can also just mush together the list of strings if you call it on an empty string).
+We talked about this way back, so let's just review it again. A really simple way to do this is to just write them out as a sequence, separated by some delimiter. Following English convention, let's use commas. An easy way to do this in Python is to use the string method `join()`, which is kind of like a reverse split. It lets you join together a list of strings with a delimiter (you can also just mush together the list of strings if you call it on an empty string).
 
 ```python
-dogs1 = ["Hazel", "Maple", "Bofur"]
+dogs1 = ["Rocky", "Maple", "Bofur"]
 with open('file.txt', "w") as outfile:
     outfile.write(",".join(dogs1))
 with open('file.txt', "r") as infile:
@@ -69,7 +135,7 @@ print(dogs1 == dogs2)
 So, we can see that (hopefully) the two dogs lists are the same. This is easy enough for simple data, but we can probably see that there are some complications here...
 
 ```python
-dogs1 = ["Hazel, who is definitely Shane's dog", "Maple, the Stilt-Legged", "Bofur, Boss of the Lab"]
+dogs1 = ["Rocky, the wary", "Maple Stilt-Legs", "Bofur, Boss of the Lab"]
 with open('file.txt', "w") as outfile:
     outfile.write(",".join(dogs1))
 with open('file.txt', "r") as infile:
@@ -80,7 +146,7 @@ print(dogs1 == dogs2)
 
 So, there's one basic problem with using text to store structured text. Whatever delimiters or special characters we use to indicate the structure of the data can also exist in the data itself. ASCII, the archaic way of encoding text, solved this by setting aside special non-text characters. There were characters for things like "Start of Heading", "End of Transmission", "Acknowledgement", and even "Bell" to get a computer operator's attention. These days, that method is hopelessly outmoded, not just because we want to be have more flexibility in the ways that we define our structures.
 
-So how do we get by this? We can wrap individual elements in quotes and that works well enough if we don't also use quotes. We can also use escape characters to tell Python when we do and don't mean business. An escape character is just a character that means "interpret the next thing as text, without any special meaning." Although sometimes it means "interpret the next thing as a special thing and not just as regular text." Commonly, many systems use the backslash (`\`) as an escape character. This works when we define a string in Python, for example:
+So how do we get by this? We can wrap individual elements in quotes and that works well enough if we don't also use quotes. We can also use escape characters to tell Python when we do and don't mean business. An escape character is just a character that means "interpret the next thing as text, without any special meaning." Although, annoyingly, sometimes it means "interpret the next thing as a special thing and not just as regular text." Commonly, many systems use the backslash (`\`) as an escape character. This works when we define a string in Python, for example:
 
 ```python
  text = "here are some quotation marks inside of a string: \"\'\'\""
@@ -100,10 +166,10 @@ Let's try out a simple example with some familiar data.
 ![Hazel again](assets/hazel3.jpg)
 
 ```python
-hazel = ["Hazel","Shane","Beagle/Heeler"]
+rocky = ["Rocky","Shane","Texas Heeler"]
 maple = ["Maple", "Amanda", "Hound"]
 bofur = ["Bofur", "Ronda", "Corgi"]
-dogs = [hazel,maple,bofur]
+dogs = [rocky,maple,bofur]
 
 with open('dogs.csv', "w") as outfile:
     outfile.write(",".join(["Dog","Owner","Breed"]))
@@ -122,10 +188,10 @@ Let's try it out.
 ```python
 import csv
 
-hazel = ["Hazel, the Sneak","Shane","Beagle/Heeler"]
+rocky = ["Rocky, the Wary","Shane","Beagle/Heeler"]
 maple = ["Maple, the Swift", "Amanda", "Hound"]
 bofur = ["Bofur, the Brave", "Ronda", "Corgi"]
-dogs = [hazel,maple,bofur]
+dogs = [rocky,maple,bofur]
 
 with open('dogs.csv', 'w', newline='') as csvfile:
     dogwriter = csv.writer(csvfile, delimiter=',')
@@ -138,7 +204,7 @@ Which produces the output csv file...
 
 ```csv
 Dog,Owner,Breed
-"Hazel, the Sneak",Shane,Beagle/Heeler
+"Rocky, the Wary",Shane,Beagle/Heeler
 "Maple, the Swift",Amanda,Hound
 "Bofur, the Brave",Ronda,Corgi
 ```
@@ -152,20 +218,20 @@ If start with a dictionary instead of a list, we have a way to associate values 
 ```python
 import csv
 
-hazel = {"name":"Hazel","owner":"Shane","breed":"Beagle/Heeler"}
+rocky = {"name":"Rocky","owner":"Shane","breed":"Texas Heeler"}
 maple = {"name": "Maple", "owner":"Amanda", "breed": "Hound"}
 bofur = {"name": "Bofur", "owner":"Ronda", "breed": "Corgi"}
 
 with open('dogs.csv', 'w', newline='') as csvfile:
-    fieldnames = hazel.keys()
+    fieldnames = rocky.keys()
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
-    writer.writerow(hazel)
+    writer.writerow(rocky)
     writer.writerow(maple)
     writer.writerow(bofur)
 ```
 
-This produces the same kind of CSV file. Note that the field names are consistent, so I just used the keys for Hazel. We'd have to do this a bit differently if the data wasn't structured homogenously.
+This produces the same kind of CSV file. Note that the field names are consistent, so I just used the keys for Rocky. We'd have to do this a bit differently if the data wasn't structured homogenously.
 
 To read CSV files, we can use analogous Reader and DictReader objects in the csv module:
 
@@ -191,13 +257,13 @@ We don't have to go too much into the particular details of how JSON is structur
 ```json
 [
   {
-    "name": "Hazel",
+    "name": "Rocky",
     "owner": "Shane",
-    "breed": "Beagle-ish",
+    "breed": "Texas Heeler",
     "likes": [
-      "snoozing",
-      "racoons",
-      "Shane"
+      "vocalizing",
+      "eating disgusting garbage",
+      "cats"
     ]
   },
   {
@@ -205,7 +271,7 @@ We don't have to go too much into the particular details of how JSON is structur
     "owner": "Amanda",
     "breed": "Hound",
     "likes": [
-      "zooms",
+      "zoomies",
       "looking",
       "carrots"
     ]
@@ -230,11 +296,11 @@ There are `dump` and `load` methods, which write and read directly to files, but
 ```python
 import json
 
-hazel = {"name": "Hazel", "owner": "Shane", "breed": "Beagle-ish",
-         "likes": ["snoozing", "racoons", "Shane"]}
-maple = {"name": "Maple", "owner":"Amanda", "breed": "Hound","likes":["zooms","looking"]}
+rocky = {"name": "Rocky", "owner": "Shane", "breed": "Texas Heeler",
+         "likes": ["vocalizing", "eating disgusting garbage", "cats"]}
+maple = {"name": "Maple", "owner":"Amanda", "breed": "Hound","likes":["zoomies","looking"]}
 bofur = {"name": "Bofur", "owner":"Ronda", "breed": "Corgi","likes":["ladies"]}
-dogs = [hazel,maple,bofur]
+dogs = [rocky,maple,bofur]
 
 with open('dogs.json', mode="w") as jsonfile:
     jsonfile.write(json.dumps(dogs))

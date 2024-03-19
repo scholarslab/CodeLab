@@ -1,14 +1,14 @@
-# Week 09
+# Week 10: Working with Structured Data
 ![Tacoma Narrows GIF](assets/structure.gif)
 
 ## Agenda
 - Review homework (if it exists)
-- [Structuring Data 2: Even More Structure](lesson.md) 
+- [Hands on with structured data ](lesson.md)
 
 ## Assignment
 
 ### Part 0x00
-Take the representation of your Praxis cohort you did in [Week08 Assignment 1](../Week08/README.md#assignment-1) and use the Python json module to dump it into a json formatted text file.
+Now that you have a handle on composite data structures like lists and dictionaries, we can put them to practical use. Create a representation of your Praxis cohort in Python. You can include whatever data you want: basic data like name, year, department, but maybe consider the icebreaker questions from the [git practice](https://github.com/scholarslab/gitpractice). Then use the Python json module to dump it into a json formatted text file.
 
 ### Part 0x01
 Okay! The meat of this week's homework. It's another kinda amorphous, experimental one. Working alone or in groups (or a single super-group), find an interesting dataset, read it into Python, and use Python to extract some interesting facts from it.
