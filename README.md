@@ -64,7 +64,11 @@ Codelab is broadly divided into two sections: _Codelab Fundamentals_, which intr
   * Algorithms (ctd)
   * Sorting
   * File input/output
-* Week 10: External packages
+* [Week 10: Dictionaries, CSV, JSON](Week10/README.md)
+  * Basic and Complex Data Types
+  * Dictionaries
+  * Structured data review
+  * CSV and JSON in Python
 * Week 11: Show and Tell!
 * Week 12: Web scraping?!
 * Week 13: HTML/CSS/Design
