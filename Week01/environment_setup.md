@@ -32,7 +32,7 @@ At the end of this step, you should be able to enter the command `pipenv --versi
 
 ### Step 3-M: Visual Studio Code
 
-You can choose the text or code editor/IDE of your choice, but VSCode is a pretty good option.
+Visual Studio Code is what's called an IDE, an integrated development environment, which is a text editor software specifically designed for coding. Just like English doesn't care if you write it in pen on the back of a napkin or on an electric typewriter, the things we'll write don't care what IDE or even regular, plain text editor (it has to be *plain* text though, which we'll talk about next week) you write it on. But unless you have a real reason not to, VS Code will make your life easier, so that's what we're going to teach.
 
 * Install [VS Code](https://code.visualstudio.com/)
 * Install the [Python extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
@@ -48,11 +48,11 @@ MacOS has defaulted to Zsh for a while, which is good because I like some of its
 
 ### Step 0-W: Install WSL
 
-* Install the confusingly name [Windows Subsystem for Linux 2](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL2), which is actually a Linux Subsystem *for* Windows.
+* Install the confusingly name [Windows Subsystem for Linux 2](https://learn.microsoft.com/en-us/windows/wsl/install) (WSL2), which is actually a Linux Subsystem *for* Windows.
 
-These instructions walk you through the default installation of the Ubuntu Linux distribution, which is a good choice for us. When you choose a Linux user and password, don't forget what you put in. Now you have mostly-Linux.
+These instructions walk you through the default installation of the Ubuntu Linux distribution, which is a good choice for us. When you choose a Linux user and password, don't forget what you put in. Now you have mostly-Linux running inside of Windows!
 
-The WSL installation processed probably required the use of Powershell. Forget about Powershell for now - whenever we use the command line, we should use a WSL Ubuntu shell, either through the Ubuntu terminal or the built-in VSCode terminal.
+The WSL installation processed probably required the use of Powershell. After you install WSL, forget about Powershell for now - most of the time we use the command line, we should use a WSL Ubuntu shell, either through the Ubuntu terminal or the built-in VSCode terminal.
 
 ### Step 1-W: Install Python and Pip
 
