@@ -20,9 +20,9 @@ After all the shell and Python setup is done, you'll install Microsoft Visual St
 
 Mac: [Python 3](https://docs.python-guide.org/starting/install3/osx/), including Pip.
 
-The instructions say to add `export PATH="/usr/local/opt/python/libexec/bin:$PATH"` to `~/.profile`. This is out of date as zsh is the MacOS default shell and also homebrew should set up the correct paths anyways, so you can usually ignore that part. However, you will want to add `export PIPENV_VENV_IN_PROJECT=1` to your .zshrc, which will simplify some VS Code integration. This involves using a text editor to add lines to a configuration file that governs your computer, so we can do this together if you feel like you need help.
+The instructions say to add `export PATH="/usr/local/opt/python/libexec/bin:$PATH"` to `~/.profile`. This is out of date as zsh is the MacOS default shell and also homebrew should set up the correct paths anyways, so you should ignore that part. However, you will want to add `export PIPENV_VENV_IN_PROJECT=1` to your .zshrc, which will simplify some VS Code integration. You can do this manually with a text editor or through this shell command through the terminal: `echo 'export PIPENV_VENV_IN_PROJECT=1' >> $HOME/.zshrc`
 
-At the end of this step, you should be able to input the command `python3 --version` and have it not return an error.
+At the end of this step, you should be able to input the command `python3 --version` and have it not return an error. The version should also be 3.12 or higher.
 
 ### Step 2-M:  Install Pipenv
 
