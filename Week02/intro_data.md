@@ -12,13 +12,13 @@ Let's start off, like before, not by talking about computers (a subject that I'm
 
 `It's a photo of Rocky, a dog, specifically an Australian Cattledog/red heeler, lounging on a blue fuzzy bed that he likes, a model recommended by Amanda. He's a very silly boy.`
 
-This is a description which relies on a mapping of abstract concepts to symbols. The words "Australia" and "recommended" and "silly" convey meaning through our knowledge and our experience of the world. We're constantly "translating" symbols of different languages. There's a theory in the philosophy of the mind that there's a Language of Thought, that when we think in our brains we're using a cognitive language that we translate imperfectly into natural language when we speak. When we write down that speech, we translate the phonemes of our spoken language into written ones. Oftentimes, the translation isn't so consistent or unambiguous: the understanding of concepts like "recommend" or "silly" or even "Australia" differ dramatically from person to person, day to day, context to context.
+This is a description which relies on a mapping of abstract concepts to symbols. The words "Australia" and "recommended" and "silly" convey meaning through our knowledge and our experience of the world. We're constantly "translating" symbols of different languages. There's a theory in the philosophy of the mind that there's a Language of Thought, that when we think in our brains we're using a cognitive language that we translate imperfectly into natural language when we speak. When we write down that speech, we translate the phonemes of our spoken language into written ones. Oftentimes, the translation isn't so consistent or unambiguous. The understanding of concepts like "recommend" or "silly" or even "Australia" differ dramatically from person to person, day to day, context to context. But even directly recording speech to text is subject to the shifting vagueries of orthography.
 
 When we translate or convert symbols from one language or representation to another and there's a precise and consistent and unambiguous mapping of all the symbols, we call that _encoding_ and the system of rules to enact that translation a _code_.
 
 Morse Code is a well-known example of a code that encodes the latin alphabet, arabic numerals, and a few punctuation marks into a system of dots and dashes, signals that differ in duration. Well, this is not entirely true. If it was just dots and dashes, it would be a binary code, but it's not.
 
-![Morse code diagram](./assets/morse_code.png)
+![https://en.wikipedia.org/wiki/Morse_code#/media/File:International_Morse_Code.svg](./assets/morse_code.png)
 
 **What can we make out about Morse code?**
 
@@ -63,7 +63,9 @@ So we've been dancing around this term, Digital Humanities. **But what exactly i
 
 Digital is, as the name suggests, something that has to do with numbers can count. Analog is "analogous" to reality. So what does this mean?
 
-**A short exercise**: how do we, as people, count?
+Q: "How do we, as people, count?"
+
+A: "Digitally"
 
 When we count: one, two, three, etc, we are listing a set of discrete symbols. That's "discrete", meaning "distinct and separate" rather than "discreet", meaning "circumspect". So, these counting numbers are whole numbers, positive and negative, and zero; these are called integers.
 
@@ -93,7 +95,7 @@ As a rule of thumb, the more transistors (and the higher density of transistors)
 
 A decade later, this was roughly how much the first popular personal computers (the Apple II, the Radio Shack TRS-80) had. The main Apple M1 chip in my laptop, a model from a few years ago, has 16 billion transistors and a whole lot more when you consider the rest of the machine: the chips to control all the subsidiary functions of the laptop, and the chips to contain the memory and storage.
 
-Remember that a transistor is a valve with two settings: on and off, which we can also represent as True and False and as ones and zeros. So it has two states, kinda-sorta like Morse code. As a consequence of transistors being the most fundamental building block of computing, the fundamental "cognitive" abstraction of our computers, how they process and store information, is binary. Trivia: the On/Off power switch symbol is an ISO standard symbol comprising a one and a zero.
+Remember that a transistor is a valve with two settings: on and off, which we can also represent as True and False and as ones and zeros. So it has two states, kinda-sorta like Morse code. As a consequence of transistors being the most fundamental building block of computing, the fundamental "cognitive" abstraction of our computers, how they process and store information, is binary. A bit of trivia: the On/Off power switch symbol (you know, this thing: ⏻) is an ISO standard symbol comprising a one and a zero.
 
 # Binary data
 
@@ -105,11 +107,21 @@ As modern humans we typically use decimal numbers. _Deci_, meaning ten. I assume
 
 Thinking about how we use decimal numbers is useful to understanding how we use binary ones. Using these rules, **how do we count in binary?**
 
-Because of binary, a lot of "computer numbers" tend to be powers of two. When you buy a new iphone, they come in 128gb (2<sup>7</sup>), 256gb (2<sup>8</sup>), and 512gb (2<sup>9</sup>) models. As you work with computers, these powers of two will show up everywhere. You'll become very familiar with 2, 4, 8, 16, 32, 64, 128, and 256.
-
 Let's take a closer look at the decimal system. Every position is a power of ten: 10 = 10<sup>1</sup>, 100 = 10<sup>2</sup>, 1000 = 10<sup>3</sup>, etc. Each additional decimal position adds 10 times as many possible values: 1 digit has 10<sup>1</sup> possibilities (0-9), 2 digits has 10<sup>2</sup> (0-99), etc. In binary, each position adds twice as many possible values.
 
 Remember Shannon and his bits? One bit is one binary position. 1 binary digits has 2<sup>1</sup> = 2 different possible values (0-1), 2 has 2<sup>2</sup> = 4 (00, 01, 10, and 11), 3 has 2<sup>3</sup> (000, 001, 010, 011, 100, 101, 110, 111), and so on.
+
+Because of binary, a lot of "computer numbers" tend to be powers of two. When you buy a new iphone, they come in 128gb (2<sup>7</sup>), 256gb (2<sup>8</sup>), and 512gb (2<sup>9</sup>) models. As you work with computers, these powers of two will show up everywhere. You'll become very familiar with 2, 4, 8, 16, 32, 64, 128, and 256.
+
+This kind of math, raising two to a certain power, is useful to consider. Let's say that you're going on a fancy vacation to beautiful Omaha, Nebraska. Omaha, Nebraska is very far away, so you buy a fancy suitcase with a fancy combination lock. The lock has 4 disks, each one with positions marked with numbers between 0 and 9.
+
+How many different positions can each disc be set to?
+
+How many different combinations are there?
+
+This is pretty intuitive because we're used to decimal notation. Four discs is the same as four digits in this case and so we know that the smallest combination is "0000", the largest combination is "9999", and every integer in between is a valid combination. Every additional disk increases the total number of combinations by 10. The number of combinations in this example, 10000, is 10<sup>4</sup> as a result.
+
+It's the same when we're working with binary. The number of binary digits determines the highest we can count in binary, and therefore how many different binary values we can represent. A combination lock with four binary disks can only have 2<sup>4</sup> different combinations.
 
 There are other number systems besides binary (as many as there are numbers, in fact). Hexadecimal/hex and octal (base 16 and base 8) are common ways to compress binary into more compact forms. These use decimal numerals. Hexadecimal uses 0 to 9 and then A to F. Since 16 and 8 are themselves powers of two, it's simple to convert between them and decimal. Each octal digit maps directly to a set of 3 (2^3=8) binary digits and each hex digit maps directly to a set of 4 (2^4 = 16) binary digits. So, 32 in octal is 011010 (011 is 3, 010 is 2). A8 in hexadecimal is 10101000 (1010 in binary is A in hexadecimal and 10 in decimal, 1000 is 8).
 
@@ -119,7 +131,7 @@ There's an even simpler kind of data to represent using binary numbers than whol
 
 ## Text
 
-These number systems are just different representations of the same numerical ideas. Other forms of data can be encoded using numbers. Under the hood, each character in text data is represented on a character encoding table that map numbers to letters. An important and influential encoding scheme is ASCII: the American Standard Code for Information Interchange, formalized in 1968. ASCII maps Latin letters and Arabic numerals, as well as common punctuation symbols, to a set of 128 numbers. 128 is 2^7, so these numbers can be represented by a total of 7 bits. 
+These number systems are just different representations of the same numerical ideas. Other forms of data can be encoded using numbers. Under the hood, each character in text data is represented on a character encoding table that map numbers to letters. An important and influential encoding scheme is ASCII: the American Standard Code for Information Interchange, formalized in 1968. ASCII maps Latin letters and Arabic numerals, as well as common punctuation symbols, to a set of 128 numbers. 128 is 2^7, so these numbers can be represented by a total of 7 bits.
 
 ![ASCII table](assets/ascii.png)
 
@@ -138,7 +150,9 @@ Computers express color using a series of numbers representing the mixture of ad
 Colors are most often shown as hexadecimal numbers (base 16). Hexadecimal uses 0 to 9 and then A to F. Since each hex digit is equivalent to 4 binary digits, each 8-bit color channel can be represented by 2 hex digits. If we look at the [Scholars' Lab website](https://scholarslab.org/) and dig through the stylesheet, we will see that the background color is defined as `000000`, a set of three hexadecimal numbers indicating that each color should be 00 out of FF in hex, which is also 0 out of 255 in decimal. This is the blackest black. Links are underlined with the color `75e3f0`, which is a little red and a lot of green and blue resulting in a cyan color.
 
 ## Also: Bytes!
-Byte is another common unit of measurement for data. The term is a play on bit and was coined in the 1950s for Project SAGE, a prototype computer system to coordinate American air defenses in the Cold War. There is some historical ambiguity, but a modern byte is 8 bits, representing the smallest power-of-2 size for useful data (such as a single character or a small integer). Bytes and bits are often modified with metric scale prefixes: kilobyte, megabit, gigabyte etc. This is a bit of a mess because it mixes binary units with decimal prefixes, but that's how we get our current popular units for data size.
+Byte is another common unit of measurement for data. The term is a play on bit and was coined in the 1950s for Project SAGE, a prototype computer system to coordinate American air defenses in the Cold War. There is some historical ambiguity, but a modern byte is 8 bits, representing the smallest power-of-2 size for useful data (such as a single character or a small integer).
+
+Bytes and bits are often modified with metric scale prefixes: kilobyte, megabit, gigabyte etc. But hang on a second: "kilo" means "one thousand" and "mega" means "one million" and so on, but this is mixing powers-of-ten with powers-of-two!
 
 
 ## Revisit: Print it out and delete it?
