@@ -18,7 +18,7 @@ When we translate or convert symbols from one language or representation to anot
 
 Morse Code is a well-known example of a code that encodes the latin alphabet, arabic numerals, and a few punctuation marks into a system of dots and dashes, signals that differ in duration. Well, this is not entirely true. If it was just dots and dashes, it would be a binary code, but it's not.
 
-![Morse code diagram](./assets/morse.png)
+![Morse code diagram](./assets/morse_code.png)
 
 **What can we make out about Morse code?**
 
