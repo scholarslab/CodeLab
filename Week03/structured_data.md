@@ -59,7 +59,7 @@ XML comprises a set of nested **elements** that comprise opening and closing **t
 
 Let's look at some example XML. I made up the structure and content of this snippet, but the syntax that it follows can be used to describe many different kinds of other structures. The line breaks and spacing/tabs are optional, but they make it easier for humans to read.
 
-```
+```xml
 <person id="ssl2ab">
     <name>
         <last>Lin</last>
@@ -98,7 +98,7 @@ After you've parsed this example XML, you might think to yourself: "this isn't t
 
 Let's take a look at four different XML structures:
 
-```
+```xml
 <person>
     <name>
         <last>Lin</last>
@@ -107,20 +107,20 @@ Let's take a look at four different XML structures:
 </person>
 ```
 
-```
+```xml
 <person>
     <lastname>Lin</lastname>    
     <firstname>Shane</firstname>
 </person>
 ```
 
-```
+```xml
 <person>
     <name lastname="Lin" firstname="Shane"/>
 </person>
 ```
 
-```
+```xml
 <person lastname="Lin" firstname="Shane"/>
 ```
 
