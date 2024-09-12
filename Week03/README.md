@@ -16,6 +16,8 @@
 
 ## Do:
 
+0. Do or review the [Programming Historian command line tutorial](https://programminghistorian.org/en/lessons/intro-to-bash) because we'll be doing a lot of stuff in the command line next week!
+
 1. Let's continue to practice algorithmic thinking. Write out in plain English an algorithm to guess whether a text represents English, French, Portugese, Urdu, Simplified Chinese, or "other".
 
 2. Manually write out an XML document that contains the data in your CV.
