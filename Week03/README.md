@@ -16,8 +16,6 @@
 
 ## Do:
 
-1. This is an exercise in some of the more fundamental work skills of the Digital Humanities: let's do some searching and some back of the envelope estimation. From a purely energy perspective, is it actually a good idea to print out and delete all our digital documents rather than letting them stay digital? We don't have to be exact. Feel free to make assumptions that you can argue for.
+1. Let's continue to practice algorithmic thinking. Write out in plain English an algorithm to guess whether a text represents English, French, Portugese, Urdu, Simplified Chinese, or "other".
 
-2. Let's continue to practice algorithmic thinking. Write out in plain English an algorithm to guess whether a language is in English, Portuguese, French, Italian, Spanish, or "other".
-
-3. Manually write out an XML document that contains the data in your CV.
+2. Manually write out an XML document that contains the data in your CV.
