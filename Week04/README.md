@@ -40,7 +40,7 @@ git config --global core.editor "nano"
 * **Version Control**: A software system that allows programmers (and other people who work with digital files) to track their work and collaborate with others by providing Concurrency (maintaining consistancy despite multiple editors), Reservibility (keeping track of changes and allowing work to be undone), and Annotation (describing changes through labels, timestamps, and author information).
 
 ---
-## Homework for Week 4
+## Homework for Week 5
 
 ## Do:
 
