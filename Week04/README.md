@@ -8,7 +8,13 @@
 
 ![Git workflow by Molly Nemerever: https://dev.to/mollynem/git-github--workflow-fundamentals-5496](assets/git_workflow.avif)
 
-#### Setup
+1. Review Codelab to this point
+2. How to collaborate digitally?
+3. Version Control Systems
+4. Git and Github
+
+
+## Setup
 There's a bit of setup for git that I forgot to have y'all do. First, we need to set up name and email in Git. You don't have to use your real identity, but if it might be useful to have people be able to contact you about your change. [Github has some strategies](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address) for maintaining some privacy for this step.
 
 ```console
@@ -22,10 +28,7 @@ Then, we'll want to set the default text editor if you end up using git through 
 git config --global core.editor "nano"
 ```
 
-1. Review Codelab to this point
-2. How to collaborate digitally?
-3. Version Control Systems
-4. Git and Github
+## New Terms
 
 * **Clone/Fork**: A version control operation to create a duplicate repository. In Git, "clone" is the command to duplicate a repository to your local computer; in Github, fork is the mechanism to duplicate a repository to your own Github account. These are functionally the same. Forking has a more permanent implication in traditional version control systems, but it can be much more transient in Git.
 * **Commit**: A set of changes that can be referenced later (and reverted or reverted to). We can think of a commit as a milestone or version of a repository. It should be organized such that the change itself is legible (ideally, a specific and interrelated set of updates and not just a disordered mess of revisions) and the state of the repo it represents is sensible (in that the state is comprehensible if you ever have to go back to it).
