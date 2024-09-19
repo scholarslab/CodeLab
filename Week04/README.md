@@ -24,4 +24,4 @@
 
 ## Do:
 
-1. Sometime during the week, add another question to the [icebreaker git practice document](https://github.com/scholarslab/gitpractice/blob/master/Praxis2023.md) and answer all the previous, unanswered questions.
+1. Add an icebreaker question (or questions) to the [icebreaker git practice document](https://github.com/scholarslab/gitpractice/blob/master/Praxis2023.md) and check back on it every few days to answer all the previous, unanswered questions.
