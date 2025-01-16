@@ -15,24 +15,43 @@ Let's get started with Python.
 
 Python comes with an interactive interpreter that executes your instructions as you enter them line by line. For beginners, it's an excellent way to sandbox your ideas or check your syntax. Start the interactive interpret using the `python` (or `python3`) command.
 
-One of the simplest things we can do is basic arithmetic:
+One of the simplest things we can do is basic arithmetic. Try it out now. Just type in something like "5*11" and hit enter. You can exit using `exit()`. The interactive interpreter is useful to test out an idea or to double check syntax or whether the output of a function matches expectation. But what we type into the interactive interpreter isn't saved and we have to feed it line by line, so it's not a good way to actually write a computer program. For that, we can use VS Code.
+
+In CodeLab, we'll be showing different kinds of code and command line examples and it can be difficult to understand what the context is. When I'm showing a command line interface example, each user command will be prefixed with the "%" symbol, which is a common indicator for the command prompt.
+
+```
+% whoami
+shane
+```
+
+For the Python interactive interpreter, we'll be using ">>>" to indicate user input lines. Print functions and feedback from Python will lack those symbols. 
+
+```
+>>> 1+1
+2
+>>> 2**3
+8
+```
+
+Python code outside of the interactive interpreter (such as inside of a .py file) will use Github's syntax highlighting, so the text will be different colors.
 
 ```python
 1+1
 2**3
 ```
 
-You can exit using `exit()`. The interactive interpreter is useful to test out an idea or to double check syntax or whether the output of a function matches expectation. But what we type into the interactive interpreter isn't saved and we have to feed it line by line, so it's not a good way to actually write a computer program. For that, we can use VS Code.
 
 ## Saving and running Python files
 
 To write and save a Python program, the typical convention is to use the `.py` extension. When we save a file as a .py file in VS Code, it also tells VS Code that it contains Python code and will automatically activate code highlighting and syntax checking.
 
-To run a Python program that you've saved, we can use the `python` command through the terminal with the name of the file that contains your program (if running `python --version` in the terminal shows a 2.x version or "command not found", you will need to use `python3` instead):
+To run a Python program that you've saved, we can use the `python` command through the terminal with the name of the file that contains your program (if running `python --version` in the terminal shows a 2.x version or "command not found", you will need to use `python3` instead).
+
 
 ```
-python code.py
+% python code.py
 ```
+
 
 ## A quick note about Python 2 and Python 3
 The Python programming language was first conceived in the late 1980s, but became popular after the release of Python 2.0 in 2000 (not to be confused with [Pythons 2](https://www.imdb.com/title/tt0330795/?ref_=nv_sr_3)) when the language switched to a more public code repository and a more open, community-driven development model.
@@ -114,13 +133,14 @@ print(c)
 
 ### Aside: sometimes floats are weird
 
-What does this code result in?
+Let's see what happens when we try to do some symbol floating point arithmetic.
 
-```python
-0.1+0.2
+```
+>>> 0.1+0.2
+0.30000000000000004
 ```
 
-Huh, weird.
+Weird, right?
 
 !["There are 10 kinds of people in the world..."](assets/10kinds.jpeg)
 
@@ -190,7 +210,9 @@ Learning to read documentation is a critical skill for succeeding as a programme
 
 ## Interlude: The Zen of Python
 ### What's the deal with Python? 
+
 Type this into Python:
+
 ```python
 import this
 ```
@@ -238,7 +260,7 @@ We can see here that `input` is a function, just like `print`. `input` asks the 
 Lists are one of the most common and useful types in Python. It is a kind of ordered collection, neaning that it contains other objects and those objects are arranged in a sequence. Lists in Python are defined using square brakets, like so:
 
 ```python
-l = ["Brandon","Ronda","Jeremy","Shane"]`
+l = ["Brandon","Ronda","Jeremy","Shane"]
 ```
 
 We can refer to an object in a list (an "element") using its position within the list, called its "index". Python list indices, like many other things in computing, are zero-indexed, meaning that we start counting at zero. To retrieve the first element (the element at index 0) in the list we just defined, we can use this code:
