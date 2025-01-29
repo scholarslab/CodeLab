@@ -31,3 +31,5 @@
 Posner, Miriam (2015),  [Humanities Data, a Necessary Contradiction ](http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/)
 
 Horgan, John (2017), [Profile of Claude Shannon, Inventor of Information Theory](https://blogs.scientificamerican.com/cross-check/profile-of-claude-shannon-inventor-of-information-theory/)
+
+Atwood, Jeff (2010), [The Great Newline Schism](https://blog.codinghorror.com/the-great-newline-schism/)
