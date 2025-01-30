@@ -48,7 +48,7 @@ In our first example, because we assign `x=5`, the first condition (`if x>0:`) i
 If we want to modify or chain together boolean statements, we can use `and`, `or`, and `not`:
 
 ```python
-if not(x>0 and x<0):
+if not(x>0 or x<0):
   print("ZERO")
 ```
 
