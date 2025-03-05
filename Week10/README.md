@@ -7,10 +7,10 @@
 
 ## Assignment
 
-### Part 0x00
+### Part 0
 Now that you have a handle on composite data structures like lists and dictionaries, we can put them to practical use. Create a representation of your Praxis cohort in Python. You can include whatever data you want: basic data like name, year, department, but maybe consider the icebreaker questions from the [git practice](https://github.com/scholarslab/gitpractice). Then use the Python json module to dump it into a json formatted text file.
 
-### Part 0x01
+### Part 1
 Okay! The meat of this week's homework. It's another kinda amorphous, experimental one. Working alone or in groups (or a single super-group), find an interesting dataset, read it into Python, and use Python to extract some interesting facts from it.
 
 Happily, there are a lot of interesting datasets out floating out there, often in CSV-like formats. FiveThirtyEight, for example, has a ton of csv-formatted data on their [Github](https://github.com/fivethirtyeight/data). Buzzfeed has a similar [Github repo](https://github.com/BuzzFeedNews). IMDB has big, big datasets in tab-separated-values format (CSV, but with tabs) [on their site](https://www.imdb.com/interfaces/). The Government has an enormous clearinghouse of public data on the appropriately-named [data.gov](https://catalog.data.gov/dataset) website, in a variety of formats. The sky's the limit!

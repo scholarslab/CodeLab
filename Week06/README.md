@@ -36,6 +36,6 @@ As an example, the expected output for the input "praxis codelab code lab" shoul
 
 ### Coding assignment 1d
 
-Modify your code in part 1c to repeat just the first word in pig latin one hundred times, but also print the rest of the words after that.
+Modify your code in part 1c to repeat just the first word in pig latin ten times, but also print the rest of the words after that.
 
-As an example, the expected output for the input "praxis codelab code lab" should be "raxispay codelab code lab".
+As an example, the expected output for the input "praxis codelab code lab" should be "raxispay raxispay raxispay raxispay raxispay raxispay raxispay raxispay raxispay raxispay codelab code lab".
