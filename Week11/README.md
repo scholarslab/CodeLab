@@ -1,15 +1,11 @@
-# Week 11: Web Scraping
-![assets/netscape.gif](assets/netscape.gif)
+# Week 11
 
-## Agenda:
-- [Python Libraries, revisited](lesson.md#python-libraries-revisited)
-- [Introduction to XML: the Extensible, Monstrous Language](lesson.md#xml)
-- [Web scraping with Beautiful Soup](lesson.md#web-scraping)
+![billmurray](assets/depends.gif)
 
-![assets/dogs.gif](assets/dogs.gif)
-
-And that's a wrap! You're all official CodeLab graduates. Come by and pick up your commemorative pin if you haven't and learn the secret Code Lab handshake so you can recognize other grads and reap the benefits of in-group nepotism. Ad astra per insectum!
+## Agenda
+- Review homework
+- [External Dependencies](lesson.md) 
 
 ## Assignment
 
-Freedom! Sweet freedom!
+Show and Tell! I'm turning things over to all of you next week. Find an interesting Python package/library, either on [PyPI](https://pypi.org/) or just through searching on the Internet. It can be something that you think could be useful to your research interests or really anything that you think is neat. Write some code to demonstrate what it does and tell us how you think it could be useful or why it appeals to you.

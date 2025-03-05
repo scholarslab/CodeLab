@@ -1,261 +1,276 @@
-# Week 11: Web Scraping
+# Week 11: Depedencies
 
-## Python Libraries, revisited
+![fatdog](assets/fatdog.jpg)
 
-A few weeks ago, we've played around with using Python code that people who are not Python (and who are often not you) wrote. Let's take a closer look at these libraries.
 
-First, let's properly go over some ideas that we might have casually brushed past before:
+## Outside help
 
-* Library: There's a lot of different definitions for this term. Unless really unexpected things have happened, we are currently sitting in one right now. But in the CodeLab context, this is a collection of software that's directly used by other software. Most often, this will be a generalizable piece of logic that is useful to bundle separately so that other, unrelated pieces of software can use it. Because it's an informal term in Python and not a specific, technical one, it's more useful to think about libraries in terms of how code is organized. Used in this way, the concept of "software libraries" spans many different programing languages and development contexts: we have Python libraries, C++ libraries, Javascript libraries, operating system libraries, etc.
+The Python Standard Library provides a pretty wide set of tools. It comes with every Python install and that's one of its main strengths - you don't have to worry about whether someone has `itertools` or `random` installed.
 
- Let's consider libraries that we've used. The [Python Standard Library](https://docs.python.org/3/library/) is the most obvious example which encompasses many different purposes and packages (more on that later), but is unified in that it is included in all Python installations so that Python code that's written using the Standard Library will run on any compatible Python environment of the expected version. Parts of the Standard Library that we've used before include packages like [random](https://docs.python.org/3/library/random.html) and ones that we'll be using shortly, like [json](https://docs.python.org/3/library/json.html).
+But sometimes, the thing we need is a little bit more obscure or specific. We couldn't include all these things with every Python install, because otherwise that install would be enormous. Instead, there's something like an app store for Python code (except that it's all free, because Python is all free) called the [Python Package Index, or PyPI](https://pypi.org/). Not to be confused with PyPy (groan), which is something else.
 
- Third-party libraries found on PyPI are less expansive than the Standard Library. This week, we'll take a look at [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/), which is analogous in scope to packages like random or json. In fact, third party libraries are often organized into a single package. A library like Beautiful Soup can best be thought of in terms of purpose: you want to accomplish the a particular, common task like scraping a website and Beautiful Soup helps accomplish it. 
+It's pretty big. Anyone can submit projects to it and so there are more than a quarter-million individual ones.
 
-* Package: A package is a formal term in the Python context. It's a specific organization of code which all lives in a single directory. Libraries sometimes (often) consist of a single package (e.g. Random or BS4), so the term is sometimes (often) used interchangeably. Packages are the basic unit by which we install and use libraries. PyPI is the Python *Package* Index, so when we type `pipenv install beautifulsoup4` into the terminal, we're installing the beautifulsoup4 package.
+We can install any one of these packages through [Pipenv](https://pipenv-fork.readthedocs.io/en/latest/), which all of you should already have since we did the environment setup at the beginning of the year.
 
- Here, confusingly, the name of the package on PyPI (beautifulsoup4) doesn't match the actual Python code package (bs4). Always [read the docs](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)! 
- 
- We use Beautiful Soup in our Python code with code that looks like this:
- 
- ```python
- from bs4 import BeautifulSoup 
- soup = BeautifulSoup(html_doc, 'html.parser')
- # 'bs4' is the package, 'BeautifulSoup' is a class defined inside the package definition
- ```
+Pipenv coordinates the function of two important tools, Pip and Virtualenv. Pip is Python's package manager, which means that it downloads and installs Python packages. But it downloads them either to the whole system or to a single user's space. This means that when we grab a package, we could override packages that are being used by other projects. This is potentially really bad, because we're not the only ones on our computers that use Python. We could break applications or even our operating system.
 
- or
+To solve this, Virtualenv walls off "virtual" environments for particular programs. These virtualenvs are like independent Python installations that don't affect other things that use Python.
 
- ```python
- from bs4 import BeautifulSoup
- soup = BeautifulSoup(html_doc, 'html.parser')
- # this code is equivalent
- ```
+Pipenv combines these functions together into one tool. It works at the directory level. We can create a new pipenv environment inside of a directory so long as it doesn't live in another another directory with a pipenv environment. You can choose to have, for example, all your Codelab assignments live inside a single directory like `~/projects/Codelab` or you can choose to have each week have its own environment like `~/projects/Codelab/Week10`. It doesn't matter too much since you probably won't have dependency conflicts between different weeks. But you can't have both an environment in both because one is inside of the other.
 
- We can also use the star symbol, which often means "all" or "any", to import all the modules in the package:
+To create a pipenv environment, we can just run `pipenv install X` to install a package from PyPI and it will automatically create a virtualenv for that directory and install package "X" in that virtualenv. After we do that, we can then use `pipenv shell` to spawn a subshell to use Python in that directory. To quit out of the subshell, we can just use the `exit` command.
 
- ```python
- from bs4 import *
- soup = BeautifulSoup(html_doc, 'html.parser')
- # imports * imports all modules in a package
- ```
+It's a bit clunky, but it works really well for most DH work.
 
- In these examples, we can either the `bs4` *package* directly or, using the `from` keyword, import *modules* from with that package.
+You can browse through PyPI and see if there's anything interesting. Of course, the first thing I did was find this: [getname](https://pypi.org/project/getname/).
 
- Incidentally, it's almost always considered poor practice to use the `from x import *` form. We see in the example immediately above that, for people just reading through our code, there's no obvious connection between the bs4 package and the BeautifulSoup class. It would take some deeper understanding of BeautifulSoup or at least chasing down some its documentation. This confusion is made worse by the fact that we can import multiple packages this way and, actually, do something like this:
+So, let's take that for a spin.
 
- ```python
- def randint(i,j):
-    return i
- from random import *
- print(randint(0,10))
- ```
+## Using Pipenv
 
- Which randint would this run? The best and clearest way to import a package is using the `import x` format, since the contents of each module must then be explicitly addressed using the `x.y` format. For small and simple associations, `from x import y` is acceptable.
- 
- Since directories can be nested, packages can be also. However, it is somewhat unusual to see this done in practice for third-party libraries. Typically, they will be organized more simply or split into different libraries altogether.
- 
-* Modules: Since a Package is a directory, we can probably intuit that Modules are individual Python files contained within a directory. In fact, every .py file can be a module if we import them into another bit of Python code. Often, this is most useful for separating variables from code and for breaking classes out into their own file. So, we can do this (we can tell git to ignore config.py and freely commit code.py):
+First, let's go into whatever directory where we're going to set up our pipenv environment. For me, that's going to be...
 
- config.py:
- ```python
- PASSWORD = "yourefired"
- ```
- 
- code.py:
- ```python
- import config
- if input("Enter password:") != config.PASSWORD:
-    print("WRONG PASSWORD")
-    exit()
- ```
-
- And we can do something like this:
-
- doglib.py:
- ```python
- class Dog:
-    def __init__(self, name):
-        self.name = name
-        print("Bark! My name is "+name)
- ```
-
- code.py:
- ```python
- import doglib
- # dog is the module, 
- hazel = doglib.Dog("Hazel")
- ```
-
- There is a special module in each package that makes them a package that must be named `__init__.py`. This file can be blank, but its presence is what lets Python know that you intend a directory to be a package. Note that `__init__` is also how we define class constructor. Here, the contents of `__init__.py` are run whenever we import a package. This allows us to, effectively, treat the package itself like a module.
-
- For how this all works practically, we can take a look at the code for the familiar [json package in the Standard Library](https://github.com/python/cpython/tree/3.9/Lib/json) (all the Standard Library packages will have links at the top of the docs to the code itself). We see here that the JSON package actually contains a variety of modules, broadly organized by function (decoder, encoder, etc). However, we haven't really used these in our examples because we've accessed the functions defined inside of its [__init__.py](https://github.com/python/cpython/blob/3.9/Lib/json/__init__.py). There, we can find the definitions for our old favorites like [json.dumps](https://github.com/python/cpython/blob/3.9/Lib/json/__init__.py#L183).
-
- This json package is organized this way because if for some reason we didn't like the way that Python handled functions like loads and dumps (for example, if we wanted a prettified version of dumps), we can override the default `json.encoder.JSONEncoder` class (where `json` is a package and `encoder` is the module) ourselves.
-
- One last thing: inside of the `__init__.py` for json, we see that there's [a few lines](https://github.com/python/cpython/blob/3.9/Lib/json/__init__.py#L106) where it imports classes like JSONDecoder and JSONEncoder. This means that whenever we import the json package in our code, we also perform these imports too. This means that when we do `import json`, we can address the same JSONEncoder class as either `json.encoder.JSONEncoder` or `json.JSONEncoder`. This is often done to simplify the internal organization of packages to users.
-
-## XML
-![xml vs jason](assets/jason.gif)
-
-(XML [left] and JSON [right])
-
-We've covered some JSON already. Let's talk about its older, more monstery cousin. They're not exactly the same kind of thing. JSON is intended, as we've seen and used, to encapsulate object states. XML stands for "Extensible Markup Language" and the Markup Language part means that it's a way to "mark up" text in ways that convey information beyond the very narrow boundaries of the text, like an editor might mark up a document.
-
-That is, markup languages provide ways to express anything that isn't directly expressible as text characters: *emphasis*, _italics_, [links](https://github.com/scholarslab/CodeLab/blob/master/Week05/assets/hazel_romantic_hero.jpg), spacing and layout, typeface, and so on. Images too.
-
-![hazel snoozing](assets/hazel_snooze.jpeg)
-
-When you all blog, you're writing in another markup language, the whimsically-named Markdown.
-
-But despite the differences of intention, both XML and JSON (and also CSV and markdown) are text formats designed to contain and structure data.
-
-Let's take a quick peek at what XML looks like. Let's shift gears from our usual Much Ado About Nothing examples and move on to the 31st century.
-
-```xml
-<scene id = "30" type = "INT" location = "PlanetExpress" episode="S01E3">
-    <dialog role="Leela">
-        Please, Bender! Have some malt liquor! If not for yourself, then for the people who love you.
-    </dialog>
-    <dialog role="Bender">
-        I hate the people who love me and they hate me!
-    </dialog>
-</scene>
+```
+cd ~/projects/sandbox
 ```
 
-![bender](assets/bender.gif)
+Now, let's set up our pipenv environment and install that package.
 
-This is an arbitrarily constructed example. XML is built around tags that represent discrete elements. In the example above, `scene` and `dialog` are tags. Tags can contain attributes, such as the `role` attribute for `dialog` or the `location` attribute in `scene`. Tags can wrap around text and we can understand that the tag contains the text, like the label for a link or the text of a line of dialog.
+```
+pipenv install getname
+```
 
-XML is really verbose and you have to be really careful about closing tags correctly. But it's quite powerful, with entire secondary languages to define its schema, to translate it from one XML format to another, and to traverse the data that it contains. That complexity makes it a bit clunky to use.
+That'll take a little bit to run. After it finishes, we have our environment set up. We can see that there are two new files inside our directory: Pipfile and Pipfile.lock.
 
-The "Extensible" part of the XML name means that we can use this basic structure to build other languages. Just like my constructed Futurama script example can form a standard format to represent dialog, XML can be extended (really, constrained) to represent the structures of other specific kinds of data. One example is TEI, the Text Encoding Initiative, which uses XML to represent text documents. Another is the modern form of HTML that the web runs on.
+Looking inside Pipfile, we can see something like:
 
-## Web Scraping
-![https://media.giphy.com/media/IwTWTsUzmIicM/giphy.gif](https://media.giphy.com/media/IwTWTsUzmIicM/giphy.gif)
+```
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
 
-Okay, let's put these ideas together. Let's scrape some websites.
+[dev-packages]
 
-Web scraping is extracting data from web pages, using the syntax of a web page. It's great for compiling datasets when you don't already have them in a database somewhere. A good supplemental resource for web scraping is [Intro to Beautiful Soup by Jeri Wieringa](https://programminghistorian.org/en/lessons/intro-to-beautiful-soup) at The Programming Historian.
+[packages]
+getname = "*"
 
-### So how do we scrape the web?
-In Python, there's more than a few different libraries we could use, but let's continue to focus on Beautiful Soup.
+[requires]
+python_version = "3.7"
+```
 
-We've already installed the library into our pipenv using:
+We can see that there's some basic information about the package we specified. In this case, the line `getname = "*"` indicates that we want to grab some version of the `getname` package (* is often used as a wildcard character, standing in for "any").
+
+The Pipfile.lock file has similar information, but with the specific version of the packages that we grabbed.
+
+Don't worry about the particular formats for these files. It's only really important to understand that by distributing them (for example, by committing them to git), we can tell other people that grab our code what external dependencies they need (and potentially what versions of those dependencies).
+
+Everything is set up now.
+
+We can run the `which python` command to show us what the default system Python is. We'll get back something like `/usr/local/bin/python`.
+
+Now, we can activate the shell using:
+
+```
+pipenv shell
+```
+
+If we try the `which python` command again, it'll be something different. Something like: `/Users/shane/.local/share/virtualenvs/sandbox-2UjlHtLl/bin/python`
+
+That tells us that we're actually using a totally different Python from before. A Python that has access to the package that we just told pipenv to grab.
+
+Which allows us to do...
 
 ```python
-pipenv install beautifulsoup4
+from getname import random_name
+
+dogs = []
+while len(dogs)<6:
+    dogs.append(random_name('dog'))
+print(dogs)
 ```
 
-We can make sure this was done correctly by importing the library into a Python file in our virtual environment and printing its version number (remember to activate the appropriate pipenv shell with `pipenv shell` if you haven't yet).
+Without all the pipenv steps, we wouldn't have access to our new package and that first import line would fail.
+
+## Example: NLTK
+
+Still with us? Great!
+
+![Hazel says hello!](assets/hazel_hi.jpg)
+
+Okay, so let's do another, real example using the very useful and powerful NLTK package.
+
+I've included the dialog frm Much Ado About Nothing in [a nicely formatted JSON file](MAAN_dialog.json). Let's make use of that now.
+
+We can start by using pipenv to install nltk and activating the pipenv shell.
+
+```
+pipenv install nltk
+pipenv shell
+```
+
+Just for NLTK, we need to prime the module by downloading a few key bits of data. So we should jump into the Python interactive interpreter and just run these lines:
 
 ```python
-import bs4
-print(bs4.__version__)
+import nltk
+nltk.download('stopwords')
 ```
 
-Now let's figure out how to use BeautifulSoup by going to the [documentation for the library](https://www.crummy.com/software/BeautifulSoup/bs4/doc/). Let's take a quick look at that now.
+This is specific to nltk and actually kind of an unusual way of working in Python. We only need to do this once for our environment.
 
-Okay, let's do this. Let's try scraping the [Scholars' Lab blog page](https://scholarslab.lib.virginia.edu/blog/)
-
-First, we should have pipenv install another library to help us grab websites. There are some good built-in ways to download things from the web, but one of the easiest to use and most popular is the third party library Requests (coincidentally by Kenneth Reitz, the same guy who wrote Pipenv), the same library we used to access APIs.
-
-We can use it to download our website using this simple code:
+Now we can work on our actual Python code. Let's read in our json file.
 
 ```python
-import requests
+import json
 
-url = "https://scholarslab.lib.virginia.edu/blog/"
-html  = requests.get(url).text
-print(html)
+with open("MAAN_dialog.json","r") as infile:
+    dialog = json.loads(infile.read())
 ```
 
-Now that we've got the raw HTML of the site, we can then use Beautiful Soup to parse it.
+This imports and json-loads our text file as a list of dictionaries. Because we've put the work into formatting our data, we can easily manipulate it to our purposes. Let's say we have a scholarly interest in, specifically, how the dialog of Beatrice and Benedick differ.
 
-So, let's first import beautiful soup...
+Let's collate their lines now.
 
 ```python
-from bs4 import BeautifulSoup
+import json
+
+with open("MAAN_dialog.json","r") as infile:
+    dialog = json.loads(infile.read())
+
+bea = ""
+ben = ""
+
+for line in dialog:
+    if line["role"] == "BEATRICE":
+        bea+=" "+line["dialog"]
+    elif line["role"] == "BENEDICK":
+        ben+=" "+line["dialog"]
 ```
 
-Next, we'll instantiate a BeautifulSoup instance and pass it our html. One easy thing we can do is have BS prettify our html so it's a bit more expansive and readable.
+This gives us two variables, `bea` and `ben`, that contain all of those characters' lines.
+
+How might nltk give us insight into these lines? Let's do something simple and see out how the words that Shakespeare put into their mouths differ by looking at frequency distribution.
+
+First, we need to tokenize the dialog (i.e. break up the dialog into words). We can use one of nltk's built-in tokenizers for this. And then let's remove *stopwords*, which are common English words like articles that don't provide much insight in this sort of analysis.
+
+Stopwords are one of the wordlists provided by nltk. You can see all the English stopwords and read up on the other wordlists in the [NLTK book](https://www.nltk.org/book/ch02.html#wordlist-corpora). The little bit of code we ran in the interactive interpreter downloaded the stopword wordlist.
+
+Here's what the code to tokenize the dialog and strip out the stopwords looks like:
 
 ```python
-from bs4 import BeautifulSoup
-import requests
+import nltk
+import json
 
-url = "https://scholarslab.lib.virginia.edu/blog/"
-html  = requests.get(url).text
-soup = BeautifulSoup(html, 'html.parser')
-print(soup.prettify())
+with open("MAAN_dialog.json","r") as infile:
+    dialog = json.loads(infile.read())
+
+bea = ""
+ben = ""
+
+for line in dialog:
+    if line["role"] == "BEATRICE":
+        bea+=" "+line["dialog"]
+    elif line["role"] == "BENEDICK":
+        ben+=" "+line["dialog"]
+
+bea_tokens = []
+ben_tokens = []
+
+tokenizer = nltk.tokenize.RegexpTokenizer(r'\w+')
+for token in tokenizer.tokenize(bea):
+    if token.lower() not in nltk.corpus.stopwords.words('english'):
+        bea_tokens.append(token.lower())
+for token in tokenizer.tokenize(ben):
+    if token.lower() not in nltk.corpus.stopwords.words('english'):
+        ben_tokens.append(token.lower())
+
+print(bea_tokens)
+print(ben_tokens)
 ```
 
-We can see here that `soup` is an instance of a [BeautifulSoup class](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#beautifulsoup). This is an object that represents the whole of the document. The other important class we will use is the [Tag class](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#tag), which represents an html tag. These two classes actually share many of the same methods: we can use `get_text()` on either a BeautifulSoup or a Tag to extract just the text that they contain.
+`bea_tokens` and `ben_tokens` are now lists of words with stopwords stripped out. 
 
-We can also use the `find_all()` method that they share to search with either the whole document or within the tag. Remember that tags can be nested within each other.
-
-Let's take a look at the basic structure of the html file. We can do this easily using the development console built into most popular browsers. In Chrome or Firefox, right clicking (or control-clicking) and choosing "Inspect" or "Inspect Element".
-
-We can see that, for example, the authors for each blog post live in something called a `div` tag that looks like this:
-
-```
-<div class="blog-meta__author">
-    <a href="/people/brandon-walsh/">Brandon Walsh</a>
-</div>
-```
-
-Let's ignore most of the nitty gritty of what this means right now, but we can see that the outer tag is a `div` tag, which contains an `a` tag within. These are some of the basic building blocks of HTML: `div` tags are "divisions", containers that are used to organize text and other tags together. `a` tags are anchors, which are used for links. So this html block is a container (`<div class="blog-meta__author">`) that contains a link (`<a href="/people/brandon-walsh/">`) that points to the author of a blog post.
-
-We can see that the outer div tag has an attribute, `class="blog-meta__author"`, which we can pass to BeautifulSoup to find all the author divs. To do this, we tell `soup` to `find_all` the `div` tags that are of class `"blog-meta__author"`:
+We can pass these lists back to NLTK's frequency distribution function to see how often distinct words appear.
 
 ```python
-...
-print(soup.find_all("div",class_="blog-meta__author"))
+import nltk
+import json
+
+with open("MAAN_dialog.json","r") as infile:
+    dialog = json.loads(infile.read())
+
+bea = ""
+ben = ""
+
+for line in dialog:
+    if line["role"] == "BEATRICE":
+        bea+=" "+line["dialog"]
+    elif line["role"] == "BENEDICK":
+        ben+=" "+line["dialog"]
+
+bea_tokens = []
+ben_tokens = []
+
+tokenizer = nltk.tokenize.RegexpTokenizer(r'\w+')
+for token in tokenizer.tokenize(bea):
+    if token.lower() not in nltk.corpus.stopwords.words('english'):
+        bea_tokens.append(token.lower())
+for token in tokenizer.tokenize(ben):
+    if token.lower() not in nltk.corpus.stopwords.words('english'):
+        ben_tokens.append(token.lower())
+
+bea_freq = nltk.FreqDist(bea_tokens)
+print("Beatrice word frequencies:")
+for key, val in bea_freq.most_common(10):
+    print(str(key) + ':' + str(val))
+
+ben_freq = nltk.FreqDist(ben_tokens)
+print("\n\n Benedick word frequencies:")
+for key, val in ben_freq.most_common(10):
+    print(str(key) + ':' + str(val))
 ```
 
-(We use the standard convention of appending an underscore after "class" to distinguish the html notion of class from the built-in Python concept of class.)
+And since a big list of words is maybe less useful, let's install a plotting library that nltk uses through pipenv:
 
-This bit of code results in a Python list containing 4 Tag objects representing the authors of the 4 most recent blog posts. We can drill down into each of these Tags to get at their contents. For example, we can get the name for each author by getting the text of the `a` tags. The `find()` method is like `find_all()`, but just returns the first result (so it's equivalent to `find_all()[0]`).
+```
+pipenv install matplotlib
+```
+
+Which will allow us to get some pretty graphs:
 
 ```python
-...
-author_divs = soup.find_all("div",class_="blog-meta__author")
-for author_div in author_divs:
-    print(author_div.find("a").get_text())
+import nltk
+import json
+
+with open("MAAN_dialog.json","r") as infile:
+    dialog = json.loads(infile.read())
+
+bea = ""
+ben = ""
+
+for line in dialog:
+    if line["role"] == "BEATRICE":
+        bea+=" "+line["dialog"]
+    elif line["role"] == "BENEDICK":
+        ben+=" "+line["dialog"]
+
+bea_tokens = []
+ben_tokens = []
+
+tokenizer = nltk.tokenize.RegexpTokenizer(r'\w+')
+for token in tokenizer.tokenize(bea):
+    if token.lower() not in nltk.corpus.stopwords.words('english'):
+        bea_tokens.append(token.lower())
+for token in tokenizer.tokenize(ben):
+    if token.lower() not in nltk.corpus.stopwords.words('english'):
+        ben_tokens.append(token.lower())
+
+bea_freq = nltk.FreqDist(bea_tokens)
+ben_freq = nltk.FreqDist(ben_tokens)
+
+bea_freq.plot(20, cumulative=False)
+ben_freq.plot(20, cumulative=False)
 ```
 
-To get the URL for each author, we can ask soup for the "href" attribute for the `a` tag by passing it the name of the attribute like the key of a dictionary.
-
-```python
-...
-author_divs = soup.find_all("div",class_="blog-meta__author")
-for author_div in author_divs:
-    print(author_div.find("a")["href"])
-```
-
-Knowing how to grab links means that we can follow them by asking Requests to grab the website at that URL. This way, we can write a "spider" to crawl through entire websites. This is a very powerful way to map out online datasets that aren't designed to be very accessible.
-
-So, for example, we can craw through and save *every* blog post on the Scholars' Lab blog into one file for the purposes of text analysis.
-
-```python
-from bs4 import BeautifulSoup
-import requests
-
-post_text = ""
-url = "https://scholarslab.lib.virginia.edu/blog/"
-html  = requests.get(url).text
-soup = BeautifulSoup(html, features="html.parser")
-old_posts = soup.find("section",id="previous_posts")
-for i in old_posts.find_all("li"):
-    # the post links are relative links, so we need to append the domain to make it an absolute link
-    post_url = "https://scholarslab.lib.virginia.edu"+i.contents[0]["href"]
-    post  = requests.get(post_url).text
-    soup = BeautifulSoup(post, features="html.parser")
-    post_text+=soup.find("div", class_="post__content").get_text()
-    # Let's write out all the posts every time so we can interrupt it at any point
-    f = open("posts.txt", "w")
-    f.write(post_text)
-    f.close()
-```
-
-In a real-world example, we might want to introduce a delay to not hammer someone's web server or to trigger some kind of denial-of-service protection.
+NLTK is a big and complicated piece of software designed to do (kind of) complicated analysis. This is still a unit on external dependencies and not on natural language processing or text analysis. Don't fret too much about how NLTK works or how to use it - the important part is that you now have the knowledge and the means and the wherewithall to exploit a vast universe of external python tools.

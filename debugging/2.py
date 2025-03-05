@@ -1,10 +1,9 @@
-# Produce a simple program to accept a single word as text input and then print
-#  out a pig latin translation.
+def pig_latin(word):
+    return word[1:] + word[0].lower() + "ay"
 
-# Request word & store as variable "bacon"
-piglatin=input("Which word do you want to translate?\n")
+def repeat(word, number):
+    return (word+" ")*number
 
-# For "pig", remove character at position[0], suffix with that character,
-# suffix with "ay"
-
-print(piglatin(1:)+piglatin(0) + "ay")
+s = "praxis codelab code lab"
+l = s.split(" ")
+print(repeat(pig_latin(l[0]),10) + " ".join(l[1:]))
