@@ -1,4 +1,4 @@
-# Week 11: Web Scraping
+# Week 12: Web Scraping
 ![assets/netscape.gif](assets/netscape.gif)
 
 ## Agenda:
@@ -8,8 +8,6 @@
 
 ![assets/dogs.gif](assets/dogs.gif)
 
-And that's a wrap! You're all official CodeLab graduates. Come by and pick up your commemorative pin if you haven't and learn the secret Code Lab handshake so you can recognize other grads and reap the benefits of in-group nepotism. Ad astra per insectum!
-
 ## Assignment
 
-Freedom! Sweet freedom!
+Scrape all the Scholars' Lab blog posts and figure out who has published the most words and why is it Brandon? Export a CSV of how many words Brandon has written for each month and we can try to unprofessionally infer things about his private life.
