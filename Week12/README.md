@@ -10,4 +10,4 @@
 
 ## Assignment
 
-Scrape all the Scholars' Lab blog posts and figure out who has published the most words and why is it Brandon? Export a CSV of how many words Brandon has written for each month and we can try to unprofessionally infer things about his private life.
+Scrape all the Scholars' Lab blog posts and figure out who has published the most words and why is it Brandon? Export a CSV of how many words Brandon has written for each month and we can try to unprofessionally infer things about his private life. Try out some of your ideas for text analysis on his posts if you'd like.
