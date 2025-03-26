@@ -2,9 +2,9 @@
 
 ## Python Libraries, revisited
 
-A few weeks ago, we've played around with using Python code that people who are not Python (and who are often not you) wrote. Let's take a closer look at these libraries.
+We've been playing around with using Python code that people who are not Python (and who are often not you) wrote. Let's take a closer look at these libraries.
 
-First, let's properly go over some ideas that we might have casually brushed past before:
+First, let's properly go over some ideas that we might have casually encountered before:
 
 * Library: There's a lot of different definitions for this term. Unless really unexpected things have happened, we are currently sitting in one right now. But in the CodeLab context, this is a collection of software that's directly used by other software. Most often, this will be a generalizable piece of logic that is useful to bundle separately so that other, unrelated pieces of software can use it. Because it's an informal term in Python and not a specific, technical one, it's more useful to think about libraries in terms of how code is organized. Used in this way, the concept of "software libraries" spans many different programing languages and development contexts: we have Python libraries, C++ libraries, Javascript libraries, operating system libraries, etc.
 
@@ -12,7 +12,7 @@ First, let's properly go over some ideas that we might have casually brushed pas
 
  Third-party libraries found on PyPI are less expansive than the Standard Library. This week, we'll take a look at [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/), which is analogous in scope to packages like random or json. In fact, third party libraries are often organized into a single package. A library like Beautiful Soup can best be thought of in terms of purpose: you want to accomplish the a particular, common task like scraping a website and Beautiful Soup helps accomplish it. 
 
-* Package: A package is a formal term in the Python context. It's a specific organization of code which all lives in a single directory. Libraries sometimes (often) consist of a single package (e.g. Random or BS4), so the term is sometimes (often) used interchangeably. Packages are the basic unit by which we install and use libraries. PyPI is the Python *Package* Index, so when we type `pipenv install beautifulsoup4` into the terminal, we're installing the beautifulsoup4 package.
+* Package: A package is a formal term in the Python context. It's a specific organization of code which all lives in a single directory.  Libraries sometimes (often) consist of a single package (e.g. Random or BS4), so the term is sometimes (often) used interchangeably. Packages are the basic unit by which we install and use libraries. PyPI is the Python *Package* Index, so when we type `pipenv install beautifulsoup4` into the terminal, we're installing the beautifulsoup4 package.
 
  Here, confusingly, the name of the package on PyPI (beautifulsoup4) doesn't match the actual Python code package (bs4). Always [read the docs](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)! 
  
@@ -40,7 +40,7 @@ First, let's properly go over some ideas that we might have casually brushed pas
  # imports * imports all modules in a package
  ```
 
- In these examples, we can either the `bs4` *package* directly or, using the `from` keyword, import *modules* from with that package.
+ In these examples, we can either import the `bs4` *package* directly or, using the `from` keyword, import *modules* from with that package.
 
  Incidentally, it's almost always considered poor practice to use the `from x import *` form. We see in the example immediately above that, for people just reading through our code, there's no obvious connection between the bs4 package and the BeautifulSoup class. It would take some deeper understanding of BeautifulSoup or at least chasing down some its documentation. This confusion is made worse by the fact that we can import multiple packages this way and, actually, do something like this:
 
@@ -70,24 +70,24 @@ First, let's properly go over some ideas that we might have casually brushed pas
     exit()
  ```
 
- And we can do something like this:
+And we can do something like this:
 
- doglib.py:
- ```python
+doglib.py:
+```python
  class Dog:
     def __init__(self, name):
         self.name = name
         print("Bark! My name is "+name)
- ```
+```
 
- code.py:
- ```python
+code.py:
+```python
  import doglib
  # dog is the module, 
  hazel = doglib.Dog("Hazel")
- ```
+```
 
- There is a special module in each package that makes them a package that must be named `__init__.py`. This file can be blank, but its presence is what lets Python know that you intend a directory to be a package. Note that `__init__` is also how we define class constructor. Here, the contents of `__init__.py` are run whenever we import a package. This allows us to, effectively, treat the package itself like a module.
+There is a special module in each package that makes them a package that must be named `__init__.py`. This file can be blank, but its presence is what lets Python know that you intend a directory to be a package. Note that `__init__` is also how we define class constructor. Here, the contents of `__init__.py` are run whenever we import a package. This allows us to, effectively, treat the package itself like a module.
 
  For how this all works practically, we can take a look at the code for the familiar [json package in the Standard Library](https://github.com/python/cpython/tree/3.9/Lib/json) (all the Standard Library packages will have links at the top of the docs to the code itself). We see here that the JSON package actually contains a variety of modules, broadly organized by function (decoder, encoder, etc). However, we haven't really used these in our examples because we've accessed the functions defined inside of its [__init__.py](https://github.com/python/cpython/blob/3.9/Lib/json/__init__.py). There, we can find the definitions for our old favorites like [json.dumps](https://github.com/python/cpython/blob/3.9/Lib/json/__init__.py#L183).
 
@@ -100,7 +100,9 @@ First, let's properly go over some ideas that we might have casually brushed pas
 
 (XML [left] and JSON [right])
 
-We've covered some JSON already. Let's talk about its older, more monstery cousin. They're not exactly the same kind of thing. JSON is intended, as we've seen and used, to encapsulate object states. XML stands for "Extensible Markup Language" and the Markup Language part means that it's a way to "mark up" text in ways that convey information beyond the very narrow boundaries of the text, like an editor might mark up a document.
+We've covered some JSON already. Let's talk about its older, more monstery cousin. They're not exactly the same kind of thing. JSON is intended, as we've seen and used, to encapsulate object states. XML stands for "Extensible Markup Language" and the Markup Language part means that it's a way to "mark up" text in ways that convey information beyond the very narrow boundaries of the text, like an editor might mark up a document. XML is a cousin of HTML, in that its basic  but it's a more abstract, more flexible format.
+We've covered some JSON already. Let's talk about its older, more monstery cousin. They're not exactly the same kind of thing. JSON is intended, as we've seen and used, to encapsulate object states. XML stands for "Extensible Markup Language" and the Markup Language part means that it's a way to "mark up" text in ways that convey information beyond the very narrow boundaries of the text, like an editor might mark up a document. XML is a cousin of HTML, in that its basic  but it's a more abstract, more flexible format.
+We've covered some JSON already. Let's talk about its older, more monstery cousin. They're not exactly the same kind of thing. JSON is intended, as we've seen and used, to encapsulate object states. XML stands for "Extensible Markup Language" and the Markup Language part means that it's a way to "mark up" text in ways that convey information beyond the very narrow boundaries of the text, like an editor might mark up a document. XML is a cousin of HTML, in that the basic rules of its syntax and structure are similar. But it's a more abstract, more flexible format.
 
 That is, markup languages provide ways to express anything that isn't directly expressible as text characters: *emphasis*, _italics_, [links](https://github.com/scholarslab/CodeLab/blob/master/Week05/assets/hazel_romantic_hero.jpg), spacing and layout, typeface, and so on. Images too.
 
