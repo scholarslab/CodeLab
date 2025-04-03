@@ -119,3 +119,25 @@ for i in response["description"]:
 ```
 
 Just to play it safe, since file downloads can suck up a lot of bandwidth, I added a `time.sleep(0.5)` to wait half a second before loading each image.
+
+IMDbot is a nice toy example for teaching purposes. For more serious use, you might want to use something like [Open Movie Database](https://www.omdbapi.com/), which is also free but requires a user account to generate an API key. Since that's also a REST API, we can just pass the key in as a parameter, like so: 
+
+```python
+import requests
+import json
+
+API_KEY =  'KEY'
+
+p = {'apikey': API_KEY, 's': 'Top Gun'}
+r = requests.get('http://www.omdbapi.com/',params=p)
+if r.status_code != 200:
+    print("Bad response code!")
+    exit()
+for movie in json.loads(r.text)["Search"]:
+    print(movie["Title"]+" ("+movie["Year"]+")")
+    p_movie = {'apikey': API_KEY, 'i': movie["imdbID"]}
+    r_movie = requests.get('http://www.omdbapi.com/',params=p_movie)
+    print("\t"+json.loads(r_movie.text)["Plot"])
+```
+
+But you need actually need your own account's API key for this! It won't work without it.
