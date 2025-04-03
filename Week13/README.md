@@ -8,3 +8,5 @@
 ## Assignments
 
 Internalize all the virtues of the digital humanities, achieve self-fullfillment, fight injustice, and become a complete human being.
+
+![fatdog](assets/fatdog.jpg)

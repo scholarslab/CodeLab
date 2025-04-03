@@ -1,6 +1,6 @@
 # Application Programming Interfaces
 
-![fatdog](assets/fatdog.jpg)
+![fatdog](assets/maple.jpg)
 
 ## Interfacing with Applications through Programming
 
