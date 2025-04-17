@@ -54,6 +54,8 @@ These instructions walk you through the default installation of the Ubuntu Linux
 
 The WSL installation processed probably required the use of Powershell. After you install WSL, forget about Powershell for now - most of the time we use the command line, we should use a WSL Ubuntu shell, either through the Ubuntu terminal or the built-in VSCode terminal.
 
+Ubuntu uses a "package manager" application called `apt` to install common software. We should tell it to update itself with `sudo apt-get update; sudo apt-get upgrade` and accepting (Y) all the packages.
+
 ### Step 1-W: Install Python and Pip
 
 * WSL comes with Python3, but you still need to install pip. In the Ubuntu terminal, run: `sudo apt-get install -y python3-pip`
