@@ -1,4 +1,8 @@
-# Classes
+---
+layout: post
+title: Codelab Week classes - lesson
+sitemap: false
+---
 
 Okay, let's talk classes!
 

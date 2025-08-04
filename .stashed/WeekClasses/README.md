@@ -1,3 +1,9 @@
+---
+layout: post
+title: Codelab Week classes
+sitemap: false
+---
+
 # Week CLASSES: Class is in Session
 ![bart_class dot gif](assets/bart_class.gif)
 

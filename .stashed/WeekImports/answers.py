@@ -1,4 +1,4 @@
-# Answer for Week08 Assignment 0.A
+# Answer for Chapter08 Assignment 0.A
 
 import random # usually, a good idea to keep imports at the top
 
