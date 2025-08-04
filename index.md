@@ -8,7 +8,7 @@ tags: codelab
 
 ![https://media.giphy.com/media/SwImQhtiNA7io/giphy.gif](https://media.giphy.com/media/SwImQhtiNA7io/giphy.gif)
 
-Welcome to Codelab, a course and textbook on the foundations of coding and digital humanities technics written by Shane Lin and the Scholars' Lab at the University of Virginia Library for the Praxis Program Fellowship.
+Welcome to Codelab, a course and textbook on the foundations of coding and digital humanities technics written by Shane Lin and the Scholars' Lab at the University of Virginia Library for the Praxis Program Fellowship. With dogs.
 
 Codelab is broadly divided into two sections: _Codelab Fundamentals_, which introduces basic computing, data, and algorithmic concepts without coding directly, and _Codelab Code Lab_, which uses Python to teach practical DH programming skills.
 
@@ -40,7 +40,7 @@ Codelab is broadly divided into two sections: _Codelab Fundamentals_, which intr
   * Python interactive interpreter
   * Saving and running Python files
   * Hello World
-  * Variables
+  * VariablesW
   * Classes, Objects, and Instances
   * Simple types
   * Documentation

@@ -1,4 +1,10 @@
-# Week 1: Introduction to CodeLab
+---
+layout: page
+title: Codelab / Chapter 01
+tags: codelab
+---
+
+# Chapter 01: Introduction to CodeLab
 
 ## Outline
 
