@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Codelab - Home
+title: Codelab / Home
 tags: codelab
 ---
 
@@ -36,7 +36,7 @@ Codelab is broadly divided into two sections: _Codelab Fundamentals_, which intr
   * Git and Github
 
 ### Codelab Code Lab
-* [Chapter 05: Introduction to Python](Chapter05/README.md)
+* [Chapter 05: Introduction to Python](Chapter05/)
   * Python interactive interpreter
   * Saving and running Python files
   * Hello World
@@ -46,7 +46,7 @@ Codelab is broadly divided into two sections: _Codelab Fundamentals_, which intr
   * Documentation
   * `input()`
   * Lists
-* [Chapter 06: Functions and Methods](Chapter06/README.md)
+* [Chapter 06: Functions and Methods](Chapter06/)
   * Types and `type()`
   * Type conversion
   * Function calls, arguments, return values.

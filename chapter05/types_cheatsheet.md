@@ -1,4 +1,8 @@
-# Types and Objects
+---
+layout: page
+title: Codelab / 05 Introduction to Python / Supplement - Types Cheatsheet
+tags: codelab
+---
 
 How to test for types in python. Write `type`!
 
@@ -23,7 +27,7 @@ How to test for types in python. Write `type`!
 
 ## Lists
 
-A [Python list](https://docs.python.org/3.6/tutorial/datastructures.html) is an unordered, untyped collection of any values. The example below is storing strings, an integer, and even another list inside a list.
+A [Python list](https://docs.python.org/3/tutorial/datastructures.html) is an ordered, untyped collection of any values. The example below is storing strings, an integer, and even another list inside a list.
 
 ```python
 junk = list()
