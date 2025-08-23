@@ -1,8 +1,14 @@
-# The Command Line Interface
+---
+layout: page
+title: Codelab / Chapter 01 / Command Line Interface
+tags: codelab
+---
 
-## Introduction
+[[Back to chapter index]](../)
 
-This will be a quick guide and cheatsheet that you can refer back to for reference. I'll leave the heavy lifting of teaching mostly for the Programming Historian lesson in the homework.
+### Introduction
+
+This is a quick guide and cheatsheet that you can refer back to for reference. I'll leave the heavy lifting of teaching mostly for the Programming Historian lesson in the homework.
 
 Let's get some terminology out of the way first. Often you'll see a few terms used in seemingly interchangeable ways: command line interface/CLI, terminal, shell, console. They are subtley different, but it's probably not useful to dwell overlong on their differences, but here's a quick summary: Early computers were big room-sized things. Operators would interact with these machines through a smaller device dedicated to input and output, called a console or terminal. In the very early days, these consoles would use literal printers to print out output from the computer onto paper. In modern computing, "console" and "terminal" are analogies for software programs that replicate these technologies. The application "Terminal" on MacOS is a terminal software.
 
@@ -12,11 +18,11 @@ This general mode of operation, using terminals and shells to interact with a co
 
 So, okay. Here's what we're talking about:
 
-!["WSL Bash"](assets/wsl_bash.png)
+!["WSL Bash"](../assets/wsl_bash.png)
 
 Here's a basic terminal window on one of my computers (running Ubuntu through WSL on a Windows machine). Yours may look different (hopefully it's prettier than the garish colors in this default shell). Before Graphical User Interfaces (GUI) like the one that you're almost certainly reading this on became ubiquitous, Command Line Interfaces (CLI) were how people used computers. So why learn any of this now? GUIs often abstract and simplify, but CLI lets you tell a computer to do exactly what you want it to do. It facilitates an understanding of what's happening "under the hood" (or at least a little bit more under the hood than usual). The output of our coding efforts and the data that we'll use and produce will mostly be text, which suits CLIs. It's also the most common way to connect to remote computers, a common circumstance when you want to control a distant web server or virtual cloud host. Finally, CLIs are long-lived. The shell that we're going to teach you to use traces its roots to the 1970s. Whatever new technology is around the corner, it'll still be useful to know how to drive a command line.
 
-In the example above, the "shanelin@ADAGIO-PC" part is my user name and the name of my computer (excuse the tempo joke). This is useful to see because the command line lets us easily switch between users and computers. The parts after the colon ("~" and "~/projects/CodeLab/Week01") are the current working directory path. The $ sign, which might be something else on your terminal, separates the directory path from the command. In this case, I've simply entered `cd projects/CodeLab/Week01` to change directory to the projects/CodeLab/Week01 directory and `ls` to list the contents of that directory. For commands with output (in this case, `ls`), the output appears below the command.
+In the example above, the "shanelin@ADAGIO-PC" part is my user name and the name of my computer. This is useful to see because the command line lets us easily switch between users and computers. The parts after the colon ("~" and "~/projects/CodeLab/Week01") are the current working directory path. The $ sign, which might be something else on your terminal, separates the directory path from the command. In this case, I've simply entered `cd projects/CodeLab/Week01` to change directory to the projects/CodeLab/Week01 directory and `ls` to list the contents of that directory. For commands with output (in this case, `ls`), the output appears below the command.
 
 ## A few random notes
 
@@ -70,7 +76,7 @@ In the command line, we traverse this structure using the [path](https://en.wiki
 
 Paths that begin with a forward slash (e.g. `/usr/bin`) are absolute paths, which means that the first element is at the root (lowest level) of the tree.
 
-Paths that begin with a directory of file name (e.g. `README.md`) are relative paths that will depend on the current working directory.
+Paths that begin with a directory or file name (e.g. `README.md`) are relative paths that will depend on the current working directory.
 
 Files that start with "." are often supposed to be hidden files, which just means that they're intended to be kept out of sight.
 
@@ -84,7 +90,7 @@ Special path symbols:
 
 Any command that takes a filename will also allow you to specify a relative or absolute path to that file, e.g. `touch ../file.txt` or `rm /temp/error.log`.
 
-## Shell Commands
+## Basic shell Commands
 
 | Command | Description |
 | ------------- | ------------- |
@@ -92,7 +98,7 @@ Any command that takes a filename will also allow you to specify a relative or a
 | `cd [folder]` | Change into a directory |
 | `cd ..` | Change directory upwards |
 | `ls` | List contents of a directory |
-| `ls -la` | List all contents including hidden files |
+| `ls -la` | List all contents and their details, including hidden files |
 | `clear` | Clear the view |
 | `open [file]` | Opens a file |
 | `open .` | Opens the directory |
@@ -104,6 +110,9 @@ Any command that takes a filename will also allow you to specify a relative or a
 | `rmdir [directory]` | Remove directory ( only operates on empty directories ) |
 | `rm -rf [directory name]` | Force remove a directory and all its contents | 
 
+Sometimes, as we see here, a command (e.g. `ls`) sometimes has a list of optional "flags" (e.g. `-la`) appended to it that change the behavior of the command. The base `ls` command lists the contents of the current working directory, but omits hidden files. Adding the `-l` flag shows the details of the contents (permissions, type, ownership, size, last modified date). Adding the `-a` flag shows all contents, including hidden files and directories. Combining the two with `ls -la` shows the details of all files. These flags are in the short, single character format, indicated by the single dash. Some (but not all) flags have long names, which have two dashes appended. The long form of the `-a` flag is `--all`. You can't string the long form names together like you can with the short form (`-la`).
+
+Common flags that exist for most commands are `--version` (often used to determine whether a command exists or not) and `--help`.
 
 ## Some Examples of Advanced Commands
 | Command | Description |
@@ -113,3 +122,13 @@ Any command that takes a filename will also allow you to specify a relative or a
 | `!!` | Use double bang to repeat last command |
 | `nano [file]` | Opens file in Terminal editor |
 | `q` | Exit |
+
+
+
+### Some helpful videos
+
+1. [Bash Basics Part 1 of 8 | Access and Navigation](https://youtu.be/eH8Z9zeywq0?t=885)
+1. [Beginner's Guide to the Bash Terminal](https://www.youtube.com/watch?v=oxuRxtrO2Ag)
+1. [The Most Important Thing You'll Learn in the Command Line](https://www.youtube.com/watch?v=q7-aEspwwEI)
+1. Go through the CodeAcademy [command line course](https://www.codecademy.com/learn/learn-the-command-line).
+1. [Shell Scripting Tutorial](https://www.youtube.com/watch?v=hwrnmQumtPw)

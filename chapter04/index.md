@@ -1,4 +1,11 @@
-# Week 4: Version Control
+---
+layout: page
+title: Codelab / Chapter 04
+tags: codelab
+---
+# Version Control
+
+[[Back to Codelab index]](../)
 
 ![Rocky!](assets/rocky_popcorn.jpg)
 
@@ -40,8 +47,8 @@ git config --global core.editor "nano"
 * **Version Control**: A software system that allows programmers (and other people who work with digital files) to track their work and collaborate with others by providing Concurrency (maintaining consistancy despite multiple editors), Reservibility (keeping track of changes and allowing work to be undone), and Annotation (describing changes through labels, timestamps, and author information).
 
 ---
-## Homework for Week 5
+## Homework
 
 ## Do:
 
-1. Add an icebreaker question (or questions) to the [icebreaker git practice document](https://github.com/scholarslab/gitpractice/blob/master/Praxis2023.md) and check back on it every few days to answer all the previous, unanswered questions.
+1. Add an icebreaker question (or questions) to the [icebreaker git practice document](https://github.com/scholarslab/gitpractice/blob/master/Praxis2025.md) and check back on it every few days to answer all the previous, unanswered questions.

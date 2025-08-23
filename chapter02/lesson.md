@@ -1,12 +1,17 @@
-# Week 02 Lesson: Introduction to Data
+---
+layout: page
+title: Codelab / Chapter 02 / Lesson
+tags: codelab
+---
+# Introduction to Data
 
-Q: Print it out and delete it? Let's set it aside and revisit it at the end.
+[[Back to chapter index]](../)
 
 ## How to data?
 
 Let's start off, like before, not by talking about computers (a subject that I'm relatively well-qualified to talk about) and instead by talking about a subject that I'm not at all qualified to talk about (linguistics).
 
-![Rocky!](assets/rocky_bed.png)
+![Rocky!](../assets/rocky_bed.png)
 
 **What is this?**
 
@@ -18,7 +23,7 @@ When we translate or convert symbols from one language or representation to anot
 
 Morse Code is a well-known example of a code that encodes the latin alphabet, arabic numerals, and a few punctuation marks into a system of dots and dashes, signals that differ in duration. Well, this is not entirely true. If it was just dots and dashes, it would be a binary code, but it's not.
 
-![https://en.wikipedia.org/wiki/Morse_code#/media/File:International_Morse_Code.svg](./assets/morse_code.png)
+![https://en.wikipedia.org/wiki/Morse_code#/media/File:International_Morse_Code.svg](../assets/morse_code.png)
 
 **What can we make out about Morse code?**
 
@@ -35,7 +40,7 @@ Let's get closer to talking about actual digital stuff. This is a good time to a
 
 ## Claude Shannon
 
-![Claude Shannon on a unicycle](assets/shannon.jpg)
+![Claude Shannon on a unicycle](../assets/shannon.jpg)
 
 Shannon was an American electrical engineer and mathematician known for his foundational work on information theory and digital circuits, and for his enthusiasm for mathematical puzzles, juggling, unicycles, and computer chess. He created a machine (with his student, the AI pioneer Marvin Minsky) whose only function was to turn itself off.
 
@@ -71,7 +76,7 @@ When we count: one, two, three, etc, we are listing a set of discrete symbols. T
 
 What's excluded from this set? For one, non-whole numbers, what mathematicians call "real numbers" that can have infinitesimally small differences between them. Think of it this way: there's no integer that sits between two and three, but there is an infinite number of real numbers between two and three.
 
-![https://www.nga.gov/collection/art-object-page.56350.html](assets/rothko.png)
+![https://www.nga.gov/collection/art-object-page.56350.html](../assets/rothko.png)
 
 We go to the East Building of the National Gallery of Art and look at this painting by Mark Rothko, _Orange and Tan_. What do we see? We stand closer and closer. We make the docent nervous. We lean forward, almost touching the paint with our foreheads. The docent starts to signal frantically to a guard. What do we see?
 
@@ -79,7 +84,7 @@ From far away, we see the paint. From close in, we see the paint, bigger, and th
 
 When we visualize music performed by an physical instrument, it's as a continuous waveform. It's smooth and if we look closer and closer, we don't see any gaps. When we visualize a digital Spotify stream, it's a series of jagged stairs that aproximate the waveform. It's full of discontinuities. In the registers at the very edges of human hearing, the stream is designed to be more jagged.
 
-![https://www.youtube.com/watch?app=desktop&v=64FSgQdWHrE](assets/analog_digital.jpg)
+![https://www.youtube.com/watch?app=desktop&v=64FSgQdWHrE](../assets/analog_digital.jpg)
 
 It turns out, computers don't really do "infinite". Remember the Babbage's Difference Engine: there's only so many gears with so many teeth. You can add more, but you can't add infinitely more. Digital computers are also machines that exist in reality and while we build them at a very small scale, we can't build infinitely small. So we get "digital" as a kind of compromise: these nice round numbers that don't exist in nature that we can use to aproximate the complexity of reality.
 
@@ -91,7 +96,7 @@ Let's talk about what a computer is again, but this time let's not be cute about
 
 As a rule of thumb, the more transistors (and the higher density of transistors), the more powerful the computer. We've gotten really good at making transistors really small. In the late 1960s, the Apollo Guidance Computer that navigated spaceships to the moon, a marvel of miniaturization, and back had around 10,000 transistors in it.
 
-![https://en.wikipedia.org/wiki/Apollo_Guidance_Computer#/media/File:Agc_view.jpg](assets/Agc.jpg)
+![https://en.wikipedia.org/wiki/Apollo_Guidance_Computer#/media/File:Agc_view.jpg](../assets/Agc.jpg)
 
 A decade later, this was roughly how much the first popular personal computers (the Apple II, the Radio Shack TRS-80) had. The main Apple M1 chip in my laptop, a model from a few years ago, has 16 billion transistors and a whole lot more when you consider the rest of the machine: the chips to control all the subsidiary functions of the laptop, and the chips to contain the memory and storage.
 
@@ -133,15 +138,15 @@ There's an even simpler kind of data to represent using binary numbers than whol
 
 These number systems are just different representations of the same numerical ideas. Other forms of data can be encoded using numbers. Under the hood, each character in text data is represented on a character encoding table that map numbers to letters. An important and influential encoding scheme is ASCII: the American Standard Code for Information Interchange, formalized in 1968. ASCII maps Latin letters and Arabic numerals, as well as common punctuation symbols, to a set of 128 numbers. 128 is 2^7, so these numbers can be represented by a total of 7 bits.
 
-![ASCII table](assets/ascii.png)
+![ASCII table](../assets/ascii.png)
 
 Note that we have to encode "whitespace" (non-visible, but meaningful elements like spaces and line breaks) as characters as well.
 
-Since the 1960s, software developers have created a plethora of character encodings, often to represent characters from other languages. Although you might occasionally run into these in older datasets, the singular modern text standard is called Unicode (well, sort of singular, since it's a family of encodings), which strives express the complete canon of human language. The current specification, Unicode 13, encompasses 143000 characters, including emoji and archaic scripts. Unicode functionally encodes the entirety of known human written language, includng dead and undecyphered languages. Here's the code chart for the second millenium BC undecyphered Minoan script [Linear A](assets/unicode_linear-a.pdf).
+Since the 1960s, software developers have created a plethora of character encodings, often to represent characters from other languages. Although you might occasionally run into these in older datasets, the singular modern text standard is called Unicode (well, sort of singular, since it's a family of encodings), which strives express the complete canon of human language. The current specification, Unicode 13, encompasses 143000 characters, including emoji and archaic scripts. Unicode functionally encodes the entirety of known human written language, includng dead and undecyphered languages. Here's the code chart for the second millenium BC undecyphered Minoan script [Linear A](../assets/unicode_linear-a.pdf).
 
 The first 128 characters of Unicode are identical to ASCII, which helps maintain backwards compatibility with older Latin text data. Under Unicode (UTF-8, specifically), a single Latin alphabet character takes 8 bits to store.
 
-Having basically all text files encoded in Unicode is especially helpful because, just like picking up a book whose language you don't know, character encodings often have to be guessed and it's easy to guess almost correctly but not entirely correctly. There's an example of a text file containing the 1920 Karel Čapek novel RUR (from which we get the word "robot") in Czech [encoded in UTF-8](assets/rur.txt) and [encoded in the archaic Windows-1250 encoding](assets/rur-1250.txt).
+Having basically all text files encoded in Unicode is especially helpful because, just like picking up a book whose language you don't know, character encodings often have to be guessed and it's easy to guess almost correctly but not entirely correctly. There's an example of a text file containing the 1920 Karel Čapek novel RUR (from which we get the word "robot") in Czech [encoded in UTF-8](../assets/rur.txt) and [encoded in the archaic Windows-1250 encoding](../assets/rur-1250.txt).
 
 ## Colors
 
@@ -155,4 +160,4 @@ Byte is another common unit of measurement for data. The term is a play on bit a
 Bytes and bits are often modified with metric scale prefixes: kilobyte, megabit, gigabyte etc. But hang on a second: "kilo" means "one thousand" and "mega" means "one million" and so on, but this is mixing powers-of-ten with powers-of-two!
 
 
-## Revisit: Print it out and delete it?
+## Print it out and delete it?

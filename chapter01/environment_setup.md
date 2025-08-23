@@ -1,4 +1,12 @@
-# Code Lab Week 1: Environment Setup
+---
+layout: page
+title: Codelab / Chapter 01 / Environent Setup
+tags: codelab
+---
+
+[[Back to chapter index]](../)
+
+When we code, we rely on an ecosystem of software tools and mechanisms to install new tools and arrange them. Before start into the fun stuff, we need to get our computers ready for development work by setting these up.
 
 If you're using a Mac, you're most of the way there already. You almost certainly have the shell that we'll be using already (more on what that means later). Python, the programming language we'll be using is already built into your computer. But we'll want to set it up so it works just like we want it to. Follow the **MacOS** track below.
 
@@ -32,7 +40,7 @@ At the end of this step, you should be able to enter the command `pipenv --versi
 
 ### Step 3-M: Visual Studio Code
 
-Visual Studio Code is what's called an IDE, an integrated development environment, which is a text editor software specifically designed for coding. Just like English doesn't care if you write it in pen on the back of a napkin or on an electric typewriter, the things we'll write don't care what IDE or even regular, plain text editor (it has to be *plain* text though, which we'll talk about next week) you write it on. But unless you have a real reason not to, VS Code will make your life easier, so that's what we're going to teach.
+Visual Studio Code is what's called an IDE, an integrated development environment, which is a text editor software specifically designed for coding. Just like English doesn't care if you write it in pen on the back of a napkin or on an electric typewriter, the things we'll write don't care what IDE or even regular, plain text editor (it has to be *plain* text though, which we'll talk about next chapter) you write it on. But unless you have a real reason not to, VS Code will make your life easier, so that's what we're going to teach.
 
 * Install [VS Code](https://code.visualstudio.com/)
 * Install the [Python extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)

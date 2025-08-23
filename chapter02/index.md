@@ -1,4 +1,11 @@
-# Week 2: Introduction to Data
+---
+layout: page
+title: Codelab / Chapter 02
+tags: codelab
+---
+# Introduction to Data
+
+[[Back to Codelab index]](../)
 
 ![Hazel!](assets/sleeping_hazel.jpeg)
 
@@ -18,7 +25,7 @@
 * **String**: Text data. We can think of it as a list of this as a list of characters. For example, `"Hazel"[2]` is `'z'`.
 
 ---
-## Homework to do before Week 3
+## Homework
 
 ## Do:
 
