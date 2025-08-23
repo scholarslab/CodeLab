@@ -39,7 +39,7 @@ Codelab is broadly divided into two sections: _Codelab Fundamentals_, which intr
   * Python interactive interpreter
   * Saving and running Python files
   * Hello World
-  * VariablesW
+  * Variables
   * Classes, Objects, and Instances
   * Simple types
   * Documentation

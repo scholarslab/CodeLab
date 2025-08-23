@@ -1,4 +1,9 @@
-# Week 5 Lesson: Introduction to Python
+---
+layout: page
+title: Codelab / 05 Introduction to Python / Lesson Document
+tags: codelab
+---
+
 !["Monty Python"](assets/montypython.jpg)
 
 ## Before we get started...

@@ -1,4 +1,9 @@
-# Week 5: Introduction to Python
+---
+layout: page
+title: Codelab / 05 Introduction to Python
+tags: codelab
+---
+
 ![https://media.giphy.com/media/9xaryfkdWqqiK6QHKf/giphy.gif](https://media.giphy.com/media/9xaryfkdWqqiK6QHKf/giphy.gif)
 
 ## Lesson
