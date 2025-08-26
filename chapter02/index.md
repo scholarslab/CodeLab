@@ -10,7 +10,7 @@ tags: codelab
 ![Hazel!](assets/sleeping_hazel.jpeg)
 
 ## Lesson
-[Lesson document](intro_data.md)
+[Lesson document](lesson/)
 1. What is data?
 2. How to data
 3. Basic data representations
