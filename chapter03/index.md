@@ -10,7 +10,7 @@ tags: codelab
 ![Rocky!](assets/rocky_eyes.jpg)
 
 ## Lesson
-[Lesson document](structured_data.md)
+[Lesson document](lesson/)
 1. Making data more complicated
 2. Text files and binary files
 3. Lists
