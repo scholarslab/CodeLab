@@ -50,9 +50,9 @@ I think it's actually kind of funny, teaching Shannon and information theory in 
 
 After he got his doctorate, Shannon went to work at Bell Labs, where he worked on secure communications during World War II (when Alan Turing, working on breaking codes instead of making them, visited Bell in 1942, the two met for tea daily). One major problem with scrambling messages so that they can't be read is that messages written in human languages tended to be really predictable. At a basic level, there is an enormously uneven distribution of letters in English (as one example). At a higher level, some sequences of letters appear frequently while others never appear in any word and there are many more possible combinations of five letters than there are five-letter words. Predictability opened up weaknesses that codebreakers could exploit. In fact, Turing's work breaking the German Enigma cipher often relied on the frequency of common messages like "nothing to report".
 
-In *A Mathematical Theory of Communication*, Shannon considered the meaning of this sort of uneven distribution. Let's say that we're playing a few rounds of the word game Hangman, but I take pity on how poorly you're doing and tell you one the first letter of a word right off the bat. **Do I give away more or less information if I tell you that the word starts with "S" or with "Q"?**
+In *A Mathematical Theory of Communication*, Shannon considered the meaning of this sort of uneven distribution. Let's say that we're playing a few rounds of the word game Hangman, but I take pity on how poorly you're doing and tell you the first letter of the first word right off the bat. **Do I give away more or less information if I tell you that the word starts with "S" or with "X"?**
 
-Shannon recognized that what the amount of information conveyed could be understood as entropy, essentially the degree to which you are surprised at learning something. If I tell you that the word starts with S, that fact tells you less than if I told you that the word starts with Q because many more words start with S than start with Q. In the same sense, telling you a losing lottery number conveys less information than telling you a winning lottery number. As we've seen, in communication, we often intuitively reduce the length of text by swapping out common letter combinations, phonemes, and phrases with shorter replacements: BMULD, LMAO, Ph.D., SLab, et al. Mechanically, we can reduce the size of lower entropy files like English text by compressing them.
+Shannon recognized that what the amount of information conveyed could be understood as entropy, essentially the degree to which you are surprised at learning something. If I tell you that the word starts with S, that fact tells you less than if I told you that the word starts with X because many more words start with S than start with X. In the same sense, telling you a losing lottery number conveys less information than telling you a winning lottery number. As we've seen, in communication, we often intuitively reduce the length of text by swapping out common letter combinations, phonemes, and phrases with shorter replacements: BMULD, LMAO, Ph.D., SLab, et al. Mechanically, we can reduce the size of lower entropy files like English text by compressing them.
 
 Shannon suggested that we could exactly quantify this degree of entropy to measure the information content. Consider a coin that has an equal chance of flipping heads or tails. Flipping that coin selects between two equally possible outcomes, producing an entropy of one "bit", a portmanteau of "Binary Digit".
 
@@ -66,11 +66,11 @@ All of this is useful to keep in your short term memory as we transition to actu
 
 So we've been dancing around this term, Digital Humanities. **But what exactly is "digital"? What is "analog"?**
 
-Digital is, as the name suggests, something that has to do with numbers can count. Analog is "analogous" to reality. So what does this mean?
+Digital is, as the name suggests, something that has to do with numbers we can count. Analog is "analogous" to reality. So what does this mean?
 
-Q: "How do we, as people, count?"
+Q: *"How do we, as people, count?"*
 
-A: "Digitally"
+A: *"Digitally"*
 
 When we count: one, two, three, etc, we are listing a set of discrete symbols. That's "discrete", meaning "distinct and separate" rather than "discreet", meaning "circumspect". So, these counting numbers are whole numbers, positive and negative, and zero; these are called integers.
 
@@ -98,7 +98,7 @@ As a rule of thumb, the more transistors (and the higher density of transistors)
 
 ![https://en.wikipedia.org/wiki/Apollo_Guidance_Computer#/media/File:Agc_view.jpg](../assets/Agc.jpg)
 
-A decade later, this was roughly how much the first popular personal computers (the Apple II, the Radio Shack TRS-80) had. The main Apple M1 chip in my laptop, a model from a few years ago, has 16 billion transistors and a whole lot more when you consider the rest of the machine: the chips to control all the subsidiary functions of the laptop, and the chips to contain the memory and storage.
+A decade later, this was roughly how much the first popular personal computers (the Apple II, the Radio Shack TRS-80) had. The main Apple M4 chip in my laptop, a model from a few years ago, has 28 billion transistors. The total number is even higher when you consider the rest of the machine: the chips to control all the subsidiary functions of the laptop and to contain the memory and storage.
 
 Remember that a transistor is a valve with two settings: on and off, which we can also represent as True and False and as ones and zeros. So it has two states, kinda-sorta like Morse code. As a consequence of transistors being the most fundamental building block of computing, the fundamental "cognitive" abstraction of our computers, how they process and store information, is binary. A bit of trivia: the On/Off power switch symbol (you know, this thing: ⏻) is an ISO standard symbol comprising a one and a zero.
 
