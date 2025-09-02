@@ -92,7 +92,7 @@ There is what is probably best termed a _speculation_ in physics called "digital
 
 ## What is a (digital) computer?
 
-Let's talk about what a computer is again, but this time let's not be cute about baboon bones. A computer is a box full of electricity that plays TikTok (Note: update cultural reference every 5 Praxis cohorts). It's a very complicated box, but when we zoom all the way in, the really important stuff is made up of transistors. A transistor is basically an electrical valve: if you switch it on, it allows electricity to flow through; switch it off and it doesn't. The trick is that the valve is controlled electrically also, so you arrange all the transistors in this complicated way where they're controlling each other and voila: TikTok.
+Let's talk about what a computer is again, but this time let's not be cute about baboon bones. A computer is a box full of electricity that plays TikTok (Note: update cultural reference every 5 Praxis cohorts). It's a very complicated box, but when we zoom all the way in, the really important stuff is made up of transistors. A transistor is basically an electrical valve: if you switch it on, it allows electricity to flow through; switch it off and it doesn't. The trick is that the valve is controlled electrically also, so you arrange all the transistors in this complicated way where they're controlling each other *et voila: TikTok*.
 
 As a rule of thumb, the more transistors (and the higher density of transistors), the more powerful the computer. We've gotten really good at making transistors really small. In the late 1960s, the Apollo Guidance Computer that navigated spaceships to the moon, a marvel of miniaturization, and back had around 10,000 transistors in it.
 
