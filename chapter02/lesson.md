@@ -157,7 +157,10 @@ Colors are most often shown as hexadecimal numbers (base 16). Hexadecimal uses 0
 ## Also: Bytes!
 Byte is another common unit of measurement for data. The term is a play on bit and was coined in the 1950s for Project SAGE, a prototype computer system to coordinate American air defenses in the Cold War. There is some historical ambiguity, but a modern byte is 8 bits, representing the smallest power-of-2 size for useful data (such as a single character or a small integer).
 
-Bytes and bits are often modified with metric scale prefixes: kilobyte, megabit, gigabyte etc. But hang on a second: "kilo" means "one thousand" and "mega" means "one million" and so on, but this is mixing powers-of-ten with powers-of-two!
+Bytes and bits are often modified with SI unit prefixes: kilobyte, megabit, gigabyte etc. But hang on a second: "kilo" means " thousand", "mega" means "million", "giga" is "billion", and so on, but this is mixing powers-of-ten with powers-of-two!
 
+To put everything into context, a single word comprising Latin characters and common spacing and punctuation uses one byte per character. So "Rocky" takes up 5 bytes. A CD, which encodes binary data in microscopic grooves, holds around 681 million bytes. A DVD has a capacity about 7 times that of a CD, at 4.7 billion bytes. A base model iPhone 16 has a storage capacity of 128 Gigabytes, or 128 billion bytes. 
+
+*If the average word length is 5 character (6 with spaces), how many words can fit on a DVD? If the average movie is 2 hours long and contains 30 frames every second, how many words are a picture worth?*
 
 ## Print it out and delete it?
