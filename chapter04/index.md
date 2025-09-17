@@ -22,14 +22,20 @@ tags: codelab
 
 
 ## Setup
-There's a bit of setup for git that I forgot to have y'all do. First, we need to set up name and email in Git. You don't have to use your real identity, but if it might be useful to have people be able to contact you about your change. [Github has some strategies](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address) for maintaining some privacy for this step.
+There's a bit of setup for any new git install. First, we need to set up name and email in Git. You don't have to use your real identity, but if it might be useful to have people be able to contact you about your change. [Github has some strategies](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address) for maintaining some privacy for this step.
 
 ```console
 git config --global user.email user@domain.com
 git config --global user.name 'Public Name'
 ```
 
-Then, we'll want to set the default text editor if you end up using git through the command line. Vim is the default and it's another thing to learn if you don't already know how to use it, so I would suggest nano as an easier to use option:
+Next, we'll want to tell Git how to handle merges, which is a key function of git. It's not too important to know what the different ways that git does this are right now, but we need to pick one to avoid an error message. So let's go ahead and use what I think is the best option for you:
+
+```
+git config --global pull.rebase false
+```
+
+Finally, we'll want to set the default text editor if you end up using git through the command line. Vim is the default and it's another thing to learn if you don't already know how to use it, so I would suggest nano as an easier to use option:
 
 ```console
 git config --global core.editor "nano"
