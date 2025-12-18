@@ -33,7 +33,7 @@ tags: codelab
 * **Variable**: A container for data. Variables let us squirrel away a piece of data using a variable name and the assignment operator (`a = 5`) and then refer back to it later (`a + 10`). Any piece of data that we want to keep track of, we have to store away as a variable.
 
 ---
-## Homework for Week 5
+## Homework
 
 ### Coding Assignment 0: Simplified Pig Latin
 Produce a simple program to accept a single word as text input and then print out the [pig latin](https://en.wikipedia.org/wiki/Pig_Latin) translation.

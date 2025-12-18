@@ -9,7 +9,7 @@
 3. Functions and methods
 
 ---
-## Homework for Week 6
+## Homework
 
 ### Coding assignment 1a
 
