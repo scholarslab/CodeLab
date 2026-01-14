@@ -1,4 +1,9 @@
-# Week 6: Functions and Methods
+---
+layout: page
+title: Codelab / 06 Functions and Methods
+tags: codelab
+---
+
 ![I'm Invincible](assets/invincible.gif)
 
 ---
