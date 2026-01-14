@@ -22,6 +22,50 @@ The most basic data structures contain just a straightforward value: the integer
 
 We can also chain different data structures together, such as creating a list of lists to form something like a matrix.
 
+### Sequences
+
+Speaking of lists: lists are one of the most common and useful types in Python. It is a kind of ordered collection, neaning that it contains other objects and those objects are arranged in a sequence. Lists in Python are defined using square brackets, like so:
+
+```python
+l = ["Brandon","Ronda","Jeremy","Shane"]
+```
+
+We can refer to an object in a list (an "element") using its position within the list, called its "index". Python list indices, like many other things in computing, are zero-indexed, meaning that we start counting at zero. To retrieve the first element (the element at index 0) in the list we just defined, we can use this code:
+
+```python
+print(l[0])
+```
+
+Lists can contain any other type of object, including other lists (so you can have lists of lists, which are very useful for things like coordinates). You can play with these examples in the Python interpreter to try out different list actions:
+
+```python
+# Defining a list that we assign to the variable `dogs`
+dogs = ["Toby","Bofur","Hazel","Rocky","Maple","Henry","Fat Dog","Monty","Keefa","Triscuit"]
+# print the first element in `dogs` (remember: zero-indexing)
+print(dogs[0])
+# print the last element in `dogs`
+print(dogs[-1])
+# print the sub-list consisting of the fourth element in `dogs` to the end
+print(dogs[3:])
+# print the length of the `dogs` list
+print(len(dogs))
+# sort the dogs list, then print it
+dogs.sort()
+print(dogs)
+# sort the dogs list in reverse, then print it
+dogs.sort(reverse=True)
+print(dogs)
+```
+
+[Python 3 Docs: Built-in Types: Sequence Types](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range)
+
+Strings are actually sequence types, just like lists! They're sequences of characters and we can address particular characters just like with lists.
+
+```python
+gooddog = "Rocky is a good dog"
+print("Every dog"+gooddog[5:])
+```
+
 
 ### Type conversion
 

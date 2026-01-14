@@ -8,6 +8,7 @@ tags: codelab
 
 ## Lesson
 [Lesson document](intro_python.md)
+0. A brief note about learning with AI 
 1. Let's get coding
 2. Python interactive interpreter
 3. Data structures
