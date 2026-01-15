@@ -39,9 +39,11 @@ tags: codelab
 ### Coding Assignment 0: Simplified Pig Latin
 Produce a simple program to accept a single word as text input and then print out the [pig latin](https://en.wikipedia.org/wiki/Pig_Latin) translation.
 
-When I first assigned this homework, I didn't actually know that Pig Latin is a more complicated and potentially more ambiguous algorithm than I thought! Because of this, we can implement the simplest case for the word provided: just shift the first letter to the end and add "ay" to it.
+Pig Latin is... more complicated and potentially more ambiguous than I thought when I first made this assignment. Because of this, we should start by implementing the simplest case for the word provided: just shift the first letter to the end and add "ay" to it.
 
-Taking into consideration words starting with consonant clusters or vowels requires some conditional logic, which we haven't gone over yet, but feel free to jump ahead if you really want to show off.
+Taking into consideration words starting with consonant clusters or vowels requires some conditional logic, which we haven't learned yet, but feel free to jump ahead if you really want to show off.
+
+So, input "dog" should print "ogday", "Shane" should print "haneSay", and "ogopogo" should print "gopogooay".
 
 Your code should be structured something like this:
 
