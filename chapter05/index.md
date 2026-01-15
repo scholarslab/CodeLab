@@ -19,7 +19,7 @@ tags: codelab
 5. Dogs
 
 ## Resources
-[Python data types cheatsheet](types_cheatsheet.md)
+[Python data types cheatsheet](types_cheatsheet/)
 
 ## Terms
 * **Binary**: Base-2 numeral system, consisting only of 0 and 1. Counting up from 0, the binary numbers are: 0, 1, 10, 11, 100, 101, 110, 111, 1000...
