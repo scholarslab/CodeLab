@@ -1,13 +1,16 @@
 ---
 layout: page
-title: Codelab / 05 Introduction to Python
+title: Codelab / Chapter 05
 tags: codelab
 ---
+# Introduction to Python
+
+[[Back to Codelab index]](../)
 
 ![https://media.giphy.com/media/9xaryfkdWqqiK6QHKf/giphy.gif](https://media.giphy.com/media/9xaryfkdWqqiK6QHKf/giphy.gif)
 
 ## Lesson
-[Lesson document](intro_python.md)
+[Lesson document](lesson/)
 0. A brief note about learning with AI 
 1. Let's get coding
 2. Python interactive interpreter

@@ -1,14 +1,17 @@
 ---
 layout: page
-title: Codelab / 06 Functions and Methods
+title: Codelab / Chapter 06
 tags: codelab
 ---
+# Functions and Methods
+
+[[Back to Codelab index]](../)
 
 ![I'm Invincible](assets/invincible.gif)
 
 ---
 ## Lesson
-[Lesson document](lesson.md)
+[Lesson document](lesson/)
 1. Discuss homework assignments
 2. Types
 3. Functions and methods
