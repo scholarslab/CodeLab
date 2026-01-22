@@ -4,7 +4,9 @@ title: Codelab / 06 Functions and Methods / Lesson Document
 tags: codelab
 ---
 
-![Hazel in bed](./assets/hazel_bed.jpg)
+![Hazel in bed](../assets/hazel_bed.jpg)
+
+[[Back to chapter index ]](../)
 
 ## Types
 We've covered a few different ways to represent and organize data already: booleans, integers, strings, floats, etc. We can describe these as "data structures", a general term for a way for a computer to, ah, structure its data. Programming languages have their own specific kinds of built-in data structures and we'll eventually discuss using custom ones in external libraries and even building our own. For now, we've played around with a few of the ones in Python's standard set.

@@ -6,6 +6,8 @@ tags: codelab
 
 !["Monty Python"](assets/montypython.jpg)
 
+[[Back to chapter index ]](../)
+
 ## Before we get started...
 Computer programs are algorithms. These two things are so connected in the lay imagination that they are sometimes used as synonyms for each other. The media talks about "The Algorithm" when it describes Google's search and ad services, Netflix's recommendations, or TikTok's infinite video scroll, but an algorithm isn't some sort of magic tech thing. It's just a sequence of unambiguous procedures, like a particularly rigorous recipe. A computer program is an algorithm that's formatted in a language that a computer can understand.
 
