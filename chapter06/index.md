@@ -17,6 +17,17 @@ tags: codelab
 3. Type conversion
 4. Functions and methods
 
+## Terms
+* **Argument**: A piece of data that is passed into a function call, which typically modifies the behavior of the function or method. Often used interchangeably with "Parameter".
+* **Built-in**: In Python, a fundamental component of the language that does not require an `import` statement, e.g. built-in functions, built-in data types, etc. 
+* **Code block**: A formal logical grouping of code, used to define the boundaries of code like a function definition or a conditional block. Can be nested (one block inside of another). In Python, these are demarcated with indentation.
+* **Function call**: execute a function, often with arguments that modify its behavior.
+* * **Function definition**: The code that names and implements a function, but does not call it. 
+* **Method**: A function that belongs to an object, which we can think as enacting the method.
+* **Parameter**: Part of a funcrtion definition that indicates the expectated araguments that will be or can be passed in. Provides a name for the data passed in through function call arguments. Often used interchangeably with "Argument". 
+* **Return value**: The result of a function call. Can be empty. Enacted with the `return` keyword inside of a function definition block.
+* **Sequence**: a linear array of data, e.g. list, string. Typically accessed through index addressing.
+
 ---
 ## Homework
 
