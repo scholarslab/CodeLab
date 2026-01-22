@@ -140,6 +140,8 @@ True
 False
 ```
 
+![Rocky Barry Lyndon](../assets/rocky_barry_lyndon.jpg)
+
 ## Functions
 
 We've also already used a few functions. A function is a way to organize code by packaging many lines of code together into a single bundle, like how a math function ties together many different operations. If we're writing a cookbook, we might explain how to fry an egg at the beginning and, later, if we have a recipe for a fancy burger or for bibimbap, we can just refer to that explanation without having to repeat ourselves.
@@ -280,8 +282,6 @@ print(pig_latin("Hazel"))
 In the same way that we pass an argument into a function, return passes data back from the element to the function call.
 
 So, our `pig_latin()` function receives "Hazel" through the `word` argument and returns the result "azelhay". That result is passed back to `print()` in the function call. If we printed directly from the function, this function would only be good for printing; instead, we have access directly to the data that it returns.
-
-![Dead Line](./assets/deadline.gif)
 
 
 ### Methods
