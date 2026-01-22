@@ -175,6 +175,19 @@ If you're really interested in how Python does anything, including `pow()`, you 
 
 Going back to the cookbook metaphor, if we imagine a function to fry an egg, the function call might look something like this: `fry_egg(hardness=2, salt=True)`. Here, we've explicitly labeled the arguments that we're passing in, which is an alternative to implying arguments by their order.
 
+We can nest functions calls by passing the return value of one call as the argument for another. Let's take a look at these lines:
+
+```python
+a = pow(2,3)
+print(a)
+```
+
+If we don't need to reference the result `a` again, we can combine these two lines into:
+
+```python
+print(pow(2,3))
+```
+
 ### Built-in Functions
 
 `pow()` is what is called a built-in function in Python. These are the most fundamental, most basic operations in Python which do not require any `import` statement to use. We've already used a few other built-in functions. `print()` is one we've used a lot. `exit()` and `input()` are others. We've also just used `int()` and `str()` to convert between types, and `type()`, which returns the type of a variable.
@@ -229,7 +242,8 @@ Okay, let's try another example. Let's take your simplified pig latin code from 
 
 ```python
 def pig_latin(word):
-  return word[1:]+word[0]+"ay"
+  latin = word[1:]+word[0]+"ay"
+  return latin
 
 print(pig_latin("Hazel"))
 print(pig_latin("is"))
@@ -237,6 +251,8 @@ print(pig_latin("a"))
 print(pig_latin("good"))
 print(pig_latin("dog"))
 ```
+
+Here, the `pig_latin()` function has a return value, `latin`, that is the string containing the pig latin version of the input.
 
 Easy, right? Now we don't have to repeat the pig latin code every time we need to use it. We just call it five times here for five words. By defining a new function `pig_latin()` this way, we can reuse it whenever we want *in the same program* (.py file) or in the same interpreter session (it goes away after we `exit()`).
 
@@ -246,7 +262,8 @@ But since we defined the important bits as a function, we also only need to chan
 
 ```python
 def pig_latin(word):
-  return word[1:]+word[0].lower()+"ay"
+  latin = word[1:]+word[0].lower()+"ay"
+  return latin
 ```
 
 ### Return values
