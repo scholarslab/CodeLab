@@ -13,8 +13,9 @@ tags: codelab
 ## Lesson
 [Lesson document](lesson/)
 1. Discuss homework assignments
-2. Types
-3. Functions and methods
+2. Data structures
+3. Type conversion
+4. Functions and methods
 
 ---
 ## Homework
