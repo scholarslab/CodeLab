@@ -1,4 +1,12 @@
-# Week 07: Control Flow
+---
+layout: page
+title: Codelab / Chapter 07
+tags: codelab
+---
+# Control Flow
+
+[[Back to Codelab index]](../)
+
 You guys are all doing great!
 
 ![racoon_highfive dot gif](assets/racoon_highfive.gif)
@@ -19,7 +27,7 @@ You guys are all doing great!
 ---
 ## Homework for Week 07
 
-Try pair programming with a buddy!
+Consider pair programming with a buddy!
 
 ## Assignment 0:
 
@@ -74,7 +82,7 @@ print(filter_evens(nums))
 
 ### Assignment 3: FizzBuzz
 
-This is a classic coding puzzle, another rite of passage. Write a program that takes as input a number and then plays the [FizzBuzz game](https://en.wikipedia.org/wiki/Fizz_buzz) until that number is reached. This is a classic programming puzzle and, very helpfully, Wikipedia actually has a list of solutions, including one in Python. But if you use it, be prepared to explain how it works in front of the Fellowship in the next Codelab. It's not the simplest answer (and, in fact, it's Python 2 code), but it might be useful to reverse-engineer!
+This is a classic coding puzzle, another rite of passage. Write a program that takes as input a number and then plays the [FizzBuzz game](https://en.wikipedia.org/wiki/Fizz_buzz) until that number is reached. This is a classic puzzle that's been an introductory task for millions of beginner programmers.
 
 Sample code:
 ```python

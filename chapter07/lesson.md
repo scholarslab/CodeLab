@@ -1,12 +1,19 @@
-## Week 07: Control Flow
+---
+layout: page
+title: Codelab / Chapter 07 / Lesson Document
+tags: codelab
+---
+# Control Flow
+
+[[Back to chapter index ]](../)
 
 ![hazel_sleeping](assets/hazel_sleeping.jpg)
 
 The order of instructions which a computer program executes is known as "control flow" and we can think it as like a river with a strangely winding, branching, looping course. Functions are our first step in working with code that doesn't simply run linearly, one line after the next. After we define them, we can call back on functions again and again, from anywhere. With functions, just because a line of code appears before a later one doesn't mean that it isn't executed later. 
 
-But functions are still... functionally linear: we're basically copying out a block of code and pasting it back in elsewhere and so we know every time that a particular function will be called. The river always winds one way, the same way, every time.
+But functions are still... functionally linear: we're basically copying out a block of code and pasting it back in elsewhere and so we know every time that a particular function will be called. Which is to say, even though it might be discontinuous, the river always winds one way, the same way, every time.
 
-But sometimes we want to change things up, to make decisions based on what input we provide or what time of day we run our code or even just randomly. Sometimes we want the river to fork. Sometimes we want to take a different path this time than the next and the last. To accomplish this, we must use conditionals and loops.
+But sometimes we want to change things up, to make decisions based on what input we provide or what time of day we run our code or even just randomly. Sometimes we want the river to fork. Sometimes we want to take a different path this time than the last and the next. To accomplish this, we must use conditionals and loops.
 
 This is where we start to get to the fun stuff!
 
@@ -24,7 +31,7 @@ else:
   print("Zero")
 ```
 
-Let's take a look at the actual *conditions*: `x>0` and `x<0`. These are valid Python statements. If you define a variable `x` and then execute `x>0` in the Python interactive interpreter, we can see that they return Boolean values, `True` or `False`:
+Let's take a look at the actual *conditions*: `x>0` and `x<0`. These are valid Python statements themselves. If you define a variable `x` and then execute `x>0` in the Python interactive interpreter, we can see that they return Boolean values, `True` or `False`:
 
 ```python
 >>> x = 5
@@ -65,7 +72,7 @@ print("There is "+s+" I in TEAM")
 If a variable is the special `None` object, an empty string (""), or the numeric value zero, it evaluates as boolean `False`. Otherwise, it is `True`.
 
 ```python
-dog = ""
+dog = input("Input dog: ")
 if dog:
   print("Yay!")
 else:
