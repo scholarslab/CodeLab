@@ -13,7 +13,7 @@ You guys are all doing great!
 
 ## Outline
 1. Discuss homework assignments
-2. [Conditions and Loops](./lesson.md)
+2. [Conditions and Loops](lesson/)
 
 ## Terms
 
@@ -25,7 +25,7 @@ You guys are all doing great!
 > - Brandon
 
 ---
-## Homework for Week 07
+## Homework for Chapter 07
 
 Consider pair programming with a buddy!
 
