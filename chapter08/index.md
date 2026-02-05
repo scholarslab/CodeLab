@@ -5,6 +5,8 @@ tags: codelab
 ---
 # Control Flow (loop around)
 
+[[Back to Codelab index]](../)
+
 ![Hazel header](./assets/20170126.jpg)
 
 ## Outline

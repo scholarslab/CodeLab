@@ -3,9 +3,12 @@ layout: page
 title: Codelab / Chapter 08 / Lesson Document
 tags: codelab
 ---
-## Control Flow (loop around)
+# Control Flow (loop around)
 
-#### Redirecting flow
+[[Back to chapter index ]](../)
+
+
+## Redirecting flow
 
 Sometimes, it can be hard to construct a `while` loop conditional ahead of time. Sometimes, the flow isn't dependent on sequences. We might have complex logic that needs to break out of a loop in the middle of our loop code block. Or we might want to write out each distinct condition for reasons of legibility. Other times, we need to skip past the rest of the code block, to continue on with the loop rather than break out of it entirely.
 
@@ -43,7 +46,7 @@ Here, we are priming `word` to be "DUCK". This is another common while loop tech
 
 Which version makes more logical sense to you?
 
-### Nested Loops: Loops, But More.
+## Nested Loops: Loops, But More.
 
 ![nesting](assets/nesting.gif)
 
