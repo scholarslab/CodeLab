@@ -1,10 +1,15 @@
-## Week 08: Program flow (loop around)
+---
+layout: page
+title: Codelab / Chapter 08 / Lesson Document
+tags: codelab
+---
+## Control Flow (loop around)
 
 #### Redirecting flow
 
 Sometimes, it can be hard to construct a `while` loop conditional ahead of time. Sometimes, the flow isn't dependent on sequences. We might have complex logic that needs to break out of a loop in the middle of our loop code block. Or we might want to write out each distinct condition for reasons of legibility. Other times, we need to skip past the rest of the code block, to continue on with the loop rather than break out of it entirely.
 
-To illustrate how we might want to accomplish these things, let's play the children's game Duck Duck Goose. Every cycle, we ask the user to type in "Duck" or "Goose". If the input is "Duck", we continue the loop from the top. If it's "Goose", we break out of it. We could write this in a simpler way, but this will help illustrate our new keywords.
+To illustrate how we might want to accomplish these things, let's play the children's game [Duck Duck Goose](https://en.wikipedia.org/wiki/Duck,_duck,_goose). Every cycle, we ask the user to type in "Duck" or "Goose". If the input is "Duck", we continue the loop from the top. If it's "Goose", we break out of it. We could write this in a number of different ways, but this will help illustrate our new keywords.
 
 ```python
 while 1:
@@ -20,10 +25,23 @@ At the top, `while 1` tells Python to loop forever because 1 (and every other no
 
 If the input word is "Duck", the `continue` tells Python to continue looping, back from the top, *without* going through the rest of the code. If we `continue`, we never reach the `print()` on line 7.
 
-If the input word is "Goose", we hit the `break` and Python breaks out of the entire loop. If we have an infinite loop like `while 1`, we probably want to hit a `break` at some point.
+If the input word is "Goose", we hit the `break` and Python breaks out of the entire loop. If we are using an infinite loop like `while 1`, we definitely want to hit a `break` at some point. The keywords `continue` and `break` can be used in any `for` or `while` loop to modify the control flow.
 
-`continue` and `break` can be used in any `for` or `while` loop. But be careful about overusing them, because they can make code hard to read.
+Now, a `while 1` loop is a little scary. In this example, our exit conditions are pretty direct and the user input prompt keeps memory use from growing uncontrollably, so it's arguably a sound choice.  And its use is really a faithful reproduction of the rules of the game, illustrating the inherent tension at the intersection of childhood and the infinite. 
 
+Now, we could have written this loop in other ways. Here's one example that is logically equivalent:
+
+```python
+word = "DUCK"
+while word != "GOOSE":
+    word = input("What do you say? ")
+    if word.upper() != "DUCK" and word.upper() != "GOOSE":
+        print("Maybe I should explain the rules again...")
+```
+
+Here, we are priming `word` to be "DUCK". This is another common while loop technique, where we set up an initial state so that the loop runs at least once. So while it's a little odd to imagine a version of this game where someone calls out "DUCK" to kick things off, it does make the exit condition a bit more logically straightforward.
+
+Which version makes more logical sense to you?
 
 ### Nested Loops: Loops, But More.
 
@@ -87,3 +105,5 @@ def got_dupes(numbers):
         i+=1
     return False
 ```
+
+We're using nested while loops here, because we care about the order of the numbers. That is, the inner loop has to start with next index from the current index of the outer loop. There is a way to write this with a for loop, even a little more cleanly than here, but the logic is cleaner and more obvious with a while loop, especially for a novice programmer.

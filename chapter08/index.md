@@ -1,12 +1,15 @@
-# Week 08: Control Flow (loop around)
+---
+layout: page
+title: Codelab / Chapter 08
+tags: codelab
+---
+# Control Flow (loop around)
 
 ![Hazel header](./assets/20170126.jpg)
 
 ## Outline
 1. Discuss homework assignments
 2. Loops (ctd)
-3. File input/output
-3. Return to Algorithms
 
 [Lesson document](./lesson.md)
 
