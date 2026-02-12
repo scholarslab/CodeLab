@@ -5,6 +5,8 @@ tags: codelab
 ---
 # Algorithms and File Operations
 
+[[Back to chapter index]](../)
+
 ### Candidate Obama Speaks at Google (a lesson of Sorts)
 
 By combining these basic components of comparison and loop logic, we've created an algorithm. Algorithms are ways to solve problems using an unambiguous set of instructions. So, "Knight to Queen's Bishop 3" rather than a more vague instruction like "attack the center". 
