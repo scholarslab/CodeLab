@@ -5,7 +5,9 @@ tags: codelab
 ---
 # Algorithms and File Operations
 
-![Hazel header](./assets/eva.jpg)
+[[Back to Codelab index]](../)
+
+![Eva header](./assets/eva.jpg)
 
 ## Outline
 1. Discuss homework assignments
