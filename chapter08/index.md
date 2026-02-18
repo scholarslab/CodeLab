@@ -13,7 +13,7 @@ tags: codelab
 1. Discuss homework assignments
 2. Loops (ctd)
 
-[Lesson document](./lesson.md)
+[Lesson document](./lesson/)
 
 ## Homework
 

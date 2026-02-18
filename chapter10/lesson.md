@@ -1,4 +1,11 @@
+---
+layout: page
+title: Codelab / Chapter 10 / Lesson Document
+tags: codelab
+---
 # Working with Structured Data
+
+[[Back to chapter index]](../)
 
 ## Data Structures
 

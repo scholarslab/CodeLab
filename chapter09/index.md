@@ -14,7 +14,7 @@ tags: codelab
 2. Sorting
 3. File input/output
 
-[Lesson document](./lesson.md)
+[Lesson document](./lesson/)
 
 ## Homework
 
