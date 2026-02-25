@@ -1,4 +1,11 @@
-# Week 11
+---
+layout: page
+title: Codelab / Chapter 11
+tags: codelab
+---
+# External Dependencies
+
+[[Back to Codelab index]](../)
 
 ![billmurray](assets/depends.gif)
 

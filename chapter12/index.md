@@ -1,4 +1,10 @@
-# Week 12: Web Scraping
+---
+layout: page
+title: Codelab / Chapter 12
+tags: codelab
+---
+# Web Scraping
+
 ![assets/netscape.gif](assets/netscape.gif)
 
 ## Agenda:

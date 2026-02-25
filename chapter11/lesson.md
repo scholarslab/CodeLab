@@ -1,4 +1,9 @@
-# Week 11: Depedencies
+---
+layout: page
+title: Codelab / Chapter 11 / Lesson Document
+tags: codelab
+---
+# Depedencies
 
 ![fatdog](assets/fatdog.jpg)
 

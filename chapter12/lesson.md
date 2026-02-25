@@ -1,4 +1,11 @@
-# Week 12: Web Scraping
+---
+layout: page
+title: Codelab / Chapter 12 / Lesson Document
+tags: codelab
+---
+# Web Scraping
+
+[[Back to Codelab index]](../)
 
 ## Python Libraries, revisited
 
