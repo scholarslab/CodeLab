@@ -256,6 +256,7 @@ Which will allow us to get some pretty graphs:
 ```python
 import nltk
 import json
+import matplotlib.pyplot as plt
 
 with open("MAAN_dialog.json","r") as infile:
     dialog = json.loads(infile.read())
