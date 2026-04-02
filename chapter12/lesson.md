@@ -3,7 +3,7 @@ layout: page
 title: Codelab / Chapter 12 / Lesson Document
 tags: codelab
 ---
-# Web Scraping
+# Web Scraping and Adjacencies
 
 [[Back to Codelab index]](../)
 
