@@ -173,13 +173,14 @@ Let's try out a simple example with some familiar data.
 ![Hazel again](assets/hazel3.jpg)
 
 ```python
+fields = ["Dog","Owner","Breed"]
 rocky = ["Rocky","Shane","Texas Heeler"]
 maple = ["Maple", "Amanda", "Hound"]
 bofur = ["Bofur", "Ronda", "Corgi"]
 dogs = [rocky,maple,bofur]
 
 with open('dogs.csv', "w") as outfile:
-    outfile.write(",".join(["Dog","Owner","Breed"]))
+    outfile.write(",".join(fields))
     for dog in dogs:
         outfile.write("\n"+",".join(dog))
 ```
@@ -194,7 +195,7 @@ Let's try it out.
 
 ```python
 import csv
-
+fields = ["Dog","Owner","Breed"]
 rocky = ["Rocky, the Wary","Shane","Beagle/Heeler"]
 maple = ["Maple, the Swift", "Amanda", "Hound"]
 bofur = ["Bofur, the Brave", "Ronda", "Corgi"]
@@ -202,7 +203,7 @@ dogs = [rocky,maple,bofur]
 
 with open('dogs.csv', 'w', newline='') as csvfile:
     dogwriter = csv.writer(csvfile, delimiter=',')
-    dogwriter.writerow(["Dog","Owner","Breed"])
+    dogwriter.writerow(fields)
     for dog in dogs:
         dogwriter.writerow(dog)
 ```
@@ -270,7 +271,7 @@ We don't have to go too much into the particular details of how JSON is structur
     "likes": [
       "vocalizing",
       "eating disgusting garbage",
-      "cats"
+      "visitors"
     ]
   },
   {
