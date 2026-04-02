@@ -1,4 +1,11 @@
-# Week 12: Web Scraping
+---
+layout: page
+title: Codelab / Chapter 12 / Lesson Document
+tags: codelab
+---
+# Web Scraping
+
+[[Back to Codelab index]](../)
 
 ## Python Libraries, revisited
 
@@ -20,15 +27,17 @@ First, let's properly go over some ideas that we might have casually encountered
  
  ```python
  from bs4 import BeautifulSoup 
- soup = BeautifulSoup(html_doc, 'html.parser')
  # 'bs4' is the package, 'BeautifulSoup' is a class defined inside the package definition
+ html_doc = "<html></html>"
+ soup = BeautifulSoup(html_doc, 'html.parser')
  ```
 
  or
 
  ```python
- from bs4 import BeautifulSoup
- soup = BeautifulSoup(html_doc, 'html.parser')
+ import bs4
+ html_doc = "<html></html>"
+ soup = bs4.BeautifulSoup(html_doc, 'html.parser')
  # this code is equivalent
  ```
 
@@ -59,7 +68,7 @@ First, let's properly go over some ideas that we might have casually encountered
 
  config.py:
  ```python
- PASSWORD = "yourefired"
+ PASSWORD = "$ch0larsl@b"
  ```
  
  code.py:
@@ -84,7 +93,7 @@ code.py:
 ```python
  import doglib
  # dog is the module, 
- hazel = doglib.Dog("Hazel")
+ hazel = doglib.Dog("Rocky")
 ```
 
 There is a special module in each package that makes them a package that must be named `__init__.py`. This file can be blank, but its presence is what lets Python know that you intend a directory to be a package. Note that `__init__` is also how we define class constructor. Here, the contents of `__init__.py` are run whenever we import a package. This allows us to, effectively, treat the package itself like a module.
@@ -100,11 +109,9 @@ There is a special module in each package that makes them a package that must be
 
 (XML [left] and JSON [right])
 
-We've covered some JSON already. Let's talk about its older, more monstery cousin. They're not exactly the same kind of thing. JSON is intended, as we've seen and used, to encapsulate object states. XML stands for "Extensible Markup Language" and the Markup Language part means that it's a way to "mark up" text in ways that convey information beyond the very narrow boundaries of the text, like an editor might mark up a document. XML is a cousin of HTML, in that its basic  but it's a more abstract, more flexible format.
-We've covered some JSON already. Let's talk about its older, more monstery cousin. They're not exactly the same kind of thing. JSON is intended, as we've seen and used, to encapsulate object states. XML stands for "Extensible Markup Language" and the Markup Language part means that it's a way to "mark up" text in ways that convey information beyond the very narrow boundaries of the text, like an editor might mark up a document. XML is a cousin of HTML, in that its basic  but it's a more abstract, more flexible format.
-We've covered some JSON already. Let's talk about its older, more monstery cousin. They're not exactly the same kind of thing. JSON is intended, as we've seen and used, to encapsulate object states. XML stands for "Extensible Markup Language" and the Markup Language part means that it's a way to "mark up" text in ways that convey information beyond the very narrow boundaries of the text, like an editor might mark up a document. XML is a cousin of HTML, in that the basic rules of its syntax and structure are similar. But it's a more abstract, more flexible format.
+We've covered some JSON already. Let's talk about its older, more monstery cousin. They're not exactly the same kind of thing. JSON is intended, as we've seen and used, to encapsulate object states. XML stands for "Extensible Markup Language" and the Markup Language part means that it's a way to "mark up" text in ways that convey information beyond the very narrow boundaries of the text, like an editor might mark up a document. XML is a cousin of HTML and the basic rules of its syntax and structure are the same. However, XML is a more abstract, more flexible format.
 
-That is, markup languages provide ways to express anything that isn't directly expressible as text characters: *emphasis*, _italics_, [links](https://github.com/scholarslab/CodeLab/blob/master/Week05/assets/hazel_romantic_hero.jpg), spacing and layout, typeface, and so on. Images too.
+Markup languages provide ways to express anything that isn't directly expressible as text characters: *emphasis*, _italics_, [links](https://github.com/scholarslab/CodeLab/blob/master/Week05/assets/hazel_romantic_hero.jpg), spacing and layout, typeface, and so on. Images too.
 
 ![hazel snoozing](assets/hazel_snooze.jpeg)
 
@@ -129,7 +136,7 @@ Let's take a quick peek at what XML looks like. Let's shift gears from our usual
 
 This is an arbitrarily constructed example. XML is built around tags that represent discrete elements. In the example above, `scene` and `dialog` are tags. Tags can contain attributes, such as the `role` attribute for `dialog` or the `location` attribute in `scene`. Tags can wrap around text and we can understand that the tag contains the text, like the label for a link or the text of a line of dialog.
 
-XML is really verbose and you have to be really careful about closing tags correctly. But it's quite powerful, with entire secondary languages to define its schema, to translate it from one XML format to another, and to traverse the data that it contains. That complexity makes it a bit clunky to use.
+XML is very verbose and you have to be careful about closing tags correctly. But it's quite powerful, with entire secondary languages to define its schema, to translate it from one XML format to another, and to traverse the data that it contains. That complexity makes it a bit clunky to use.
 
 The "Extensible" part of the XML name means that we can use this basic structure to build other languages. Just like my constructed Futurama script example can form a standard format to represent dialog, XML can be extended (really, constrained) to represent the structures of other specific kinds of data. One example is TEI, the Text Encoding Initiative, which uses XML to represent text documents. Another is the modern form of HTML that the web runs on.
 
@@ -138,7 +145,7 @@ The "Extensible" part of the XML name means that we can use this basic structure
 
 Okay, let's put these ideas together. Let's scrape some websites.
 
-Web scraping is extracting data from web pages, using the syntax of a web page. It's great for compiling datasets when you don't already have them in a database somewhere. A good supplemental resource for web scraping is [Intro to Beautiful Soup by Jeri Wieringa](https://programminghistorian.org/en/lessons/intro-to-beautiful-soup) at The Programming Historian.
+Web scraping is extracting data from web pages, using the syntax of a web page. It's great for compiling datasets when you don't already have them in a database somewhere. A good supplemental resource for web scraping is [Intro to Beautiful Soup by Jeri Wieringa](https://programminghistorian.org/en/lessons/intro-to-beautiful-soup) at The Programming Historian, which is "retired" because the web document it references has changed.
 
 ### So how do we scrape the web?
 In Python, there's more than a few different libraries we could use, but let's continue to focus on Beautiful Soup.
