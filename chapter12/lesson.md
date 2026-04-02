@@ -260,7 +260,7 @@ for i in old_posts.find_all("li"):
     post_url = "https://scholarslab.lib.virginia.edu"+i.contents[0]["href"]
     post  = requests.get(post_url).text
     soup = BeautifulSoup(post, features="html.parser")
-    post_text+=soup.find("div", class_="post__content").get_text()
+    post_text+=soup.find("div", class_="content").get_text()
     # Let's write out all the posts every time so we can interrupt it at any point
     f = open("posts.txt", "w")
     f.write(post_text)
