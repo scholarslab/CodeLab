@@ -1,4 +1,11 @@
-# Week 13: APIs
+---
+layout: page
+title: Codelab / Chapter 13
+tags: codelab
+---
+# Application Programming Interfaces
+
+[[Back to Codelab index]](../)
 
 ![maple](assets/toby.jpg)
 

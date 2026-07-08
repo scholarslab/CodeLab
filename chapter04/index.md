@@ -1,4 +1,11 @@
-# Week 4: Version Control
+---
+layout: page
+title: Codelab / Chapter 04
+tags: codelab
+---
+# Version Control
+
+[[Back to Codelab index]](../)
 
 ![Rocky!](assets/rocky_popcorn.jpg)
 
@@ -15,14 +22,20 @@
 
 
 ## Setup
-There's a bit of setup for git that I forgot to have y'all do. First, we need to set up name and email in Git. You don't have to use your real identity, but if it might be useful to have people be able to contact you about your change. [Github has some strategies](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address) for maintaining some privacy for this step.
+There's a bit of setup for any new git install. First, we need to set up name and email in Git. You don't have to use your real identity, but if it might be useful to have people be able to contact you about your change. [Github has some strategies](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address) for maintaining some privacy for this step.
 
 ```console
 git config --global user.email user@domain.com
 git config --global user.name 'Public Name'
 ```
 
-Then, we'll want to set the default text editor if you end up using git through the command line. Vim is the default and it's another thing to learn if you don't already know how to use it, so I would suggest nano as an easier to use option:
+Next, we'll want to tell Git how to handle merges, which is a key function of git. It's not too important to know what the different ways that git does this are right now, but we need to pick one to avoid an error message. So let's go ahead and use what I think is the best option for you:
+
+```
+git config --global pull.rebase false
+```
+
+Finally, we'll want to set the default text editor if you end up using git through the command line. Vim is the default and it's another thing to learn if you don't already know how to use it, so I would suggest nano as an easier to use option:
 
 ```console
 git config --global core.editor "nano"
@@ -40,8 +53,8 @@ git config --global core.editor "nano"
 * **Version Control**: A software system that allows programmers (and other people who work with digital files) to track their work and collaborate with others by providing Concurrency (maintaining consistancy despite multiple editors), Reservibility (keeping track of changes and allowing work to be undone), and Annotation (describing changes through labels, timestamps, and author information).
 
 ---
-## Homework for Week 5
+## Homework
 
 ## Do:
 
-1. Add an icebreaker question (or questions) to the [icebreaker git practice document](https://github.com/scholarslab/gitpractice/blob/master/Praxis2023.md) and check back on it every few days to answer all the previous, unanswered questions.
+1. Add an icebreaker question (or questions) to the [icebreaker git practice document](https://github.com/scholarslab/gitpractice/blob/master/Praxis2025.md) and check back on it every few days to answer all the previous, unanswered questions.

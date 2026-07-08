@@ -1,9 +1,17 @@
-# Week 10: Working with Structured Data
+---
+layout: page
+title: Codelab / Chapter 10
+tags: codelab
+---
+# Working with Structured Data
+
+[[Back to Codelab index]](../)
+
 ![Tacoma Narrows GIF](assets/structure.gif)
 
 ## Agenda
 - Review homework (if it exists)
-- [Hands on with structured data ](lesson.md)
+- [Hands on with structured data ](./lesson/)
 
 ## Assignment
 

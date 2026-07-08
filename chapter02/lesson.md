@@ -1,12 +1,17 @@
-# Week 02 Lesson: Introduction to Data
+---
+layout: page
+title: Codelab / Chapter 02 / Lesson
+tags: codelab
+---
+# Introduction to Data
 
-Q: Print it out and delete it? Let's set it aside and revisit it at the end.
+[[Back to chapter index]](../)
 
 ## How to data?
 
 Let's start off, like before, not by talking about computers (a subject that I'm relatively well-qualified to talk about) and instead by talking about a subject that I'm not at all qualified to talk about (linguistics).
 
-![Rocky!](assets/rocky_bed.png)
+![Rocky!](../assets/rocky_bed.png)
 
 **What is this?**
 
@@ -18,7 +23,7 @@ When we translate or convert symbols from one language or representation to anot
 
 Morse Code is a well-known example of a code that encodes the latin alphabet, arabic numerals, and a few punctuation marks into a system of dots and dashes, signals that differ in duration. Well, this is not entirely true. If it was just dots and dashes, it would be a binary code, but it's not.
 
-![https://en.wikipedia.org/wiki/Morse_code#/media/File:International_Morse_Code.svg](./assets/morse_code.png)
+![https://en.wikipedia.org/wiki/Morse_code#/media/File:International_Morse_Code.svg](../assets/morse_code.png)
 
 **What can we make out about Morse code?**
 
@@ -35,7 +40,7 @@ Let's get closer to talking about actual digital stuff. This is a good time to a
 
 ## Claude Shannon
 
-![Claude Shannon on a unicycle](assets/shannon.jpg)
+![Claude Shannon on a unicycle](../assets/shannon.jpg)
 
 Shannon was an American electrical engineer and mathematician known for his foundational work on information theory and digital circuits, and for his enthusiasm for mathematical puzzles, juggling, unicycles, and computer chess. He created a machine (with his student, the AI pioneer Marvin Minsky) whose only function was to turn itself off.
 
@@ -45,9 +50,9 @@ I think it's actually kind of funny, teaching Shannon and information theory in 
 
 After he got his doctorate, Shannon went to work at Bell Labs, where he worked on secure communications during World War II (when Alan Turing, working on breaking codes instead of making them, visited Bell in 1942, the two met for tea daily). One major problem with scrambling messages so that they can't be read is that messages written in human languages tended to be really predictable. At a basic level, there is an enormously uneven distribution of letters in English (as one example). At a higher level, some sequences of letters appear frequently while others never appear in any word and there are many more possible combinations of five letters than there are five-letter words. Predictability opened up weaknesses that codebreakers could exploit. In fact, Turing's work breaking the German Enigma cipher often relied on the frequency of common messages like "nothing to report".
 
-In *A Mathematical Theory of Communication*, Shannon considered the meaning of this sort of uneven distribution. Let's say that we're playing a few rounds of the word game Hangman, but I take pity on how poorly you're doing and tell you one the first letter of a word right off the bat. **Do I give away more or less information if I tell you that the word starts with "S" or with "Q"?**
+In *A Mathematical Theory of Communication*, Shannon considered the meaning of this sort of uneven distribution. Let's say that we're playing a few rounds of the word game Hangman, but I take pity on how poorly you're doing and tell you the first letter of the first word right off the bat. **Do I give away more or less information if I tell you that the word starts with "S" or with "X"?**
 
-Shannon recognized that what the amount of information conveyed could be understood as entropy, essentially the degree to which you are surprised at learning something. If I tell you that the word starts with S, that fact tells you less than if I told you that the word starts with Q because many more words start with S than start with Q. In the same sense, telling you a losing lottery number conveys less information than telling you a winning lottery number. As we've seen, in communication, we often intuitively reduce the length of text by swapping out common letter combinations, phonemes, and phrases with shorter replacements: BMULD, LMAO, Ph.D., SLab, et al. Mechanically, we can reduce the size of lower entropy files like English text by compressing them.
+Shannon recognized that what the amount of information conveyed could be understood as entropy, essentially the degree to which you are surprised at learning something. If I tell you that the word starts with S, that fact tells you less than if I told you that the word starts with X because many more words start with S than start with X. In the same sense, telling you a losing lottery number conveys less information than telling you a winning lottery number. As we've seen, in communication, we often intuitively reduce the length of text by swapping out common letter combinations, phonemes, and phrases with shorter replacements: BMULD, LMAO, Ph.D., SLab, et al. Mechanically, we can reduce the size of lower entropy files like English text by compressing them.
 
 Shannon suggested that we could exactly quantify this degree of entropy to measure the information content. Consider a coin that has an equal chance of flipping heads or tails. Flipping that coin selects between two equally possible outcomes, producing an entropy of one "bit", a portmanteau of "Binary Digit".
 
@@ -61,17 +66,17 @@ All of this is useful to keep in your short term memory as we transition to actu
 
 So we've been dancing around this term, Digital Humanities. **But what exactly is "digital"? What is "analog"?**
 
-Digital is, as the name suggests, something that has to do with numbers can count. Analog is "analogous" to reality. So what does this mean?
+Digital is, as the name suggests, something that has to do with numbers we can count. Analog is "analogous" to reality. So what does this mean?
 
-Q: "How do we, as people, count?"
+Q: *"How do we, as people, count?"*
 
-A: "Digitally"
+A: *"Digitally"*
 
 When we count: one, two, three, etc, we are listing a set of discrete symbols. That's "discrete", meaning "distinct and separate" rather than "discreet", meaning "circumspect". So, these counting numbers are whole numbers, positive and negative, and zero; these are called integers.
 
 What's excluded from this set? For one, non-whole numbers, what mathematicians call "real numbers" that can have infinitesimally small differences between them. Think of it this way: there's no integer that sits between two and three, but there is an infinite number of real numbers between two and three.
 
-![https://www.nga.gov/collection/art-object-page.56350.html](assets/rothko.png)
+![https://www.nga.gov/collection/art-object-page.56350.html](../assets/rothko.png)
 
 We go to the East Building of the National Gallery of Art and look at this painting by Mark Rothko, _Orange and Tan_. What do we see? We stand closer and closer. We make the docent nervous. We lean forward, almost touching the paint with our foreheads. The docent starts to signal frantically to a guard. What do we see?
 
@@ -79,7 +84,7 @@ From far away, we see the paint. From close in, we see the paint, bigger, and th
 
 When we visualize music performed by an physical instrument, it's as a continuous waveform. It's smooth and if we look closer and closer, we don't see any gaps. When we visualize a digital Spotify stream, it's a series of jagged stairs that aproximate the waveform. It's full of discontinuities. In the registers at the very edges of human hearing, the stream is designed to be more jagged.
 
-![https://www.youtube.com/watch?app=desktop&v=64FSgQdWHrE](assets/analog_digital.jpg)
+![https://www.youtube.com/watch?app=desktop&v=64FSgQdWHrE](../assets/analog_digital.jpg)
 
 It turns out, computers don't really do "infinite". Remember the Babbage's Difference Engine: there's only so many gears with so many teeth. You can add more, but you can't add infinitely more. Digital computers are also machines that exist in reality and while we build them at a very small scale, we can't build infinitely small. So we get "digital" as a kind of compromise: these nice round numbers that don't exist in nature that we can use to aproximate the complexity of reality.
 
@@ -87,13 +92,13 @@ There is what is probably best termed a _speculation_ in physics called "digital
 
 ## What is a (digital) computer?
 
-Let's talk about what a computer is again, but this time let's not be cute about baboon bones. A computer is a box full of electricity that plays TikTok (Note: update cultural reference every 5 Praxis cohorts). It's a very complicated box, but when we zoom all the way in, the really important stuff is made up of transistors. A transistor is basically an electrical valve: if you switch it on, it allows electricity to flow through; switch it off and it doesn't. The trick is that the valve is controlled electrically also, so you arrange all the transistors in this complicated way where they're controlling each other and voila: TikTok.
+Let's talk about what a computer is again, but this time let's not be cute about baboon bones. A computer is a box full of electricity that plays TikTok (Note: update cultural reference every 5 Praxis cohorts). It's a very complicated box, but when we zoom all the way in, the really important stuff is made up of transistors. A transistor is basically an electrical valve: if you switch it on, it allows electricity to flow through; switch it off and it doesn't. The trick is that the valve is controlled electrically also, so you arrange all the transistors in this complicated way where they're controlling each other *et voila: TikTok*.
 
 As a rule of thumb, the more transistors (and the higher density of transistors), the more powerful the computer. We've gotten really good at making transistors really small. In the late 1960s, the Apollo Guidance Computer that navigated spaceships to the moon, a marvel of miniaturization, and back had around 10,000 transistors in it.
 
-![https://en.wikipedia.org/wiki/Apollo_Guidance_Computer#/media/File:Agc_view.jpg](assets/Agc.jpg)
+![https://en.wikipedia.org/wiki/Apollo_Guidance_Computer#/media/File:Agc_view.jpg](../assets/Agc.jpg)
 
-A decade later, this was roughly how much the first popular personal computers (the Apple II, the Radio Shack TRS-80) had. The main Apple M1 chip in my laptop, a model from a few years ago, has 16 billion transistors and a whole lot more when you consider the rest of the machine: the chips to control all the subsidiary functions of the laptop, and the chips to contain the memory and storage.
+A decade later, this was roughly how much the first popular personal computers (the Apple II, the Radio Shack TRS-80) had. The main Apple M4 chip in my laptop, a model from a few years ago, has 28 billion transistors. The total number is even higher when you consider the rest of the machine: the chips to control all the subsidiary functions of the laptop and to contain the memory and storage.
 
 Remember that a transistor is a valve with two settings: on and off, which we can also represent as True and False and as ones and zeros. So it has two states, kinda-sorta like Morse code. As a consequence of transistors being the most fundamental building block of computing, the fundamental "cognitive" abstraction of our computers, how they process and store information, is binary. A bit of trivia: the On/Off power switch symbol (you know, this thing: ⏻) is an ISO standard symbol comprising a one and a zero.
 
@@ -133,15 +138,15 @@ There's an even simpler kind of data to represent using binary numbers than whol
 
 These number systems are just different representations of the same numerical ideas. Other forms of data can be encoded using numbers. Under the hood, each character in text data is represented on a character encoding table that map numbers to letters. An important and influential encoding scheme is ASCII: the American Standard Code for Information Interchange, formalized in 1968. ASCII maps Latin letters and Arabic numerals, as well as common punctuation symbols, to a set of 128 numbers. 128 is 2^7, so these numbers can be represented by a total of 7 bits.
 
-![ASCII table](assets/ascii.png)
+![ASCII table](../assets/ascii.png)
 
 Note that we have to encode "whitespace" (non-visible, but meaningful elements like spaces and line breaks) as characters as well.
 
-Since the 1960s, software developers have created a plethora of character encodings, often to represent characters from other languages. Although you might occasionally run into these in older datasets, the singular modern text standard is called Unicode (well, sort of singular, since it's a family of encodings), which strives express the complete canon of human language. The current specification, Unicode 13, encompasses 143000 characters, including emoji and archaic scripts. Unicode functionally encodes the entirety of known human written language, includng dead and undecyphered languages. Here's the code chart for the second millenium BC undecyphered Minoan script [Linear A](assets/unicode_linear-a.pdf).
+Since the 1960s, software developers have created a plethora of character encodings, often to represent characters from other languages. Although you might occasionally run into these in older datasets, the singular modern text standard is called Unicode (well, sort of singular, since it's a family of encodings), which strives express the complete canon of human language. The current specification, Unicode 13, encompasses 143000 characters, including emoji and archaic scripts. Unicode functionally encodes the entirety of known human written language, includng dead and undecyphered languages. Here's the code chart for the second millenium BC undecyphered Minoan script [Linear A](../assets/unicode_linear-a.pdf).
 
 The first 128 characters of Unicode are identical to ASCII, which helps maintain backwards compatibility with older Latin text data. Under Unicode (UTF-8, specifically), a single Latin alphabet character takes 8 bits to store.
 
-Having basically all text files encoded in Unicode is especially helpful because, just like picking up a book whose language you don't know, character encodings often have to be guessed and it's easy to guess almost correctly but not entirely correctly. There's an example of a text file containing the 1920 Karel Čapek novel RUR (from which we get the word "robot") in Czech [encoded in UTF-8](assets/rur.txt) and [encoded in the archaic Windows-1250 encoding](assets/rur-1250.txt).
+Having basically all text files encoded in Unicode is especially helpful because, just like picking up a book whose language you don't know, character encodings often have to be guessed and it's easy to guess almost correctly but not entirely correctly. There's an example of a text file containing the 1920 Karel Čapek novel RUR (from which we get the word "robot") in Czech [encoded in UTF-8](../assets/rur.txt) and [encoded in the archaic Windows-1250 encoding](../assets/rur-1250.txt).
 
 ## Colors
 
@@ -152,7 +157,10 @@ Colors are most often shown as hexadecimal numbers (base 16). Hexadecimal uses 0
 ## Also: Bytes!
 Byte is another common unit of measurement for data. The term is a play on bit and was coined in the 1950s for Project SAGE, a prototype computer system to coordinate American air defenses in the Cold War. There is some historical ambiguity, but a modern byte is 8 bits, representing the smallest power-of-2 size for useful data (such as a single character or a small integer).
 
-Bytes and bits are often modified with metric scale prefixes: kilobyte, megabit, gigabyte etc. But hang on a second: "kilo" means "one thousand" and "mega" means "one million" and so on, but this is mixing powers-of-ten with powers-of-two!
+Bytes and bits are often modified with SI unit prefixes: kilobyte, megabit, gigabyte etc. But hang on a second: "kilo" means " thousand", "mega" means "million", "giga" is "billion", and so on, but this is mixing powers-of-ten with powers-of-two!
 
+To put everything into context, a single word comprising Latin characters and common spacing and punctuation uses one byte per character. So "Rocky" takes up 5 bytes. A CD, which encodes binary data in microscopic grooves, holds around 681 million bytes. A DVD has a capacity about 7 times that of a CD, at 4.7 billion bytes. A base model iPhone 16 has a storage capacity of 128 Gigabytes, or 128 billion bytes. 
 
-## Revisit: Print it out and delete it?
+*If the average word length is 5 character (6 with spaces), how many words can fit on a DVD? If the average movie is 2 hours long and contains 30 frames every second, how many words are a picture worth?*
+
+## Print it out and delete it?

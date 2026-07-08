@@ -1,4 +1,9 @@
-# Week 11: Depedencies
+---
+layout: page
+title: Codelab / Chapter 11 / Lesson Document
+tags: codelab
+---
+# Depedencies
 
 ![fatdog](assets/fatdog.jpg)
 
@@ -9,11 +14,16 @@ The Python Standard Library provides a pretty wide set of tools. It comes with e
 
 But sometimes, the thing we need is a little bit more obscure or specific. We couldn't include all these things with every Python install, because otherwise that install would be enormous. Instead, there's something like an app store for Python code (except that it's all free, because Python is all free) called the [Python Package Index, or PyPI](https://pypi.org/). Not to be confused with PyPy (groan), which is something else.
 
-It's pretty big. Anyone can submit projects to it and so there are more than a quarter-million individual ones.
+It's pretty big. Anyone can submit projects to it and so there are more almost a million individual ones.
 
 We can install any one of these packages through [Pipenv](https://pipenv-fork.readthedocs.io/en/latest/), which all of you should already have since we did the environment setup at the beginning of the year.
 
 Pipenv coordinates the function of two important tools, Pip and Virtualenv. Pip is Python's package manager, which means that it downloads and installs Python packages. But it downloads them either to the whole system or to a single user's space. This means that when we grab a package, we could override packages that are being used by other projects. This is potentially really bad, because we're not the only ones on our computers that use Python. We could break applications or even our operating system.
+
+Putting it another way: let's say you see a colleague present some work that they've done, which includes a bit of code that you can clone off of its repository. To run the code, you need to grab the specific packages that that code depends on. Software changes over time, not just to add new features and fix bugs,
+Putting it another way: let's say you see a colleague present some work that they've done, which includes a bit of code that you can clone off of its repository. To run the code, you need to grab the specific versions of the packages that that code depends on.
+
+Software changes over time. Sometimes new versions fix bugs (or introduce new ones) and sometimes, more rarely, the expected inputs and outputs change to meet new requirements or different assumptions. To be able to reproduce the results that your colleague presented, the software has to match. Popular Python packages are, tautologically, widely used and another project may require a different set of versions of the same packages.
 
 To solve this, Virtualenv walls off "virtual" environments for particular programs. These virtualenvs are like independent Python installations that don't affect other things that use Python.
 
@@ -57,7 +67,7 @@ verify_ssl = true
 getname = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.14"
 ```
 
 We can see that there's some basic information about the package we specified. In this case, the line `getname = "*"` indicates that we want to grab some version of the `getname` package (* is often used as a wildcard character, standing in for "any").
@@ -76,7 +86,7 @@ Now, we can activate the shell using:
 pipenv shell
 ```
 
-If we try the `which python` command again, it'll be something different. Something like: `/Users/shane/.local/share/virtualenvs/sandbox-2UjlHtLl/bin/python`
+If we try the `which python` command again, it'll show something different. Something like: `/Users/shane/.local/share/virtualenvs/sandbox-2UjlHtLl/bin/python`
 
 That tells us that we're actually using a totally different Python from before. A Python that has access to the package that we just told pipenv to grab.
 
@@ -110,7 +120,7 @@ pipenv install nltk
 pipenv shell
 ```
 
-Just for NLTK, we need to prime the module by downloading a few key bits of data. So we should jump into the Python interactive interpreter and just run these lines:
+NLTK has a kin, we need to prime the module by downloading a few key bits of data. So we should jump into the Python interactive interpreter and just run these lines:
 
 ```python
 import nltk
@@ -156,7 +166,9 @@ First, we need to tokenize the dialog (i.e. break up the dialog into words). We 
 
 Stopwords are one of the wordlists provided by nltk. You can see all the English stopwords and read up on the other wordlists in the [NLTK book](https://www.nltk.org/book/ch02.html#wordlist-corpora). The little bit of code we ran in the interactive interpreter downloaded the stopword wordlist.
 
-Here's what the code to tokenize the dialog and strip out the stopwords looks like:
+Many people have done these two steps. Some of them have published their code in open source software. Some of them have shown their code when others have asked how it's done. Brandon has a whole [Natural Langugage Processing cookbook](https://github.com/walshbr/humanists-nlp-cookbook/blob/release/toc.ipynb) that we can modify for our code.
+
+Here's what my tokenizatio and stopword code looks like:
 
 ```python
 import nltk
@@ -177,12 +189,13 @@ for line in dialog:
 bea_tokens = []
 ben_tokens = []
 
+stopwords = nltk.corpus.stopwords.words('english')
 tokenizer = nltk.tokenize.RegexpTokenizer(r'\w+')
 for token in tokenizer.tokenize(bea):
-    if token.lower() not in nltk.corpus.stopwords.words('english'):
+    if token.lower() not in stopwords:
         bea_tokens.append(token.lower())
 for token in tokenizer.tokenize(ben):
-    if token.lower() not in nltk.corpus.stopwords.words('english'):
+    if token.lower() not in stopwords:
         ben_tokens.append(token.lower())
 
 print(bea_tokens)
@@ -212,12 +225,13 @@ for line in dialog:
 bea_tokens = []
 ben_tokens = []
 
+stopwords = nltk.corpus.stopwords.words('english')
 tokenizer = nltk.tokenize.RegexpTokenizer(r'\w+')
 for token in tokenizer.tokenize(bea):
-    if token.lower() not in nltk.corpus.stopwords.words('english'):
+    if token.lower() not in stopwords:
         bea_tokens.append(token.lower())
 for token in tokenizer.tokenize(ben):
-    if token.lower() not in nltk.corpus.stopwords.words('english'):
+    if token.lower() not in stopwords:
         ben_tokens.append(token.lower())
 
 bea_freq = nltk.FreqDist(bea_tokens)
@@ -242,6 +256,7 @@ Which will allow us to get some pretty graphs:
 ```python
 import nltk
 import json
+import matplotlib.pyplot as plt
 
 with open("MAAN_dialog.json","r") as infile:
     dialog = json.loads(infile.read())
@@ -273,4 +288,6 @@ bea_freq.plot(20, cumulative=False)
 ben_freq.plot(20, cumulative=False)
 ```
 
-NLTK is a big and complicated piece of software designed to do (kind of) complicated analysis. This is still a unit on external dependencies and not on natural language processing or text analysis. Don't fret too much about how NLTK works or how to use it - the important part is that you now have the knowledge and the means and the wherewithall to exploit a vast universe of external python tools.
+NLTK is a big and complicated piece of software designed to do (kind of) complicated analysis. This is still a unit on external dependencies and not on natural language processing or text analysis. I've thrown a lot of complicated code at you fast, but it's all code that you can just look up and tweek to suit your purposes.
+
+So, don't fret too much about how NLTK works or how to use it - the important part is that you now have the knowledge and the means and the wherewithall to exploit a vast universe of external python tools.

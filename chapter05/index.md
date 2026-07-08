@@ -1,13 +1,17 @@
 ---
 layout: page
-title: Codelab / 05 Introduction to Python
+title: Codelab / Chapter 05
 tags: codelab
 ---
+# Introduction to Python
+
+[[Back to Codelab index]](../)
 
 ![https://media.giphy.com/media/9xaryfkdWqqiK6QHKf/giphy.gif](https://media.giphy.com/media/9xaryfkdWqqiK6QHKf/giphy.gif)
 
 ## Lesson
-[Lesson document](intro_python.md)
+[Lesson document](lesson/)
+0. A brief note about learning with AI 
 1. Let's get coding
 2. Python interactive interpreter
 3. Data structures
@@ -15,7 +19,7 @@ tags: codelab
 5. Dogs
 
 ## Resources
-[Python data types cheatsheet](types_cheatsheet.md)
+[Python data types cheatsheet](types_cheatsheet/)
 
 ## Terms
 * **Binary**: Base-2 numeral system, consisting only of 0 and 1. Counting up from 0, the binary numbers are: 0, 1, 10, 11, 100, 101, 110, 111, 1000...
@@ -33,14 +37,16 @@ tags: codelab
 * **Variable**: A container for data. Variables let us squirrel away a piece of data using a variable name and the assignment operator (`a = 5`) and then refer back to it later (`a + 10`). Any piece of data that we want to keep track of, we have to store away as a variable.
 
 ---
-## Homework for Week 5
+## Homework
 
 ### Coding Assignment 0: Simplified Pig Latin
 Produce a simple program to accept a single word as text input and then print out the [pig latin](https://en.wikipedia.org/wiki/Pig_Latin) translation.
 
-When I first assigned this homework, I didn't actually know that Pig Latin is a more complicated and potentially more ambiguous algorithm than I thought! Because of this, we can implement the simplest case for the word provided: just shift the first letter to the end and add "ay" to it.
+Pig Latin is... more complicated and potentially more ambiguous than I thought when I first made this assignment. Because of this, we should start by implementing the simplest case for the word provided: just shift the first letter to the end and add "ay" to it.
 
-Taking into consideration words starting with consonant clusters or vowels requires some conditional logic, which we haven't gone over yet, but feel free to jump ahead if you really want to show off.
+Taking into consideration words starting with consonant clusters or vowels requires some conditional logic, which we haven't learned yet, but feel free to jump ahead if you really want to show off.
+
+So, input "dog" should print "ogday", "Shane" should print "haneSay", and "ogopogo" should print "gopogooay".
 
 Your code should be structured something like this:
 

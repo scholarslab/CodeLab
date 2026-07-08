@@ -1,4 +1,11 @@
-# Week 03 Lesson: Structured Data
+---
+layout: page
+title: Codelab / Chapter 03 / Lesson
+tags: codelab
+---
+# Structured Data
+
+[[Back to chapter index]](../)
 
 ## The Limitations of Unstructured Text
 
@@ -8,29 +15,31 @@ When we use virtually any natural language, we don't just use words. We also use
 
 Punctuation and spacing are pretty important for most natural languages. The standard joke about comma usage is the difference between "Let's eat, Grandpa!" and "Let's eat Grandpa!" When we use them, it's often a way to add _structure_ to the linear flow of words, in the most basic sense to help break up clauses so that semantically proximate words are also physically or temporally proximate. Without this structure, we have a stream that must mostly be understood ambiguously through interpretation.
 
-**What are other ways that we structure text? Think about different kinds of documents.**
+*What are other ways that we structure text? Think about different kinds of documents.*
 
 ## Lists
 
 One of the simpliest ways we can structure text is using lists, which is just an ordered, linear collection of items. Let's break that down. Collection, as in there's a set of zero or more items. Ordered, as in there's an order to the elements; the second item comes after the first and before the third. Linear, as in like a line, so there's a single dimension to that order. This one's pretty straightforward, but there's a few wrinkles.
 
-**How do we write out a list? How do we distinguish between different elements?**
+*How do we write out a list? How do we distinguish between different elements?*
 
 We have *elements*, which are the items of a list, and we have what's called *delimiters* which separate them. We can define special characters to act only as delimiters, which are not allowed to be used inside of elements, but in practice we'd rather not define the whole system of our text around the particular implementations. We want to create a *text file*, that is to say a way to structure data using the characters in a text character encoding without having to resort to special data outside of it. This is important because text files are readable by software that implement the particular character encoding without having to know the special, specific rules that we would need to define if we e.g. wanted to have a special marking for delimiters. Text files are also useful because they're also typically much easier to read for humans directly. Files which are only readable with those special rules that put them outside of a standard character encoding (i.e. not text files) are called "binary files." For now and maybe forever, it's more useful to know what those are abstractly than to know how those are constructed. Let's continue with text files.
 
-Since we're making all of this out of the same set of characters, we run into the problem that we'd like to also use the characters we're using as delimiters in our elements. So we have to think of ways to tell people (and computers) when to and when not to take a particular character literally. One way to do this is to treat certain characters, like commas or quotation marks, as special unless we "escape" them (indicate that they're actually just mundane text) by using an **escape character**.
+Since we're making all of this out of the same set of characters, we run into the problem that we'd like to also use the characters we're using as delimiters in our elements. So we have to think of ways to tell people (and computers) when to and when not to take a particular character literally. One way to do this is to treat certain characters, like commas or quotation marks, as special unless we "escape" them (indicate that they're actually just mundane text) by using an *escape character*.
 
-So, for example, maybe we can enclose all our elements with quotation marks:
+So, for example, let's say we want to use commas as our delimiters:
 
-`"Bofur", "Maple","Rocky"`
+`Bofur, Maple, Rocky`
 
-And if we need to use quotation marks inside of our elements, we can just double them up:
+What happens when we want to use a comma inside of our element? One way to do this is to make a rule that says that we're going to treat quotation marks as special escape characters and that commas in between them don't act as delimiters.
 
-`"Bofur ""the brave""", "Maple ""the kind""", "Rocky ""the anxious"""`
+`"Bofur, the brave", "Maple, the kind", "Rocky, the anxious"`
+
+*What about if we want to use quotation marks inside of elements?*
 
 ## CSVs
 
-Now that we have a way to do lists, which are one-dimensional. **How would we turn it into two dimensions? What would that look like?**
+Now that we have a way to do lists, which are one-dimensional. *How would we turn it into two dimensions? What would that look like?*
 
 Let's make a list of lists by putting each one on a new line:
 
@@ -45,7 +54,7 @@ So now we have tabular data, data in tables. Which is probably pretty familiar a
 
 These are most often used to move spreadsheet data around outside of the more proprietary and specialized spreadsheet software formats like XLS/XLSX (Excel), so that it can be exchanged between people who use different software or want to read and parse it with code more easily. CSV is a very popular way to exchange [public datasets](https://catalog.data.gov/dataset/?res_format=CSV).
 
-**What are the limitations of CSVs and tabular data in general?**
+*What are the limitations of CSVs and tabular data in general?*
 
 Let's consider a CSV or spreadsheet representing data for job candidates. One candidate to a row, with columns representing common data such as name, contact information, etc. What happens if we add a section for education or work experience? How many columns should we add to represent degrees or previous positions? We can add new columns whenever we have to add a candidate with more degrees or positions than any prior one, but this makes the data more difficult to parse, either as a human or by computer. Each degree or position also has a number of subsidiary fields: the years and place for an educational program or job are properties of those programs and jobs, but every column is functionally a top level field of the candidate.
 

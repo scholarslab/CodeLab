@@ -27,7 +27,7 @@ Let's use the [Much Ado About Nothing json file](answers/MAAN_dialog.json) we cr
 
 So, write a script to load the json file, collate all the words that each character speaks, and then take out out all the words that appear in both Beatrice's and Benedick's lines.
 
-A good place to start is the tokenization part of the code in the [Week10 lesson's NLTK example](https://github.com/scholarslab/CodeLab/blob/master/Week10/lesson.md#example-nltk).
+A good place to start is the tokenization part of the code in the [Week10 lesson's NLTK example](https://github.com/scholarslab/CodeLab/blob/master/Week10/lesson#example-nltk).
 
 ```python
 import json
