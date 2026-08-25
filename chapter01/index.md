@@ -31,7 +31,6 @@ We'll be spending the next few weeks on these sorts of more abstract discussions
 
 ## CodeLab Resources
 * [Environment Setup Instructions](environment_setup/)
-* [Command Line Cheatsheet](commandline/)
 
 ## Homework for Chapter 1
 
