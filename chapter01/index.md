@@ -42,11 +42,12 @@ We'll be spending the next few weeks on these sorts of more abstract discussions
 
 ### Readings
 
-Hopefully I'll have passed out copies of Julia Evans's lovely [So You Want to be a Wizard](https://wizardzines.com/zines/wizard/) zine. That's something written for someone who is already a programmer, but it'll be useful for you to skim through now to gleen some meta-strategies for navigating tech. Review it again once you have a few `for loops` under your belt.
+Hopefully I'll have passed out copies of Julia Evans's lovely [So You Want to be a Wizard](https://wizardzines.com/zines/wizard/) zine. That's something written for someone who is already a programmer, but it'll be useful for you to skim through now to gleen some meta-strategies for navigating this world. Review it again once you have a few `for loops` under your belt.
 
 For a bit of counter-programming, Miriam Posner's ["Some things to think about before you exhort everyone to code"](https://miriamposner.com/blog/some-things-to-think-about-before-you-exhort-everyone-to-code/) is good to think about (and perhaps even to critique).
 
 If you haven't read through the pre-readings, now's a good time to do that:
-* [Section 1](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#the-man-in-the-taupe-blazer) and [section 2](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#lets-begin) from Paul Ford's *What is Code?* (2015)
-* Donald Knuth's ["Computer Programming as an Art" (1974)](https://paulgraham.com/knuth.html)
-* Ben Schmidt's ["Do Digital Humanists Need to Understand Algorithms?" (2016)](https://dhdebates.gc.cuny.edu/read/untitled/section/557c453b-4abb-48ce-8c38-a77e24d3f0bd#ch48)
+* [There is no Software](https://monoskop.org/images/f/f9/Kittler_Friedrich_1992_1997_There_Is_No_Software.pdf) by Friedrich Kittler (Read this one lightly and impressionistically and don't get bogged down in the technical details. Kittler may or may not be earnest in making his argument and the text is dense with self-indulgence, but it is still kind of amazing.)
+* [Justice for "Data Janitors"](https://www.publicbooks.org/justice-for-data-janitors/) by Lilly Irani.
+* ["Computer Programming as an Art" (1974)](https://dl.acm.org/doi/pdf/10.1145/361604.361612) by Donald Knuth (Knuth's *The Art of Computer Programming* is a universally admired 4000 page comprehensive computer science magnum opus, but this talk is a light one about the "Art" in that title.)
+* ["Do Digital Humanists Need to Understand Algorithms?" (2016)](https://dhdebates.gc.cuny.edu/read/untitled/section/557c453b-4abb-48ce-8c38-a77e24d3f0bd#ch48) by Ben Schmidt (here, again, don't get too bogged down on the coding minutia).
