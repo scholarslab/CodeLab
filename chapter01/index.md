@@ -35,9 +35,7 @@ We'll be spending the next few weeks on these sorts of more abstract discussions
 
 ## Homework for Chapter 1
 
-* Schedule a 1 on 1 with me to talk about your dreams, your discontents, and your computer. We'll also use this time to set up your [development environment](environment_setup/).
-* Afterward, complete Ian Milligan and James Baker, "Introduction to the Bash Command Line," The Programming Historian 3 (2014), [https://programminghistorian.org/en/lessons/intro-to-bash](https://programminghistorian.org/en/lessons/intro-to-bash). This is an introduction to the Bash shell, which will serve well enough as an introduction to other shells like Zsh as well.
-  * For Windows users, skip the "Windows Only: Installing Git Bash" section - we're going a different direction. Use the VSCode Terminal or Windows Terminal, as recommended in the Code Lab environment setup.
+* Schedule a 1 on 1 with me for some time in the next two weeks, to talk about your dreams, your discontents, and your computer. We'll use this time to set up your [development environment](environment_setup/).
 * Set up an account at [Github](http://www.github.com) and post your username on the Slack praxis channel.
 
 ### Readings
