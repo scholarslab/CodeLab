@@ -96,7 +96,7 @@ Let's talk about what a computer is again, but this time let's not be cute about
 
 As a rule of thumb, the more transistors (and the higher density of transistors), the more powerful the computer. We've gotten really good at making transistors really small. In the late 1960s, the Apollo Guidance Computer that navigated spaceships to the moon, a marvel of miniaturization, and back had around 10,000 transistors in it.
 
-![https://en.wikipedia.org/wiki/Apollo_Guidance_Computer#/media/File:Agc_view.jpg](../assets/Agc.jpg)
+![Apollo Guidance Computer, from https://en.wikipedia.org/wiki/Apollo_Guidance_Computer#/media/File:Agc_view.jpg](../assets/Agc.jpg)
 
 A decade later, this was roughly how much the first popular personal computers (the Apple II, the Radio Shack TRS-80) had. The main Apple M4 chip in my laptop, a model from a few years ago, has 28 billion transistors. The total number is even higher when you consider the rest of the machine: the chips to control all the subsidiary functions of the laptop and to contain the memory and storage.
 
@@ -108,13 +108,21 @@ Morse code encoded decimal numerals, it translated the dots and dashes into deci
 
 **A short exercise**: Seriously, how do we count?
 
-As modern humans we typically use decimal numbers. _Deci_, meaning ten. I assume. We call it this because it uses _base ten_ position notation. There are ten numerals, zero to nine. When we count, we start at zero and advance through all of the numbers until we get to nine. After nine, we're out of numbers, so we reset back to zero and advance the next highest position by one. So, nine (or we can think of it as `09`) advances to ten (`10`).
+Most humans typically count using decimal numbers. _Deci_, meaning ten. I assume. We call it this because it uses _base ten_ position notation. Picture an analog odometer from an old car.
+
+![Car odometer from https://commons.wikimedia.org/wiki/File:Odometer2.jpg](../assets/odometer.jpg)
+
+An odometer counts the number of units traveled. There are a series of wheels, each representing a digit in a number. Each wheel has ten positions to represent ten numerals, zero to nine. When the car is brand new, the odometer is set to zero by turning every wheel to the zero position.
+
+The motion of the car's tires advances the wheels of the odometer, starting from the right side wheel that represents the smallest digit (usually one mile or kilometer). That wheel moves up from zero, advancing through the range of numbers until it completes a full rotation and moves from nine back to zero again. When this happens, the next wheel (the next largest digit, representing ten units) advances up one unit, from zero to one. That is, the number displayed on the odometer goes from 000009 to 000010. Consider what's literally happening here: we're going from 0 tens and 9 ones to 1 ten and 0 ones.
+
+The next time the right-most ones digit wheel makes a full turn, the second wheel advances from one to two as the odometer number goes from 000019 to 000020. When both the tens digit wheel makes a full rotation and the ones digit is about to turn back to zero, we advance the next wheel, the hundreds digit. So the number goes from 000099 to 000100.
 
 Thinking about how we use decimal numbers is useful to understanding how we use binary ones. Using these rules, **how do we count in binary?**
 
-Let's take a closer look at the decimal system. Every position is a power of ten: 10 = 10<sup>1</sup>, 100 = 10<sup>2</sup>, 1000 = 10<sup>3</sup>, etc. Each additional decimal position adds 10 times as many possible values: 1 digit has 10<sup>1</sup> possibilities (0-9), 2 digits has 10<sup>2</sup> (0-99), etc. In binary, each position adds twice as many possible values.
+Let's think back on the decimal system. Every position is a power of ten: 10 = 10<sup>1</sup>, 100 = 10<sup>2</sup>, 1000 = 10<sup>3</sup>, etc. Each additional decimal position adds 10 times as many possible values: 1 digit has 10<sup>1</sup> possibilities (0-9), 2 digits has 10<sup>2</sup> (0-99), etc. In binary, each position adds twice as many possible values.
 
-Remember Shannon and his bits? One bit is one binary position. 1 binary digits has 2<sup>1</sup> = 2 different possible values (0-1), 2 has 2<sup>2</sup> = 4 (00, 01, 10, and 11), 3 has 2<sup>3</sup> (000, 001, 010, 011, 100, 101, 110, 111), and so on.
+Remember Shannon and his bits? Bit stands for "binary digit." 1 binary digit has 2<sup>1</sup> = 2 different possible values (0-1), 2 has 2<sup>2</sup> = 4 (00, 01, 10, and 11), 3 has 2<sup>3</sup> (000, 001, 010, 011, 100, 101, 110, 111), and so on.
 
 Because of binary, a lot of "computer numbers" tend to be powers of two. When you buy a new iphone, they come in 128gb (2<sup>7</sup>), 256gb (2<sup>8</sup>), and 512gb (2<sup>9</sup>) models. As you work with computers, these powers of two will show up everywhere. You'll become very familiar with 2, 4, 8, 16, 32, 64, 128, and 256.
 

@@ -13,7 +13,7 @@ tags: codelab
 [Lesson document](lesson/)
 1. What is data?
 2. How to data
-3. Basic data representations
+3. Data structures
 
 ## New Terms
 * **Analog**: Relating to continuous numerical values of infitesimal granularity
@@ -24,15 +24,19 @@ tags: codelab
 * **Integer**: A positive, negative, or zero whole number (e.g. `3` rather than `3.0`).
 * **String**: Text data. We can think of it as a list of this as a list of characters. For example, `"Hazel"[2]` is `'z'`.
 
+## Resources
+* [Binary visualized](https://harryli0088.github.io/binary-visualized/) - this is pretty neat
+
 ---
 ## Homework
 
 ## Do:
 
-1. Let's flex our algorithmic thinking muscles some more. Write out in plain English an algorithm to sort a deck of cards.
+1. Let's flex our algorithmic thinking muscles some more. Write out, in plain English, an algorithm to sort a deck of cards.
 
-2. And: Write out in plain English an algorithm for a cashier to find exact change.
+2. And: write out, in plain English, an algorithm for a cashier to find exact change.
 
+3. 
 
 ## Read:
 Posner, Miriam (2015),  [Humanities Data, a Necessary Contradiction ](http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/)
