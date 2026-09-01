@@ -36,11 +36,12 @@ tags: codelab
 
 2. And: write out, in plain English, an algorithm for a cashier to find exact change.
 
-3. 
-
 ## Read:
+
 Posner, Miriam (2015),  [Humanities Data, a Necessary Contradiction ](http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/)
 
 Horgan, John (2017), [Profile of Claude Shannon, Inventor of Information Theory](https://blogs.scientificamerican.com/cross-check/profile-of-claude-shannon-inventor-of-information-theory/)
 
 Atwood, Jeff (2010), [The Great Newline Schism](https://blog.codinghorror.com/the-great-newline-schism/)
+
+Stephenson, Neal (1999), [In the Beginning... Was the Command Line](https://archive.org/details/stephenson-neal-1999.-in-the-beginning-was-the-command-line/page/n11/mode/2up); pages 1-10, through "GUIs".
