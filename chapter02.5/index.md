@@ -7,7 +7,7 @@ tags: codelab
 
 [[Back to Codelab index]](../)
 
-![Rocky!](assets/rocky_couch.jpeg)
+![Rocky!](assets/rocky_couch.jpg)
 
 ## Outline
 * First half: AI discussion (ctd), Codelab Helper and AI pedagogy
