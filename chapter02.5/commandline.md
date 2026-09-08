@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Codelab / Chapter 01 / Command Line Interface
+title: Codelab / Chapter 02.5 / Command Line Interface
 tags: codelab
 ---
 
@@ -23,6 +23,8 @@ So, okay. Here's what we're talking about:
 Here's a basic terminal window on one of my computers (running Ubuntu through WSL on a Windows machine). Yours may look different (hopefully it's prettier than the garish colors in this default shell). Before Graphical User Interfaces (GUI) like the one that you're almost certainly reading this on became ubiquitous, Command Line Interfaces (CLI) were how people used computers. So why learn any of this now? GUIs often abstract and simplify, but CLI lets you tell a computer to do exactly what you want it to do. It facilitates an understanding of what's happening "under the hood" (or at least a little bit more under the hood than usual). The output of our coding efforts and the data that we'll use and produce will mostly be text, which suits CLIs. It's also the most common way to connect to remote computers, a common circumstance when you want to control a distant web server or virtual cloud host. Finally, CLIs are long-lived. The shell that we're going to teach you to use traces its roots to the 1970s. Whatever new technology is around the corner, it'll still be useful to know how to drive a command line.
 
 In the example above, the "shanelin@ADAGIO-PC" part is my user name and the name of my computer. This is useful to see because the command line lets us easily switch between users and computers. The parts after the colon ("~" and "~/projects/CodeLab/Week01") are the current working directory path. The $ sign, which might be something else on your terminal, separates the directory path from the command. In this case, I've simply entered `cd projects/CodeLab/Week01` to change directory to the projects/CodeLab/Week01 directory and `ls` to list the contents of that directory. For commands with output (in this case, `ls`), the output appears below the command.
+
+In the graphical file manager interface for your operating system (MacOS's Finder or Window's Explorer), each window shows the files in a particular directory. We can say that Finder or Explorer is "in" our Home directory or our Photos directory. The same concept exists for shells. When we open up a new terminal window, by default we start in our user's Home directory (that's the `~`). That is, our current *working directory* is our user's Home directory. 
 
 ## A few random notes
 
@@ -68,17 +70,21 @@ Might depend on the terminal or the shell.
 | `Ctrl + C` | Kill whatever you are running |
 | `Ctrl + D` | Exit the current shell |
 
-## Paths
+## File operations
 
-A computer stores files and directories (folders) in a "tree" structure. Under this analogy, directories can contain files and other directories in a branching pattern. Each directory therefore has zero or more "child" directories and always a single "parent" directory, all the way up to the lowest, "root" level.
+One of the lower-level computer systems that you use the shell (and the graphical MacOS Finder and Windows Explorer programs) to interface with is what's called the File System.
 
-In the command line, we traverse this structure using the [path](https://en.wikipedia.org/wiki/Path_(computing)). Linux, MacOS, and WSL on Windows use Unix-style path notation, so directories and filenames are separated ("delimited") by a forward slash `/`.
+A computer stores files and directories (folders) in a "tree" structure. Under this analogy, directories can contain files and other directories in a branching pattern. Each directory therefore has zero or more "child" directories and always a single "parent" directory, all the way down to the lowest, "root" level. The File System keeps track of all of these files and their locations, and allows users to access and manipulate them.
 
-Paths that begin with a forward slash (e.g. `/usr/bin`) are absolute paths, which means that the first element is at the root (lowest level) of the tree.
+In the command line, we traverse this structure using the [path](https://en.wikipedia.org/wiki/Path_(computing)). Linux, MacOS, and WSL on Windows use Unix-style path notation, so directories and filenames are separated ("delimited") by a forward slash `/`. Windows computers outside of WSL use the backslashes `\` as a delimiter. Since we'll be pretty much exclusively using WSL on Windows, this really only useful to know because sometimes examples or instructions will be by or for native Windows users.
 
-Paths that begin with a directory or file name (e.g. `README.md`) are relative paths that will depend on the current working directory.
+Paths that begin with a forward slash (e.g. `/usr/bin`) are absolute paths, which means that the first element is a file or directory at the root (lowest level) of the tree. Absolute paths refer to the same location no matter what your current working directory is, like lat/long coordinates for geographical space.
 
-Files that start with "." are often supposed to be hidden files, which just means that they're intended to be kept out of sight.
+Paths that begin with a directory or file name (e.g. `README.md`) are relative paths that will depend on the current working directory. So `README.md` means "the README.md that is in your current working directory." If you change where you are, this will refer to a different file or no extant file at all, like "the blue house two doors down."
+
+For *files* specifically, names that **start** with "." are often supposed to be hidden files, which just means that they're intended to be kept out of sight.
+
+This is a little confusing because when `.` stands in for a *directory*, it is used as a shorthand for "the current working directory", like if we want to copy a file from somewhere else to "here": `cp /path/file.md .`
 
 Special path symbols:
 
