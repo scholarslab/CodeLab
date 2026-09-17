@@ -7,7 +7,7 @@ tags: codelab
 
 [[Back to Codelab index]](../)
 
-![Tacoma Narrows GIF](assets/structure.gif)
+![Hecky stalking](assets/hecky_stalking.jpg)
 
 ## Agenda
 - Review homework (if it exists)
