@@ -7,7 +7,7 @@ tags: codelab
 
 [[Back to Codelab index]](../)
 
-![https://media.giphy.com/media/9xaryfkdWqqiK6QHKf/giphy.gif](https://media.giphy.com/media/9xaryfkdWqqiK6QHKf/giphy.gif)
+![Hecky in a banana bed!](assets/hecky_banana.jpg)
 
 ## Lesson
 [Lesson document](lesson/)
